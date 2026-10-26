@@ -1,0 +1,2124 @@
+[
+ {
+  "id": "77DB6907-D5F3-4BFF-B5DC-F201BF608C0D",
+  "url": "/deals/77DB6907-D5F3-4BFF-B5DC-F201BF608C0D",
+  "date": "2026-10-14",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": 28584189,
+  "amountEurStored": null,
+  "amountNative": 32000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1195,
+   "asOf": "2026-10-14",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "335A8380-8EC1-49B2-B260-84159C217A95",
+   "name": "Duvo",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Index Ventures",
+   "Balderton Capital",
+   "Credo Ventures",
+   "Northzone"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "62D07543-AAEA-48D0-BD5F-5D50F9797D39",
+  "url": "/deals/62D07543-AAEA-48D0-BD5F-5D50F9797D39",
+  "date": "2026-10-14",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 1000000,
+  "amountEurStored": null,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "9B5DC1C6-0267-4FD9-B637-644E4B544CDD",
+   "name": "Flae robotics",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Robotics"
+   ]
+  },
+  "investors": [
+   "Garage Angels",
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "B0D74966-AB0B-4B7D-BFD7-0765C7160C2D",
+  "url": "/deals/B0D74966-AB0B-4B7D-BFD7-0765C7160C2D",
+  "date": "2026-08-17",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": null,
+  "amountEurStored": null,
+  "amountNative": null,
+  "currency": "",
+  "fx": null,
+  "company": {
+   "id": "398869C2-DC14-438A-AB74-33D190015FAD",
+   "name": "GoodVision",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Round2 Capital"
+  ],
+  "source": {
+   "domain": "finsmes.com",
+   "tier": "established"
+  },
+  "confidence": "none"
+ },
+ {
+  "id": "66DA6EDB-6C1E-4C83-8618-C6487796001A",
+  "url": "/deals/66DA6EDB-6C1E-4C83-8618-C6487796001A",
+  "date": "2026-07-14",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 450000,
+  "amountEurStored": null,
+  "amountNative": 450000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "4C42D8EE-386D-4E6F-9304-5072AC98A2AF",
+   "name": "HTG Medical",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Healthtech"
+   ]
+  },
+  "investors": [
+   "VCs"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "0D24AEA5-5D84-4F20-B8EB-D92432BE909F",
+  "url": "/deals/0D24AEA5-5D84-4F20-B8EB-D92432BE909F",
+  "date": "2026-07-01",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": null,
+  "amountEurStored": null,
+  "amountNative": null,
+  "currency": "",
+  "fx": null,
+  "company": {
+   "id": "BF47C5AF-5B5D-4FE0-8FCD-D7FB57FB2CEC",
+   "name": "EquiLibre Technologies",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Creandum"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "none"
+ },
+ {
+  "id": "39B26BD8-0654-472E-91B5-81F6486BA0AC",
+  "url": "/deals/39B26BD8-0654-472E-91B5-81F6486BA0AC",
+  "date": "2026-06-29",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": 6800000,
+  "amountEurStored": 6800000,
+  "amountNative": 6800000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "FE322376-169E-4BC6-97EC-3A95A76F9554",
+   "name": "Wultra",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Cybersecurity"
+   ]
+  },
+  "investors": [
+   "Guillaume Despagne",
+   "Marc Norlain",
+   "J&T Ventures",
+   "Elevator Ventures",
+   "Seventure Partners"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "42B67173-7451-4FF2-8E0A-8A05A54310CF",
+  "url": "/deals/42B67173-7451-4FF2-8E0A-8A05A54310CF",
+  "date": "2026-06-16",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 5175091,
+  "amountEurStored": 5169660,
+  "amountNative": 6000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1594,
+   "asOf": "2026-06-16",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "A2FBEEAA-ED76-4302-AF2C-F3BB9BE75FEC",
+   "name": "Sloneek",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "HRtech"
+   ]
+  },
+  "investors": [
+   "Orbit Capital",
+   "Venture to Future Fund"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "DD9047D3-0DAC-4C0F-A5D8-8EDC578316AF",
+  "url": "/deals/DD9047D3-0DAC-4C0F-A5D8-8EDC578316AF",
+  "date": "2026-06-09",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1800000,
+  "amountEurStored": 1800000,
+  "amountNative": 1800000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "92DBD383-DC28-4B58-927B-EA4BE6755F36",
+   "name": "Merchantee",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "E-commerce"
+   ]
+  },
+  "investors": [
+   "Reflex Capital",
+   "Lighthouse Ventures",
+   "Czech Founders VC"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "E1FF57C2-FDDE-489D-9795-0D6E06ED813D",
+  "url": "/deals/E1FF57C2-FDDE-489D-9795-0D6E06ED813D",
+  "date": "2026-05-14",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 1709110,
+  "amountEurStored": 1712621,
+  "amountNative": 2000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1702,
+   "asOf": "2026-05-14",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "CDF518D3-DB79-487E-AFDC-F4F45BA9AC8F",
+   "name": "Zerops",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Cloud"
+   ]
+  },
+  "investors": [
+   "Gi21 Capital"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "23D8DF94-80F9-4B05-B0B5-68931994840A",
+  "url": "/deals/23D8DF94-80F9-4B05-B0B5-68931994840A",
+  "date": "2026-04-28",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 1000000,
+  "amountEurStored": 1000000,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "9D8D80E6-5DB5-4CE0-B4C2-8B406416EF1D",
+   "name": "Tapaya",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "BADideas.fund",
+   "DEPO Ventures",
+   "Passion Capital"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "99022D70-8112-4314-9530-CE25D2326D0F",
+  "url": "/deals/99022D70-8112-4314-9530-CE25D2326D0F",
+  "date": "2026-04-08",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 1452247,
+  "amountEurStored": 1457912,
+  "amountNative": 1700000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1706,
+   "asOf": "2026-04-08",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "1613C85A-EE47-41CC-8EFA-72D582BF4410",
+   "name": "Felix",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "XYZ Venture Capital"
+  ],
+  "source": {
+   "domain": "finsmes.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "0601DEEB-1A16-4CF3-B250-EB3F3C89EF61",
+  "url": "/deals/0601DEEB-1A16-4CF3-B250-EB3F3C89EF61",
+  "date": "2026-04-08",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 2500000,
+  "amountEurStored": 2500000,
+  "amountNative": 2500000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+   "name": "Edmund",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Tensor Ventures",
+   "University2Ventures",
+   "FORWARD.one"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "3E190120-B729-4A96-98D1-AEAEE2075CF3",
+  "url": "/deals/3E190120-B729-4A96-98D1-AEAEE2075CF3",
+  "date": "2026-03-16",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": 6185747,
+  "amountEurStored": 6192977,
+  "amountNative": 7100000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1478,
+   "asOf": "2026-03-16",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B41C70A3-4337-4B10-9B3B-583CCF6566C0",
+   "name": "Choice",
+   "country": "Czech Republic",
+   "city": null,
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "J&T Ventures",
+   "Smartlink",
+   "Reflex Capital",
+   "Alea Capital Partners"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "4124EC04-FDDA-4CBA-9DEE-2F3051E08C74",
+  "url": "/deals/4124EC04-FDDA-4CBA-9DEE-2F3051E08C74",
+  "date": "2026-02-26",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 12000000,
+  "amountEurStored": 12000000,
+  "amountNative": 12000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+   "name": "ValkaAI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Tensor Ventures",
+   "BD Partners",
+   "Petr Zámečník",
+   "Fond Naše Česko",
+   "J&T Ventures",
+   "Rockaway Ventures"
+  ],
+  "source": {
+   "domain": "techfundingnews.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "60CBA234-AFEC-433C-884B-6090F0DAC0F0",
+  "url": "/deals/60CBA234-AFEC-433C-884B-6090F0DAC0F0",
+  "date": "2026-02-25",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 1697217,
+  "amountEurStored": 1694661,
+  "amountNative": 2000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1784,
+   "asOf": "2026-02-25",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "887DCB74-DE03-4626-96D6-078F1DEE01EC",
+   "name": "RobosizeME",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Botanique Hospitality",
+   "SeedTwo Capital",
+   "BrightCap Ventures",
+   "Sparking Capital"
+  ],
+  "source": {
+   "domain": "finsmes.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "9C8210BB-5BB7-447D-B8F1-781F6DDC3079",
+  "url": "/deals/9C8210BB-5BB7-447D-B8F1-781F6DDC3079",
+  "date": "2026-02-19",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 2127116,
+  "amountEurStored": 2124775,
+  "amountNative": 2500000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1753,
+   "asOf": "2026-02-19",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "3173FAE0-07F3-40FB-AFC7-3BF4A60E00CE",
+   "name": "Navigara",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "QQ Capital",
+   "Rockaway Ventures",
+   "Inovo VC"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "17C64086-2C1E-40CB-A419-19EF76FCBA85",
+  "url": "/deals/17C64086-2C1E-40CB-A419-19EF76FCBA85",
+  "date": "2026-02-05",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1000000,
+  "amountEurStored": 1000000,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "F400AD71-65EA-44A5-A0E4-22AE013B34C3",
+   "name": "Readmio",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Edtech"
+   ]
+  },
+  "investors": [
+   "Simpact Ventures"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "CB601946-69D9-4E9F-906F-AC7B550815FA",
+  "url": "/deals/CB601946-69D9-4E9F-906F-AC7B550815FA",
+  "date": "2026-01-15",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 2924983,
+  "amountEurStored": 2928898,
+  "amountNative": 3400000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1624,
+   "asOf": "2026-01-15",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "9FE9911A-5C33-4979-894E-D15F6B765158",
+   "name": "Modeinspect",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Partech",
+   "Fredrik Bjork",
+   "Michal Vasko",
+   "Credo Ventures",
+   "Angelinvest",
+   "Jozef Kepesi"
+  ],
+  "source": {
+   "domain": "techfundingnews.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "6B2FF67D-C7E5-4BB9-BD56-7D2CBA5F264A",
+  "url": "/deals/6B2FF67D-C7E5-4BB9-BD56-7D2CBA5F264A",
+  "date": "2026-01-15",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": null,
+  "amountEurStored": null,
+  "amountNative": null,
+  "currency": "",
+  "fx": null,
+  "company": {
+   "id": "EF37FEC8-958A-469C-A8C8-C6DDDBB8D1EA",
+   "name": "Maxfusion",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Czech Founders VC",
+   "company’s founders",
+   "Ory Weihs"
+  ],
+  "source": {
+   "domain": "finsmes.com",
+   "tier": "established"
+  },
+  "confidence": "none"
+ },
+ {
+  "id": "DA0CD3EC-DBF4-4944-9916-FC4B8D2BAF13",
+  "url": "/deals/DA0CD3EC-DBF4-4944-9916-FC4B8D2BAF13",
+  "date": "2025-12-02",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 12915447,
+  "amountEurStored": 12880047,
+  "amountNative": 15000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1614,
+   "asOf": "2025-12-02",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "335A8380-8EC1-49B2-B260-84159C217A95",
+   "name": "Duvo",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "David Singleton",
+   "Northzone",
+   "Kieran Flanagan",
+   "Puzzle Ventures",
+   "Index Ventures",
+   "Credo Ventures",
+   "Roy Reznik"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "3D459830-19FC-433E-9378-EFA36D17411D",
+  "url": "/deals/3D459830-19FC-433E-9378-EFA36D17411D",
+  "date": "2025-11-27",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 1000000,
+  "amountEurStored": 1000000,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "24655DD6-703D-4969-978A-7C55BCF386B9",
+   "name": "Ranketta",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Gi21 Capital",
+   "Lighthouse Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "9E7861D5-D9DC-4F5A-8A5E-018E2231C7EA",
+  "url": "/deals/9E7861D5-D9DC-4F5A-8A5E-018E2231C7EA",
+  "date": "2025-11-21",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 400000,
+  "amountEurStored": 400000,
+  "amountNative": 400000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "7FC7327D-2366-4440-A02D-5F6EDE26A35D",
+   "name": "Bandits",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Miton"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "8EA744C1-57D2-437B-B828-B89A573080AC",
+  "url": "/deals/8EA744C1-57D2-437B-B828-B89A573080AC",
+  "date": "2025-11-11",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 30000000,
+  "amountEurStored": 30000000,
+  "amountNative": 30000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "5C4CFA77-F317-4CBC-B29D-CEE1B12A8620",
+   "name": "Flowpay",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "Fasanara Capital"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "F1EC9A91-F439-465F-9DFF-273DD59F7C71",
+  "url": "/deals/F1EC9A91-F439-465F-9DFF-273DD59F7C71",
+  "date": "2025-10-15",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 2000000,
+  "amountEurStored": 2000000,
+  "amountNative": 2000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+   "name": "Delta Green",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Energy"
+   ]
+  },
+  "investors": [
+   "Tilia Impact Ventures",
+   "Credo Ventures",
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "C7BEEE4D-7F09-4139-9F3F-C8F510607DD0",
+  "url": "/deals/C7BEEE4D-7F09-4139-9F3F-C8F510607DD0",
+  "date": "2025-10-13",
+  "stage": "Series B",
+  "rawRoundType": "series b",
+  "amountEur": 21609474,
+  "amountEurStored": 21524244,
+  "amountNative": 25000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1569,
+   "asOf": "2025-10-13",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "3D50A057-E67E-4271-882C-316219678927",
+   "name": "Resistant AI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": 2019,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "DTCP",
+   "Notion Capital",
+   "GV"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "9694935A-F37C-4BAF-BB0E-7EAA9AF7070D",
+  "url": "/deals/9694935A-F37C-4BAF-BB0E-7EAA9AF7070D",
+  "date": "2025-10-10",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 3000000,
+  "amountEurStored": 3000000,
+  "amountNative": 3000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "2A01B051-3711-45E4-B5B4-F46C7AC42F43",
+   "name": "Boost.space",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "existing shareholders",
+   "Jet Investment",
+   "Tachles VC",
+   "Tagrose"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "C1D60B32-88DA-4057-AD7F-46311FC988A8",
+  "url": "/deals/C1D60B32-88DA-4057-AD7F-46311FC988A8",
+  "date": "2025-09-30",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": 7835789,
+  "amountEurStored": 7821746,
+  "amountNative": 9200000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1741,
+   "asOf": "2025-09-30",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "ABC56FAB-5056-421E-AC04-46F227AE1DF5",
+   "name": "Supernova",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Credo Ventures",
+   "KAYA",
+   "Taiwania Capital",
+   "Y Combinator",
+   "Reflex Capital",
+   "J&T Ventures",
+   "Wing VC",
+   "EQT Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "93DC2468-F6D1-43E8-A7D2-A37308508EFB",
+  "url": "/deals/93DC2468-F6D1-43E8-A7D2-A37308508EFB",
+  "date": "2025-09-30",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1000000,
+  "amountEurStored": 1000000,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "1E41EC39-48C9-47F9-A358-22371BC67603",
+   "name": "Talentiqa",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "HRtech"
+   ]
+  },
+  "investors": [
+   "Venture to Future Fund",
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "5FF3F881-C3F6-4B2E-A14C-8B3D7050FB43",
+  "url": "/deals/5FF3F881-C3F6-4B2E-A14C-8B3D7050FB43",
+  "date": "2025-09-18",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 6600102,
+  "amountEurStored": 6611268,
+  "amountNative": 7800000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1818,
+   "asOf": "2025-09-18",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "564C1246-2269-422E-AE15-A27804B64911",
+   "name": "Myriad AI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Long Journey Ventures",
+   "Category Ventures"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "145D1D97-51AF-4354-A57A-58AED6149DB7",
+  "url": "/deals/145D1D97-51AF-4354-A57A-58AED6149DB7",
+  "date": "2025-09-10",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 400000,
+  "amountEurStored": 400000,
+  "amountNative": 400000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "8B6B2DF0-2784-4A30-9DE3-8987929D8FE9",
+   "name": "Eterny",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "JIC Ventures",
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "89E47C90-031B-42F8-9FBB-3FB89B2A0E09",
+  "url": "/deals/89E47C90-031B-42F8-9FBB-3FB89B2A0E09",
+  "date": "2025-09-02",
+  "stage": "Series B",
+  "rawRoundType": "series b",
+  "amountEur": 17173278,
+  "amountEurStored": 17123801,
+  "amountNative": 20000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1646,
+   "asOf": "2025-09-02",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "290CF609-37E8-4BF1-9CEA-E0E88A908943",
+   "name": "OrangeX",
+   "country": "Czech Republic",
+   "city": "Bern",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "SCI Ventures",
+   "Kryptos"
+  ],
+  "source": {
+   "domain": "crowdfundinsider.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "A5D022F5-4D27-4DB3-8A0A-C8E42F6AB316",
+  "url": "/deals/A5D022F5-4D27-4DB3-8A0A-C8E42F6AB316",
+  "date": "2025-08-26",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 640000,
+  "amountEurStored": 640000,
+  "amountNative": 640000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B9CA4727-1654-46F4-B2DC-8EE6BEDF06AF",
+   "name": "Buylo",
+   "country": "Czech Republic",
+   "city": "Brno",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "8527D61F-26B6-4359-8FE8-8C2EB4125725",
+  "url": "/deals/8527D61F-26B6-4359-8FE8-8C2EB4125725",
+  "date": "2025-08-20",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 40000,
+  "amountEurStored": 40000,
+  "amountNative": 40000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "6131A4A0-AE54-485A-BB75-6D5AE5284037",
+   "name": "Lignufy",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "E-commerce"
+   ]
+  },
+  "investors": [
+   "Czech Founders VC"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "F126FA5D-68B5-41B3-B0EC-BF71EBF80019",
+  "url": "/deals/F126FA5D-68B5-41B3-B0EC-BF71EBF80019",
+  "date": "2025-08-13",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 210000,
+  "amountEurStored": 210000,
+  "amountNative": 210000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "744A65F9-6C35-45FA-90ED-DA93E932DF41",
+   "name": "Symfio",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "JIC Ventures"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "F3E1550B-6BA4-4974-A6E6-D8372C08D659",
+  "url": "/deals/F3E1550B-6BA4-4974-A6E6-D8372C08D659",
+  "date": "2025-08-07",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 8588852,
+  "amountEurStored": 8567696,
+  "amountNative": 10000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1643,
+   "asOf": "2025-08-07",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B9204C7C-764C-4AD2-8D8B-E011C1F5E86C",
+   "name": "Kontext",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Torch Capital",
+   "M13",
+   "Credo Ventures",
+   "Parable VC"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "2C7F40FE-CFCF-45F9-B801-8703E16F01D9",
+  "url": "/deals/2C7F40FE-CFCF-45F9-B801-8703E16F01D9",
+  "date": "2025-07-29",
+  "stage": "Series A",
+  "rawRoundType": "series a",
+  "amountEur": 18208619,
+  "amountEurStored": 18130331,
+  "amountNative": 21000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.1533,
+   "asOf": "2025-07-29",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "6FE1B408-EAA4-432F-9523-CD26DDD647DC",
+   "name": "E2B",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Cloud"
+   ]
+  },
+  "investors": [
+   "KAYA VC",
+   "Decibel",
+   "Insight Partners",
+   "Sunflower Capital"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "D09E359F-7AF8-4440-9561-E0C619649DDC",
+  "url": "/deals/D09E359F-7AF8-4440-9561-E0C619649DDC",
+  "date": "2025-07-23",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": null,
+  "amountEurStored": null,
+  "amountNative": null,
+  "currency": "",
+  "fx": null,
+  "company": {
+   "id": "3D50A057-E67E-4271-882C-316219678927",
+   "name": "Resistant AI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": 2019,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Experian"
+  ],
+  "source": {
+   "domain": "finextra.com",
+   "tier": "established"
+  },
+  "confidence": "none"
+ },
+ {
+  "id": "67B31408-5D6E-404B-B851-95AE92856A90",
+  "url": "/deals/67B31408-5D6E-404B-B851-95AE92856A90",
+  "date": "2025-07-15",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 300000,
+  "amountEurStored": 300000,
+  "amountNative": 300000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "FB8AD892-B226-4884-A183-DF5738FB9B34",
+   "name": "Aim",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Miton"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "64E97AE4-864F-49C2-8722-0D5A48877249",
+  "url": "/deals/64E97AE4-864F-49C2-8722-0D5A48877249",
+  "date": "2025-07-01",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 4657070,
+  "amountEurStored": 4669941,
+  "amountNative": 5500000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.181,
+   "asOf": "2025-07-01",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "CA82A144-272A-4073-935B-CCB783E2989D",
+   "name": "TopK",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "KAYA",
+   "Irregular Expressions",
+   "Earlybird"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "0F362A88-F4FD-4B4B-9D61-EC2084ADB814",
+  "url": "/deals/0F362A88-F4FD-4B4B-9D61-EC2084ADB814",
+  "date": "2025-06-27",
+  "stage": "Pre-Seed",
+  "rawRoundType": "pre-seed",
+  "amountEur": 2700000,
+  "amountEurStored": 2700000,
+  "amountNative": 2700000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "66D97211-7055-4A24-9ACA-5CE012E89B9A",
+   "name": "Waypoint AI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Berkeley SkyDeck Fund",
+   "Lumiere AI Ventures",
+   "42Cap",
+   "Dreamcraft Ventures"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "69A79DD8-750D-4B4E-BEDC-C129B931986F",
+  "url": "/deals/69A79DD8-750D-4B4E-BEDC-C129B931986F",
+  "date": "2025-06-25",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 3700000,
+  "amountEurStored": 3700000,
+  "amountNative": 3700000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B91C4163-7678-4EBC-8C21-F054BE036D6A",
+   "name": "Filuta",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Gaming"
+   ]
+  },
+  "investors": [
+   "Lion Beat Capital",
+   "Rockaway Ventures",
+   "Tarpan Capital"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "4E5C3E97-9130-486E-A9B6-95D473F7D5F7",
+  "url": "/deals/4E5C3E97-9130-486E-A9B6-95D473F7D5F7",
+  "date": "2025-06-19",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1250000,
+  "amountEurStored": 1250000,
+  "amountNative": 1250000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "A3121A6A-B15C-4015-8CB7-A1A5AD052A98",
+   "name": "RoboTwin",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Deeptech"
+   ]
+  },
+  "investors": [
+   "EU grants"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "A2D2EAD3-328A-4F6F-87C6-06484347B359",
+  "url": "/deals/A2D2EAD3-328A-4F6F-87C6-06484347B359",
+  "date": "2025-05-23",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 5000000,
+  "amountEurStored": 5000000,
+  "amountNative": 5000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "ED825E4A-48D5-49A1-9112-4B9FD16E830E",
+   "name": "International Automotive Group",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "E-commerce"
+   ]
+  },
+  "investors": [
+   "Jet Investment Group"
+  ],
+  "source": {
+   "domain": "siliconcanals.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "786675BF-E03D-44B8-AEA4-7C6AC722B114",
+  "url": "/deals/786675BF-E03D-44B8-AEA4-7C6AC722B114",
+  "date": "2025-05-06",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1600000,
+  "amountEurStored": 1600000,
+  "amountNative": 1600000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "148174D7-4BF9-4C06-9E70-65586F739CF3",
+   "name": "DecisionRules",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Lighthouse Ventures",
+   "Chilli Ventures",
+   "Ory Weihs",
+   "Czech Founders VC",
+   "Michael Rostock-Poplar",
+   "BD Partners"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "39062E46-E993-4955-B259-178EA65B9FF2",
+  "url": "/deals/39062E46-E993-4955-B259-178EA65B9FF2",
+  "date": "2025-04-28",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1100000,
+  "amountEurStored": 1100000,
+  "amountNative": 1100000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+   "name": "KARDI AI",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Healthtech"
+   ]
+  },
+  "investors": [],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "548E6398-1BC7-40AE-A604-4D8A411EF746",
+  "url": "/deals/548E6398-1BC7-40AE-A604-4D8A411EF746",
+  "date": "2025-04-08",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 1643836,
+  "amountEurStored": 1642402,
+  "amountNative": 1800000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.095,
+   "asOf": "2025-04-08",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "A3C89A55-D1EB-43D0-B297-994BBA4B3E09",
+   "name": "Firefish",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "Miton",
+   "Braiins"
+  ],
+  "source": {
+   "domain": "techfundingnews.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "A41112EB-86F1-42F2-930A-AF0D836C9B17",
+  "url": "/deals/A41112EB-86F1-42F2-930A-AF0D836C9B17",
+  "date": "2025-03-19",
+  "stage": "Debt",
+  "rawRoundType": "debt",
+  "amountEur": 30000000,
+  "amountEurStored": 30000000,
+  "amountNative": 30000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "5C4CFA77-F317-4CBC-B29D-CEE1B12A8620",
+   "name": "Flowpay",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "Fasanara Capital"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "288B3181-5AD6-419F-AAC8-3B013F55E0AE",
+  "url": "/deals/288B3181-5AD6-419F-AAC8-3B013F55E0AE",
+  "date": "2025-03-13",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 800000,
+  "amountEurStored": 800000,
+  "amountNative": 800000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "A8EB604B-0769-4705-A7A6-2130EDBBC778",
+   "name": "ArtMaster",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Edtech"
+   ]
+  },
+  "investors": [
+   "Gi21 fund",
+   "Purple Ventures"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "41BD266A-9363-49FB-839E-279C66946A55",
+  "url": "/deals/41BD266A-9363-49FB-839E-279C66946A55",
+  "date": "2025-03-06",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 600000,
+  "amountEurStored": 600000,
+  "amountNative": 600000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "C33A08E7-5F06-48DE-8284-F22E5227D466",
+   "name": "DeepScout",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "E-commerce"
+   ]
+  },
+  "investors": [
+   "Miton"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "B6CD4AE3-EB2F-4932-AB36-6C3BF13ADD79",
+  "url": "/deals/B6CD4AE3-EB2F-4932-AB36-6C3BF13ADD79",
+  "date": "2025-03-03",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 1000000,
+  "amountEurStored": 1000000,
+  "amountNative": 1000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B41C70A3-4337-4B10-9B3B-583CCF6566C0",
+   "name": "Choice",
+   "country": "Czech Republic",
+   "city": null,
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Smartlink Partners"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "3E0D2A4F-218E-4CF5-AC9A-07DE55777C8F",
+  "url": "/deals/3E0D2A4F-218E-4CF5-AC9A-07DE55777C8F",
+  "date": "2025-02-24",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 7600000,
+  "amountEurStored": 7600000,
+  "amountNative": 7600000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "816E7BA7-88E5-49C2-9462-A489E345393F",
+   "name": "BitDCA",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Fintech"
+   ]
+  },
+  "investors": [
+   "Aleš Minx",
+   "Baker McKenzie",
+   "Miloslav Vyhnal",
+   "Vladislav Fedoš"
+  ],
+  "source": {
+   "domain": "eu-startups.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "6D51D68D-D732-4DD2-9D88-5994BDD43F84",
+  "url": "/deals/6D51D68D-D732-4DD2-9D88-5994BDD43F84",
+  "date": "2025-02-19",
+  "stage": "Series B",
+  "rawRoundType": "series b",
+  "amountEur": 13350000,
+  "amountEurStored": 13350000,
+  "amountNative": 13350000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "D1F75DE0-8CC0-4D53-827A-74999005A5DB",
+   "name": "Whalebone",
+   "country": "Czech Republic",
+   "city": "Brno",
+   "founded": null,
+   "sectors": [
+    "Cybersecurity"
+   ]
+  },
+  "investors": [
+   "Unbound",
+   "Day One Capital"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "30AE6C48-EBF6-4E2C-ACCE-6F646865450E",
+  "url": "/deals/30AE6C48-EBF6-4E2C-ACCE-6F646865450E",
+  "date": "2025-02-18",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 5000000,
+  "amountEurStored": 5000000,
+  "amountNative": 5000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "B053BEDE-7498-44C4-9258-4BD72C3ECF26",
+   "name": "Snuggs",
+   "country": "Czech Republic",
+   "city": "Brno",
+   "founded": null,
+   "sectors": [
+    "Fashion"
+   ]
+  },
+  "investors": [
+   "TripleB"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "66CF07C7-3E8A-4B78-81C4-209AC98610C9",
+  "url": "/deals/66CF07C7-3E8A-4B78-81C4-209AC98610C9",
+  "date": "2025-02-12",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 500000,
+  "amountEurStored": 500000,
+  "amountNative": 500000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+   "name": "Edmund",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Czech Founders VC",
+   "Lighthouse Ventures",
+   "Tensor Ventures",
+   "Borovicka Capital"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "96228EC3-6C25-48E6-9EAC-FC9BA5C9F2F9",
+  "url": "/deals/96228EC3-6C25-48E6-9EAC-FC9BA5C9F2F9",
+  "date": "2025-01-28",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 767681,
+  "amountEurStored": 767308,
+  "amountNative": 800000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.0421,
+   "asOf": "2025-01-28",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "4D8B790A-92EB-4E6F-81BB-EF4D8652EF60",
+   "name": "Openvibe",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Telecom"
+   ]
+  },
+  "investors": [
+   "Czech Founders VC",
+   "Tensor Ventures",
+   "Jan Široký"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "BCE6BFF6-163A-4B88-91C0-DE2387C59AC9",
+  "url": "/deals/BCE6BFF6-163A-4B88-91C0-DE2387C59AC9",
+  "date": "2025-01-24",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 3840000,
+  "amountEurStored": 3840000,
+  "amountNative": 3840000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "9EA7C9F6-168A-4B4E-84B9-B0E240777F07",
+   "name": "Safetica",
+   "country": "Czech Republic",
+   "city": "Brno",
+   "founded": null,
+   "sectors": [
+    "Cybersecurity"
+   ]
+  },
+  "investors": [
+   "Ondřej Tomek",
+   "Jakub Mahdal",
+   "Ondrej Smolar",
+   "Michael Poplar-Rostock"
+  ],
+  "source": {
+   "domain": "therecursive.com",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "8FBAA4A3-3729-4B17-8E7A-22F7A657BA56",
+  "url": "/deals/8FBAA4A3-3729-4B17-8E7A-22F7A657BA56",
+  "date": "2025-01-22",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 500000,
+  "amountEurStored": 500000,
+  "amountNative": 500000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "F400AD71-65EA-44A5-A0E4-22AE013B34C3",
+   "name": "Readmio",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Edtech"
+   ]
+  },
+  "investors": [
+   "Simpact Ventures"
+  ],
+  "source": {
+   "domain": "en.ain.ua",
+   "tier": "unknown"
+  },
+  "confidence": "low"
+ },
+ {
+  "id": "637FEE44-601A-4A54-950C-F786D9DD84FE",
+  "url": "/deals/637FEE44-601A-4A54-950C-F786D9DD84FE",
+  "date": "2025-01-20",
+  "stage": "Seed",
+  "rawRoundType": "seed",
+  "amountEur": 1200000,
+  "amountEurStored": 1200000,
+  "amountNative": 1200000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "335BD493-8F4F-43A9-A317-152095156B4D",
+   "name": "Outfindo",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "AI"
+   ]
+  },
+  "investors": [
+   "Eleven Ventures",
+   "NitroPack",
+   "Borovicka Capital",
+   "Payhawk",
+   "Dronamics",
+   "Lighthouse Ventures"
+  ],
+  "source": {
+   "domain": "siliconcanals.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "E982C1A2-D9C3-4F17-88B5-D0BB8A83E57A",
+  "url": "/deals/E982C1A2-D9C3-4F17-88B5-D0BB8A83E57A",
+  "date": "2025-01-15",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 3000000,
+  "amountEurStored": 3000000,
+  "amountNative": 3000000,
+  "currency": "EUR",
+  "fx": {
+   "rate": 1,
+   "asOf": null,
+   "source": "ECB"
+  },
+  "company": {
+   "id": "FE322376-169E-4BC6-97EC-3A95A76F9554",
+   "name": "Wultra",
+   "country": "Czech Republic",
+   "city": "Prague",
+   "founded": null,
+   "sectors": [
+    "Cybersecurity"
+   ]
+  },
+  "investors": [
+   "Elevator Ventures",
+   "Tensor Ventures",
+   "J&T Ventures"
+  ],
+  "source": {
+   "domain": "tech.eu",
+   "tier": "own"
+  },
+  "confidence": "high"
+ },
+ {
+  "id": "A9C9FDAE-1D5E-4407-8744-DC4BCEF2FECC",
+  "url": "/deals/A9C9FDAE-1D5E-4407-8744-DC4BCEF2FECC",
+  "date": "2025-01-07",
+  "stage": "Other",
+  "rawRoundType": "funding round",
+  "amountEur": 22130280,
+  "amountEurStored": 22192589,
+  "amountNative": 23000000,
+  "currency": "USD",
+  "fx": {
+   "rate": 1.0393,
+   "asOf": "2025-01-07",
+   "source": "ECB"
+  },
+  "company": {
+   "id": "80AD4279-AD1B-4A98-81D0-16901CFDC973",
+   "name": "ThreatMark",
+   "country": "Czech Republic",
+   "city": "Brno",
+   "founded": null,
+   "sectors": [
+    "Software"
+   ]
+  },
+  "investors": [
+   "Octopus Ventures",
+   "Riverside Acceleration Capital (RAC)"
+  ],
+  "source": {
+   "domain": "siliconcanals.com",
+   "tier": "established"
+  },
+  "confidence": "high"
+ }
+]

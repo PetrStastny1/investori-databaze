@@ -1,0 +1,576 @@
+{
+ "zdroj": "https://www.pampam.city/funds-poland-BJpHbykKoXoBaILayYBs",
+ "stazeno": "2026-10-26",
+ "polozky": [
+  {
+   "nazev": "Central Europe Industry Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/qmBk3p75VodWVOWWA7kb",
+   "adresa": "Na Pankráci 1683/127, 140 00 Praha 4",
+   "web": "https://industrypartners.eu/en/"
+  },
+  {
+   "nazev": "BD Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/WcBqZY2kt7stKMdOUxeQ",
+   "adresa": "Palác Schiller, Na Příkopě 9, 110 00 Praha 1, Czechia",
+   "web": "https://www.bdpartners.cz/"
+  },
+  {
+   "nazev": "Jet Investments",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/4mdEwwgSXHmm6lyjEMm1",
+   "adresa": "Quadrio Offices, Purkyňova 2121/3, 110 00 Praha 1, Czechia",
+   "web": "https://jetinvestment.eu/"
+  },
+  {
+   "nazev": "ORBIT Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/4lmGALtvW0C0gH1zYQNK",
+   "adresa": "Türkova 2319/5B, 149 00 Praha 4, Czechia",
+   "web": "https://orbitcapital.com/"
+  },
+  {
+   "nazev": "Genesis Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/OrNcUILfuRS48ZgHttUt",
+   "adresa": "Na Šafránce 22, 101 00 Praha 10, Czechia",
+   "web": "https://www.genesis.cz/en/"
+  },
+  {
+   "nazev": "Inven Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/262RcoJ5EKOhm9YQedXI",
+   "adresa": "Duhová 1444/2, 140 53 Praha 4, Czechia",
+   "web": "https://www.invencapital.cz/"
+  },
+  {
+   "nazev": "3TS Capital Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/NAFUuUUdiSGjot4a9gib",
+   "adresa": "ul. Czerska 8/10\r\n00-732 Warsaw",
+   "web": "https://www.3tscapital.com/"
+  },
+  {
+   "nazev": "Warsaw Equity Group",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/woEGRXcMV0RgLYOQ1JAy",
+   "adresa": "Marszałkowska 126/134, 00-008 Warszawa",
+   "web": "https://warsawequity.com/"
+  },
+  {
+   "nazev": "Cogito Capital Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/eCkVxgSvrVAhPrtnX1Re",
+   "adresa": "Krakowskie Przedmieście 13, 00-071 Warszawa",
+   "web": "https://cogitocap.com/"
+  },
+  {
+   "nazev": "Momentum Capital Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/PGM1Mye2cJsDQB13xmDY",
+   "adresa": "Marszałkowska 89, 00-693 Warszawa",
+   "web": "https://momentumcap.pl/"
+  },
+  {
+   "nazev": "TDJ",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/mrBDlR3IELGEtfSWjWbo",
+   "adresa": "Twarda, 4, Warszawa",
+   "web": "https://tdj.pl/en/"
+  },
+  {
+   "nazev": "Navivo Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/9bNFTaM5jGjfdIkqYwQg",
+   "adresa": "Prosta 32, Warszawa, 00-838",
+   "web": "https://www.navivo.vc"
+  },
+  {
+   "nazev": "bValue",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/lqyGg8p4eYxtZCblnlqO",
+   "adresa": "Puławska 2, Warszawa, Mazowieckie 00-566",
+   "web": "https://bvaluefund.com/"
+  },
+  {
+   "nazev": "PurposeTech",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/X1Lkh1tzv1N25v8K9csk",
+   "adresa": "Drtinova 557/10, 150 00 Praha 5, Czechia",
+   "web": "https://www.purposetech.vc/"
+  },
+  {
+   "nazev": "N1 Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/ZQbQ265KRKkgtWLOEekG",
+   "adresa": "Národní 135/14, 110 00 Praha",
+   "web": "https://n1.rocks/"
+  },
+  {
+   "nazev": "Fazole Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Nh3Xuh6mgLjGKNG6vd4C",
+   "adresa": "Salvátorská 931/8, 110 00 Praha 1, Czechia",
+   "web": "https://www.fazole.vc/"
+  },
+  {
+   "nazev": "Y Soft Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Vdu7GCwHNYI6nFJKVV23",
+   "adresa": "Doudlebska 1699/5, 140 00 Praha 4, Czechia",
+   "web": "https://www.ysoft.com/ventures"
+  },
+  {
+   "nazev": "Look AI Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/YjQKXpdCxNss3cydZej4",
+   "adresa": "Node5, Radlická 180/50, 150 00 Praha 5, Czechia",
+   "web": "https://lookai.vc/"
+  },
+  {
+   "nazev": "Czech Founders VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/MCzRGNYXyHBHQJ5RKHgm",
+   "adresa": "Worklounge, Gen. Píky 430/26, 160 00 Prague 6, Czechia",
+   "web": "https://czechfounders.vc/"
+  },
+  {
+   "nazev": "i&i Prague",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/9jI2PslwP8ES7g6iYFjD",
+   "adresa": "Pobřežní 394/12, 186 00 Praha 8, Czechia",
+   "web": "https://www.iniprague.com/"
+  },
+  {
+   "nazev": "Rockaway Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/pPNQr3O8E3pBz5SO9cl6",
+   "adresa": "Generála Píky 430/26, 160 00 Praha 6 – Dejvice, Czechia",
+   "web": "https://rockawayventures.com/"
+  },
+  {
+   "nazev": "J&T Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/KJCto7L3rVLTkH0WA7dJ",
+   "adresa": "Sokolovská 700/113a, 186 00 Praha 8 – Karlín, Czechia",
+   "web": "https://www.jtventures.cz/"
+  },
+  {
+   "nazev": "Purple Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/jA5ArvQPYFiApClP2OoG",
+   "adresa": "Masarykova 409/26, 602 00 Brno, Czechia",
+   "web": "https://www.purple-ventures.com/"
+  },
+  {
+   "nazev": "Miton",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/5tKiBDnxxko5Y6ZiECAa",
+   "adresa": "Křižíkova 148/34, 186 00 Praha 8, Czechia",
+   "web": "https://www.miton.cz/"
+  },
+  {
+   "nazev": "ČS Seed Starter a.s.",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/29SJZk1ticzv7p8Ql7DN",
+   "adresa": "Olbrachtova 1929/62, 140 00 Praha 4",
+   "web": "https://www.seedstarter.cz/en/home"
+  },
+  {
+   "nazev": "Orlen VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/KQ9JrR9ZGhzteVxvp9RX",
+   "adresa": "Bielańska 12\n 00-085 Warszawa",
+   "web": "https://vc.orlen.pl/pl"
+  },
+  {
+   "nazev": "CVI",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/WZZVdZSifsFjFFuTtcrZ",
+   "adresa": "Plac Europejski 2, Warsaw Spire, Budynek C, 00-844 Warszawa",
+   "web": "https://cvi.pl/pl/"
+  },
+  {
+   "nazev": "Syntaxis Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/nTlcZfQtdCz5DkQkBGRX",
+   "adresa": "Rondo Organizacji Narodów Zjednoczonych 1, 00-124 Warszawa",
+   "web": "https://www.syntaxis-capital.com/"
+  },
+  {
+   "nazev": "Orbit Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/nbbxE236ID8YWFt841Nx",
+   "adresa": "Fort Piłsudskiego, 2, Warsaw, Mazowieckie 02-704",
+   "web": "https://orbitcapital.com/"
+  },
+  {
+   "nazev": "Omikron Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/6CoaQA3Ai8p7n9o7sqzh",
+   "adresa": "Aleja Jana Pawła II 22, 00-133 Warszawa",
+   "web": "https://omikroncapital.pl/"
+  },
+  {
+   "nazev": "Value4Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/CCehBtL2At4FSVBG5xaz",
+   "adresa": "Wspólna 47/49, 00-684, Warszawa",
+   "web": "https://www.value4capital.com/"
+  },
+  {
+   "nazev": "Resource Partns",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/VVJnEC5AzTr58mii6riV",
+   "adresa": "Mokotowska 1\r\n00-640 Warszawa",
+   "web": "https://resourcepartners.pl/"
+  },
+  {
+   "nazev": "ARX Equity",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/AWORXI30JFJgq7S5hbgE",
+   "adresa": "Niecała 14, 05-510 Konstancin-Jeziorna",
+   "web": "https://www.arxequity.com/"
+  },
+  {
+   "nazev": "Vinci S.A. (Private Equity)",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/0o1CPstLpB2jQtGAKemO",
+   "adresa": "Twarda 18, 00-105 Warsaw",
+   "web": "https://vincizasi.pl/"
+  },
+  {
+   "nazev": "Tar Heel Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/w2bEHQ45aCGaRFxnKdUR",
+   "adresa": "ul. Burakowska 5/7, 01-066 Warszawa",
+   "web": "https://tarheelcap.com/"
+  },
+  {
+   "nazev": "Spire Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/axMHHfFbKFvNa44PZybh",
+   "adresa": "Poznańska 37 Warszawa",
+   "web": "https://www.linkedin.com/company/spirecapital/"
+  },
+  {
+   "nazev": "KKCG",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Axe3C99oHgoaCDTyvFZn",
+   "adresa": "Evropská 866/71, 160 00 Praha 6, Czechia",
+   "web": "https://kkcg.com/en/"
+  },
+  {
+   "nazev": "TCF Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/hN8pgFreAEt9N6REhPR6",
+   "adresa": "Palác Schiller, Na Příkopě 9, 110 00 Praha 1, Czechia",
+   "web": "https://www.tcfcap.com/"
+  },
+  {
+   "nazev": "EMMA CAPITAL",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/kQjLy3gBoCzYq2kFgTfu",
+   "adresa": "Na Zátorce 672/24, 160 00 Praha 6, Czechia",
+   "web": "https://www.emmacapital.cz/"
+  },
+  {
+   "nazev": "LUMUS Investments",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/a75GNQZxfdn0NsvnPCzd",
+   "adresa": "Kurzova 2222/16, Stodůlky (Praha 13), 155 00 Prague, Czech Republic",
+   "web": "https://www.lumusinvestment.com/"
+  },
+  {
+   "nazev": "Gi21 Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/5f4b5iBLyLvLPgf1IoB0",
+   "adresa": "Vinohrady, Prague, Czechia",
+   "web": "https://gi21capital.com/"
+  },
+  {
+   "nazev": "McWin Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/B8yUuzqU6JHjIJ4YxECw",
+   "adresa": "Pod Mlýnkem 60/23, 160 00 Praha, Czech Republic",
+   "web": "https://mcwin.cz/"
+  },
+  {
+   "nazev": "PurposeTech / Purpose Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/6A6wH4wuLV9B5QHA91ni",
+   "adresa": "Drtinova 557/10, 150 00 Praha 5-Smíchov, Czechia",
+   "web": "https://www.google.com/maps/place/?q=place_id:ChIJYet4zP6UC0cRYbDujmmDG2I"
+  },
+  {
+   "nazev": "Soulmates Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/wsTj2euVTrX5iNkj9wBY",
+   "adresa": "Boudníkova, 180 00 Praha 8-Palmovka, Czechia",
+   "web": "https://www.soulmatesventures.com/"
+  },
+  {
+   "nazev": "Cofounder VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/wC6WeUDAtppVCK44ndLG",
+   "adresa": "Próżna 9/5, 00-107 Warszawa, Poland",
+   "web": "https://cofounder.pl/"
+  },
+  {
+   "nazev": "JIC Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/umoh7jUC2KVetFlP7kNR",
+   "adresa": "Purkyňova 127, 612 00 Brno-Medlánky, Czechia",
+   "web": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures"
+  },
+  {
+   "nazev": "StartupYard",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/MttslPmCAs4slu93t7LQ",
+   "adresa": "Perlova 5, 110 00 Praha 1, Czechia",
+   "web": "https://startupyard.com/"
+  },
+  {
+   "nazev": "ZAKA VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Q0EGuZ1QZAXc7mrVs5wW",
+   "adresa": "Panská 854/2, Nové Město, 110 00 Prague 1, Czech Republic",
+   "web": "https://zaka.vc/"
+  },
+  {
+   "nazev": "RockawayX",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/NepSgoCNjnlG1wEbjXy4",
+   "adresa": "Gen. Píky 26, 160 00 Praha 6, Czechia",
+   "web": "https://rockawayx.com/"
+  },
+  {
+   "nazev": "Lighthouse",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/9lQVNm5Mmn3KmVZyBFYc",
+   "adresa": "Evropská 2758/11, 160 00, Prague 6, Czech Republic",
+   "web": "https://lhv.vc/"
+  },
+  {
+   "nazev": "Depo Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/HRti9MCC0159RokMox1a",
+   "adresa": "Plynární 10, 170 00 Praha 7, Czechia",
+   "web": "https://depoventures.com/"
+  },
+  {
+   "nazev": "Reflex Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/PIEA89nrf0p57FkdnZ3r",
+   "adresa": "Rašínovo nábřeží 2000/78, 120 00 Praha 2, Czechia",
+   "web": "https://www.reflexcapital.com/"
+  },
+  {
+   "nazev": "KAYA VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/V2pdy4zXWVVrglhsZx8r",
+   "adresa": "Thámova 183/11, 186 00 Praha 8 – Karlín, Czechia",
+   "web": "https://www.kaya.vc/"
+  },
+  {
+   "nazev": "Presto Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/dx3fFrwoTyYfwYkPe08v",
+   "adresa": "Slovanský dům, Senovážné náměstí 869/28, 110 00 Praha 1, Czechia",
+   "web": "https://www.prestoventures.com/"
+  },
+  {
+   "nazev": "Credo Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/d4bN3eJdFgxEitv7gXUH",
+   "adresa": "Karlovo Náměstí 10, 120 00 Praha 2, Czechia",
+   "web": "https://credoventures.com/"
+  },
+  {
+   "nazev": "Rubicorn Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/r6yr6sNddnnYGAP6rbYf",
+   "adresa": "Wspólna 70, 00-687 Warszawa",
+   "web": "https://www.rubiconpartners.pl/en/vbf/"
+  },
+  {
+   "nazev": "Vinci S.A.",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/QaSxO3zSfhRLud4Q01hu",
+   "adresa": "Twarda 18, 00-105 Warsaw",
+   "web": "https://vincizasi.pl/"
+  },
+  {
+   "nazev": "FF Venture Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/yrOVq47bHE25m49Cbsg7",
+   "adresa": "Poznanska 37/23, 00-689 Warszawa",
+   "web": "https://ffvc.com/"
+  },
+  {
+   "nazev": "Digital Ocean Ventures Starter",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Uup2HvyAOfOpPq8Rfhiv",
+   "adresa": "Grodzka 42-1, 31-044 Kraków",
+   "web": "https://www.openvc.app/fund/Digital%20Ocean%20Ventures%20Starter"
+  },
+  {
+   "nazev": "Vastpoint Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/XHavEVsTN7MY14u5pyIF",
+   "adresa": "Włodarzewska 76J / 57, 02-393 Warszawa",
+   "web": "https://vastpoint.vc/"
+  },
+  {
+   "nazev": "NCBR Investment Fund ASI",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/KRr113iGCG7MC1GzYs1g",
+   "adresa": "Chmielna 69, 00-801 Warszawa",
+   "web": "https://nifasi.pl/"
+  },
+  {
+   "nazev": "Movens Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/JzLHwwmq2yBzsHY6D39u",
+   "adresa": "Plac Pilsudskiego 2 Warszawa",
+   "web": "https://movenscapital.com/"
+  },
+  {
+   "nazev": "S20 Fund",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/htTujmoZpHeC95yHWaun",
+   "adresa": "Św. Marcin, 11/8, Poznan, Wielkopolskie 61 - 803",
+   "web": "https://s20.team/"
+  },
+  {
+   "nazev": "Tar Heel Capital Pathfinder",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/pI5PJs3RB3rXbosVragt",
+   "adresa": "Burakowska, 5/7, Warsaw, Mazowieckie 01-066",
+   "web": "https://thcpathfinder.com/pl/"
+  },
+  {
+   "nazev": "Lowercap",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/UJBiLr5V25QE2qcpFgrv",
+   "adresa": "Al. Kasztanowa 3A-5, 53-125 Wrocław",
+   "web": "https://www.lowercap.pl/"
+  },
+  {
+   "nazev": "Kogito Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/KWDdvehaIegf7ZP7tVip",
+   "adresa": "Grzybowska 5A, Warszawa, Mazowieckie 00-132",
+   "web": "https://www.kogito-ventures.com/"
+  },
+  {
+   "nazev": "iif.vc",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/0iIydu5Oqjv93RwX8bHY",
+   "adresa": "Żurawia 43, 00-680 Warszawa",
+   "web": "https://iif.vc/"
+  },
+  {
+   "nazev": "Aegis Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/fPUXP4bFNASMKO77B1lU",
+   "adresa": "Gdańsk (80-837), Straganiarska 20-22/35",
+   "web": "https://www.aegiscap.vc/fundusze"
+  },
+  {
+   "nazev": "24Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/o2eK9afPUnGIAmYd3zEi",
+   "adresa": "Zwierzyniecka 17/3, 31-103, Krakow",
+   "web": "https://24ventures.vc/"
+  },
+  {
+   "nazev": "Unfold.vc",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/pGvKzORjRzmRPG6kt5BJ",
+   "adresa": "Plac Powstańców Śląskich 17a/225, 53-329 Wrocław",
+   "web": "https://unfold.vc/"
+  },
+  {
+   "nazev": "Sunfish Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/2Hn7hEZ02SHiyqz8PLQD",
+   "adresa": "Złota 75A/ 7, 00-819 Warsaw",
+   "web": "https://www.sunfish-partners.com/"
+  },
+  {
+   "nazev": "SMOK Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Z9T06QQMWdWGZNVZLYRy",
+   "adresa": "Lektykarska 27/2 Warsaw",
+   "web": "https://www.smok.vc/"
+  },
+  {
+   "nazev": "Smartlink Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/TQXI1U13dZyEnSKFoq7c",
+   "adresa": "Smocza 27, 01-048 Warszawa",
+   "web": "https://smartlink.vc/"
+  },
+  {
+   "nazev": "Simpact Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/UNU6B8wBB5HcA1oESihF",
+   "adresa": "Aleksandra Wejnerta, 26/2, Warsaw, Mazowieckie 02-619",
+   "web": "https://www.simpact.vc/"
+  },
+  {
+   "nazev": "Radix Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/FmmuKga3TRn0jLH0T5DJ",
+   "adresa": "Aleja Armii Ludowej 26, 00-609 Warszawa",
+   "web": "https://www.radix-vc.com/"
+  },
+  {
+   "nazev": "OTB Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/MV3smPYUa2cEYAdCrX5d",
+   "adresa": "Twarda 4, Warszawa",
+   "web": "https://otb.vc/"
+  },
+  {
+   "nazev": "Market One Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/AjOA0ZHEvlfOtxlAmjxI",
+   "adresa": "Widok 16/1, 00-023 Warszawa",
+   "web": "https://www.moc.vc/"
+  },
+  {
+   "nazev": "JR Holding ASI S.A.",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/CT4Hn7hkabnAFIZhORVf",
+   "adresa": "ul. Grzegórzecka 67D lok. 26, Kraków, Poland",
+   "web": "https://jrholdingasi.pl/"
+  },
+  {
+   "nazev": "Inovo VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/wyhqrcfD4onKmmvryfJ5",
+   "adresa": "Wspólna 35, 00-519 Warszawa",
+   "web": "https://inovo.vc/"
+  },
+  {
+   "nazev": "Hard2beat",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/WofYpfgWXf37wP356sDw",
+   "adresa": "50-202 Wrocław, Księcia Witolda 49/15",
+   "web": "https://hard2beat.vc/"
+  },
+  {
+   "nazev": "ff Venture Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/87qSjaaisH71t0E52xYh",
+   "adresa": "Poznanska 37/23, 00-689 Warszawa",
+   "web": "https://ffvc.com/"
+  },
+  {
+   "nazev": "Expeditions Fund",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/mOEIV4kQpjGUTL9ZN0Sz",
+   "adresa": "Plac Małachowskiego 2, Warsaw, Poland",
+   "web": "https://expeditionsfund.com/"
+  },
+  {
+   "nazev": "Digital Ocean Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/IiaSPutV1vzYKlomd9PB",
+   "adresa": "Chmielna 73, 00-801 Warszawa, Poland",
+   "web": "https://www.openvc.app/fund/Digital%20Ocean%20Ventures%20Starter"
+  },
+  {
+   "nazev": "Balnord VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/jiANMxm4vomWb0v8U8QU",
+   "adresa": "Grunwaldzka 472, Gdańsk, Pomerania 80-309",
+   "web": "https://www.balnord.vc/"
+  },
+  {
+   "nazev": "AIP Seed VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/XySTnU1ez7WoL4cqC81f",
+   "adresa": "Plac Trzech Krzyży 10/14, 00-499 Warszawa",
+   "web": "https://www.aipseed.vc/"
+  },
+  {
+   "nazev": "4Growth VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/mePlpG59bDyznDLhBLsW",
+   "adresa": "Szara, 10, Warszawa, 00-420",
+   "web": "https://www.growthcurvecapital.com/"
+  },
+  {
+   "nazev": "Rubicon Partners",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/aDrJ8SsvqOupr9BG9KwP",
+   "adresa": "Wspólna 70, 00-687 Warszawa, Poland",
+   "web": "https://www.rubiconpartners.pl/en/vbf/"
+  },
+  {
+   "nazev": "Vinci S.A. (Venture Capital)",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/hNzZtSw9nmdzCWaZ2W9M",
+   "adresa": "Twarda 18, 00-105 Warszawa, Poland",
+   "web": "https://vincizasi.pl/"
+  },
+  {
+   "nazev": "betacluster Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/bPgU5KrLmuksQOjBGAhM",
+   "adresa": "Januszowicka 5, 53-135 Wrocław, Poland",
+   "web": "https://betacluster.vc/"
+  },
+  {
+   "nazev": "Stelo Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/IeZXDA6qTKMoJJkHeWRN",
+   "adresa": "Emilii Plater 10/54, 00-669 Warszawa, Poland",
+   "web": "https://www.stelo.vc/"
+  },
+  {
+   "nazev": "VO2 Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/lJdkfvHntzax3Q9gOBt6",
+   "adresa": "Smocza 27, 05-200 Warszawa, Poland",
+   "web": "https://www.linkedin.com/company/vo%E2%82%82-ventures/"
+  },
+  {
+   "nazev": "Tachles VC",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/W0TU7w2hvO1nPzZHuoi9",
+   "adresa": "",
+   "web": null
+  },
+  {
+   "nazev": "WP2 Investments",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Itv927vPq7GNsoAMcW3Y",
+   "adresa": "Irysowa 1, 55-040 Bielany Wrocławskie",
+   "web": "https://wp2.investments/"
+  },
+  {
+   "nazev": "Moonhill Capital",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/tfRVkNsbmRZ8Ykff68CS",
+   "adresa": "Korunní 2569/108, Vinohrady, 101 00 Praha",
+   "web": "https://www.moonhill.capital/"
+  },
+  {
+   "nazev": "Tensor Ventures",
+   "misto_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Ch4qCO2aGN0X2Xm1pk0s",
+   "adresa": "Pernerova 697/35, 186 00 Praha 8 – Karlín, Czechia",
+   "web": "https://tensor.ventures/"
+  }
+ ]
+}

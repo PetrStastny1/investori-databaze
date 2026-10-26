@@ -1,1 +1,58 @@
 id,nazev,web,zdroj_seznamu,zdroj_url,stazeno
+cz-arx-equity-partners,ARX Equity Partners,https://www.arxequity.com/,CVCA | CEE Funding Map,https://cvca.cz/en/arx-equity-partners-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/AWORXI30JFJgq7S5hbgE,2026-10-26
+cz-bd-partners,BD Partners,https://www.bdpartners.cz/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/WcBqZY2kt7stKMdOUxeQ | https://funding.tech.eu/api/v1/investors/BD%20Partners,2026-10-26
+cz-borovicka-capital,Borovicka Capital,https://borovickacapital.com/,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Borovicka%20Capital,2026-10-26
+cz-botanique-hospitality,Botanique Hospitality,,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Botanique%20Hospitality,2026-10-26
+cz-braiins,Braiins,https://braiins.com/,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Braiins,2026-10-26
+cz-central-europe-industry-partners,Central Europe Industry Partners,https://industrypartners.eu/en/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/qmBk3p75VodWVOWWA7kb,2026-10-26
+cz-chilli-ventures,Chilli Ventures,https://www.chilliventures.cz/,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Chilli%20Ventures,2026-10-26
+cz-credo-ventures,Credo Ventures,https://credoventures.com/,CVCA | CEE Funding Map | funding.tech.eu | Dealroom,https://cvca.cz/en/credo-ventures-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/d4bN3eJdFgxEitv7gXUH | https://funding.tech.eu/api/v1/investors/Credo%20Ventures | https://dealroom.co/investors/credo-ventures/,2026-10-26
+cz-cs-seed-starter,ČS Seed Starter,https://www.seedstarter.cz/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/29SJZk1ticzv7p8Ql7DN,2026-10-26
+cz-czech-founders-vc,Czech Founders VC,https://czechfounders.vc/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/MCzRGNYXyHBHQJ5RKHgm | https://funding.tech.eu/api/v1/investors/Czech%20Founders%20VC,2026-10-26
+cz-depo-ventures,Depo Ventures,https://depoventures.com/,CVCA | CEE Funding Map | funding.tech.eu,https://cvca.cz/en/depo-ventures-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/HRti9MCC0159RokMox1a | https://funding.tech.eu/api/v1/investors/DEPO%20Ventures,2026-10-26
+cz-emma-capital,EMMA Capital,https://www.emmacapital.cz/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/kQjLy3gBoCzYq2kFgTfu,2026-10-26
+cz-espira-investments,Espira Investments,https://www.espirainvestments.com/,CVCA,https://cvca.cz/en/espira-investments-2/,2026-10-26
+cz-everita-capital,EVERITA Capital,https://everitacap.com/,CVCA,https://cvca.cz/en/everita-capital-en/,2026-10-26
+cz-fazole-ventures,Fazole Ventures,https://www.fazole.vc/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Nh3Xuh6mgLjGKNG6vd4C,2026-10-26
+cz-fond-nase-cesko,Fond Naše Česko,https://www.nase-cesko.cz/,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Fond%20Na%C5%A1e%20%C4%8Cesko,2026-10-26
+cz-garage-angels,Garage Angels,,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Garage%20Angels,2026-10-26
+cz-genesis-capital,Genesis Capital,https://www.genesis.cz/,CVCA | CEE Funding Map,https://cvca.cz/en/genesis-capital-equity-s-r-o-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/OrNcUILfuRS48ZgHttUt,2026-10-26
+cz-gi21-capital,Gi21 Capital,https://gi21capital.com/,CEE Funding Map | funding.tech.eu | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/5f4b5iBLyLvLPgf1IoB0 | https://funding.tech.eu/api/v1/investors/Gi21%20Capital | https://funding.tech.eu/api/v1/investors/Gi21%20fund,2026-10-26
+cz-ii-biotech-investments,i&i Biotech Investments,https://www.inibio.eu/,CVCA,https://cvca.cz/en/biotech-investments/,2026-10-26
+cz-ii-prague,i&i Prague,https://www.iniprague.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/9jI2PslwP8ES7g6iYFjD,2026-10-26
+cz-inven-capital,Inven Capital,https://www.invencapital.cz/,CVCA | CEE Funding Map,https://cvca.cz/en/inven-capital-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/262RcoJ5EKOhm9YQedXI,2026-10-26
+cz-jet-investment,Jet Investment,https://jetinvestment.eu/,CVCA | CEE Funding Map | funding.tech.eu | funding.tech.eu,https://cvca.cz/en/jet-investment-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/4mdEwwgSXHmm6lyjEMm1 | https://funding.tech.eu/api/v1/investors/Jet%20Investment | https://funding.tech.eu/api/v1/investors/Jet%20Investment%20Group,2026-10-26
+cz-jic-ventures,JIC Ventures,https://www.jic.cz/en/potreby-a-sluzby/jic-ventures,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/umoh7jUC2KVetFlP7kNR | https://funding.tech.eu/api/v1/investors/JIC%20Ventures,2026-10-26
+cz-jt-ventures,J&T Ventures,https://www.jtventures.cz/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/KJCto7L3rVLTkH0WA7dJ | https://funding.tech.eu/api/v1/investors/J%26T%20Ventures,2026-10-26
+cz-kaya-vc,KAYA VC,https://www.kaya.vc/,CVCA | CEE Funding Map | funding.tech.eu | funding.tech.eu,https://cvca.cz/en/kaya-vc-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/V2pdy4zXWVVrglhsZx8r | https://funding.tech.eu/api/v1/investors/KAYA | https://funding.tech.eu/api/v1/investors/KAYA%20VC,2026-10-26
+cz-kkcg,KKCG,https://kkcg.com/en/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Axe3C99oHgoaCDTyvFZn,2026-10-26
+cz-lighthouse-ventures,Lighthouse Ventures,https://lhv.vc/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/9lQVNm5Mmn3KmVZyBFYc | https://funding.tech.eu/api/v1/investors/Lighthouse%20Ventures,2026-10-26
+cz-lion-beat-capital,Lion Beat Capital,https://lionbeatcapital.com/,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Lion%20Beat%20Capital,2026-10-26
+cz-look-ai-ventures,Look AI Ventures,https://lookai.vc/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/YjQKXpdCxNss3cydZej4,2026-10-26
+cz-lumus-investments,LUMUS Investments,https://www.lumusinvestment.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/a75GNQZxfdn0NsvnPCzd,2026-10-26
+cz-mam-private-equity-fund,MAM Private Equity Fund SICAV a.s.,https://www.mam-equity.cz/,CVCA,https://cvca.cz/en/mam-private-equity-fund-sicav-a-s/,2026-10-26
+cz-mcwin-partners,McWin Partners,https://mcwin.cz/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/B8yUuzqU6JHjIJ4YxECw,2026-10-26
+cz-miton,Miton,https://www.miton.cz/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/5tKiBDnxxko5Y6ZiECAa | https://funding.tech.eu/api/v1/investors/Miton,2026-10-26
+cz-moonhill-capital,Moonhill Capital,https://www.moonhill.capital/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/tfRVkNsbmRZ8Ykff68CS,2026-10-26
+cz-n1-ventures,N1 Ventures,https://n1.rocks/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/ZQbQ265KRKkgtWLOEekG,2026-10-26
+cz-nation1,Nation1,https://www.nation1.vc/,CVCA,https://cvca.cz/en/nation1-2/,2026-10-26
+cz-orbit-capital,Orbit Capital,https://orbitcapital.com/,CVCA | CEE Funding Map | CEE Funding Map | funding.tech.eu,https://cvca.cz/en/orbit-capital-2/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/4lmGALtvW0C0gH1zYQNK | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/nbbxE236ID8YWFt841Nx | https://funding.tech.eu/api/v1/investors/Orbit%20Capital,2026-10-26
+cz-presto-ventures,Presto Ventures,https://www.prestoventures.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/dx3fFrwoTyYfwYkPe08v,2026-10-26
+cz-purple-ventures,Purple Ventures,https://www.purple-ventures.com/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/jA5ArvQPYFiApClP2OoG | https://funding.tech.eu/api/v1/investors/Purple%20Ventures,2026-10-26
+cz-purposetech,PurposeTech,https://www.purposetech.vc/,CEE Funding Map | CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/X1Lkh1tzv1N25v8K9csk | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/6A6wH4wuLV9B5QHA91ni,2026-10-26
+cz-qq-capital,QQ Capital,,funding.tech.eu,https://funding.tech.eu/api/v1/investors/QQ%20Capital,2026-10-26
+cz-reflex-capital,Reflex Capital,https://www.reflexcapital.com/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/PIEA89nrf0p57FkdnZ3r | https://funding.tech.eu/api/v1/investors/Reflex%20Capital,2026-10-26
+cz-rockaway-ventures,Rockaway Ventures,https://rockawayventures.com/,CEE Funding Map | funding.tech.eu,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/pPNQr3O8E3pBz5SO9cl6 | https://funding.tech.eu/api/v1/investors/Rockaway%20Ventures,2026-10-26
+cz-rockawayx,RockawayX,https://rockawayx.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/NepSgoCNjnlG1wEbjXy4,2026-10-26
+cz-skylimit-investments,SkyLimit Investments,https://www.skylimit.cz/,CVCA,https://cvca.cz/en/skylimit-investments-2/,2026-10-26
+cz-soulmates-ventures,Soulmates Ventures,https://www.soulmatesventures.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/wsTj2euVTrX5iNkj9wBY,2026-10-26
+cz-startupyard,StartupYard,https://startupyard.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/MttslPmCAs4slu93t7LQ,2026-10-26
+cz-stratum-partners,Stratum Partners,https://www.stratum.eu/,CVCA,https://cvca.cz/en/stratum-partners-en/,2026-10-26
+cz-tarpan-capital,Tarpan Capital,,funding.tech.eu,https://funding.tech.eu/api/v1/investors/Tarpan%20Capital,2026-10-26
+cz-tcf-capital,TCF Capital,https://www.tcfcap.com/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/hN8pgFreAEt9N6REhPR6,2026-10-26
+cz-tensor-ventures,Tensor Ventures,https://tensor.ventures/,CVCA | CEE Funding Map | funding.tech.eu,https://cvca.cz/en/tensor-ventures/ | https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Ch4qCO2aGN0X2Xm1pk0s | https://funding.tech.eu/api/v1/investors/Tensor%20Ventures,2026-10-26
+cz-thein,Thein,https://www.thein.eu/,CVCA,https://cvca.cz/en/thein-2/,2026-10-26
+cz-tilia-impact-ventures,Tilia Impact Ventures,https://tilia.vc/,CVCA | funding.tech.eu,https://cvca.cz/en/tilia-impact-ventures-honorary-member/ | https://funding.tech.eu/api/v1/investors/Tilia%20Impact%20Ventures,2026-10-26
+cz-versute-investments,Versute Investments,https://www.versute.cz/,CVCA,https://cvca.cz/en/versute-investments-2/,2026-10-26
+cz-y-soft-ventures,Y Soft Ventures,https://www.ysoft.com/ventures,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Vdu7GCwHNYI6nFJKVV23,2026-10-26
+cz-zaka-vc,ZAKA VC,https://zaka.vc/,CEE Funding Map,https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/Q0EGuZ1QZAXc7mrVs5wW,2026-10-26

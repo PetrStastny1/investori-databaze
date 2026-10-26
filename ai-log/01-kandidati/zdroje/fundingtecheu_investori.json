@@ -1,0 +1,1338 @@
+{
+ "42Cap": {
+  "status": 200,
+  "name": "42CAP",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "42 Cap",
+   "42cap",
+   "42Cap",
+   "42CAP"
+  ],
+  "deals": 55
+ },
+ "Alea Capital Partners": {
+  "status": 200,
+  "name": "Alea Capital Partners",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Alea Capital Partners"
+  ],
+  "deals": 5
+ },
+ "Aleš Minx": {
+  "status": 200,
+  "name": "Aleš Minx",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Aleš Minx"
+  ],
+  "deals": 1
+ },
+ "Angelinvest": {
+  "status": 200,
+  "name": "Angelinvest",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Angelinvest",
+   "AngelInvest Ventures"
+  ],
+  "deals": 5
+ },
+ "BADideas.fund": {
+  "status": 200,
+  "name": "BADideas.fund",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Bad Ideas Fund",
+   "Bad Ideas.fund",
+   "BADideas Fund",
+   "BADideas.fund"
+  ],
+  "deals": 21
+ },
+ "BD Partners": {
+  "status": 200,
+  "name": "BD Partners",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "BD Partners"
+  ],
+  "deals": 4
+ },
+ "Baker McKenzie": {
+  "status": 200,
+  "name": "Baker McKenzie",
+  "types": [
+   "Private equity"
+  ],
+  "aliases": [
+   "Baker McKenzie"
+  ],
+  "deals": 1
+ },
+ "Balderton Capital": {
+  "status": 200,
+  "name": "Balderton Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Balderton Capital"
+  ],
+  "deals": 299
+ },
+ "Berkeley SkyDeck Fund": {
+  "status": 200,
+  "name": "Berkeley Skydeck",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Berkeley Skydeck",
+   "Berkeley SkyDeck Fund"
+  ],
+  "deals": 6
+ },
+ "Borovicka Capital": {
+  "status": 200,
+  "name": "Borovicka Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Borovicka Capital"
+  ],
+  "deals": 2
+ },
+ "Botanique Hospitality": {
+  "status": 200,
+  "name": "Botanique Hospitality Management Group",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Botanique Hospitality",
+   "Botanique Hospitality Management Group"
+  ],
+  "deals": 2
+ },
+ "Braiins": {
+  "status": 200,
+  "name": "Braiins",
+  "types": [
+   "Corporate"
+  ],
+  "aliases": [
+   "Braiins"
+  ],
+  "deals": 1
+ },
+ "BrightCap Ventures": {
+  "status": 200,
+  "name": "BrightCap Ventures",
+  "types": [],
+  "aliases": [
+   "BrightCap Ventures"
+  ],
+  "deals": 7
+ },
+ "Category Ventures": {
+  "status": 200,
+  "name": "Category Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Category Ventures"
+  ],
+  "deals": 2
+ },
+ "Chilli Ventures": {
+  "status": 200,
+  "name": "Chilli Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Chilli Ventures"
+  ],
+  "deals": 1
+ },
+ "Creandum": {
+  "status": 200,
+  "name": "Creandum",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Creandum"
+  ],
+  "deals": 216
+ },
+ "Credo Ventures": {
+  "status": 200,
+  "name": "Credo Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Credo Capital",
+   "Credo Ventures"
+  ],
+  "deals": 61
+ },
+ "Czech Founders VC": {
+  "status": 200,
+  "name": "Czech Founders VC",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Czech Founders VC"
+  ],
+  "deals": 10
+ },
+ "DEPO Ventures": {
+  "status": 200,
+  "name": "DEPO Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "DEPO Ventures"
+  ],
+  "deals": 21
+ },
+ "DTCP": {
+  "status": 200,
+  "name": "DTCP",
+  "types": [],
+  "aliases": [
+   "DTCP"
+  ],
+  "deals": 11
+ },
+ "David Singleton": {
+  "status": 200,
+  "name": "David Singleton",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "David Singleton"
+  ],
+  "deals": 3
+ },
+ "Day One Capital": {
+  "status": 200,
+  "name": "Day One Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Day One Capital",
+   "Day One Ventures",
+   "DayOne Capital"
+  ],
+  "deals": 37
+ },
+ "Decibel": {
+  "status": 200,
+  "name": "Decibel",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Decibel",
+   "Decibel VC"
+  ],
+  "deals": 8
+ },
+ "Dreamcraft Ventures": {
+  "status": 200,
+  "name": "Dreamcraft Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Dreamcraft VC",
+   "Dreamcraft Ventures"
+  ],
+  "deals": 18
+ },
+ "Dronamics": {
+  "status": 200,
+  "name": "Dronamics",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Dronamics"
+  ],
+  "deals": 1
+ },
+ "EQT Ventures": {
+  "status": 200,
+  "name": "EQT Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "EQT",
+   "EQT Ventures"
+  ],
+  "deals": 177
+ },
+ "EU grants": {
+  "status": 200,
+  "name": "EU grants",
+  "types": [
+   "Government / public"
+  ],
+  "aliases": [
+   "EU grants"
+  ],
+  "deals": 2
+ },
+ "Earlybird": {
+  "status": 200,
+  "name": "Earlybird Venture Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Early Bird",
+   "Earlybird",
+   "EarlyBird",
+   "Earlybird VC",
+   "Earlybird Venture Capital",
+   "EarlyBird Venture Capital"
+  ],
+  "deals": 211
+ },
+ "Elevator Ventures": {
+  "status": 200,
+  "name": "Elevator Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Elevator",
+   "Elevator Fund",
+   "Elevator Ventures"
+  ],
+  "deals": 25
+ },
+ "Eleven Ventures": {
+  "status": 200,
+  "name": "Eleven Ventures",
+  "types": [
+   "Corporate",
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Eleven",
+   "Eleven Capital",
+   "Eleven Ventures",
+   "Eleven Ventures investment fund"
+  ],
+  "deals": 39
+ },
+ "Experian": {
+  "status": 200,
+  "name": "Experian",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Experian",
+   "Experian Ventures"
+  ],
+  "deals": 5
+ },
+ "FORWARD.one": {
+  "status": 200,
+  "name": "FORWARD.one",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Forward One",
+   "FORWARD.one"
+  ],
+  "deals": 40
+ },
+ "Fasanara Capital": {
+  "status": 200,
+  "name": "Fasanara Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Fasanara Capital",
+   "Fasanara Ventures"
+  ],
+  "deals": 39
+ },
+ "Fond Naše Česko": {
+  "status": 200,
+  "name": "Fond Naše Česko",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Fond Naše Česko"
+  ],
+  "deals": 1
+ },
+ "Fredrik Bjork": {
+  "status": 200,
+  "name": "Fredrik Björk",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Fredrik Bjork",
+   "Fredrik Björk"
+  ],
+  "deals": 4
+ },
+ "GV": {
+  "status": 200,
+  "name": "GV",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "GV"
+  ],
+  "deals": 45
+ },
+ "Garage Angels": {
+  "status": 200,
+  "name": "Garage Angels",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Garage Angels"
+  ],
+  "deals": 4
+ },
+ "Gi21 Capital": {
+  "status": 200,
+  "name": "Gi21 fund",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Gi21 Capital",
+   "Gi21 fund"
+  ],
+  "deals": 7
+ },
+ "Gi21 fund": {
+  "status": 200,
+  "name": "Gi21 fund",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Gi21 Capital",
+   "Gi21 fund"
+  ],
+  "deals": 7
+ },
+ "Guillaume Despagne": {
+  "status": 200,
+  "name": "Guillaume Despagne",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Guillaume Despagne"
+  ],
+  "deals": 1
+ },
+ "Index Ventures": {
+  "status": 200,
+  "name": "Index Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Index Ventures"
+  ],
+  "deals": 407
+ },
+ "Inovo VC": {
+  "status": 200,
+  "name": "Inovo VC",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Inovo",
+   "Inovo VC",
+   "Inovo Venture Partners",
+   "Inovo.vc"
+  ],
+  "deals": 50
+ },
+ "Insight Partners": {
+  "status": 200,
+  "name": "Insight Partners",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Insight Investment",
+   "Insight Partners",
+   "Insight Venture",
+   "Insight Venture Partners",
+   "Insight Venture Partners.",
+   "Insight Ventures Partners"
+  ],
+  "deals": 235
+ },
+ "Irregular Expressions": {
+  "status": 200,
+  "name": "Irregular Expressions",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Irregular Expressions"
+  ],
+  "deals": 5
+ },
+ "J&T Ventures": {
+  "status": 200,
+  "name": "J&T Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "J&T Capital",
+   "J&T Ventures",
+   "J&T VENTURES"
+  ],
+  "deals": 22
+ },
+ "JIC Ventures": {
+  "status": 200,
+  "name": "JIC Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "JIC Ventures"
+  ],
+  "deals": 3
+ },
+ "Jakub Mahdal": {
+  "status": 200,
+  "name": "Jakub Mahdal",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Jakub Mahdal"
+  ],
+  "deals": 1
+ },
+ "Jan Široký": {
+  "status": 200,
+  "name": "Jan Široký",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Jan Široký"
+  ],
+  "deals": 1
+ },
+ "Jet Investment": {
+  "status": 200,
+  "name": "Jet Investment",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Jet Investment",
+   "Jet Investment Group",
+   "Jet Ventures"
+  ],
+  "deals": 6
+ },
+ "Jet Investment Group": {
+  "status": 200,
+  "name": "Jet Investment",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Jet Investment",
+   "Jet Investment Group",
+   "Jet Ventures"
+  ],
+  "deals": 6
+ },
+ "Jozef Kepesi": {
+  "status": 200,
+  "name": "Jozef Kepesi",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Jozef Kepesi"
+  ],
+  "deals": 1
+ },
+ "KAYA": {
+  "status": 200,
+  "name": "KAYA VC",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "KAYA",
+   "KAYA VC",
+   "Kaya Ventures"
+  ],
+  "deals": 24
+ },
+ "KAYA VC": {
+  "status": 200,
+  "name": "KAYA VC",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "KAYA",
+   "KAYA VC",
+   "Kaya Ventures"
+  ],
+  "deals": 24
+ },
+ "Kieran Flanagan": {
+  "status": 200,
+  "name": "Kieran Flanagan",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Kieran Flanagan"
+  ],
+  "deals": 4
+ },
+ "Kryptos": {
+  "status": 200,
+  "name": "Kryptos",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Kryptos"
+  ],
+  "deals": 1
+ },
+ "Lighthouse Ventures": {
+  "status": 200,
+  "name": "Lighthouse Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Lighthouse Investment Group",
+   "Lighthouse Ventures"
+  ],
+  "deals": 23
+ },
+ "Lion Beat Capital": {
+  "status": 200,
+  "name": "Lion Beat Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Lion Beat Capital"
+  ],
+  "deals": 1
+ },
+ "Long Journey Ventures": {
+  "status": 200,
+  "name": "Long Journey Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Long Journey Ventures"
+  ],
+  "deals": 7
+ },
+ "Lumiere AI Ventures": {
+  "status": 200,
+  "name": "Lumière AI Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Lumiere AI Ventures",
+   "Lumière AI Ventures"
+  ],
+  "deals": 2
+ },
+ "M13": {
+  "status": 200,
+  "name": "M13",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "M13"
+  ],
+  "deals": 3
+ },
+ "Marc Norlain": {
+  "status": 200,
+  "name": "Marc Norlain",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Marc Norlain"
+  ],
+  "deals": 1
+ },
+ "Michael Poplar-Rostock": {
+  "status": 200,
+  "name": "Michael Poplar-Rostock",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Michael Poplar-Rostock"
+  ],
+  "deals": 1
+ },
+ "Michael Rostock-Poplar": {
+  "status": 200,
+  "name": "Michael Rostock-Poplar",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Michael Rostock-Poplar"
+  ],
+  "deals": 1
+ },
+ "Michal Vasko": {
+  "status": 200,
+  "name": "Michal Vasko",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Michal Vasko"
+  ],
+  "deals": 1
+ },
+ "Miloslav Vyhnal": {
+  "status": 200,
+  "name": "Miloslav Vyhnal",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Miloslav Vyhnal"
+  ],
+  "deals": 1
+ },
+ "Miton": {
+  "status": 200,
+  "name": "Miton",
+  "types": [
+   "Corporate"
+  ],
+  "aliases": [
+   "Miton"
+  ],
+  "deals": 8
+ },
+ "NitroPack": {
+  "status": 200,
+  "name": "NitroPack",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "NitroPack"
+  ],
+  "deals": 1
+ },
+ "Northzone": {
+  "status": 200,
+  "name": "Northzone",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Northzone"
+  ],
+  "deals": 197
+ },
+ "Notion Capital": {
+  "status": 200,
+  "name": "Notion Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Notion",
+   "Notion Capital",
+   "Notion Ventures"
+  ],
+  "deals": 179
+ },
+ "Octopus Ventures": {
+  "status": 200,
+  "name": "Octopus Ventures",
+  "types": [
+   "Corporate",
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Octopus",
+   "Octopus Group",
+   "Octopus Investment",
+   "Octopus Investments",
+   "Octopus Ventures"
+  ],
+  "deals": 323
+ },
+ "Ondrej Smolar": {
+  "status": 200,
+  "name": "Ondrej Smolar",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Ondrej Smolar"
+  ],
+  "deals": 1
+ },
+ "Ondřej Tomek": {
+  "status": 200,
+  "name": "Ondřej Tomek",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Ondřej Tomek"
+  ],
+  "deals": 1
+ },
+ "Orbit Capital": {
+  "status": 200,
+  "name": "Orbit Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Orbit Capital",
+   "Orbit Ventures"
+  ],
+  "deals": 9
+ },
+ "Ory Weihs": {
+  "status": 200,
+  "name": "Ory Weihs",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Ory Weihs"
+  ],
+  "deals": 2
+ },
+ "Parable VC": {
+  "status": 200,
+  "name": "Parable VC",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Parable VC"
+  ],
+  "deals": 1
+ },
+ "Partech": {
+  "status": 200,
+  "name": "Partech Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Partech",
+   "Partech Partners",
+   "Partech Ventures"
+  ],
+  "deals": 253
+ },
+ "Passion Capital": {
+  "status": 200,
+  "name": "Passion Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Passion Capital"
+  ],
+  "deals": 121
+ },
+ "Payhawk": {
+  "status": 200,
+  "name": "Payhawk",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Payhawk"
+  ],
+  "deals": 1
+ },
+ "Petr Zámečník": {
+  "status": 200,
+  "name": "Petr Zámečník",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Petr Zámečník"
+  ],
+  "deals": 1
+ },
+ "Purple Ventures": {
+  "status": 200,
+  "name": "Purple Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Purple",
+   "Purple Ventures"
+  ],
+  "deals": 30
+ },
+ "Puzzle Ventures": {
+  "status": 200,
+  "name": "Puzzle Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Puzzle Ventures"
+  ],
+  "deals": 8
+ },
+ "QQ Capital": {
+  "status": 200,
+  "name": "QQ Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "QQ Capital"
+  ],
+  "deals": 1
+ },
+ "Reflex Capital": {
+  "status": 200,
+  "name": "Reflex Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Reflex Capital",
+   "Reflex Capital."
+  ],
+  "deals": 18
+ },
+ "Riverside Acceleration Capital (RAC)": {
+  "status": 200,
+  "name": "Riverside Acceleration Capital (RAC)",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Riverside Acceleration Capital (RAC)"
+  ],
+  "deals": 6
+ },
+ "Rockaway Ventures": {
+  "status": 200,
+  "name": "Rockaway Ventures",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Rockaway Capital",
+   "Rockaway Ventures"
+  ],
+  "deals": 16
+ },
+ "Round2 Capital": {
+  "status": 200,
+  "name": "Round2 Capital",
+  "types": [],
+  "aliases": [
+   "Round2 Capital",
+   "Round2 Capital Partners"
+  ],
+  "deals": 19
+ },
+ "Roy Reznik": {
+  "status": 200,
+  "name": "Roy Reznik",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Roy Reznik"
+  ],
+  "deals": 1
+ },
+ "SCI Ventures": {
+  "status": 200,
+  "name": "SCI Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "SCI Ventures"
+  ],
+  "deals": 1
+ },
+ "SeedTwo Capital": {
+  "status": 200,
+  "name": "SeedTwo Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "SeedTwo Capital"
+  ],
+  "deals": 1
+ },
+ "Seventure Partners": {
+  "status": 200,
+  "name": "Seventure Partners",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Seventure",
+   "Seventure Partners"
+  ],
+  "deals": 116
+ },
+ "Simpact Ventures": {
+  "status": 200,
+  "name": "Simpact Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Simpact fund",
+   "Simpact VC",
+   "Simpact Ventures"
+  ],
+  "deals": 10
+ },
+ "Smartlink": {
+  "status": 200,
+  "name": "Smartlink Partners",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Smartlink",
+   "Smartlink Partners"
+  ],
+  "deals": 8
+ },
+ "Smartlink Partners": {
+  "status": 200,
+  "name": "Smartlink Partners",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Smartlink",
+   "Smartlink Partners"
+  ],
+  "deals": 8
+ },
+ "Sparking Capital": {
+  "status": 200,
+  "name": "Sparking Capital",
+  "types": [],
+  "aliases": [
+   "Sparking Capital"
+  ],
+  "deals": 7
+ },
+ "Sunflower Capital": {
+  "status": 200,
+  "name": "Sunflower Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Sunflower Capital"
+  ],
+  "deals": 2
+ },
+ "Tachles VC": {
+  "status": 200,
+  "name": "Tachles VC",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Tachles VC"
+  ],
+  "deals": 1
+ },
+ "Tagrose": {
+  "status": 200,
+  "name": "Tagrose",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Tagrose"
+  ],
+  "deals": 1
+ },
+ "Taiwania Capital": {
+  "status": 200,
+  "name": "Taiwania Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Taiwania Capital"
+  ],
+  "deals": 14
+ },
+ "Tarpan Capital": {
+  "status": 200,
+  "name": "Tarpan Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Tarpan Capital"
+  ],
+  "deals": 1
+ },
+ "Tensor Ventures": {
+  "status": 200,
+  "name": "Tensor Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Tensor Ventures"
+  ],
+  "deals": 20
+ },
+ "Tilia Impact Ventures": {
+  "status": 200,
+  "name": "Tilia Impact Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Tilia Impact Ventures"
+  ],
+  "deals": 12
+ },
+ "Torch Capital": {
+  "status": 200,
+  "name": "Torch Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Torch Capital",
+   "Torch Partners"
+  ],
+  "deals": 5
+ },
+ "TripleB": {
+  "status": 200,
+  "name": "TripleB",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Triple B",
+   "TripleB"
+  ],
+  "deals": 3
+ },
+ "Unbound": {
+  "status": 200,
+  "name": "Unbound",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Unbound"
+  ],
+  "deals": 10
+ },
+ "University2Ventures": {
+  "status": 200,
+  "name": "University2Ventures",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "University2Ventures"
+  ],
+  "deals": 1
+ },
+ "VCs": {
+  "status": 200,
+  "name": "VCs",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "VCs"
+  ],
+  "deals": 2
+ },
+ "Venture to Future Fund": {
+  "status": 200,
+  "name": "Venture to Future Fund",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "Venture to Future Fund"
+  ],
+  "deals": 15
+ },
+ "Vladislav Fedoš": {
+  "status": 200,
+  "name": "Vladislav Fedoš",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "Vladislav Fedoš"
+  ],
+  "deals": 1
+ },
+ "Wing VC": {
+  "status": 200,
+  "name": "Wing Venture Capital",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "WING Fund",
+   "Wing Invest",
+   "Wing VC",
+   "Wing Venture Capital"
+  ],
+  "deals": 10
+ },
+ "XYZ Venture Capital": {
+  "status": 200,
+  "name": "XYZ Venture Capital",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "XYZ Venture Capital"
+  ],
+  "deals": 3
+ },
+ "Y Combinator": {
+  "status": 200,
+  "name": "Y Combinator",
+  "types": [
+   "Investment firm",
+   "Venture capital"
+  ],
+  "aliases": [
+   "Y Combinator",
+   "Y-Combinator",
+   "YCombinator"
+  ],
+  "deals": 196
+ },
+ "company’s founders": {
+  "status": 200,
+  "name": "the company’s founders",
+  "types": [
+   "Angel"
+  ],
+  "aliases": [
+   "company’s founders",
+   "the company’s founders"
+  ],
+  "deals": 2
+ },
+ "existing shareholders": {
+  "status": 200,
+  "name": "Existing Shareholders",
+  "types": [
+   "Venture capital"
+  ],
+  "aliases": [
+   "existing shareholders",
+   "Existing Shareholders"
+  ],
+  "deals": 73
+ }
+}

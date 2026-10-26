@@ -1,0 +1,623 @@
+[
+ {
+  "name": "42Cap",
+  "website": "https://www.42cap.com",
+  "hq_country": "DE",
+  "evidence_url": "https://www.42cap.com/legal-notice",
+  "evidence_quote": "42CAP Manager GmbH ... Seitzstr. 14, 80538 Munich, Germany",
+  "note": "Seed-stage B2B software VC; /imprint 404, Legal Notice gives address. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "BADideas.fund",
+  "website": "https://badideas.fund",
+  "hq_country": "LV",
+  "evidence_url": "https://badideas.fund/privacy-policy",
+  "evidence_quote": "BAD COMPANY AIFP SIA ... 40203612692 ... Rīga, Lastādijas iela 12 k-3, LV-1050",
+  "note": "Privacy policy names data controller/management company as Latvian SIA. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Berkeley SkyDeck Fund",
+  "website": "https://skydeck.vc",
+  "hq_country": "US",
+  "evidence_url": "https://skydeck.berkeley.edu",
+  "evidence_quote": "Berkeley SkyDeck University of California, Berkeley 2150 Shattuck Avenue, Penthouse Berkeley, CA 94704",
+  "note": "Address from SkyDeck accelerator site footer; fund site shows no address.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Braiins",
+  "website": "https://braiins.com",
+  "hq_country": "CZ",
+  "evidence_url": "https://braiins.com/legal/privacy-policy",
+  "evidence_quote": "Braiins Systems s.r.o. ... Id. No. 241 47 931 ... Křižíkova 148/34, Karlín, Prague 8, Czech Republic",
+  "note": "NOT a VC: operating company (bitcoin mining software/hardware/pool); likely strategic/corporate investment (Firefish listed as affiliate).",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=24147931",
+  "rejstrik_citace": "Braiins Systems s.r.o. IČO: 241 47 931 ... Sídlo: Křižíkova 148/34, Karlín, 186 00 Praha 8",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Chilli Ventures",
+  "website": "https://www.chilliventures.cz",
+  "hq_country": "CZ",
+  "evidence_url": "https://www.chilliventures.cz",
+  "evidence_quote": "Chilli Ventures a.s. ... Arnošta z Pardubic 2789 530 02 Pardubice",
+  "note": "Czech investor investing own capital (startups, VC/PE funds as LP). IČO not shown on site.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=Chilli+Ventures",
+  "rejstrik_citace": "Chilli Ventures a.s. IČO: 041 06 059 ... Sídlo: Arnošta z Pardubic 2789, Zelené Předměstí, 530 02 Pardubice",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Day One Capital",
+  "website": "https://dayonecapital.com",
+  "hq_country": "HU",
+  "evidence_url": "https://dayonecapital.com",
+  "evidence_quote": "Hungary 1012 Budapest ... Márvány u. 18. V. em.",
+  "note": "Single office Budapest. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Dronamics",
+  "website": "https://www.dronamics.com",
+  "hq_country": "GB",
+  "evidence_url": "https://find-and-update.company-information.service.gov.uk/company/11673152",
+  "evidence_quote": "DRONAMICS GLOBAL LIMITED ... 20 Eastbourne Terrace, London, England, W2 6LG ... Active",
+  "note": "NOT a VC: cargo drone airline operating company.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Elevator Ventures",
+  "website": "https://www.elevator-ventures.com",
+  "hq_country": "AT",
+  "evidence_url": "https://www.elevator-ventures.com/imprint",
+  "evidence_quote": "Elevator Ventures Beteiligungs GmbH ... Mooslackengasse 12 ... 1190 Wien ... AUSTRIA",
+  "note": "Corporate VC of Raiffeisen Bank International. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "FORWARD.one",
+  "website": "https://www.forward.one",
+  "hq_country": "NL",
+  "evidence_url": "https://www.forward.one",
+  "evidence_quote": "Dorpsstraat 28, 1182 JD Amstelveen, the Netherlands",
+  "note": "Address in footer. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "GV",
+  "website": "https://www.gv.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.gv.com/about",
+  "evidence_quote": "Headquarters: San Francisco Bay Area",
+  "note": "No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Insight Partners",
+  "website": "https://www.insightpartners.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.insightpartners.com/contact/",
+  "evidence_quote": "Headquarters 1114 Avenue of the Americas, 36th Floor New York 10036",
+  "note": "No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Lion Beat Capital",
+  "website": "https://lionbeatcapital.com",
+  "hq_country": "CZ",
+  "evidence_url": "https://lionbeatcapital.com",
+  "evidence_quote": "Lion Beat Capital, s.r.o. ... Company ID: 29794668 ... Registered office: Generála Píky 430/26, 160 00 Prague – Dejvice, Czech Republic",
+  "note": "Registered office in Prague per own website; justice.cz not fetched.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=29794668",
+  "rejstrik_citace": "Lion Beat Capital Group, a.s. IČO: 297 94 668 ... Sídlo: Generála Píky 430/26, Dejvice, 160 00 Praha 6",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "M13",
+  "website": "https://m13.co",
+  "hq_country": "US",
+  "evidence_url": "https://m13.co",
+  "evidence_quote": "NY: 419 Lafayette Street, 6th floor / New York, NY 10003",
+  "note": "Offices NY, SF, LA; all US. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Notion Capital",
+  "website": "https://www.notioncapital.com",
+  "hq_country": "GB",
+  "evidence_url": "https://www.notioncapital.com/",
+  "evidence_quote": "91 Wimpole Street, London, W1G 0EF ... Notion Capital Managers LLP (OC364955)",
+  "note": "No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Partech",
+  "website": "https://partechpartners.com",
+  "hq_country": "FR",
+  "evidence_url": "https://partechpartners.com/legal",
+  "evidence_quote": "PARTECH PARTNERS ... 7-11 Boulevard Haussmann, 75009, PARIS",
+  "note": "No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Puzzle Ventures",
+  "website": null,
+  "hq_country": null,
+  "evidence_url": null,
+  "evidence_quote": null,
+  "note": "Unverified: official sites unreachable (puzzle.vc 404/expired cert, puzzleventures.com SSL error), Sifted/PitchBook 403. Search results suggest Berlin, unconfirmed.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Round2 Capital",
+  "website": "https://round2cap.com",
+  "hq_country": "AT",
+  "evidence_url": "https://round2cap.com/data-policies/",
+  "evidence_quote": "Round2 Capital GmbH ... Tuchlauben 3-5/OG 5/Top 6, 1010 Vienna, Austria",
+  "note": "Offices Berlin and Vienna; registered entity Austrian. Revenue-based financing. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Seventure Partners",
+  "website": "https://www.seventure.fr",
+  "hq_country": "FR",
+  "evidence_url": "https://www.seventure.fr/en/contact/",
+  "evidence_quote": "5-7 rue de Monttessuy 75340 Paris cedex 07",
+  "note": "No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Tagrose",
+  "website": "https://tagrose.com",
+  "hq_country": "CY",
+  "evidence_url": "https://tagrose.com",
+  "evidence_quote": "Tagrose Limited Anna Court Demostheni Severi Avenue 1080 Nicosia, Cyprus",
+  "note": "Holding/investment company. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Torch Capital",
+  "website": "https://torchcapital.vc",
+  "hq_country": "US",
+  "evidence_url": "https://pulse2.com/torch-capital-closes-over-200-million-in-new-capital/",
+  "evidence_quote": "Torch Capital – a New York-based early-stage VC fund",
+  "note": "Own site has no address; news article used.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "University2Ventures",
+  "website": "https://u2v.vc",
+  "hq_country": null,
+  "evidence_url": "https://www.startbase.de/news/u2v-startet-60-millionen-euro-fonds-fuer-deep-tech-spin-offs-europaeischer-hochschulen/",
+  "evidence_quote": "U2V ist ein 2025 gegründeter europäischer Frühphaseninvestor mit Standorten in Berlin, Aachen und London.",
+  "note": "Offices DE and GB, no HQ named; seat unconfirmed. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "XYZ Venture Capital",
+  "website": "https://www.xyz.vc",
+  "hq_country": "US",
+  "evidence_url": "https://news.crunchbase.com/venture/xyz-venture-capital-unveils-80m-second-fund/",
+  "evidence_quote": "San Francisco-based XYZ Venture Capital",
+  "note": "Own site has no address. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Alea Capital Partners",
+  "website": "https://www.aleacp.com",
+  "hq_country": "PT",
+  "evidence_url": "https://www.aleacp.com",
+  "evidence_quote": "Campo Grande 28 Office 3B / 1700-093 Lisbon, Portugal",
+  "note": "Offices Lisbon and Porto. No Czech office listed.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Baker McKenzie",
+  "website": "https://www.bakermckenzie.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.bakermckenzie.com/en/locations/north-america/united-states",
+  "evidence_quote": "300 East Randolph Street, Suite 5000 Chicago, Illinois 60601 United States",
+  "note": "Law firm, not an investor; global HQ not stated on fetched page (Chicago inferred from search results). Has Prague office (Klimentská 46).",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Borovicka Capital",
+  "website": "https://borovickacapital.com",
+  "hq_country": "CZ",
+  "evidence_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=Borovicka+Capital",
+  "evidence_quote": "Borovicka Capital s.r.o. IČO: 19966784 Sídlo: Breitfeldova 709/17, Karlín, 186 00 Praha 8",
+  "note": "Seat from Czech commercial register; own site gives no address.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=19966784",
+  "rejstrik_citace": "Borovicka Capital s.r.o. IČO: 199 66 784 ... Sídlo: Breitfeldova 709/17, Karlín, 186 00 Praha 8",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "BrightCap Ventures",
+  "website": "https://brightcap.vc",
+  "hq_country": "BG",
+  "evidence_url": "https://en.ain.ua/2024/07/09/bulgarian-brightcap-ventures-completes-a-first-close-of-e60m-fund-targeting-see-startups",
+  "evidence_quote": "Launched in 2018, BrightCap Ventures is an early-stage and accelerator VC fund based in Sofia.",
+  "note": "Own site has no address. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Creandum",
+  "website": "https://www.creandum.com",
+  "hq_country": null,
+  "evidence_url": "https://www.creandum.com/contact",
+  "evidence_quote": "Creandum VII Advisor AB Jakobsbergsgatan 18 111 44 Stockholm",
+  "note": "Offices SE, GB, DE, US; HQ not named. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Decibel",
+  "website": "https://www.decibel.vc",
+  "hq_country": null,
+  "evidence_url": "https://techcrunch.com/?p=1802766",
+  "evidence_quote": "ask Sakoda where the firm is based, and he'll laughingly tell you he doesn't quite know.",
+  "note": "Cisco-backed US early-stage firm; no primary source with address. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "EQT Ventures",
+  "website": "https://eqtgroup.com/private-capital/eqt-ventures",
+  "hq_country": "LU",
+  "evidence_url": "https://eqtgroup.com/private-capital/eqt-ventures",
+  "evidence_quote": "EQT Ventures is domiciled in Luxembourg, with investment advisors located in Europe and the US.",
+  "note": "Parent EQT AB (SE). No Prague office on offices page.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Eleven Ventures",
+  "website": "https://www.11.me",
+  "hq_country": "BG",
+  "evidence_url": "https://siliconcanals.com/eleven-ventures-closes-third-fund-at-60m/",
+  "evidence_quote": "Sofia, Bulgaria-based",
+  "note": "Own site 403; press article used. No Czech office found.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Fasanara Capital",
+  "website": "https://www.fasanara.com",
+  "hq_country": "GB",
+  "evidence_url": "https://www.fasanara.com/legal",
+  "evidence_quote": "4th Floor, 40 New Bond Street, London, United Kingdom, W1S 2RX",
+  "note": "FCA-regulated. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Garage Angels",
+  "website": "https://g-angels.cz",
+  "hq_country": "CZ",
+  "evidence_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=Garage+Angels",
+  "evidence_quote": "Garage Angels z.s. IČO: 21814414 Sídlo: Orlí 483/1, Brno-město, 602 00 Brno",
+  "note": "Czech angel investor club; also Garage Angels Management s.r.o. (IČO 21657505), same seat. g-angels.cz too many redirects.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=21814414",
+  "rejstrik_citace": "Garage Angels z.s. IČO: 218 14 414 ... Sídlo: Orlí 483/1, Brno-město, 602 00 Brno",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Irregular Expressions",
+  "website": "https://www.irregex.vc",
+  "hq_country": "US",
+  "evidence_url": "https://www.irregex.vc",
+  "evidence_quote": "New York - San Francisco",
+  "note": "City names only. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Long Journey Ventures",
+  "website": "https://www.longjourney.vc",
+  "hq_country": "US",
+  "evidence_url": "https://jewishinsider.com/2025/04/long-journey-ventures-oct-7-arielle-zuckerberg-lee-jacobs/",
+  "evidence_quote": "a venture capital firm in San Francisco",
+  "note": "Own site no address. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "NitroPack",
+  "website": "https://nitropack.io",
+  "hq_country": "BG",
+  "evidence_url": "https://en.ain.ua/2024/07/19/us-wp-engine-acquires-bulgarian-company-nitropack",
+  "evidence_quote": "the Sofia-based NitroPack",
+  "note": "Operating company (SaaS), not an investor; acquired by WP Engine (US) in 2024.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Octopus Ventures",
+  "website": "https://octopusventures.com",
+  "hq_country": "GB",
+  "evidence_url": "https://octopusventures.com/contact/",
+  "evidence_quote": "Octopus Ventures 33 Holborn London EC1N 2HT",
+  "note": "No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Passion Capital",
+  "website": "https://www.passioncapital.com",
+  "hq_country": "GB",
+  "evidence_url": "https://www.passioncapital.com",
+  "evidence_quote": "2nd Floor, Laxmi, The Tanneries, 57 Bermondsey Street, London SE1 3XJ, United Kingdom",
+  "note": "No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "QQ Capital",
+  "website": null,
+  "hq_country": "CZ",
+  "evidence_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=QQ+Capital",
+  "evidence_quote": "QQ Capital SE IČO: 08676135 Sídlo: Hvězdova 1716/2b, Nusle, 140 00 Praha 4",
+  "note": "No official website; register returned single 'QQ Capital' entity, identity with the Navigara investor not independently confirmed.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?ico=08676135",
+  "rejstrik_citace": "QQ Capital SE IČO: 086 76 135 ... Sídlo: Hvězdova 1716/2b, Nusle, 140 00 Praha 4",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "SCI Ventures",
+  "website": null,
+  "hq_country": null,
+  "evidence_url": null,
+  "evidence_quote": null,
+  "note": "Ambiguous entity (London spinal-cord fund vs. Baltimore SCI Ventures); no primary source tying address to OrangeX investor.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Sparking Capital",
+  "website": "https://sparkingcapital.com",
+  "hq_country": "RO",
+  "evidence_url": "https://economedia.ro/sparking-capital-a-obtinut-autorizarea-din-partea-asf-pentru-a-deveni-fond-si-administrator-de-fonduri-de-investitii-alternative-compania-planifica-4-5-investitii-noi-cu-un-buget-de-35-milioane-euro.html",
+  "evidence_quote": "își are sediul în București",
+  "note": "Romanian AIFM. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Taiwania Capital",
+  "website": "https://www.taiwaniacapital.com",
+  "hq_country": "TW",
+  "evidence_url": "https://www.taipeitimes.com/News/front/archives/2017/08/12/2003676468",
+  "evidence_quote": "a planned government-backed investment firm supervised by the National Development Council (NDC)",
+  "note": "Official site 403. ČTK release: offices in Taiwan and US, no Czech office at the time. Manages CEE Investment Fund.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "TripleB",
+  "website": null,
+  "hq_country": "NL",
+  "evidence_url": "https://fashionunited.ca/news/business/snuggs-secures-5-million-euros-to-accelerate-growth/2025021738712",
+  "evidence_quote": "Amsterdam-based investment group TripleB",
+  "note": "Bata family investment group; official site not found. Other locations (London, Berlin) unverified.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Venture to Future Fund",
+  "website": "https://vff.sk",
+  "hq_country": "SK",
+  "evidence_url": "https://vff.sk",
+  "evidence_quote": "Venture to Future Fund, a.s., Grösslingová 44 811 09 Bratislava IČO: 52380483",
+  "note": "Slovak state-backed VC fund. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Y Combinator",
+  "website": "https://www.ycombinator.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.ycombinator.com/legal",
+  "evidence_quote": "Y Combinator Management, LLC, 335 Pioneer Way, Mountain View, CA 94041",
+  "note": "No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Angelinvest",
+  "website": "https://angelinvest.ventures",
+  "hq_country": "DE",
+  "evidence_url": "https://angelinvest.ventures/imprint",
+  "evidence_quote": "Angel Invest GmbH Dircksenstr. 4 10179 Berlin",
+  "note": "No Czech office seen.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Balderton Capital",
+  "website": "https://www.balderton.com",
+  "hq_country": "GB",
+  "evidence_url": "https://find-and-update.company-information.service.gov.uk/search?q=balderton+capital",
+  "evidence_quote": "BALDERTON CAPITAL (UK) LLP ... OC306910 ... The Stables, 28 Britannia Street, London, WC1X 9JF",
+  "note": "balderton.com 403; Companies House search used.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Botanique Hospitality",
+  "website": null,
+  "hq_country": "CZ",
+  "evidence_url": "https://www.cbinsights.com/investor/botanique-hospitality-management-group",
+  "evidence_quote": "The company is based in Czech Republic.",
+  "note": "Not a VC: hotel operator; evidence only CB Insights aggregator; own site unreachable.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=Botanique+Hospitality",
+  "rejstrik_citace": "Botanique Hospitality Management s.r.o. IČO: 224 02 934 ... Sídlo: Sokolovská 204/11, Karlín, 186 00 Praha 8",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Category Ventures",
+  "website": "https://www.categoryvc.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.categoryvc.com/",
+  "evidence_quote": "SF",
+  "note": "No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "DTCP",
+  "website": "https://www.dtcp.capital",
+  "hq_country": "DE",
+  "evidence_url": "https://www.dtcp.capital/imprint",
+  "evidence_quote": "Digital Transformation Capital Partners GmbH, Am Sandtorpark 2, 20457 Hamburg, Germany",
+  "note": "No Czech office seen.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Dreamcraft Ventures",
+  "website": "https://dreamcraft.vc",
+  "hq_country": "DK",
+  "evidence_url": "https://dreamcraft.vc/",
+  "evidence_quote": "Registered office: Sankt Annae Plads 28, DK-1250 Copenhagen K ... Business ID: DK40209808",
+  "note": "Offices London/Copenhagen. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Earlybird",
+  "website": "https://earlybird.com",
+  "hq_country": "DE",
+  "evidence_url": "https://earlybird.com/imprint/",
+  "evidence_quote": "Earlybird GmbH & Co. KG c/o Earlybird Venture Capital, Münzstraße 23, 10178 Berlin, Germany",
+  "note": "",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Experian",
+  "website": "https://www.experianplc.com",
+  "hq_country": "IE",
+  "evidence_url": "https://www.experianplc.com/contact-us",
+  "evidence_quote": "Ireland - Corporate Headquarters ... 2 Cumberland Place, Fenian Street, Dublin 2",
+  "note": "Not a VC: operating company (credit bureau).",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Fond Naše Česko",
+  "website": "https://www.nase-cesko.cz",
+  "hq_country": "CZ",
+  "evidence_url": "https://www.nase-cesko.cz/",
+  "evidence_quote": "J&T INVESTIČNÍ SPOLEČNOST, a.s. ... Sokolovská 700/113a, 186 00 Praha 8, budova Rustonka",
+  "note": "Qualified-investor unit trust managed by J&T Investiční společnost, Prague.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=J%26T+INVESTI%C4%8CN%C3%8D+SPOLE%C4%8CNOST",
+  "rejstrik_citace": "J&T INVESTIČNÍ SPOLEČNOST, a.s. IČO: 476 72 684 ... Sídlo: Sokolovská 700/113a, Karlín, 186 00 Praha 8",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Index Ventures",
+  "website": "https://www.indexventures.com",
+  "hq_country": "GB",
+  "evidence_url": "https://www.indexventures.com/privacy-policy/",
+  "evidence_quote": "Index Ventures (UK) LLP ... registered office ... 5–8 Lower John Street, London W1F 9DY",
+  "note": "Offices SF, NY, London. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Kryptos",
+  "website": "https://kryptos.fund",
+  "hq_country": "SG",
+  "evidence_url": "https://www.cbinsights.com/investor/kryptos-fund",
+  "evidence_quote": "Headquarters: Singapore",
+  "note": "Evidence only CB Insights aggregator.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Lumiere AI Ventures",
+  "website": null,
+  "hq_country": null,
+  "evidence_url": "https://nordic9.com/companies/lumiere-ai-ventures/",
+  "evidence_quote": "Offices:Paris",
+  "note": "Aggregators conflict (Paris vs Delaware). No sign of Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Northzone",
+  "website": "https://northzone.com",
+  "hq_country": null,
+  "evidence_url": "https://northzone.com/",
+  "evidence_quote": "Auguststraße 61, 10117 Berlin, Germany ... Herengracht 450, 1017 CA Amsterdam, Netherlands",
+  "note": "Offices Stockholm, London, New York, Berlin, Amsterdam; HQ not named. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Parable VC",
+  "website": "https://parablevc.com",
+  "hq_country": "US",
+  "evidence_url": "https://www.caplight.com/investor/parable-vc",
+  "evidence_quote": "San Francisco, California",
+  "note": "Evidence only Caplight aggregator.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Payhawk",
+  "website": "https://payhawk.com",
+  "hq_country": "GB",
+  "evidence_url": "https://payhawk.com/en/legal",
+  "evidence_quote": "Payhawk Limited ... Chancery House, 53-64 Chancery Lane, London WC2A 1QS",
+  "note": "Not a VC: fintech operating company.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Riverside Acceleration Capital (RAC)",
+  "website": "https://www.riverside.ac",
+  "hq_country": null,
+  "evidence_url": "https://www.sec.gov/Archives/edgar/data/1766624/000176662419000003/0001766624-19-000003.txt",
+  "evidence_quote": "630 Fifth Avenue, Suite 400, New York, NY 10111",
+  "note": "Offices New York, San Francisco, Cologne; Form D gives NY business address. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "SeedTwo Capital",
+  "website": "https://seedtwo.com",
+  "hq_country": "US",
+  "evidence_url": "https://seedtwo.com/contact",
+  "evidence_quote": "SeedTwo Capital Inc. 1007 North Market St Suite G20-3 Wilmington, DE 19801 USA",
+  "note": "Delaware address; Lupa.cz calls it Canadian fund. No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Sunflower Capital",
+  "website": "https://www.sunflowercapital.co",
+  "hq_country": "US",
+  "evidence_url": "https://www.cbinsights.com/investor/sunflower-capital",
+  "evidence_quote": "Headquarters Location: 8605 Santa Monica Boulevard Suite 15798 West Hollywood, California, 90069, United States",
+  "note": "Evidence only CB Insights aggregator.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Tarpan Capital",
+  "website": "https://www.tarpangroup.net/tarpan-partners",
+  "hq_country": "CZ",
+  "evidence_url": "https://www.tarpangroup.net/tarpan-partners",
+  "evidence_quote": "TARPAN Partners s.r.o. Palác Astra, Václavské náměstí 773/4, 110 00 Praha 1 ... IČO 24733792",
+  "note": "No entity literally named 'Tarpan Capital' found; matched to TARPAN group (TARPAN Partners / TARPAN.VC, Prague) via Filuta AI round on Caplight. Match likely, unconfirmed.",
+  "rejstrik_url": "https://or.justice.cz/ias/ui/rejstrik-$firma?nazev=TARPAN",
+  "rejstrik_citace": "TARPAN Capital s.r.o. IČO: 092 28 497 ... Sídlo: Václavské náměstí 773/4, Nové Město, 110 00 Praha 1",
+  "rejstrik_overeno": "2026-10-26",
+  "overil": "subagent (web), rejstřík ověřen hlavním agentem"
+ },
+ {
+  "name": "Unbound",
+  "website": null,
+  "hq_country": "GB",
+  "evidence_url": "https://www.whalebone.io/post/whalebone-secures-series-b-funding",
+  "evidence_quote": "Unbound is a leading long-term global investment firm based in London",
+  "note": "Investee press release.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Wing VC",
+  "website": "https://www.wing.vc",
+  "hq_country": "US",
+  "evidence_url": "https://www.wing.vc/privacy-policy",
+  "evidence_quote": "Wing VC, Palo Alto CA, All Rights Reserved.",
+  "note": "No Czech office.",
+  "overil": "subagent (web)"
+ },
+ {
+  "name": "Tachles VC",
+  "website": "https://tachlesvc.com",
+  "hq_country": "US",
+  "evidence_url": "https://tachlesvc.com/",
+  "evidence_quote": "Tachles VC Management, LLC ... 107 Technology Parkway Suite 520 Peachtree Corners, GA 30092, USA",
+  "note": "Only US address on own site; claims to operate in Central Europe; Czech office not found.",
+  "overil": "subagent (web)"
+ }
+]

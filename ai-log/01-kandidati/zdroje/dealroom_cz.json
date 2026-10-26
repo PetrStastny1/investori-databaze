@@ -1,0 +1,16 @@
+{
+ "zdroj": "https://dealroom.co/investors/manifest.json",
+ "generated": "2026-05-11",
+ "source": "Dealroom Power Law Investor Ranking 2026",
+ "total": 609,
+ "stazeno": "2026-10-26",
+ "investori_se_zemi_czechia": [
+  {
+   "name": "Credo Ventures",
+   "slug": "credo-ventures",
+   "country": "Czechia",
+   "investor_type": "Venture capital firm",
+   "profile_url": "https://dealroom.co/investors/credo-ventures/"
+  }
+ ]
+}

@@ -16,7 +16,45 @@ Postup, pravidla zařazení, struktura záznamu a způsob měření jsou popsan�
 
 ## Stav
 
-Projekt je založený, data se zatím nesbírají. Datové soubory v `data/` obsahují jen hlavičky (CSV) nebo prázdný seznam (JSON).
+Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot (VC a CVC se sídlem v ČR) v `data/kandidati.csv`. Jde o kandidáty, ne o ověřené investory. Zařazení, typ ani obohacení (ticket, kapitál, investice) zatím neproběhly. Ostatní datové soubory obsahují jen hlavičky (CSV) nebo prázdný seznam (JSON).
+
+## Sběr kandidátů (krok 1)
+
+Staženo 26. 10. 2026. Výsledek: **57 unikátních kandidátů**.
+
+### Zdroje
+
+| Zdroj | Co jsem převzal | Kandidátů | Mimo rozsah |
+|---|---|---|---|
+| [CVCA, řádní členové](https://cvca.cz/en/category/full-members/) | 27 řádných členů (PE/VC investoři podle CVCA); přidružení členové jsou podle CVCA poradci a banky, nepřebíral jsem je | 19 | 8 (sídlo mimo ČR) |
+| [CEE Funding Map](https://www.pampam.city/funds-poland-BJpHbykKoXoBaILayYBs) (Warsaw Equity Group, CzechInvest, Czech Founders) | 95 položek mapy ČR a Polska s adresou | 38 | 55 (sídlo v Polsku, u Tachles VC v USA) |
+| [funding.tech.eu](https://funding.tech.eu/api-docs), kola českých firem 2025–2026 | 60 kol, 113 jmen investorů | 26 | 84 |
+| [Dealroom, veřejná část](https://dealroom.co/investors/manifest.json) | manifest 609 investorů, jen Credo Ventures má zemi Czechia | 1 | – |
+
+Kandidát může být ve více zdrojích, proto součet sloupce nedává 57. Ve dvou a více zdrojích je 20 kandidátů, jen v jednom 37 (CVCA 9, mapa 19, funding.tech.eu 9).
+
+### Postup
+
+1. **Rozsah = sídlo v ČR podle zdroje.** U CVCA a mapy rozhoduje adresa, kterou uvádí sám zdroj. funding.tech.eu sídlo investora neeviduje (`countries` jsou země portfolia), proto jsem jména rozdělil takto:
+   - jména shodná s kandidátem z CVCA nebo z mapy jsem přiřadil k němu,
+   - fyzické osoby (typ `Angel` ve zdroji) a popisy typu „existing shareholders“ jsou mimo rozsah pilotu,
+   - u zbylých 65 organizací (a u Tachles VC, který na mapě nemá adresu) jsem sídlo dohledal ve veřejném zdroji s URL a citací (vlastní web, rejstřík, tisková zpráva). Všech 9 českých sídel jsem ověřil v obchodním rejstříku (or.justice.cz).
+2. **Bez posuzování.** Typ (VC, CVC, PE, family office…) ani aktivitu jsem neposuzoval. Mezi kandidáty jsou proto i subjekty, které zdroj označuje jako PE nebo family office, provozní firmy (Braiins, Botanique Hospitality), fond J&T Investiční společnosti (Fond Naše Česko) a klub andělů (Garage Angels). O jejich zařazení se rozhodne v kroku 3.
+3. **Deduplikace.** Ručně podle shodného názvu nebo jeho varianty (aliasy z funding.tech.eu) a domény webu, explicitně v tabulce ve [scripts/sestav_kandidaty.py](scripts/sestav_kandidaty.py). Shoda adresy sama o sobě nestačí.
+4. **Dohledatelnost.** `zdroj_seznamu` a `zdroj_url` jsou u kandidáta z více zdrojů seznamy oddělené ` | ` ve stejném pořadí, jeden pár na každý výskyt. U funding.tech.eu je `zdroj_url` záznam investora v API, ze kterého jsem jméno převzal.
+5. **`id`** má tvar `cz-nazev-bez-diakritiky`, je stabilní a v dalších krocích se nemění.
+6. **`web`** je převzatý ze zdroje (CVCA, mapa). U kandidátů jen z funding.tech.eu pochází z ověření sídla. Kde jsem web nedoložil, je prázdný.
+
+Podklady jsou v [ai-log/01-kandidati/](ai-log/01-kandidati/): extrakty zdrojů (`zdroje/`), ověření sídel s URL a citacemi (`sidla_overeni.json`), všechny vynechané výskyty s důvodem (`mimo_rozsah.csv`) a sběrné skripty (`skripty/`). Výsledné CSV vytváří `python3 scripts/sestav_kandidaty.py`.
+
+### Omezení
+
+- **funding.tech.eu:** webové rozhraní vracelo HTTP 429 s bezpečnostní kontrolou Vercelu. Neobcházel jsem ji. Data jsem vzal z oficiálního bezklíčového API téhož zdroje (`/api/v1`, CC BY 4.0, povolené v robots.txt). Dataset obsahuje jen 60 kol českých firem za 2025–2026, pokrytí je tedy neúplné.
+- **Dealroom:** aplikace (app.dealroom.co, czechia.dealroom.co) vrací HTTP 403, neobcházel jsem ji. Veřejná část (stránky zemí a měst, market mapy) investory v ČR nevypisuje. Manifest obsahuje jen top investory světa.
+- **CEE Funding Map:** typ fondu (VC, PE, family office…) je na mapě jen v poškozených fragmentech importu, proto jsem ho nepřebíral. ARX Equity má na mapě polskou adresu, v CVCA pražskou, a je veden jako kandidát.
+- **Sídla:** u 8 zahraničních organizací (např. Creandum, Northzone) se sídlo nepodařilo jednoznačně určit, žádná ale nemá doloženou kancelář v ČR. U Tachles VC vlastní web uvádí jen adresu v USA. U Botanique Hospitality je zdrojem sídla kromě rejstříku jen agregátor CB Insights. U QQ Capital rejstřík uvádí jediný subjekt toho jména, jeho totožnost s investorem v kole Navigara jsem ale nepotvrdil.
+- **Možné duplicity, které jsem nesloučil** (doložená je jen shodná adresa nebo vazba): Nation1 (nation1.vc, doména se nepřekládá) a N1 Ventures (n1.rocks) na adrese Národní 135/14; i&i Biotech Investments a i&i Prague (i&i Prague podle svého webu založil i&i Biotech Fund); Tilia Impact Ventures a PurposeTech na adrese Drtinova 557/10; Fond Naše Česko a J&T Ventures na adrese Sokolovská 700/113a.
+- **Ověření sídel** dělali pomocní agenti stejného modelu z veřejných webů. Česká sídla jsem znovu ověřil v rejstříku, zahraniční jen u agentů. Několik zahraničních sídel opírají jen agregátory (CB Insights, Caplight), viz `sidla_overeni.json`.
 
 ## Struktura
 
