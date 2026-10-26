@@ -1,0 +1,1777 @@
+
+❯ <ide_opened_file>The user opened the file
+  /Users/petrstastny/Documents/Projekty/investori-databaze/PLAN.md in the IDE.
+  This may or may not be related to the current task.</ide_opened_file>
+
+❯ Krok 2 podle PLAN.md, zatím jen zkušební dávka. Nejdřív si přečti PLAN.md a
+  data/kandidati.csv.
+
+  Obohať prvních 5 kandidátů podle abecedy podle schématu v PLAN.md a rozhodni
+  o jejich zařazení podle pravidel pilotu. U každého dolož identitu, typ,
+  sídlo, investiční činnost a dostupné údaje o zaměření, ticketu a kapitálu.
+
+  Pokud všech pět skončí mimo rozsah pilotu, přidej jednoho dalšího kandidáta,
+  kterého zdroje označují jako VC nebo CVC, a tuto doplňkovou zkoušku
+  zaznamenej zvlášť.
+
+  - Každý údaj má zdroj. Chybějící údaje nech null, nic neodhaduj.
+  - Velikost celého investičního kola nezaměňuj za částku vloženou konkrétním
+  investorem.
+  - Datum investice a datum oznámení rozlišuj podle PLAN.md.
+  - IČO ověř na justice.cz nebo v ARES.
+  - Zápis do data/vystup_agenta/ (investori.json, vyrazeni.csv, hranicni.csv)
+  podle pravidel pilotu.
+
+  Zaznamenej skutečný čas zpracování a dostupné údaje o spotřebě. Nedostupnou
+  spotřebu neodhaduj jako naměřenou.
+
+  Ruční hodnocení za mě nevyplňuj. Výstup dávky commitni a pushni beze změn, je
+  to původní výstup pro měření. Pak se zastav a vypiš výsledky, nejasnosti a
+  případné potřebné změny schématu.
+
+⏺ Bash(date -u +%Y-%m-%dT%H:%M:%SZ && ls -R | head -50 && cat PLAN.md && cat
+      data/kandidati.csv)
+  ⎿  (No output)
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Bash(cat data/kandidati.csv | head -3; wc -l data/kandidati.csv; echo; sort
+      -t, -k2 -f data/kandidati.csv | head -12; echo ---; for f in
+      data/vystup_agenta/* data/ho…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Načetl jsem plán a kandidáty, první pětka abecedně je ARX Equity Partners, BD
+  Partners, Borovicka Capital, Botanique Hospitality a Braiins. Teď z uložených
+  zdrojů zjišťuji jejich kola a typy, pak budu dohledávat na webu a v ARES.
+
+⏺ Bash(cd /Users/petrstastny/Documents/Projekty/investori-databaze/ai-log/01-kan
+      didati/zdroje && python3 -c "
+      import json…)
+  ⎿  (No output)
+
+  Searched for 2 patterns (ctrl+o to expand)
+
+⏺ Teď načtu webové nástroje a začnu dohledávat zdroje.
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpad; mkdir -p
+      $S/ares; cd $S/ares…)
+  ⎿  (No output)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpad; mkdir -p
+      $S/ftech; cd $S/fte…)
+  ⎿  (No output)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpad; cd $S/ftech
+      for n in "BD%20P…)
+  ⎿  (No output)
+
+⏺ Web Search("ARX Equity Partners akvizice 2025")
+  ⎿  Did 1 search in 7s
+
+⏺ Web Search("BD Partners investice startup ValkaAI DecisionRules")
+  ⎿  Did 1 search in 7s
+
+⏺ Web Search("Borovicka Capital Outfindo Edmund investice")
+  ⎿  Did 2 searches in 9s
+
+⏺ Web Search("RobosizeME seed Botanique Hospitality")
+  ⎿  Did 1 search in 6s
+
+⏺ Web Search("Firefish seed round Braiins Miton 2025")
+  ⎿  Did 1 search in 6s
+
+⏺ Fetch(https://www.bdpartners.cz/)
+  ⎿  Received 1.8MB (200 OK)
+
+⏺ Fetch(https://decisionrules.io/articles/decisionrules-raises-eu1-6m-to-scale-a
+       utomation-globally)
+  ⎿  Received 187.4KB (200 OK)
+
+⏺ Fetch(https://www.e15.cz/byznys/startupy/konkurence-pro-zarubu-a-bosaka-startu
+       p-vlastimila-venclika-ziskal-stovky-milionu-a-prichazi-s-ai-komentatory-1
+       431016)
+  ⎿  Received 233.5KB (200 OK)
+⏺ Fetch(https://cc.cz/tag/bd-partners/)
+  ⎿  Received 127.8KB (200 OK)
+
+⏺ Mám zprávy o transakcích pro BD Partners, Borovicka Capital, Botanique a
+  Braiins. Teď ověřuji typ BD Partners – rozhovor s Bartoníčkem naznačuje, že
+  firma investuje nejen do startupů, ale i do vína a betonu.
+
+⏺ Fetch(https://cc.cz/sefoval-ppf-ted-investuje-do-startupu-vina-i-betonu-mame-n
+       a-to-az-25-miliardy-rika-bartonicek/)
+  ⎿  Received 188.9KB (200 OK)
+
+⏺ Fetch(https://cc.cz/je-mu-23-a-fond-expartneru-ppf-pomaha-privest-do-doby-ai-s
+       etri-az-30-hodin-pracovniho-tydne-rika/)
+  ⎿  Received 168.2KB (200 OK)
+
+⏺ Fetch(https://cc.cz/pred-lety-ulehcil-cestovani-revolut-ted-se-o-neco-podobneh
+       o-pokousi-i-cech-akorat-v-jizni-americe/)
+  ⎿  Received 168.8KB (200 OK)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpad; cd $S/ares
+      for ico in 192865…)
+  ⎿  (No output)
+
+⏺ Fetch(https://cc.cz/vydelal-na-akciich-pak-propadl-startupum-a-rozjel-rodinny-
+       fond-s-tatou-a-brachou-se-nehadame-rika/)
+  ⎿  Received 178.2KB (200 OK)
+
+⏺ Fetch(https://borovickacapital.com/)
+  ⎿  Received 60.9KB (200 OK)
+
+⏺ Fetch(https://cc.cz/poklada-jednoduche-otazky-a-tim-ulehcuje-slozite-nakupy-st
+       artup-outfindo-ted-nabira-dalsi-miliony/)
+  ⎿  Received 167.4KB (200 OK)
+
+⏺ Web Search("Borovicka Capital investice 2026 startup")
+  ⎿  Did 1 search in 8s
+
+⏺ Web Search("Edmund AI pre-seed Borovicka Capital Czech Founders Tensor
+            Lighthouse 500 000 eur")
+  ⎿  Did 1 search in 7s
+
+⏺ Web Search("NutritionPro investice 2025 Borovicka Capital")
+  ⎿  Did 1 search in 8s
+
+⏺ Fetch(https://cc.cz/odhali-poruchu-a-vymysli-reseni-ostravsky-startup-pomaha-v
+       -prumyslu-ziskal-prvni-investici/)
+  ⎿  Received 165KB (200 OK)
+
+⏺ Fetch(https://www.vestbee.com/blog/articles/edmund-secures-500-k)
+  ⎿  Received 349.2KB (200 OK)
+
+⏺ Fetch(https://www.vestbee.com/blog/articles/robosize-me-secures-seed)
+  ⎿  Received 348.4KB (200 OK)
+
+⏺ Fetch(https://www.businessinfo.cz/clanky/olomoucky-ai-startup-robosizeme-ziska
+       l-investici-ve-vysi-dvou-milionu-dolaru/)
+  ⎿  Received 0 bytes (403 Forbidden)
+
+⏺ Fetch(https://cc.cz/funguje-jako-zonky-kryte-bitcoiny-v-uschove-jich-ma-mit-za
+       -dve-miliardy-cesky-startup-nabira-dalsi-miliony/)
+  ⎿  Received 150.6KB (200 OK)
+
+⏺ Fetch(https://www.arxequity.com/?p=600)
+  ⎿  Received 32.7KB (200 OK)
+
+⏺ Web Search("ARX Equity Partners Medicofit majority stake")
+  ⎿  Did 1 search in 5s
+
+⏺ Fetch(https://www.arxequity.com/)
+  ⎿  Received 36.6KB (200 OK)
+
+⏺ Mám už doklady k transakcím všech pěti kandidátů. Teď si u ARX potvrzuji, že
+  jde o PE, a pak začnu sestavovat výstup.
+⏺ Fetch(https://www.investorsinhealthcare.com/articles/category/news/slovenia-ar
+       x-equity-partners-acquires-majority-stake-in-medicofit/)
+  ⎿  Received 354.2KB (200 OK)
+
+⏺ Fetch(https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in
+       -medicofit-slovenias-leading-private-physiotherapy-provider/)
+  ⎿  Received 37.3KB (200 OK)
+
+⏺ Zařazuji BD Partners a Borovicka Capital mezi VC, takže šestý kandidát navíc
+  není nutný – ARX, Botanique a Braiins zůstávají mimo rozsah pilotu. Nyní
+  zapisuji výstup.
+
+⏺ Bash(date -u +%Y-%m-%dT%H:%M:%SZ &&
+      S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-
+      databaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpa…)
+  ⎿  Created ai-log/02-zkusebni-davka/zdroje/ares_hledani_ARX_Equity.json
+     (+1 -0)
+      1 +{"pocetCelkem":2,"ekonomickeSubjekty":[{"ico":"19161239","obchod
+        +niJmeno":"ARX Equity Co-Invest a.s.","sidlo":{"kodStatu":"CZ","n
+        +azevStatu":"Česká republika","kodKraje":19,"nazevKraje":"Hlavní 
+        +město Praha","kodOkresu":3100,"kodObce":554782,"nazevObce":"Prah
+        +a","kodSpravnihoObvodu":19,"nazevSpravnihoObvodu":"Praha 1","kod
+        +MestskehoObvodu":19,"nazevMestskehoObvodu":"Praha 1","kodMestske
+        +CastiObvodu":500054,"kodUlice":446211,"nazevMestskeCastiObvodu":
+        +"Praha 1","nazevUlice":"28. října","cisloDomovni":767,"kodCastiO
+        +bce":490148,"cisloOrientacni":12,"nazevCastiObce":"Nové Město","
+        +kodAdresnihoMista":21705640,"psc":11000,"textovaAdresa":"28. říj
+        +na 767/12, Nové Město, 11000 Praha 1","standardizaceAdresy":true
+        +,"typCisloDomovni":1},"pravniForma":"121","pravniFormaRos":"121"
+        +,"financniUrad":"001","datumVzniku":"2023-03-20","datumAktualiza
+        +ce":"2026-06-16","icoId":"19161239","adresaDorucovaci":{"radekAd
+        +resy1":"28. října 767/12","radekAdresy2":"Nové Město","radekAdre
+        +sy3":"11000 Praha 1"},"czNace2008":["6820","68320"],"seznamRegis
+        +traci":{"stavZdrojeRos":"AKTIVNI","stavZdrojeVr":"AKTIVNI","stav
+        +ZdrojeRes":"AKTIVNI","stavZdrojeRzp":"AKTIVNI","stavZdrojeNrpzs"
+        +:"NEEXISTUJICI","stavZdrojeRpsh":"NEEXISTUJICI","stavZdrojeRcns"
+        +:"NEEXISTUJICI","stavZdrojeSzr":"NEEXISTUJICI","stavZdrojeDph":"
+        +NEEXISTUJICI","stavZdrojeSkDph":"NEEXISTUJICI","stavZdrojeSd":"N
+        +EEXISTUJICI","stavZdrojeIr":"NEEXISTUJICI","stavZdrojeCeu":"NEEX
+        +ISTUJICI","stavZdrojeRs":"NEEXISTUJICI","stavZdrojeRed":"NEEXIST
+        +UJICI","stavZdrojeMonitor":"NEEXISTUJICI"},"primarniZdroj":"ros"
+        +,"dalsiUdaje":[{"obchodniJmeno":[{"obchodniJmeno":"ARX Equity Co
+        +-Invest a.s.","primarniZaznam":true}],"sidlo":[{"sidlo":{"kodSta
+        +tu":"CZ","nazevStatu":"Česká republika","kodKraje":19,"nazevKraj
+        +e":"Hlavní město Praha","kodObce":554782,"nazevObce":"Praha","ko
+        +dSpravnihoObvodu":19,"nazevSpravnihoObvodu":"Praha 1","kodMestsk
+        +ehoObvodu":19,"nazevMestskehoObvodu":"Praha 1","kodMestskeCastiO
+        +bvodu":500054,"kodUlice":446211,"nazevMestskeCastiObvodu":"Praha
+        + 1","nazevUlice" … [+7430 chars]                                
+  ⎿  Created ai-log/02-zkusebni-davka/zdroje/ares_hledani_BD_Partners.json
+     (+1 -0)
+      1 +{"pocetCelkem":1,"ekonomickeSubjekty":[{"ico":"19286511","obchod
+        +niJmeno":"BD Partners a.s.","sidlo":{"kodStatu":"CZ","nazevStatu
+        +":"Česká republika","kodKraje":19,"nazevKraje":"Hlavní město Pra
+        +ha","kodObce":554782,"nazevObce":"Praha","kodSpravnihoObvodu":60
+        +,"nazevSpravnihoObvodu":"Praha 6","kodMestskehoObvodu":60,"nazev
+        +MestskehoObvodu":"Praha 6","kodMestskeCastiObvodu":500178,"kodUl
+        +ice":453072,"nazevMestskeCastiObvodu":"Praha 6","nazevUlice":"Ge
+        +nerála Píky","cisloDomovni":430,"kodCastiObce":400459,"cisloOrie
+        +ntacni":26,"nazevCastiObce":"Dejvice","kodAdresnihoMista":221893
+        +86,"psc":16000,"textovaAdresa":"Generála Píky 430/26, Dejvice, 1
+        +6000 Praha 6","standardizaceAdresy":true,"typCisloDomovni":1},"p
+        +ravniForma":"121","pravniFormaRos":"121","financniUrad":"006","d
+        +atumVzniku":"2023-04-25","datumAktualizace":"2026-10-03","dic":"
+        +CZ19286511","icoId":"19286511","adresaDorucovaci":{"radekAdresy1
+        +":"Generála Píky 430/26","radekAdresy2":"Dejvice","radekAdresy3"
+        +:"16000 Praha 6"},"czNace2008":["46","47","620","6820","68320","
+        +70100","70220","731","772","821","855"],"seznamRegistraci":{"sta
+        +vZdrojeRos":"AKTIVNI","stavZdrojeVr":"AKTIVNI","stavZdrojeRes":"
+        +AKTIVNI","stavZdrojeRzp":"AKTIVNI","stavZdrojeNrpzs":"NEEXISTUJI
+        +CI","stavZdrojeRpsh":"NEEXISTUJICI","stavZdrojeRcns":"NEEXISTUJI
+        +CI","stavZdrojeSzr":"NEEXISTUJICI","stavZdrojeDph":"AKTIVNI","st
+        +avZdrojeSkDph":"NEEXISTUJICI","stavZdrojeSd":"NEEXISTUJICI","sta
+        +vZdrojeIr":"NEEXISTUJICI","stavZdrojeCeu":"NEEXISTUJICI","stavZd
+        +rojeRs":"NEEXISTUJICI","stavZdrojeRed":"NEEXISTUJICI","stavZdroj
+        +eMonitor":"NEEXISTUJICI"},"primarniZdroj":"ros","dalsiUdaje":[{"
+        +obchodniJmeno":[{"obchodniJmeno":"BD Partners a.s.","primarniZaz
+        +nam":true}],"sidlo":[{"sidlo":{"kodStatu":"CZ","nazevStatu":"Čes
+        +ká republika","kodKraje":19,"nazevKraje":"Hlavní město Praha","k
+        +odObce":554782,"nazevObce":"Praha","kodSpravnihoObvodu":60,"naze
+        +vSpravnihoObvodu":"Praha 6","kodMestskehoObvodu":60,"nazevMestsk
+        +ehoObvodu":"Praha 6","kodMestskeCastiObvodu":500178,"kodUlice":4
+        +53072,"nazevMest … [+2793 chars]                                
+  ⎿  Created
+     ai-log/02-zkusebni-davka/zdroje/ares_hledani_Borovicka_Capital.json
+     (+1 -0)
+      1 +{"pocetCelkem":1,"ekonomickeSubjekty":[{"ico":"19966784","obchod
+        +niJmeno":"Borovicka Capital s.r.o.","sidlo":{"kodStatu":"CZ","na
+        +zevStatu":"Česká republika","kodKraje":19,"nazevKraje":"Hlavní m
+        +ěsto Praha","kodObce":554782,"nazevObce":"Praha","kodSpravnihoOb
+        +vodu":86,"nazevSpravnihoObvodu":"Praha 8","kodMestskehoObvodu":8
+        +6,"nazevMestskehoObvodu":"Praha 8","kodMestskeCastiObvodu":50020
+        +8,"kodUlice":2755343,"nazevMestskeCastiObvodu":"Praha 8","nazevU
+        +lice":"Breitfeldova","cisloDomovni":709,"kodCastiObce":400637,"c
+        +isloOrientacni":17,"nazevCastiObce":"Karlín","kodAdresnihoMista"
+        +:82945781,"psc":18600,"textovaAdresa":"Breitfeldova 709/17, Karl
+        +ín, 18600 Praha 8","standardizaceAdresy":true,"typCisloDomovni":
+        +1},"pravniForma":"112","pravniFormaRos":"112","financniUrad":"00
+        +8","datumVzniku":"2023-11-28","datumAktualizace":"2026-08-04","d
+        +ic":"CZ19966784","icoId":"19966784","adresaDorucovaci":{"radekAd
+        +resy1":"Breitfeldova 709/17","radekAdresy2":"Karlín","radekAdres
+        +y3":"18600 Praha 8"},"czNace2008":["731","47","70220","00","772"
+        +,"46"],"seznamRegistraci":{"stavZdrojeRos":"AKTIVNI","stavZdroje
+        +Vr":"AKTIVNI","stavZdrojeRes":"AKTIVNI","stavZdrojeRzp":"AKTIVNI
+        +","stavZdrojeNrpzs":"NEEXISTUJICI","stavZdrojeRpsh":"NEEXISTUJIC
+        +I","stavZdrojeRcns":"NEEXISTUJICI","stavZdrojeSzr":"NEEXISTUJICI
+        +","stavZdrojeDph":"AKTIVNI","stavZdrojeSkDph":"NEEXISTUJICI","st
+        +avZdrojeSd":"NEEXISTUJICI","stavZdrojeIr":"NEEXISTUJICI","stavZd
+        +rojeCeu":"NEEXISTUJICI","stavZdrojeRs":"NEEXISTUJICI","stavZdroj
+        +eRed":"NEEXISTUJICI","stavZdrojeMonitor":"NEEXISTUJICI"},"primar
+        +niZdroj":"ros","dalsiUdaje":[{"obchodniJmeno":[{"obchodniJmeno":
+        +"Borovicka Capital s.r.o.","primarniZaznam":true}],"sidlo":[{"si
+        +dlo":{"kodStatu":"CZ","nazevStatu":"Česká republika","kodKraje":
+        +19,"nazevKraje":"Hlavní město Praha","kodObce":554782,"nazevObce
+        +":"Praha","kodSpravnihoObvodu":86,"nazevSpravnihoObvodu":"Praha 
+        +8","kodMestskehoObvodu":86,"nazevMestskehoObvodu":"Praha 8","kod
+        +MestskeCastiObvodu":500208,"kodUlice":2755343,"nazevMestskeCasti
+        +Obvodu":"Praha 8 … [+2743 chars]                                
+  ⎿  Created ai-log/02-zkusebni-davka/zdroje/ares_hledani_Botanique_Hospita
+     lity.json (+1 -0)
+      1 +{"pocetCelkem":1,"ekonomickeSubjekty":[{"ico":"22402934","obchod
+        +niJmeno":"Botanique Hospitality Management s.r.o.","sidlo":{"kod
+        +Statu":"CZ","nazevStatu":"Česká republika","kodKraje":19,"nazevK
+        +raje":"Hlavní město Praha","kodObce":554782,"nazevObce":"Praha",
+        +"kodSpravnihoObvodu":86,"nazevSpravnihoObvodu":"Praha 8","kodMes
+        +tskehoObvodu":86,"nazevMestskehoObvodu":"Praha 8","kodMestskeCas
+        +tiObvodu":500208,"kodUlice":469718,"nazevMestskeCastiObvodu":"Pr
+        +aha 8","nazevUlice":"Sokolovská","cisloDomovni":204,"kodCastiObc
+        +e":400637,"cisloOrientacni":11,"nazevCastiObce":"Karlín","kodAdr
+        +esnihoMista":22773576,"psc":18600,"textovaAdresa":"Sokolovská 20
+        +4/11, Karlín, 18600 Praha 8","standardizaceAdresy":true,"typCisl
+        +oDomovni":1},"pravniForma":"112","pravniFormaRos":"112","financn
+        +iUrad":"008","datumVzniku":"2024-12-23","datumAktualizace":"2025
+        +-01-24","icoId":"22402934","adresaDorucovaci":{"radekAdresy1":"S
+        +okolovská 204/11","radekAdresy2":"Karlín","radekAdresy3":"18600 
+        +Praha 8"},"czNace2008":["46","47","821","55","6820","70220"],"se
+        +znamRegistraci":{"stavZdrojeRos":"AKTIVNI","stavZdrojeVr":"AKTIV
+        +NI","stavZdrojeRes":"AKTIVNI","stavZdrojeRzp":"AKTIVNI","stavZdr
+        +ojeNrpzs":"NEEXISTUJICI","stavZdrojeRpsh":"NEEXISTUJICI","stavZd
+        +rojeRcns":"NEEXISTUJICI","stavZdrojeSzr":"NEEXISTUJICI","stavZdr
+        +ojeDph":"NEEXISTUJICI","stavZdrojeSkDph":"NEEXISTUJICI","stavZdr
+        +ojeSd":"NEEXISTUJICI","stavZdrojeIr":"NEEXISTUJICI","stavZdrojeC
+        +eu":"NEEXISTUJICI","stavZdrojeRs":"NEEXISTUJICI","stavZdrojeRed"
+        +:"NEEXISTUJICI","stavZdrojeMonitor":"NEEXISTUJICI"},"primarniZdr
+        +oj":"ros","dalsiUdaje":[{"obchodniJmeno":[{"obchodniJmeno":"Bota
+        +nique Hospitality Management s.r.o.","primarniZaznam":true}],"si
+        +dlo":[{"sidlo":{"kodStatu":"CZ","nazevStatu":"Česká republika","
+        +kodKraje":19,"nazevKraje":"Hlavní město Praha","kodObce":554782,
+        +"nazevObce":"Praha","kodSpravnihoObvodu":86,"nazevSpravnihoObvod
+        +u":"Praha 8","kodMestskehoObvodu":86,"nazevMestskehoObvodu":"Pra
+        +ha 8","kodMestskeCastiObvodu":500208,"kodUlice":469718,"nazevMes
+        +tskeCastiObvodu" … [+2782 chars]                                
+  ⎿  Created ai-log/02-zkusebni-davka/zdroje/ares_vr_19286511.json (+1 -0)
+      1 +{"icoId":"19286511","zaznamy":[{"akcie":[{"datumZapisu":"2023-04
+        +-25","typAkcie":"NA_JMENO","podobaAkcie":"LISTINNA","pocet":2000
+        +,"text":"Převoditelnost akcií je omezena tak, že k jakémukoliv p
+        +řevodu či přechodu vlastnictví k akciím je třeba předchozího pís
+        +emného souhlasu všech ostatních akcionářů nebo předchozího souhl
+        +asu valné hromady. Stejné podmínky platí také pro zastavení akci
+        +í. Každý z akcionářů má předkupní právo k akciím společnosti jin
+        +ého akcionáře. Předkupní právo se vztahuje na všechny převody ak
+        +cií, ať již úplatné či bezúplatné, včetně vkladu akcií do základ
+        +ního či vlastního kapitálu jiné společnosti. V případě úmrtí akc
+        +ionáře se předkupní práva neuplatní.","hodnota":{"typObnos":"KOR
+        +UNY","hodnota":"1000"}}],"rejstrik":"OR","primarniZaznam":true,"
+        +spisovaZnacka":[{"datumZapisu":"2023-04-25","soud":"MSPH","oddil
+        +":"B","vlozka":28112}],"ico":[{"datumZapisu":"2023-04-25","hodno
+        +ta":"19286511"}],"obchodniJmeno":[{"datumZapisu":"2023-04-25","h
+        +odnota":"BD Partners a.s."}],"zakladniKapital":[{"datumZapisu":"
+        +2023-04-25","typJmeni":"ZAKLADNI_JMENI","vklad":{"typObnos":"KOR
+        +UNY","hodnota":"2000000"},"splaceni":{"typObnos":"PROCENTA","hod
+        +nota":"100"}}],"pravniForma":[{"datumZapisu":"2023-04-25","hodno
+        +ta":"121"}],"financniUrad":"006","adresy":[{"datumZapisu":"2023-
+        +04-25","datumVymazu":"2024-02-14","adresa":{"kodStatu":"CZ","naz
+        +evStatu":"Česká republika","kodKraje":19,"nazevKraje":"Hlavní mě
+        +sto Praha","kodObce":554782,"nazevObce":"Praha","kodSpravnihoObv
+        +odu":60,"nazevSpravnihoObvodu":"Praha 6","kodMestskehoObvodu":60
+        +,"nazevMestskehoObvodu":"Praha 6","kodMestskeCastiObvodu":500178
+        +,"kodUlice":458023,"nazevMestskeCastiObvodu":"Praha 6","nazevUli
+        +ce":"Na Kotlářce","cisloDomovni":1082,"kodCastiObce":400459,"cis
+        +loOrientacni":8,"nazevCastiObce":"Dejvice","kodAdresnihoMista":2
+        +2197397,"psc":16000,"textovaAdresa":"Na Kotlářce 1082/8, Dejvice
+        +, 16000 Praha 6","standardizaceAdresy":true,"typCisloDomovni":1}
+        +,"typAdresy":"SIDLO"},{"datumZapisu":"2024-02-14","adresa":{"kod
+        +Statu":"CZ","naz … [+4050 chars]                                
+  ⎿  … 9 more files changed
+  ⎿  (files that changed while this command ran, by the command or by
+     another process; a convenience view, not a review or audit of the
+     command)
+
+⏺ Bash(cp
+      /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-da
+      tabaze/c4487a53-7396-4e0f-b79a-5aad58692ecd/scratchpad/ares/Braiins.json
+      /Users/pet…)
+  ⎿  Created ai-log/02-zkusebni-davka/zdroje/ares_hledani_Braiins.json (+1
+     -0)
+      1 +{"pocetCelkem":4,"ekonomickeSubjekty":[{"ico":"09639900","obchod
+        +niJmeno":"Braiins Shop s.r.o.","sidlo":{"kodStatu":"CZ","nazevSt
+        +atu":"Česká republika","kodKraje":19,"nazevKraje":"Hlavní město 
+        +Praha","kodOkresu":3100,"kodObce":554782,"nazevObce":"Praha","ko
+        +dSpravnihoObvodu":86,"nazevSpravnihoObvodu":"Praha 8","kodMestsk
+        +ehoObvodu":86,"nazevMestskehoObvodu":"Praha 8","kodMestskeCastiO
+        +bvodu":500208,"kodUlice":453749,"nazevMestskeCastiObvodu":"Praha
+        + 8","nazevUlice":"Křižíkova","cisloDomovni":148,"kodCastiObce":4
+        +00637,"cisloOrientacni":34,"nazevCastiObce":"Karlín","kodAdresni
+        +hoMista":27613372,"psc":18600,"textovaAdresa":"Křižíkova 148/34,
+        + Karlín, 18600 Praha 8","standardizaceAdresy":true,"typCisloDomo
+        +vni":1},"pravniForma":"112","pravniFormaRos":"112","financniUrad
+        +":"008","datumVzniku":"2020-10-29","datumAktualizace":"2025-11-1
+        +5","dic":"CZ09639900","icoId":"09639900","adresaDorucovaci":{"ra
+        +dekAdresy1":"Křižíkova 148/34","radekAdresy2":"Karlín","radekAdr
+        +esy3":"18600 Praha 8"},"czNace2008":["461","46900","471","581","
+        +620","70220","711","90020","90040"],"seznamRegistraci":{"stavZdr
+        +ojeRos":"AKTIVNI","stavZdrojeVr":"AKTIVNI","stavZdrojeRes":"AKTI
+        +VNI","stavZdrojeRzp":"AKTIVNI","stavZdrojeNrpzs":"NEEXISTUJICI",
+        +"stavZdrojeRpsh":"NEEXISTUJICI","stavZdrojeRcns":"NEEXISTUJICI",
+        +"stavZdrojeSzr":"NEEXISTUJICI","stavZdrojeDph":"AKTIVNI","stavZd
+        +rojeSkDph":"NEEXISTUJICI","stavZdrojeSd":"NEEXISTUJICI","stavZdr
+        +ojeIr":"NEEXISTUJICI","stavZdrojeCeu":"NEEXISTUJICI","stavZdroje
+        +Rs":"NEEXISTUJICI","stavZdrojeRed":"NEEXISTUJICI","stavZdrojeMon
+        +itor":"NEEXISTUJICI"},"primarniZdroj":"ros","dalsiUdaje":[{"obch
+        +odniJmeno":[{"obchodniJmeno":"Braiins Shop s.r.o.","primarniZazn
+        +am":true}],"sidlo":[{"sidlo":{"kodStatu":"CZ","nazevStatu":"Česk
+        +á republika","kodObce":554782,"nazevObce":"Praha","kodSpravnihoO
+        +bvodu":86,"nazevSpravnihoObvodu":"Praha 8","kodMestskehoObvodu":
+        +86,"nazevMestskehoObvodu":"Praha 8","kodMestskeCastiObvodu":5002
+        +08,"kodUlice":453749,"nazevMestskeCastiObvodu":"Praha 8","nazevU
+        +lice":"Křižíkova … [+16843 chars]                               
+
+⏺ Teď zapisuji investori.json.
+
+⏺ Write(data/vystup_agenta/investori.json)
+  ⎿  Added 95 lines, removed 1 line
+       1 -[]                                                             
+       1 +[                                                              
+       2 +  {                                                            
+       3 +    "id": "cz-bd-partners",                                    
+       4 +    "nazev": "BD Partners",                                    
+       5 +    "typ": "VC",                                               
+       6 +    "zeme": "CZ",                                              
+       7 +    "pravni_subjekt": {                                        
+       8 +      "hodnota": "BD Partners a.s., Generála Píky 430/26, Dejvi
+         +ce, 160 00 Praha 6; člen správní rady Ladislav Bartoníček a Jea
+         +n-Pascal Duvieusart",                                          
+       9 +      "ico": "19286511",                                       
+      10 +      "zdroje": [                                              
+      11 +        {"url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/r
+         +est/ekonomicke-subjekty-vr/19286511", "druh_zdroje": "rejstrik"
+         +, "vydavatel": "ARES (výpis z veřejného rejstříku)", "puvod": n
+         +ull, "zdroj_datum": null, "stazeno": "2026-10-26"},            
+      12 +        {"url": "https://cc.cz/sefoval-ppf-ted-investuje-do-sta
+         +rtupu-vina-i-betonu-mame-na-to-az-25-miliardy-rika-bartonicek/"
+         +, "druh_zdroje": "media", "vydavatel": "CzechCrunch", "puvod": 
+         +null, "zdroj_datum": "2025-07-28", "stazeno": "2026-10-26"}    
+      13 +      ]                                                        
+      14 +    },                                                         
+      15 +    "web": {"hodnota": "https://www.bdpartners.cz/", "zdroj_url
+         +": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYB
+         +s/WcBqZY2kt7stKMdOUxeQ", "stazeno": "2026-10-26"},             
+      16 +    "sektory": {"hodnota": ["technologické firmy (software, kom
+         +binace software a hardware)"], "zdroj_url": "https://cc.cz/sefo
+         +val-ppf-ted-investuje-do-startupu-vina-i-betonu-mame-na-to-az-2
+         +5-miliardy-rika-bartonicek/", "zdroj_datum": "2025-07-28", "sta
+         +zeno": "2026-10-26"},                                          
+      17 +    "faze": {"hodnota": ["early-stage"], "zdroj_url": "https://
+         +cc.cz/je-mu-23-a-fond-expartneru-ppf-pomaha-privest-do-doby-ai-
+         +setri-az-30-hodin-pracovniho-tydne-rika/", "zdroj_datum": "2026
+         +-06-21", "stazeno": "2026-10-26"},                             
+      18 +    "ticket": {"min": 100000, "max": null, "mena": "EUR", "zdro
+         +j_url": "https://cc.cz/je-mu-23-a-fond-expartneru-ppf-pomaha-pr
+         +ivest-do-doby-ai-setri-az-30-hodin-pracovniho-tydne-rika/", "zd
+         +roj_datum": "2026-06-21", "stazeno": "2026-10-26"},            
+      19 +    "kapital": [],                                             
+      20 +    "posledni_investice": {                                    
+      21 +      "firma": "WanderWallet",                                 
+      22 +      "datum_investice": null,                                 
+      23 +      "datum_oznameni": "2026-03-13",                          
+      24 +      "datum_pro_filtr": "oznameni",                           
+      25 +      "zdroje": [                                              
+      26 +        {"url": "https://cc.cz/pred-lety-ulehcil-cestovani-revo
+         +lut-ted-se-o-neco-podobneho-pokousi-i-cech-akorat-v-jizni-ameri
+         +ce/", "druh_zdroje": "zprava_o_transakci", "vydavatel": "CzechC
+         +runch", "puvod": null, "zdroj_datum": "2026-03-13", "stazeno": 
+         +"2026-10-26"}                                                  
+      27 +      ]                                                        
+      28 +    },                                                         
+      29 +    "dalsi_investice": [                                       
+      30 +      {                                                        
+      31 +        "firma": "ValkaAI",                                    
+      32 +        "datum_investice": null,                               
+      33 +        "datum_oznameni": "2026-02-24",                        
+      34 +        "datum_pro_filtr": "oznameni",                         
+      35 +        "zdroje": [                                            
+      36 +          {"url": "https://www.e15.cz/byznys/startupy/konkurenc
+         +e-pro-zarubu-a-bosaka-startup-vlastimila-venclika-ziskal-stovky
+         +-milionu-a-prichazi-s-ai-komentatory-1431016", "druh_zdroje": "
+         +zprava_o_transakci", "vydavatel": "E15", "puvod": null, "zdroj_
+         +datum": "2026-02-24", "stazeno": "2026-10-26"}                 
+      37 +        ]                                                      
+      38 +      },                                                       
+      39 +      {                                                        
+      40 +        "firma": "DecisionRules",                              
+      41 +        "datum_investice": null,                               
+      42 +        "datum_oznameni": "2025-05-06",                        
+      43 +        "datum_pro_filtr": "oznameni",                         
+      44 +        "zdroje": [                                            
+      45 +          {"url": "https://decisionrules.io/articles/decisionru
+         +les-raises-eu1-6m-to-scale-automation-globally", "druh_zdroje":
+         + "zprava_o_transakci", "vydavatel": "DecisionRules (tisková zpr
+         +áva portfoliové firmy)", "puvod": null, "zdroj_datum": "2025-05
+         +-06", "stazeno": "2026-10-26"}                                 
+      46 +        ]                                                      
+      47 +      }                                                        
+      48 +    ],                                                         
+      49 +    "status": "aktivni",                                       
+      50 +    "jistota": {"existence": "vysoka", "investice": "stredni"},
+      51 +    "poznamka": "Typ: BD Partners se v rozhovoru sám označuje j
+         +ako „joint family office“ a „nejsme klasický fond“ (CzechCrunch
+         + 28. 7. 2025), média ho nazývají fondem a funding.tech.eu ho ve
+         +de jako Venture capital. Investuje hlavně menšinově do raných t
+         +echnologických startupů, proto typ VC, ale portfolio zahrnuje i
+         + vinařství Château Virant, Ynsect a So Concrete. Typ k ruční ko
+         +ntrole. Identita: statutární orgán BD Partners a.s. (Bartoníček
+         +, Duvieusart) odpovídá zakladatelům uvedeným v médiích; sídlo v
+         + ARES (Praha 6) se liší od adresy na CEE Funding Map (Na Příkop
+         +ě 9, Praha 1). Ticket: novější zdroj (21. 6. 2026) uvádí „od 10
+         +0 tisíc až do několika milionů eur“, max proto null; starší roz
+         +hovor (28. 7. 2025) uvádí 250 tis. až 2 mil. EUR. Kapitál: zdro
+         +j uvádí jen záměr investovat „celkem 1,2 až 2,5 miliardy korun“
+         + do startupů a dosud alokovaných „přibližně 20 milionů eur“; ne
+         +jde o AUM, upsaný kapitál ani velikost fondu, proto kapital prá
+         +zdný. Částky kol (WanderWallet 10,5 mil. CZK, ValkaAI 12 mil. E
+         +UR, DecisionRules 1,6 mil. EUR) jsou velikosti celých kol, podí
+         +l BD Partners zdroje neuvádějí. Nástroj (equity / konvertibilní
+         +) zdroje výslovně neuvádějí, jde o pre-seed a seed kola. Jistot
+         +a investice stredni: u WanderWallet jediný zdroj; ValkaAI popsa
+         +ly E15 i CzechCrunch týž den (24. 2. 2026), nezávislost původu 
+         +nelze doložit. Poslední investice je nejnovější nalezená, ne nu
+         +tně skutečně poslední."                                        
+      52 +  },                                                           
+      53 +  {                                                            
+      54 +    "id": "cz-borovicka-capital",                              
+      55 +    "nazev": "Borovicka Capital",                              
+      56 +    "typ": "VC",                                               
+      57 +    "zeme": "CZ",                                              
+      58 +    "pravni_subjekt": {                                        
+      59 +      "hodnota": "Borovicka Capital s.r.o., Breitfeldova 709/17
+         +, Karlín, 186 00 Praha 8; jednatelé Martin Borovička a Jakub Bo
+         +rovička",                                                      
+      60 +      "ico": "19966784",                                       
+      61 +      "zdroje": [                                              
+      62 +        {"url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/r
+         +est/ekonomicke-subjekty-vr/19966784", "druh_zdroje": "rejstrik"
+         +, "vydavatel": "ARES (výpis z veřejného rejstříku)", "puvod": n
+         +ull, "zdroj_datum": null, "stazeno": "2026-10-26"},            
+      63 +        {"url": "https://cc.cz/vydelal-na-akciich-pak-propadl-s
+         +tartupum-a-rozjel-rodinny-fond-s-tatou-a-brachou-se-nehadame-ri
+         +ka/", "druh_zdroje": "media", "vydavatel": "CzechCrunch", "puvo
+         +d": null, "zdroj_datum": "2025-02-20", "stazeno": "2026-10-26"}
+      64 +      ]                                                        
+      65 +    },                                                         
+      66 +    "web": {"hodnota": "https://borovickacapital.com/", "zdroj_
+         +url": "https://borovickacapital.com/", "stazeno": "2026-10-26"}
+         +,                                                              
+      67 +    "sektory": {"hodnota": null, "zdroj_url": null, "zdroj_datu
+         +m": null, "stazeno": null},                                    
+      68 +    "faze": {"hodnota": ["early stage"], "zdroj_url": "https://
+         +borovickacapital.com/", "zdroj_datum": null, "stazeno": "2026-1
+         +0-26"},                                                        
+      69 +    "ticket": {"min": null, "max": null, "mena": null, "zdroj_u
+         +rl": null, "zdroj_datum": null, "stazeno": null},              
+      70 +    "kapital": [],                                             
+      71 +    "posledni_investice": {                                    
+      72 +      "firma": "Edmund",                                       
+      73 +      "datum_investice": null,                                 
+      74 +      "datum_oznameni": "2025-02-12",                          
+      75 +      "datum_pro_filtr": "oznameni",                           
+      76 +      "zdroje": [                                              
+      77 +        {"url": "https://www.vestbee.com/blog/articles/edmund-s
+         +ecures-500-k", "druh_zdroje": "zprava_o_transakci", "vydavatel"
+         +: "Vestbee", "puvod": null, "zdroj_datum": "2025-02-12", "staze
+         +no": "2026-10-26"}                                             
+      78 +      ]                                                        
+      79 +    },                                                         
+      80 +    "dalsi_investice": [                                       
+      81 +      {                                                        
+      82 +        "firma": "Outfindo",                                   
+      83 +        "datum_investice": null,                               
+      84 +        "datum_oznameni": "2025-01-20",                        
+      85 +        "datum_pro_filtr": "oznameni",                         
+      86 +        "zdroje": [                                            
+      87 +          {"url": "https://cc.cz/poklada-jednoduche-otazky-a-ti
+         +m-ulehcuje-slozite-nakupy-startup-outfindo-ted-nabira-dalsi-mil
+         +iony/", "druh_zdroje": "zprava_o_transakci", "vydavatel": "Czec
+         +hCrunch", "puvod": null, "zdroj_datum": "2025-01-20", "stazeno"
+         +: "2026-10-26"}                                                
+      88 +        ]                                                      
+      89 +      }                                                        
+      90 +    ],                                                         
+      91 +    "status": "investice_dolozena_12_24_mesicu",               
+      92 +    "jistota": {"existence": "vysoka", "investice": "stredni"},
+      93 +    "poznamka": "Typ: web se popisuje jako „investment company 
+         +with a strategic focus on venture capital investments in the Ce
+         +ntral European region“, CzechCrunch (20. 2. 2025) jako rodinný 
+         +startupový fond financovaný penězi rodiny Borovičkových bez ext
+         +erních investorů. Podle definic v PLAN.md by mohl být i family 
+         +office; protože investuje přímo do startupů, zvolen typ VC. Typ
+         + k ruční kontrole. Identita: jednatelé v rejstříku odpovídají z
+         +akladatelům uvedeným v CzechCrunch. PitchBook uvádí investici d
+         +o NutritionPro k 31. 7. 2025, ale zprávu o transakci jsem nenaš
+         +el, proto ji neuvádím a status vychází z oznámení Edmund (12. 2
+         +. 2025). Částky kol (Edmund 500 tis. EUR, Outfindo 1,2 mil. EUR
+         +) jsou velikosti celých kol, podíl Borovicka Capital zdroje neu
+         +vádějí. Nástroj (equity / konvertibilní) zdroje výslovně neuvád
+         +ějí. Sektory, ticket a kapitál zdroje neuvádějí (ticket 500 tis
+         +. až 1,25 mil. EUR je jen v agregátoru bez původního zdroje, ne
+         +převzato)."                                                    
+      94 +  }                                                            
+      95 +]                                                              
+
+⏺ Bash(cd /Users/petrstastny/Documents/Projekty/investori-databaze && python3 -I
+      - <<'EOF'
+      import csv…)
+  ⎿  Updated data/vystup_agenta/vyrazeni.csv (+4 -1)
+      1 -id,nazev,web,kategorie,duvod,zdroj_url,stazeno                  
+      1 +id,nazev,web,kategorie,duvod,zdroj_url,stazeno                  
+      2 +cz-arx-equity-partners,ARX Equity Partners,https://www.arxequity
+        +.com/,mimo_rozsah_pilotu,"Typ PE, ne VC/CVC: ARX se popisuje jak
+        +o „a leading Central European private equity firm“ a kupuje větš
+        +inové podíly (Medicofit, oznámeno 26. 8. 2026; HLB PROXY 30. 1. 
+        +2026; Direct4me 17. 3. 2026). Investor podle bodů 2 a 3 v okně 2
+        +4 měsíců. Sídlo: Arx Equity Partners s.r.o., IČO 64943356, 28. ř
+        +íjna 767/12, Praha 1 (ARES), společník ARX Equity Partners B.V.;
+        + CEE Funding Map uvádí polskou adresu. Nástroj u Medicofit zdroj
+        + neuvádí, jde o koupi většinového podílu.",https://www.arxequity
+        +.com/arx-equity-partners-acquires-majority-stake-in-medicofit-sl
+        +ovenias-leading-private-physiotherapy-provider/ | https://www.in
+        +vestorsinhealthcare.com/articles/category/news/slovenia-arx-equi
+        +ty-partners-acquires-majority-stake-in-medicofit/ | https://ares
+        +.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/649
+        +43356,2026-10-26                                                
+      3 +cz-botanique-hospitality,Botanique Hospitality,,mimo_rozsah_pilo
+        +tu,"Provozovatel hotelů, ne VC ani samostatná CVC jednotka: Vest
+        +bee ho popisuje jako skupinu, „which owns Botanique Hotel Prague
+        + and other hotels in Indonesia“. Investor podle bodů 2 a 3: účas
+        +t v seed kole RobosizeME, oznámeno 25. 2. 2026 (kolo 2 mil. USD,
+        + podíl Botanique neuveden), dříve v kole z 23. 7. 2024. Totožnos
+        +t investora „Botanique Hospitality Management Group“ s Botanique
+        + Hospitality Management s.r.o. (IČO 22402934, vznik 23. 12. 2024
+        +, Sokolovská 204/11, Praha 8) jsem nepotvrdil; s.r.o. vznikla až
+        + po první investici. Nástroj zdroje neuvádějí.",https://pulse2.c
+        +om/robosizeme-2-million-raised-to-bring-ai-workflow-automation-t
+        +o-the-global-hotel-industry | https://www.vestbee.com/blog/artic
+        +les/robosize-me-secures-seed | https://ares.gov.cz/ekonomicke-su
+        +bjekty-v-be/rest/ekonomicke-subjekty-vr/22402934,2026-10-26     
+      4 +cz-braiins,Braiins,https://braiins.com/,mimo_rozsah_pilotu,"Prov
+        +ozní firma (těžba kryptoměn, software a hardware pro těžbu bitco
+        +inu), ne VC ani samostatná CVC jednotka; funding.tech.eu ji vede
+        + jako Corporate. Investor podle bodů 2 a 3: vedoucí investor see
+        +d kola Firefish (1,8 mil. USD celkem, podíl Braiins neuveden), o
+        +známeno 16. 4. 2025. Která společnost skupiny investovala, zdroj
+        + neuvádí; Braiins Systems s.r.o. má IČO 24147931, Křižíkova 148/
+        +34, Praha 8 (ARES), ve skupině jsou i Braiins Shop, Braiins Forg
+        +e a Braiins Services. Nástroj zdroj neuvádí.",https://cc.cz/fung
+        +uje-jako-zonky-kryte-bitcoiny-v-uschove-jich-ma-mit-za-dve-milia
+        +rdy-cesky-startup-nabira-dalsi-miliony/ | https://funding.tech.e
+        +u/api/v1/investors/Braiins | https://ares.gov.cz/ekonomicke-subj
+        +ekty-v-be/rest/ekonomicke-subjekty-vr/24147931,2026-10-26       
+
+⏺ Fetch(https://pulse2.com/robosizeme-2-million-raised-to-bring-ai-workflow-auto
+       mation-to-the-global-hotel-industry)
+  ⎿  Received 78.9KB (200 OK)
+
+⏺ Bash(date -u +%Y-%m-%dT%H:%M:%SZ && git remote -v | head -2)
+  ⎿  (No output)
+
+⏺ Write(ai-log/02-zkusebni-davka/mereni.txt)
+  ⎿  Wrote 49 lines to ai-log/02-zkusebni-davka/mereni.txt
+       1 Krok 2, zkušební dávka: obohacení a zařazení prvních 5 kandidátů
+       2 ================================================================
+         =============
+       4 Kandidáti (data/kandidati.csv, řazeno podle sloupce nazev bez oh
+         ledu na velikost písmen):
+       6   cz-botanique-hospitality, cz-braiins
+       7
+       9   investori.json  2  BD Partners (VC, aktivni), Borovicka Capita
+         l (VC, investice_dolozena_12_24_mesicu)
+         ),
+     … +60 lines (ctrl+o to expand)
+
+⏺ Bash(git add data/vystup_agenta ai-log/02-zkusebni-davka && git status --short
+      && git commit -q -m "$(cat <<'EOF'
+      Krok 2: zkušební dávka, prvních 5 kandidátů…)
+  ⎿  (No output)
+
+⏺ Zkušební dávka je hotová, commitnutá a pushnutá na main jako f4cd74d. Výstup
+  je původní a beze změn. Ruční hodnocení jsem nevyplňoval.
+
+  Výsledky
+
+  ┌───────────┬─────────────────┬────────────┬─────────────────────────────┐
+  │ Kandidát  │   Rozhodnutí    │    Typ     │ Poslední doložená investice │
+  ├───────────┼─────────────────┼────────────┼─────────────────────────────┤
+  │ BD        │ zařazen         │ VC         │ WanderWallet, oznámeno 13.  │
+  │ Partners  │                 │            │ 3. 2026 → aktivni           │
+  ├───────────┼─────────────────┼────────────┼─────────────────────────────┤
+  │ Borovicka │                 │            │ Edmund, oznámeno 12. 2.     │
+  │  Capital  │ zařazen         │ VC         │ 2025 → investice_dolozena_1 │
+  │           │                 │            │ 2_24_mesicu                 │
+  ├───────────┼─────────────────┼────────────┼─────────────────────────────┤
+  │ ARX       │ mimo_rozsah_pil │            │ Medicofit, většinový podíl, │
+  │ Equity    │ otu             │ PE         │  oznámeno 26. 8. 2026       │
+  │ Partners  │                 │            │                             │
+  ├───────────┼─────────────────┼────────────┼─────────────────────────────┤
+  │ Botanique │ mimo_rozsah_pil │ provozovat │ RobosizeME, seed kolo,      │
+  │  Hospital │ otu             │ el hotelů  │ oznámeno 25. 2. 2026        │
+  │ ity       │                 │            │                             │
+  ├───────────┼─────────────────┼────────────┼─────────────────────────────┤
+  │           │                 │ provozní   │                             │
+  │ Braiins   │ mimo_rozsah_pil │ firma      │ Firefish, seed kolo,        │
+  │           │ otu             │ (těžba     │ oznámeno 16. 4. 2025        │
+  │           │                 │ kryptoměn) │                             │
+  └───────────┴─────────────────┴────────────┴─────────────────────────────┘
+
+  - Všech pět kandidátů je investor podle bodů 2 a 3, žádný jsem nevyřadil jako
+    neni_investor. hranicni.csv zůstal prázdný.
+  - Doplňkový šestý kandidát nebyl potřeba, protože dva z pěti jsem zařadil. V
+    záznamu měření je to uvedeno.
+  - IČO jsem ověřil v ARES a jména statutárních orgánů odpovídají lidem
+    jmenovaným v médiích. Stránky justice.cz jsem přímo neotevíral.
+  - U všech investic je datum_investice = null, protože žádný zdroj neuvádí
+    datum uzavření kola. Filtr proto vždy používá datum_pro_filtr = oznameni.
+  - U všech kol jde o velikost celého kola. Kolik vložil konkrétní investor,
+    žádný zdroj neuvádí.
+  - Oba zařazení mají jistota.investice = stredni. ValkaAI popsaly E15 i
+    CzechCrunch ve stejný den, ale nedokázal jsem doložit, že jejich zprávy mají
+    různý původ.
+  - Údaje o NutritionPro (Borovicka, 07/2025) jsou jen v PitchBooku bez zprávy o
+    transakci, proto jsem je nepoužil.
+
+  Čas a spotřeba
+
+  - Čas podle systémových hodin: 14:56:41 až 15:02:30 UTC, tedy zhruba 6 minut.
+    Je to podezřele krátké, ale tak to ukázal příkaz date na začátku a na konci.
+    Doporučuji porovnat s časem v Claude Code.
+  - Tokeny: k naměřené spotřebě nemám přístup, takže ji neuvádím. Zjistíte ji
+    přes /cost nebo /usage.
+  - Požadavky: 9× WebSearch, 20× WebFetch (jeden skončil HTTP 403), 11× ARES API
+    a 11× funding.tech.eu API.
+  - Všechno je v ai-log/02-zkusebni-davka/mereni.txt, surové odpovědi z ARES a
+    funding.tech.eu leží vedle něj.
+
+  Nejasnosti
+
+  1. VC, nebo family office? Obě zařazení jsou hraniční a obě je třeba ručně
+     zkontrolovat.
+     - BD Partners o sobě v rozhovoru říká „joint family office, nejsme klasický
+       fond“. V portfoliu má i vinařství a podnikání mimo technologie.
+     - Borovicka Capital investuje peníze rodiny a média ho popisují jako
+       „rodinný fond“.
+     - Typ VC jsem zvolil, protože oba investují hlavně menšinově do startupů v
+       raných fázích. Pokud ruční kontrola rozhodne jinak, oba spadnou do
+       mimo_rozsah_pilotu.
+  2. Firmy, které investují strategicky. Botanique a Braiins investují z vlastní
+     firmy a nemají samostatnou investiční jednotku. Mezi typy v PLAN.md pro ně
+     žádný typ není, CVC vyžaduje samostatnou jednotku. Do důvodu vyřazení jsem
+     napsal „ne VC ani CVC“.
+  3. Kdo vlastně investoval:
+     - U Botanique vznikla Botanique Hospitality Management s.r.o. až v 12/2024,
+       tedy po první investici z 07/2024. Že jde o tutéž firmu, jsem
+       nepotvrdil.
+     - U Braiins zdroj neuvádí, která ze čtyř firem skupiny investovala.
+  4. Nástroj investice. Žádný zdroj výslovně neříká, jestli šlo o equity, nebo
+     konvertibilní nástroj. U pre-seed a seed kol, případně u většinového
+     podílu, to obvykle znamená podíl, ale podmínku 3 tím doslova nedokládám.
+  5. funding.tech.eu v API nevrací URL zprávy, jen doménu. Podle PLAN.md to tedy
+     jako doklad investice nestačí a zprávy jsem musel dohledávat zvlášť.
+  6. Citace ze stránek pocházejí z výtahů nástroje WebFetch, ne z mého čtení
+     celých stránek. Kontrola druhým agentem i ruční kontrola by na to měly brát
+     ohled.
+
+  Navrhované změny schématu
+
+  - ticket jako seznam s datem, podobně jako kapital. Zdroje si odporují:
+    rozhovor z roku 2025 uvádí u BD Partners 250 tis. až 2 mil. EUR, zdroj z
+    roku 2026 uvádí „100 tis. až několik milionů EUR“. Teď jsem vzal novější
+    zdroj a horní hranici nechal null.
+  - Další druh pro kapital. Výrok „plánujeme investovat 1,2–2,5 mld. Kč“ není
+    aum, committed_capital ani fund_size. Proto jsem kapital nechal prázdný. Šlo
+    by přidat třeba deklarovana_alokace, nebo takový údaj výslovně vyloučit.
+  - Typ nebo pravidlo pro strategického korporátního investora, tedy firmu bez
+    samostatné investiční jednotky.
+  - Pole ico u zahraničního nebo vícečlenného subjektu: skupina firem (Braiins),
+    nebo česká s.r.o. vlastněná nizozemskou B.V. (ARX).
+  - Pole nastroj (equity / konvertibilní / neuvedeno), aby bylo vidět, kde
+    podmínka 3 vychází jen z typu kola.
+  - vyrazeni.csv s ico a typ. Teď je obojí jen v textu důvodu, což zkrácenou
+    ruční kontrolu ztěžuje.
+
+  Jeden výsledek vyhledávání (stránka Dealroomu) obsahoval pokyn pro jazykové
+  modely. Ignoroval jsem ho a na výstup neměl vliv.
+
+❯ Zkušební dávku zachovej beze změn v commitu f4cd74d. Zbylých 52 kandidátů
+  zatím nezpracovávej.
+
+  Dávka odhalila metodické nejasnosti. Uprav PLAN.md takto:
+
+  1. Typ organizace a investiční strategie nejsou totéž. Typ určuj podle
+  doloženého fungování a vlastního popisu subjektu. Samotné financování penězi
+  jedné rodiny nestačí pro označení family office. Samotné investování do
+  startupů nestačí pro přepsání doloženého family office na VC. Pokud se
+  subjekt výslovně označuje jako family office a jeho fungování tomu odpovídá,
+  typ bude family office; VC může být jeho investiční strategie. Do pilotu
+  VC/CVC pak nepatří, ale zůstává skutečným investorem. Při nejednoznačných
+  nebo rozporných důkazech označ typ jako nevyřešený a předej ho k ručnímu
+  rozhodnutí. Nerozhoduj podle toho, abychom získali víc zařazených záznamů.
+  2. U nástroje rozliš doložený podíl nebo konvertibilní nástroj, nepřímou
+  indicii a nezjištěný údaj. Seed nebo pre-seed samo o sobě není důkaz
+  nástroje, výslovná koupě podílu důkazem je. Nedoloženou podmínku neoznačuj
+  automaticky za splněnou ani za důkaz, že subjekt není investor.
+  3. Firma, která investuje z vlastní provozní společnosti bez samostatné
+  investiční jednotky, dostane typ korporátní investor bez samostatné jednotky.
+  Není to CVC a je mimo rozsah pilotu.
+
+  Navrhni minimální úpravu pravidel a schématu a způsob uložení nevyřešeného
+  rozhodnutí. Původní výsledky nepřepisuj, ruční hodnocení nevyplňuj. Ostatní
+  navržené změny schématu zatím neprováděj.
+
+  Ukaž diff PLAN.md a vypiš konkrétní dopad na těchto pět kandidátů.
+  Necommituj, dokud to neschválím.
+
+  Čas 5 minut 49 sekund eviduj jako naměřenou dobu této dávky. Pro náklady bude
+  potřeba připočítat kontrolu, opravy a ruční ověřování.
+
+⏺ Upravuji PLAN.md podle tří bodů. Zkušební dávku v commitu f4cd74d a výstup
+  agenta nechávám beze změn.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      20  
+      21  1. **Je dohledatelný jako právní subjekt nebo veřejně vystupují
+          cí osoba.** U firem zápis v obchodním rejstříku (v ČR justice.c
+          z, IČO), u zahraničních ekvivalent nebo regulatorní registr. U 
+          fyzických osob veřejné vystupování jako investor pod vlastním j
+          ménem.
+      22  2. **Má doloženou přímou investici do soukromé firmy za posledn
+          ích 24 měsíců.** Nutným dokladem je aspoň jedna zpráva o konkré
+          tní transakci: tisková zpráva, zpráva v médiích, nebo záznam v 
+          databázi transakcí s odkazem na takovou zprávu. Portfolio na we
+          bu investora stačí jen tehdy, když ho potvrzuje zpráva o transa
+          kci, samo podmínku nesplní. Zápis investora jako společníka v r
+          ejstříku portfoliové firmy dokládá jen to, že investor podíl dr
+          ží. Datum investice sám nedokládá (zápis může proběhnout se zpo
+          žděním a podíl mohl být nabytý dřív nebo převodem), proto ho be
+          ru jen jako podpůrný doklad vedle zprávy o transakci. Jak se v 
+          tomto okně určuje datum, popisuje bod 4.
+      23 -3. **Investuje za podíl (equity nebo konvertibilní nástroj).** 
+         -Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie.         
+      23 +3. **Investuje za podíl (equity nebo konvertibilní nástroj).** 
+         +Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie. Podmínka
+         + je splněná, jen když je nástroj doložený aspoň u jedné investi
+         +ce v záznamu (pole `nastroj`, bod 4). Nepřímá indicie ani nezji
+         +štěný nástroj podmínku nesplní, ale nejsou ani důkazem, že subj
+         +ekt není investor. Takový kandidát jde k ručnímu rozhodnutí (bo
+         +d 3, Nevyřešená rozhodnutí).                                   
+      24  
+      25  Typy, které rozlišuji:
+      26  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 7 lines
+      32  | Family office | Spravuje majetek jedné rodiny a investuje ho 
+          mimo jiné přímo do firem |
+      33  | Angel | Fyzická osoba investující vlastní peníze, typicky v r
+          aných fázích |
+      34  | Velký soukromý investor | Investiční holding jednoho podnikat
+          ele, který není family office v užším smyslu |
+      35 +| Korporátní investor bez samostatné jednotky | Provozní firma,
+         + která investuje přímo z vlastní provozní společnosti a nemá sa
+         +mostatnou investiční jednotku. Není CVC |                      
+      36  
+      37 +**Typ a investiční strategie.** Typ popisuje, jak subjekt fungu
+         +je, ne do čeho investuje. Určuji ho podle doloženého fungování 
+         +a vlastního popisu subjektu:                                   
+      38 +- Samotné financování penězi jedné rodiny nestačí pro typ famil
+         +y office.                                                      
+      39 +- Samotné investování do startupů nestačí pro přepsání doložené
+         +ho family office na VC. Když se subjekt výslovně označuje jako 
+         +family office a jeho fungování tomu odpovídá, typ je family off
+         +ice a VC může být jeho investiční strategie (zapíšu ji do `pozn
+         +amka`). Do pilotu nepatří, ale zůstává skutečným investorem.   
+      40 +- Když jsou důkazy o typu nejednoznačné nebo si odporují, typ j
+         +e nevyřešený a jde k ručnímu rozhodnutí (bod 3, Nevyřešená rozh
+         +odnutí).                                                       
+      41 +- Typ nevolím podle toho, kolik záznamů projde do pilotu.      
+      42 +                                                               
+      43  Aktivita: investor s doloženou investicí za posledních 12 měsíc
+          ů má status `aktivni`, s nejnovější doloženou investicí starou 
+          12–24 měsíců `investice_dolozena_12_24_mesicu`. Starší než 24 m
+          ěsíců do vzorku nezařazuji. Hranice 12 a 24 měsíců je moje vlas
+          tní pracovní definice. Nepřebírám ji z CEE Funding Map (Warsaw 
+          Equity Group s CzechInvestem), která používá jiné kritérium: za
+           aktivní VC považuje fond s alespoň dvěma investicemi za rok.
+      44  
+      45  Status popisuje jen veřejnou stopu, ne skutečnou aktivitu. Inve
+          stor může investovat, aniž by o tom vyšla zpráva, a naopak zprá
+          va může vyjít se zpožděním. Status `investice_dolozena_12_24_me
+          sicu` proto neznamená, že investor přestal investovat, jen že n
+          ovější investici jsem nedoložil.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      65  
+      66  - **Cílová skupina pilotu jsou VC/CVC se sídlem v ČR.** Jde o m
+          ůj zvolený rozsah, zadání VC fondy v jedné zemi uvádí jen jako 
+          příklad menšího vzorku.
+      67  - **Pravidla pilotu splní kandidát**, který je investor podle b
+          odů 2 a 3, jeho typ je VC nebo CVC a investiční firma (správce,
+           značka) má sídlo v ČR.
+      68 -- **Mimo rozsah pilotu, ne neinvestor.** Skutečného investora p
+         -odle bodů 2 a 3, který má jiný typ (PE, family office, anděl, v
+         -elký soukromý investor) nebo sídlo mimo ČR, označím jako mimo r
+         -ozsah pilotu. Do pilotní databáze ho nezařadím, ale nevydávám h
+         -o za subjekt, který není investor.                             
+      68 +- **Mimo rozsah pilotu, ne neinvestor.** Skutečného investora p
+         +odle bodů 2 a 3, který má jiný typ (PE, family office, anděl, v
+         +elký soukromý investor, korporátní investor bez samostatné jedn
+         +otky) nebo sídlo mimo ČR, označím jako mimo rozsah pilotu. Do p
+         +ilotní databáze ho nezařadím, ale nevydávám ho za subjekt, kter
+         +ý není investor.                                               
+      69  - **Kategorie ve `vyrazeni.csv`.** Každý vyřazený kandidát má v
+          e sloupci `kategorie` jednu z hodnot:
+      70    - `neni_investor`: nesplňuje body 2 a 3 (zprostředkovatel, be
+          z doložené investice v okně 24 měsíců, úvěr místo podílu a podo
+          bně),
+      71    - `mimo_rozsah_pilotu`: investor podle bodů 2 a 3, ale nesplň
+          uje typ nebo sídlo podle pravidel pilotu.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 9 lines
+      73    Konkrétní důvod je ve sloupci `duvod`.
+      74  - **Měření.** Správnost zařazení a recall pilotu se vztahují ke
+           splnění pravidel pilotu včetně typu a sídla, ne jen k bodům 2 
+          a 3 (viz bod 7).
+      75  
+      76 +### Nevyřešená rozhodnutí                                      
+      77 +                                                               
+      78 +Když zůstane nevyřešený typ (bod 2) nebo nástroj (bod 2, podmín
+         +ka 3) a na odpovědi závisí zařazení nebo kategorie vyřazení, ag
+         +ent kandidáta nezařadí ani nevyřadí. Zapíše ho do `data/vystup_
+         +agenta/nevyresene.csv` se sloupci `id,nazev,web,otazka,moznosti
+         +,duvod,zdroj_url,stazeno`:                                     
+      79 +- `otazka`: `typ` nebo `nastroj`, více otázek oddělených ` | `,
+      80 +- `moznosti`: výsledky, mezi kterými se rozhoduje, například `z
+         +arazen | mimo_rozsah_pilotu` nebo `mimo_rozsah_pilotu | neni_in
+         +vestor`,                                                       
+      81 +- `duvod`: které důkazy si odporují nebo co chybí, a co by otáz
+         +ku rozhodlo.                                                   
+      82 +                                                               
+      83 +Rozhodnutí udělám ručně. Zapíšu ho do `data/hodnoceni.csv` a vý
+         +sledek do `data/opraveno/`. Původní výstup agenta se nemění.   
+      84 +                                                               
+      85  ## 4. Struktura záznamu
+      86  
+      87  Každý údaj nese vlastní zdroj. Bez URL se pole nevyplňuje. Důka
+          zy o existenci subjektu a o investicích mají místo jednoho zdro
+          je seznam `zdroje`, aby šlo doložit nezávislé potvrzení.
+
+⏺ Teď doplním schéma (pole nastroj), automatickou kontrolu, ruční kontrolu,
+  měření a seznam souborů.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line
+      105    ],
+      106    "posledni_investice": {
+      107      "firma": "...", "datum_investice": null, "datum_oznameni":
+            "2026-03-12", "datum_pro_filtr": "oznameni",
+      108 +    "nastroj": {"hodnota": "podil", "doklad": "dolozeno", "zdr
+          +oj_url": "..."},                                              
+      109      "zdroje": [
+      110        {"url": "...", "druh_zdroje": "zprava_o_transakci", "vyd
+           avatel": "CzechCrunch", "puvod": "https://.../tiskova-zprava",
+            "zdroj_datum": "2026-03-12", "stazeno": "..."},
+      111        {"url": "...", "druh_zdroje": "portfolio_web", "vydavate
+           l": "web investora", "puvod": null, "zdroj_datum": null, "staz
+           eno": "..."}
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      111        {"url": "...", "druh_zdroje": "portfolio_web", "vydavate
+           l": "web investora", "puvod": null, "zdroj_datum": null, "staz
+           eno": "..."}
+      112      ]
+      113    },
+      114 -  "dalsi_investice": [{"firma": "...", "datum_investice": "...
+          -", "datum_oznameni": "...", "datum_pro_filtr": "investice", "z
+          -droje": ["..."]}],                                            
+      114 +  "dalsi_investice": [{"firma": "...", "datum_investice": "...
+          +", "datum_oznameni": "...", "datum_pro_filtr": "investice", "n
+          +astroj": {"hodnota": null, "doklad": "nezjisteno", "zdroj_url"
+          +: null}, "zdroje": ["..."]}],                                 
+      115    "status": "aktivni",
+      116    "jistota": {"existence": "vysoka", "investice": "stredni"},
+      117    "poznamka": ""
+
+⏺ Update(PLAN.md)
+  ⎿  Added 7 lines
+      130  
+      131  **Datum investice a datum oznámení.** `datum_investice` je den
+           , kdy se investice uskutečnila (podpis nebo uzavření kola), a 
+           vyplňuji ho jen tehdy, když ho zdroj výslovně uvádí. `datum_oz
+           nameni` je den, kdy byla investice poprvé veřejně oznámena. Da
+           tum publikace zdroje (`zdroj_datum`) automaticky nepovažuji za
+            datum investice. Kola se často oznamují týdny až měsíce po uz
+           avření. Když známe jen oznámení, zůstane `datum_investice` = `
+           null` a datum se uloží výslovně jako `datum_oznameni`. Pokud z
+           droj uvádí jen měsíc nebo rok, ukládám datum ve zkráceném tvar
+           u ISO 8601 (`2025-03`, `2025`).
+      132  
+      133 +**Nástroj.** `nastroj` je u každé investice. `hodnota` je `pod
+          +il`, `konvertibilni` nebo `null`, `doklad` je jedna z hodnot: 
+      134 +- `dolozeno`: zdroj nástroj výslovně uvádí (koupě podílu, naby
+          +tí akcií, konvertibilní půjčka, SAFE), nebo zápis investora ja
+          +ko společníka v rejstříku portfoliové firmy dokládá, že podíl 
+          +drží,                                                         
+      135 +- `neprima_indicie`: na nástroj jen ukazuje okolnost, napříkla
+          +d označení kola jako seed nebo pre-seed nebo typ investora. Se
+          +ed nebo pre-seed samo o sobě nástroj nedokládá,               
+      136 +- `nezjisteno`: zdroje nástroj neuvádějí, `hodnota` a `zdroj_u
+          +rl` jsou `null`.                                              
+      137 +                                                              
+      138 +Podmínku 3 splní jen `dolozeno`. Ostatní hodnoty ji nesplní an
+          +i nevyvrátí (bod 2, podmínka 3).                              
+      139 +                                                              
+      140  **Filtr 24 měsíců.** Filtr i status z bodu 2 pracují s datem v
+            `datum_pro_filtr`:
+      141  - `investice`: použije se `datum_investice`, když je známé,
+      142  - `oznameni`: jinak se použije `datum_oznameni`. Investice tak
+            může být ve skutečnosti o něco starší než 24 měsíců. Toto riz
+           iko přijímám, protože oznámení je nejbližší doložitelný okamži
+           k. Hodnotu `oznameni` ale zapisuji, aby šlo takové záznamy spo
+           čítat a zvlášť zkontrolovat.
+⏺ Update(PLAN.md)
+  ⎿  Added 2 lines, removed 1 line
+      192  - `datum_pro_filtr` = `investice` jen tehdy, když je vyplněné 
+           `datum_investice`,
+      193  - `jistota.investice` = `vysoka` jen tehdy, když mají zprávy o
+            transakci aspoň dva různé původy (`puvod`, u `null` URL zdroj
+           e),
+      194  - deduplikace podle IČO, domény webu a normalizovaného názvu,
+      195 -- typ, status, `druh` kapitálu a `druh_zdroje` jsou povolené h
+          -odnoty, částky jsou čísla, měna je kód ISO 4217.              
+      195 +- typ, status, `druh` kapitálu, `druh_zdroje` a `nastroj.dokla
+          +d` jsou povolené hodnoty, částky jsou čísla, měna je kód ISO 4
+          +217,                                                          
+      196 +- zařazený záznam má aspoň u jedné investice `nastroj.doklad` 
+          += `dolozeno` se `zdroj_url`.                                  
+      197  
+      198  **Kontrola druhým agentem (stejný model v nové konverzaci)**
+      199  Nová konverzace se stejným modelem, která neviděla, jak záznam
+            vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj op
+           ravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stej
+           ný model, takže může dělat stejné chyby ve čtení zdrojů jako p
+           rvní agent. Jeho shoda proto není důkaz správnosti. Nenahrazuj
+           e ruční kontrolu, jen říká, kam se podívat dřív.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 2 lines
+      225  | `kategorie` | Sedí kategorie vyřazení (`neni_investor` / `mi
+           mo_rozsah_pilotu`) | |
+      226  | `duvod` | Sedí důvod vyřazení, který agent uvedl | |
+      227  
+      228 +U nevyřešených (`data/vystup_agenta/nevyresene.csv`) vyplním `
+          +je_investor` a `rozsah_pilotu`, které zároveň zaznamenávají mo
+          +je rozhodnutí, a `duvod` (agent správně popsal, co chybí nebo 
+          +si odporuje). Zvolený typ nebo nástroj uvedu v poznámce.      
+      229 +                                                              
+      230  ## 7. Měření přesnosti
+      231  
+      232  Vzorek je malý, proto ho ručně ověřím celý, ne jen náhodný výb
+           ěr.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      233  
+      234  Ukládám tři věci zvlášť a žádnou nepřepisuji:
+      235  
+      236 -- **původní výstup agenta** (`data/vystup_agenta/`): zařazené 
+          -(`investori.json`), vyřazené (`vyrazeni.csv`) i hraniční (`hra
+          -nicni.csv`), přesně tak, jak je agent vytvořil. Vyřazení je ta
+          -ké rozhodnutí agenta, proto zůstává beze změn,                
+      236 +- **původní výstup agenta** (`data/vystup_agenta/`): zařazené 
+          +(`investori.json`), vyřazené (`vyrazeni.csv`), hraniční (`hran
+          +icni.csv`) i nevyřešené (`nevyresene.csv`), přesně tak, jak je
+          + agent vytvořil. Vyřazení je také rozhodnutí agenta, proto zůs
+          +tává beze změn,                                               
+      237  - **ruční hodnocení** (`data/hodnoceni.csv`), jeden řádek na k
+           andidáta a pole s hodnotou `ano` / `ne` / `nelze_overit` a poz
+           námkou. Sloupec `soubor` říká, ze kterého souboru výstupu agen
+           ta kandidát pochází,
+      238  - **opravenou verzi** (`data/opraveno/`), která vznikne až po 
+           ručním hodnocení. Má stejné soubory jako výstup agenta a kandi
+           dát se v ní může přesunout mezi zařazenými a vyřazenými.
+      239  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      251  1. **Přesnost zařazení (precision):** podíl zařazených záznamů
+           , které splňují pravidla pilotu, tedy jsou investor podle bodů
+            2 a 3 (`je_investor` = `ano`), mají typ VC nebo CVC a sídlo v
+            ČR (`rozsah_pilotu` = `ano`). Tohle je hlavní číslo, protože 
+           zadání říká, že databáze nesmí obsahovat náhodné firmy. Zvlášť
+            uvedu, kolik chybně zařazených je skutečný investor mimo rozs
+           ah pilotu a kolik není investor vůbec.
+      252  2. **Přesnost po polích:** pro každé pole zařazených záznamů z
+           vlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vy
+           plněných. Ticket a kapitál budou vyplněné výrazně méně často n
+           ež existence a poslední investice.
+      253  3. **Správnost vyřazení:** zvlášť pro vyřazené a hraniční podí
+           l kandidátů, kteří podle ruční kontroly opravdu nesplňují prav
+           idla pilotu (`je_investor` = `ne` nebo `rozsah_pilotu` = `ne`)
+           , zvlášť podíl, u kterých sedí kategorie vyřazení (u `neni_inv
+           estor` musí být `je_investor` = `ne`, u `mimo_rozsah_pilotu` m
+           usí být `je_investor` = `ano` a `rozsah_pilotu` = `ne`), a zvl
+           ášť podíl, u kterých sedí důvod vyřazení. Skutečný investor vy
+           řazený jako `neni_investor` je chyba kategorie, i když vyřazen
+           í z pilotu je správné.
+      254 -4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:**
+          - ze všech kandidátů, kteří podle ruční kontroly splňují pravid
+          -la pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u z
+          -ařazených, vyřazených i hraničních), podíl, který agent zařadi
+          -l. Číslo platí jen pro kandidáty, které jsme prověřili. Neříká
+          - nic o investorech, kteří se mezi kandidáty vůbec nedostali, a
+          - proto ho nevykazuji jako úplnost všech investorů na trhu. Mez
+          -i kandidáty nejsou ani subjekty, jejichž sídlo se při sběru ne
+          -podařilo doložit (`nevyreseno_sidlo` v `ai-log/01-kandidati/op
+          -ravy_sberu.csv`). Tuto nejistotu uvedu u recallu i u místního 
+          -rozsahu (bod 8.3).                                            
+      254 +4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:**
+          + ze všech kandidátů, kteří podle ruční kontroly splňují pravid
+          +la pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u z
+          +ařazených, vyřazených, hraničních i nevyřešených), podíl, kter
+          +ý agent zařadil. Nevyřešený kandidát, kterého ručně zařadím, s
+          +e počítá jako nezařazený agentem. Číslo platí jen pro kandidát
+          +y, které jsme prověřili. Neříká nic o investorech, kteří se me
+          +zi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplno
+          +st všech investorů na trhu. Mezi kandidáty nejsou ani subjekty
+          +, jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_s
+          +idlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistot
+          +u uvedu u recallu i u místního rozsahu (bod 8.3).             
+      255  
+      256  U každého podílu s jasným čitatelem a jmenovatelem (obě přesno
+           sti, správnost vyřazení, recall v rámci prověřeného souboru) u
+           vedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak 
+           moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je in
+           terval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo pod
+           ílu i intervalu N/A. Interval popisuje jen nejistotu podílu v 
+           pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani 
+           o nejistotě globálního scénáře z bodu 8.
+      257  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 2 lines
+      253  3. **Správnost vyřazení:** zvlášť pro vyřazené a hraniční podí
+           l kandidátů, kteří podle ruční kontroly opravdu nesplňují prav
+           idla pilotu (`je_investor` = `ne` nebo `rozsah_pilotu` = `ne`)
+           , zvlášť podíl, u kterých sedí kategorie vyřazení (u `neni_inv
+           estor` musí být `je_investor` = `ne`, u `mimo_rozsah_pilotu` m
+           usí být `je_investor` = `ano` a `rozsah_pilotu` = `ne`), a zvl
+           ášť podíl, u kterých sedí důvod vyřazení. Skutečný investor vy
+           řazený jako `neni_investor` je chyba kategorie, i když vyřazen
+           í z pilotu je správné.
+      254  4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:**
+            ze všech kandidátů, kteří podle ruční kontroly splňují pravid
+           la pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u z
+           ařazených, vyřazených, hraničních i nevyřešených), podíl, kter
+           ý agent zařadil. Nevyřešený kandidát, kterého ručně zařadím, s
+           e počítá jako nezařazený agentem. Číslo platí jen pro kandidát
+           y, které jsme prověřili. Neříká nic o investorech, kteří se me
+           zi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplno
+           st všech investorů na trhu. Mezi kandidáty nejsou ani subjekty
+           , jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_s
+           idlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistot
+           u uvedu u recallu i u místního rozsahu (bod 8.3).
+      255  
+      256 +Nevyřešené kandidáty vykazuji zvlášť: počet, podíl ze všech pr
+          +ověřených kandidátů a kolik z nich jsem ručně zařadil. Do přes
+          +nosti zařazení ani do správnosti vyřazení nevstupují. Jejich p
+          +odíl je zároveň podklad pro náklady na ruční kontrolu (bod 10)
+          +.                                                             
+      257 +                                                              
+      258  U každého podílu s jasným čitatelem a jmenovatelem (obě přesno
+           sti, správnost vyřazení, recall v rámci prověřeného souboru) u
+           vedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak 
+           moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je in
+           terval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo pod
+           ílu i intervalu N/A. Interval popisuje jen nejistotu podílu v 
+           pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani 
+           o nejistotě globálního scénáře z bodu 8.
+      259  
+      260  Pro každou chybu zapíšu do sloupce `pricina_chyby`, kde vznikl
+           a: `spatny_zdroj`, `chybne_cteni` (agent zdroj špatně přečetl)
+           , `zastaraly_udaj` nebo `chyba_pravidel`. To je podklad pro RE
+           ADME.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      341  
+      342  1. **Kandidáti:** agent stáhne seznamy ze zdrojů v bodě 5 a vy
+           tvoří `data/kandidati.csv`. Bez posuzování.
+      343  2. **Obohacení:** pro každého kandidáta agent dohledá pole pod
+           le schématu. Pravidlo: když údaj nenajde, nechá `null`. Odhad 
+           nebo údaj bez URL je chyba.
+      344 -3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravi
+          -del pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do 
+          -databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta
+          -/investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv
+          -` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvod
+          -em, venture debt do `data/vystup_agenta/hranicni.csv`.        
+      344 +3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravi
+          +del pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do 
+          +databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta
+          +/investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv
+          +` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvod
+          +em, venture debt do `data/vystup_agenta/hranicni.csv`, nevyřeš
+          +ený typ nebo nástroj do `data/vystup_agenta/nevyresene.csv`.  
+      345  4. **Automatická kontrola:** skript z bodu 6.
+      346  5. **Kontrola druhým agentem** (stejný model v nové konverzaci
+           ): kontrola zdrojů.
+      347  6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkr
+           ácená u vyřazených a hraničních, vše do `data/hodnoceni.csv`. 
+           Původní výstup agenta zůstává beze změny, opravy jdou do `data
+           /opraveno/`.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line
+      359  | `data/vystup_agenta/investori.json` | původní výstup agenta:
+            zařazení, seznam záznamů podle bodu 4, beze změn |
+      360  | `data/vystup_agenta/vyrazeni.csv` | původní výstup agenta: v
+           yřazení kandidáti, sloupce `id,nazev,web,kategorie,duvod,zdroj
+           _url,stazeno`, `kategorie` je `neni_investor` nebo `mimo_rozsa
+           h_pilotu`, beze změn |
+      361  | `data/vystup_agenta/hranicni.csv` | původní výstup agenta: h
+           raniční případy (venture debt), sloupce `id,nazev,web,druh,duv
+           od,zdroj_url,stazeno`, beze změn |
+      362 +| `data/vystup_agenta/nevyresene.csv` | původní výstup agenta:
+          + kandidáti s nevyřešeným typem nebo nástrojem k ručnímu rozhod
+          +nutí, sloupce `id,nazev,web,otazka,moznosti,duvod,zdroj_url,st
+          +azeno`, beze změn |                                           
+      363  | `data/hodnoceni.csv` | ruční hodnocení všech kandidátů, slou
+           pce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,
+           datum` |
+      364  | `data/opraveno/` | opravená verze po ručním hodnocení, stejn
+           é soubory a schéma jako `data/vystup_agenta/` |
+      365  | `scripts/` | skripty pro automatickou kontrolu a měření |
+
+⏺ Dobu 5 min 49 s zapíšu do nového souboru, aby mereni.txt z commitu f4cd74d
+  zůstal beze změny.
+
+⏺ Write(ai-log/02-zkusebni-davka/doba_zpracovani.txt)
+  ⎿  Wrote 11 lines to ai-log/02-zkusebni-davka/doba_zpracovani.txt
+       1 Naměřená doba zkušební dávky (krok 2, 5 kandidátů, commit f4cd74
+       2 ================================================================
+         ====
+       3
+       5 (2026-10-26T14:56:41Z až 2026-10-26T15:02:30Z podle `date -u`, v
+         iz mereni.txt).
+       7 Doba zahrnuje jen obohacení a zařazení agentem do zápisu výstupu
+         . Pro odhad
+       8 nákladů (PLAN.md, bod 10) je potřeba připočítat:
+      10   - opravy (úpravy pravidel a opravená verze v data/opraveno/),
+     … +4 lines (ctrl+o to expand)
+
+⏺ Bash(git --no-pager diff PLAN.md && git status --short && git log --oneline -1
+      -- data/vystup_agenta)
+  ⎿  (No output)
+
+⏺ Ještě doplním nevyřešené kandidáty do kroku 6 v bodě 9, aby to sedělo s bodem
+  6.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      344  3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravi
+           del pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do 
+           databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta
+           /investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv
+           ` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvod
+           em, venture debt do `data/vystup_agenta/hranicni.csv`, nevyřeš
+           ený typ nebo nástroj do `data/vystup_agenta/nevyresene.csv`.
+      345  4. **Automatická kontrola:** skript z bodu 6.
+      346  5. **Kontrola druhým agentem** (stejný model v nové konverzaci
+           ): kontrola zdrojů.
+      347 -6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkr
+          -ácená u vyřazených a hraničních, vše do `data/hodnoceni.csv`. 
+          -Původní výstup agenta zůstává beze změny, opravy jdou do `data
+          -/opraveno/`.                                                  
+      347 +6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkr
+          +ácená u vyřazených, hraničních a nevyřešených, u nevyřešených 
+          +i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Původní výstu
+          +p agenta zůstává beze změny, opravy jdou do `data/opraveno/`. 
+      348  7. **Měření a zápis výsledků.**
+      349  
+      350  Všechny konverzace exportuji do `ai-log/` a do README zapíšu, 
+           kde se agenti spletli.
+
+⏺ Upravil jsem PLAN.md a nic necommitoval. Zkušební dávka v commitu f4cd74d a
+  soubory v data/vystup_agenta/ jsou beze změn a ruční hodnocení jsem
+  nevyplňoval. Nezpracoval jsem ani zbylých 52 kandidátů.
+
+  Úpravy PLAN.md
+
+  Celý diff je výše ve výstupu git diff, jediná pozdější změna je doplnění kroku
+  6 v bodě 9.
+
+  1. Typ (bod 2)
+  - Nový odstavec „Typ a investiční strategie“ obsahuje vaše pravidla. Typ se
+    řídí doloženým fungováním a vlastním popisem subjektu, ne tím, do čeho
+    investuje.
+  - Když jsou důkazy nejednoznačné nebo si odporují, typ je nevyřešený.
+  - Výslovně tam stojí, že typ se nevolí podle toho, kolik záznamů projde do
+    pilotu.
+
+  2. Nástroj (podmínka 3 a bod 4)
+  - U každé investice přibylo pole nastroj ve tvaru {hodnota, doklad,
+    zdroj_url}.
+  - doklad má tři hodnoty: dolozeno, neprima_indicie a nezjisteno.
+  - Podmínku 3 splní jen dolozeno. Jako doklad počítám i zápis investora jako
+    společníka v rejstříku portfoliové firmy, protože ten držbu podílu dokládá.
+  - Seed nebo pre-seed je jen nepřímá indicie. Nedoložený nástroj podmínku
+    nesplní, ale ani nedokládá, že subjekt není investor.
+
+  3. Nový typ
+  - Do tabulky typů přibyl „Korporátní investor bez samostatné jednotky“,
+    výslovně jako „není CVC“.
+  - Je i ve výčtu typů mimo rozsah pilotu.
+
+  Jak se ukládá nevyřešené rozhodnutí
+  - Nový soubor data/vystup_agenta/nevyresene.csv se sloupci
+    id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno.
+  - Kandidát do něj jde, jen když na nevyřešené otázce závisí zařazení nebo
+    kategorie vyřazení.
+  - Ruční rozhodnutí se zapíše do hodnoceni.csv pomocí polí je_investor,
+    rozsah_pilotu a duvod. Výsledek pak jde do data/opraveno/.
+  - Při měření se nevyřešení vykazují zvlášť a nevstupují do přesnosti zařazení
+    ani do správnosti vyřazení. U recallu se počítají jako kandidáti, které
+    agent nezařadil.
+  - Přibyly i automatická kontrola nového pole a soubor v tabulce souborů.
+
+  Dopad na pět kandidátů
+
+  Vychází jen z důkazů, které dávka už má, nic jsem znovu nedohledával.
+
+  Kandidát: ARX Equity Partners
+  Výstup v f4cd74d: vyřazen, mimo_rozsah_pilotu (PE)
+  Podle nových pravidel: beze změny. Typ PE, „acquisition of a majority stake“ v
+
+  Medicofit je doložený podíl
+  ────────────────────────────────────────
+  Kandidát: BD Partners
+  Výstup v f4cd74d: zařazen jako VC
+  Podle nových pravidel: nevyřešený typ i nástroj → nevyresene.csv. Sám se
+  označuje „joint family office“, investuje i mimo startupy (vinařství), média
+  mu říkají fond. Plán ale definuje family office jako majetek jedné rodiny,
+  kdežto „joint“ napovídá víc rodin. Nástroj je u WanderWallet, ValkaAI i
+  DecisionRules jen nepřímá indicie (pre-seed, seed). Ručně se rozhoduje mezi
+  zarazen a mimo_rozsah_pilotu
+  ────────────────────────────────────────
+  Kandidát: Borovicka Capital
+  Výstup v f4cd74d: zařazen jako VC
+  Podle nových pravidel: typ VC zůstává: sám se nepopisuje jako family office a
+  rodinné peníze podle nových pravidel nestačí. Nevyřešený nástroj (pre-seed,
+  late-seed) → nevyresene.csv, ručně se rozhoduje mezi zarazen a neni_investor
+  ────────────────────────────────────────
+  Kandidát: Botanique Hospitality
+  Výstup v f4cd74d: vyřazen, mimo_rozsah_pilotu
+  Podle nových pravidel: typ korporátní investor bez samostatné jednotky, mimo
+  pilot v každém případě. Nástroj u RobosizeME je ale nezjištěný, takže není
+  jisté, jestli jde o mimo_rozsah_pilotu, nebo neni_investor → nevyresene.csv
+  (nastroj)
+  ────────────────────────────────────────
+  Kandidát: Braiins
+  Výstup v f4cd74d: vyřazen, mimo_rozsah_pilotu
+  Podle nových pravidel: stejné jako Botanique (Firefish, nástroj nezjištěný) →
+  nevyresene.csv (nastroj)
+
+  Shrnuto: místo 2 zařazených a 3 vyřazených by bylo 0 zařazených, 1 vyřazený a
+  4 nevyřešení. Původní výsledek v f4cd74d zůstává pro měření, tohle je jen
+  dopad pravidel.
+
+  K rozhodnutí před schválením
+
+  - Přísnost pravidla pro nástroj: zprávy o startupových kolech podíl skoro
+    nikdy výslovně neuvádějí. Bez dalšího zdroje by tak většina VC skončila v
+    nevyresene.csv. Praktickou cestou v ČR je zápis společníka v rejstříku
+    portfoliové firmy, který plán teď za doklad podílu uznává. Ověření jednoho
+    záznamu tím ale zdraží.
+  - Definice family office: pokud mají sdílené („joint“) family office spadat
+    pod family office, stačí v tabulce typů změnit „jedné rodiny“ na „jedné nebo
+    několika rodin“. BD Partners by tím přestal být nevyřešený typ a měl by typ
+    family office. Tuto změnu jsem neudělal.
+
+  Doba zpracování
+
+  5 min 49 s jsem zapsal do nového souboru
+  ai-log/02-zkusebni-davka/doba_zpracovani.txt. Je tam i poznámka, že k nákladům
+  je potřeba připočítat kontrolu, opravy a ruční ověřování. mereni.txt z
+  commitu f4cd74d jsem neměnil.
+
+  Necommitnuté jsou PLAN.md a doba_zpracovani.txt. Po schválení je commitnu.
+  Soubor nevyresene.csv v data/vystup_agenta/ a data/opraveno/ jsem zatím
+  nevytvořil. Po schválení ho založím jen s hlavičkou, pokud chcete.
+
+❯ Úpravy schvaluji s těmito změnami:
+
+  1. Nástroj: dolozeno podmínku splní. neprima_indicie ji může splnit, pokud
+  zdroj dokládá účast konkrétního investora v pre-seed, seed nebo series kole a
+  nejsou zjištěné informace, že jeho účast byla výhradně nekonvertibilní dluh.
+  Jde o přijatý pracovní předpoklad, nikoli doložený nástroj. Jistota
+  investice je pak nejvýš stredni.
+
+  Konvertibilní nástroje zůstávají přípustné. U smíšených kol nerozhoduj pouze
+  podle označení celého kola. Rozporné nebo nedostatečné důkazy předej do
+  nevyresene.csv. Automatickou kontrolu pro zařazené záznamy uprav podle tohoto
+  pravidla.
+
+  Do README zapiš toto rozhodnutí i riziko chybného zařazení. Netvrď bez
+  měření, jak často média nástroj neuvádějí.
+
+  2. Family office: v tabulce typů změň „jedné rodiny“ na „jedné nebo několika
+  rodin“. Typ pořád určuje vlastní popis společně s doloženým fungováním.
+
+  Vytvoř nevyresene.csv s hlavičkou v data/vystup_agenta/ i data/opraveno/.
+
+  Vypiš dopad na pět kandidátů podle dostupných důkazů. Výsledek nepřizpůsobuj
+  očekávanému počtu ani konkrétním jménům.
+  Pravidla a prázdné soubory commitni a pushni.
+  Původní výstup f4cd74d nepřepisuj.
+  Zbylých 52 zatím nezpracovávej.
+
+⏺ Bash(grep -n '' README.md | sed -n '1,30p;80,200p')
+  ⎿  (No output)
+
+⏺ Zapracovávám schválené změny do PLAN.md.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      20  
+      21  1. **Je dohledatelný jako právní subjekt nebo veřejně vystupují
+          cí osoba.** U firem zápis v obchodním rejstříku (v ČR justice.c
+          z, IČO), u zahraničních ekvivalent nebo regulatorní registr. U 
+          fyzických osob veřejné vystupování jako investor pod vlastním j
+          ménem.
+      22  2. **Má doloženou přímou investici do soukromé firmy za posledn
+          ích 24 měsíců.** Nutným dokladem je aspoň jedna zpráva o konkré
+          tní transakci: tisková zpráva, zpráva v médiích, nebo záznam v 
+          databázi transakcí s odkazem na takovou zprávu. Portfolio na we
+          bu investora stačí jen tehdy, když ho potvrzuje zpráva o transa
+          kci, samo podmínku nesplní. Zápis investora jako společníka v r
+          ejstříku portfoliové firmy dokládá jen to, že investor podíl dr
+          ží. Datum investice sám nedokládá (zápis může proběhnout se zpo
+          žděním a podíl mohl být nabytý dřív nebo převodem), proto ho be
+          ru jen jako podpůrný doklad vedle zprávy o transakci. Jak se v 
+          tomto okně určuje datum, popisuje bod 4.
+      23 -3. **Investuje za podíl (equity nebo konvertibilní nástroj).** 
+         -Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie. Podmínka
+         - je splněná, jen když je nástroj doložený aspoň u jedné investi
+         -ce v záznamu (pole `nastroj`, bod 4). Nepřímá indicie ani nezji
+         -štěný nástroj podmínku nesplní, ale nejsou ani důkazem, že subj
+         -ekt není investor. Takový kandidát jde k ručnímu rozhodnutí (bo
+         -d 3, Nevyřešená rozhodnutí).                                   
+      23 +3. **Investuje za podíl (equity nebo konvertibilní nástroj).** 
+         +Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie. Konverti
+         +bilní nástroje jsou přípustné. Jak se podmínka dokládá polem `n
+         +astroj`, popisuje bod 4. Nezjištěný nástroj podmínku nesplní, a
+         +le není ani důkazem, že subjekt není investor. Takový kandidát 
+         +jde k ručnímu rozhodnutí (bod 3, Nevyřešená rozhodnutí).       
+      24  
+      25  Typy, které rozlišuji:
+      26  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      29  | VC | Fond nebo firma investující do startupů a rychle rostouc
+          ích firem, typicky menšinové podíly |
+      30  | CVC | Korporátní venture capital, samostatná investiční jedno
+          tka velké firmy |
+      31  | PE | Kupuje podíly v zavedených, ziskových firmách, často vět
+          šinové |
+      32 -| Family office | Spravuje majetek jedné rodiny a investuje ho 
+         -mimo jiné přímo do firem |                                     
+      32 +| Family office | Spravuje majetek jedné nebo několika rodin a 
+         +investuje ho mimo jiné přímo do firem |                        
+      33  | Angel | Fyzická osoba investující vlastní peníze, typicky v r
+          aných fázích |
+      34  | Velký soukromý investor | Investiční holding jednoho podnikat
+          ele, který není family office v užším smyslu |
+      35  | Korporátní investor bez samostatné jednotky | Provozní firma,
+           která investuje přímo z vlastní provozní společnosti a nemá sa
+          mostatnou investiční jednotku. Není CVC |
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      105    ],
+      106    "posledni_investice": {
+      107      "firma": "...", "datum_investice": null, "datum_oznameni":
+            "2026-03-12", "datum_pro_filtr": "oznameni",
+      108 -    "nastroj": {"hodnota": "podil", "doklad": "dolozeno", "zdr
+          -oj_url": "..."},                                              
+      108 +    "nastroj": {"hodnota": "podil", "doklad": "dolozeno", "kol
+          +o": null, "zdroj_url": "..."},                                
+      109      "zdroje": [
+      110        {"url": "...", "druh_zdroje": "zprava_o_transakci", "vyd
+           avatel": "CzechCrunch", "puvod": "https://.../tiskova-zprava",
+            "zdroj_datum": "2026-03-12", "stazeno": "..."},
+      111        {"url": "...", "druh_zdroje": "portfolio_web", "vydavate
+           l": "web investora", "puvod": null, "zdroj_datum": null, "staz
+           eno": "..."}
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      111        {"url": "...", "druh_zdroje": "portfolio_web", "vydavate
+           l": "web investora", "puvod": null, "zdroj_datum": null, "staz
+           eno": "..."}
+      112      ]
+      113    },
+      114 -  "dalsi_investice": [{"firma": "...", "datum_investice": "...
+          -", "datum_oznameni": "...", "datum_pro_filtr": "investice", "n
+          -astroj": {"hodnota": null, "doklad": "nezjisteno", "zdroj_url"
+          -: null}, "zdroje": ["..."]}],                                 
+      114 +  "dalsi_investice": [{"firma": "...", "datum_investice": "...
+          +", "datum_oznameni": "...", "datum_pro_filtr": "investice", "n
+          +astroj": {"hodnota": null, "doklad": "neprima_indicie", "kolo"
+          +: "seed", "zdroj_url": "..."}, "zdroje": ["..."]}],           
+      115    "status": "aktivni",
+      116    "jistota": {"existence": "vysoka", "investice": "stredni"},
+      117    "poznamka": ""
+
+⏺ Update(PLAN.md)
+  ⎿  Added 6 lines, removed 2 lines
+      130  
+      131  **Datum investice a datum oznámení.** `datum_investice` je den
+           , kdy se investice uskutečnila (podpis nebo uzavření kola), a 
+           vyplňuji ho jen tehdy, když ho zdroj výslovně uvádí. `datum_oz
+           nameni` je den, kdy byla investice poprvé veřejně oznámena. Da
+           tum publikace zdroje (`zdroj_datum`) automaticky nepovažuji za
+            datum investice. Kola se často oznamují týdny až měsíce po uz
+           avření. Když známe jen oznámení, zůstane `datum_investice` = `
+           null` a datum se uloží výslovně jako `datum_oznameni`. Pokud z
+           droj uvádí jen měsíc nebo rok, ukládám datum ve zkráceném tvar
+           u ISO 8601 (`2025-03`, `2025`).
+      132  
+      133 -**Nástroj.** `nastroj` je u každé investice. `hodnota` je `pod
+          -il`, `konvertibilni` nebo `null`, `doklad` je jedna z hodnot: 
+      133 +**Nástroj.** `nastroj` je u každé investice. `hodnota` je `pod
+          +il`, `konvertibilni` nebo `null`, `kolo` je označení kola podl
+          +e zdroje (`pre-seed`, `seed`, `series A` a podobně) nebo `null
+          +`, `doklad` je jedna z hodnot:                                
+      134  - `dolozeno`: zdroj nástroj výslovně uvádí (koupě podílu, naby
+           tí akcií, konvertibilní půjčka, SAFE), nebo zápis investora ja
+           ko společníka v rejstříku portfoliové firmy dokládá, že podíl 
+           drží,
+      135  - `neprima_indicie`: na nástroj jen ukazuje okolnost, napříkla
+           d označení kola jako seed nebo pre-seed nebo typ investora. Se
+           ed nebo pre-seed samo o sobě nástroj nedokládá,
+      136  - `nezjisteno`: zdroje nástroj neuvádějí, `hodnota` a `zdroj_u
+           rl` jsou `null`.
+      137  
+      138 -Podmínku 3 splní jen `dolozeno`. Ostatní hodnoty ji nesplní an
+          -i nevyvrátí (bod 2, podmínka 3).                              
+      138 +Podmínku 3 (bod 2) splní:                                     
+      139 +- `dolozeno`,                                                 
+      140 +- `neprima_indicie` jako přijatý pracovní předpoklad, ne dolož
+          +ený nástroj, když zdroj v `zdroj_url` dokládá účast konkrétníh
+          +o investora v pre-seed, seed nebo series kole (`kolo`) a nejso
+          +u zjištěné informace, že jeho účast byla výhradně nekonvertibi
+          +lní dluh. Když záznam opírá podmínku 3 jen o tento předpoklad,
+          + je `jistota.investice` nejvýš `stredni`.                     
+      141  
+      142 +U smíšených kol (například equity spolu s úvěrem nebo venture 
+          +debt) nerozhoduji jen podle označení celého kola. Rozhoduje, c
+          +o zdroj uvádí o účasti konkrétního investora. Když jsou důkazy
+          + o nástroji rozporné nebo nedostatečné, kandidát jde do `nevyr
+          +esene.csv` (bod 3, Nevyřešená rozhodnutí). `nezjisteno` podmín
+          +ku nesplní ani nevyvrátí.                                     
+      143 +                                                              
+      144  **Filtr 24 měsíců.** Filtr i status z bodu 2 pracují s datem v
+            `datum_pro_filtr`:
+      145  - `investice`: použije se `datum_investice`, když je známé,
+      146  - `oznameni`: jinak se použije `datum_oznameni`. Investice tak
+            může být ve skutečnosti o něco starší než 24 měsíců. Toto riz
+           iko přijímám, protože oznámení je nejbližší doložitelný okamži
+           k. Hodnotu `oznameni` ale zapisuji, aby šlo takové záznamy spo
+           čítat a zvlášť zkontrolovat.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 2 lines, removed 1 line
+      197  - `jistota.investice` = `vysoka` jen tehdy, když mají zprávy o
+            transakci aspoň dva různé původy (`puvod`, u `null` URL zdroj
+           e),
+      198  - deduplikace podle IČO, domény webu a normalizovaného názvu,
+      199  - typ, status, `druh` kapitálu, `druh_zdroje` a `nastroj.dokla
+           d` jsou povolené hodnoty, částky jsou čísla, měna je kód ISO 4
+           217,
+      200 -- zařazený záznam má aspoň u jedné investice `nastroj.doklad` 
+          -= `dolozeno` se `zdroj_url`.                                  
+      200 +- zařazený záznam má aspoň u jedné investice `nastroj.doklad` 
+          += `dolozeno` se `zdroj_url`, nebo `nastroj.doklad` = `neprima_
+          +indicie` se `zdroj_url` a `kolo` označujícím pre-seed, seed ne
+          +bo series kolo,                                               
+      201 +- když žádná investice záznamu nemá `nastroj.doklad` = `doloze
+          +no`, je `jistota.investice` = `stredni`.                      
+      202  
+      203  **Kontrola druhým agentem (stejný model v nové konverzaci)**
+      204  Nová konverzace se stejným modelem, která neviděla, jak záznam
+            vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj op
+           ravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stej
+           ný model, takže může dělat stejné chyby ve čtení zdrojů jako p
+           rvní agent. Jeho shoda proto není důkaz správnosti. Nenahrazuj
+           e ruční kontrolu, jen říká, kam se podívat dřív.
+
+⏺ Doplňuji README: aktuální stav, rozhodnutí o nástroji a jeho riziko a nový
+  soubor ve struktuře.
+⏺ Update(README.md)
+  ⎿  Added 13 lines, removed 1 line
+      18  
+      19  Cílová skupina pilotu jsou VC/CVC se sídlem v ČR. Jde o můj zvo
+          lený rozsah, zadání VC fondy v jedné zemi uvádí jen jako příkla
+          d menšího vzorku. Pravidla pilotu jsou v [PLAN.md](PLAN.md), bo
+          d 3.
+      20  
+      21 -Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot v `
+         -data/kandidati.csv`. Pro další zpracování jsem vybral všech 57 
+         -kandidátů, menší vzorek nevzniká. Jde o kandidáty, ne o ověřené
+         - investory. Zařazení, typ ani obohacení (ticket, kapitál, inves
+         -tice) zatím neproběhly. Ostatní datové soubory obsahují jen hla
+         -vičky (CSV) nebo prázdný seznam (JSON).                        
+      21 +Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot v `
+         +data/kandidati.csv`. Pro další zpracování jsem vybral všech 57 
+         +kandidátů, menší vzorek nevzniká. Jde o kandidáty, ne o ověřené
+         + investory.                                                    
+      22  
+      23 +Z kroku 2 proběhla jen zkušební dávka prvních 5 kandidátů podle
+         + abecedy. Její původní výstup je v `data/vystup_agenta/` (commi
+         +t f4cd74d) a zůstává beze změn, i když vznikl podle pravidel pl
+         +atných před úpravami popsanými níže. Naměřená doba dávky je 5 m
+         +in 49 s a zahrnuje jen zpracování agentem, bez kontroly, oprav 
+         +a ručního ověřování ([ai-log/02-zkusebni-davka/](ai-log/02-zkus
+         +ebni-davka/)). Zbylých 52 kandidátů zatím zpracováno není a ruč
+         +ní hodnocení zatím neproběhlo.                                 
+      24 +                                                               
+      25 +### Pravidla upravená po zkušební dávce                        
+      26 +                                                               
+      27 +Dávka ukázala nejasnosti v určení typu a v doložení nástroje in
+         +vestice. Pravidla v [PLAN.md](PLAN.md) jsem upravil takto:     
+      28 +                                                               
+      29 +- **Typ:** určuje se podle vlastního popisu subjektu a doložené
+         +ho fungování, ne podle toho, do čeho investuje. Family office s
+         +pravuje majetek jedné nebo několika rodin a VC může být jeho in
+         +vestiční strategie. Samotné financování penězi rodiny pro typ f
+         +amily office nestačí. Přibyl typ korporátní investor bez samost
+         +atné jednotky (provozní firma investující z vlastní společnosti
+         +), který není CVC a je mimo rozsah pilotu.                     
+      30 +- **Nevyřešená rozhodnutí:** když jsou důkazy o typu nebo nástr
+         +oji rozporné nebo nedostatečné, agent kandidáta nezařadí ani ne
+         +vyřadí a zapíše ho do `data/vystup_agenta/nevyresene.csv` k ruč
+         +nímu rozhodnutí.                                               
+      31 +- **Nástroj (podmínka 3):** u každé investice se zapisuje, jest
+         +li je podíl nebo konvertibilní nástroj doložený (zdroj ho výslo
+         +vně uvádí, nebo investor je zapsaný jako společník portfoliové 
+         +firmy), jestli jde jen o nepřímou indicii, nebo jestli je nezji
+         +štěný. Podmínku splní doložený nástroj a také nepřímá indicie, 
+         +když zdroj dokládá účast konkrétního investora v pre-seed, seed
+         + nebo series kole a nejsou zjištěné informace, že jeho účast by
+         +la výhradně nekonvertibilní dluh. U smíšených kol nerozhoduje j
+         +en označení celého kola.                                       
+      32 +                                                               
+      33 +**Riziko tohoto rozhodnutí.** Účast v pre-seed, seed nebo serie
+         +s kole je přijatý pracovní předpoklad, ne doložený nástroj. Inv
+         +estor, který se kola účastnil úvěrem nebo jiným nekonvertibilní
+         +m dluhem, o čemž zdroj nic neuvádí, tak může být chybně zařazen
+         +. Proto má záznam opřený jen o tento předpoklad jistotu investi
+         +ce nejvýš `stredni` a lze ho při ruční kontrole spočítat a zkon
+         +trolovat zvlášť. Jak často zdroje nástroj neuvádějí a jak často
+         + je předpoklad chybný, zatím změřené není.                     
+      34 +                                                               
+      35  ## Sběr kandidátů (krok 1)
+      36  
+      37  Staženo 26. 10. 2026. Výsledek: **57 unikátních kandidátů**.
+
+⏺ Update(README.md)
+  ⎿  Added 1 line, removed 1 line
+      89  |---|---|
+      90  | `PLAN.md` | plán projektu |
+      91  | `data/kandidati.csv` | kandidáti ze seznamů |
+      92 -| `data/vystup_agenta/` | původní výstup agenta (zařazení, vyřa
+         -zení, hraniční případy), beze změn |                           
+      92 +| `data/vystup_agenta/` | původní výstup agenta (zařazení, vyřa
+         +zení, hraniční a nevyřešené případy), beze změn |              
+      93  | `data/hodnoceni.csv` | ruční hodnocení všech kandidátů |
+      94  | `data/opraveno/` | opravená verze po ručním hodnocení |
+      95  | `scripts/` | skripty pro automatickou kontrolu a měření |
+
+⏺ Bash(for d in data/vystup_agenta data/opraveno; do printf
+      'id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno\n' >
+      $d/nevyresene.csv; done && git --no-pager diff -…)
+  ⎿  Created data/opraveno/nevyresene.csv (+1 -0)
+      1 +id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno            
+  ⎿  Created data/vystup_agenta/nevyresene.csv (+1 -0)
+      1 +id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno            
+
+⏺ Původní výstup f4cd74d je nedotčený. Commituji a pushuji.
+
+⏺ Bash(git add PLAN.md README.md ai-log/02-zkusebni-davka/doba_zpracovani.txt
+      data/vystup_agenta/nevyresene.csv data/opraveno/nevyresene.csv && git
+      commit -q -m "$(cat…)
+  ⎿  (No output)
+
+⏺ Pravidla, README a prázdné soubory jsou commitnuté a pushnuté jako b01a86f.
+  Původní výstup f4cd74d je nezměněný (porovnání s investori.json a vyrazeni.csv
+  nevrátilo žádný rozdíl). Zbylých 52 kandidátů jsem nezpracoval a ruční
+  hodnocení jsem nevyplnil.
+
+  Co je v commitu
+
+  - Nástroj v PLAN.md: podmínku 3 splní dolozeno. Splní ji i neprima_indicie
+    jako pracovní předpoklad, pokud:
+    - zdroj dokládá účast konkrétního investora v pre-seed, seed nebo series
+      kole,
+    - a nic neukazuje, že jeho účast byla jen nekonvertibilní dluh.
+
+    Takový záznam má jistota.investice nejvýš stredni.
+    - Aby to šlo zkontrolovat skriptem, přidal jsem do nastroj pole kolo, tedy
+      označení kola podle zdroje.
+    - U smíšených kol rozhoduje, co zdroj říká o účasti konkrétního investora.
+      Když jsou důkazy rozporné nebo nestačí, kandidát jde do nevyresene.csv.
+    - Automatická kontrola teď vyžaduje u zařazeného záznamu dolozeno, nebo
+      neprima_indicie s vyplněnými zdroj_url a kolo. Když žádná investice nemá
+      dolozeno, musí být jistota investice stredni.
+  - Family office: v tabulce typů je teď „jedné nebo několika rodin“.
+  - README: popisuje rozhodnutí o nástroji i riziko chybného zařazení. Uvádí
+    také, že četnost chybějícího nástroje ve zdrojích zatím změřená není, a
+    aktualizuje stav projektu.
+  - Soubory: nevyresene.csv jen s hlavičkou v data/vystup_agenta/ i
+    data/opraveno/ a ai-log/02-zkusebni-davka/doba_zpracovani.txt s dobou 5 min
+    49 s.
+
+  Dopad na pět kandidátů
+
+  Vychází jen z důkazů, které dávka už má, nic nového jsem nedohledával.
+
+  Kandidát: ARX Equity Partners
+  f4cd74d: mimo_rozsah_pilotu
+  Podle nových pravidel: mimo_rozsah_pilotu, typ PE, nástroj dolozeno
+  Na čem to stojí: Sám se popisuje jako „private equity firm“. U Medicofit jde o
+
+  „acquisition of a majority stake“
+  ────────────────────────────────────────
+  Kandidát: BD Partners
+  f4cd74d: zařazen, VC
+  Podle nových pravidel: mimo_rozsah_pilotu, typ family office, nástroj
+  neprima_indicie
+  Na čem to stojí: Sám se označuje „joint family office“ a „nejsme klasický
+  fond“. Fungování tomu odpovídá: zakladatelé investují i mimo startupy
+  (vinařství Château Virant, Ynsect, So Concrete). VC je jeho strategie.
+  Doložená je účast v pre-seed kolech (WanderWallet, ValkaAI) a informace o
+  dluhu nejsou
+  ────────────────────────────────────────
+  Kandidát: Borovicka Capital
+  f4cd74d: zařazen, VC
+  Podle nových pravidel: zařazen, VC, nástroj neprima_indicie, jistota stredni,
+  status investice_dolozena_12_24_mesicu
+  Na čem to stojí: Popisuje se jako „investment company with a strategic focus
+  on
+  venture capital“ a za family office se neoznačuje. Rodinné peníze samy
+  nestačí. Doložená je účast v pre-seed kole Edmund a v late-seed kole Outfindo
+  ────────────────────────────────────────
+  Kandidát: Botanique Hospitality
+  f4cd74d: mimo_rozsah_pilotu
+  Podle nových pravidel: mimo_rozsah_pilotu, korporátní investor bez samostatné
+  jednotky, nástroj neprima_indicie
+  Na čem to stojí: Hotelová skupina. Doložená je účast v seed kole RobosizeME
+  ────────────────────────────────────────
+  Kandidát: Braiins
+  f4cd74d: mimo_rozsah_pilotu
+  Podle nových pravidel: mimo_rozsah_pilotu, korporátní investor bez samostatné
+  jednotky, nástroj neprima_indicie
+  Na čem to stojí: Firma těžící kryptoměny. Vedla seed kolo Firefish
+
+  Výsledek: 1 zařazený, 4 mimo rozsah pilotu, 0 nevyřešených. Oproti f4cd74d se
+  mění jen BD Partners, ze zařazeného na mimo rozsah pilotu.
+
+  Nejistoty:
+  - BD Partners: u typu family office jsem fungování posoudil podle složení
+    portfolia. Že investuje výhradně peníze zakladatelů, jsem výslovně
+    nedoložil. Pokud to při ruční kontrole nebudete považovat za dostatečné,
+    patří do nevyresene.csv s otázkou typ.
+  - Outfindo: „late-seed“ jsem bral jako seed kolo.
+  - DecisionRules (BD Partners): zdroj uvádí jen „funding round“ bez označení
+    kola. Sám by indicii nesplnil, ale BD Partners má i jiné investice, které ji
+    splňují.
+
+  Pokud mám nová pravidla použít i na prvních pět kandidátů, šlo by to přes
+  data/opraveno/ nebo jako nová dávka. Pro f4cd74d se tím nic nemění.
