@@ -1,0 +1,328 @@
+
+❯ <ide_opened_file>The user opened the file
+  /Users/petrstastny/Documents/Projekty/investori-databaze/PLAN.md in the IDE.
+  This may or may not be related to the current task.</ide_opened_file>
+
+❯ Krok 3: automatická kontrola výstupu podle aktuálního PLAN.md.
+  Nejdřív přečti plán, datové soubory a ai-log/02-obohaceni/mapovani_id.csv.
+
+  Vytvoř scripts/zkontroluj_data.py:
+  - ověř strukturu, datové typy a povolené hodnoty,
+  - ověř pokrytí všech 57 vstupních id včetně mapování duplicity,
+  - ověř povinné zdroje, data, filtr 24 měsíců a soulad statusu; referenční
+  datum zadej parametrem, výchozí 2026-10-26, aby šel výsledek zopakovat,
+  - ověř pravidla pro nástroj a omezení jistoty,
+  - ověř částky, měny a min <= max tam, kde jsou obě meze známé,
+  - označ záznamy, jejichž zdroj byl stažen bez ověření TLS (curl -k u cvca.cz
+  v kroku 2), jako upozornění ke kontrole zdroje,
+  - rozliš chybu struktury, metodický nesoulad a upozornění vyžadující kontrolu
+  zdroje,
+  - dostupnost URL kontroluj volitelným přepínačem; HTTP 200 nepovažuj za
+  potvrzení správnosti údaje a neúspěšné stažení nepovažuj za důkaz
+  nepravdivosti.
+
+  Původní data neopravuj. Výsledky ulož do
+  ai-log/03-kontrola/automaticka_kontrola.md.
+
+  Přidej několik malých testovacích příkladů, které ověří zachycení skutečných
+  chyb: chybějící id, duplicitní výsledek, datum mimo okno a nepřímý nástroj s
+  nepřípustně vysokou jistotou.
+
+  Skript spusť, výsledky shrň, commitni a pushni.
+  Ruční hodnocení nevyplňuj a dalším krokem nepokračuj.
+
+⏺ Začnu přečtením plánu a datových souborů.
+
+⏺ Bash(cat PLAN.md && echo ---- && git ls-files && ls -la ai-log/*)
+  ⎿  (No output)
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Bash(git ls-files | grep -v '^ai-log/.*/' ; echo ----; find ai-log data
+      scripts -maxdepth 3 2>/dev/null | head -100; git log --oneline | head -30)
+  ⎿  (No output)
+
+  Listed 2 directories (ctrl+o to expand)
+
+⏺ Mám přečtený plán a mapování id. Teď procházím výstupní data a poznámky z
+  kroku 2 (nejasnosti, curl -k u cvca.cz).
+
+  Searched for 1 pattern, read 1 file, listed 1 directory (ctrl+o to expand)
+
+⏺ Bash(sed -n 4270,4335p ai-log/02-obohaceni.txt; grep -n "cvca"
+      ai-log/02-obohaceni.txt | grep -i "curl" | cut -c1-300 | head)
+  ⎿  (No output)
+
+⏺ Bash(cat data/vystup_agenta/vyrazeni.csv | cut -c1-400; echo; cat
+      data/vystup_agenta/hranicni.csv | cut -c1-400; echo; cat
+      data/vystup_agenta/nevyresene.csv | cut -c…)
+  ⎿  (No output)
+
+⏺ Struktura je jasná. Teď si projdu rozložení hodnot v investori.json, abych
+  kontroly nastavil přesně podle skutečných dat.
+
+⏺ Bash(python3 - <<'EOF'
+      import json, collections as C…)
+  ⎿  (No output)
+
+⏺ Bash(head -80 scripts/sestav_kandidaty.py; cat .gitignore; cat README.md |
+      head -60; python3 --version; ls ai-log/02-obohaceni/skripty; head -40
+      ai-log/02-obohaceni/…)
+  ⎿  (No output)
+
+⏺ Bash(python3 - <<'EOF'
+      import csv,glob…)
+  ⎿  (No output)
+
+⏺ Mám dost podkladů. Píšu skript: kontroly rozdělím do tří kategorií (struktura,
+  metodika, upozornění), referenční datum bude parametr a kontrola URL
+  volitelná.
+
+⏺ Write(scripts/zkontroluj_data.py)
+  ⎿  Wrote 1023 lines to scripts/zkontroluj_data.py
+      1 """Automatická kontrola výstupu agenta (PLAN.md, bod 6 „Automatic
+        ky (skript)“ a bod 9, krok 4).
+      3 Použití:
+      4     python3 scripts/zkontroluj_data.py [--datum 2026-10-26] [--ov
+        er-url] [--vystup CESTA]
+      6 Vstupy (jen čte, nic neopravuje):
+      7 - data/kandidati.csv: všech 57 vstupních id,
+      8 - data/vystup_agenta/: investori.json, vyrazeni.csv, hranicni.csv
+      9 - ai-log/02-obohaceni/mapovani_id.csv: kam každé vstupní id skonč
+        ilo, včetně sloučení duplicit.
+     … +1382 lines (ctrl+o to expand)
+
+⏺ Opravím nepřehledný výraz pro původ zdroje a spustím první běh.
+
+⏺ Update(scripts/zkontroluj_data.py)
+  ⎿  Added 9 lines, removed 3 lines
+      529                  self.over_datum(polozka["plati_k"], soubor, id
+           _, f"{kde}.plati_k")
+      530              self.kontroluj_pole_se_zdrojem(polozka, kde, soubo
+           r, id_, KLICE_KAPITALU, True)
+      531  
+      532 +    @staticmethod                                             
+      533 +    def puvod(zdroj):                                         
+      534 +        """Původ zprávy o transakci: `puvod`, u null URL zdroj
+          +e (PLAN.md bod 4 a 6)."""                                     
+      535 +        puvod = zdroj["puvod"]                                
+      536 +        if not puvod:                                         
+      537 +            return normalizuj_url(zdroj["url"])               
+      538 +        return normalizuj_url(puvod) if je_url(puvod) else puv
+          +od.strip().lower()                                            
+      539 +                                                              
+      540      def puvody(self, zpravy):
+      533 -        """Různé původy zpráv o transakci (`puvod`, u null URL
+          - zdroje), PLAN.md bod 4 a 6."""                               
+      534 -        return {normalizuj_url(z["puvod"]) if je_url(z["puvod"
+          -]) else (z["puvod"] or "").strip().lower()                    
+      535 -                if z["puvod"] else normalizuj_url(z["url"]) fo
+          -r z in zpravy}                                                
+      541 +        return {self.puvod(z) for z in zpravy}                
+      542  
+      543      def kontroluj_investici(self, inv, soubor, id_, kde):
+      544          """Vrátí slovník s odvozenými údaji o investici, nebo 
+           None při chybě struktury."""
+
+⏺ Bash(python3 scripts/zkontroluj_data.py --vystup "$TMPDIR/k.md"; echo "exit
+      $?"; sed -n '/## Souhrn/,$p' "$TMPDIR/k.md")
+  ⎿  (No output)
+
+⏺ Na reálných datech vyšlo 0 strukturních chyb, 1 metodický nesoulad a 11
+  upozornění, pokrytí všech 57 id je kompletní. Teď dopíšu testy, které ověří,
+  že kontrola skutečně odhalí podstrčené chyby.
+
+⏺ Write(scripts/test_zkontroluj_data.py)
+  ⎿  Wrote 198 lines to scripts/test_zkontroluj_data.py
+       1 """Testy scripts/zkontroluj_data.py na malých umělých datech.
+       2
+       3 Spuštění: python3 -m unittest scripts/test_zkontroluj_data.py
+       5 Každý test vezme platný minimální projekt (3 kandidáti: jeden za
+         řazený, jeden vyřazený,
+       6 jeden sloučený) a podstrčí do něj jednu skutečnou chybu. Ověřuje
+         , že ji kontrola zachytí
+       8 """
+       9 import copy
+      10 import csv
+     … +252 lines (ctrl+o to expand)
+
+⏺ Bash(python3 -m unittest scripts/test_zkontroluj_data.py -v 2>&1 | tail -25)
+  ⎿  (No output)
+
+⏺ Všech 13 testů prochází, včetně čtyř požadovaných chyb. Zkusím ostrý běh i s
+  kontrolou dostupnosti URL.
+
+⏺ Bash(time python3 scripts/zkontroluj_data.py --over-url --vystup
+      "$TMPDIR/k2.md"; grep -c "dostupnost URL" "$TMPDIR/k2.md"; grep "URL
+      zkontrolováno" "$TMPDIR/k2.md";…)
+  ⎿  (No output)
+  ⎿  (timeout 10m)
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Všech 5 nedostupných URL je z cvca.cz – Python odmítl certifikát kvůli
+  chybějícímu mezilehlému certifikátu, zbylých 349 URL vrátilo HTTP 200. Teď
+  uložím zprávu na výchozí místo.
+
+⏺ Bash(python3 scripts/zkontroluj_data.py --over-url; echo "exit $?"; sed -n
+      1,30p ai-log/03-kontrola/automaticka_kontrola.md; git status --short)
+  ⎿  Created ai-log/03-kontrola/automaticka_kontrola.md (+90 -0)
+       1 +# Automatická kontrola výstupu agenta                          
+       2 +                                                               
+       3 +Vygenerováno skriptem `scripts/zkontroluj_data.py` (PLAN.md, bo
+         +d 6 „Automaticky (skript)“). Kontrola jen čte, původní data neo
+         +pravuje. Neověřuje, jestli zdroje opravdu dokládají údaje: to j
+         +e úkol kontroly druhým agentem a ruční kontroly.               
+       4 +                                                               
+       5 +## Parametry                                                   
+       6 +                                                               
+       7 +- referenční datum: 2026-10-26                                 
+       8 +- okno 24 měsíců: od 2024-10-26 do 2026-10-26 včetně           
+       9 +- hranice statusu `aktivni`: datum pro filtr od 2025-10-26 včet
+         +ně                                                             
+      10 +- kontrola dostupnosti URL: ano                                
+      11 +- příkaz: `python3 scripts/zkontroluj_data.py --datum 2026-10-2
+         +6 --over-url`                                                  
+      12 +                                                               
+      13 +Vstupní soubory (SHA-256, prvních 12 znaků):                   
+      14 +                                                               
+      15 +- `data/kandidati.csv`: 4ba3f64afc89                           
+      16 +- `ai-log/02-obohaceni/mapovani_id.csv`: 7dbb277e879f          
+      17 +- `data/vystup_agenta/investori.json`: 03fa0ab4f904            
+      18 +- `data/vystup_agenta/vyrazeni.csv`: 39a7d00f15d9              
+      19 +- `data/vystup_agenta/hranicni.csv`: 6ad44ce3630a              
+      20 +- `data/vystup_agenta/nevyresene.csv`: a8b30944fa94            
+      21 +                                                               
+      22 +## Souhrn                                                      
+      23 +                                                               
+      24 +| Kategorie | Nálezů | Záznamů |                               
+      25 +|---|---|---|                                                  
+      26 +| Chyby struktury | 0 | 0 |                                    
+      27 +| Metodický nesoulad | 1 | 1 |                                 
+      28 +| Upozornění vyžadující kontrolu zdroje | 16 | 9 |             
+      29 +                                                               
+      30 +- **Chyba struktury:** soubor nebo pole neodpovídá schématu z P
+         +LAN.md (klíče, typy, povolené hodnoty, chybějící nebo zdvojený 
+         +výsledek kandidáta).                                           
+      31 +- **Metodický nesoulad:** tvar je správný, ale údaj odporuje pr
+         +avidlům plánu (okno 24 měsíců, status, nástroj, jistota, pravid
+         +la pilotu, zdroj u vyplněného pole).                           
+      32 +- **Upozornění:** pravidlo porušené není, ale zdroj nebo údaj j
+         +e potřeba zkontrolovat ručně.                                  
+      33 +                                                               
+      34 +### Pokrytí vstupních id                                       
+      35 +                                                               
+      36 +Vstupních id v `data/kandidati.csv`: 57, v `mapovani_id.csv`: 5
+         +7.                                                             
+      37 +                                                               
+      38 +| Výsledek | Podle mapování | Záznamů ve výstupu |             
+      39 +|---|---|---|                                                  
+      40 +| investori.json | 27 | 27 |                                   
+     … 50 more lines (ctrl+o to expand)
+  ⎿  (files that changed while this command ran, by the command or by
+     another process; a convenience view, not a review or audit of the
+     command)
+  ⎿  (timeout 10m)
+
+⏺ Do zprávy doplním poznámku, že výsledek kontroly URL závisí na době běhu. Pak
+  commitnu a pushnu.
+
+⏺ Update(scripts/zkontroluj_data.py)
+  ⎿  Added 2 lines
+      920          f"- kontrola dostupnosti URL: {'ano' if over_url else 
+           'ne (spusť s `--over-url`)'}",
+      921          f"- příkaz: `python3 scripts/zkontroluj_data.py --datu
+           m {kontrola.ref.isoformat()}"
+      922          f"{' --over-url' if over_url else ''}`",
+      923 +        "- opakovatelnost: při stejném referenčním datu a stej
+          +ných vstupech (otisky níže) dají kontroly stejný "            
+      924 +        "výsledek; jen výsledek kontroly URL závisí na době bě
+          +hu a stavu webů",                                             
+      925          "",
+      926          "Vstupní soubory (SHA-256, prvních 12 znaků):",
+      927          "",
+
+⏺ Bash(python3 -m unittest scripts/test_zkontroluj_data.py 2>&1 | tail -2 &&
+      python3 scripts/zkontroluj_data.py --over-url && rm -rf
+      scripts/__pycache__ && git add scr…)
+  ⎿  Updated ai-log/03-kontrola/automaticka_kontrola.md (+1 -0)
+       9  - hranice statusu `aktivni`: datum pro filtr od 2025-10-26 včet
+          ně
+      10  - kontrola dostupnosti URL: ano
+      11  - příkaz: `python3 scripts/zkontroluj_data.py --datum 2026-10-2
+          6 --over-url`
+      12 +- opakovatelnost: při stejném referenčním datu a stejných vstup
+         +ech (otisky níže) dají kontroly stejný výsledek; jen výsledek k
+         +ontroly URL závisí na době běhu a stavu webů                   
+      13  
+      14  Vstupní soubory (SHA-256, prvních 12 znaků):
+      15  
+  ⎿  (timeout 10m)
+
+⏺ Kontrolu jsem napsal a spustil, v datech nenašla žádnou chybu struktury, jeden
+  metodický nesoulad a 16 upozornění. Je commitnutá a pushnutá jako b04841d.
+  Výsledek je v ai-log/03-kontrola/automaticka_kontrola.md. Původní data jsem
+  neměnil, ruční hodnocení jsem nevyplnil a dalším krokem jsem nepokračoval.
+
+  Výsledek (referenční datum 2026-10-26, s kontrolou URL)
+
+  ┌───────────────────────────────┬──────────────────┐
+  │           Kategorie           │      Nálezů      │
+  ├───────────────────────────────┼──────────────────┤
+  │ Chyby struktury               │ 0                │
+  ├───────────────────────────────┼──────────────────┤
+  │ Metodický nesoulad            │ 1                │
+  ├───────────────────────────────┼──────────────────┤
+  │ Upozornění ke kontrole zdroje │ 16 (u 9 záznamů) │
+  └───────────────────────────────┴──────────────────┘
+
+  - Pokrytí je úplné. Všech 57 id je pokrytých: 27 zařazených, 17 vyřazených, 1
+    hraniční, 11 nevyřešených a Nation1 sloučené do N1 Ventures. Žádné id
+    nechybí a žádné nemá dva výsledky.
+  - Metodický nesoulad: KAYA VC má vyplněný fond u údaje kapitálu typu
+    committed_capital. Podle PLAN.md patří fond jen k fund_size.
+  - Upozornění:
+    - Thein: profil CVCA byl v kroku 2 stažen přes curl -k, tedy bez ověření
+      certifikátu.
+    - i&i Biotech Investments, N1 Ventures, Jet Investment a Versute Investments
+      mají také zdroj na cvca.cz, ale log neříká, jak byl stažen. Proto je
+      skript označuje obecně jako zdroj na doméně s neplatným certifikátem.
+    - Pět údajů o kapitálu nemá datum, ke kterému platí (J&T Ventures, KAYA VC
+      dvakrát, N1 Ventures a Soulmates Ventures).
+    - Borovicka Capital má u jedné investice kolo „late-seed“, které není v
+      kanonickém tvaru. Skript ho počítá jako seed kolo.
+  - Kontrola URL: prošla 354 adres, 349 vrátilo HTTP 200. Zbylých 5 jsou právě
+    adresy na cvca.cz, kde chybí mezilehlý certifikát. Nic z toho nepotvrzuje
+    ani nevyvrací správnost údajů.
+
+  Co stojí za pozornost při ruční kontrole
+  - Všech 64 investic se filtruje podle data oznámení, ani jedna nemá vyplněné
+    datum investice.
+  - 19 z 27 zařazených záznamů opírá podmínku o nástroji (podíl nebo
+    konvertibilní nástroj) jen o nepřímou indicii z označení kola. Jejich seznam
+    je ve zprávě. Všechny mají jistotu investice nejvýš stredni, takže pravidlo
+    dodržují, ale jde o největší skupinu, kde je zařazení jen pracovní
+    předpoklad.
+
+  Skript a testy
+  - scripts/zkontroluj_data.py bere referenční datum přes --datum. Kontrola
+    dostupnosti URL se zapíná přepínačem --over-url.
+  - Kromě kontrol ze zadání ověřuje ještě deduplikaci podle IČO, domény a názvu
+    a to, jestli je poslední investice opravdu nejnovější.
+  - Návratový kód je 1, jen když najde chybu struktury.
+  - Ve zprávě jsou otisky vstupních souborů, takže jde výsledek zopakovat.
+    Jediná část, která se může mezi běhy lišit, je kontrola URL.
+  - Testy jsou v scripts/test_zkontroluj_data.py, všech 13 prochází. Ověřují, že
+    kontrola zachytí čtyři požadované chyby:
+    - chybějící id,
+    - duplicitní výsledek,
+    - datum mimo okno,
+    - nepřímý nástroj s vysokou jistotou.
+
+    Další testy pokrývají například hraniční datum, nesouhlasný status, ticket s
+    min > max a zdroj stažený bez ověření TLS.
+
+  Dvě rozhodnutí, která jsem udělal sám
+  - Podmínku o nástroji počítám jen z investic, které jsou v okně 24 měsíců a
+    mají zprávu o transakci. Plán říká jen „aspoň u jedné investice“.
+  - O stažení bez ověření TLS ví skript jen z logu kroku 2. Je to ručně zapsaný
+    seznam ve skriptu, který teď obsahuje jen Thein.
