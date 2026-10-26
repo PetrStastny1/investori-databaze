@@ -1,1 +1,527 @@
-[]
+[
+  {
+    "id": "cz-borovicka-capital",
+    "nazev": "Borovicka Capital",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Borovicka Capital s.r.o., Breitfeldova 709/17, Karlín, 186 00 Praha 8",
+      "ico": "19966784",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19966784",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-08-01",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://forbes.cz/startupy-jsou-budoucnost-na-starem-stavet-nelze-rika-otec-ktery-podnika-se-syny/",
+          "druh_zdroje": "media",
+          "vydavatel": "Forbes Česko",
+          "puvod": null,
+          "zdroj_datum": "2024-11-28",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://borovickacapital.com/",
+      "zdroj_url": "https://borovickacapital.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "faze": {
+      "hodnota": [
+        "early stage"
+      ],
+      "zdroj_url": "https://borovickacapital.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "NutritionPro (Nutritionpro s.r.o., IČO 07752971)",
+      "datum_investice": null,
+      "datum_oznameni": "2025-10-23",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://forbes.cz/nutritionpro-zmenil-majitele-do-zisku-ho-pretaci-i-byznysovy-partak-pohlreicha/"
+      },
+      "zdroje": [
+        {
+          "url": "https://forbes.cz/nutritionpro-zmenil-majitele-do-zisku-ho-pretaci-i-byznysovy-partak-pohlreicha/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Forbes Česko",
+          "puvod": null,
+          "zdroj_datum": "2025-10-23",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/07752971",
+          "druh_zdroje": "rejstrik_spolecnik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-08-29",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Edmund (Edmund AI)",
+        "datum_investice": null,
+        "datum_oznameni": "2025-02-12",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://www.vestbee.com/blog/articles/edmund-secures-500-k"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.vestbee.com/blog/articles/edmund-secures-500-k",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": null,
+            "zdroj_datum": "2025-02-12",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Outfindo",
+        "datum_investice": null,
+        "datum_oznameni": "2025-01-20",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "late-seed",
+          "zdroj_url": "https://cc.cz/poklada-jednoduche-otazky-a-tim-ulehcuje-slozite-nakupy-startup-outfindo-ted-nabira-dalsi-miliony/"
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/poklada-jednoduche-otazky-a-tim-ulehcuje-slozite-nakupy-startup-outfindo-ted-nabira-dalsi-miliony/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2025-01-20",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje „Borovicka Capital is an investment company with a strategic focus on venture capital investments“, investuje přímo do startupů v rané fázi ve střední Evropě, většinou jako koinvestor s menšinovými podíly (Forbes 28. 11. 2024: „zatím fungujeme hlavně jako koinvestoři“). Peníze jsou rodinné (otec Martin a synové Jakub a Lukáš Borovičkovi). Média ho nazývají „rodinný fond“ (CzechCrunch) nebo „rodinný VC fond“ (Forbes), jako family office se ale výslovně neoznačuje a samotné peníze jedné rodiny pro typ family office nestačí (PLAN.md bod 2). Identita: ARES vrátil Borovicka Capital s.r.o., IČO 19966784, sídlo Breitfeldova 709/17, Praha 8, jednatelé Martin a Jakub Borovička (Lukáš Borovička jednatelem a společníkem do 31. 7. 2026), společníci Jakub Borovička (51 %) a BC Holding s.r.o. (49 %). Jména odpovídají médiím (Forbes, CzechCrunch), totožnost je potvrzená. Předmět podnikání v rejstříku je obecná volná živnost, žádná licence ČNB jsem nedohledal ani nehledal. Ticket: investor ho sám nedeklaruje. Třetí strany (SuperScout) uvádějí 500 tis.–1,25 mil. EUR, to není deklarace investora, proto nevyplněno. Kapitál: nevyplněn. Forbes uvádí, že v roce 2024 „nainvestovali třicet milionů korun“ a že jsou „celkově připraveni vložit sumu ve výši 150 milionů korun“. To je záměr, ne AUM, upsaný kapitál ani velikost fondu. CzechCrunch uvádí, že otec vkládá peníze „formou půjček“ (financování investiční firmy, ne nástroj vůči startupům). Sektory: zdroj investora je neuvádí, jen „společenský dopad“ (CzechCrunch), proto null. Poslední investice: NutritionPro. Forbes 23. 10. 2025: investoři Borovicka Capital, Leverage a Lighthouse Ventures vykoupili podíly zakladatele Nurlana Abdrassilova („jsme se spojili s Leverage a Lighthouse Ventures a Nurlanův podíl vykoupili“). Nástroj podíl je doložený. Rejstřík Nutritionpro s.r.o. (IČO 07752971) vede Borovicka Capital s.r.o. jako společníka od 19. 6. 2024, nové podíly zapsané 5. 8. a 21. 8. 2025. Abdrassilov je vymazán 21. 8. 2025. To je jen podpůrný doklad, datum investice z rejstříku neberu. Částku zdroj neuvádí. Datum pro filtr je oznámení 2025-10-23, tedy jen 3 dny před hranicí 12 měsíců (2025-10-26), proto status investice_dolozena_12_24_mesicu. Jde o odkup podílu od zakladatele (sekundární transakce), ne o nové kolo. Další investice: Edmund, pre-seed kolo 500 000 EUR (velikost celého kola, ne vklad), vedl Lighthouse Ventures (Vestbee 12. 2. 2025). Outfindo, late-seed kolo 1,2 mil. EUR (velikost celého kola), vedl Eleven Ventures (CzechCrunch 20. 1. 2025). Funding.tech.eu uvádí stejné dva dealy (2025-01-20 a 2025-02-12). Jistota investice střední: k NutritionPro je jen jedna zpráva o transakci a rejstřík je jen podpůrný. Zprávu o novější investici (např. do kola Edmund v roce 2026) jsem nenašel, Borovicka Capital v ní jmenovaná není. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-credo-ventures",
+    "nazev": "Credo Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Credo Ventures a.s.",
+      "ico": "28538137",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/28538137",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2023-07-14",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://credoventures.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://credoventures.com/",
+      "zdroj_url": "https://credoventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed"
+      ],
+      "zdroj_url": "https://credoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 1000000,
+      "max": 5000000,
+      "mena": "USD",
+      "zdroj_url": "https://credoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 88000000,
+        "mena": "USD",
+        "plati_k": "2026-03-23",
+        "druh": "fund_size",
+        "fond": "Credo Stage 5",
+        "zdroj_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "zdroj_datum": "2026-03-23",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "SuperPlane",
+      "datum_investice": null,
+      "datum_oznameni": "2026-06-24",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://therecursive.com/serbian-superplane-pre-seed-dev-tool/"
+      },
+      "zdroje": [
+        {
+          "url": "https://therecursive.com/serbian-superplane-pre-seed-dev-tool/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "The Recursive",
+          "puvod": null,
+          "zdroj_datum": "2026-06-24",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://thesaasnews.com/news/superplane-raises-2-28m-pre-seed",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "The SaaS News",
+          "puvod": "https://therecursive.com/serbian-superplane-pre-seed-dev-tool/",
+          "zdroj_datum": "2026-06-24",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Supernova",
+        "datum_investice": null,
+        "datum_oznameni": "2025-09-30",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/"
+        },
+        "zdroje": [
+          {
+            "url": "https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Tech.eu",
+            "puvod": null,
+            "zdroj_datum": "2025-09-30",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://credoventures.com/newsroom",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje jako 'The fund of choice for CEE founders around the world building generational companies' a 'Leading Pre-Seed rounds', doložené investice za podíl do startupů. Identita: ARES Credo Ventures a.s., IČO 28538137, sídlo Karlovo náměstí 2097/10, Praha 2 (shodné s adresou Karlovo Náměstí 10 na webu), předseda správní rady Ondřej Bartoš. V ARES existuje i Credo Ventures Management II a.s. (IČO 24396893, vznik 2026-01-20, stejná adresa, předseda Maximilian Kolowrat-Krakowský, člen Jakub Křikava, kterého The Next Web cituje jako partnera Credo); pravděpodobně správcovská entita pro nový fond, role nepotvrzená. Web uvádí kanceláře v Praze a Krakově; sídlo investiční firmy beru jako ČR podle rejstříku. Ticket '$1M - $5M checks' deklaruje web. Kapitál: The Next Web 23. 3. 2026: 'Credo Ventures has closed Credo Stage 5, an $88 million fund raised in a single closing'; plati_k = datum zprávy, přesné datum uzavření neuvedeno. Starší fondy (např. fond IV 75 mil. EUR podle CzechCrunch) nezapisuji a nesčítám. Sektory: web výslovně 'Backing exceptional people, not thesis-driven', proto null. Poslední investice: SuperPlane, pre-seed 2,28 mil. EUR / 2,6 mil. USD (velikost celého kola, ne vklad Credo), Credo jako lead podle The Recursive 24. 6. 2026; The SaaS News z Recursive přímo vychází (stejný původ), proto jistota investice stredni; nezávislý druhý zdroj nedoložen. Nástroj neprima_indicie (pre-seed), podíl výslovně neuveden. Další: Supernova series A 9,2 mil. USD (velikost kola), Credo mezi účastníky podle Tech.eu 30. 9. 2025. Agregátory uvádějí i Modeinspect (seed, leden 2026) a Picogrid (series A, květen 2026), ale bez zprávy o transakci, kterou bych přečetl s Credo jmenovaným, proto nezapsány. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-cs-seed-starter",
+    "nazev": "ČS Seed Starter",
+    "typ": "CVC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "ČS Seed Starter, a.s.",
+      "ico": "61058769",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/61058769",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-10-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.seedstarter.cz/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.seedstarter.cz/",
+      "zdroj_url": "https://www.seedstarter.cz/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed"
+      ],
+      "zdroj_url": "https://www.seedstarter.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 200000,
+      "max": 1000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.seedstarter.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Definic",
+      "datum_investice": null,
+      "datum_oznameni": "2026-06-12",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "seed",
+        "zdroj_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"
+      },
+      "zdroje": [
+        {
+          "url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2026-06-12",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Repsense",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-17",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2025-12-17",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ CVC: web se sám označuje jako „Corporate Venture Capital of Česká spořitelna“ (https://www.seedstarter.cz/) a investiční činnost vykonává samostatná společnost ČS Seed Starter, a.s., jejímž jediným akcionářem je Česká spořitelna, a.s. (IČO 45244782), s předmětem činnosti „Investice do startupů a jiných právnických osob. Správa vlastního investičního portfolia.“ (ARES). Identita: IČO 61058769, sídlo Olbrachtova 1929/62, Praha 4; web uvádí stejné IČ; člen představenstva Tomáš Milota (ARES, členství od 2023-10-01) je na webu uveden jako CEO a v článku CzechCrunch o Definicu mluví „za Seed Starter ČS“. Odlišit od Seed Starteru Slovenské sporiteľne (samostatný slovenský program, na funding.tech.eu veden zvlášť). Ticket 200k–1M EUR a nástroj „CLA or equity investment“, menšinový podíl podle webu. Sektory web neuvádí (jen technologie pro bankovnictví a klienty), proto null. Kapitál: veřejně jen částky alokované nebo už proinvestované (např. „Banka jim zatím poslala 180 milionů“, CzechCrunch 2023), což není AUM/committed capital/fund size, proto prázdné. Velikost kol (ne vklad ČS): Definic seed 2,5 mil. EUR (vedl J&T Ventures, dále Slovak Investment Holding); Repsense 1,1 mil. EUR podle CzechCrunch (funding.tech.eu uvádí 2 mil. EUR, rozdíl jen ve velikosti kola, ne ve firmě, datu ani investorovi). Nástroj: Definic jen neprima_indicie (seed kolo, účast Seed Starteru výslovně uvedena), Repsense nezjištěn. Jistota investice střední: jediná zpráva o transakci (CzechCrunch), nezávislý druhý zdroj nedohledán, žádný dolozeno. Datum Definic = datum oznámení (CzechCrunch, 2026-06-12), datum uzavření kola zdroj neuvádí. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-czech-founders-vc",
+    "nazev": "Czech Founders VC",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Czech Founders Ventures s.r.o., osoba rizikového kapitálu",
+      "ico": "17051835",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/17051835",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2024-07-26",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/",
+          "druh_zdroje": "media",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2022-09-07",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://czechfounders.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://czechfounders.vc/",
+      "zdroj_url": "https://czechfounders.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed"
+      ],
+      "zdroj_url": "https://czechfounders.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 50000,
+      "max": 350000,
+      "mena": "EUR",
+      "zdroj_url": "https://czechfounders.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 10000000,
+        "mena": "EUR",
+        "plati_k": "2022-09-07",
+        "druh": "committed_capital",
+        "fond": null,
+        "zdroj_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/",
+        "zdroj_datum": "2022-09-07",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Merchantee",
+      "datum_investice": null,
+      "datum_oznameni": "2026-06-09",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "seed",
+        "zdroj_url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/"
+      },
+      "zdroje": [
+        {
+          "url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2026-06-09",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://czechfounders.vc/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Maxfusion",
+        "datum_investice": null,
+        "datum_oznameni": "2026-01-14",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-01-14",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://czechfounders.vc/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: pre-seed fond zakladatelů pro firmy z CEE („Czech Founders VC mission is based on the need for a founders-focused investor“, „Pre-seed tickets. Typically €50-350k“, „No more than 15% equity“, czechfounders.vc); CzechCrunch (2022-09-07) jej popisuje jako fond regulovaný jako alternativní investiční fond, s podíly „maximálně patnáct procent“. Sídlo Praha. Identita: web uvádí „© Czech Founders Ventures s.r.o.“; ARES: Czech Founders Ventures s.r.o., osoba rizikového kapitálu, IČO 17051835, Salvátorská 931/8, Praha 1, jednatelé a společníci Vít Horký, Václav Pavlečka, Ivan Kristeľ, což odpovídá partnerům fondu podle CzechCrunch. Není totožný s neziskovou Czech Founders z.ú. (IČO 09761187). Kapitál: CzechCrunch uvádí „Všichni zde zmínění složili dohromady deset milionů eur, přibližně čtvrt miliardy korun“ (původní cíl 5 mil. EUR zdvojnásoben); zapsáno jako committed_capital k datu článku, údaj z roku 2022. Ticket 50–350 tis. EUR deklarovaný na webu a v CzechCrunch. Sektory investor nevymezuje (široké spektrum oborů), proto null. Velikost kol (ne vklad CF VC): Merchantee rozšíření seed kola o dalších 30 mil. Kč k původním 15 mil. Kč z roku 2024 (vedl Reflex Capital, dále Lighthouse Ventures; zakladatel o něm mluví jako o „něco jako bridge round“), funding.tech.eu uvádí 1,8 mil. EUR; Maxfusion 350 tis. EUR (spolu s andělem a zakladateli). Nástroj: Merchantee neprima_indicie (CzechCrunch: „rozšíření svého původního, takzvaného seed investičního kola“, „Kolo vedl fond Reflex Capital za účasti Czech Founders VC a Lighthouse Ventures.“), Maxfusion nezjištěn; obecně web deklaruje equity do 15 %. Jistota investice střední: jediná zpráva o transakci, žádný dolozeno. Data jsou data oznámení, datum uzavření zdroje neuvádějí. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední (agregátory jako PitchBook uvádějí další kola, např. AdSpawn 2026-04, které jsem zprávou neověřoval)."
+  }
+]

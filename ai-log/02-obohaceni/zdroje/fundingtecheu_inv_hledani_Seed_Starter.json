@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "name": "Seed Starter",
+      "url": "https://funding.tech.eu/investors/Seed%20Starter",
+      "type": "Venture capital",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2023,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Seed Starter ČS",
+      "url": "https://funding.tech.eu/investors/Seed%20Starter%20%C4%8CS",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2026,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Seed Starter of Česká a Slovenská spořitelna",
+      "url": "https://funding.tech.eu/investors/Seed%20Starter%20of%20%C4%8Cesk%C3%A1%20a%20Slovensk%C3%A1%20spo%C5%99itelna",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Fintech",
+      "activeYears": {
+        "first": 2025,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Seed Starter of Slovenská sporiteľňa",
+      "url": "https://funding.tech.eu/investors/Seed%20Starter%20of%20Slovensk%C3%A1%20sporite%C4%BE%C5%88a",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2026,
+        "last": 2026
+      }
+    }
+  ],
+  "page": 1,
+  "totalPages": 1,
+  "total": 4,
+  "count": 4,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

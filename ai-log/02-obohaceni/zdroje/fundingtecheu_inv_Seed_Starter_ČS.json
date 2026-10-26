@@ -1,0 +1,78 @@
+{
+  "name": "Seed Starter ČS",
+  "url": "https://funding.tech.eu/investors/Seed%20Starter%20%C4%8CS",
+  "aliases": [
+    "Seed Starter ČS"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2026,
+    "last": 2026
+  },
+  "participatedRoundEur": 2500000,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Definic",
+      "url": "https://funding.tech.eu/companies/1682217B-70A5-4419-AA5D-1CAC71976BE7",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 2500000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Definic",
+      "companyUrl": "https://funding.tech.eu/companies/1682217B-70A5-4419-AA5D-1CAC71976BE7",
+      "dealUrl": "https://funding.tech.eu/deals/6A02C639-87AC-4027-BDF2-3757B076803B",
+      "stage": "Other",
+      "amountEur": 2500000,
+      "date": "2026-06-12T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Slovak Investment Holding (SIH)",
+      "url": "https://funding.tech.eu/investors/Slovak%20Investment%20Holding%20(SIH)",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

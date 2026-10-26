@@ -1,0 +1,126 @@
+{
+  "name": "Borovicka Capital",
+  "url": "https://funding.tech.eu/investors/Borovicka%20Capital",
+  "aliases": [
+    "Borovicka Capital"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 2,
+  "companies": 2,
+  "activeYears": {
+    "first": 2025,
+    "last": 2025
+  },
+  "participatedRoundEur": 1700000,
+  "sectors": [
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 1
+    },
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 2
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2025,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Outfindo",
+      "url": "https://funding.tech.eu/companies/335BD493-8F4F-43A9-A317-152095156B4D",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1200000
+    },
+    {
+      "company": "Edmund",
+      "url": "https://funding.tech.eu/companies/6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 500000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Outfindo",
+      "companyUrl": "https://funding.tech.eu/companies/335BD493-8F4F-43A9-A317-152095156B4D",
+      "dealUrl": "https://funding.tech.eu/deals/637FEE44-601A-4A54-950C-F786D9DD84FE",
+      "stage": "Seed",
+      "amountEur": 1200000,
+      "date": "2025-01-20T00:00:00.000Z"
+    },
+    {
+      "company": "Edmund",
+      "companyUrl": "https://funding.tech.eu/companies/6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+      "dealUrl": "https://funding.tech.eu/deals/66CF07C7-3E8A-4B78-81C4-209AC98610C9",
+      "stage": "Other",
+      "amountEur": 500000,
+      "date": "2025-02-12T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Dronamics",
+      "url": "https://funding.tech.eu/investors/Dronamics",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Eleven Ventures",
+      "url": "https://funding.tech.eu/investors/Eleven%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "NitroPack",
+      "url": "https://funding.tech.eu/investors/NitroPack",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Payhawk",
+      "url": "https://funding.tech.eu/investors/Payhawk",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tensor Ventures",
+      "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

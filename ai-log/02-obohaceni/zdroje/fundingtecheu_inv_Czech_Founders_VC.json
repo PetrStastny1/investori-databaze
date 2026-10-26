@@ -1,0 +1,372 @@
+{
+  "name": "Czech Founders VC",
+  "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+  "aliases": [
+    "Czech Founders VC"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 10,
+  "companies": 10,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 7882521,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 4
+    },
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Fashion",
+      "value": 1
+    },
+    {
+      "name": "Gaming",
+      "value": 1
+    },
+    {
+      "name": "Healthtech",
+      "value": 1
+    },
+    {
+      "name": "Telecom",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 6
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 2
+    },
+    {
+      "name": "Seed",
+      "value": 2
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 7
+    },
+    {
+      "name": "Bulgaria",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 5
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Merchantee",
+      "url": "https://funding.tech.eu/companies/92DBD383-DC28-4B58-927B-EA4BE6755F36",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1800000
+    },
+    {
+      "company": "DecisionRules",
+      "url": "https://funding.tech.eu/companies/148174D7-4BF9-4C06-9E70-65586F739CF3",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1600000
+    },
+    {
+      "company": "Every Health",
+      "url": "https://funding.tech.eu/companies/94CC6AB9-D1AE-4CC3-9C42-F68D3774A047",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 1100000
+    },
+    {
+      "company": "NOLD",
+      "url": "https://funding.tech.eu/companies/1B2BB11F-1279-4881-8941-93FE5E4E49FB",
+      "country": "Bulgaria",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Fungies.io",
+      "url": "https://funding.tech.eu/companies/9E571B4D-2C3C-4B3C-A2B2-3D5179F393BC",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 774840
+    },
+    {
+      "company": "Openvibe",
+      "url": "https://funding.tech.eu/companies/4D8B790A-92EB-4E6F-81BB-EF4D8652EF60",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 767681
+    },
+    {
+      "company": "Edmund",
+      "url": "https://funding.tech.eu/companies/6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 500000
+    },
+    {
+      "company": "Mamio",
+      "url": "https://funding.tech.eu/companies/959B66EE-68C0-4279-87CB-1832D72FC9CF",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 300000
+    },
+    {
+      "company": "Lignufy",
+      "url": "https://funding.tech.eu/companies/6131A4A0-AE54-485A-BB75-6D5AE5284037",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 40000
+    },
+    {
+      "company": "Maxfusion",
+      "url": "https://funding.tech.eu/companies/EF37FEC8-958A-469C-A8C8-C6DDDBB8D1EA",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Merchantee",
+      "companyUrl": "https://funding.tech.eu/companies/92DBD383-DC28-4B58-927B-EA4BE6755F36",
+      "dealUrl": "https://funding.tech.eu/deals/DD9047D3-0DAC-4C0F-A5D8-8EDC578316AF",
+      "stage": "Other",
+      "amountEur": 1800000,
+      "date": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "company": "DecisionRules",
+      "companyUrl": "https://funding.tech.eu/companies/148174D7-4BF9-4C06-9E70-65586F739CF3",
+      "dealUrl": "https://funding.tech.eu/deals/786675BF-E03D-44B8-AEA4-7C6AC722B114",
+      "stage": "Other",
+      "amountEur": 1600000,
+      "date": "2025-05-06T00:00:00.000Z"
+    },
+    {
+      "company": "Every Health",
+      "companyUrl": "https://funding.tech.eu/companies/94CC6AB9-D1AE-4CC3-9C42-F68D3774A047",
+      "dealUrl": "https://funding.tech.eu/deals/4BA5FC81-D069-4A90-99C4-2C7D07EC12EB",
+      "stage": "Seed",
+      "amountEur": 1100000,
+      "date": "2025-10-24T00:00:00.000Z"
+    },
+    {
+      "company": "NOLD",
+      "companyUrl": "https://funding.tech.eu/companies/1B2BB11F-1279-4881-8941-93FE5E4E49FB",
+      "dealUrl": "https://funding.tech.eu/deals/9D475747-EDE2-4105-9163-23EDE937364B",
+      "stage": "Seed",
+      "amountEur": 1000000,
+      "date": "2023-10-18T00:00:00.000Z"
+    },
+    {
+      "company": "Fungies.io",
+      "companyUrl": "https://funding.tech.eu/companies/9E571B4D-2C3C-4B3C-A2B2-3D5179F393BC",
+      "dealUrl": "https://funding.tech.eu/deals/0EDF9EC3-8073-4672-82AB-409E03192A1A",
+      "stage": "Pre-Seed",
+      "amountEur": 774840,
+      "date": "2023-08-01T00:00:00.000Z"
+    },
+    {
+      "company": "Openvibe",
+      "companyUrl": "https://funding.tech.eu/companies/4D8B790A-92EB-4E6F-81BB-EF4D8652EF60",
+      "dealUrl": "https://funding.tech.eu/deals/96228EC3-6C25-48E6-9EAC-FC9BA5C9F2F9",
+      "stage": "Other",
+      "amountEur": 767681,
+      "date": "2025-01-28T00:00:00.000Z"
+    },
+    {
+      "company": "Edmund",
+      "companyUrl": "https://funding.tech.eu/companies/6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+      "dealUrl": "https://funding.tech.eu/deals/66CF07C7-3E8A-4B78-81C4-209AC98610C9",
+      "stage": "Other",
+      "amountEur": 500000,
+      "date": "2025-02-12T00:00:00.000Z"
+    },
+    {
+      "company": "Mamio",
+      "companyUrl": "https://funding.tech.eu/companies/959B66EE-68C0-4279-87CB-1832D72FC9CF",
+      "dealUrl": "https://funding.tech.eu/deals/279E7F06-2E06-414A-9800-26ABA8A3ECAB",
+      "stage": "Pre-Seed",
+      "amountEur": 300000,
+      "date": "2024-02-01T00:00:00.000Z"
+    },
+    {
+      "company": "Lignufy",
+      "companyUrl": "https://funding.tech.eu/companies/6131A4A0-AE54-485A-BB75-6D5AE5284037",
+      "dealUrl": "https://funding.tech.eu/deals/8527D61F-26B6-4359-8FE8-8C2EB4125725",
+      "stage": "Other",
+      "amountEur": 40000,
+      "date": "2025-08-20T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Ory Weihs",
+      "url": "https://funding.tech.eu/investors/Ory%20Weihs",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Tensor Ventures",
+      "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Atlantic Labs",
+      "url": "https://funding.tech.eu/investors/Atlantic%20Labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Borovicka Capital",
+      "url": "https://funding.tech.eu/investors/Borovicka%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Chilli Ventures",
+      "url": "https://funding.tech.eu/investors/Chilli%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CV VC",
+      "url": "https://funding.tech.eu/investors/CV%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Jan Široký",
+      "url": "https://funding.tech.eu/investors/Jan%20%C5%A0irok%C3%BD",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Michael Rostock-Poplar",
+      "url": "https://funding.tech.eu/investors/Michael%20Rostock-Poplar",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Nation 1",
+      "url": "https://funding.tech.eu/investors/Nation%201",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Nectolabs",
+      "url": "https://funding.tech.eu/investors/Nectolabs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "New Vision 3",
+      "url": "https://funding.tech.eu/investors/New%20Vision%203",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Outlier Ventures",
+      "url": "https://funding.tech.eu/investors/Outlier%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "PurposeTech",
+      "url": "https://funding.tech.eu/investors/PurposeTech",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Reflex Capital",
+      "url": "https://funding.tech.eu/investors/Reflex%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Sofia Angel Ventures",
+      "url": "https://funding.tech.eu/investors/Sofia%20Angel%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "StartupYard",
+      "url": "https://funding.tech.eu/investors/StartupYard",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Taimi",
+      "url": "https://funding.tech.eu/investors/Taimi",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tatum",
+      "url": "https://funding.tech.eu/investors/Tatum",
+      "sharedRounds": 1
+    },
+    {
+      "name": "the company’s founders",
+      "url": "https://funding.tech.eu/investors/the%20company%E2%80%99s%20founders",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tilia Impact Ventures",
+      "url": "https://funding.tech.eu/investors/Tilia%20Impact%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "ULTRA VC",
+      "url": "https://funding.tech.eu/investors/ULTRA%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "ZAS Ventures",
+      "url": "https://funding.tech.eu/investors/ZAS%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

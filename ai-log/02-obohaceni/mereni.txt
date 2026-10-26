@@ -12,3 +12,25 @@ Tokeny: agent nemá přístup k naměřené spotřebě tokenů, proto je neuvád
 a neodhaduji. Naměřenou hodnotu lze zjistit v Claude Code (/cost, /usage)
 nebo v konzoli účtu.
 
+Dávka 1 (10 kandidátů)
+------------------------------
+  začátek 2026-10-26T15:43:11Z, konec 2026-10-26T15:53:12Z, doba 10 min 1 s
+  kandidát                                 WS   WF  WFx ARES  FTE curl
+  cz-arx-equity-partners                    1    3    0    2    1    0  vyrazen
+  cz-bd-partners                            3    3    1    2    1    1  vyrazen
+  cz-borovicka-capital                      8    7    2    4    1    2  zarazen
+  cz-botanique-hospitality                  3    4    1    2    1    1  nevyresene
+  cz-braiins                                9    9    2    2    1    0  nevyresene
+  cz-central-europe-industry-partners       8   17    3    2    3    0  vyrazen
+  cz-chilli-ventures                        9    6    0    2    1    1  nevyresene
+  cz-credo-ventures                         8    9    1    3    1    2  zarazen
+  cz-cs-seed-starter                        3    5    0    2    5    0  zarazen
+  cz-czech-founders-vc                      4    7    1    2    1    0  zarazen
+  celkem                                   56   70   11   23   16    7  (celkem 172 požadavků)
+  WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
+  Poznámka: u dávky 1 zadání neurčilo, jestli WF zahrnuje i neúspěšná volání;
+  součet v závorce počítá, že ano (WFx odečteno). Od dávky 2 je to v zadání
+  výslovně (WF = všechna volání včetně neúspěšných). Hlavní agent v této dávce
+  žádné webové požadavky nedělal (jen kontrola a zápis lokálními skripty).
+  Doba zahrnuje i kontrolu výsledků a zápis hlavním agentem.
+

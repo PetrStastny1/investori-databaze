@@ -1,0 +1,12 @@
+{
+  "data": [],
+  "page": 1,
+  "totalPages": 1,
+  "total": 0,
+  "count": 0,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

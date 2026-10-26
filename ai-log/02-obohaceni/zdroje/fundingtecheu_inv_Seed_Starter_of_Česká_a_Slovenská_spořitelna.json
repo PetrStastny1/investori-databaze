@@ -1,0 +1,78 @@
+{
+  "name": "Seed Starter of Česká a Slovenská spořitelna",
+  "url": "https://funding.tech.eu/investors/Seed%20Starter%20of%20%C4%8Cesk%C3%A1%20a%20Slovensk%C3%A1%20spo%C5%99itelna",
+  "aliases": [
+    "Seed Starter of Česká a Slovenská spořitelna"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2025,
+    "last": 2025
+  },
+  "participatedRoundEur": 2200000,
+  "sectors": [
+    {
+      "name": "Fintech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Growth/Late",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2025,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Vestberry",
+      "url": "https://funding.tech.eu/companies/18F41C70-A422-4B46-89FF-021491BDC513",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 2200000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Vestberry",
+      "companyUrl": "https://funding.tech.eu/companies/18F41C70-A422-4B46-89FF-021491BDC513",
+      "dealUrl": "https://funding.tech.eu/deals/488CB289-2EF6-4B49-ABEE-2D8BD829386B",
+      "stage": "Growth/Late",
+      "amountEur": 2200000,
+      "date": "2025-03-13T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Venture to Future Fund",
+      "url": "https://funding.tech.eu/investors/Venture%20to%20Future%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Zero One Hundred",
+      "url": "https://funding.tech.eu/investors/Zero%20One%20Hundred",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

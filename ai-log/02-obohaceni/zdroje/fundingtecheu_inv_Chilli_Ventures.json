@@ -1,0 +1,93 @@
+{
+  "name": "Chilli Ventures",
+  "url": "https://funding.tech.eu/investors/Chilli%20Ventures",
+  "aliases": [
+    "Chilli Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2025,
+    "last": 2025
+  },
+  "participatedRoundEur": 1600000,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2025,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "DecisionRules",
+      "url": "https://funding.tech.eu/companies/148174D7-4BF9-4C06-9E70-65586F739CF3",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1600000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "DecisionRules",
+      "companyUrl": "https://funding.tech.eu/companies/148174D7-4BF9-4C06-9E70-65586F739CF3",
+      "dealUrl": "https://funding.tech.eu/deals/786675BF-E03D-44B8-AEA4-7C6AC722B114",
+      "stage": "Other",
+      "amountEur": 1600000,
+      "date": "2025-05-06T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Michael Rostock-Poplar",
+      "url": "https://funding.tech.eu/investors/Michael%20Rostock-Poplar",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Ory Weihs",
+      "url": "https://funding.tech.eu/investors/Ory%20Weihs",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Braiins",
+  "url": "https://funding.tech.eu/investors/Braiins",
+  "aliases": [
+    "Braiins"
+  ],
+  "types": [
+    "Corporate"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2025,
+    "last": 2025
+  },
+  "participatedRoundEur": 1643836,
+  "sectors": [
+    {
+      "name": "Fintech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2025,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Firefish",
+      "url": "https://funding.tech.eu/companies/A3C89A55-D1EB-43D0-B297-994BBA4B3E09",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1643836
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Firefish",
+      "companyUrl": "https://funding.tech.eu/companies/A3C89A55-D1EB-43D0-B297-994BBA4B3E09",
+      "dealUrl": "https://funding.tech.eu/deals/548E6398-1BC7-40AE-A604-4D8A411EF746",
+      "stage": "Seed",
+      "amountEur": 1643836,
+      "date": "2025-04-08T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Miton",
+      "url": "https://funding.tech.eu/investors/Miton",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

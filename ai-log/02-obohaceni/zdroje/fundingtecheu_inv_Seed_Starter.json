@@ -1,0 +1,173 @@
+{
+  "name": "Seed Starter",
+  "url": "https://funding.tech.eu/investors/Seed%20Starter",
+  "aliases": [
+    "Seed Starter"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 3,
+  "companies": 3,
+  "activeYears": {
+    "first": 2023,
+    "last": 2025
+  },
+  "participatedRoundEur": 5500000,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Lithuania",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2025,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Born Digital",
+      "url": "https://funding.tech.eu/companies/3BBCBB0D-EF5C-4C36-AFFF-D7C32A940452",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "Repsense",
+      "url": "https://funding.tech.eu/companies/D38E0E90-2BAE-47E4-8BBB-6B705920D0EC",
+      "country": "Lithuania",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "Blockmate",
+      "url": "https://funding.tech.eu/companies/E5D18C07-E581-463B-9D8B-5ED42E34D09C",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 1500000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Repsense",
+      "companyUrl": "https://funding.tech.eu/companies/D38E0E90-2BAE-47E4-8BBB-6B705920D0EC",
+      "dealUrl": "https://funding.tech.eu/deals/463990B6-0F06-4896-89A4-F01D12EA9510",
+      "stage": "Seed",
+      "amountEur": 2000000,
+      "date": "2025-12-16T00:00:00.000Z"
+    },
+    {
+      "company": "Born Digital",
+      "companyUrl": "https://funding.tech.eu/companies/3BBCBB0D-EF5C-4C36-AFFF-D7C32A940452",
+      "dealUrl": "https://funding.tech.eu/deals/30F0452A-245C-454C-8572-A2CDF5872FD9",
+      "stage": "Other",
+      "amountEur": 2000000,
+      "date": "2023-12-07T00:00:00.000Z"
+    },
+    {
+      "company": "Blockmate",
+      "companyUrl": "https://funding.tech.eu/companies/E5D18C07-E581-463B-9D8B-5ED42E34D09C",
+      "dealUrl": "https://funding.tech.eu/deals/5CCEDC59-3031-4F8E-B502-96A0DEF7320A",
+      "stage": "Other",
+      "amountEur": 1500000,
+      "date": "2023-09-15T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Tensor Ventures",
+      "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "BADideas.fund",
+      "url": "https://funding.tech.eu/investors/BADideas.fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BSV Ventures",
+      "url": "https://funding.tech.eu/investors/BSV%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CoInvest Capital",
+      "url": "https://funding.tech.eu/investors/CoInvest%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CVC of Česká spořitelna",
+      "url": "https://funding.tech.eu/investors/CVC%20of%20%C4%8Cesk%C3%A1%20spo%C5%99itelna",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Diaspora ventures",
+      "url": "https://funding.tech.eu/investors/Diaspora%20ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Erste Group",
+      "url": "https://funding.tech.eu/investors/Erste%20Group",
+      "sharedRounds": 1
+    },
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Token Ventures",
+      "url": "https://funding.tech.eu/investors/Token%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Zaka VC",
+      "url": "https://funding.tech.eu/investors/Zaka%20VC",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}
