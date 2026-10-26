@@ -1,0 +1,1976 @@
+
+❯ <ide_opened_file>The user opened the file
+  /Users/petrstastny/Documents/Projekty/investori-databaze/PLAN.md in the IDE.
+  This may or may not be related to the current task.</ide_opened_file>
+
+❯ Krok 4: kontrola zdrojů druhým agentem podle PLAN.md. Pracuješ ve dvou
+  fázích. Druhou začni až po commitu první.
+
+  FÁZE A, slepá kontrola
+  Čti jen PLAN.md, data v data/vystup_agenta/ a
+  ai-log/02-obohaceni/mapovani_id.csv. Nečti zprávu automatické kontroly, nic
+  dalšího v ai-log/ kromě surových odpovědí v ai-log/02-obohaceni/zdroje/,
+  README.md ani historii gitu.
+
+  Zkontroluj všech 56 výsledných kandidátů:
+  - u 27 zařazených ověř identitu, typ, sídlo, investiční činnost a všechny
+  vyplněné údaje podle jejich zdrojů,
+  - u vyřazených a hraničních ověř důvod a kategorii rozhodnutí,
+  - u nevyřešených ověř, zda popsaná nejistota odpovídá zdrojům,
+  - ověř doložení sloučení Nation1 do N1 Ventures.
+
+  Zdroje skutečně otevři, nestačí převzít poznámku prvního agenta. U každého
+  závěru uveď, jestli jsi četl celou stránku, nebo jen výtah nástroje. Závěr je
+  jeden z: sedi, potvrzeny_rozpor, nedostatecny_dukaz, podezreni, neovereno
+  (zdroj nedostupný; neznamená chybný údaj).
+
+  Výsledky ulož do ai-log/04-kontrola-zdroju/slepa_kontrola.csv se sloupci
+  soubor,id,pole,zaver,vysvetleni,zdroj_url,cteno,datum_kontroly. Commitni a
+  pushni.
+
+  FÁZE B, cílené otázky
+  Teprve teď si přečti ai-log/03-kontrola/automaticka_kontrola.md a odpověz na
+  tyto otázky:
+  - Espira a McWin: nedoložená aktivita versus tvrzení „není investor“,
+  - Orbit: podílová strategie vedle venture debt,
+  - i&i Prague: přímé investice versus investování do fondů,
+  - česká kancelář nebo tým versus sídlo správce (DEPO, N1, Tensor, i&i
+  Biotech, KAYA, ZAKA),
+  - Garage Angels a definice typu Angel,
+  - přesnost, přibližnost a datum údajů o kapitálu,
+  - původ zdrojů a propojení nástroje s konkrétní transakcí u záznamů s
+  nepřímou indicií.
+
+  Ulož do ai-log/04-kontrola-zdroju/cilene_otazky.md. Ve fázi A nic neměň;
+  pokud fáze B ukáže, že ses ve fázi A spletl, zapiš to do cilene_otazky.md.
+
+  Obecně: původní data neměň, data/hodnoceni.csv ani data/opraveno/ nevyplňuj.
+  Jde o kontrolu AI, ne o ruční hodnocení. Přesnost nepočítej. Závěry
+  nepřizpůsobuj tomu, aby vyšlo hodně nebo málo chyb.
+
+  Na konci vypiš prioritní seznam nálezů pro mou ruční kontrolu, počty závěrů
+  ve fázi A podle souboru a pole, počet neověřitelných položek a skutečný čas a
+  počty požadavků obou fází (zapiš je i do
+  ai-log/04-kontrola-zdroju/mereni.txt). Commitni a pushni.
+
+⏺ Začínám fází A. Nejdřív si zapíšu čas startu a načtu povolené vstupy.
+
+⏺ Bash(date '+%Y-%m-%d %H:%M:%S' && ls data/vystup_agenta/ ai-log/02-obohaceni/
+      && ls ai-log/02-obohaceni/zdroje | head -50 && ls
+      ai-log/02-obohaceni/zdroje | wc -l &&…)
+  ⎿  (No output)
+
+  Read 2 files (ctrl+o to expand)
+
+⏺ Bash(ls ai-log/02-obohaceni/zdroje | sed -n '50,400p' | tr '\n' ' ' ; echo; du
+      -sh ai-log/02-obohaceni/zdroje; python3 -c "
+      import json;d=json.load(open('data/vystup…)
+  ⎿  (No output)
+
+⏺ Plán a všechny výstupy souhlasí (27 zařazených + 17 vyřazených + 11
+  nevyřešených + 1 hraniční = 56). Teď připravím logovaný stahovač zdrojů pro
+  rozlišení „celá stránka“ vs. „výtah“ a rozdělím kontrolu mezi paralelní
+  agenty.
+
+⏺ Bash(mkdir -p
+      /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-da
+      tabaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/{bin,pages,parts}
+      && c…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "import pypdf;print('pypdf ok')" 2>&1; python3 -c "import
+      fitz;print('fitz')" 2>&1 | tail -1)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import
+      json;d=json.load(open('data/vystup_agenta/investori.json'));print([r['id']
+      for r in d]); print(sorted(set(k for r in d for k in r)))")
+  ⎿  (No output)
+
+⏺ Bash(cd /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investor
+      i-databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad && cat >
+      bin/log.sh <<'EOF'…)
+  ⎿  (No output)
+
+  Made 1 scratchpad edit +65 (ctrl+o to expand)
+
+⏺ Spouštím 7 kontrolních agentů paralelně (4 na zařazené, 3 na
+  vyřazené/hraniční/nevyřešené). Každý dostane jen povolené vstupy a loguje
+  každý požadavek.
+
+⏺ 7 background agents launched (↓ to manage)
+   ├ Slepá kontrola zařazených 1
+   ├ Slepá kontrola zařazených 2
+   ├ Slepá kontrola zařazených 3
+   ├ Slepá kontrola zařazených 4
+   ├ Slepá kontrola vyřazených 1
+   ├ Slepá kontrola vyřazených 2
+   └ Slepá kontrola nevyřešených
+
+⏺ Všech 7 agentů běží na pozadí. Počkám na jejich výsledky, pak je sloučím do
+  slepa_kontrola.csv.
+
+› Message from general-purpose
+  Kontrola v1 je hotová: všech 9 vyřazených kandidátů má správnou kategorii i
+  důvod, rozpor jsem nenašel. Výstup je v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/v1.csv.
+
+  **Počty:** 18 řádků (9 kandidátů × `kategorie` a `duvod`). Všech 18 má závěr
+  `sedi`. Žádný `potvrzeny_rozpor`, `nedostatecny_dukaz`, `podezreni` ani
+  `neovereno`.
+
+  **Kandidáti:** ARX, CEIP, EVERITA a Genesis jsou PE. BD Partners a Lion Beat
+  jsou family office s VC strategií. EMMA je holding jednoho podnikatele. Garage
+  Angels je klub andělů. U všech osmi je správně `mimo_rozsah_pilotu`. Espira
+  je správně `neni_investor`: poslední investice je z 2/2022 a dvě vyhledávání
+  nenašla žádnou novější.
+
+  **Nejzávažnější nálezy (žádný nemění závěr):**
+  - **cz-central-europe-industry-partners, kategorie:** Že jde o investora,
+  stojí na méně čistých transakcích. Timotec a Gersys koupily portfoliové firmy
+  BLOCK a AMiT, nevstoupil do nich přímo fond. Twist bylo financování, které šlo
+  převést na podíl, ale CEIP odešel postoupením pohledávky a k přeměně nedošlo.
+  Kategorie se dá obhájit, ale při přísném čtení „přímé investice“ jde o
+  hraniční případ.
+  - **cz-arx-equity-partners, duvod:** Investice HLB PROXY (30. 1. 2026) nemá ve
+  `zdroj_url` žádný zdroj, takže jsem ji neověřil. Stránka o Medicofitu navíc
+  zmiňuje investici do Direct4me z 16. 3. 2026, kterou důvod neuvádí.
+  - **cz-emma-capital, duvod:** Prodej podílu v Entain CEE je zatím jen dohoda,
+  dokončit se má ve 4. čtvrtletí 2026. Investice Urion a Diamedix dokládá jen
+  vlastní web EMMA.
+  - **cz-garage-angels:** Typ „klub nebo syndikát andělů“ v tabulce typů z bodu
+  2 není, Angel je tam fyzická osoba. Kategorii to nemění. Drobná nepřesnost v
+  důvodu: K. Obluk je společníkem GA Investiční GCOM, ne VRV.
+  - **cz-lion-beat-capital:** Patička webu uvádí název s.r.o. s IČO 29794668,
+  které patří a.s. Je to nesoulad na webu subjektu, ne chyba v důvodu.
+  - **cz-bd-partners:** Web o sobě píše „private investment office“. Označení
+  „joint family office“ zaznělo jen v rozhovoru pro CzechCrunch, fungování (jen
+  vlastní kapitál dvou partnerů) mu ale odpovídá.
+
+  **Nedostupné zdroje:** žádné. Všech 44 URL vrátilo HTTP 200. Web bdpartners.cz
+  je postavený na JavaScriptu, citace jsem ověřil přímo v jeho HTML.
+
+  **Požadavky:** 44× fetch.sh a 2× WebSearch (Espira, předem zalogováno přes
+  log.sh). WebFetch jsem nepoužil. Navíc jsem četl uloženou odpověď
+  funding.tech.eu k Espiře (výsledek 0). U ARX jsem v uložené odpovědi
+  funding.tech.eu hledal HLB PROXY, Medicofit a Direct4me a nenašel nic.
+
+  **Čas:** začátek Mon Oct 26 18:32:50 CET 2026, konec Mon Oct 26 18:37:37 CET
+  2026.
+
+⏺ v1 je hotový (18 řádků, vše sedi, několik drobných poznámek). Čekám na zbylých
+  6 agentů.
+
+⏺ Agent "Slepá kontrola vyřazených 1" finished · 5m 11s
+
+› Message from general-purpose
+  Kontrola v2 je hotová. Výstup je v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/v2.csv.
+
+  **Počet řádků:** 18 (9 kandidátů, u každého 2 pole). U 8 vyřazených to je
+  `kategorie` a `duvod`, u cz-orbit-capital `druh` a `duvod`.
+
+  **Závěry:** všech 18 je `sedi`. `potvrzeny_rozpor`, `nedostatecny_dukaz`,
+  `podezreni` ani `neovereno` nevyšly ani jednou.
+
+  **Nejzávažnější nálezy** (všechny drobné, kategorii ani druh nemění):
+  - **cz-versute-investments, duvod:** důvod připisuje zprávu o ALFA 3 ze 4. 8.
+  2025 Forbesu. Na versute.cz je to ale vlastní novinka webu a „Forbes“ se tam
+  týká jiného příspěvku (rozhovor Marka Šubrta).
+  - **cz-tcf-capital, kategorie:** typ „Velký soukromý investor“ je obhajitelný,
+  ale zdroje by unesly i PE (článek z roku 2023 přirovnává skupinu k PPF, EPH a
+  dalším) nebo family office („Tomáš Čupr Family“). Všechny tři varianty vedou
+  na `mimo_rozsah_pilotu`.
+  - **cz-thein, kategorie:** CubeTeam koupila Thein Digital, tedy firma uvnitř
+  skupiny. Je to dokupovaná (add-on) akvizice, ne přímý nákup fondem.
+  - **cz-mcwin-partners, kategorie:** `neni_investor` sedí. Caplight u McWin
+  Partners (CZ) uvádí jedinou investici, Oishii v únoru 2024, tedy před oknem.
+  Transakce v okně patří londýnské McWin Capital Partners.
+  - **cz-qq-capital, duvod:** zpráva PR Newswire z 28. 2. 2026 píše „Recently,
+  Navigara announced…“, takže první oznámení mohlo být o něco dřív. Na okno to
+  vliv nemá.
+  - **cz-stratum-partners, duvod:** ELIS DESIGN je doložen jen webem investora.
+  Stratum Partners je přejmenovaná Genesis Capital Growth s.r.o. a CzechCrunch
+  transakci připisuje „Genesis Capital“. Duplicitu s kandidátem Genesis jsem
+  nekontroloval.
+  - **cz-orbit-capital, duvod:** Vestbee 2023 a vazbu Cypien AI na Orbit
+  Ventures jsem z uvedených zdrojů neověřil. Vyhledávání vazbu přes VCBacked jen
+  naznačuje.
+
+  **Nedostupné zdroje:**
+  - Obě PDF tiskové zprávy MAM (20260908 ME Logistics a 20250924 UNIPAP) nešly
+  převést na text ani přes fetch.sh, ani přes WebFetch. Jejich text je ale na
+  mam-equity.cz, takže závěr stojí na webu. Data zpráv jsem ověřil jen z názvů
+  souborů.
+  - funding.tech.eu `/companies/Sloneek` a `/companies/Cypien%20AI` vrátily 404.
+  Byly to jen doplňkové dotazy navíc.
+
+  **Požadavky:** všechny jsou zalogované v requests.log pod tagem v2 (fetch.sh,
+  2× WebFetch, 3× WebSearch).
+
+  **Čas práce:** začátek Mon Oct 26 18:32:51 CET 2026, konec Mon Oct 26 18:38:51
+  CET 2026.
+
+⏺ v2 je hotový: 18 řádků, všechny sedi. Dvě PDF od MAM nešla převést na text a
+  agent je nahradil webem. Zbývá doběhnout 5 agentů.
+
+⏺ Agent "Slepá kontrola vyřazených 2" finished · 6m 26s
+
+› Message from general-purpose
+  Kontrola z1 je hotová. Výstup je v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/z1.csv: 88 řádků,
+  zapsáno přes Python modul csv. Zkontroloval jsem 7 kandidátů, všichni jsou v
+  `investori.json`.
+
+  **Řádky podle závěru:** 87 `sedi`, 1 `podezreni`. Žádný řádek nevyšel jako
+  `potvrzeny_rozpor`, `nedostatecny_dukaz` ani `neovereno`.
+
+  **Jak jsem zdroje četl:**
+  - Přes `fetch.sh` jsem stáhl 45 URL, včetně živých ARES odpovědí. Všechny
+  vrátily HTTP 200.
+  - Uložené surové odpovědi prvního agenta ani WebFetch jsem nepotřeboval.
+  - Dvakrát jsem použil WebSearch, oba dotazy jsou zalogované přes `log.sh`.
+  Ověřoval jsem jimi tvrzení o neexistenci novější investice u Borovicka Capital
+  a Fazole Ventures, protože na tom závisí jejich status
+  `investice_dolozena_12_24_mesicu`. Novější investici vyhledávání nenašlo, oba
+  statusy sedí.
+
+  **Nejzávažnější nálezy:**
+  - **cz-ii-biotech-investments, `sidlo` (`podezreni`):** investor se na webu
+  sám popisuje jako „i&i Bio is a Luxembourg-based venture capital firm“. Jako
+  „Headquarters“ uvádí i&i Biotech Fund I SCSp v Lucembursku a českou Biotech
+  Investments s.r.o. jen jako „Investment Adviser“. Splnění pravidla pilotu
+  (sídlo v ČR) je proto potřeba rozhodnout ručně.
+  - **cz-ii-biotech-investments, `kapital[0]` a `jistota_investice` (`sedi`, s
+  poznámkou):**
+    - Údaj 47 mil. EUR je „total capital of the fund“ z roku 2022. Druh
+  ukazatele je spíš `committed_capital` než `fund_size`. Novější údaj „manages
+  over €53 million“ bez data agent nezapsal.
+    - U všech tří zpráv o Theoremě je `puvod` = null. Podle bodu 4 to znamená
+  tři různé původy, poznámka agenta přitom tvrdí, že vycházejí z jednoho
+  oznámení.
+  - **cz-borovicka-capital, `posledni_investice` (`sedi`, s poznámkou):** u
+  NutritionPro jde o odkup podílu od zakladatele (sekundární transakce), ne o
+  nové kolo. PitchBook datuje deal na 31. 7. 2025, v rejstříku jsou nové podíly
+  zapsané od 5. 8. 2025. Datum pro filtr podle oznámení (23. 10. 2025) je v
+  souladu s pravidly a na status to vliv nemá.
+  - **cz-fazole-ventures, `pravni_subjekt` (`sedi`, s doplněním):** ARES
+  ukazuje, že PABCO s.r.o. převzalo 60 % přímo od Pavla Boušky 1. 2. 2019. Vazba
+  PABCO–Bouška je tedy silně naznačená, ne „nepotvrzená“, jak píše agent. U
+  typu VC jde o hraniční případ (většina peněz od jednoho miliardáře,
+  „rodinnější povaha“ fondu), přesto ho považuji za obhajitelný.
+  - **cz-czech-founders-vc, `web` / `sidlo` (`sedi`, s poznámkou):** web hlásí
+  spuštění nové značky United Founders (unitedfounders.vc), možná jde o přechod
+  na mezinárodní značku. Neověřoval jsem to. Subjekt v ARES je „osoba rizikového
+  kapitálu“, tedy sám fondový vehikl.
+  - **cz-borovicka-capital, `typ` (`sedi`):** jde o rodinné peníze a Forbes ho
+  nazývá „rodinný VC fond“. Jako family office se ale výslovně neoznačuje, takže
+  VC podle bodu 2 obstojí.
+
+  **Nedostupné zdroje:** žádné.
+
+  **Omezení:** u Credo, ČS Seed Starter, Czech Founders VC a i&i jsem
+  netestoval, jestli existuje investice novější než ta zapsaná jako poslední. U
+  DEPO je oznámení z 12. 10. 2026, takže tam to nehraje roli.
+
+  **Čas práce:** začátek 18:32:53 CET, konec 18:40:33 CET, 26. 10. 2026.
+
+⏺ z1 je hotový: 88 řádků, z toho 1 podezreni (sídlo i&i Biotech). Jeden řádek s
+  sedi u jistoty i&i Biotech si ale sám přečtu, protože poznámka k němu
+  naznačuje problém s nezávislostí zdrojů. Čekám na zbylé 4 agenty.
+
+⏺ Agent "Slepá kontrola zařazených 1" finished · 8m 9s
+
+› Message from general-purpose
+  I checked all 11 unresolved candidates and wrote 22 rows to
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/n1.csv. Each
+  candidate has two rows, `duvod` and `otazka_moznosti`. Only RockawayX got a
+  negative verdict; the other 10 candidates' write-ups match their sources.
+
+  **Verdicts:** 20 `sedi`, 1 `podezreni`, 1 `nedostatecny_dukaz`, 0
+  `potvrzeny_rozpor`, 0 `neovereno`.
+
+  **Most serious findings:**
+  - **cz-rockawayx, `otazka_moznosti` (`nedostatecny_dukaz`):** The question is
+  only "typ" with options `zarazen | mimo_rozsah_pilotu`. But the `duvod` names
+  the form of the OnRe investment (equity vs. token vs. loan) as decisive, and
+  fund VC II explicitly invests in "venture equity, pre-launch token projects,
+  liquid tokens". So the instrument is also open, which per PLAN.md means the
+  question should be "typ | nastroj" and `neni_investor` is missing from the
+  options.
+  - **cz-rockawayx, `duvod` (`podezreni`):** The `duvod` leaves out that
+  RockawayX bought the hedge-fund firm Relayer Capital inside the window
+  (RockawayX site, 25 Aug 2026; CzechCrunch article of 27 Aug 2026, which the
+  first agent itself cited). The RockawayX homepage lists offices only in
+  London, Prague and Dubai; New York comes from CzechCrunch.
+  - **cz-braiins (`sedi`, with a note):** The question is formally "nastroj",
+  but the real issue is whether CAMMS is a stake in a firm or a fund investment.
+  The sources lean towards buying the entity: "získávají hotovou a prověřenou
+  entitu s registrací u CFTC", "dostává k týmu obchodníků", and braiins.com now
+  offers a "multi-strategy program". The uncertainty is described truthfully,
+  but probably more strictly than the sources require.
+  - **cz-kkcg (`sedi`, with a note):** In the Zilch round, the debt part is
+  explicitly attributed to Deutsche Bank, so KKCG's equity participation as lead
+  investor is very likely, though never stated outright. The Fintech Times
+  quotes "KKCG US Advisory", so the investing entity may be a foreign one.
+  - **cz-tarpan-capital (`sedi`, with a note):** CzechStartups.gov.cz explicitly
+  says "others include Tarpan Capital". This supports TARPAN Capital s.r.o. as
+  the investing entity, which the first agent did not mention.
+  - **Smaller gaps:**
+    - Some claims have no URL and could not be checked: CzechCrunch 2 Jun 2025
+  and PitchBook (Chilli Ventures), nordic9 (Fond Naše Česko), and the Turtle
+  Club token launch in 10/2025 (Moonhill).
+    - For Moonhill, funding.tech.eu also lists Assisterr, which the first agent
+  did not mention; it does not change the decision.
+    - I did not read the par_*.md file referenced in the Naše Česko `duvod`, as
+  the brief forbids it.
+
+  **Unavailable sources:** only the EU-Startups Ekiden article, which returned
+  HTTP 403. Its content is confirmed by Portugal Startup News, which is based on
+  it, so I did not use WebFetch. The ARES live responses all returned 200, so I
+  did not need the saved raw responses.
+
+  **Requests:** 74 fetches through `fetch.sh` (73 source URLs plus one Braiins
+  blog post) and 2 WebSearch calls, each logged beforehand with `log.sh`. The
+  searches were "KKCG acquires stake company 2025 2026" and "Botanique
+  Hospitality Management Group website hotels Prague Indonesia".
+  - KKCG search: it found no other direct investment in the window besides
+  Ferretti, which is listed shares.
+  - Botanique search: it found no official group website, only the hotel and a
+  LinkedIn profile.
+
+  Sources from the searches:
+  - [placera.se – KKCG Maritime
+  Ferretti](https://www.placera.se/pressmeddelanden/kkcg-maritime-to-launch-a-vo
+  luntary-partial-tender-offer-for-ferretti-s-p-a-20260119)
+  - [utusan.com.my](https://www.utusan.com.my/pr-newswire-en/2026/03/kkcg-mariti
+  me-voluntary-partial-tender-offer-for-ferretti-s-p-a-to-start-on-march-16/)
+  - [tools.prnewswire.com](https://tools.prnewswire.com/en-us/live/20813/release
+  /20260119EN65804)
+  - [cbinsights KKCG](https://www.cbinsights.com/company/kkcg)
+  - [LinkedIn Tomas Nesvorny](https://cz.linkedin.com/in/tomasnesvorny)
+  - [prague.eu Botanique
+  Hotel](https://prague.eu/cs/ubytovani/botanique-hotel-prague/)
+  - [pragueconvention.cz](https://pragueconvention.cz/news/botanique-hotel-pragu
+  e-has-completed-extensive-renovations-of-all-its-rooms/)
+
+  I changed no files in the project. My helper scripts and URL lists are in
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/n1/.
+
+  **Time (`date`):** start Mon Oct 26 18:32:50 CET 2026, end Mon Oct 26 18:40:49
+  CET 2026.
+
+⏺ n1 je hotový: 22 řádků, 20 sedi. Jediný skutečný nález je u RockawayX, kde
+  otázka měla zahrnovat i nástroj a mezi možnostmi chybí neni_investor. Zbývají
+  3 agenti na zařazených.
+
+⏺ Agent "Slepá kontrola nevyřešených" finished · 8m 29s
+
+› Message from general-purpose
+  z4 hotovo. Výstup:
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/z4.csv
+
+  **Počet řádků:** 74, vše `soubor` = investori.json, jeden řádek na každé
+  vyplněné pole u šesti kandidátů.
+  - `sedi`: 66
+  - `podezreni`: 7
+  - `nedostatecny_dukaz`: 1
+  - `potvrzeny_rozpor`: 0
+  - `neovereno`: 0
+
+  **Nejzávažnější nálezy:**
+  - **cz-zaka-vc, typ (podezreni):** Poznámka agenta tvrdí „jako family office
+  se neoznačuje“. Jenže AIN.UA 10. 3. 2025, kterou agent sám cituje, píše „ZAKA
+  VC is one of the most active family offices in Europe“. Web zároveň rozlišuje
+  „Family office 5M invested“ a „Fund 1 17M“. Zdroje si o typu částečně
+  odporují.
+  - **cz-zaka-vc, posledni_investice (podezreni):** Novinky na zaka.vc oznamují
+  novější investice než ParcelBio (7. 5. 2026). Jde o FinalDose (16. 7. 2026,
+  „excited to announce our investment“) a o tiskovou zprávu PerfectBit (18. 8.
+  2026). PitchBook u PerfectBit uvádí seed 26-Jun-2026. Status `aktivni` se tím
+  nemění.
+  - **cz-zaka-vc, pravni_subjekt (podezreni):** Rejstřík nedokládá, že ZAKA
+  Management s.r.o. je správcem značky. Fond ZAKA VC I nemá ZAKA Management ve
+  statutárním orgánu. Se zakladateli Kasperem a Zálešákem ji spojují jen stejná
+  příjmení.
+  - **cz-startupyard, typ (podezreni):** Stránka Batch 15 (11. 9. 2025) píše
+  „For the first time, founders can access an optional €25,000 cash investment“.
+  Investice do Ydoca proběhla v době TechBoost Syndicate s DEPO Ventures, což
+  je syndikát andělů. funding.tech.eu vede StartupYard jako „Accelerator“. Není
+  tedy jasné, že investoval vlastní peníze.
+  - **cz-startupyard, pravni_subjekt (podezreni):** Který subjekt do Ydoca
+  investoval, zdroje neuvádějí. Web navíc jako CEO uvádí Cedrica Maloux, ne
+  Nikolu Rafaje.
+  - **cz-tensor-ventures, sidlo (podezreni):** Jako adresu web uvádí lucemburský
+  GP a fond. V ČR je jen „Contact in CZ“. Je to výkladová otázka, agent ji sám
+  označil k ruční kontrole.
+  - **cz-y-soft-ventures, jistota_investice (podezreni):** Agent zapsal u všech
+  tří zpráv `puvod` null. Podle pravidla by to znamenalo tři různé původy a
+  úroveň `vysoka`, agent ale dal `stredni`. Buď je špatně vyplněný `puvod`, nebo
+  je jistota podhodnocená.
+  - **cz-soulmates-ventures, nastroj (nedostatecny_dukaz):** U poslední
+  investice Rightcharge (3. 9. 2026) je kolo „seed“ jen v titulku UKTN. Text
+  samotné zprávy mluví o „growth funding round“ / follow-on. Podmínku 3 ale
+  splňují jiné investice: Rightcharge seed 2025 a Antiverse Series A.
+
+  **Nedostupné zdroje:** žádné. Všechny URL vrátily HTTP 200 přes `fetch.sh`,
+  včetně živých odpovědí ARES. WebFetch jsem nepotřeboval.
+
+  **Vyhledávání:** šest dotazů WebSearch, všechny zalogované před voláním.
+  Použil jsem je k ověření, že neexistují novější investice:
+  - Y Soft, StartupYard, Tensor: novější doloženou investici nenašly.
+  - Tensor: agregátory uvádějí novější účasti, ale zprávu o transakci jsem
+  nenašel.
+  - ZAKA: viz nález výše. Sensible Biotechnologies: ZAKA bylo jen dřívější
+  investor, v kole $47M nebylo.
+
+  **Začátek a konec práce:** Mon Oct 26 18:32:51 CET 2026 až Mon Oct 26 18:40:55
+  CET 2026.
+
+⏺ z4 je hotový: 74 řádků, z toho 7 podezreni a 1 nedostatecny_dukaz. Nálezy se
+  týkají hlavně ZAKA (typ a novější investice), StartupYard (typ) a
+  nekonzistentního puvod u Y Soft. Čekám na z2 a z3.
+
+⏺ Agent "Slepá kontrola zařazených 4" finished · 8m 33s
+
+› Message from general-purpose
+  I've checked all 7 assigned candidates (cz-miton, cz-n1-ventures,
+  cz-presto-ventures, cz-purple-ventures, cz-purposetech, cz-reflex-capital,
+  cz-rockaway-ventures) and the Nation1 merger row. Two records name a "latest
+  investment" that has since been overtaken, N1 Ventures has no registry record
+  or proven Czech seat, and the rest matches its sources.
+
+  Output: /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investor
+  i-databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/z3.csv
+
+  **Rows:** 90. 86 sedi, 2 potvrzeny_rozpor, 1 nedostatecny_dukaz, 1 podezreni,
+  0 neovereno.
+
+  **Most serious findings:**
+  - **cz-reflex-capital, posledni_investice (potvrzeny_rozpor):** Grid.online
+  (22. 6. 2026) is not the newest documented investment. CzechCrunch 21. 10.
+  2026 on ArtMaster says the $2.4M round "nově přidávají fondy Factorial Capital
+  a český Reflex Capital". The Nordic9 page the agent itself cites also lists
+  ArtMaster. Status stays aktivni.
+  - **cz-purple-ventures, posledni_investice (potvrzeny_rozpor):**
+  Comparables.ai (6. 10. 2026) is not the newest. TheSaaSNews 14. 10. 2026
+  reports "FLÆ Robotics Raises €1M Seed … participation from Purple Ventures and
+  Garage Angels", and Nordic9 lists the same deal. Status stays aktivni. This
+  rests on a single outlet (it cites EU-Startups); the search found no second
+  confirmation.
+  - **cz-n1-ventures, pravni_subjekt (nedostatecny_dukaz):** the Luxembourg GPs
+  (Nation 1 GP S.à r.l. / GP II) are documented only by the investor's own web
+  page. No registry or regulator entry is shown, so condition 1 of point 2 is
+  not met.
+  - **cz-n1-ventures, sidlo (podezreni):** the managers and funds are in
+  Luxembourg, the team works between Prague and San Francisco, and no Czech
+  legal entity is documented. zeme CZ is therefore uncertain.
+  - **cz-n1-ventures, ticket (side note in the kapital[0] row, not a separate
+  row because the field is null):** the record says the website gives no ticket,
+  but n1.rocks shows "Typical 1st investment $100K–$1M".
+  - **cz-n1-ventures, status:** it is aktivni only because Novoflow (4. 11.
+  2025) falls 9 days inside the 12-month limit. The source is a paywalled
+  profile, not the round announcement. Aggregators say November 2025, so nothing
+  contradicts it, but it is tight.
+
+  **Smaller remarks inside sedi rows:**
+  - Presto: the registry entity is the fund (osoba rizikového kapitálu), not the
+  manager.
+  - Presto SatVu: "dolozeno" rests on Pulse 2.0's "total equity funding".
+  - Rockaway: Rockaway Ventures Advisors a.s. is linked to the brand only by its
+  name and board members. Since 2026 the media name Petr Šmíd as head of
+  Rockaway Ventures, and he is not on the board in ARES.
+  - Miton: VC is defensible but borderline (partners' own money, co-founding
+  companies).
+
+  **Merger cz-nation1 → cz-n1-ventures:** sedi. CzechCrunch states "Přejmenovává
+  se na N1". The partners (Moravec, Trojan), the address Národní 135/14 and the
+  portfolio company Snuggs match across CVCA and n1.rocks.
+
+  **Sources:** none unavailable. All 53 recorded URLs plus 2 extra pages (the
+  CzechCrunch ArtMaster article and TheSaaSNews FLÆ) returned HTTP 200 through
+  fetch.sh. ARES was read live. WebSearch was used 6 times, each logged first
+  with log.sh, only to check whether newer investments or an earlier Novoflow
+  announcement exist. No WebFetch was needed.
+
+  **Time:** started Mon Oct 26 18:32:53 CET 2026, finished Mon Oct 26 18:41:40
+  CET 2026.
+
+⏺ z3 je hotový: 90 řádků, z toho 2 potvrzeny_rozpor. U Reflex Capital a Purple
+  Ventures existuje novější doložená investice, než je zapsaná. U N1 chybí
+  registrový doklad o subjektu. Sloučení Nation1 do N1 sedí. Zbývá z2.
+⏺ Agent "Slepá kontrola zařazených 3" finished · 9m 18s
+
+› Message from general-purpose
+  I checked all 7 candidates and found no errors in identity, type, seat,
+  `status` or the stated `nastroj`. The problems are mainly in
+  `posledni_investice`: it is not the newest documented investment at JIC
+  Ventures and Look AI Ventures, and possibly not at KAYA either.
+
+  Output is in /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-inv
+  estori-databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/parts/z2.csv:
+  90 data rows plus a header, all from `investori.json`. None of my candidates
+  appears in `vyrazeni.csv`, `hranicni.csv` or `nevyresene.csv`.
+
+  **Rows by conclusion:** 86 `sedi`, 3 `potvrzeny_rozpor`, 1 `podezreni`, 0
+  `nedostatecny_dukaz`, 0 `neovereno`.
+
+  **Most serious findings:**
+  - **cz-jic-ventures, `posledni_investice`, `potvrzeny_rozpor`:** The FaceUp
+  details are correct (19. 5. 2026), but there is a newer investment. Nordic9
+  (27 September 2026) says "Elredo Voice closed a CZK 24 million pre-seed round
+  led by JIC Ventures", and Dealroom News (7. 10. 2026) says "JIC Ventures … has
+  led a funding round of more than €1 million in Elredo Voice". `status` stays
+  `aktivni`.
+  - **cz-look-ai-ventures, `posledni_investice`, `potvrzeny_rozpor`:** The Sodex
+  details are correct (13. 7. 2026), but the investor's own news on lookai.vc
+  dated 22. 9. 2026 reports "Look AI Ventures has backed Embodied AI". A
+  Checkstep news item (29. 5. 2026) also exists, which the first agent said it
+  could not find. `status` is unaffected.
+  - **cz-look-ai-ventures, `pravni_subjekt`, `potvrzeny_rozpor`:** Only a detail
+  in `poznamka` is wrong; the identity itself is correct. The note says Daniel
+  Kunz sits on the board (správní rada) of Look AI Investments, a.s. (IČO
+  06385745). ARES lists him there only from 2017-08-29 to 2021-01-04; the only
+  current member is Martin Havlík.
+  - **cz-kaya-vc, `posledni_investice`, `podezreni`:** The Viktor round (19. 5.
+  2026) is correct. Nordic9 lists "Kaya VC" among the investors in Frontier
+  Computing's $10M pre-seed round dated 31 August 2026. I found no transaction
+  report naming Kaya, so this is not proven.
+  - **Minor remarks within `sedi` rows:**
+    - **Kaya `ticket`:** the website says $1–3M, but CzechCrunch says 1–3
+  million euros.
+    - **Inven `kapital[0]`:** the ČEZ press release uses both "assets value
+  under management" and "total fund size" for the same 500M EUR.
+    - **Lighthouse (Hermetiq):** the Lupa.cz report is based on information from
+  Jet Investment, so `puvod` = null is inaccurate. This does not affect
+  `jistota`.
+
+  **Unavailable sources:** None of the sources cited in the records failed. Only
+  a supplementary source I looked up myself did not open: businessinfo.cz (the
+  Elredo article) returned 403 both via curl and WebFetch. I used Dealroom and
+  Nordic9 instead. Every live ARES lookup worked, so I did not need the first
+  agent's saved responses (I only looked at the funding.tech.eu files in
+  `ai-log/02-obohaceni/zdroje/` as a pointer).
+
+  All requests are logged under tag z2 in requests.log: 3 WebSearch calls and 1
+  WebFetch call, each logged beforehand.
+
+  **Start and end of work (`date`):** Mon Oct 26 18:32:49 CET 2026 to Mon Oct 26
+  18:43:23 CET 2026.
+
+⏺ Všech 7 agentů skončilo. Teď spojím výsledky do jednoho souboru, zkontroluju
+  formát a projdu řádky s výhradami.
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  (No output)
+
+⏺ Agent "Slepá kontrola zařazených 2" finished · 10m 59s
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  1 file changed (binary, mode only or too large to show)
+  ⎿  (files that changed while this command ran, by the command or by
+     another process; a convenience view, not a review or audit of the
+     command)
+
+⏺ Bash(git add ai-log/04-kontrola-zdroju/slepa_kontrola.csv && git commit -q -m
+      "Krok 4, fáze A: slepá kontrola zdrojů druhým agentem…)
+  ⎿  (No output)
+
+⏺ Fáze A je commitnutá a pushnutá (967cb97). Teď začíná fáze B a teprve teď
+  otevírám zprávu automatické kontroly.
+
+⏺ Bash(date '+%H:%M:%S' && wc -c ai-log/03-kontrola/automaticka_kontrola.md &&
+      cat ai-log/03-kontrola/automaticka_kontrola.md)
+  ⎿  (No output)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; grep cvca
+      $S/requests.log; c…)
+  ⎿  (No output)
+
+⏺ Fázi B rozdělím mezi 6 agentů – pět se zaměří na jednotlivé otázky (jednotlivě
+  nebo po dvojicích) a poslední dva se podělí o otázku o původu zdrojů a
+  nástroji u 19 záznamů s nepřímou indicií. Všichni dostanou výsledky fáze A,
+  aby mohli zaznamenat případné chyby z předchozí fáze.
+
+  Made 1 scratchpad edit +38 (ctrl+o to expand)
+
+⏺ Bash(mkdir -p /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-in
+      vestori-databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b && cd
+      /Users/petrsta…)
+  ⎿  (No output)
+
+⏺ 6 background agents launched (↓ to manage)
+   ├ Fáze B: Espira, McWin, Orbit
+   ├ Fáze B: i&i Prague, Garage Angels
+   ├ Fáze B: česká kancelář vs sídlo
+   ├ Fáze B: údaje o kapitálu
+   ├ Fáze B: původ zdrojů část 1
+   └ Fáze B: původ zdrojů část 2
+
+⏺ Všech 6 agentů fáze B běží. Počkám na jejich výsledky, pak je sloučím do
+  cilene_otazky.md a zapíšu měření.
+
+› Message from general-purpose
+  Výstup b4 je hotový, je v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b4.md (jedna sekce podle
+  zadání, s tabulkou pro všech 13 položek `kapital`). Všechny zdroje jsem četl z
+  $S/pages/ (stažené ve fázi A, `cela_stranka`). Nové požadavky: 0. Práce
+  běžela od Mon Oct 26 18:45:51 do 18:47:51 CET 2026.
+
+  Hlavní zjištění:
+  - **Částka a měna:** sedí se zdrojem u všech 13 položek (10 investorů), nic
+  není přepočtené. Žádná položka není prokazatelně chybná.
+  - **Přibližné částky:** zdroj je výslovně uvádí u tří položek.
+    - i&i má „approximately €47 million“.
+    - Inven má „over EUR 500 million“, tedy dolní mez.
+    - Rockaway má „nearly €55 million“, tedy horní mez.
+    - Agent uložil zaokrouhlené číslo a přibližnost uvedl jen v `poznamka`.
+  Schéma v PLAN.md bod 4 pole pro přibližnost ani pro směr meze nemá.
+    - „up to“, „target“, „+“ ani rozpětí se ve zdrojích nevyskytují. Cíle (Czech
+  Founders 5 mil. EUR, n1 35–40 mil. EUR) agent jako kapitál nezapsal.
+  - **`plati_k`:** výslovné datum platnosti neuvádí žádný zdroj.
+    - U 8 článků agent vzal datum publikace.
+    - U Inven a i&i („has now reached“, „has risen to“) to odpovídá i okamžiku
+  platnosti.
+    - U Czech Founders zdroj říká „dovybrali před měsícem“, ale k datu článku
+  údaj stále platí.
+    - 5 nedatovaných webových údajů má `null`: jt, kaya[0] a [1], n1,
+  soulmates[0]. Automatická kontrola je hlásí oprávněně, ale zdroj datum opravdu
+  nemá, takže to není chyba dat.
+    - PLAN.md neříká, co zapsat, když zdroj datum platnosti nemá. Agent
+  postupuje nejednotně (u článků datum publikace, u webů ne `stazeno`).
+  - **`druh`:**
+    - AUM, velikost uzavřených fondů (Credo, Reflex, Rockaway) i first close u
+  Kaya[2] jako `committed_capital` jsou přiřazené rozumně.
+    - Upsaný kapitál jednoho fondu je ale tříděný nejednotně: Czech Founders je
+  `committed_capital`, Reflex („upsali dvaadvacet“) a i&i („total capital of the
+  fund“) jsou `fund_size`. PLAN.md tyto tři hodnoty nedefinuje.
+    - Soulmates[1]: Vestbee píše „raised“, web „launched“, takže zdroje neříkají
+  jednoznačně, zda jde o cílovou, nebo upsanou velikost.
+  - **`kaya-vc kapital[2].fond`:** je to doslovné porušení věty „`fond` je název
+  fondu u `fund_size`, jinak `null`“. Věcně se ale údaj týká konkrétního fondu
+  („Pátý fond Kayi disponuje 70 miliony eur … po first closingu“), takže
+  pravidlo je pro údaje vázané na fond příliš úzké. Rozhodnutí, zda opravit data
+  (fond = null), nebo rozšířit pravidlo, nechávám uživateli. Navíc pole
+  obsahuje popis a stav fundraisingu místo názvu fondu. Stejně popisné je `fond`
+  u Kaya[1], Reflexu a Soulmates[1], tam ho ale automatická kontrola nehlásí,
+  protože jde o `fund_size`.
+  - **Překryvy:** Kaya[1] ($85M) a Kaya[2] (€70M) jsou pravděpodobně týž fond,
+  Soulmates €62M AUM a €50M fond se podle poznámky agenta také překrývají. Agent
+  je nesčítá, což odpovídá PLAN.md.
+
+  Opravy fáze A (fáze A dala všem 13 řádkům `sedi`, ve faktech se s ní shoduji):
+  - cz-kaya-vc kapital[2]: místo `sedi` má být `nedostatecny_dukaz`, protože
+  `fond` je vyplněný v rozporu s PLAN.md. Částka, měna, druh a datum sedí.
+  - cz-jt-ventures kapital[0]: závěr `sedi` zůstává, opravuji jen vysvětlení.
+  Poznámka záznamu nejistotu druhu výslovně neuvádí, jak fáze A tvrdí.
+  - Fáze A dále nezmínila rozdíl „raised“ vs. „launched“ u Soulmates[1]. U i&i
+  citovala „approximately“, ale přibližnost výslovně nekomentovala.
+
+  Pro ruční kontrolu jsou v souboru tyto body:
+  - jak zapisovat přibližné částky a meze,
+  - jednotné pravidlo pro `plati_k`, když zdroj datum nemá,
+  - `fond` u `committed_capital` a popis místo názvu ve `fond`,
+  - definice tří druhů kapitálu v PLAN.md,
+  - Soulmates: cílová vs. upsaná velikost a překryv s €62M,
+  - zastaralé údaje: Czech Founders 2022, i&i 2022 (na stejné stránce je novější
+  nedatovaný „manages over €53 million“), Inven 2023, JT © 2024.
+
+⏺ Otázka ke kapitálu je zodpovězená: částky i měny sedí, nejednotnosti jsou v
+  pravidlech pro plati_k, druh a fond a jednu opravu fáze A agent navrhuje u
+  Kaya. Čekám na zbylých 5 agentů.
+
+⏺ Agent "Fáze B: údaje o kapitálu" finished · 3m 53s
+
+› Message from general-purpose
+  Hotovo. Výstup je v
+  `/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-datab
+  aze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b5.md`, jedna sekce
+  podle ZADANI_FAZE_B (odpověď, tabulka, opravy fáze A, ruční kontrola).
+
+  **Hlavní zjištění**
+  - **Vazba investor–kolo sedí u všech 19 investic.** Jde o investice s
+  `neprima_indicie` v 10 záznamech (credo, cs-seed-starter, czech-founders-vc,
+  depo, ii-biotech, inven, jt, jic, kaya, lighthouse). Zdroj v
+  `nastroj.zdroj_url` vždy jmenuje právě tohoto investora v právě tomto kole a
+  označení kola v `kolo` odpovídá textu zdroje. Jedině u Andercore je „Series B“
+  v tiskové zprávě jen v titulku, v těle zprávy Tech.eu ano.
+  - **Smíšené kolo je jediné: Andercore (Inven), „$40m in equity and debt“.**
+  Dluh zdroj připisuje Commerzbank a KfW, nástroj Inven výslovně neuvádí.
+  Podmínka 3 u Inven stojí i na Wint (series D bez dluhu), na zařazení to tedy
+  nemá vliv.
+  - **Merchantee má rozporné označení kola.** CzechCrunch (zdroj u Czech
+  Founders VC) píše „rozšíření… seed investičního kola“ a „bridge round“,
+  Nordic9 (zdroj u Lighthouse) „pre-seed“, Raising.fi „undisclosed“. Liší se i
+  `datum_oznameni` mezi oběma záznamy (2026-06-09 a 2026-06-03). Nordic9 navíc
+  působí jako databáze bez odkazu na zprávu, což bod 2 u databáze vyžaduje.
+  - **`puvod` = null je u řady zpráv sporné.** Texty zjevně vycházejí z oznámení
+  firmy:
+    - Lupa u Theoremy: „oznámil“,
+    - Vestbee: „was told“ / „was informed“ u Tapaya, Antiverse a Theoremy,
+    - CzechCrunch: „Merchantee oznámilo“,
+    - citace ve stylu tiskové zprávy u Ternary (IT Brief), Supernovy a Choice
+  (Tech.eu) a Definicu (CzechCrunch).
+
+    Nejvýraznější je i&i Biotech / Theorema: tři zprávy s null by podle
+  automatického pravidla z bodu 6 daly tři různé původy, ačkoli poznámka agenta
+  sama říká opak.
+  - **`jistota.investice` = `stredni` je správně u všech 10 záznamů**, a to bez
+  ohledu na `puvod`. Žádná investice nemá `dolozeno`, takže podle bodu 4 a 6
+  nemůže být jistota vyšší než `stredni`. Chybný `puvod` tedy jistotu
+  nezkresluje, ale týká se ručního pole `nezavislost_zdroju`.
+
+  **Opravy fáze A (3)**
+  - **cz-lighthouse-ventures, Merchantee (nástroj / další investice):** fáze A
+  uvedla „sedí“, správně „sedí s výhradou“. Přehlédla rozpor seed / pre-seed /
+  bridge.
+  - **cz-ii-biotech-investments, jistota_investice:** závěr „sedí“ platí, ale
+  zdůvodnění je potřeba upřesnit. `stredni` není jen konzervativní volba, podle
+  pravidel je povinná. Nekonzistence patří k poli `puvod`.
+  - **cz-depo-ventures, Tapaya, `puvod` u Vestbee:** fáze A ho neposuzovala,
+  správně je sporný. Vestbee „was told“ a citace je doslova shodná s tiskovou
+  zprávou DEPO.
+
+  Všechny zdroje jsem četl celé ze stránek stažených ve fázi A (`cela_stranka`,
+  u portfolií i raw HTML). Nové požadavky: 0. Práce běžela od 18:45:52 do
+  18:49:45 CET 26. 10. 2026.
+
+⏺ b5 je hotový: vazba investor–kolo sedí u všech 19 investic. Problémy jsou ve
+  vyplnění puvod, v rozporném označení kola u Merchantee a ve smíšeném kole
+  Andercore. Jistota stredni u těchto 10 záznamů je podle pravidel povinná.
+  Čekám na zbylé 4 agenty.
+
+⏺ Agent "Fáze B: původ zdrojů část 1" finished · 5m 26s
+
+› Message from general-purpose
+  Výstup je hotový v /private/tmp/claude-501/-Users-petrstastny-Documents-Projek
+  ty-investori-databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b2.md.
+  Má obě požadované sekce a v každé Odpověď, Rozbor, Opravy fáze A a Pro ruční
+  kontrolu.
+
+  **1. i&i Prague: přímé investice versus fondy**
+  - **Investuje přímo za podíl.** Rejstřík CasInvent (ARES 09684221, celá
+  stránka) ukazuje i&i Prague, s.r.o. jako přímého upisovatele akcií v roce 2023
+  i 2025, v roce 2020 byl akcionářem při založení. Novinka na inibio.eu z 30.
+  11. 2022 o i&i Prague uvádí „equity stake in 9 of them … invested over 70
+  million crowns“.
+  - **Zároveň je zakladatelem a „main sponsor“ fondu i&i Biotech Fund I SCSp.**
+  Čistý LP ani fond fondů to tedy není a výluka v PLAN.md bod 3 na něj podle
+  znění nedopadá.
+  - **Investice CasInvent 2025 patří přímo i&i Prague.** Fond i&i Biotech mezi
+  upisovateli kola z 22. 5. 2025 není a tisková zpráva KHAN-I jmenuje jen i&i
+  Prague. Fond upisoval v letech 2022 a 2023, v roce 2023 souběžně s i&i Prague,
+  každý svůj díl.
+  - **Podle zdrojů nejde o duplicitu.** Jsou to dvě právnické osoby s různými
+  vlastníky (IOCB Tech proti SVAI, Luctonber a KAMAVO), s různými weby a
+  značkami a investují zvlášť. Ověřený není jen general partner lucemburského
+  fondu (rejstřík RCS nikdo neotevřel), to je předáno k ruční kontrole.
+  - **Typ VC a sídlo sedí.** Typ VC odpovídá pravidlu PLAN.md pro inkubátor,
+  který investuje vlastní kapitál za podíl. Sídlo je Praha 8, CZ.
+  - **Opravy fáze A:** žádné.
+
+  **2. Garage Angels a typ Angel**
+  - **PLAN.md pro klub typ nemá.** Angel je v PLAN.md „fyzická osoba“, která
+  vystupuje pod vlastním jménem. Zařazení klubu (z.s. + Management s.r.o. + SPV)
+  pod Angel znění PLAN.md neodpovídá.
+  - **Kdo je investor:**
+    - Právně jednoúčelová SPV, zapsaná jako společník portfoliové firmy.
+    - Ekonomicky jednotliví andělé, kteří jsou trvalými společníky SPV.
+    - Klub ani Management s.r.o. vlastní peníze nevkládají. Management SPV
+  zakládá, řídí a drží ji ze 100 % jen přechodně v době úpisu.
+  - **Doklady z rejstříku:** SPV VRV byla ze 100 % Managementu, když vstoupila
+  do VR LIFE (2026-01-27). Andělé do ní vstoupili až 2026-06-02. Totéž dokládá
+  nově stažená SPV GA Investiční CSI (ARES 23207655), která upsala akcie
+  CasInvent v roce 2025.
+  - **Doklady z tiskových zpráv:** zpráva CasInvent na khanu.de mluví o
+  „independent investors from the Garage Angels network“. Předmět podnikání
+  Management s.r.o. je „zprostředkování obchodu a služeb“.
+  - **Na tom závisí kategorie.** Investor znamená mimo_rozsah_pilotu,
+  organizátor nebo zprostředkovatel znamená neni_investor. Podle PLAN.md by tedy
+  šlo spíš o nevyřešený typ (nevyresene.csv).
+  - **Přístup k LUMUS a Garage Angels není konzistentní.** LUMUS má obdobnou
+  strukturu (SPV, kterou 100% vlastní organizátor) a agent ho poslal do
+  nevyresene.csv s otázkami typ i nástroj. U Garage Angels agent typ rozhodl
+  sám. U LUMUS je navíc nezjištěný nástroj, který by ho do nevyresene.csv poslal
+  i sám.
+  - **Oprava fáze A:** cz-garage-angels, pole kategorie, má být „podezreni“
+  místo „sedi“. Fáze A přehlédla možnost neni_investor (zprostředkovatel).
+  - **Drobnost:** ve vyrazeni.csv chybí web g-angels.cz. Stránku se mi
+  nepodařilo stáhnout (HTTP 301, přesměrování se nestáhlo).
+
+  Nové požadavky: 2 (fetch ARES 23207655 s HTTP 200 a g-angels.cz s HTTP 301,
+  nestaženo), webfetch 0, websearch 0. Práce běžela od Mon Oct 26 18:45:52 CET
+  2026 do 18:49:16 CET 2026. Žádný soubor v projektu jsem neměnil. Pomocný
+  skript /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+  -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b2_ares.py zůstal ve
+  scratchpadu.
+
+⏺ b2 je hotový. i&i Prague investuje přímo a duplicita to není. U Garage Angels
+  PLAN.md typ pro klub nemá a zacházení se liší od LUMUS, proto agent navrhuje
+  opravit fázi A na podezreni. Čekám na b1, b3 a b6.
+
+⏺ Agent "Fáze B: i&i Prague, Garage Angels" finished · 5m 33s
+
+› Message from general-purpose
+  Výstup b6 je hotový:
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b6.md. Obsahuje jednu
+  sekci se strukturou podle ZADANI_FAZE_B (Odpověď, Rozbor s tabulkou, Opravy
+  fáze A, Pro ruční kontrolu). Přečetl jsem celé stránky stažené ve fázi A v
+  $S/pages a u Theorema i surové HTML. Nové požadavky: 0. Začátek 18:45:51,
+  konec 18:50:01 (26. 10. 2026).
+
+  **Hlavní závěr**
+  - U všech devíti záznamů (Look AI, N1, Purple, PurposeTech, Soulmates,
+  StartupYard, Tensor, Tilia, Zaka) dokládá `nastroj.zdroj_url` aspoň u jedné
+  investice účast právě tohoto investora v kole, které je v textu zdroje
+  označené jako pre-seed, seed nebo series.
+  - Žádný zdroj neuvádí, že by investor dal výhradně dluh.
+  - `jistota.investice` = `stredni` je všude správná už podle pravidla „jen
+  neprima_indicie → nejvýš stredni“.
+
+  **Co je na tom problém**
+  - **Soulmates, Rightcharge 2026:** „seed“ je jen v titulku UKTN. Text tiskové
+  zprávy uvádí „growth funding round from existing investors“ a CEO říká „since
+  our seed round“. Kolo seed tedy zdroj nedokládá a investice podmínku 3
+  nesplní. Podmínku 3 u Soulmates ale nesou Rightcharge 2025 (seed) a Antiverse
+  (Series A).
+  - **Look AI, Digicust:** smíšené kolo (garance aws „Equity Leverage“ a
+  dotace). O nástroji Look AI zdroj mlčí, takže podle bodu 4 jde o přípustný
+  pracovní předpoklad.
+
+  **Nepřesný `puvod`**
+  - `null` je chybně u Rightcharge 2025: stránka UKTN je tisková zpráva.
+  - `null` je chybně u ValkaAI (Seznam, Startbase): obě zprávy vycházejí z
+  oznámení firmy.
+  - `null` je chybně u Y Soft u CzechCrunch („Letos již hlásili…“ odkazuje na
+  dřívější oznámení) a u The Recycler (vychází ze sdělení Y Soft).
+  - U Lucida AI a Comparables.ai nejde původ zpráv tech.eu a Lupa ze stránek
+  určit. Na jistotu to vliv nemá.
+
+  **cz-y-soft-ventures**
+  - Souhlasím s „podezřením“ fáze A: jistota `stredni` neodpovídá zapsaným
+  `puvod`.
+  - Dva různé původy jsou možné (EIT Jumpstarter a sdělení Y Soft přes The
+  Recycler). The Recycler je ale jen jednovětá zmínka bez kola, data a částky.
+  Jestli to stačí na `vysoka`, má rozhodnout uživatel, protože PLAN.md neříká,
+  jaký minimální obsah musí zpráva o transakci mít.
+
+  **Opravy fáze A** (zpřesnění, verdikty se nemění)
+  - Soulmates, dalsi_investice: u Rightcharge 2025 je `puvod` chybný, ne jen
+  „spíš nepřesný“.
+  - Soulmates, nastroj: Rightcharge 2026 je kolo po seedu, nejen „sporné“.
+  - Tensor, jistota: `puvod` u ValkaAI je nepřesný, jistota sedí.
+
+  **Pro ruční kontrolu**
+  - Jistota u Y Soft (viz výše).
+  - N1, Liki24: investice je na webu N1 vedená pod „U-Tech is an independent
+  fund built by N1“. Je to jediná investice, která u N1 nese podmínku 3.
+  - `puvod` je volný text, takže automatické porovnání původů může stejný
+  řetězec převzetí počítat jako různé původy. U těchto devíti záznamů to nevadí,
+  protože jistotu omezuje pravidlo neprima_indicie.
+
+⏺ b6 je hotový. Nejzávažnější nález: u N1 nese podmínku 3 jediná investice,
+  Liki24, a ta je podle webu N1 vedená pod samostatným fondem U-Tech. Dávám ji
+  do priorit. Čekám na b1 a b3.
+
+⏺ Agent "Fáze B: původ zdrojů část 2" finished · 5m 44s
+
+› Message from general-purpose
+  Sekce b3 je hotová v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b3.md, se strukturou
+  podle zadání. Fáze A ve výsledku přehlédla lucemburského správce u KAYA VC,
+  jinak její závěry o sídle sedí.
+
+  **Co zdroje dokládají u šesti zařazených:**
+  - **cz-zaka-vc:** CZ při každém výkladu. Fond ZAKA VC I, osoba rizikového
+  kapitálu, a.s. je samosprávný fond podle § 15 ZISIF se sídlem v Praze 2 a je
+  zároveň provozovatelem webu (zaka.vc/privacy-policy).
+  - **cz-depo-ventures:** CZ při každém výkladu. DEPO VENTURES, s.r.o. je
+  statutárním orgánem českého fondu DEPO VENTURES AF III., osoba rizikového
+  kapitálu, s.r.o. (ARES 17765838). Jen nový Ukraine Fund běží přes DEPO
+  Ventures One SCSp. To dokládá The Recursive (celá stránka). Že ho spravuje
+  lucemburská DEPO Ventures Sàrl, mám jen z výtahu vyhledávače, protože
+  businessinfo.cz vrátil 403.
+  - **cz-n1-ventures:** správce i fondy jsou v Lucembursku (Nation 1 GP S.à r.l.
+  a GP II, „registered alternative investment fund manager“). Česká právnická
+  osoba žádná, tým je v Praze a San Francisku.
+  - **cz-tensor-ventures:** správce je lucemburský. Legal disclosures říkají:
+  „Tensor Ventures GP S.à r.l … general partner and registered AIFM“. Česká
+  Tensor Ventures a.s. je podle rejstříku jen správa vlastního majetku, roli
+  vůči fondu zdroje nedokládají.
+  - **cz-ii-biotech-investments:** fond i&i Biotech Fund I SCSp je v Lucembursku
+  a správce web neuvádí. Česká s.r.o. je jen „Investment Adviser“. Značka se
+  sama popisuje jako „Luxembourg-based venture capital firm“, jako jediná ze
+  šesti výslovně jako sídlící mimo ČR.
+  - **cz-kaya-vc:** nově zjištěno na kaya.vc/sustainability: „KAYA VC GP S.à r.l
+  (the “General Partner” or “KAYA”), which is registered as a Luxembourg AIFM“.
+  Česká Kaya F3 GP s.r.o. je jen GP jednoho fondu. Firma má čtyři kanceláře
+  (Varšava, Praha, San Francisco, Londýn) bez označené centrály.
+
+  **PLAN.md:** pravidlo „investiční firma (správce, značka) má sídlo v ČR“ staví
+  správce a značku vedle sebe. Neříká, co platí, když správce sídlí v cizině a
+  tým se značkou v Praze. Mlčí i o firmách s více kancelářemi. Pro zařazené nemá
+  ani možnost označit sídlo jako nevyřešené, protože `nevyresene.csv` zná jen
+  otázky `typ` a `nastroj`.
+
+  **Jak se výsledek mění podle výkladu:**
+
+  | Výklad | V pilotu | Mimo pilot nebo nejisté |
+  |---|---|---|
+  | sídlo značky a týmu | všech šest | nikdo |
+  | sídlo správce (GP/AIFM) | ZAKA, DEPO | N1, Tensor, Kaya mimo pilot; i&i Bio
+  nelze ověřit, spíš mimo |
+
+  Za uživatele jsem nerozhodoval.
+
+  **Konzistence prvního agenta:** měřítko měl u všech šesti stejné (sídlo značky
+  a týmu). Lišilo se, jak nejistotu zapsal:
+  - U N1 a Tensoru napsal „k ruční kontrole“.
+  - U i&i Bio rozhodl bez tohoto označení a vlastní popis „Luxembourg-based“ v
+  poznámce neuvedl.
+  - U Kaya lucemburského správce vůbec nezachytil a sídlo CZ zdůvodnil „GP v
+  Praze“.
+
+  **Opravy fáze A:** jediná. **cz-kaya-vc, pole sidlo:** fáze A uvedla „sedi“,
+  správně má být „podezreni“, stejná výkladová otázka jako u Tensoru a N1.
+  Ostatní řádky `sidlo` a `pravni_subjekt` u těchto šesti potvrzuji. U ZAKA
+  podporuje podezření k `pravni_subjekt` i privacy policy, protože jako
+  provozovatele webu jmenuje fond, ne ZAKA Management.
+
+  **Pro ruční kontrolu:**
+  - Rozhodnout výklad pravidla pro případ zahraniční správce a česká značka s
+  týmem.
+  - Pokud rozhoduje sídlo správce: ověřit lucemburské správce (Nation 1 GP a GP
+  II, Tensor Ventures GP, KAYA VC GP) v lucemburském rejstříku RCS nebo u CSSF a
+  dohledat správce i&i Biotech Fund I SCSp.
+  - U Kaya zjistit, kterého fondu je Kaya F3 GP s.r.o. GP.
+  - U DEPO ověřit, kdo spravuje DEPO Ventures One SCSp.
+
+  Nových požadavků bylo 14: 11× fetch.sh (z toho jeden 403), 1× webfetch (403) a
+  2× websearch. Práce začala Mon Oct 26 18:45:49 CET 2026 a poslední požadavek
+  proběhl v 18:49:55 CET 2026, výstup jsem zapsal hned potom.
+
+⏺ b3 je hotový. Fáze A přehlédla lucemburského správce (AIFM) u KAYA. Pokud
+  rozhoduje sídlo správce, vypadnou z pilotu N1, Tensor, Kaya a pravděpodobně i
+  i&i Biotech. Zbývá b1.
+
+⏺ Agent "Fáze B: česká kancelář vs sídlo" finished · 6m 7s
+
+› Message from general-purpose
+  Výstup je hotový a uložený v
+  /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad/b/b1.md. Má dvě sekce ve
+  struktuře podle zadání. V projektu jsem nic neměnil.
+
+  **1. Espira a McWin**
+  - **Co zdroje dokládají:** u obou jen to, že v okně od 2024-10-26 nemají
+  veřejně doloženou přímou investici. Že nejsou investoři, nedokládají:
+    - Espira doloženě investovala za podíl v letech 2018–2022 (JK Education,
+  ICON, Premier Clinic). Poslední tisková zpráva je exit z 27. 7. 2022.
+    - McWin Partners se na vlastním webu popisuje jako family office, které
+  investuje.
+  - **Kategorie:** `neni_investor` je podle PLAN.md formálně správná, protože
+  bod 3 do ní výslovně řadí „bez doložené investice v okně 24 měsíců“. Texty
+  důvodů jsou přesné, píší „bez doložené investice v okně“. Víc, než zdroje
+  dokládají, tvrdí jen název kategorie, který PLAN.md tomuto případu přiřazuje.
+  Bod 2 přitom říká, že status popisuje jen veřejnou stopu, takže jde o napětí
+  uvnitř PLAN.md, ne o chybu agenta.
+  - **Espira a EVERITA:**
+    - Jsou to dva různé subjekty se stejnou adresou: ESPIRA s.r.o. stále
+  existuje (Bartoňová a Mamajová 50/50), EVERITA má jiné IČO a jiného druhého
+  partnera (Jojič).
+    - Newstream o EVERITA píše jako o „novém private equity fondu“ Mamajové.
+    - Sloučení zdroje nevyžadují a investice EVERITA nelze Espiře připsat bez
+  ručního rozhodnutí.
+    - Novou investici Espiry v okně jsem nenašel.
+  - **McWin Partners a McWin Capital Partners (Londýn):** jestli jde o jednu
+  investiční firmu, zůstává otevřené.
+    - Pro jednu firmu: stejní zakladatelé, stejná značka, mcwin.cz odkazuje na
+  mcwin.fund a portfolio na mcwin.cz se překrývá s fondy McWin (EasyMile,
+  Exergyn, Vapiano, dean&david, EVERY).
+    - Pro dvě firmy: jiný právní subjekt a jiná role (správa vlastního majetku
+  proti správci fondů). Týmová stránka mcwin.fund uvádí „Group Finance Director
+  at McWin Partners Family Office“ jako samostatný subjekt.
+    - Kdyby šlo o jednu firmu: londýnská firma má transakci v okně (Ecorobotix
+  Series D, 10/2025), takže kategorie by byla spíš `mimo_rozsah_pilotu` (sídlo
+  Londýn), ne `neni_investor`. Do pilotu se McWin nedostane ani v jedné
+  variantě.
+    - PLAN.md vztah family office zakladatelů a jejich správce fondů neřeší.
+
+  **2. Orbit**
+  - **Transakce v okně:** všechny nalezené jsou dluh.
+    - Coding Giants: „venture debt financing from Orbit Capital“.
+    - Jutro Medical: Orbit není mezi equity účastníky, zpráva uvádí „debt
+  component from mBank and Orbit Capital“.
+    - Sloneek, IAG a Talkin' Things: tech.eu je uvádí jako investice Growth Debt
+  Fund II.
+  - **Growth Equity:** equity investici v okně jsem nenašel. Profil z 28. 1.
+  2026 (Startup Lithuania) stále uvádí jen čtyři equity firmy, všechny starší:
+  Booksy, Mews, Preply, Rohlík.
+  - **Slabina u Sloneeku (16. 6. 2026):** Caplight a Seedtable uvádějí Orbit
+  jako „Series A Lead“. Primární zprávu o tom, jaký nástroj Orbit použil, jsem
+  nenašel. Seedtable vrátil 403 a parsers.vc tu zprávu skrývá za registrací.
+  Dluh tak dokládá jen to, že tech.eu Sloneek řadí do dluhového fondu. U IAG
+  chybí samostatná zpráva o transakci.
+  - **Zařazení:**
+    - `hranicni.csv` odpovídá pravidlu PLAN.md pro venture debt.
+    - Obhajitelné je i `vyrazeni.csv` / `neni_investor`: firma má podílovou
+  strategii, ale v okně podílovou investici nedoložila.
+    - `nevyresene.csv` formálně nesedí, protože je jen pro nevyřešený typ nebo
+  nástroj a nástroj je doložený. Připadalo by v úvahu jen tehdy, kdyby uživatel
+  Sloneek považoval za rozporný.
+    - Pravidlo pro firmy se smíšenou strategií PLAN.md nemá, rozhodnutí je na
+  uživateli.
+
+  **Opravy fáze A**
+  - **cz-mcwin-partners, kategorie:** fáze A píše „agent je správně odděluje
+  jako jinou firmu“. Správně je to sporné, ne prokazatelně správné. Fáze A
+  přehlédla překryv portfolia a značky.
+  - **cz-espira-investments, duvod:** drobná výhrada. „Jiný tým“ je zkratka,
+  protože Mamajová je v obou firmách.
+  - **Orbit:** žádné opravy. Fáze A jen neuvedla, že agregátory vedou Orbit u
+  Sloneeku jako „Series A Lead“.
+
+  **Pro ruční kontrolu**
+  - Zda kategorie `neni_investor` vyhovuje pro subjekty, které investovaly, jen
+  ne v okně.
+  - Zda McWin Partners a McWin Capital Partners vést jako jednu investiční
+  firmu.
+  - Zda EVERITA brát jako nástupce Espiry.
+  - Kam patří Orbit se smíšenou strategií (`hranicni.csv`, nebo `vyrazeni.csv`).
+  - Dohledat primární zprávu o nástroji u Sloneeku.
+
+  Nových požadavků bylo 17: fetch 8, websearch 8, webfetch 1. Práce začala 26.
+  10. 2026 v 18:45:55 CET a skončila v 18:51:03 CET.
+
+⏺ Všech 6 agentů fáze B skončilo. Sestavím cilene_otazky.md a spočítám
+  požadavky.
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; date
+      '+%H:%M:%S'; wc -c $S/b…)
+  ⎿  (No output)
+⏺ Agent "Fáze B: Espira, McWin, Orbit" finished · 7m 26s
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; for f in b1 b2
+      b3 b4 b5 b6;…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  1 file changed (binary, mode only or too large to show)
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Bash(perl -CSD -pi -e 's/`\$S\/pages\/[^`]*`/lokální kopie stránky
+      (scratchpad, necommitováno)/g; s/\$S\/pages\//lokálních kopií stránek
+      (scratchpad) /g' ai-log/04-k…)
+  ⎿  Updated ai-log/04-kontrola-zdroju/cilene_otazky.md (+15 -15)
+      43  - Bod 3, duplicity: „jedna investiční firma = jeden záznam. Jed
+          notlivé fondy pod jedním správcem vedu jako podřízené údaje“. H
+          raniční případy: „Záznam je investiční firma (správce, značka).
+          “
+      44  
+      45  **Espira Investments (cz-espira-investments)**
+      46 -- Poslední transakce: stránka Press Releases uvádí jako nejnově
+         -jší „27th of July 2022 … ESPIRA Investments (ESPIRA), a Prague-
+         -based private equity firm … has exited ICON Communication Centr
+         -es“ a jako poslední vstup „8th of February 2022 … announce the 
+         -acquisition of a majority shareholding in Premier Clinic“. Nic 
+         -novějšího tam není („Page 1 of 1“). Zdroj: https://www.espirain
+         -vestments.com/press-releases/ (cela_stranka, `$S/pages/f18a8567
+         -1534d8d3.txt`). Titulní stránka uvádí stejné tři nejnovější zpr
+         -ávy (2022, 2022, 2021) a „€1-3M equity investment per transacti
+         -on“. Zdroj: https://www.espirainvestments.com/ (cela_stranka). 
+      46 +- Poslední transakce: stránka Press Releases uvádí jako nejnově
+         +jší „27th of July 2022 … ESPIRA Investments (ESPIRA), a Prague-
+         +based private equity firm … has exited ICON Communication Centr
+         +es“ a jako poslední vstup „8th of February 2022 … announce the 
+         +acquisition of a majority shareholding in Premier Clinic“. Nic 
+         +novějšího tam není („Page 1 of 1“). Zdroj: https://www.espirain
+         +vestments.com/press-releases/ (cela_stranka, lokÃ¡lnÃ kopie str
+         +Ã¡nky (scratchpad, necommitovÃ¡no)). Titulní stránka uvádí stej
+         +né tři nejnovější zprávy (2022, 2022, 2021) a „€1-3M equity inv
+         +estment per transaction“. Zdroj: https://www.espirainvestments.
+         +com/ (cela_stranka).                                           
+      47  - Investorem v minulosti doloženě byla, vstupy do JK Education 
+          (50 %), ICON (100 %) a Premier Clinic (majorita) jsou na stejné
+           stránce. Tvrzení (b) „není investor“ tedy zdroje nepodporují. 
+          Podporují jen (a).
+      48  - Hledání novějších transakcí: websearch „ESPIRA Investments Pr
+          emier Clinic exit OR prodej OR akvizice 2025 2026“ (vytah_nastr
+          oje) nenašel žádnou zprávu z let 2025–2026. CB Insights a priva
+          teequityinfo uvádějí ESPIRA jako vlastníka Premier Clinic bez d
+          ata exitu. funding.tech.eu „total“: 0 (surova_odpoved_prvniho_a
+          genta, `ai-log/02-obohaceni/zdroje/fundingtecheu_inv_hledani_Es
+          pira.json`, ověřila už fáze A). Závěr „žádná investice v okně“ 
+          platí v rozsahu toho, co šlo najít.
+      49 -- Vztah k EVERITA Capital: ARES 05528089 (cela_stranka, `$S/pag
+         -es/b5032bffdcf7f5a8.txt`) uvádí ESPIRA Investments s.r.o., Na F
+         -lorenci 2116/15, Praha 1, jednatelky a společnice Andrea Bartoň
+         -ová (od 2016-11-01, nevymazána) a Emília Wardrop Mamajová (50/5
+         -0). Podle ARES 19067097 (cela_stranka, `$S/pages/7d22abebe8c9d3
+         -2b.txt`, zjištění fáze A, převzato) má EVERITA Capital s.r.o. s
+         -tejnou adresu a společníky Mamajovou a Jojiče. Newstream 8. 5. 
+         -2025 (cela_stranka, `$S/pages/1b82871cde1533e0.txt`): „Jako spo
+         -lu zakládající partnerka private equity fondu Espira Investment
+         -s a aktuálně nového private equity fondu Everita Capital“. EVER
+         -ITA tedy není přejmenovaná Espira (jiné IČO, ESPIRA s.r.o. stál
+         -e existuje pod svým jménem, jiná druhá partnerka). Je to nový f
+         -ond jedné ze dvou zakladatelek. Web EVERITA Espiru nezmiňuje, u
+         -vádí jen „Our partners combine 30 years of private equity exper
+         -ience“ (cela_stranka, https://everitacap.com/). Podle pravidla 
+         -„jedna investiční firma = jeden záznam“ jsou to dvě různé inves
+         -tiční firmy (různé značky i právní subjekty). Sloučení zdroje n
+         -evyžadují. Rozhodnutí, zda novou firmu jedné partnerky považova
+         -t za nástupce, PLAN.md neřeší. Investice EVERITA (Pekarna Hrsti
+         -ć 3/2026, Clintrial 8/2026) proto Espiře připsat nelze bez ručn
+         -ího rozhodnutí.                                                
+      49 +- Vztah k EVERITA Capital: ARES 05528089 (cela_stranka, lokÃ¡ln
+         +Ã kopie strÃ¡nky (scratchpad, necommitovÃ¡no)) uvádí ESPIRA Inv
+         +estments s.r.o., Na Florenci 2116/15, Praha 1, jednatelky a spo
+         +lečnice Andrea Bartoňová (od 2016-11-01, nevymazána) a Emília W
+         +ardrop Mamajová (50/50). Podle ARES 19067097 (cela_stranka, lok
+         +Ã¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡no), zjištění fáz
+         +e A, převzato) má EVERITA Capital s.r.o. stejnou adresu a spole
+         +čníky Mamajovou a Jojiče. Newstream 8. 5. 2025 (cela_stranka, l
+         +okÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡no)): „Jako spo
+         +lu zakládající partnerka private equity fondu Espira Investment
+         +s a aktuálně nového private equity fondu Everita Capital“. EVER
+         +ITA tedy není přejmenovaná Espira (jiné IČO, ESPIRA s.r.o. stál
+         +e existuje pod svým jménem, jiná druhá partnerka). Je to nový f
+         +ond jedné ze dvou zakladatelek. Web EVERITA Espiru nezmiňuje, u
+         +vádí jen „Our partners combine 30 years of private equity exper
+         +ience“ (cela_stranka, https://everitacap.com/). Podle pravidla 
+         +„jedna investiční firma = jeden záznam“ jsou to dvě různé inves
+         +tiční firmy (různé značky i právní subjekty). Sloučení zdroje n
+         +evyžadují. Rozhodnutí, zda novou firmu jedné partnerky považova
+         +t za nástupce, PLAN.md neřeší. Investice EVERITA (Pekarna Hrsti
+         +ć 3/2026, Clintrial 8/2026) proto Espiře připsat nelze bez ručn
+         +ího rozhodnutí.                                                
+      50  - Formulace důvodu: „Bez doložené investice v okně 24 měsíců … 
+          novější transakci jsem nenašel“ je přesná a odpovídá variantě (
+          a). Drobná nepřesnost: „jiný fond a tým“. Tým se částečně překr
+          ývá (Mamajová je v obou firmách), což důvod v téže větě sám uvá
+          dí („Nové investice zakladatelky Mamajové jdou přes samostatnou
+           firmu“). Nejde o věcnou chybu, jen o zkratku.
+      51  
+      52  **McWin Partners (cz-mcwin-partners)**
+      53 -- Vlastní popis: „McWin Partners is the family office for our f
+         -ounders, Henry McGovern and Steven K. Winegar. For more informa
+         -tion, please visit McWin Capital Partners“ (odkaz na https://mc
+         -win.fund/), „We are a private investment firm … investing prima
+         -rily in private markets“, patička „© 2026 MCWIN S.R.O.“. Zdroj:
+         - https://mcwin.cz/ (cela_stranka, `$S/pages/20ad59fc81561b11.tx
+         -t`, odkaz ověřen v HTML `href="https://mcwin.fund/"`). Tým na m
+         -cwin.cz: „INVESTMENT COMMITTEE Henry McGovern, Steven K. Winega
+         -r“ (https://mcwin.cz/our-team/, cela_stranka, nově staženo). Su
+         -bjekt je podle vlastního popisu investor (family office). Zdroj
+         -e tedy dokládají jen (a), ne (b).                              
+      54 -- ARES 08416907 (cela_stranka, `$S/pages/5d80a72344d2ddd9.txt`)
+         -: obchodní jméno „I Am Cool s.r.o.“ (2019) → „McWin s.r.o.“ (20
+         -19–2022) → „McWin Partners s.r.o.“ (od 2022-02-08), činnost „Pr
+         -onájem nemovitostí…“ a „Správa vlastního majetku“, statutární o
+         -rgán Małgorzata Ewa McGovern a Paloma Gamo Gimenez.            
+      53 +- Vlastní popis: „McWin Partners is the family office for our f
+         +ounders, Henry McGovern and Steven K. Winegar. For more informa
+         +tion, please visit McWin Capital Partners“ (odkaz na https://mc
+         +win.fund/), „We are a private investment firm … investing prima
+         +rily in private markets“, patička „© 2026 MCWIN S.R.O.“. Zdroj:
+         + https://mcwin.cz/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scra
+         +tchpad, necommitovÃ¡no), odkaz ověřen v HTML `href="https://mcw
+         +in.fund/"`). Tým na mcwin.cz: „INVESTMENT COMMITTEE Henry McGov
+         +ern, Steven K. Winegar“ (https://mcwin.cz/our-team/, cela_stran
+         +ka, nově staženo). Subjekt je podle vlastního popisu investor (
+         +family office). Zdroje tedy dokládají jen (a), ne (b).         
+      54 +- ARES 08416907 (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratch
+         +pad, necommitovÃ¡no)): obchodní jméno „I Am Cool s.r.o.“ (2019)
+         + → „McWin s.r.o.“ (2019–2022) → „McWin Partners s.r.o.“ (od 202
+         +2-02-08), činnost „Pronájem nemovitostí…“ a „Správa vlastního m
+         +ajetku“, statutární orgán Małgorzata Ewa McGovern a Paloma Gamo
+         + Gimenez.                                                      
+      55  - McWin Capital Partners: „McWin is a private investment ﬁrm fo
+          unded by Henry McGovern and Steven K. Winegar“, adresa „Cubo, I
+          lona Rose House, Manette St, London W1D 4AL“, fondy McWin Food 
+          Ecosystem Fund, McWin Food Tech Fund a McWin Restaurant Fund. Z
+          droje: https://mcwin.fund/ (cela_stranka) a https://mcwin.fund/
+          contact/ (cela_stranka, nově staženo, jen londýnská adresa, žád
+          ná pražská). Soubor loga na mcwin.fund se jmenuje „McWin-Partne
+          rs-Secondary-Iconic-Mark-Full-Colour.svg“, tedy společná značka
+          .
+      56 -- Důkazy pro jednu firmu (duplicitní značka): stejní zakladatel
+         -é, stejná značka „McWin“, mcwin.cz čtenáře odkazuje na McWin Ca
+         -pital Partners a portfolio na mcwin.cz se překrývá s portfoliem
+         - fondů McWin. V HTML mcwin.cz/portfolio/ jsou loga easymile, ex
+         -eryn (Exergyn), vapiano, deandavid, EVERY, Astranis, nurx a imp
+         -ossible (cela_stranka, `$S/pages/09a6adcedbff7457.raw`). fundin
+         -g.tech.eu přiřazuje EasyMile (2021) a Exergyn (2022) k McWin Ca
+         -pital Partners (surova_odpoved_prvniho_agenta, `ai-log/02-oboha
+         -ceni/zdroje/fundingtecheu_inv_McWin_Capital_Partners.json`) a V
+         -apiano, dean&david a The EVERY Company jsou citovány jako portf
+         -olio McWin na mcwin.fund. Caplight připisuje „McWin Partners, C
+         -zech Republic“ investici „Oishii Feb 2024 Series B“ (cela_stran
+         -ka, `$S/pages/f5f111b0a502bb76.txt`) a Oishii je zároveň ve výr
+         -ocích na mcwin.fund, takže agregátor obě entity zřejmě slévá. T
+         -ato investice je navíc před oknem.                             
+      56 +- Důkazy pro jednu firmu (duplicitní značka): stejní zakladatel
+         +é, stejná značka „McWin“, mcwin.cz čtenáře odkazuje na McWin Ca
+         +pital Partners a portfolio na mcwin.cz se překrývá s portfoliem
+         + fondů McWin. V HTML mcwin.cz/portfolio/ jsou loga easymile, ex
+         +eryn (Exergyn), vapiano, deandavid, EVERY, Astranis, nurx a imp
+         +ossible (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, nec
+         +ommitovÃ¡no)). funding.tech.eu přiřazuje EasyMile (2021) a Exer
+         +gyn (2022) k McWin Capital Partners (surova_odpoved_prvniho_age
+         +nta, `ai-log/02-obohaceni/zdroje/fundingtecheu_inv_McWin_Capita
+         +l_Partners.json`) a Vapiano, dean&david a The EVERY Company jso
+         +u citovány jako portfolio McWin na mcwin.fund. Caplight připisu
+         +je „McWin Partners, Czech Republic“ investici „Oishii Feb 2024 
+         +Series B“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, n
+         +ecommitovÃ¡no)) a Oishii je zároveň ve výrocích na mcwin.fund, 
+         +takže agregátor obě entity zřejmě slévá. Tato investice je naví
+         +c před oknem.                                                  
+      57  - Důkazy pro dvě firmy: jiný právní subjekt (české s.r.o. se „s
+          právou vlastního majetku“ proti londýnskému správci fondů), jin
+          á role (family office proti správci cizího kapitálu s fondy) a 
+          týmová stránka McWin Capital Partners uvádí family office jako 
+          jiný subjekt v kariéře zaměstnance: „Petra Binko, Financial Con
+          troller … Group Finance Director at McWin Partners Family Offic
+          e“ (https://mcwin.fund/our-team/, cela_stranka, nově staženo). 
+          Na stejné stránce je „Michał Serwatka … Investment Director at 
+          Metropolitan Properties“, přičemž Metropolitan Properties Inter
+          national s.r.o. je podle agenta (ARES) společníkem McWin Partne
+          rs s.r.o. Jde tedy o personálně propojenou skupinu.
+      58 -- Transakce londýnské firmy v okně: Goodwin 14. 10. 2025: „advi
+         -sed McWin Capital Partners, via its McWin Food Tech Fund, in it
+         -s participation in the $105 million Series D round of Ecoroboti
+         -x“ (cela_stranka, `$S/pages/d38d077619f01450.txt`) a funding.te
+         -ch.eu Incapto Coffee Series B 2026-04-23 (surova_odpoved_prvnih
+         -o_agenta). Pokud by se obě entity počítaly jako jedna investičn
+         -í firma, transakce v okně by existovala. Záznamem by pak podle 
+         -pravidla „Záznam je investiční firma (správce, značka)“ byl spí
+         -š správce McWin Capital Partners se sídlem v Londýně a typem PE
+         -/VC („specialist private equity and venture capital firm“). Výs
+         -ledkem by byl `mimo_rozsah_pilotu` (sídlo mimo ČR), ne `neni_in
+         -vestor`. Do pilotu by se McWin nedostal v žádné variantě, rozdí
+         -l je jen v kategorii vyřazení.                                 
+      58 +- Transakce londýnské firmy v okně: Goodwin 14. 10. 2025: „advi
+         +sed McWin Capital Partners, via its McWin Food Tech Fund, in it
+         +s participation in the $105 million Series D round of Ecoroboti
+         +x“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommit
+         +ovÃ¡no)) a funding.tech.eu Incapto Coffee Series B 2026-04-23 (
+         +surova_odpoved_prvniho_agenta). Pokud by se obě entity počítaly
+         + jako jedna investiční firma, transakce v okně by existovala. Z
+         +áznamem by pak podle pravidla „Záznam je investiční firma (sprá
+         +vce, značka)“ byl spíš správce McWin Capital Partners se sídlem
+         + v Londýně a typem PE/VC („specialist private equity and ventur
+         +e capital firm“). Výsledkem by byl `mimo_rozsah_pilotu` (sídlo 
+         +mimo ČR), ne `neni_investor`. Do pilotu by se McWin nedostal v 
+         +žádné variantě, rozdíl je jen v kategorii vyřazení.            
+      59  - Websearch „"McWin Partners" family office investment Prague 2
+          025 2026“ (vytah_nastroje): žádná přímá investice McWin Partner
+          s v okně. Výsledky zmiňují FundComb, který McWin Capital Partne
+          rs řadí mezi PE firmy „with Offices in Czech Republic“, a nedat
+          ovaný inzerát „Financial Analyst – McWin Family Office“ s míste
+          m výkonu v Německu. Obojí je jen agregátor nebo inzerát a pro r
+          ozhodnutí to nestačí.
+      60  - Formulace důvodu: věcně přesná (citace sedí, viz fáze A). Tvr
+          zení „patří jiné firmě, McWin Capital Partners“ je podložené ja
+          ko odlišnost právního subjektu a role. Důvod ale zamlčuje překr
+          yv portfolia a značky, který je pro rozhodnutí o duplicitě pods
+          tatný. Podle PLAN.md jde o rozhodnutí na hranici pravidla o dup
+          licitách a agent ho rozhodl, aniž by ho označil jako sporné.
+      61  
+     ...
+      81  **PLAN.md (cela_stranka):** bod 3: „Banky a úvěrové fondy, včet
+          ně venture debt“ do databáze nepatří. Hraniční případy: „Ventur
+          e debt … vyřazeno ze základní databáze, vedu je v samostatném s
+          eznamu `data/vystup_agenta/hranicni.csv`.“ Bod 4: „U smíšených 
+          kol … Rozhoduje, co zdroj uvádí o účasti konkrétního investora.
+          “ `nevyresene.csv` je jen pro situaci, kdy „zůstane nevyřešený 
+          typ … nebo nástroj“. Pravidlo pro investiční firmu, která má so
+          učasně equity a debt strategii, PLAN.md nemá.
+      82  
+      83  **Transakce v okně:**
+      84 -- Coding Giants (tech.eu 14. 10. 2026): „Coding Giants has secu
+         -red up to €6 million in venture debt financing from Orbit Capit
+         -al“. Jednoznačně dluh. https://tech.eu/2026/10/14/orbit-capital
+         --backs-coding-giants-to-scale-stem-education-internationally/ (
+         -cela_stranka, `$S/pages/427b05152200ad13.txt`).                
+      85 -- Jutro Medical (tech.eu 16. 12. 2025): „raised €24 million in 
+         -new funding led by Warsaw Equity Group, with participation from
+         - Vinci, naturalX Health Ventures, Fluent Ventures, Aternus, KAY
+         -A VC, and Inovo VC. The round also includes a debt component fr
+         -om mBank and Orbit Capital.“ Orbit není mezi equity účastníky a
+         - jeho účast je výslovně dluhová. https://tech.eu/2025/12/16/jut
+         -ro-medical-extends-series-a-to-eur36m-for-ai-enabled-primary-ca
+         -re-scale/ (cela_stranka, `$S/pages/c8342c655056c95f.txt`). Capl
+         -ight sice uvádí „Jutro Medical Dec 2025 Series A Co-investor“ (
+         -cela_stranka, https://www.caplight.com/investor/orbit-capital, 
+         -nově staženo), ale nástroj neuvádí, takže primární zprávě to ne
+         -odporuje.                                                      
+      86 -- Sloneek, IAG, Talkin' Things (tech.eu 2. 7. 2026, článek o uz
+         -avření „Growth Debt Fund II“): „Fund II has already begun deplo
+         -ying capital, with 5 investments so far, including Czech startu
+         -ps Sloneek and IAG, as well as Polish startup Talkin' Things“. 
+         -Fond je popsán jako „non-dilutive growth capital“. https://tech
+         -.eu/2026/07/02/orbit-capital-closes-eur107m-venture-debt-fund-f
+         -or-cee-scaleups/ (cela_stranka, `$S/pages/7be75a1e03b35c0d.txt`
+         -). Jde o zprávu o fondu, ne o konkrétní transakci. Nástroj je o
+         -dvozen z toho, že investoval debt fond.                        
+      87 -- Sloneek, další stopa: Caplight „Sloneek Jun 2026 Series A Lea
+         -d“ (cela_stranka), funding.tech.eu „Sloneek Other 5175091 EUR 2
+         -026-06-16“ (cela_stranka, `$S/pages/202b67624b66cd1c.txt`). Web
+         -search (vytah_nastroje) cituje zprávu o „$6 million in a new fu
+         -nding round led primarily by Orbit Capital and Venture to Futur
+         -e Fund“ a Seedtable „Orbit Capital led a round for the first ti
+         -me (Series A)“. Primární zprávu se zněním nástroje jsem nenašel
+         -. parsers.vc (cela_stranka, nově staženo) zprávu z 16. 6. 2026 
+         -skrývá za registrací. Seedtable vrátil 403 (fetch i WebFetch, n
+         -edostupne). Žádný zdroj neuvádí, že by Orbit vzal v Sloneeku po
+         -díl. Klasifikace jako dluh se opírá o tech.eu (debt fond). Kolo
+         - vedené spolu s equity investorem (VFF) může být smíšené, a pod
+         -le bodu 4 PLAN.md pak rozhoduje účast konkrétního investora. Tu
+         - dokládá jen přiřazení k Fund II.                              
+      84 +- Coding Giants (tech.eu 14. 10. 2026): „Coding Giants has secu
+         +red up to €6 million in venture debt financing from Orbit Capit
+         +al“. Jednoznačně dluh. https://tech.eu/2026/10/14/orbit-capital
+         +-backs-coding-giants-to-scale-stem-education-internationally/ (
+         +cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡
+         +no)).                                                          
+      85 +- Jutro Medical (tech.eu 16. 12. 2025): „raised €24 million in 
+         +new funding led by Warsaw Equity Group, with participation from
+         + Vinci, naturalX Health Ventures, Fluent Ventures, Aternus, KAY
+         +A VC, and Inovo VC. The round also includes a debt component fr
+         +om mBank and Orbit Capital.“ Orbit není mezi equity účastníky a
+         + jeho účast je výslovně dluhová. https://tech.eu/2025/12/16/jut
+         +ro-medical-extends-series-a-to-eur36m-for-ai-enabled-primary-ca
+         +re-scale/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, n
+         +ecommitovÃ¡no)). Caplight sice uvádí „Jutro Medical Dec 2025 Se
+         +ries A Co-investor“ (cela_stranka, https://www.caplight.com/inv
+         +estor/orbit-capital, nově staženo), ale nástroj neuvádí, takže 
+         +primární zprávě to neodporuje.                                 
+      86 +- Sloneek, IAG, Talkin' Things (tech.eu 2. 7. 2026, článek o uz
+         +avření „Growth Debt Fund II“): „Fund II has already begun deplo
+         +ying capital, with 5 investments so far, including Czech startu
+         +ps Sloneek and IAG, as well as Polish startup Talkin' Things“. 
+         +Fond je popsán jako „non-dilutive growth capital“. https://tech
+         +.eu/2026/07/02/orbit-capital-closes-eur107m-venture-debt-fund-f
+         +or-cee-scaleups/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratc
+         +hpad, necommitovÃ¡no)). Jde o zprávu o fondu, ne o konkrétní tr
+         +ansakci. Nástroj je odvozen z toho, že investoval debt fond.   
+      87 +- Sloneek, další stopa: Caplight „Sloneek Jun 2026 Series A Lea
+         +d“ (cela_stranka), funding.tech.eu „Sloneek Other 5175091 EUR 2
+         +026-06-16“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, 
+         +necommitovÃ¡no)). Websearch (vytah_nastroje) cituje zprávu o „$
+         +6 million in a new funding round led primarily by Orbit Capital
+         + and Venture to Future Fund“ a Seedtable „Orbit Capital led a r
+         +ound for the first time (Series A)“. Primární zprávu se zněním 
+         +nástroje jsem nenašel. parsers.vc (cela_stranka, nově staženo) 
+         +zprávu z 16. 6. 2026 skrývá za registrací. Seedtable vrátil 403
+         + (fetch i WebFetch, nedostupne). Žádný zdroj neuvádí, že by Orb
+         +it vzal v Sloneeku podíl. Klasifikace jako dluh se opírá o tech
+         +.eu (debt fond). Kolo vedené spolu s equity investorem (VFF) mů
+         +že být smíšené, a podle bodu 4 PLAN.md pak rozhoduje účast konk
+         +rétního investora. Tu dokládá jen přiřazení k Fund II.         
+      88  - IAG: websearch „IAG Orbit Capital venture debt 2026“ (vytah_n
+          astroje) našel jen zprávy o fondu (alternativecreditinvestor, v
+          estbee, pulse2), žádnou samostatnou zprávu o transakci. Dluh je
+           odvozený stejně jako u Sloneeku.
+      89  
+      90  **Growth Equity v okně:**
+      91 -- Web: stránka Growth Equity obsahuje jen tým („Radovan Nesrsta
+         - Partner, Wiktor Namysl Partner, Pavel Mucha IC Member…“), žádn
+         -é investice. https://orbitcapital.com/equity/ (cela_stranka, `$
+         -S/pages/0fad56cf78b4e8ac.txt`).                                
+     … 36 more lines (ctrl+o to expand)
+
+⏺ Opravuji kódování po náhradě cest. Pak dopíšu měření a commitnu.
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  Updated ai-log/04-kontrola-zdroju/cilene_otazky.md (+15 -15)
+      43  - Bod 3, duplicity: „jedna investiční firma = jeden záznam. Jed
+          notlivé fondy pod jedním správcem vedu jako podřízené údaje“. H
+          raniční případy: „Záznam je investiční firma (správce, značka).
+          “
+      44  
+      45  **Espira Investments (cz-espira-investments)**
+      46 -- Poslední transakce: stránka Press Releases uvádí jako nejnově
+         -jší „27th of July 2022 … ESPIRA Investments (ESPIRA), a Prague-
+         -based private equity firm … has exited ICON Communication Centr
+         -es“ a jako poslední vstup „8th of February 2022 … announce the 
+         -acquisition of a majority shareholding in Premier Clinic“. Nic 
+         -novějšího tam není („Page 1 of 1“). Zdroj: https://www.espirain
+         -vestments.com/press-releases/ (cela_stranka, lokÃ¡lnÃ kopie str
+         -Ã¡nky (scratchpad, necommitovÃ¡no)). Titulní stránka uvádí stej
+         -né tři nejnovější zprávy (2022, 2022, 2021) a „€1-3M equity inv
+         -estment per transaction“. Zdroj: https://www.espirainvestments.
+         -com/ (cela_stranka).                                           
+      46 +- Poslední transakce: stránka Press Releases uvádí jako nejnově
+         +jší „27th of July 2022 … ESPIRA Investments (ESPIRA), a Prague-
+         +based private equity firm … has exited ICON Communication Centr
+         +es“ a jako poslední vstup „8th of February 2022 … announce the 
+         +acquisition of a majority shareholding in Premier Clinic“. Nic 
+         +novějšího tam není („Page 1 of 1“). Zdroj: https://www.espirain
+         +vestments.com/press-releases/ (cela_stranka, lokální kopie strá
+         +nky (scratchpad, necommitováno)). Titulní stránka uvádí stejné 
+         +tři nejnovější zprávy (2022, 2022, 2021) a „€1-3M equity invest
+         +ment per transaction“. Zdroj: https://www.espirainvestments.com
+         +/ (cela_stranka).                                              
+      47  - Investorem v minulosti doloženě byla, vstupy do JK Education 
+          (50 %), ICON (100 %) a Premier Clinic (majorita) jsou na stejné
+           stránce. Tvrzení (b) „není investor“ tedy zdroje nepodporují. 
+          Podporují jen (a).
+      48  - Hledání novějších transakcí: websearch „ESPIRA Investments Pr
+          emier Clinic exit OR prodej OR akvizice 2025 2026“ (vytah_nastr
+          oje) nenašel žádnou zprávu z let 2025–2026. CB Insights a priva
+          teequityinfo uvádějí ESPIRA jako vlastníka Premier Clinic bez d
+          ata exitu. funding.tech.eu „total“: 0 (surova_odpoved_prvniho_a
+          genta, `ai-log/02-obohaceni/zdroje/fundingtecheu_inv_hledani_Es
+          pira.json`, ověřila už fáze A). Závěr „žádná investice v okně“ 
+          platí v rozsahu toho, co šlo najít.
+      49 -- Vztah k EVERITA Capital: ARES 05528089 (cela_stranka, lokÃ¡ln
+         -Ã kopie strÃ¡nky (scratchpad, necommitovÃ¡no)) uvádí ESPIRA Inv
+         -estments s.r.o., Na Florenci 2116/15, Praha 1, jednatelky a spo
+         -lečnice Andrea Bartoňová (od 2016-11-01, nevymazána) a Emília W
+         -ardrop Mamajová (50/50). Podle ARES 19067097 (cela_stranka, lok
+         -Ã¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡no), zjištění fáz
+         -e A, převzato) má EVERITA Capital s.r.o. stejnou adresu a spole
+         -čníky Mamajovou a Jojiče. Newstream 8. 5. 2025 (cela_stranka, l
+         -okÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡no)): „Jako spo
+         -lu zakládající partnerka private equity fondu Espira Investment
+         -s a aktuálně nového private equity fondu Everita Capital“. EVER
+         -ITA tedy není přejmenovaná Espira (jiné IČO, ESPIRA s.r.o. stál
+         -e existuje pod svým jménem, jiná druhá partnerka). Je to nový f
+         -ond jedné ze dvou zakladatelek. Web EVERITA Espiru nezmiňuje, u
+         -vádí jen „Our partners combine 30 years of private equity exper
+         -ience“ (cela_stranka, https://everitacap.com/). Podle pravidla 
+         -„jedna investiční firma = jeden záznam“ jsou to dvě různé inves
+         -tiční firmy (různé značky i právní subjekty). Sloučení zdroje n
+         -evyžadují. Rozhodnutí, zda novou firmu jedné partnerky považova
+         -t za nástupce, PLAN.md neřeší. Investice EVERITA (Pekarna Hrsti
+         -ć 3/2026, Clintrial 8/2026) proto Espiře připsat nelze bez ručn
+         -ího rozhodnutí.                                                
+      49 +- Vztah k EVERITA Capital: ARES 05528089 (cela_stranka, lokální
+         + kopie stránky (scratchpad, necommitováno)) uvádí ESPIRA Invest
+         +ments s.r.o., Na Florenci 2116/15, Praha 1, jednatelky a společ
+         +nice Andrea Bartoňová (od 2016-11-01, nevymazána) a Emília Ward
+         +rop Mamajová (50/50). Podle ARES 19067097 (cela_stranka, lokáln
+         +í kopie stránky (scratchpad, necommitováno), zjištění fáze A, p
+         +řevzato) má EVERITA Capital s.r.o. stejnou adresu a společníky 
+         +Mamajovou a Jojiče. Newstream 8. 5. 2025 (cela_stranka, lokální
+         + kopie stránky (scratchpad, necommitováno)): „Jako spolu zaklád
+         +ající partnerka private equity fondu Espira Investments a aktuá
+         +lně nového private equity fondu Everita Capital“. EVERITA tedy 
+         +není přejmenovaná Espira (jiné IČO, ESPIRA s.r.o. stále existuj
+         +e pod svým jménem, jiná druhá partnerka). Je to nový fond jedné
+         + ze dvou zakladatelek. Web EVERITA Espiru nezmiňuje, uvádí jen 
+         +„Our partners combine 30 years of private equity experience“ (c
+         +ela_stranka, https://everitacap.com/). Podle pravidla „jedna in
+         +vestiční firma = jeden záznam“ jsou to dvě různé investiční fir
+         +my (různé značky i právní subjekty). Sloučení zdroje nevyžadují
+         +. Rozhodnutí, zda novou firmu jedné partnerky považovat za nást
+         +upce, PLAN.md neřeší. Investice EVERITA (Pekarna Hrstić 3/2026,
+         + Clintrial 8/2026) proto Espiře připsat nelze bez ručního rozho
+         +dnutí.                                                         
+      50  - Formulace důvodu: „Bez doložené investice v okně 24 měsíců … 
+          novější transakci jsem nenašel“ je přesná a odpovídá variantě (
+          a). Drobná nepřesnost: „jiný fond a tým“. Tým se částečně překr
+          ývá (Mamajová je v obou firmách), což důvod v téže větě sám uvá
+          dí („Nové investice zakladatelky Mamajové jdou přes samostatnou
+           firmu“). Nejde o věcnou chybu, jen o zkratku.
+      51  
+      52  **McWin Partners (cz-mcwin-partners)**
+      53 -- Vlastní popis: „McWin Partners is the family office for our f
+         -ounders, Henry McGovern and Steven K. Winegar. For more informa
+         -tion, please visit McWin Capital Partners“ (odkaz na https://mc
+         -win.fund/), „We are a private investment firm … investing prima
+         -rily in private markets“, patička „© 2026 MCWIN S.R.O.“. Zdroj:
+         - https://mcwin.cz/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scra
+         -tchpad, necommitovÃ¡no), odkaz ověřen v HTML `href="https://mcw
+         -in.fund/"`). Tým na mcwin.cz: „INVESTMENT COMMITTEE Henry McGov
+         -ern, Steven K. Winegar“ (https://mcwin.cz/our-team/, cela_stran
+         -ka, nově staženo). Subjekt je podle vlastního popisu investor (
+         -family office). Zdroje tedy dokládají jen (a), ne (b).         
+      54 -- ARES 08416907 (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratch
+         -pad, necommitovÃ¡no)): obchodní jméno „I Am Cool s.r.o.“ (2019)
+         - → „McWin s.r.o.“ (2019–2022) → „McWin Partners s.r.o.“ (od 202
+         -2-02-08), činnost „Pronájem nemovitostí…“ a „Správa vlastního m
+         -ajetku“, statutární orgán Małgorzata Ewa McGovern a Paloma Gamo
+         - Gimenez.                                                      
+      53 +- Vlastní popis: „McWin Partners is the family office for our f
+         +ounders, Henry McGovern and Steven K. Winegar. For more informa
+         +tion, please visit McWin Capital Partners“ (odkaz na https://mc
+         +win.fund/), „We are a private investment firm … investing prima
+         +rily in private markets“, patička „© 2026 MCWIN S.R.O.“. Zdroj:
+         + https://mcwin.cz/ (cela_stranka, lokální kopie stránky (scratc
+         +hpad, necommitováno), odkaz ověřen v HTML `href="https://mcwin.
+         +fund/"`). Tým na mcwin.cz: „INVESTMENT COMMITTEE Henry McGovern
+         +, Steven K. Winegar“ (https://mcwin.cz/our-team/, cela_stranka,
+         + nově staženo). Subjekt je podle vlastního popisu investor (fam
+         +ily office). Zdroje tedy dokládají jen (a), ne (b).            
+      54 +- ARES 08416907 (cela_stranka, lokální kopie stránky (scratchpa
+         +d, necommitováno)): obchodní jméno „I Am Cool s.r.o.“ (2019) → 
+         +„McWin s.r.o.“ (2019–2022) → „McWin Partners s.r.o.“ (od 2022-0
+         +2-08), činnost „Pronájem nemovitostí…“ a „Správa vlastního maje
+         +tku“, statutární orgán Małgorzata Ewa McGovern a Paloma Gamo Gi
+         +menez.                                                         
+      55  - McWin Capital Partners: „McWin is a private investment ﬁrm fo
+          unded by Henry McGovern and Steven K. Winegar“, adresa „Cubo, I
+          lona Rose House, Manette St, London W1D 4AL“, fondy McWin Food 
+          Ecosystem Fund, McWin Food Tech Fund a McWin Restaurant Fund. Z
+          droje: https://mcwin.fund/ (cela_stranka) a https://mcwin.fund/
+          contact/ (cela_stranka, nově staženo, jen londýnská adresa, žád
+          ná pražská). Soubor loga na mcwin.fund se jmenuje „McWin-Partne
+          rs-Secondary-Iconic-Mark-Full-Colour.svg“, tedy společná značka
+          .
+      56 -- Důkazy pro jednu firmu (duplicitní značka): stejní zakladatel
+         -é, stejná značka „McWin“, mcwin.cz čtenáře odkazuje na McWin Ca
+         -pital Partners a portfolio na mcwin.cz se překrývá s portfoliem
+         - fondů McWin. V HTML mcwin.cz/portfolio/ jsou loga easymile, ex
+         -eryn (Exergyn), vapiano, deandavid, EVERY, Astranis, nurx a imp
+         -ossible (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, nec
+         -ommitovÃ¡no)). funding.tech.eu přiřazuje EasyMile (2021) a Exer
+         -gyn (2022) k McWin Capital Partners (surova_odpoved_prvniho_age
+         -nta, `ai-log/02-obohaceni/zdroje/fundingtecheu_inv_McWin_Capita
+         -l_Partners.json`) a Vapiano, dean&david a The EVERY Company jso
+         -u citovány jako portfolio McWin na mcwin.fund. Caplight připisu
+         -je „McWin Partners, Czech Republic“ investici „Oishii Feb 2024 
+         -Series B“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, n
+         -ecommitovÃ¡no)) a Oishii je zároveň ve výrocích na mcwin.fund, 
+         -takže agregátor obě entity zřejmě slévá. Tato investice je naví
+         -c před oknem.                                                  
+      56 +- Důkazy pro jednu firmu (duplicitní značka): stejní zakladatel
+         +é, stejná značka „McWin“, mcwin.cz čtenáře odkazuje na McWin Ca
+         +pital Partners a portfolio na mcwin.cz se překrývá s portfoliem
+         + fondů McWin. V HTML mcwin.cz/portfolio/ jsou loga easymile, ex
+         +eryn (Exergyn), vapiano, deandavid, EVERY, Astranis, nurx a imp
+         +ossible (cela_stranka, lokální kopie stránky (scratchpad, necom
+         +mitováno)). funding.tech.eu přiřazuje EasyMile (2021) a Exergyn
+         + (2022) k McWin Capital Partners (surova_odpoved_prvniho_agenta
+         +, `ai-log/02-obohaceni/zdroje/fundingtecheu_inv_McWin_Capital_P
+         +artners.json`) a Vapiano, dean&david a The EVERY Company jsou c
+         +itovány jako portfolio McWin na mcwin.fund. Caplight připisuje 
+         +„McWin Partners, Czech Republic“ investici „Oishii Feb 2024 Ser
+         +ies B“ (cela_stranka, lokální kopie stránky (scratchpad, necomm
+         +itováno)) a Oishii je zároveň ve výrocích na mcwin.fund, takže 
+         +agregátor obě entity zřejmě slévá. Tato investice je navíc před
+         + oknem.                                                        
+      57  - Důkazy pro dvě firmy: jiný právní subjekt (české s.r.o. se „s
+          právou vlastního majetku“ proti londýnskému správci fondů), jin
+          á role (family office proti správci cizího kapitálu s fondy) a 
+          týmová stránka McWin Capital Partners uvádí family office jako 
+          jiný subjekt v kariéře zaměstnance: „Petra Binko, Financial Con
+          troller … Group Finance Director at McWin Partners Family Offic
+          e“ (https://mcwin.fund/our-team/, cela_stranka, nově staženo). 
+          Na stejné stránce je „Michał Serwatka … Investment Director at 
+          Metropolitan Properties“, přičemž Metropolitan Properties Inter
+          national s.r.o. je podle agenta (ARES) společníkem McWin Partne
+          rs s.r.o. Jde tedy o personálně propojenou skupinu.
+      58 -- Transakce londýnské firmy v okně: Goodwin 14. 10. 2025: „advi
+         -sed McWin Capital Partners, via its McWin Food Tech Fund, in it
+         -s participation in the $105 million Series D round of Ecoroboti
+         -x“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommit
+         -ovÃ¡no)) a funding.tech.eu Incapto Coffee Series B 2026-04-23 (
+         -surova_odpoved_prvniho_agenta). Pokud by se obě entity počítaly
+         - jako jedna investiční firma, transakce v okně by existovala. Z
+         -áznamem by pak podle pravidla „Záznam je investiční firma (sprá
+         -vce, značka)“ byl spíš správce McWin Capital Partners se sídlem
+         - v Londýně a typem PE/VC („specialist private equity and ventur
+         -e capital firm“). Výsledkem by byl `mimo_rozsah_pilotu` (sídlo 
+         -mimo ČR), ne `neni_investor`. Do pilotu by se McWin nedostal v 
+         -žádné variantě, rozdíl je jen v kategorii vyřazení.            
+      58 +- Transakce londýnské firmy v okně: Goodwin 14. 10. 2025: „advi
+         +sed McWin Capital Partners, via its McWin Food Tech Fund, in it
+         +s participation in the $105 million Series D round of Ecoroboti
+         +x“ (cela_stranka, lokální kopie stránky (scratchpad, necommitov
+         +áno)) a funding.tech.eu Incapto Coffee Series B 2026-04-23 (sur
+         +ova_odpoved_prvniho_agenta). Pokud by se obě entity počítaly ja
+         +ko jedna investiční firma, transakce v okně by existovala. Zázn
+         +amem by pak podle pravidla „Záznam je investiční firma (správce
+         +, značka)“ byl spíš správce McWin Capital Partners se sídlem v 
+         +Londýně a typem PE/VC („specialist private equity and venture c
+         +apital firm“). Výsledkem by byl `mimo_rozsah_pilotu` (sídlo mim
+         +o ČR), ne `neni_investor`. Do pilotu by se McWin nedostal v žád
+         +né variantě, rozdíl je jen v kategorii vyřazení.               
+      59  - Websearch „"McWin Partners" family office investment Prague 2
+          025 2026“ (vytah_nastroje): žádná přímá investice McWin Partner
+          s v okně. Výsledky zmiňují FundComb, který McWin Capital Partne
+          rs řadí mezi PE firmy „with Offices in Czech Republic“, a nedat
+          ovaný inzerát „Financial Analyst – McWin Family Office“ s míste
+          m výkonu v Německu. Obojí je jen agregátor nebo inzerát a pro r
+          ozhodnutí to nestačí.
+      60  - Formulace důvodu: věcně přesná (citace sedí, viz fáze A). Tvr
+          zení „patří jiné firmě, McWin Capital Partners“ je podložené ja
+          ko odlišnost právního subjektu a role. Důvod ale zamlčuje překr
+          yv portfolia a značky, který je pro rozhodnutí o duplicitě pods
+          tatný. Podle PLAN.md jde o rozhodnutí na hranici pravidla o dup
+          licitách a agent ho rozhodl, aniž by ho označil jako sporné.
+      61  
+     ...
+      81  **PLAN.md (cela_stranka):** bod 3: „Banky a úvěrové fondy, včet
+          ně venture debt“ do databáze nepatří. Hraniční případy: „Ventur
+          e debt … vyřazeno ze základní databáze, vedu je v samostatném s
+          eznamu `data/vystup_agenta/hranicni.csv`.“ Bod 4: „U smíšených 
+          kol … Rozhoduje, co zdroj uvádí o účasti konkrétního investora.
+          “ `nevyresene.csv` je jen pro situaci, kdy „zůstane nevyřešený 
+          typ … nebo nástroj“. Pravidlo pro investiční firmu, která má so
+          učasně equity a debt strategii, PLAN.md nemá.
+      82  
+      83  **Transakce v okně:**
+      84 -- Coding Giants (tech.eu 14. 10. 2026): „Coding Giants has secu
+         -red up to €6 million in venture debt financing from Orbit Capit
+         -al“. Jednoznačně dluh. https://tech.eu/2026/10/14/orbit-capital
+         --backs-coding-giants-to-scale-stem-education-internationally/ (
+         -cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡
+         -no)).                                                          
+      85 -- Jutro Medical (tech.eu 16. 12. 2025): „raised €24 million in 
+         -new funding led by Warsaw Equity Group, with participation from
+         - Vinci, naturalX Health Ventures, Fluent Ventures, Aternus, KAY
+         -A VC, and Inovo VC. The round also includes a debt component fr
+         -om mBank and Orbit Capital.“ Orbit není mezi equity účastníky a
+         - jeho účast je výslovně dluhová. https://tech.eu/2025/12/16/jut
+         -ro-medical-extends-series-a-to-eur36m-for-ai-enabled-primary-ca
+         -re-scale/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, n
+         -ecommitovÃ¡no)). Caplight sice uvádí „Jutro Medical Dec 2025 Se
+         -ries A Co-investor“ (cela_stranka, https://www.caplight.com/inv
+         -estor/orbit-capital, nově staženo), ale nástroj neuvádí, takže 
+         -primární zprávě to neodporuje.                                 
+      86 -- Sloneek, IAG, Talkin' Things (tech.eu 2. 7. 2026, článek o uz
+         -avření „Growth Debt Fund II“): „Fund II has already begun deplo
+         -ying capital, with 5 investments so far, including Czech startu
+         -ps Sloneek and IAG, as well as Polish startup Talkin' Things“. 
+         -Fond je popsán jako „non-dilutive growth capital“. https://tech
+         -.eu/2026/07/02/orbit-capital-closes-eur107m-venture-debt-fund-f
+         -or-cee-scaleups/ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratc
+         -hpad, necommitovÃ¡no)). Jde o zprávu o fondu, ne o konkrétní tr
+         -ansakci. Nástroj je odvozen z toho, že investoval debt fond.   
+      87 -- Sloneek, další stopa: Caplight „Sloneek Jun 2026 Series A Lea
+         -d“ (cela_stranka), funding.tech.eu „Sloneek Other 5175091 EUR 2
+         -026-06-16“ (cela_stranka, lokÃ¡lnÃ kopie strÃ¡nky (scratchpad, 
+         -necommitovÃ¡no)). Websearch (vytah_nastroje) cituje zprávu o „$
+         -6 million in a new funding round led primarily by Orbit Capital
+         - and Venture to Future Fund“ a Seedtable „Orbit Capital led a r
+         -ound for the first time (Series A)“. Primární zprávu se zněním 
+         -nástroje jsem nenašel. parsers.vc (cela_stranka, nově staženo) 
+         -zprávu z 16. 6. 2026 skrývá za registrací. Seedtable vrátil 403
+         - (fetch i WebFetch, nedostupne). Žádný zdroj neuvádí, že by Orb
+         -it vzal v Sloneeku podíl. Klasifikace jako dluh se opírá o tech
+         -.eu (debt fond). Kolo vedené spolu s equity investorem (VFF) mů
+         -že být smíšené, a podle bodu 4 PLAN.md pak rozhoduje účast konk
+         -rétního investora. Tu dokládá jen přiřazení k Fund II.         
+      84 +- Coding Giants (tech.eu 14. 10. 2026): „Coding Giants has secu
+         +red up to €6 million in venture debt financing from Orbit Capit
+         +al“. Jednoznačně dluh. https://tech.eu/2026/10/14/orbit-capital
+         +-backs-coding-giants-to-scale-stem-education-internationally/ (
+         +cela_stranka, lokální kopie stránky (scratchpad, necommitováno)
+         +).                                                             
+      85 +- Jutro Medical (tech.eu 16. 12. 2025): „raised €24 million in 
+         +new funding led by Warsaw Equity Group, with participation from
+         + Vinci, naturalX Health Ventures, Fluent Ventures, Aternus, KAY
+         +A VC, and Inovo VC. The round also includes a debt component fr
+         +om mBank and Orbit Capital.“ Orbit není mezi equity účastníky a
+         + jeho účast je výslovně dluhová. https://tech.eu/2025/12/16/jut
+         +ro-medical-extends-series-a-to-eur36m-for-ai-enabled-primary-ca
+         +re-scale/ (cela_stranka, lokální kopie stránky (scratchpad, nec
+         +ommitováno)). Caplight sice uvádí „Jutro Medical Dec 2025 Serie
+         +s A Co-investor“ (cela_stranka, https://www.caplight.com/invest
+         +or/orbit-capital, nově staženo), ale nástroj neuvádí, takže pri
+         +mární zprávě to neodporuje.                                    
+      86 +- Sloneek, IAG, Talkin' Things (tech.eu 2. 7. 2026, článek o uz
+         +avření „Growth Debt Fund II“): „Fund II has already begun deplo
+         +ying capital, with 5 investments so far, including Czech startu
+         +ps Sloneek and IAG, as well as Polish startup Talkin' Things“. 
+         +Fond je popsán jako „non-dilutive growth capital“. https://tech
+         +.eu/2026/07/02/orbit-capital-closes-eur107m-venture-debt-fund-f
+         +or-cee-scaleups/ (cela_stranka, lokální kopie stránky (scratchp
+         +ad, necommitováno)). Jde o zprávu o fondu, ne o konkrétní trans
+         +akci. Nástroj je odvozen z toho, že investoval debt fond.      
+      87 +- Sloneek, další stopa: Caplight „Sloneek Jun 2026 Series A Lea
+         +d“ (cela_stranka), funding.tech.eu „Sloneek Other 5175091 EUR 2
+         +026-06-16“ (cela_stranka, lokální kopie stránky (scratchpad, ne
+         +commitováno)). Websearch (vytah_nastroje) cituje zprávu o „$6 m
+         +illion in a new funding round led primarily by Orbit Capital an
+         +d Venture to Future Fund“ a Seedtable „Orbit Capital led a roun
+         +d for the first time (Series A)“. Primární zprávu se zněním nás
+         +troje jsem nenašel. parsers.vc (cela_stranka, nově staženo) zpr
+         +ávu z 16. 6. 2026 skrývá za registrací. Seedtable vrátil 403 (f
+         +etch i WebFetch, nedostupne). Žádný zdroj neuvádí, že by Orbit 
+         +vzal v Sloneeku podíl. Klasifikace jako dluh se opírá o tech.eu
+         + (debt fond). Kolo vedené spolu s equity investorem (VFF) může 
+         +být smíšené, a podle bodu 4 PLAN.md pak rozhoduje účast konkrét
+         +ního investora. Tu dokládá jen přiřazení k Fund II.            
+      88  - IAG: websearch „IAG Orbit Capital venture debt 2026“ (vytah_n
+          astroje) našel jen zprávy o fondu (alternativecreditinvestor, v
+          estbee, pulse2), žádnou samostatnou zprávu o transakci. Dluh je
+           odvozený stejně jako u Sloneeku.
+      89  
+      90  **Growth Equity v okně:**
+      91 -- Web: stránka Growth Equity obsahuje jen tým („Radovan Nesrsta
+         - Partner, Wiktor Namysl Partner, Pavel Mucha IC Member…“), žádn
+         -é investice. https://orbitcapital.com/equity/ (cela_stranka, lo
+         -kÃ¡lnÃ kopie strÃ¡nky (scratchpad, necommitovÃ¡no)).           
+     … 36 more lines (ctrl+o to expand)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  (No output)
+
+⏺ Bash(S=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e7a27589-eb01-4d71-a21a-353aded4990d/scratchpad; cd
+      /Users/petrstastny/Docume…)
+  ⎿  Created ai-log/04-kontrola-zdroju/mereni.txt (+27 -0)
+       1 +Krok 4: kontrola zdrojů druhým agentem, měření (2026-10-26, CET
+         +)                                                              
+       2 +                                                               
+       3 +Organizace práce: jedna hlavní konverzace (Claude Opus 5.5). Ve
+         + fázi A pracovalo 7 paralelních kontrolních subagentů (4 na inv
+         +estori.json, 2 na vyrazeni.csv + hranicni.csv, 1 na nevyresene.
+         +csv), ve fázi B 6 paralelních subagentů (jeden až dva na každou
+         + otázku). Webové požadavky se logovaly do pozadavky.log: curl a
+         +utomaticky přes wrapper fetch.sh, WebFetch a WebSearch ručně př
+         +ed každým voláním (log.sh). Úplnost ručně logovaných požadavků 
+         +závisí na tom, jestli agenti logování dodrželi.                
+       4 +                                                               
+       5 +FÁZE A (slepá kontrola)                                        
+       6 +- začátek 18:30:18 (start hlavní konverzace), konec 18:44:09 (c
+         +ommit 967cb97 a push), celkem 13 min 51 s                      
+       7 +- subagenti běželi 18:32:49–18:43:23, nejdelší 11 min, nejkratš
+         +í 4 min 47 s                                                   
+       8 +- požadavky: 412 celkem                                        
+       9 +  - 385× HTTP GET přes curl (z toho 3 zdroje nedostupné: 2 PDF 
+         +MAM bez převodu na text, EU-Startups HTTP 403)                 
+      10 +  - 3× WebFetch                                                
+      11 +  - 24× WebSearch                                              
+      12 +- podle agenta: z1 47, z2 67, z3 61, z4 53, v1 46, v2 62, n1 76
+      13 +- tokeny subagentů: 1 265 644 (hlavní konverzace neměřena)     
+      14 +- výstup: 400 řádků za 56 kandidátů + sloučení Nation1         
+      15 +- způsob čtení podle zdrojů v řádcích: cela_stranka 877, vytah_
+         +nastroje 31, surova_odpoved_prvniho_agenta 8, nedostupne 3     
+      16 +                                                               
+      17 +FÁZE B (cílené otázky)                                         
+      18 +- začátek 18:44:13 (čtení automaticka_kontrola.md), konec 18:54
+         +:54 (zápis měření), celkem cca 10 min                          
+      19 +- subagenti běželi 18:45:49–18:51:03                           
+      20 +- nové požadavky: 33 celkem                                    
+      21 +  - 21× curl (b1 8, b2 2, b3 11; z toho nedostupné: g-angels.cz
+         + 301 bez dokončeného přesměrování, businessinfo.cz 403)        
+      22 +  - 2× WebFetch (b1 1, b3 1)                                   
+      23 +  - 10× WebSearch (b1 8, b3 2)                                 
+      24 +- otázky b4, b5 a b6 nevyžadovaly nové požadavky, četly stránky
+         + stažené ve fázi A                                             
+      25 +- tokeny subagentů: 861 130 (hlavní konverzace neměřena)       
+      26 +                                                               
+      27 +CELKEM: 445 webových požadavků, cca 2,13 mil. tokenů subagentů.
+  ⎿  … 1 more file changed
+
+⏺ Bash(git status --short && git add ai-log/04-kontrola-zdroju/ && git commit -q
+      -m "Krok 4, fáze B: cílené otázky, měření kontroly zdrojů…)
+  ⎿  (No output)
+
+⏺ Obě fáze jsou hotové, commitnuté a pushnuté: fáze A v 967cb97, fáze B v
+  c764b99. Původní data, data/hodnoceni.csv ani data/opraveno/ jsem neměnil.
+  Kontrolu dělalo 7 paralelních subagentů ve fázi A a 6 ve fázi B, všichni na
+  stejném modelu jako první agent. Jejich shoda tedy není důkaz správnosti.
+
+  Prioritní seznam pro ruční kontrolu
+
+  1. Sídlo správce versus český tým (N1, Tensor, KAYA, i&i Biotech). Správci
+     (GP/AIFM) N1, Tensoru a KAYA sídlí v Lucembursku. i&i Biotech se sám
+     popisuje jako „Luxembourg-based venture capital firm“. PLAN.md neříká, co
+     rozhoduje, jestli sídlo správce, nebo sídlo značky a týmu. Pokud rozhoduje
+     sídlo správce, vypadnou z pilotu 3–4 zařazení. U KAYA lucemburského správce
+     fáze A přehlédla, opraveno ve fázi B.
+  2. N1: o co se opírá podmínka 3. Nese ji jediná investice, Liki24, kterou web
+     N1 vede pod „U-Tech is an independent fund built by N1“. Navíc u N1 chybí
+     registrový doklad o subjektu (nedostatecny_dukaz).
+  3. Garage Angels. PLAN.md definuje Angel jen jako fyzickou osobu. Klub sám
+     investuje jen přes jednoúčelové SPV, ekonomicky investují jednotliví
+     andělé. Kategorie tedy může být i neni_investor. LUMUS se stejnou
+     strukturou první agent poslal do nevyresene.csv. Ve fázi A tu bylo chybně
+     sedi, po fázi B podezreni.
+  4. Poslední investice není ta nejnovější (potvrzeny_rozpor):
+     - JIC: novější je Elredo Voice,
+     - Look AI: novější je Embodied AI,
+     - Reflex: novější je ArtMaster,
+     - Purple: novější je FLÆ Robotics.
+
+     Podezření na totéž je u ZAKA (FinalDose, PerfectBit) a u KAYA (Frontier
+     Computing). Status aktivni se tím nikde nemění.
+  5. Typ:
+     - ZAKA: AIN.UA ji nazývá „one of the most active family offices“.
+     - StartupYard: akcelerátor; nedoloženo, že investoval vlastní peníze.
+  6. RockawayX: otázka v nevyresene.csv má být „typ | nastroj“ a mezi možnostmi
+     chybí neni_investor.
+  7. McWin: zda McWin Partners a londýnská McWin Capital Partners nejsou jedna
+     investiční firma. Mají společnou značku a překrývá se jim portfolio. Pokud
+     ano, kategorie by byla mimo_rozsah_pilotu, ne neni_investor.
+  8. Původ zdrojů: puvod = null je u řady zpráv chybně, přestože vycházejí z
+     tiskové zprávy: Theorema, Tapaya, Rightcharge, ValkaAI a Y Soft. Jistota
+     stredni vychází správně jen díky pravidlu o nepřímé indicii. U Y Soft (má
+     dolozeno) jistota zapsaným hodnotám puvod neodpovídá.
+  9. Kapitál: částky a měny sedí u všech 13 položek. Přibližné částky (Inven
+     „over“, Rockaway „nearly“, i&i „approximately“) schéma nijak nezachytí.
+     plati_k se vyplňuje nejednotně. U KAYA je kapital[2].fond vyplněný v
+     rozporu s pravidlem. Ve fázi A tu bylo chybně sedi, po fázi B
+     nedostatecny_dukaz.
+  10. Drobnosti:
+      - Soulmates: kolo Rightcharge 2026 není seed.
+      - Orbit: agregátory ho u Sloneeku vedou jako „Series A Lead“, primární
+        zpráva o nástroji chybí.
+      - Merchantee: totéž kolo je ve zdrojích jednou seed, jednou pre-seed.
+      - Andercore: smíšené kolo equity a dluh.
+
+  Celkem se fáze A spletla v 11 bodech. Jsou vypsané v souhrnné tabulce na
+  začátku cilene_otazky.md.
+
+  Počty závěrů ve fázi A (400 řádků)
+
+  soubor / pole: investori.json: posledni_investice
+  sedi: 21
+  potvrzeny_rozpor: 4
+  nedostatecny_dukaz: 0
+  podezreni: 2
+  ────────────────────────────────────────
+  soubor / pole: investori.json: pravni_subjekt
+  sedi: 23
+  potvrzeny_rozpor: 1
+  nedostatecny_dukaz: 1
+  podezreni: 2
+  ────────────────────────────────────────
+  soubor / pole: investori.json: sidlo
+  sedi: 24
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 3
+  ────────────────────────────────────────
+  soubor / pole: investori.json: typ
+  sedi: 25
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 2
+  ────────────────────────────────────────
+  soubor / pole: investori.json: nastroj
+  sedi: 26
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 1
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: investori.json: jistota_investice
+  sedi: 26
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 1
+  ────────────────────────────────────────
+  soubor / pole: investori.json: web, status, investicni_cinnost (po 27)
+  sedi: 81
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: investori.json: faze 24, sektory 22, dalsi_investice 21, ticket
+
+  18, kapital 13
+  sedi: 98
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: vyrazeni.csv: kategorie, duvod (po 17)
+  sedi: 34
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: hranicni.csv: druh, duvod
+  sedi: 2
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: nevyresene.csv: duvod
+  sedi: 10
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 1
+  ────────────────────────────────────────
+  soubor / pole: nevyresene.csv: otazka_moznosti
+  sedi: 10
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 1
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: mapovani_id.csv: slouceni (Nation1 → N1)
+  sedi: 1
+  potvrzeny_rozpor: 0
+  nedostatecny_dukaz: 0
+  podezreni: 0
+  ────────────────────────────────────────
+  soubor / pole: celkem
+  sedi: 381
+  potvrzeny_rozpor: 5
+  nedostatecny_dukaz: 3
+  podezreni: 11
+
+  Jeden potvrzeny_rozpor u pravni_subjekt je jen chybný údaj v poznámce u Look
+  AI (člen správní rady). Identita sama sedí.
+
+  Neověřitelné položky
+
+  - Závěr neovereno nemá žádný řádek.
+  - Nedostupné byly 3 zdroje: 2 PDF od MAM a článek EU-Startups. Závěry u nich
+    stojí na jiných zdrojích.
+  - Ve fázi B se nepodařilo otevřít dva doplňkové zdroje: g-angels.cz a
+    businessinfo.cz.
+  - Několik tvrzení prvního agenta nemá ve výstupu URL, takže je nešlo ověřit.
+    Jde například o ARX HLB PROXY, PitchBook a CzechCrunch u Chilli a nordic9 u
+    Naše Česko.
+
+  Čas a požadavky
+
+  ┌───────┬────────────────────┬────────────────────────────┬───────────────┐
+  │       │        Čas         │      Webové požadavky      │    Tokeny     │
+  │       │                    │                            │   subagentů   │
+  ├───────┼────────────────────┼────────────────────────────┼───────────────┤
+  │ Fáze  │ 18:30–18:44 (14    │ 412: 385 curl, 3 WebFetch, │ 1,27 mil.     │
+  │ A     │ min)               │  24 WebSearch              │               │
+  ├───────┼────────────────────┼────────────────────────────┼───────────────┤
+  │ Fáze  │ 18:44–18:55 (cca   │ 33: 21 curl, 2 WebFetch,   │ 0,86 mil.     │
+  │ B     │ 10 min)            │ 10 WebSearch               │               │
+  └───────┴────────────────────┴────────────────────────────┴───────────────┘
+
+  Tokeny hlavní konverzace jsem neměřil. Curl se logoval automaticky, WebFetch a
+  WebSearch logovali agenti sami, takže jejich počty jsou jen tak přesné, jak
+  agenti logování dodrželi.
+
+  Navíc proti zadání jsem commitnul pozadavky.log se seznamem všech požadavků,
+  kvůli auditu. Pokud ho v repozitáři nechceš, smažu ho.
+
+  Soubory jsou v ai-log/04-kontrola-zdroju/:
+  - slepa_kontrola.csv
+  - cilene_otazky.md
+  - mereni.txt
+  - pozadavky.log
