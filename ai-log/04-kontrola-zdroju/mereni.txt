@@ -1,0 +1,27 @@
+Krok 4: kontrola zdrojů druhým agentem, měření (2026-10-26, CET)
+
+Organizace práce: jedna hlavní konverzace (Claude Opus 5.5). Ve fázi A pracovalo 7 paralelních kontrolních subagentů (4 na investori.json, 2 na vyrazeni.csv + hranicni.csv, 1 na nevyresene.csv), ve fázi B 6 paralelních subagentů (jeden až dva na každou otázku). Webové požadavky se logovaly do pozadavky.log: curl automaticky přes wrapper fetch.sh, WebFetch a WebSearch ručně před každým voláním (log.sh). Úplnost ručně logovaných požadavků závisí na tom, jestli agenti logování dodrželi.
+
+FÁZE A (slepá kontrola)
+- začátek 18:30:18 (start hlavní konverzace), konec 18:44:09 (commit 967cb97 a push), celkem 13 min 51 s
+- subagenti běželi 18:32:49–18:43:23, nejdelší 11 min, nejkratší 4 min 47 s
+- požadavky: 412 celkem
+  - 385× HTTP GET přes curl (z toho 3 zdroje nedostupné: 2 PDF MAM bez převodu na text, EU-Startups HTTP 403)
+  - 3× WebFetch
+  - 24× WebSearch
+- podle agenta: z1 47, z2 67, z3 61, z4 53, v1 46, v2 62, n1 76
+- tokeny subagentů: 1 265 644 (hlavní konverzace neměřena)
+- výstup: 400 řádků za 56 kandidátů + sloučení Nation1
+- způsob čtení podle zdrojů v řádcích: cela_stranka 877, vytah_nastroje 31, surova_odpoved_prvniho_agenta 8, nedostupne 3
+
+FÁZE B (cílené otázky)
+- začátek 18:44:13 (čtení automaticka_kontrola.md), konec 18:54:54 (zápis měření), celkem cca 10 min
+- subagenti běželi 18:45:49–18:51:03
+- nové požadavky: 33 celkem
+  - 21× curl (b1 8, b2 2, b3 11; z toho nedostupné: g-angels.cz 301 bez dokončeného přesměrování, businessinfo.cz 403)
+  - 2× WebFetch (b1 1, b3 1)
+  - 10× WebSearch (b1 8, b3 2)
+- otázky b4, b5 a b6 nevyžadovaly nové požadavky, četly stránky stažené ve fázi A
+- tokeny subagentů: 861 130 (hlavní konverzace neměřena)
+
+CELKEM: 445 webových požadavků, cca 2,13 mil. tokenů subagentů.
