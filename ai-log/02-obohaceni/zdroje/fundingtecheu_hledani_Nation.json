@@ -1,0 +1,313 @@
+{
+  "data": [
+    {
+      "name": "Quantonation",
+      "url": "https://funding.tech.eu/investors/Quantonation",
+      "type": null,
+      "deals": 31,
+      "companies": 23,
+      "topSector": "Deeptech",
+      "activeYears": {
+        "first": 2019,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Scottish National Investment Bank",
+      "url": "https://funding.tech.eu/investors/Scottish%20National%20Investment%20Bank",
+      "type": "Government / public",
+      "deals": 17,
+      "companies": 13,
+      "topSector": "Healthtech",
+      "activeYears": {
+        "first": 2021,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Fidelity International Strategic Ventures",
+      "url": "https://funding.tech.eu/investors/Fidelity%20International%20Strategic%20Ventures",
+      "type": "Venture capital",
+      "deals": 13,
+      "companies": 12,
+      "topSector": "Fintech",
+      "activeYears": {
+        "first": 2021,
+        "last": 2025
+      }
+    },
+    {
+      "name": "International Finance Corporation",
+      "url": "https://funding.tech.eu/investors/International%20Finance%20Corporation",
+      "type": "Investment firm",
+      "deals": 11,
+      "companies": 9,
+      "topSector": "Fintech",
+      "activeYears": {
+        "first": 2013,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Combination VC",
+      "url": "https://funding.tech.eu/investors/Combination%20VC",
+      "type": "Venture capital",
+      "deals": 10,
+      "companies": 9,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2023,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Invest International",
+      "url": "https://funding.tech.eu/investors/Invest%20International",
+      "type": "Venture capital",
+      "deals": 9,
+      "companies": 9,
+      "topSector": "Agritech",
+      "activeYears": {
+        "first": 2023,
+        "last": 2026
+      }
+    },
+    {
+      "name": "National Grid Partners (NGP)",
+      "url": "https://funding.tech.eu/investors/National%20Grid%20Partners%20(NGP)",
+      "type": null,
+      "deals": 9,
+      "companies": 8,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2020,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Nationwide",
+      "url": "https://funding.tech.eu/investors/Nationwide",
+      "type": null,
+      "deals": 8,
+      "companies": 7,
+      "topSector": "Fintech",
+      "activeYears": {
+        "first": 2017,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Forgepoint Capital International",
+      "url": "https://funding.tech.eu/investors/Forgepoint%20Capital%20International",
+      "type": "Venture capital",
+      "deals": 7,
+      "companies": 5,
+      "topSector": "Cybersecurity",
+      "activeYears": {
+        "first": 2025,
+        "last": 2026
+      }
+    },
+    {
+      "name": "international investors",
+      "url": "https://funding.tech.eu/investors/international%20investors",
+      "type": "Venture capital",
+      "deals": 7,
+      "companies": 7,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2023,
+        "last": 2026
+      }
+    },
+    {
+      "name": "National Center for Research and Development",
+      "url": "https://funding.tech.eu/investors/National%20Center%20for%20Research%20and%20Development",
+      "type": null,
+      "deals": 7,
+      "companies": 7,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2019,
+        "last": 2023
+      }
+    },
+    {
+      "name": "Advent International",
+      "url": "https://funding.tech.eu/investors/Advent%20International",
+      "type": null,
+      "deals": 6,
+      "companies": 5,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2020,
+        "last": 2022
+      }
+    },
+    {
+      "name": "Nation 1",
+      "url": "https://funding.tech.eu/investors/Nation%201",
+      "type": "Venture capital",
+      "deals": 6,
+      "companies": 6,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2019,
+        "last": 2023
+      }
+    },
+    {
+      "name": "Portuguese National Innovation Agency (ANI)",
+      "url": "https://funding.tech.eu/investors/Portuguese%20National%20Innovation%20Agency%20(ANI)",
+      "type": "Government / public",
+      "deals": 6,
+      "companies": 6,
+      "topSector": "Agritech",
+      "activeYears": {
+        "first": 2023,
+        "last": 2023
+      }
+    },
+    {
+      "name": "Nationwide Building Society",
+      "url": "https://funding.tech.eu/investors/Nationwide%20Building%20Society",
+      "type": null,
+      "deals": 5,
+      "companies": 4,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2018,
+        "last": 2023
+      }
+    },
+    {
+      "name": "International Finance Corporation (IFC)",
+      "url": "https://funding.tech.eu/investors/International%20Finance%20Corporation%20(IFC)",
+      "type": "Venture capital",
+      "deals": 4,
+      "companies": 4,
+      "topSector": "Cloud",
+      "activeYears": {
+        "first": 2024,
+        "last": 2025
+      }
+    },
+    {
+      "name": "the National Security Strategic Investment Fund (NSSIF)",
+      "url": "https://funding.tech.eu/investors/the%20National%20Security%20Strategic%20Investment%20Fund%20(NSSIF)",
+      "type": "Venture capital",
+      "deals": 4,
+      "companies": 4,
+      "topSector": "Space",
+      "activeYears": {
+        "first": 2025,
+        "last": 2026
+      }
+    },
+    {
+      "name": "National Wealth Fund",
+      "url": "https://funding.tech.eu/investors/National%20Wealth%20Fund",
+      "type": "Venture capital",
+      "deals": 4,
+      "companies": 4,
+      "topSector": "Energy",
+      "activeYears": {
+        "first": 2025,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Cadfem International",
+      "url": "https://funding.tech.eu/investors/Cadfem%20International",
+      "type": "Corporate",
+      "deals": 3,
+      "companies": 2,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2024,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Cain International",
+      "url": "https://funding.tech.eu/investors/Cain%20International",
+      "type": null,
+      "deals": 3,
+      "companies": 1,
+      "topSector": "Fintech",
+      "activeYears": {
+        "first": 2017,
+        "last": 2019
+      }
+    },
+    {
+      "name": "The Friedkin Group International",
+      "url": "https://funding.tech.eu/investors/The%20Friedkin%20Group%20International",
+      "type": "Venture capital",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Cleantech",
+      "activeYears": {
+        "first": 2022,
+        "last": 2026
+      }
+    },
+    {
+      "name": "National Australia Bank",
+      "url": "https://funding.tech.eu/investors/National%20Australia%20Bank",
+      "type": null,
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Cleantech",
+      "activeYears": {
+        "first": 2019,
+        "last": 2023
+      }
+    },
+    {
+      "name": "National Bank of Greece",
+      "url": "https://funding.tech.eu/investors/National%20Bank%20of%20Greece",
+      "type": "Investment firm",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Marketing",
+      "activeYears": {
+        "first": 2014,
+        "last": 2022
+      }
+    },
+    {
+      "name": "National Center for Research and Development (NCBR)",
+      "url": "https://funding.tech.eu/investors/National%20Center%20for%20Research%20and%20Development%20(NCBR)",
+      "type": "Government / public",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "E-commerce",
+      "activeYears": {
+        "first": 2022,
+        "last": 2022
+      }
+    },
+    {
+      "name": "National Innovation Company (Enisa)",
+      "url": "https://funding.tech.eu/investors/National%20Innovation%20Company%20(Enisa)",
+      "type": "Venture capital",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2024,
+        "last": 2026
+      }
+    }
+  ],
+  "page": 1,
+  "totalPages": 6,
+  "total": 140,
+  "count": 25,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

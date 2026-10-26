@@ -2014,5 +2014,608 @@
       "investice": "stredni"
     },
     "poznamka": "Typ VC: web 'the first investment fund in the Czech Republic that focuses exclusively on AI startups worldwide', pre-Series A venture capital fund; doložené investice do startupů. Značka a tým sídlí v Praze (kancelář Karla Engliše 5, Praha 5; registrované sídlo fondu Radlická 180/50, Praha 5), proto zeme CZ. Identita: ARES Look AI Ventures SICAV, a.s., IČO 17604087 (fond kvalifikovaných investorů, podfond Look AI Ventures I, IČO 75163705), individuální statutární orgán / obhospodařovatel do 5. 10. 2026 AVANT investiční společnost, a.s., od 5. 10. 2026 FTP Dimension investiční společnost, a.s. (web uvádí FTP Dimension jako správce). Provozní tým: Look AI Investments, a.s., IČO 06385745 (dříve AI Startup Incubator a.s., Radlická 180/50, Praha 5), akcionář SICAV na účet podfondu Look AI Ventures I; ve správní radě Martin Havlík a Daniel Kunz, které web uvádí jako Managing Partner a Partner. Záznam vedu za značku, fond a správce jsou podřízené údaje. Ticket: web ho neuvádí ('The terms and conditions of the investment are always drawn up to fit your startup'); tech.eu 13. 4. 2023 píše 'The targeted investment amount in one start-up is €250,000' bez citace investora, proto nevyplněno. Vklad do Digicust 250 000 EUR je jednotlivá investice, ne deklarovaný ticket. Kapitál: jen cíl 'aims to raise €20 million' (tech.eu 2023, záměr, ne velikost fondu), web velikost neuvádí, proto prázdné. Poslední investice: Sodex Innovations, tech.eu 13. 7. 2026: 'The round also welcomed new investors Bloomhaus, Look AI Ventures and the German business angel group Superangels'; kolo 4 mil. EUR (velikost celého kola) bez označení fáze, nástroj nezjištěn. Lucida AI: tech.eu 30. 6. 2026 seed kolo navýšené na 7 mil. USD (velikost celého kola) 'with participation from Next Tier Ventures, Look AI Ventures...'; Lupa.cz 30. 6. 2026 'Český fond Look AI Ventures se podílel na investici do startupu Lucida AI'; nástroj neprima_indicie (seed); nezávislost obou zpráv nedoložena (pravděpodobně společný podklad). Digicust: TZ firmy 3. 12. 2025 'the Look.AI Fund is contributing €250,000', celé kolo 2,3 mil. EUR, firma kolo označuje jako 'pre-Series A' i 'seed round'; Trending Topics vychází ze stejné TZ (jeden zdroj); zmínka o převodu na equity se týká zakladatelů a soukromých investorů, ne Look AI, proto neprima_indicie. Žádná investice nemá nástroj dolozeno, jistota investice stredni. funding.tech.eu uvádí 9 kol 2023–2026 (vodítko, ne doklad), mj. Checkstep 5/2026 (nedohledáno ve zprávě, nezapsáno). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-miton",
+    "nazev": "Miton",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "MITON CZ, s.r.o., Křižíkova 148/34, Karlín, 186 00 Praha 8",
+      "ico": "25417967",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/25417967",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2022-02-05",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.miton.cz/o-nas/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "Miton",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.miton.cz/",
+      "zdroj_url": "https://www.miton.cz/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "AI a augmented workforce",
+        "krypto a web3",
+        "e-commerce",
+        "gastrotech",
+        "psychedelika a duševní zdraví"
+      ],
+      "zdroj_url": "https://www.miton.cz/o-nas/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed",
+        "series A"
+      ],
+      "zdroj_url": "https://www.miton.cz/o-nas/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 300000,
+      "max": 2000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.miton.cz/o-nas/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "DeepScout",
+      "datum_investice": null,
+      "datum_oznameni": "2026-10-19",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "nezjisteno",
+        "kolo": null,
+        "zdroj_url": null
+      },
+      "zdroje": [
+        {
+          "url": "https://www.lupa.cz/aktuality/miton-veri-v-ai-agenty-v-e-commerce-miliony-posila-do-sluzby-ktera-jim-umoznuje-hlidat-ceny-napric-trhem/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2026-10-19",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "ACE (padelová aplikace)",
+        "datum_investice": null,
+        "datum_oznameni": "2026-10-01",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": "podil",
+          "doklad": "dolozeno",
+          "kolo": null,
+          "zdroj_url": "https://cc.cz/prodal-startup-americanum-ted-se-veze-na-vlne-padelu-pulku-jeho-nove-aplikace-ziskava-za-miliony-miton/"
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/prodal-startup-americanum-ted-se-veze-na-vlne-padelu-pulku-jeho-nove-aplikace-ziskava-za-miliony-miton/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-10-01",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.miton.cz/blog/miton-investuje-do-ace-stravu-pro-padel-uz-pouziva-vice-nez-polovina-ceskych-hracu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Miton (tisková zpráva na webu investora)",
+            "puvod": null,
+            "zdroj_datum": "2026-10-01",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Whisper (AI agent pro zákaznickou podporu v e-commerce)",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-02",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://www.lupa.cz/aktuality/driv-koordinovali-jeziska-ted-dva-kamaradi-ziskali-se-stejnym-principem-penize-na-ai-agenta-pro-e-commerce/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Lupa.cz",
+            "puvod": null,
+            "zdroj_datum": "2026-02-02",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Bandits",
+        "datum_investice": null,
+        "datum_oznameni": "2025-11-20",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://www.lupa.cz/aktuality/aby-se-lepe-jelo-na-vlne-umele-inteligence-miton-investuje-do-startupu-ktery-ji-chce-firmam-zefektivnit/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Lupa.cz",
+            "puvod": null,
+            "zdroj_datum": "2025-11-20",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: Miton se na webu popisuje nadpisem „VC, ale ne tak úplně“, „Investujeme vlastní peníze“ a „nepodléháme klasickému fondovému cyklu“; investuje do startupů od pre-seed po series A s deklarovaným ticketem 300k–2M EUR („Obvyklá výše vstupní investice + follow-up investice v podobném řádu nebo vyšší“), má tým (web: 25 lidí) a partnery (např. Tomáš Hodboď), média ho nazývají „investiční skupina Miton“ (CzechCrunch 1. 10. 2026, Lupa 20. 11. 2025). Kapitál je vlastní kapitál zakladatelů a partnerů, ne LP fondu; nejde o holding jednoho podnikatele (zakladatelé Ondřej Raška, Tomáš Matějček, Milan Zemánek a další partneři) ani o provozní firmu (web popisuje jen investiční činnost), proto VC; funding.tech.eu ho ale vede jako „Corporate“ (viz nejasnosti). Často spoluzakládá firmy (Bandits: Miton „jako zakládající partner“; ACE: „rovnocenný partner“, partner Mitonu Hodboď se firmě věnuje), tj. venture-builder model s vlastním kapitálem za podíl. Identita: ARES MITON CZ, s.r.o., IČO 25417967, Křižíkova 148/34, Praha 8 (shodná s kancelářskou adresou na webu), jednatelé Milan Zemánek, Ondřej Raška, Tomáš Matějček, předmět podnikání mj. „Investování do startupů a jiných společností“, jediný společník M8H a.s. (IČO 04765117, představenstvo Matějček, Zemánek, Raška, Michal Jirák). Web (o-nas) uvádí „Jsme tři - Ondra, Tomáš, Milan“ a „Zakládáme MITON CZ, s.r.o.“, totožnost potvrzená. Skupina má desítky SPV „MITON …“ na stejné adrese (např. MITON INVESTMENT, a.s., IČO 27343430; MITON C a.s. a MITON Psychonauts s.r.o., jejichž spojení s kryptofondem Miton C a fondem Psychonauts jsem nepotvrdil), které jsou podřízené jedné investiční firmě; kterou entitou byla konkrétní investice provedena, zdroje neuvádějí. Ticket: deklarovaný na webu. Kapitál: nevyplněn; web uvádí „hodnota portfolia 450 mil. EUR“, to není investorem uvedené AUM / upsaný kapitál / velikost fondu; starší zpráva (Lupa 9. 11. 2021) o kryptofondu „na investice má stovky milionů“ je záměr bez přesné částky. Velikosti investic (vklad Mitonu, ne kola): Bandits 400 tis. EUR („Miton posílá 400 tisíc eur … do startupu Bandits“), Whisper 300 tis. EUR („získal na investici 300 tisíc eur“, financování posílá Miton), DeepScout „v milionech korun“ (Lupa 19. 10. 2026; dříve 5 mil. Kč v lednu 2025), ACE „řádově miliony korun“. Nástroj: doložený podíl u ACE (CzechCrunch: „Investiční skupina Miton se stává partnerem jeho padelové aplikace Ace a získává v ní poloviční podíl“); u DeepScout, Whisper a Bandits zdroje nástroj ani kolo neuvádějí (nezjisteno). Jistota investice stredni: ACE dokládá CzechCrunch a tisková zpráva na blogu Mitonu se stejným datem 1. 10. 2026; nezávislost původu nelze doložit (CzechCrunch neuvádí zdroj, pravděpodobně společné oznámení), ostatní investice mají jednu zprávu. Datum investice žádný zdroj neuvádí, všude jen datum oznámení. Poslední investice (DeepScout, 19. 10. 2026) je nejnovější nalezená, ne nutně skutečně poslední; funding.tech.eu dále uvádí Aim (7/2025), Firefish seed (4/2025) a DeepScout (3/2025), ty jsem zprávou neověřoval."
+  },
+  {
+    "id": "cz-n1-ventures",
+    "nazev": "N1 Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Nation 1 GP S.à r.l. a Nation 1 GP II S.à r.l. (Lucembursko, general partneři fondů; zápis v rejstříku neověřen)",
+      "ico": null,
+      "zdroje": [
+        {
+          "url": "https://n1.rocks/disclosure",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cvca.cz/en/nation1-2/",
+          "druh_zdroje": "asociace",
+          "vydavatel": "CVCA",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+          "druh_zdroje": "media",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2023-09-18",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://n1.rocks/",
+      "zdroj_url": "https://n1.rocks/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "AI",
+        "healthtech",
+        "frontier tech"
+      ],
+      "zdroj_url": "https://n1.rocks/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "early-stage"
+      ],
+      "zdroj_url": "https://n1.rocks/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [
+      {
+        "castka": 60000000,
+        "mena": "USD",
+        "plati_k": null,
+        "druh": "aum",
+        "fond": null,
+        "zdroj_url": "https://n1.rocks/",
+        "zdroj_datum": null,
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Novoflow",
+      "datum_investice": null,
+      "datum_oznameni": "2025-11-04",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "nezjisteno",
+        "kolo": null,
+        "zdroj_url": null
+      },
+      "zdroje": [
+        {
+          "url": "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "The VC Corner",
+          "puvod": null,
+          "zdroj_datum": "2025-11-04",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://n1.rocks/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Liki24",
+        "datum_investice": null,
+        "datum_oznameni": "2025-07-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://forbes.ua/innovations/servis-dostavki-tabletok-liki24-zaluchiv-9-mln-dlya-vikhodu-na-novi-evropeyski-rinki-03072025-31013"
+        },
+        "zdroje": [
+          {
+            "url": "https://forbes.ua/innovations/servis-dostavki-tabletok-liki24-zaluchiv-9-mln-dlya-vikhodu-na-novi-evropeyski-rinki-03072025-31013",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Forbes Ukraine",
+            "puvod": "tisková zpráva Liki24",
+            "zdroj_datum": "2025-07-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://inventure.com.ua/en/news/world/ukrainian-platform-liki24-raises-dollar9m-from-local-and-international-investors",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Inventure",
+            "puvod": "https://forbes.ua/innovations/servis-dostavki-tabletok-liki24-zaluchiv-9-mln-dlya-vikhodu-na-novi-evropeyski-rinki-03072025-31013",
+            "zdroj_datum": "2025-07-04",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://n1.rocks/utech-fund",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "stredni",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web n1.rocks 'N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech'; doložené investice do startupů. Sloučeno s kandidátem cz-nation1: Nation 1 se v roce 2023 přejmenoval na N1 (CzechCrunch 18. 9. 2023 'Přejmenovává se na N1'; managing partneři Marek Moravec a Jaroslav Trojan, oba v týmu na n1.rocks); CVCA profil Nation1 má adresu Národní 135/14, Praha 1, kterou uvádí i n1.rocks jako pražskou kancelář, a kontakt Jaroslav Trojan, Managing Partner; obě značky uvádějí portfoliovou firmu Snuggs. Identita: český právní subjekt nenalezen. ARES hledání 'N1 Ventures', 'Nation 1', 'N1 Management' bez shody; 'Nation1' vrátil jen Nation1 Investment s.r.o. (IČO 09172807, Bělehradská 858/23, Praha 2, jednatelé a společníci Jaroslav Ton a Petr Jiříček), který s týmem N1 nijak nesouvisí, proto nepoužit. Podle n1.rocks/disclosure jsou general partnery fondů 'Nation 1 GP S.à r.l. and Nation 1 GP II S.à r.l.' (lucemburské AIF, GP 'registered alternative investment fund manager'); zápis v lucemburském RCS ani u CSSF jsem nedoložil (GLEIF bez výsledku), proto pravní subjekt nepotvrzen a jistota existence stredni (asociace CVCA, média). Sídlo: web uvádí kanceláře San Francisco, Praha (Národní 135/14) a Lucembursko; tým a značka jsou české (CzechCrunch 'Čeští startupoví investoři', CVCA), formální GP lucemburský; zeme CZ podle sídla značky/týmu, k ruční kontrole. Kapitál: web 'Today, we manage $60M across two funds focused on AI and healthcare.' (bez data, plati_k null). CVCA profil uvádí 'Volume of Funds Managed 35 milionů EUR' (starší údaj značky Nation1, nepřevzat, nesčítán). CzechCrunch 2023 uvádí cíl druhého fondu 35–40 mil. EUR (záměr, není kapitál). U-Tech je 'an independent fund built by N1' (velikost neuvedena). Ticket: web ho neuvádí; CVCA profil uvádí 'Preferred Ammount of Investment 50 tisíc – 1,5 milionů EUR' (profil asociace pod starou značkou, ne web/rozhovor investora), proto ticket null. Poslední investice: Novoflow, The VC Corner 4. 11. 2025: kolo 3,1 mil. USD (velikost celého kola, ne vklad N1) 'led by super angel Justin Hamilton, with participation from N1 Ventures'; typ kola ani nástroj zdroj neuvádí (agregátory Caplight a VCBacked uvádějí seed, bez odkazu na zprávu), nástroj nezjisteno. Novoflow je v portfoliu na n1.rocks. datum_oznameni = datum článku; zda jde o první oznámení, neověřeno, a hranice statusu (2025-10-26) je jen 9 dní před ním, proto status k ruční kontrole. Další: Liki24, Forbes Ukraine 3. 7. 2025 (podle tiskové zprávy firmy): 9 mil. USD 'у Series A раунді' (velikost celého kola), 'Раунд підтримали ... N1 Ventures'; Inventure přebírá Forbes (stejný původ). Nástroj neprima_indicie (Series A), podíl výslovně neuveden. Liki24 je na stránce fondu U-Tech na n1.rocks. Žádná investice nemá dolozeno a nezávislé potvrzení chybí, proto jistota investice stredni. Nepoužito: Flick (seed 6 mil. USD, květen 2026, TheSaaSNews podle BusinessWire uvádí investora jen jako 'N1'; BusinessWire nedostupný, Flick není v portfoliu na n1.rocks, ztotožnění jen přes agregátor Caplight), proto jako doklad nepoužito. funding.tech.eu uvádí jen Liki24 (Series A 2025-07, vodítko). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-presto-ventures",
+    "nazev": "Presto Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Presto Ventures II a.s., osoba rizikového kapitálu",
+      "ico": "11678704",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/11678704",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-09-26",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.prestoventures.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": "2026-05-25",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.prestoventures.com/",
+      "zdroj_url": "https://www.prestoventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "security",
+        "defense",
+        "aerospace",
+        "dual-use"
+      ],
+      "zdroj_url": "https://www.prestoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "seed",
+        "series A"
+      ],
+      "zdroj_url": "https://www.prestoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 500000,
+      "max": 5000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.prestoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "SatVu (Satellite Vu)",
+      "datum_investice": null,
+      "datum_oznameni": "2026-02-18",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://pulse2.com/satvu-raises-30-million-in-nato-innovation-fund-backed-round-to-scale-multi-satellite-constellation/amp/"
+      },
+      "zdroje": [
+        {
+          "url": "https://pulse2.com/satvu-raises-30-million-in-nato-innovation-fund-backed-round-to-scale-multi-satellite-constellation/amp/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Pulse 2.0",
+          "puvod": null,
+          "zdroj_datum": "2026-02-18",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://csg.com/en/news/pth-vc-fund-backed-by-csg-invests-in-uk-based-satvu-strengthening-space-and-thermal-intelligence-capabilities",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CSG (tisková zpráva)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Occam (Occam Industries)",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-11",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://cc.cz/investori-v-cele-s-miliardarem-michalem-strnadem-posilaji-desitky-milionu-na-vyvoj-autonomnich-dronu/"
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/investori-v-cele-s-miliardarem-michalem-strnadem-posilaji-desitky-milionu-na-vyvoj-autonomnich-dronu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-02-11",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: Presto Ventures II a.s. je v ARES zapsána jako 'osoba rizikového kapitálu'; web: 'Since 2016, we’ve invested €40M from two funds.' a doložené investice do startupů za podíl. Současná strategie podle webu: 'Security, defense, and aerospace' (dual-use), 'Seed TO SERIES A', 'Tickets ranging from €500k to €5M.' (deklarovaný ticket). Identita: ARES Presto Ventures II a.s., osoba rizikového kapitálu, IČO 11678704, sídlo Revoluční 763/15, Praha 1 (do 1. 7. 2026 Na příkopě 859/22, tuto adresu uvádí i pozvánka na valnou hromadu na webu z 25. 5. 2026, čímž je entita propojena s webem); představenstvo od 1. 7. 2026 Eduard Kučera, Roman Nováček, předseda Miloš Kratochvíl (dříve Přemysl Rubeš, Lucie Brešová). Související entity na stejné adrese: Presto 2 GP s.r.o. (IČO 10803416, společníci mj. Přemysl Rubeš), Presto Management s.r.o. (IČO 19729740, jednatel Eduard Kučera) a Presto PTH a.s. (IČO 22147187, Na příkopě 859/22; v ARES člen správní rady Přemysl Rubeš, poslední aktualizace 2025-05-01). Který subjekt je správcem fondu Presto Tech Horizons, nepotvrzeno. Web uvádí kancelář Senovážné náměstí 869/28, Praha 1; sídlo investiční firmy je v každém případě ČR. Presto Tech Horizons (PTH) je fond Presto Ventures: CzechCrunch 11. 2. 2026 ho popisuje jako fond, 'jejž založila společnost Presto Ventures a zbrojařská skupina' CSG; web Presto ho vede jako vlastní fond ('Our new €150M fund targets ...'). Fond tedy vedu jako podřízený údaj, ne samostatného investora. Kapitál: web uvádí 'Our new €150M fund targets ...' (cíl) a CzechCrunch 26. 6. 2024 'Disponuje celkem 150 miliony eur' (k dispozici; titulek uvádí 4 miliardy, text 3,7 mld. Kč, rozpor), ani jedno není doložené aum/committed_capital/fund_size, proto kapital prázdný. Údaj '€40M from two funds' jsou proinvestované peníze, ne kapitál. Poslední investice: SatVu (UK), kolo 30 mil. GBP (velikost celého kola, ne vklad Presto), vedené NATO Innovation Fund; Pulse 2.0 18. 2. 2026 jmenuje Presto Tech Horizons mezi investory a uvádí 'bringing its total equity funding to £60 million', proto nástroj podíl dolozeno (kolo jako equity). Označení série si u agregátorů odporuje (Seedtable series A, CB Insights series C, Caplight series B), proto kolo null. Tisková zpráva CSG (partner a investor PTH) uvádí 'Presto Tech Horizons (PTH), a venture capital fund in which CSG is a partner and investor' a 'GBP 30 million investment round'; datum na stránce neuvedeno. Zda Pulse 2.0 vychází z tiskové zprávy SatVu a zda je nezávislá na TZ CSG, nedoloženo, proto jistota investice stredni. Další: Occam (UK), pre-seed 3 mil. EUR (velikost kola), vedl Presto Tech Horizons podle CzechCrunch 11. 2. 2026; nástroj neprima_indicie (pre-seed). Agregátory uvádějí i Choice series A (březen 2026) a Sloneek (červen 2026) s Presto, zprávu s Presto jmenovaným jsem nenašel, nezapsáno. Kontext: CzechCrunch 11. 3. 2026: zakladatel Přemysl Rubeš byl zadržen policií (podle partnera Vojty Ročka nesouvisí s podnikáním); fond PTH uvádí, že spolupráce s ním skončila v září 2025 a investiční činnost to neovlivňuje. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-purple-ventures",
+    "nazev": "Purple Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Purple Ventures s.r.o.",
+      "ico": "05775574",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/05775574",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-01-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.purple-ventures.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.purple-ventures.com/",
+      "zdroj_url": "https://www.purple-ventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "tech-enabled",
+        "purpose-driven technology startups"
+      ],
+      "zdroj_url": "https://www.purple-ventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed"
+      ],
+      "zdroj_url": "https://www.purple-ventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 250000,
+      "max": 400000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.purple-ventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Comparables.ai",
+      "datum_investice": null,
+      "datum_oznameni": "2026-10-06",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "seed",
+        "zdroj_url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/"
+      },
+      "zdroje": [
+        {
+          "url": "https://tech.eu/2026/10/06/comparablesai-secures-6m-seed-to-scale-its-ai-platform-for-dealmakers/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Tech.eu",
+          "puvod": null,
+          "zdroj_datum": "2026-10-06",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/finove-pry-s-ai-behem-minut-najdou-byznysove-zajimave-firmy-ze-sveta-do-projektu-se-zapojuji-cesi/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2026-10-13",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.purple-ventures.com/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Vetstor",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-09",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/vedla-miliardovou-sit-zverimexu-po-rodicovske-hlida-zdravi-mazlicku-desitky-milionu-ted-ma-i-od-kijonkove/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2025-12-09",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.purple-ventures.com/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Talentiqa",
+        "datum_investice": null,
+        "datum_oznameni": "2025-09-29",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/prvni-kolo-pohovoru-dela-umela-inteligence-v-cezu-i-bageterii-boulevard-jeji-tvurci-ted-ziskali-25-milionu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2025-09-29",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web 'We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.', 'Minority equity stake'. Je členem skupiny Purple Holding (patička webu 'member of Purple Holding'), ale vystupuje jako samostatný VC fond; druhý fond je podle CzechCrunch (26. 3. 2024) otevřen externím investorům a skupina do něj dává 14 mil. EUR z cíle 40 mil. EUR, CzechCrunch 30. 1. 2025 uvádí 35 externích investorů. Proto VC, ne korporátní investor. Identita: ARES Purple Ventures s.r.o. (do 2017 Purple Holding s.r.o.), IČO 05775574, Masarykova 409/26, Brno; jednatelé Jakub Nytra a Jan Staněk (na webu General Partner a Managing General Partner), jediný společník Purple Holding a.s. (IČO 06528554). Web uvádí stejné IČO. Existuje i Purple Ventures Advisory s.r.o. (IČO 19836155, Masarykova 410/28, Brno, jednatel Jakub Nytra), jako investiční subjekt nepoužit. Ticket deklarovaný webem: '€250k to €400k' 'initial ticket size, later follow-ons'. Sektory: web 'early-stage purpose-driven technology startups with initial revenue and global ambitions', bez výčtu odvětví. Kapitál: web uvádí 'Fund II has raised over CZK 700 million' bez data (zmínka 'Strong 2025') a v podobě dolní hranice; Lupa (březen 2026) 'přes 780 milionů' ve fondu, cíl fondu II 40 mil. EUR. Přesná částka upsaného kapitálu ani datum nejsou uvedeny, cíl není kapitál, proto kapital prázdný. Fond I kolem 15 mil. EUR (CzechCrunch 26. 3. 2024) nezapisuji, protože médium neuvádí, zda jde o velikost fondu podle investora. Poslední investice: Comparables.ai (Finsko), seed 6 mil. USD (velikost celého kola), vedly Pragmatech a Araya Ventures, Tech.eu 6. 10. 2026: 'with participation from Purple Ventures'; Lupa.cz 13. 10. 2026: 'Český fond Purple Ventures se zapojil 10 miliony Kč' (vklad v tomto kole, není to deklarovaný ticket). Nástroj neprima_indicie (seed). Lupa.cz cituje Jana Staňka a fotografii má od Purple Ventures, pravděpodobně vychází z podkladů fondu; nezávislost na zdroji Tech.eu nedoložena, a protože žádná investice nemá dolozeno, jistota investice stredni. Další: Vetstor, kolo 1 mil. EUR (velikost kola), CzechCrunch 9. 12. 2025: Zaka VC a Purple Ventures 'se účastní i aktuálního kola', kolo neoznačeno, nástroj nezjištěn; Talentiqa, 25 mil. Kč (velikost kola), CzechCrunch 29. 9. 2025, kolo neoznačeno, nástroj nezjištěn. funding.tech.eu (profil 'Purple Ventures', aliasy 'Purple') obsahuje i řadu francouzských firem (Woodoo, Bonx, Zealy, Lupin & Holmes); může jít o sloučení s jiným investorem 'Purple', proto profil nepoužívám jako doklad. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   }
 ]

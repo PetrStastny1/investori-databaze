@@ -1,0 +1,157 @@
+{
+  "id": "DD532345-1095-4564-A54B-ACF7264961F2",
+  "url": "https://funding.tech.eu/companies/DD532345-1095-4564-A54B-ACF7264961F2",
+  "name": "Turtle Club",
+  "description": "Switzerland-based on-chain liquidity distribution protocol provider",
+  "website": "https://www.turtle.xyz/",
+  "country": "Switzerland",
+  "city": "Zurich",
+  "founded": null,
+  "sectors": [
+    "Fintech"
+  ],
+  "totalEur": 10304640,
+  "roundsCount": 2,
+  "rounds": [
+    {
+      "id": "1ED59713-5B53-426D-BC83-72B5E43413D3",
+      "url": "https://funding.tech.eu/deals/1ED59713-5B53-426D-BC83-72B5E43413D3",
+      "date": "2025-10-27T00:00:00.000Z",
+      "stage": "Other",
+      "amountEur": 4725086,
+      "investors": [
+        "Amber Group",
+        "Anchorage VC",
+        "Angel Investors",
+        "Bitscale VC",
+        "CoinIX",
+        "FalconX",
+        "Fasanara Capital",
+        "Flowdesk",
+        "Gami Capital",
+        "GSR",
+        "JPEG",
+        "NRD",
+        "Reflexive Capital",
+        "Relayer",
+        "SNZ HOLDING",
+        "THEIA",
+        "Tower 18 Capital",
+        "Trident Digital",
+        "Varys Capital",
+        "Wise3",
+        "Wise3 Ventures"
+      ]
+    },
+    {
+      "id": "E4162EEF-3DA1-4E8A-86CD-425562CEBCBB",
+      "url": "https://funding.tech.eu/deals/E4162EEF-3DA1-4E8A-86CD-425562CEBCBB",
+      "date": "2025-05-13T00:00:00.000Z",
+      "stage": "Seed",
+      "amountEur": 5579554,
+      "investors": [
+        "Archimed Capital",
+        "AUROS Global",
+        "Bodhi Ventures",
+        "Chorus One",
+        "ConsenSys",
+        "Frachtis",
+        "Joseph Lubin",
+        "L2IV",
+        "Laser Digital",
+        "Moonhill Capital",
+        "Re7 Capital",
+        "Ryan Fang",
+        "Selini",
+        "Shorewoods",
+        "Susquehanna (SIG)",
+        "THEIA",
+        "Trident Digital",
+        "Triton Liquid",
+        "Tulipa Capital",
+        "Yoann Turpin"
+      ]
+    }
+  ],
+  "investors": [
+    "Amber Group",
+    "Anchorage VC",
+    "Angel Investors",
+    "Archimed Capital",
+    "AUROS Global",
+    "Bitscale VC",
+    "Bodhi Ventures",
+    "Chorus One",
+    "CoinIX",
+    "ConsenSys",
+    "FalconX",
+    "Fasanara Capital",
+    "Flowdesk",
+    "Frachtis",
+    "Gami Capital",
+    "GSR",
+    "Joseph Lubin",
+    "JPEG",
+    "L2IV",
+    "Laser Digital",
+    "Moonhill Capital",
+    "NRD",
+    "Re7 Capital",
+    "Reflexive Capital",
+    "Relayer",
+    "Ryan Fang",
+    "Selini",
+    "Shorewoods",
+    "SNZ HOLDING",
+    "Susquehanna (SIG)",
+    "THEIA",
+    "Tower 18 Capital",
+    "Trident Digital",
+    "Triton Liquid",
+    "Tulipa Capital",
+    "Varys Capital",
+    "Wise3",
+    "Wise3 Ventures",
+    "Yoann Turpin"
+  ],
+  "founders": [],
+  "exit": null,
+  "signals": {
+    "raiseNext": {
+      "base": 30,
+      "score": 34,
+      "factors": [
+        {
+          "label": "In typical raise window",
+          "effect": "up"
+        },
+        {
+          "label": "Down/flat last round",
+          "effect": "down"
+        },
+        {
+          "label": "Low backer re-investment",
+          "effect": "down"
+        }
+      ]
+    },
+    "exit": {
+      "base": 11,
+      "score": 14,
+      "factors": [
+        {
+          "label": "Young (<3y)",
+          "effect": "down"
+        },
+        {
+          "label": "Recent equity round, but funding momentum is down (may be rescue financing)",
+          "effect": "up"
+        }
+      ]
+    },
+    "heat": 45,
+    "confidence": "high"
+  },
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

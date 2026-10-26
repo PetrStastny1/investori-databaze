@@ -1,0 +1,259 @@
+{
+  "name": "Moonhill Capital",
+  "url": "https://funding.tech.eu/investors/Moonhill%20Capital",
+  "aliases": [
+    "Moonhill Capital"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 4,
+  "companies": 3,
+  "activeYears": {
+    "first": 2024,
+    "last": 2026
+  },
+  "participatedRoundEur": 11246663,
+  "sectors": [
+    {
+      "name": "AI",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 2
+    },
+    {
+      "name": "Other",
+      "value": 1
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "UK",
+      "value": 2
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "Switzerland",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Turtle Club",
+      "url": "https://funding.tech.eu/companies/DD532345-1095-4564-A54B-ACF7264961F2",
+      "country": "Switzerland",
+      "rounds": 1,
+      "totalEur": 5579554
+    },
+    {
+      "company": "Assisterr",
+      "url": "https://funding.tech.eu/companies/AE15C99E-6277-4E95-A6DB-12B5011FD258",
+      "country": "UK",
+      "rounds": 2,
+      "totalEur": 3967109
+    },
+    {
+      "company": "Ekiden",
+      "url": "https://funding.tech.eu/companies/7172E198-2286-40D4-94BE-3630ABF569E3",
+      "country": "Portugal",
+      "rounds": 1,
+      "totalEur": 1700000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Turtle Club",
+      "companyUrl": "https://funding.tech.eu/companies/DD532345-1095-4564-A54B-ACF7264961F2",
+      "dealUrl": "https://funding.tech.eu/deals/E4162EEF-3DA1-4E8A-86CD-425562CEBCBB",
+      "stage": "Seed",
+      "amountEur": 5579554,
+      "date": "2025-05-13T00:00:00.000Z"
+    },
+    {
+      "company": "Assisterr",
+      "companyUrl": "https://funding.tech.eu/companies/AE15C99E-6277-4E95-A6DB-12B5011FD258",
+      "dealUrl": "https://funding.tech.eu/deals/ACA05385-56D4-4E27-911E-A2170C53E7A7",
+      "stage": "Other",
+      "amountEur": 2400000,
+      "date": "2025-05-30T00:00:00.000Z"
+    },
+    {
+      "company": "Ekiden",
+      "companyUrl": "https://funding.tech.eu/companies/7172E198-2286-40D4-94BE-3630ABF569E3",
+      "dealUrl": "https://funding.tech.eu/deals/65324102-F4D8-45DF-A686-D2280020A210",
+      "stage": "Seed",
+      "amountEur": 1700000,
+      "date": "2026-05-04T00:00:00.000Z"
+    },
+    {
+      "company": "Assisterr",
+      "companyUrl": "https://funding.tech.eu/companies/AE15C99E-6277-4E95-A6DB-12B5011FD258",
+      "dealUrl": "https://funding.tech.eu/deals/E7C667DC-355B-48C6-B8B9-89C26E109C33",
+      "stage": "Pre-Seed",
+      "amountEur": 1567109,
+      "date": "2024-07-24T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Outlier Ventures",
+      "url": "https://funding.tech.eu/investors/Outlier%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Web3.com Ventures",
+      "url": "https://funding.tech.eu/investors/Web3.com%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Aptos",
+      "url": "https://funding.tech.eu/investors/Aptos",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Archimed Capital",
+      "url": "https://funding.tech.eu/investors/Archimed%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "AUROS Global",
+      "url": "https://funding.tech.eu/investors/AUROS%20Global",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bodhi Ventures",
+      "url": "https://funding.tech.eu/investors/Bodhi%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Chorus One",
+      "url": "https://funding.tech.eu/investors/Chorus%20One",
+      "sharedRounds": 1
+    },
+    {
+      "name": "ConsenSys",
+      "url": "https://funding.tech.eu/investors/ConsenSys",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Contango",
+      "url": "https://funding.tech.eu/investors/Contango",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Curiosity VC",
+      "url": "https://funding.tech.eu/investors/Curiosity%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Echo.xyz",
+      "url": "https://funding.tech.eu/investors/Echo.xyz",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Flowdesk",
+      "url": "https://funding.tech.eu/investors/Flowdesk",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Frachtis",
+      "url": "https://funding.tech.eu/investors/Frachtis",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Google for Startups",
+      "url": "https://funding.tech.eu/investors/Google%20for%20Startups",
+      "sharedRounds": 1
+    },
+    {
+      "name": "GSR",
+      "url": "https://funding.tech.eu/investors/GSR",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Hardcore Labs",
+      "url": "https://funding.tech.eu/investors/Hardcore%20Labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Joseph Lubin",
+      "url": "https://funding.tech.eu/investors/Joseph%20Lubin",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Keyrock",
+      "url": "https://funding.tech.eu/investors/Keyrock",
+      "sharedRounds": 1
+    },
+    {
+      "name": "L2IV",
+      "url": "https://funding.tech.eu/investors/L2IV",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Laser Digital",
+      "url": "https://funding.tech.eu/investors/Laser%20Digital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Monolith",
+      "url": "https://funding.tech.eu/investors/Monolith",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Pyth",
+      "url": "https://funding.tech.eu/investors/Pyth",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Re7 Capital",
+      "url": "https://funding.tech.eu/investors/Re7%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Ryan Fang",
+      "url": "https://funding.tech.eu/investors/Ryan%20Fang",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Selini",
+      "url": "https://funding.tech.eu/investors/Selini",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

@@ -1,0 +1,237 @@
+{
+  "name": "McWin Capital Partners",
+  "url": "https://funding.tech.eu/investors/McWin%20Capital%20Partners",
+  "aliases": [
+    "McWin",
+    "McWin Capital Partners"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 4,
+  "companies": 4,
+  "activeYears": {
+    "first": 2021,
+    "last": 2026
+  },
+  "participatedRoundEur": 186283255,
+  "sectors": [
+    {
+      "name": "Agritech",
+      "value": 1
+    },
+    {
+      "name": "Cleantech",
+      "value": 1
+    },
+    {
+      "name": "E-commerce",
+      "value": 1
+    },
+    {
+      "name": "Energy",
+      "value": 1
+    },
+    {
+      "name": "Transportation",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Series B",
+      "value": 2
+    },
+    {
+      "name": "Series A",
+      "value": 1
+    },
+    {
+      "name": "Series D+",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "France",
+      "value": 1
+    },
+    {
+      "name": "Ireland",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    },
+    {
+      "name": "Switzerland",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2021,
+      "n": 1
+    },
+    {
+      "y": 2022,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 1
+    },
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "ecoRobotix",
+      "url": "https://funding.tech.eu/companies/4BBB54F5-9E88-4C9B-AF33-420881FA5F41",
+      "country": "Switzerland",
+      "rounds": 1,
+      "totalEur": 90759789
+    },
+    {
+      "company": "EasyMile",
+      "url": "https://funding.tech.eu/companies/768FF780-8026-4B20-B5E8-9AFAF8E94E52",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 54681027
+    },
+    {
+      "company": "Exergyn",
+      "url": "https://funding.tech.eu/companies/ADD34CDC-0338-49F3-BFDC-1AA7F11F5BB5",
+      "country": "Ireland",
+      "rounds": 1,
+      "totalEur": 30842439
+    },
+    {
+      "company": "Incapto Coffee",
+      "url": "https://funding.tech.eu/companies/B6F98745-DB33-440E-B382-65B734AFA0FE",
+      "country": "Spain",
+      "rounds": 1,
+      "totalEur": 10000000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "ecoRobotix",
+      "companyUrl": "https://funding.tech.eu/companies/4BBB54F5-9E88-4C9B-AF33-420881FA5F41",
+      "dealUrl": "https://funding.tech.eu/deals/B3C272F7-6591-4BD4-9729-517B56A3E40E",
+      "stage": "Series D+",
+      "amountEur": 90759789,
+      "date": "2025-10-13T00:00:00.000Z"
+    },
+    {
+      "company": "EasyMile",
+      "companyUrl": "https://funding.tech.eu/companies/768FF780-8026-4B20-B5E8-9AFAF8E94E52",
+      "dealUrl": "https://funding.tech.eu/deals/31D38B95-4955-400E-A727-9476F05A2FD3",
+      "stage": "Series B",
+      "amountEur": 54681027,
+      "date": "2021-04-28T00:00:00.000Z"
+    },
+    {
+      "company": "Exergyn",
+      "companyUrl": "https://funding.tech.eu/companies/ADD34CDC-0338-49F3-BFDC-1AA7F11F5BB5",
+      "dealUrl": "https://funding.tech.eu/deals/BACCC0FB-FA25-48B6-B2EE-7829214C06FE",
+      "stage": "Series A",
+      "amountEur": 30842439,
+      "date": "2022-01-21T00:00:00.000Z"
+    },
+    {
+      "company": "Incapto Coffee",
+      "companyUrl": "https://funding.tech.eu/companies/B6F98745-DB33-440E-B382-65B734AFA0FE",
+      "dealUrl": "https://funding.tech.eu/deals/C061BB49-4A4C-4505-9D16-3F8767E7609B",
+      "stage": "Series B",
+      "amountEur": 10000000,
+      "date": "2026-04-23T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "A3 Media",
+      "url": "https://funding.tech.eu/investors/A3%20Media",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Alstom",
+      "url": "https://funding.tech.eu/investors/Alstom",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Banc Sabadell",
+      "url": "https://funding.tech.eu/investors/Banc%20Sabadell",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bpifrance",
+      "url": "https://funding.tech.eu/investors/Bpifrance",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Cardumen Capital",
+      "url": "https://funding.tech.eu/investors/Cardumen%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Continental",
+      "url": "https://funding.tech.eu/investors/Continental",
+      "sharedRounds": 1
+    },
+    {
+      "name": "European Circular Bioeconomy Fund (ECBF)",
+      "url": "https://funding.tech.eu/investors/European%20Circular%20Bioeconomy%20Fund%20(ECBF)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Highland Europe",
+      "url": "https://funding.tech.eu/investors/Highland%20Europe",
+      "sharedRounds": 1
+    },
+    {
+      "name": "JME Ventures",
+      "url": "https://funding.tech.eu/investors/JME%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lacerta Partners",
+      "url": "https://funding.tech.eu/investors/Lacerta%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lever VC",
+      "url": "https://funding.tech.eu/investors/Lever%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Mercuria",
+      "url": "https://funding.tech.eu/investors/Mercuria",
+      "sharedRounds": 1
+    },
+    {
+      "name": "NextStage AM",
+      "url": "https://funding.tech.eu/investors/NextStage%20AM",
+      "sharedRounds": 1
+    },
+    {
+      "name": "P101",
+      "url": "https://funding.tech.eu/investors/P101",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Searchlight Capital Partners",
+      "url": "https://funding.tech.eu/investors/Searchlight%20Capital%20Partners",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

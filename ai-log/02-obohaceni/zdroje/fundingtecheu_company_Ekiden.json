@@ -1,0 +1,71 @@
+{
+  "id": "7172E198-2286-40D4-94BE-3630ABF569E3",
+  "url": "https://funding.tech.eu/companies/7172E198-2286-40D4-94BE-3630ABF569E3",
+  "name": "Ekiden",
+  "description": "Lisbon-based startup building blockchain-based trading infrastructure for professional and institutional users",
+  "website": "https://ekiden.fi/",
+  "country": "Portugal",
+  "city": "Lisbon",
+  "founded": null,
+  "sectors": [
+    "Fintech"
+  ],
+  "totalEur": 1700000,
+  "roundsCount": 1,
+  "rounds": [
+    {
+      "id": "65324102-F4D8-45DF-A686-D2280020A210",
+      "url": "https://funding.tech.eu/deals/65324102-F4D8-45DF-A686-D2280020A210",
+      "date": "2026-05-04T00:00:00.000Z",
+      "stage": "Seed",
+      "amountEur": 1700000,
+      "investors": [
+        "Angel Investors",
+        "Aptos",
+        "Curiosity Capital",
+        "Flowdesk",
+        "GSR",
+        "Hardcore Labs",
+        "Keyrock",
+        "Monolith",
+        "Moonhill Capital",
+        "Pyth"
+      ]
+    }
+  ],
+  "investors": [
+    "Angel Investors",
+    "Aptos",
+    "Curiosity Capital",
+    "Flowdesk",
+    "GSR",
+    "Hardcore Labs",
+    "Keyrock",
+    "Monolith",
+    "Moonhill Capital",
+    "Pyth"
+  ],
+  "founders": [],
+  "exit": null,
+  "signals": {
+    "raiseNext": {
+      "base": 44,
+      "score": 37,
+      "factors": [
+        {
+          "label": "Raised very recently",
+          "effect": "down"
+        },
+        {
+          "label": "Low backer re-investment",
+          "effect": "down"
+        }
+      ]
+    },
+    "exit": null,
+    "heat": 56,
+    "confidence": "high"
+  },
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

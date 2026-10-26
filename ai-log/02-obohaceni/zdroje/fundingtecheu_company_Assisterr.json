@@ -1,0 +1,96 @@
+{
+  "id": "AE15C99E-6277-4E95-A6DB-12B5011FD258",
+  "url": "https://funding.tech.eu/companies/AE15C99E-6277-4E95-A6DB-12B5011FD258",
+  "name": "Assisterr",
+  "description": "The Assisterr platform helps users build their own niche AI models",
+  "website": "https://www.assisterr.ai/",
+  "country": "UK",
+  "city": "London",
+  "founded": null,
+  "sectors": [
+    "AI"
+  ],
+  "totalEur": 3967109,
+  "roundsCount": 2,
+  "rounds": [
+    {
+      "id": "ACA05385-56D4-4E27-911E-A2170C53E7A7",
+      "url": "https://funding.tech.eu/deals/ACA05385-56D4-4E27-911E-A2170C53E7A7",
+      "date": "2025-05-30T00:00:00.000Z",
+      "stage": "Other",
+      "amountEur": 2400000,
+      "investors": [
+        "Echo.xyz",
+        "Google for Startups",
+        "Moonhill Capital",
+        "Other investors",
+        "Outlier Ventures",
+        "Web3.com Ventures"
+      ]
+    },
+    {
+      "id": "E7C667DC-355B-48C6-B8B9-89C26E109C33",
+      "url": "https://funding.tech.eu/deals/E7C667DC-355B-48C6-B8B9-89C26E109C33",
+      "date": "2024-07-24T00:00:00.000Z",
+      "stage": "Pre-Seed",
+      "amountEur": 1567109,
+      "investors": [
+        "Angel Investors",
+        "Contango",
+        "Moonhill Capital",
+        "Outlier Ventures",
+        "Web3.com Ventures"
+      ]
+    }
+  ],
+  "investors": [
+    "Angel Investors",
+    "Contango",
+    "Echo.xyz",
+    "Google for Startups",
+    "Moonhill Capital",
+    "Other investors",
+    "Outlier Ventures",
+    "Web3.com Ventures"
+  ],
+  "founders": [],
+  "exit": null,
+  "signals": {
+    "raiseNext": {
+      "base": 30,
+      "score": 47,
+      "factors": [
+        {
+          "label": "In typical raise window",
+          "effect": "up"
+        },
+        {
+          "label": "Up-round momentum",
+          "effect": "up"
+        },
+        {
+          "label": "Low backer re-investment",
+          "effect": "down"
+        }
+      ]
+    },
+    "exit": {
+      "base": 11,
+      "score": 12,
+      "factors": [
+        {
+          "label": "Young (<3y)",
+          "effect": "down"
+        },
+        {
+          "label": "Recently backed by strong-exit-track investors",
+          "effect": "up"
+        }
+      ]
+    },
+    "heat": 44,
+    "confidence": "high"
+  },
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

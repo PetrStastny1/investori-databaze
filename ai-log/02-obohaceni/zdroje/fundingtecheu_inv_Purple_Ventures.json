@@ -1,0 +1,536 @@
+{
+  "name": "Purple Ventures",
+  "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+  "aliases": [
+    "Purple",
+    "Purple Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 30,
+  "companies": 27,
+  "activeYears": {
+    "first": 2022,
+    "last": 2026
+  },
+  "participatedRoundEur": 94807315,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 11
+    },
+    {
+      "name": "Healthtech",
+      "value": 4
+    },
+    {
+      "name": "Fintech",
+      "value": 3
+    },
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Energy",
+      "value": 2
+    },
+    {
+      "name": "HRtech",
+      "value": 2
+    },
+    {
+      "name": "Edtech",
+      "value": 1
+    },
+    {
+      "name": "Transportation",
+      "value": 1
+    },
+    {
+      "name": "Robotics",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 17
+    },
+    {
+      "name": "Seed",
+      "value": 7
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 5
+    },
+    {
+      "name": "Growth/Late",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 12
+    },
+    {
+      "name": "France",
+      "value": 10
+    },
+    {
+      "name": "UK",
+      "value": 4
+    },
+    {
+      "name": "Croatia",
+      "value": 1
+    },
+    {
+      "name": "Finland",
+      "value": 1
+    },
+    {
+      "name": "Ukraine",
+      "value": 1
+    },
+    {
+      "name": "Uzbekistan",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 6
+    },
+    {
+      "y": 2024,
+      "n": 5
+    },
+    {
+      "y": 2025,
+      "n": 12
+    },
+    {
+      "y": 2026,
+      "n": 5
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Woodoo",
+      "url": "https://funding.tech.eu/companies/1D86C59B-C2AA-4480-BCEA-8A22C5134050",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 28176695
+    },
+    {
+      "company": "Bonx",
+      "url": "https://funding.tech.eu/companies/C0B6C9A6-054D-4DF6-9EEC-DEA90842ED53",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 7337884
+    },
+    {
+      "company": "GRACE",
+      "url": "https://funding.tech.eu/companies/20B775EB-F928-45B4-85E7-FD8E3B550991",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 5900000
+    },
+    {
+      "company": "Comparables.ai",
+      "url": "https://funding.tech.eu/companies/94405ECB-B599-4B1F-890E-24854E2794CF",
+      "country": "Finland",
+      "rounds": 1,
+      "totalEur": 5324341
+    },
+    {
+      "company": "Lupin & Holmes",
+      "url": "https://funding.tech.eu/companies/81C54E54-13C4-41C5-BC7B-AFAA3D202A77",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 5203365
+    },
+    {
+      "company": "Asap.Work",
+      "url": "https://funding.tech.eu/companies/CA4D4075-D7B5-4164-8499-8B530F8E2372",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 5000000
+    },
+    {
+      "company": "Campiri",
+      "url": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 4640000
+    },
+    {
+      "company": "Autone",
+      "url": "https://funding.tech.eu/companies/F1C8EAAC-BD4A-496D-9E39-6EAA222D6441",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 4260153
+    },
+    {
+      "company": "Delta Green",
+      "url": "https://funding.tech.eu/companies/7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 4200000
+    },
+    {
+      "company": "Zealy",
+      "url": "https://funding.tech.eu/companies/4556AAF8-CEB7-466A-B625-BD03616702EC",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 3199269
+    },
+    {
+      "company": "Massive Dynamic",
+      "url": "https://funding.tech.eu/companies/FD9B2CEA-A8EE-4A8B-8543-C7A644889B33",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Hedepy",
+      "url": "https://funding.tech.eu/companies/4AC983C1-FDD2-4E78-87ED-D6EFC7255906",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 2950000
+    },
+    {
+      "company": "Rightcharge",
+      "url": "https://funding.tech.eu/companies/B94D90A0-4219-4EE5-8868-93175F504470",
+      "country": "UK",
+      "rounds": 2,
+      "totalEur": 2422009
+    },
+    {
+      "company": "Galink",
+      "url": "https://funding.tech.eu/companies/D4091EE0-A1C8-4283-B042-2C1EF93F11F8",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 1600000
+    },
+    {
+      "company": "Tulyp",
+      "url": "https://funding.tech.eu/companies/A314B7A1-B31D-4294-ACD3-D73A1784EB30",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "KARDI AI",
+      "url": "https://funding.tech.eu/companies/B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "TASS Vision",
+      "url": "https://funding.tech.eu/companies/A77AEBB3-CB32-4289-A018-4B8D0498BF36",
+      "country": "Uzbekistan",
+      "rounds": 1,
+      "totalEur": 1300000
+    },
+    {
+      "company": "Talentiqa",
+      "url": "https://funding.tech.eu/companies/1E41EC39-48C9-47F9-A358-22371BC67603",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Flae robotics",
+      "url": "https://funding.tech.eu/companies/9B5DC1C6-0267-4FD9-B637-644E4B544CDD",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "shaka",
+      "url": "https://funding.tech.eu/companies/0EFDD700-79EA-4ED3-A03D-03383D02E8F2",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 910167
+    },
+    {
+      "company": "Shiplog",
+      "url": "https://funding.tech.eu/companies/06146113-EAC3-4C7C-9E5D-36A8737A2624",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 868432
+    },
+    {
+      "company": "ArtMaster",
+      "url": "https://funding.tech.eu/companies/A8EB604B-0769-4705-A7A6-2130EDBBC778",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 800000
+    },
+    {
+      "company": "Clearly",
+      "url": "https://funding.tech.eu/companies/7587F7E2-E0D8-4041-9B4F-FB7788215FAF",
+      "country": "Ukraine",
+      "rounds": 1,
+      "totalEur": 760000
+    },
+    {
+      "company": "Buylo",
+      "url": "https://funding.tech.eu/companies/B9CA4727-1654-46F4-B2DC-8EE6BEDF06AF",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 640000
+    },
+    {
+      "company": "Ringil",
+      "url": "https://funding.tech.eu/companies/128196E8-BE59-43BB-94AA-58E22A59CA13",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 615000
+    },
+    {
+      "company": "Eterny",
+      "url": "https://funding.tech.eu/companies/8B6B2DF0-2784-4A30-9DE3-8987929D8FE9",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 400000
+    },
+    {
+      "company": "Bitreport",
+      "url": "https://funding.tech.eu/companies/0E4E80FE-633D-4481-AC1D-C7F1E2163660",
+      "country": "Croatia",
+      "rounds": 1,
+      "totalEur": 300000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Woodoo",
+      "companyUrl": "https://funding.tech.eu/companies/1D86C59B-C2AA-4480-BCEA-8A22C5134050",
+      "dealUrl": "https://funding.tech.eu/deals/6591F489-401F-40A0-A721-168161EF1B9D",
+      "stage": "Other",
+      "amountEur": 28176695,
+      "date": "2023-04-24T00:00:00.000Z"
+    },
+    {
+      "company": "Bonx",
+      "companyUrl": "https://funding.tech.eu/companies/C0B6C9A6-054D-4DF6-9EEC-DEA90842ED53",
+      "dealUrl": "https://funding.tech.eu/deals/9ED5AF54-4F4D-4D46-A958-C30D54A588C7",
+      "stage": "Seed",
+      "amountEur": 7337884,
+      "date": "2025-06-30T00:00:00.000Z"
+    },
+    {
+      "company": "GRACE",
+      "companyUrl": "https://funding.tech.eu/companies/20B775EB-F928-45B4-85E7-FD8E3B550991",
+      "dealUrl": "https://funding.tech.eu/deals/723D9C9D-50D3-475C-94F9-756962AAA848",
+      "stage": "Seed",
+      "amountEur": 5900000,
+      "date": "2025-04-03T00:00:00.000Z"
+    },
+    {
+      "company": "Lupin & Holmes",
+      "companyUrl": "https://funding.tech.eu/companies/81C54E54-13C4-41C5-BC7B-AFAA3D202A77",
+      "dealUrl": "https://funding.tech.eu/deals/56740A6B-67FA-4F40-97DA-F4B2A75C8CC4",
+      "stage": "Pre-Seed",
+      "amountEur": 5203365,
+      "date": "2026-03-17T00:00:00.000Z"
+    },
+    {
+      "company": "Asap.Work",
+      "companyUrl": "https://funding.tech.eu/companies/CA4D4075-D7B5-4164-8499-8B530F8E2372",
+      "dealUrl": "https://funding.tech.eu/deals/1D688000-A385-4538-958E-1FF3CEBB64D8",
+      "stage": "Other",
+      "amountEur": 5000000,
+      "date": "2023-04-20T00:00:00.000Z"
+    },
+    {
+      "company": "Campiri",
+      "companyUrl": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "dealUrl": "https://funding.tech.eu/deals/99F631D2-1936-4740-B58A-FC8B55B1A9E6",
+      "stage": "Other",
+      "amountEur": 4640000,
+      "date": "2022-05-11T00:00:00.000Z"
+    },
+    {
+      "company": "Autone",
+      "companyUrl": "https://funding.tech.eu/companies/F1C8EAAC-BD4A-496D-9E39-6EAA222D6441",
+      "dealUrl": "https://funding.tech.eu/deals/549714CC-7CD3-4EE3-9379-25FA84BD2555",
+      "stage": "Seed",
+      "amountEur": 4260153,
+      "date": "2023-10-06T00:00:00.000Z"
+    },
+    {
+      "company": "Zealy",
+      "companyUrl": "https://funding.tech.eu/companies/4556AAF8-CEB7-466A-B625-BD03616702EC",
+      "dealUrl": "https://funding.tech.eu/deals/F0B97336-1A0E-4AFF-A257-7173217591A9",
+      "stage": "Pre-Seed",
+      "amountEur": 3199269,
+      "date": "2023-04-05T00:00:00.000Z"
+    },
+    {
+      "company": "Massive Dynamic",
+      "companyUrl": "https://funding.tech.eu/companies/FD9B2CEA-A8EE-4A8B-8543-C7A644889B33",
+      "dealUrl": "https://funding.tech.eu/deals/3AEB50A6-E190-47AE-8371-A8630A1F052F",
+      "stage": "Pre-Seed",
+      "amountEur": 3000000,
+      "date": "2025-07-04T00:00:00.000Z"
+    },
+    {
+      "company": "Delta Green",
+      "companyUrl": "https://funding.tech.eu/companies/7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+      "dealUrl": "https://funding.tech.eu/deals/D8288F78-3C1E-4D5C-89CC-4F61DC237E5C",
+      "stage": "Other",
+      "amountEur": 2200000,
+      "date": "2024-05-27T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Kima Ventures",
+      "url": "https://funding.tech.eu/investors/Kima%20Ventures",
+      "sharedRounds": 10
+    },
+    {
+      "name": "Speedinvest",
+      "url": "https://funding.tech.eu/investors/Speedinvest",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Seedcamp",
+      "url": "https://funding.tech.eu/investors/Seedcamp",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Soulmates Ventures",
+      "url": "https://funding.tech.eu/investors/Soulmates%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Better Angle",
+      "url": "https://funding.tech.eu/investors/Better%20Angle",
+      "sharedRounds": 2
+    },
+    {
+      "name": "BlackWood",
+      "url": "https://funding.tech.eu/investors/BlackWood",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Credo Ventures",
+      "url": "https://funding.tech.eu/investors/Credo%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Founders Future",
+      "url": "https://funding.tech.eu/investors/Founders%20Future",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Garage Angels",
+      "url": "https://funding.tech.eu/investors/Garage%20Angels",
+      "sharedRounds": 2
+    },
+    {
+      "name": "N1",
+      "url": "https://funding.tech.eu/investors/N1",
+      "sharedRounds": 2
+    },
+    {
+      "name": "OPRTRS Club",
+      "url": "https://funding.tech.eu/investors/OPRTRS%20Club",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Pragmatech Ventures",
+      "url": "https://funding.tech.eu/investors/Pragmatech%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "RSJ Investments",
+      "url": "https://funding.tech.eu/investors/RSJ%20Investments",
+      "sharedRounds": 2
+    },
+    {
+      "name": "STATION F",
+      "url": "https://funding.tech.eu/investors/STATION%20F",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Tilia Impact Ventures",
+      "url": "https://funding.tech.eu/investors/Tilia%20Impact%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "100IN",
+      "url": "https://funding.tech.eu/investors/100IN",
+      "sharedRounds": 1
+    },
+    {
+      "name": "20VC",
+      "url": "https://funding.tech.eu/investors/20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "2100 Ventures",
+      "url": "https://funding.tech.eu/investors/2100%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "9900 Capital",
+      "url": "https://funding.tech.eu/investors/9900%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Aglaé Ventures",
+      "url": "https://funding.tech.eu/investors/Agla%C3%A9%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Ahror Abdukarimov",
+      "url": "https://funding.tech.eu/investors/Ahror%20Abdukarimov",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Antler",
+      "url": "https://funding.tech.eu/investors/Antler",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Araya Ventures",
+      "url": "https://funding.tech.eu/investors/Araya%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Auriga Cyber Ventures",
+      "url": "https://funding.tech.eu/investors/Auriga%20Cyber%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

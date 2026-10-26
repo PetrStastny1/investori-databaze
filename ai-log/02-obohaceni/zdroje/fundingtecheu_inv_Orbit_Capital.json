@@ -1,0 +1,374 @@
+{
+  "name": "Orbit Capital",
+  "url": "https://funding.tech.eu/investors/Orbit%20Capital",
+  "aliases": [
+    "Orbit Capital",
+    "Orbit Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 9,
+  "companies": 9,
+  "activeYears": {
+    "first": 2022,
+    "last": 2026
+  },
+  "participatedRoundEur": 293267935,
+  "sectors": [
+    {
+      "name": "Edtech",
+      "value": 2
+    },
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "Cloud",
+      "value": 1
+    },
+    {
+      "name": "E-commerce",
+      "value": 1
+    },
+    {
+      "name": "Hardware",
+      "value": 1
+    },
+    {
+      "name": "HRtech",
+      "value": 1
+    },
+    {
+      "name": "Healthtech",
+      "value": 1
+    },
+    {
+      "name": "Travel",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Debt",
+      "value": 2
+    },
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Series A",
+      "value": 2
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    },
+    {
+      "name": "Series B",
+      "value": 1
+    },
+    {
+      "name": "Series C",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Poland",
+      "value": 3
+    },
+    {
+      "name": "Netherlands",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    },
+    {
+      "name": "Türkiye",
+      "value": 1
+    },
+    {
+      "name": "Ukraine",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 1
+    },
+    {
+      "y": 2026,
+      "n": 4
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Mews",
+      "url": "https://funding.tech.eu/companies/C8BAA40D-48BF-49B6-8469-DC280C48A628",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 174183222
+    },
+    {
+      "company": "Preply",
+      "url": "https://funding.tech.eu/companies/6FC8AA76-1191-49B0-8121-8958AA423282",
+      "country": "Ukraine",
+      "rounds": 1,
+      "totalEur": 49667230
+    },
+    {
+      "company": "CloudTalk",
+      "url": "https://funding.tech.eu/companies/1249CADB-3A67-4456-B75B-70E77D04DC50",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 25742392
+    },
+    {
+      "company": "Jutro Medical",
+      "url": "https://funding.tech.eu/companies/87F13F06-5BE2-4ABA-8502-23355336094C",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 24000000
+    },
+    {
+      "company": "Convious",
+      "url": "https://funding.tech.eu/companies/C81DDA09-6055-4362-92B5-8FF2DD5CF434",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 8500000
+    },
+    {
+      "company": "Coding Giants",
+      "url": "https://funding.tech.eu/companies/46FC7C55-0376-4442-82CF-3884021D4A68",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 6000000
+    },
+    {
+      "company": "Sloneek",
+      "url": "https://funding.tech.eu/companies/A2FBEEAA-ED76-4302-AF2C-F3BB9BE75FEC",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 5175091
+    },
+    {
+      "company": "Cypien AI",
+      "url": "https://funding.tech.eu/companies/A792076A-2688-429F-9560-C3C27C0E45B9",
+      "country": "Türkiye",
+      "rounds": 1,
+      "totalEur": 0
+    },
+    {
+      "company": "Talkin' Things",
+      "url": "https://funding.tech.eu/companies/AE7C9D76-DB8A-46B2-8713-F0A090CEAC7C",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Mews",
+      "companyUrl": "https://funding.tech.eu/companies/C8BAA40D-48BF-49B6-8469-DC280C48A628",
+      "dealUrl": "https://funding.tech.eu/deals/4111D873-DEB4-4659-BDD5-296785228928",
+      "stage": "Other",
+      "amountEur": 174183222,
+      "date": "2022-12-15T00:00:00.000Z"
+    },
+    {
+      "company": "Preply",
+      "companyUrl": "https://funding.tech.eu/companies/6FC8AA76-1191-49B0-8121-8958AA423282",
+      "dealUrl": "https://funding.tech.eu/deals/10906121-061E-4109-931A-99FA2A50B7D7",
+      "stage": "Series C",
+      "amountEur": 49667230,
+      "date": "2022-07-13T00:00:00.000Z"
+    },
+    {
+      "company": "CloudTalk",
+      "companyUrl": "https://funding.tech.eu/companies/1249CADB-3A67-4456-B75B-70E77D04DC50",
+      "dealUrl": "https://funding.tech.eu/deals/6ED084BF-6D1A-4CEB-9C5B-665AD9808436",
+      "stage": "Series B",
+      "amountEur": 25742392,
+      "date": "2024-01-17T00:00:00.000Z"
+    },
+    {
+      "company": "Jutro Medical",
+      "companyUrl": "https://funding.tech.eu/companies/87F13F06-5BE2-4ABA-8502-23355336094C",
+      "dealUrl": "https://funding.tech.eu/deals/D0B68958-5029-47C7-AB62-203644F398F9",
+      "stage": "Series A",
+      "amountEur": 24000000,
+      "date": "2025-12-16T00:00:00.000Z"
+    },
+    {
+      "company": "Convious",
+      "companyUrl": "https://funding.tech.eu/companies/C81DDA09-6055-4362-92B5-8FF2DD5CF434",
+      "dealUrl": "https://funding.tech.eu/deals/268125D6-CC78-4FC5-A741-C33EBAF20B19",
+      "stage": "Series A",
+      "amountEur": 8500000,
+      "date": "2023-10-13T00:00:00.000Z"
+    },
+    {
+      "company": "Sloneek",
+      "companyUrl": "https://funding.tech.eu/companies/A2FBEEAA-ED76-4302-AF2C-F3BB9BE75FEC",
+      "dealUrl": "https://funding.tech.eu/deals/42B67173-7451-4FF2-8E0A-8A05A54310CF",
+      "stage": "Other",
+      "amountEur": 5175091,
+      "date": "2026-06-16T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "HENQ Invest",
+      "url": "https://funding.tech.eu/investors/HENQ%20Invest",
+      "sharedRounds": 2
+    },
+    {
+      "name": "AJI Capital",
+      "url": "https://funding.tech.eu/investors/AJI%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Aternus",
+      "url": "https://funding.tech.eu/investors/Aternus",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Battery Ventures",
+      "url": "https://funding.tech.eu/investors/Battery%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Derive Ventures",
+      "url": "https://funding.tech.eu/investors/Derive%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Diligent Capital",
+      "url": "https://funding.tech.eu/investors/Diligent%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Educapital",
+      "url": "https://funding.tech.eu/investors/Educapital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Evli Growth Partners",
+      "url": "https://funding.tech.eu/investors/Evli%20Growth%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fluent Ventures",
+      "url": "https://funding.tech.eu/investors/Fluent%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Goldman Sachs Growth Equity",
+      "url": "https://funding.tech.eu/investors/Goldman%20Sachs%20Growth%20Equity",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Hoxton Ventures",
+      "url": "https://funding.tech.eu/investors/Hoxton%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Inovo VC",
+      "url": "https://funding.tech.eu/investors/Inovo%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "KAYA VC",
+      "url": "https://funding.tech.eu/investors/KAYA%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Kinnevik",
+      "url": "https://funding.tech.eu/investors/Kinnevik",
+      "sharedRounds": 1
+    },
+    {
+      "name": "KPN Ventures",
+      "url": "https://funding.tech.eu/investors/KPN%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lead Ventures",
+      "url": "https://funding.tech.eu/investors/Lead%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "mBank",
+      "url": "https://funding.tech.eu/investors/mBank",
+      "sharedRounds": 1
+    },
+    {
+      "name": "NaturalX Health Ventures",
+      "url": "https://funding.tech.eu/investors/NaturalX%20Health%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Notion Capital",
+      "url": "https://funding.tech.eu/investors/Notion%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Owl Ventures",
+      "url": "https://funding.tech.eu/investors/Owl%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Point Nine Capital",
+      "url": "https://funding.tech.eu/investors/Point%20Nine%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Presto Ventures",
+      "url": "https://funding.tech.eu/investors/Presto%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Przemyslaw Gacek",
+      "url": "https://funding.tech.eu/investors/Przemyslaw%20Gacek",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Revaia",
+      "url": "https://funding.tech.eu/investors/Revaia",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Salesforce Ventures",
+      "url": "https://funding.tech.eu/investors/Salesforce%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

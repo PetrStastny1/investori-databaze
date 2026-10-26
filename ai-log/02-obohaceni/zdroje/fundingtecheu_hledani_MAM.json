@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "name": "Mamacrowd",
+      "url": "https://funding.tech.eu/investors/Mamacrowd",
+      "type": "Crowdfunding",
+      "deals": 9,
+      "companies": 9,
+      "topSector": "Foodtech",
+      "activeYears": {
+        "first": 2021,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Ibrahim Imam",
+      "url": "https://funding.tech.eu/investors/Ibrahim%20Imam",
+      "type": "Angel",
+      "deals": 4,
+      "companies": 4,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2022,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Mamadoo Ventures",
+      "url": "https://funding.tech.eu/investors/Mamadoo%20Ventures",
+      "type": "Corporate",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2016,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Mamba Ventures",
+      "url": "https://funding.tech.eu/investors/Mamba%20Ventures",
+      "type": "Venture capital",
+      "deals": 3,
+      "companies": 3,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2025,
+        "last": 2026
+      }
+    },
+    {
+      "name": "Humam Sakhnini",
+      "url": "https://funding.tech.eu/investors/Humam%20Sakhnini",
+      "type": "Angel",
+      "deals": 2,
+      "companies": 1,
+      "topSector": "Gaming",
+      "activeYears": {
+        "first": 2024,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Aadil Mamujee",
+      "url": "https://funding.tech.eu/investors/Aadil%20Mamujee",
+      "type": "Angel",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2021,
+        "last": 2021
+      }
+    },
+    {
+      "name": "Alan Mamedi",
+      "url": "https://funding.tech.eu/investors/Alan%20Mamedi",
+      "type": null,
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Marketing",
+      "activeYears": {
+        "first": 2017,
+        "last": 2017
+      }
+    },
+    {
+      "name": "Cihat İmamoğlu",
+      "url": "https://funding.tech.eu/investors/Cihat%20%C4%B0mamo%C4%9Flu",
+      "type": "Angel",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2025,
+        "last": 2025
+      }
+    },
+    {
+      "name": "Firmament Ventures",
+      "url": "https://funding.tech.eu/investors/Firmament%20Ventures",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Telecom",
+      "activeYears": {
+        "first": 2021,
+        "last": 2021
+      }
+    },
+    {
+      "name": "Hamamatsu Ventures",
+      "url": "https://funding.tech.eu/investors/Hamamatsu%20Ventures",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Deeptech",
+      "activeYears": {
+        "first": 2024,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Hamamatsu Photonics",
+      "url": "https://funding.tech.eu/investors/Hamamatsu%20Photonics",
+      "type": "Corporate",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Healthtech",
+      "activeYears": {
+        "first": 2023,
+        "last": 2023
+      }
+    },
+    {
+      "name": "Hamamatsu Photonics Corporate Venture Capital Co.",
+      "url": "https://funding.tech.eu/investors/Hamamatsu%20Photonics%20Corporate%20Venture%20Capital%20Co.",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Deeptech",
+      "activeYears": {
+        "first": 2024,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Mandatum Asset Management Growth Equity II fund (MAM GE)",
+      "url": "https://funding.tech.eu/investors/Mandatum%20Asset%20Management%20Growth%20Equity%20II%20fund%20(MAM%20GE)",
+      "type": "Investment firm",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2023,
+        "last": 2023
+      }
+    }
+  ],
+  "page": 1,
+  "totalPages": 1,
+  "total": 13,
+  "count": 13,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

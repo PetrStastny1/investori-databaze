@@ -1,0 +1,273 @@
+{
+  "name": "Miton",
+  "url": "https://funding.tech.eu/investors/Miton",
+  "aliases": [
+    "Miton"
+  ],
+  "types": [
+    "Corporate"
+  ],
+  "deals": 8,
+  "companies": 8,
+  "activeYears": {
+    "first": 2021,
+    "last": 2025
+  },
+  "participatedRoundEur": 100352980,
+  "sectors": [
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    },
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "Travel",
+      "value": 1
+    },
+    {
+      "name": "Deeptech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 5
+    },
+    {
+      "name": "Series A",
+      "value": 2
+    },
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 7
+    },
+    {
+      "name": "UK",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2021,
+      "n": 1
+    },
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 4
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Rossum",
+      "url": "https://funding.tech.eu/companies/2DE4E9E3-A8EE-45CF-A0BD-351C25FEADB7",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 85932801
+    },
+    {
+      "company": "Campiri",
+      "url": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 4640000
+    },
+    {
+      "company": "Bookbot",
+      "url": "https://funding.tech.eu/companies/71CFBF1B-351C-4565-8CC0-E3DC451C8A19",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 4000000
+    },
+    {
+      "company": "Sense Arena",
+      "url": "https://funding.tech.eu/companies/C056C5E1-084A-4DAF-AF4E-D6BB3A95D701",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2836343
+    },
+    {
+      "company": "Firefish",
+      "url": "https://funding.tech.eu/companies/A3C89A55-D1EB-43D0-B297-994BBA4B3E09",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1643836
+    },
+    {
+      "company": "DeepScout",
+      "url": "https://funding.tech.eu/companies/C33A08E7-5F06-48DE-8284-F22E5227D466",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 600000
+    },
+    {
+      "company": "Bandits",
+      "url": "https://funding.tech.eu/companies/7FC7327D-2366-4440-A02D-5F6EDE26A35D",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 400000
+    },
+    {
+      "company": "Aim",
+      "url": "https://funding.tech.eu/companies/FB8AD892-B226-4884-A183-DF5738FB9B34",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 300000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Rossum",
+      "companyUrl": "https://funding.tech.eu/companies/2DE4E9E3-A8EE-45CF-A0BD-351C25FEADB7",
+      "dealUrl": "https://funding.tech.eu/deals/F6119971-C58A-4961-AFDA-39B38B4BAF17",
+      "stage": "Series A",
+      "amountEur": 85932801,
+      "date": "2021-10-21T00:00:00.000Z"
+    },
+    {
+      "company": "Campiri",
+      "companyUrl": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "dealUrl": "https://funding.tech.eu/deals/99F631D2-1936-4740-B58A-FC8B55B1A9E6",
+      "stage": "Other",
+      "amountEur": 4640000,
+      "date": "2022-05-11T00:00:00.000Z"
+    },
+    {
+      "company": "Bookbot",
+      "companyUrl": "https://funding.tech.eu/companies/71CFBF1B-351C-4565-8CC0-E3DC451C8A19",
+      "dealUrl": "https://funding.tech.eu/deals/C658E736-9A8D-4CAA-BFFC-4770F4A8509C",
+      "stage": "Series A",
+      "amountEur": 4000000,
+      "date": "2024-08-20T00:00:00.000Z"
+    },
+    {
+      "company": "Sense Arena",
+      "companyUrl": "https://funding.tech.eu/companies/C056C5E1-084A-4DAF-AF4E-D6BB3A95D701",
+      "dealUrl": "https://funding.tech.eu/deals/1AE16F96-36A4-42F4-BFD9-E12557243BCD",
+      "stage": "Other",
+      "amountEur": 2836343,
+      "date": "2022-05-20T00:00:00.000Z"
+    },
+    {
+      "company": "Firefish",
+      "companyUrl": "https://funding.tech.eu/companies/A3C89A55-D1EB-43D0-B297-994BBA4B3E09",
+      "dealUrl": "https://funding.tech.eu/deals/548E6398-1BC7-40AE-A604-4D8A411EF746",
+      "stage": "Seed",
+      "amountEur": 1643836,
+      "date": "2025-04-08T00:00:00.000Z"
+    },
+    {
+      "company": "DeepScout",
+      "companyUrl": "https://funding.tech.eu/companies/C33A08E7-5F06-48DE-8284-F22E5227D466",
+      "dealUrl": "https://funding.tech.eu/deals/41BD266A-9363-49FB-839E-279C66946A55",
+      "stage": "Other",
+      "amountEur": 600000,
+      "date": "2025-03-06T00:00:00.000Z"
+    },
+    {
+      "company": "Bandits",
+      "companyUrl": "https://funding.tech.eu/companies/7FC7327D-2366-4440-A02D-5F6EDE26A35D",
+      "dealUrl": "https://funding.tech.eu/deals/9E7861D5-D9DC-4F5A-8A5E-018E2231C7EA",
+      "stage": "Other",
+      "amountEur": 400000,
+      "date": "2025-11-21T00:00:00.000Z"
+    },
+    {
+      "company": "Aim",
+      "companyUrl": "https://funding.tech.eu/companies/FB8AD892-B226-4884-A183-DF5738FB9B34",
+      "dealUrl": "https://funding.tech.eu/deals/67B31408-5D6E-404B-B851-95AE92856A90",
+      "stage": "Other",
+      "amountEur": 300000,
+      "date": "2025-07-15T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Braiins",
+      "url": "https://funding.tech.eu/investors/Braiins",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Elad Gil",
+      "url": "https://funding.tech.eu/investors/Elad%20Gil",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Eva Janečková",
+      "url": "https://funding.tech.eu/investors/Eva%20Jane%C4%8Dkov%C3%A1",
+      "sharedRounds": 1
+    },
+    {
+      "name": "General Catalyst",
+      "url": "https://funding.tech.eu/investors/General%20Catalyst",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Genesis Growth Equity Fund I",
+      "url": "https://funding.tech.eu/investors/Genesis%20Growth%20Equity%20Fund%20I",
+      "sharedRounds": 1
+    },
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "LocalGlobe",
+      "url": "https://funding.tech.eu/investors/LocalGlobe",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Olda Bajer",
+      "url": "https://funding.tech.eu/investors/Olda%20Bajer",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Rockaway Ventures",
+      "url": "https://funding.tech.eu/investors/Rockaway%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Seedcamp",
+      "url": "https://funding.tech.eu/investors/Seedcamp",
+      "sharedRounds": 1
+    },
+    {
+      "name": "SYNER",
+      "url": "https://funding.tech.eu/investors/SYNER",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

@@ -18,11 +18,11 @@ Pravidlo: jedna investiční firma (správce, značka) = jeden záznam (PLAN.md 
 
 **Rozhodnutí:** různé firmy. Nesloučeno. Zpracován jen cz-ii-biotech-investments (zařazen jako VC). i&i Prague zpracuje jiná dávka.
 
-## Důvod
+### Důvod
 
 i&i Biotech Fund (značka i&i Bio) má vlastní investiční tým a poradce s jinými vlastníky a statutáry než i&i Prague. i&i Prague fond spoluzaložil a je jedním z jeho hlavních investorů (LP), fond ale nespravuje. Je to inkubátor a venture builder, který je ve 100% vlastnictví IOCB Tech s.r.o. Kromě sdílené značky „i&i“ a shodné adresy (Pobřežní 394/12, Praha 8) jsem nenašel společný tým ani společné řízení. Podle zadání shodná adresa ani vazba typu „založil“ samy nestačí.
 
-## Doklady
+### Doklady
 
 - **Biotech Investments s.r.o., IČO 10885978** (ARES: `ares_vr_10885978.json`)
   - Sídlo Pobřežní 394/12, Praha 8.
@@ -57,4 +57,50 @@ i&i Biotech Fund (značka i&i Bio) má vlastní investiční tým a poradce s ji
 **Soubory ARES:** `ares_hledani_iiBiotech.json`, `ares_hledani_iiPrague.json`, `ares_hledani_iiPrague_varianta_mezery.json`, `ares_hledani_BiotechInvestments.json`, `ares_hledani_iiBiotechFund.json`, `ares_hledani_BiotechFund.json`, `ares_vr_10885978.json`, `ares_vr_06058485.json`. Všechny jsou v `ai-log/02-obohaceni/zdroje/`.
 
 **Nejistota:** Formálního správce (AIFM/GP) lucemburského fondu jsem nedoložil. Kdyby jím byla entita ovládaná i&i Prague / IOCB Tech, bylo by vhodné rozhodnutí přezkoumat. Žádný nalezený zdroj to ale neuvádí.
+
+## Dvojice cz-n1-ventures / cz-nation1
+
+**Rozhodnutí:** tatáž investiční firma, sloučeno. Zpracován jeden záznam `cz-n1-ventures` (zarazen, VC, CZ) a `cz-nation1` zapsán jako `slouceno`, `slouceno_do` = `cz-n1-ventures`.
+
+### Důvod
+
+Nation 1 (Nation1) je původní název značky. V roce 2023 se přejmenovala na N1 (N1 Ventures, web n1.rocks). Jde o jeden investiční tým a značku, ne o dvě firmy ani o fond spravovaný druhou firmou. Kromě shodné adresy to dokládá:
+- veřejně oznámené přejmenování,
+- stejní managing partneři,
+- stejný kontakt,
+- společné portfolio,
+- general partneři fondů, kteří dodnes nesou název „Nation 1“.
+
+Za výsledné id volím `cz-n1-ventures`, protože je to současná značka.
+
+### Doklady
+
+- **https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/** (CzechCrunch, 18. 9. 2023)
+  - Titulek „Z Nation 1 je N1“, v textu „Přejmenovává se na N1“.
+  - Managing partneři jsou Marek Moravec a Jaroslav Trojan. Nově partneři Klára Kocarová a Ondřej Homola.
+- **https://n1.rocks/**
+  - Tým: Marek Moravec, Jaroslav Trojan, Klára Kocárová, Ondřej Homola (Partners).
+  - Kanceláře: „Prague: Národní 135/14, Prague 1“, dále San Francisco a Lucembursko.
+  - Portfolio mimo jiné Snuggs.
+- **https://n1.rocks/disclosure**
+  - „Nation 1 GP S.à r.l. and Nation 1 GP II S.à r.l.“ jsou general partneři fondů Nation 1 a Nation 1 VC fund II.
+- **https://cvca.cz/en/nation1-2/** (profil člena CVCA „Nation1“)
+  - Adresa „Národni 135/14, 110 00 Praha 1“, web www.nation1.vc.
+  - Kontakt „Jaroslav Trojan, Managing Partner, jaroslav@nation1.vc“.
+  - Portfolio v ČR „VRgineers, Snuggs, Buildiro“.
+- Web www.nation1.vc nešel načíst (WebFetch ECONNREFUSED, curl chyba 7). Doménu jsem proto nepřekládal, rozhodnutí stojí na zdrojích výše.
+
+### ARES
+
+- `ares_hledani_Nation1.json`: jediná shoda **Nation1 Investment s.r.o., IČO 09172807**. Výpis je v `ares_vr_09172807.json`.
+  - Sídlo Bělehradská 858/23, Praha 2.
+  - Jednatelé a společníci Jaroslav Ton a Petr Jiříček.
+  - S týmem N1 nijak nesouvisí, s žádným z kandidátů ho nespojuji.
+- Bez shody: `ares_hledani_N1Ventures.json`, `ares_hledani_Nation1_varianta_mezera.json` („Nation 1“) a `ares_hledani_N1Management.json`.
+- `ares_hledani_N1_varianta_sro.json`: 3 nesouvisející subjekty.
+- `ares_hledani_sidlo_Narodni_135_14.json` (hledání podle sídla): v budově sídlí desítky firem, žádná se jménem N1 ani Nation 1. Shodná adresa tedy sama nic nedokazuje.
+
+Všechny soubory jsou v `ai-log/02-obohaceni/zdroje/`. Funding.tech.eu: `fundingtecheu_inv_N1_Ventures.json` (Liki24), `fundingtecheu_inv_Nation1.json` (not found), `fundingtecheu_hledani_Nation.json`.
+
+**Nejistota:** Český právní subjekt investiční firmy jsem nenašel. Lucemburské GP znám jen z webu investora. Na rozhodnutí o sloučení to nemá vliv, týká se jen jistoty existence záznamu.
 
