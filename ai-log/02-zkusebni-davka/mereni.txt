@@ -1,0 +1,49 @@
+Krok 2, zkušební dávka: obohacení a zařazení prvních 5 kandidátů podle abecedy
+=============================================================================
+
+Kandidáti (data/kandidati.csv, řazeno podle sloupce nazev bez ohledu na velikost písmen):
+  cz-arx-equity-partners, cz-bd-partners, cz-borovicka-capital,
+  cz-botanique-hospitality, cz-braiins
+
+Výsledek (data/vystup_agenta/):
+  investori.json  2  BD Partners (VC, aktivni), Borovicka Capital (VC, investice_dolozena_12_24_mesicu)
+  vyrazeni.csv    3  ARX Equity Partners (mimo_rozsah_pilotu, PE),
+                     Botanique Hospitality (mimo_rozsah_pilotu, provozovatel hotelů),
+                     Braiins (mimo_rozsah_pilotu, provozní firma)
+  hranicni.csv    0
+
+Doplňková zkouška (6. kandidát označený zdroji jako VC/CVC): neproběhla.
+Podmínka „všech pět skončí mimo rozsah pilotu“ nenastala, dva kandidáti
+byli zařazeni.
+
+Čas zpracování (hodiny systému, `date -u`):
+  začátek  2026-10-26T14:56:41Z  (před čtením PLAN.md)
+  konec    2026-10-26T15:02:30Z  (po zápisu výstupu, před commitem)
+  To je zhruba 6 minut podle hodin systému. Nezahrnuje čas ručního hodnocení.
+
+Spotřeba:
+  Tokeny: agent nemá přístup k naměřené spotřebě tokenů ani ceně, proto je
+  neuvádím. Naměřenou hodnotu lze zjistit v Claude Code (/cost, /usage) nebo
+  v konzoli účtu.
+  Počet požadavků (spočteno z volání nástrojů v této konverzaci):
+    WebSearch                 9
+    WebFetch                 20  (1 neúspěšný: businessinfo.cz HTTP 403)
+    ARES REST API (curl)     11  (5 hledání podle názvu, 6 výpisů z VR)
+    funding.tech.eu API      11  (5 profilů investorů, 1 detail firmy,
+                                  4 neúspěšné pokusy o detail kola HTTP 404,
+                                  1 llms.txt)
+
+Zdroje v zdroje/:
+  ares_hledani_*.json        odpovědi ARES /ekonomicke-subjekty/vyhledat (hledání podle názvu)
+  ares_vr_<IČO>.json         odpovědi ARES /ekonomicke-subjekty-vr/<IČO> (veřejný rejstřík)
+  fundingtecheu_inv_*.json   odpovědi funding.tech.eu /api/v1/investors/<jméno>
+                             (Tech.eu Funding Explorer, CC BY 4.0)
+
+Poznámky k postupu:
+  - IČO ověřena v ARES (REST API ministerstva financí), justice.cz jsem
+    přímo neotevíral.
+  - API funding.tech.eu u kol uvádí jen doménu zdroje, ne URL zprávy, proto
+    ho jako doklad investice nepoužívám. Zprávy o transakcích jsem dohledal
+    zvlášť (média, tiskové zprávy).
+  - Obsah stránek četl nástroj WebFetch přes pomocný model; citace v
+    poznámkách vycházejí z jeho výtahů, ne z ručního čtení celé stránky.
