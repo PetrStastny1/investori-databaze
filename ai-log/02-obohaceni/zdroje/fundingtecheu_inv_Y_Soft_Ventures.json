@@ -1,0 +1,117 @@
+{
+  "name": "Y Soft Ventures",
+  "url": "https://funding.tech.eu/investors/Y%20Soft%20Ventures",
+  "aliases": [
+    "Y Soft Ventures"
+  ],
+  "types": [
+    "Investment firm"
+  ],
+  "deals": 3,
+  "companies": 3,
+  "activeYears": {
+    "first": 2015,
+    "last": 2016
+  },
+  "participatedRoundEur": 3091663,
+  "sectors": [
+    {
+      "name": "Media",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    },
+    {
+      "name": "Telecom",
+      "value": 1
+    },
+    {
+      "name": "Transportation",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 2
+    },
+    {
+      "name": "Early VC",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 3
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2015,
+      "n": 1
+    },
+    {
+      "y": 2016,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "GreyCortex",
+      "url": "https://funding.tech.eu/companies/F1FAD227-C502-43F7-B616-C1AC8A191A14",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1200000
+    },
+    {
+      "company": "Lumitrix",
+      "url": "https://funding.tech.eu/companies/64C1A4B4-81B9-4979-9BBB-555560D25DB6",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Sewio Networks",
+      "url": "https://funding.tech.eu/companies/82C8AB6D-17FB-41BD-8F33-47D3C03F71B3",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 891663
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "GreyCortex",
+      "companyUrl": "https://funding.tech.eu/companies/F1FAD227-C502-43F7-B616-C1AC8A191A14",
+      "dealUrl": "https://funding.tech.eu/deals/5445647D-28F9-4128-B93C-08D91092C887",
+      "stage": "Seed",
+      "amountEur": 1200000,
+      "date": "2016-05-31T22:00:00.000Z"
+    },
+    {
+      "company": "Lumitrix",
+      "companyUrl": "https://funding.tech.eu/companies/64C1A4B4-81B9-4979-9BBB-555560D25DB6",
+      "dealUrl": "https://funding.tech.eu/deals/C02D1573-0E23-4A3D-B952-08D91092C887",
+      "stage": "Seed",
+      "amountEur": 1000000,
+      "date": "2016-05-31T22:00:00.000Z"
+    },
+    {
+      "company": "Sewio Networks",
+      "companyUrl": "https://funding.tech.eu/companies/82C8AB6D-17FB-41BD-8F33-47D3C03F71B3",
+      "dealUrl": "https://funding.tech.eu/deals/0634954E-AB2A-4014-AA76-08D91092C887",
+      "stage": "Early VC",
+      "amountEur": 891663,
+      "date": "2015-08-31T22:00:00.000Z"
+    }
+  ],
+  "coInvestors": [],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

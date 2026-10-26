@@ -3442,5 +3442,597 @@
       "investice": "stredni"
     },
     "poznamka": "Typ VC: akcelerátor s vlastním kapitálem, který investuje vlastní peníze do startupů. Web: „Accelerating Startups Since 2011“, „privately funded by Credo Ventures, Rockaway Capital Partners and experienced business angels“; stránka Batch 15 nabízí „€25k as a simple convertible note with the option for higher investment*“; investice do Ydoca doložena zprávou (viz níže). Podle PLAN.md (akcelerátor investující vlastní peníze za podíl s doloženými investicemi) zařazen jako VC. Identita: v ARES skupina subjektů StartupYard se shodným sídlem Perlová 371/5, Praha 1 a jednatelem Nikolou Rafajem (Lupa.cz 2. 2. 2012: „jehož zakladatel Nikola Rafaj se stane ředitelem StartupYardu“): StartupYard Services s.r.o. (IČO 06002820, společník Startup Yard Limited, Londýn), SPV jednotlivých běhů StartupYard Batch 5–15 (např. StartupYard Batch 15 s.r.o., IČO 22266852, vznik 2024-11-14, od 2026-03-21 další společníci vč. KINSKÝ Žďár, a.s.), StartupYard Fintech s.r.o. (IČO 22399356) aj. Jako pravni_subjekt uvádím StartupYard Services s.r.o. jako servisní/provozní společnost značky; že jde o správce značky, ani který subjekt investoval do Ydoca, zdroje výslovně neuvádějí (nepotvrzeno). Sídlo investiční firmy (značky) ČR: všechny české subjekty v Praze; mateřský společník servisní firmy je britský. Ticket: 25 tis. EUR deklarovaný na webu (Batch 15, „optional €25,000 cash investment“, s možností vyšší investice, max neuveden); starší podmínky (30 tis. EUR za 10 % z roku 2014) nepoužity. Kapitál: velikost fondu ani AUM investor neuvádí, prázdné. Sektory dle webu „deep-tech startups such as AI, cybersecurity, IoT, or another cutting-edge field“. Fáze: web uvádí jen podmínku „working prototype“, ne fázi kola, null. Poslední investice: Ydoca, CzechCrunch 14. 2. 2025: „V rámci pre-seed investičního kola startup získal financování v celkové výši 2,3 milionu korun“, „přičemž DEPO Ventures podpořilo projekt částkou 1,8 milionu a StartupYard částkou 500 tisíc korun.“ (500 tis. Kč je vklad StartupYardu podle zdroje, 2,3 mil. Kč velikost kola). Nástroj neprima_indicie (pre-seed), podíl ani konvertibilní nástroj zdroj neuvádí; v ARES má Ydoca s.r.o. (IČO 21364460) jen dva zakladatele po 50 %, StartupYard společníkem není (může jít o konvertibilní nástroj, nepotvrzeno). Jediná zpráva o transakci, proto jistota investice stredni. Datum uzavření neuvedeno. Novější investici (Batch 15 od září 2025, startupy nejmenovány) jsem zprávou nedoložil; funding.tech.eu uvádí poslední deal 2023 (Fungies). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-tensor-ventures",
+    "nazev": "Tensor Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Tensor Ventures a.s.",
+      "ico": "06257241",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06257241",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-12-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://tensor.ventures/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://tensor.ventures/",
+      "zdroj_url": "https://tensor.ventures/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "AI",
+        "quantum technology",
+        "computational biotech",
+        "sustainable tech"
+      ],
+      "zdroj_url": "https://tensor.ventures/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "seed",
+        "series A"
+      ],
+      "zdroj_url": "https://tensor.ventures/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "ValkaAI",
+      "datum_investice": null,
+      "datum_oznameni": "2026-02-24",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-byznys-startupy-technologie-cesky-startup-ziskal-stovky-milionu-slibuje-prepsat-budoucnost-zabavy-299599"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-byznys-startupy-technologie-cesky-startup-ziskal-stovky-milionu-slibuje-prepsat-budoucnost-zabavy-299599",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Seznam Zprávy",
+          "puvod": null,
+          "zdroj_datum": "2026-02-24",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.startbase.de/news/e12-millionen-pre-seed-fuer-valkaai/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Startbase",
+          "puvod": null,
+          "zdroj_datum": "2026-02-24",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "AppFactor",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-04",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://theaiinsider.tech/2026/02/04/tensor-ventures-and-others-invest-4-million-us-in-london-based-appfactor"
+        },
+        "zdroje": [
+          {
+            "url": "https://theaiinsider.tech/2026/02/04/tensor-ventures-and-others-invest-4-million-us-in-london-based-appfactor",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "The AI Insider",
+            "puvod": "tisková zpráva (článek označen „PRESS RELEASE“)",
+            "zdroj_datum": "2026-02-04",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web „Tensor Ventures explores deep tech innovation's frontiers & invests in uncharted territories“, „We participate in Seed and Series A rounds. Sometimes we lead; other times, we tag along with trusted partners.“, tým s rolemi „Founder, General Partner“, „VC Principal“; fond Tensor Ventures Fund I SCSp a druhý fond (Tensor Ventures Co-investment Fund s EIF z Národního plánu obnovy, CzechCrunch 15. 5. 2024: EIF „vybral Tensor Ventures jako správce“). Identita: ARES Tensor Ventures a.s. (dříve mr Fund a.s.), IČO 06257241, sídlo Pernerova 635/57, Praha 8 (do 16. 12. 2025 Pernerova 697/35, tuto adresu uvádí web jako „Contact in CZ“), člen představenstva Martin Drdúl, člen dozorčí rady Roman Smola – oba zakladatelé a General Partners podle webu. Sídlo: web uvádí jako adresu „Tensor Ventures GP S.à r.l. & Tensor Ventures Fund I SCSp, 1A Heienhaff, 1736 Senningerberg, Luxembourg“ (GP a fond, lucemburský rejstřík neověřen); tým a značka jsou české (kontakt Praha, média „Czech deep-tech company Tensor Ventures“), proto zeme CZ podle sídla značky/týmu, k ruční kontrole. Ticket: web ho neuvádí; rozpětí z agregátorů (např. €250k–1M) není deklarace investora, proto null. Kapitál: CzechCrunch 15. 5. 2024 nový fond „cílí na celkovou velikost až 50 milionů eur“ (cíl), tisková zpráva AppFactor „The fund has EUR 50 million … at its disposal“ (k dispozici) – ani jedno není doložené aum/committed_capital/fund_size, proto prázdné; EIF až 20 mil. EUR je závazek LP, ne velikost fondu; první fond „20 milionů eur“ (CzechCrunch) bez jednoznačného druhu ukazatele. Poslední investice: ValkaAI (CZ), pre-seed 12 mil. EUR (velikost celého kola, ne vklad Tensor), vedl Rockaway Ventures; Seznam Zprávy 24. 2. 2026: „přidaly se také J&T Ventures, Tensor Ventures, BD Partners“; Startbase 24. 2. 2026: „beteiligt sind zudem J&T Ventures, Tensor Ventures, BD Partners sowie Fond Naše Česko“. Nástroj neprima_indicie (pre-seed), podíl výslovně neuveden. Obě zprávy vyšly týž den a nejspíš vycházejí z informací firmy; nezávislost nedoložena, proto jistota investice stredni (žádná investice nemá doložený nástroj). Další: AppFactor (UK), seed 4 mil. USD (velikost kola), tisková zpráva 4. 2. 2026 „Tensor Ventures led a USD 4 million seed round in London-based AppFactor“. Agregátory (funding.tech.eu, CB Insights, PitchBook) uvádějí i novější účasti (Cnuic pre-seed 2026-04, Wultra 2026-06 podle PitchBook), zprávu o transakci jmenující Tensor jsem nenašel, nezapsáno; Wultra seed+ 3 mil. EUR (leden 2025) a Dynanic pre-seed 550k EUR (2024/2025) nečteno přímo. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-tilia-impact-ventures",
+    "nazev": "Tilia Impact Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o.",
+      "ico": "17848911",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/17848911",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://tilia.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://tilia.vc/",
+      "zdroj_url": "https://tilia.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "sector-agnostic (impact-driven)"
+      ],
+      "zdroj_url": "https://tilia.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "early stage"
+      ],
+      "zdroj_url": "https://tilia.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 300000,
+      "max": 1200000,
+      "mena": "EUR",
+      "zdroj_url": "https://tilia.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "FaceUp",
+      "datum_investice": null,
+      "datum_oznameni": "2026-05-19",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "series A",
+        "zdroj_url": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "JIC (tisková zpráva spoluinvestora JIC Ventures)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://itbrief.com.au/story/faceup-raises-usd-5-million-to-expand-compliance-suite",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "IT Brief Australia",
+          "puvod": "nedoloženo, pravděpodobně oznámení FaceUp/investorů (citace představitelů firmy a investorů)",
+          "zdroj_datum": "2026-05-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06142630",
+          "druh_zdroje": "rejstrik_spolecnik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Theorema",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-31",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://vestbee.com/insights/articles/theorema-secures-2-85-m"
+        },
+        "zdroje": [
+          {
+            "url": "https://vestbee.com/insights/articles/theorema-secures-2-85-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": "LinkedIn příspěvek Tilia Impact Ventures",
+            "zdroj_datum": "2026-03-31",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Minimist",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-25",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://www.trendingtopics.eu/minimist-anna-greil-ueber-das-neue-millioneninvestment/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.trendingtopics.eu/minimist-anna-greil-ueber-das-neue-millioneninvestment/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Trending Topics",
+            "puvod": "oznámení Minimist",
+            "zdroj_datum": "2026-03-25",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Flox Intelligence",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-27",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://pulse2.com/flox-intelligence-3-million-raised-to-scale-ai-wildlife-intelligence-platform/"
+        },
+        "zdroje": [
+          {
+            "url": "https://pulse2.com/flox-intelligence-3-million-raised-to-scale-ai-wildlife-intelligence-platform/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Pulse 2.0",
+            "puvod": "nedoloženo (pravděpodobně oznámení Flox)",
+            "zdroj_datum": "2026-02-27",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://techcrunch.com/?p=3173721",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "TechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-10-13",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: Vestbee (14. 3. 2024, VC of the month) „Tilia Impact Ventures is a Prague-based seed stage VC fund“; web tilia.vc „Tilia Impact Ventures backs Czech and CEE region founders to make systemic environmental and social change“, nástroje „Equity / Convertible debt“; funding.tech.eu typ „Venture capital“. Samostatná investiční firma, ne korporace ani family office; impact je investiční strategie. Identita: ARES Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o. (do 2024-12-01 Tilia Impact Ventures - Fund 1 s.r.o.), IČO 17848911, Drtinova 557/10, Praha 5, zapsána 2022-12-19, od 2024-12-01 správa majetku podle § 15 ZISIF; jednatelé a společníci (po 1/2) Dr. Silke Horáková a Petr Vítek – na webu co-founders; adresa shodná s webem. Související Tilia Impact Partners s.r.o. (IČO 17621615, Drtinova 557/10, poradenství, jednatel Pavel Petřek, partner na webu) – role ve struktuře nedoložena. Fond II je lucemburský subjekt „Tilia Impact Ventures Fund II“ (51-53 rue de Merl, Lucemburk) zapsaný jako společník FaceUp Technology s.r.o. – podřízený fond, ne samostatný investor. Sídlo investiční firmy (značky) Praha. Ticket: web „0.3 - 1.2m EUR initial ticket“ (Vestbee 2024 uvádí €300k–1.5M). Kapitál nevyplněn: druhý fond Impact Seed Fund – Causeartist (15. 9. 2023) „successful first closing of its second fund, totaling €26m“ a cíl 32 mil. EUR, CzechCrunch (21. 9. 2023) „potvrzených 26 milionů eur“; druh ukazatele (committed/fund size) zdroj výslovně neuvádí a finální closing 32 mil. EUR nedoložen (Vestbee 2024 „second €32 million fund“ bez upřesnění) – proto prázdné. Poslední investice: FaceUp (Brno), Series A 5 mil. USD (velikost celého kola, ne vklad) vedená Fil Rouge Capital; JIC 19. 5. 2026: „Existing investors Jiří Hlavenka, Tilia Impact Ventures and Reflex Capital also took part“; IT Brief 22. 5. 2026: „Existing investor Tilia Impact Ventures also participated.“ Rejstřík FaceUp Technology s.r.o. (IČO 06142630): Tilia Impact Ventures Fund II společníkem od 2024-07-15 (podíl 9742/129894) – dokládá držbu podílu z dřívějšího seed kola (oznámeno 10/2024), ne nástroj účasti v Series A 2026, proto nástroj jen neprima_indicie. Další: Theorema, pre-seed 2,85 mil. EUR (velikost kola), Vestbee 31. 3. 2026 „pre-seed round was supported by … Tilia Impact Ventures“; Minimist (Vídeň), pre-seed 1 mil. EUR (velikost kola), Trending Topics 25. 3. 2026 „Die Runde wurde von Tilia Impact Ventures (mit Unterstützung von InvestEU) angeführt“; Flox Intelligence (Stockholm), Seed+ 3 mil. USD (velikost kola), Pulse 2.0 27. 2. 2026 „Seed+ round led by Tilia Impact Ventures“, TechCrunch 13. 10. 2026 „seed round led by Unconventional Ventures and Tilia Impact Ventures“. Investice PurposeTech nepřipisovány; Lifeyear (AIN 1. 7. 2025 výslovně jmenuje Tilia) neuveden mezi dalšími, protože novější investice stačí. Jistota investice stredni: žádná investice nemá nástroj výslovně doložen (jen kolo series A / pre-seed / seed) a u FaceUp nezávislost dvou zpráv nedoložena. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-y-soft-ventures",
+    "nazev": "Y Soft Ventures",
+    "typ": "CVC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Y Soft Ventures Management, a.s., Technická 2948/13, Královo Pole, 616 00 Brno (správce; investiční vehikly Y Soft Ventures, a.s., IČO 29314445, a Y Soft Ventures II, a.s., IČO 07890150)",
+      "ico": "04504593",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04504593",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-04-15",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/29314445",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-07-31",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/07890150",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-06-06",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://therecycler.com/posts/new-leadership-for-y-soft-ventures/",
+          "druh_zdroje": "media",
+          "vydavatel": "The Recycler",
+          "puvod": null,
+          "zdroj_datum": "2025-07-02",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.ysoft.com/ventures",
+      "zdroj_url": "https://www.ysoft.com/ventures",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "Internet of Things",
+        "Industry 4.0",
+        "Smart Office",
+        "Retail 2.0",
+        "Smart City",
+        "Cyber Security",
+        "Big Data & Analytics",
+        "AR/VR (B2B)"
+      ],
+      "zdroj_url": "https://www.ysoft.com/ventures",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "early stage"
+      ],
+      "zdroj_url": "https://www.ysoft.com/ventures",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "RoboTwin (RoboTwin s.r.o., IČO 14091682)",
+      "datum_investice": null,
+      "datum_oznameni": "2025-07-02",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14091682"
+      },
+      "zdroje": [
+        {
+          "url": "https://eitjumpstarter.eu/robotwin-secures-1-million-eur/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "EIT Jumpstarter",
+          "puvod": null,
+          "zdroj_datum": "2025-07-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/cesi-resi-urgentni-problem-evropy-od-byvalych-akcionaru-ppf-ci-eu-ted-maji-desitky-milionu/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2025-09-11",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://therecycler.com/posts/new-leadership-for-y-soft-ventures/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "The Recycler",
+          "puvod": null,
+          "zdroj_datum": "2025-07-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14091682",
+          "druh_zdroje": "rejstrik_spolecnik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-06-14",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.ysoft.com/ventures",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ CVC: Y Soft Ventures je samostatná investiční jednotka (vlastní právnické osoby a tým) firmy Y Soft Corporation, a.s. (IČO 26197740). Web: „We invest in the people who build innovative B2B tech startups in Central and Eastern Europe“ a je součástí Y Soft; The Recycler (2. 7. 2025) ji nazývá „the venture capital arm of enterprise office solutions provider Y Soft Corporation“, iToday (9. 11. 2021) „venture kapitálová platforma spadající pod Y Soft Corporation“. Identita: ARES vrací Y Soft Ventures Management, a.s. (IČO 04504593, Technická 2948/13, Brno), představenstvo Lukáš Konečný (předseda) a Václav Muchna; tato společnost je statutárním orgánem obou investičních vehiklů Y Soft Ventures, a.s. (IČO 29314445, dříve Y Soft Venture Capital SE) a Y Soft Ventures II, a.s. (IČO 07890150), všechny se sídlem Technická 2948/13, Brno. Jména odpovídají webu (Lukáš Konečný Managing Partner, Václav Muchna) a The Recycler (Konečný Managing Partner od 1. 7. 2025), totožnost potvrzena. Vehikly jsou podřízené údaje, ne samostatní investoři. Ticket ani kapitál investor na webu neuvádí, proto nevyplněno (Lupa/Forbes uvádějí starší záměry investovat, to není kapitál; databáze třetích stran s rozsahy ticketů nejsou deklarace investora). Poslední investice: RoboTwin, pre-seed kolo 1,25 mil. EUR (velikost celého kola včetně grantu EU, ne vklad Y Soft Ventures). EIT Jumpstarter 2. 7. 2025: „BD Partners, Y Soft Ventures and Jörg Rupp will fuel RoboTwin’s market expansion“, kolo „pre-seed“. CzechCrunch 11. 9. 2025 jmenuje Y Soft Ventures mezi investory pre-seed kola, financování „ve formě grantu Horizon Europe z programu EU a ekvitního financování od soukromých investorů“. The Recycler 2. 7. 2025: „The latest investment is in the deep-tech startup RoboTwin.“ Nástroj podíl doložen zápisem: v rejstříku RoboTwin s.r.o. (IČO 14091682) je Y Soft Ventures II, a.s. společníkem od 11. 6. 2025 (podíl 4327/174520), což je jen podpůrný doklad, datum investice z něj neberu. Datum pro filtr je oznámení 2025-07-02, tedy starší než 12 měsíců, status investice_dolozena_12_24_mesicu. Jistota investice střední: tři zprávy, ale nezávislost původu nedoložena (CzechCrunch píše „Letos již hlásili“, tj. vychází z dřívějšího oznámení; The Recycler pravděpodobně z tiskové zprávy Y Soft). The Recycler zároveň uvádí, že YSV „transitions from its investment phase to executing its first exits“ (portfolio management), novější investici jsem nenašel. Funding.tech.eu má jen 3 dealy z let 2015–2016. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-zaka-vc",
+    "nazev": "ZAKA VC",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "ZAKA Management s.r.o., Italská 2581/67, Vinohrady, 120 00 Praha 2 (správce značky; fond ZAKA VC I, osoba rizikového kapitálu, a.s., IČO 21514992)",
+      "ico": "21053987",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/21053987",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-06-06",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/21514992",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-06-11",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/zaka-vc-se-meni-z-rodinneho-na-klasicky-startupovy-fond-ma-stovky-milionu-korun/",
+          "druh_zdroje": "media",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2024-07-22",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://zaka.vc/",
+      "zdroj_url": "https://zaka.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "Health & Biotech",
+        "Industrial Tech"
+      ],
+      "zdroj_url": "https://zaka.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed"
+      ],
+      "zdroj_url": "https://zaka.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "ParcelBio",
+      "datum_investice": null,
+      "datum_oznameni": "2026-05-07",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "seed",
+        "zdroj_url": "https://biospace.com/press-releases/parcelbio-launches-with-13-million-in-financing-to-advance-next-generation-mrna-medicines"
+      },
+      "zdroje": [
+        {
+          "url": "https://biospace.com/press-releases/parcelbio-launches-with-13-million-in-financing-to-advance-next-generation-mrna-medicines",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "ParcelBio (Business Wire, přetisk BioSpace)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-07",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://zaka.vc/news/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Vetstor (VETSTOR CZ s.r.o., IČO 21314675)",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-09",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/vedla-miliardovou-sit-zverimexu-po-rodicovske-hlida-zdravi-mazlicku-desitky-milionu-ted-ma-i-od-kijonkove/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2025-12-09",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Yenmo",
+        "datum_investice": null,
+        "datum_oznameni": "2025-03-10",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://en.ain.ua/2025/03/10/zaka-vc-joins-11m-yenmo/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "AIN.UA",
+            "puvod": null,
+            "zdroj_datum": "2025-03-10",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web „We are a seed & pre-seed VC fund, investing mainly in the US and Europe.“ CzechCrunch 22. 7. 2024: Zaka VC „se mění z rodinného na klasický startupový fond“, poprvé otevřený externím investorům, s týmem a investiční komisí (Andrej Petrus); jako family office se neoznačuje. Identita a sídlo: ARES vrací ZAKA Management s.r.o. (IČO 21053987, dříve ZAKA VC I s.r.o., Italská 2581/67, Praha 2, jednatelé Samuel Zálešák a Karolína Kasperová, společník ZAKA Holding s.r.o., IČO 17614597, jejímiž společníky jsou SORIA, a.s. a TELUS HOLDING, a.s.) a fond ZAKA VC I, osoba rizikového kapitálu, a.s. (IČO 21514992, stejné sídlo, správní rada Kasperová a Zálešák, předmět mj. správa majetku srovnatelná s obhospodařováním podle § 15 ZISIF). Média jmenují zakladatele Jána Kaspera a Petera Zálešáka (CzechCrunch, Startuprise), jejichž rodiny fond založily; statutáři v rejstříku nesou stejná příjmení, osobní shodu jsem nedoložil, propojení značky s firmami je tedy doloženo názvem, sídlem a příjmením, ne jmény statutárů. Web uvádí kanceláře Silicon Valley, London, Prague, Bratislava; Startuprise (19. 7. 2024) „Prague-based“, AIN.UA (10. 3. 2025) „Czech ZAKA VC“, CzechCrunch dříve „česko-slovenský fond“. Sídlo beru podle správce v Praze (CZ). Podíl ve Vetstoru drží ZAKA Startup 13 j.s.a. (slovenská právní forma), tj. část portfolia je i ve slovenských vehiklech. Ticket: web „The minimum ticket is 130K“ je minimální vklad LP (Startuprise: „minimum limited partner (LP) ticket of €130,000“), ne ticket do firmy, proto nevyplněno. Kapitál nevyplněn: web uvádí „17M Current fund size“ bez měny, Startuprise „€15 million ZAKA VC Fund I opened with a €10.5 million first closing in June 2024“ (cílová velikost a první closing, druh ukazatele výslovně neuveden), CzechCrunch „už vybral 10,5 milionu eur“. Poslední investice: ParcelBio, seed 13 mil. USD (velikost celého kola), vedl Breyer Capital, tisková zpráva ParcelBio přes Business Wire 7. 5. 2026: „with participation from General Catalyst, Y Combinator, Metaplanet, SurgePoint Capital, ZAKA VC, and other investors“. Nástroj neuveden, neprima_indicie (seed). Další: Vetstor, CzechCrunch 9. 12. 2025, Zaka VC a Purple Ventures „se účastní i aktuálního kola“ 1 mil. EUR (velikost kola), kolo neoznačeno, nástroj nezjištěn (dřívější pre-seed 13 mil. Kč; ZAKA Startup 13 j.s.a. je společníkem VETSTOR CZ s.r.o. od 3. 6. 2024, to se týká dřívějšího kola). Yenmo, kolo 1,1 mil. USD (velikost kola), AIN.UA 10. 3. 2025: „The round was backed by Czech ZAKA VC, Pioneer Fund, Team Ignite Ventures, Y Combinator, and angels“, kolo neoznačeno, nástroj nezjištěn. Jistota investice střední: žádná investice nemá doložený nástroj a ParcelBio dokládá jen jedna tisková zpráva. Funding.tech.eu (profil „Zaka VC“) má 13 dealů 2022–2024. Web a stránka novinek uvádějí i další investice z let 2025–2026 (Cirrus Therapeutics, DeepSeq.AI, FinalDose aj.), ty jsem nezávislou zprávou o transakci neověřil. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   }
 ]

@@ -1,0 +1,416 @@
+{
+  "name": "Zaka VC",
+  "url": "https://funding.tech.eu/investors/Zaka%20VC",
+  "aliases": [
+    "Zaka",
+    "Zaka VC",
+    "ZAKA Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 13,
+  "companies": 12,
+  "activeYears": {
+    "first": 2022,
+    "last": 2024
+  },
+  "participatedRoundEur": 21749741,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 4
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    },
+    {
+      "name": "Travel",
+      "value": 2
+    },
+    {
+      "name": "Cleantech",
+      "value": 1
+    },
+    {
+      "name": "Cloud",
+      "value": 1
+    },
+    {
+      "name": "HRtech",
+      "value": 1
+    },
+    {
+      "name": "Healthtech",
+      "value": 1
+    },
+    {
+      "name": "Proptech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 9
+    },
+    {
+      "name": "Seed",
+      "value": 3
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "UK",
+      "value": 4
+    },
+    {
+      "name": "Austria",
+      "value": 2
+    },
+    {
+      "name": "Spain",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    },
+    {
+      "name": "Türkiye",
+      "value": 1
+    },
+    {
+      "name": "Ukraine",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 9
+    },
+    {
+      "y": 2024,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Velaris",
+      "url": "https://funding.tech.eu/companies/DBAFA2E9-C784-4E15-A315-C49A339B277A",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 4700000
+    },
+    {
+      "company": "Sensible Biotechnologies",
+      "url": "https://funding.tech.eu/companies/405CC75E-D4B6-4028-960E-9DF0C07EAD31",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3847916
+    },
+    {
+      "company": "Webel",
+      "url": "https://funding.tech.eu/companies/59A56B6F-F203-4796-9BEF-9B16563479F1",
+      "country": "Spain",
+      "rounds": 2,
+      "totalEur": 3500000
+    },
+    {
+      "company": "Prograd",
+      "url": "https://funding.tech.eu/companies/1DEA1B53-B783-498C-923B-981426B20FED",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 2337322
+    },
+    {
+      "company": "ExoMatter",
+      "url": "https://funding.tech.eu/companies/13DBFCAC-2CE6-4970-A4AF-6BA23DB27FEF",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 1700000
+    },
+    {
+      "company": "Blockmate",
+      "url": "https://funding.tech.eu/companies/E5D18C07-E581-463B-9D8B-5ED42E34D09C",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Deskree",
+      "url": "https://funding.tech.eu/companies/77B75F29-FE1D-4E70-8E80-B741CD641AB8",
+      "country": "Ukraine",
+      "rounds": 1,
+      "totalEur": 1401607
+    },
+    {
+      "company": "Stackt",
+      "url": "https://funding.tech.eu/companies/E847F67B-8508-4901-9F28-7572B758EFBA",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 1155468
+    },
+    {
+      "company": "Sorwe",
+      "url": "https://funding.tech.eu/companies/CE81074D-6F83-4E89-88AF-86F9B5BC649D",
+      "country": "Türkiye",
+      "rounds": 1,
+      "totalEur": 807428
+    },
+    {
+      "company": "Cruxo",
+      "url": "https://funding.tech.eu/companies/98F2905E-589D-4966-9468-53076F3E5B06",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 800000
+    },
+    {
+      "company": "Tripmakery",
+      "url": "https://funding.tech.eu/companies/CFF0A78D-6870-4BAD-8994-2BEC7C08D5B0",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 0
+    },
+    {
+      "company": "Tripmakery.com",
+      "url": "https://funding.tech.eu/companies/0F37A261-E07D-4150-9355-A1FD1E328D3D",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Velaris",
+      "companyUrl": "https://funding.tech.eu/companies/DBAFA2E9-C784-4E15-A315-C49A339B277A",
+      "dealUrl": "https://funding.tech.eu/deals/D13F8CFE-F4A9-4343-A5B8-559CB9534CBF",
+      "stage": "Seed",
+      "amountEur": 4700000,
+      "date": "2022-09-08T00:00:00.000Z"
+    },
+    {
+      "company": "Sensible Biotechnologies",
+      "companyUrl": "https://funding.tech.eu/companies/405CC75E-D4B6-4028-960E-9DF0C07EAD31",
+      "dealUrl": "https://funding.tech.eu/deals/6F33963C-5322-446D-85B6-D7F7332A6C8E",
+      "stage": "Pre-Seed",
+      "amountEur": 3847916,
+      "date": "2023-04-06T00:00:00.000Z"
+    },
+    {
+      "company": "Prograd",
+      "companyUrl": "https://funding.tech.eu/companies/1DEA1B53-B783-498C-923B-981426B20FED",
+      "dealUrl": "https://funding.tech.eu/deals/EBBA23B3-3EC9-4AB2-9126-4DA23878710B",
+      "stage": "Seed",
+      "amountEur": 2337322,
+      "date": "2023-01-09T00:00:00.000Z"
+    },
+    {
+      "company": "Webel",
+      "companyUrl": "https://funding.tech.eu/companies/59A56B6F-F203-4796-9BEF-9B16563479F1",
+      "dealUrl": "https://funding.tech.eu/deals/95A6047B-FF5C-40B2-B01C-D766E71D2035",
+      "stage": "Other",
+      "amountEur": 2100000,
+      "date": "2023-10-16T00:00:00.000Z"
+    },
+    {
+      "company": "ExoMatter",
+      "companyUrl": "https://funding.tech.eu/companies/13DBFCAC-2CE6-4970-A4AF-6BA23DB27FEF",
+      "dealUrl": "https://funding.tech.eu/deals/92926595-636C-4C7F-9198-D5C8428D2503",
+      "stage": "Other",
+      "amountEur": 1700000,
+      "date": "2024-10-24T00:00:00.000Z"
+    },
+    {
+      "company": "Blockmate",
+      "companyUrl": "https://funding.tech.eu/companies/E5D18C07-E581-463B-9D8B-5ED42E34D09C",
+      "dealUrl": "https://funding.tech.eu/deals/5CCEDC59-3031-4F8E-B502-96A0DEF7320A",
+      "stage": "Other",
+      "amountEur": 1500000,
+      "date": "2023-09-15T00:00:00.000Z"
+    },
+    {
+      "company": "Deskree",
+      "companyUrl": "https://funding.tech.eu/companies/77B75F29-FE1D-4E70-8E80-B741CD641AB8",
+      "dealUrl": "https://funding.tech.eu/deals/4EBE4B69-001C-4BF7-88A8-F2EAA08989C0",
+      "stage": "Seed",
+      "amountEur": 1401607,
+      "date": "2023-09-20T00:00:00.000Z"
+    },
+    {
+      "company": "Webel",
+      "companyUrl": "https://funding.tech.eu/companies/59A56B6F-F203-4796-9BEF-9B16563479F1",
+      "dealUrl": "https://funding.tech.eu/deals/50BA3652-2AF4-41C5-9330-E2DE64EFD98C",
+      "stage": "Other",
+      "amountEur": 1400000,
+      "date": "2024-11-06T00:00:00.000Z"
+    },
+    {
+      "company": "Stackt",
+      "companyUrl": "https://funding.tech.eu/companies/E847F67B-8508-4901-9F28-7572B758EFBA",
+      "dealUrl": "https://funding.tech.eu/deals/76EC3E3D-3E0C-43A8-87F2-EE5FD712DB22",
+      "stage": "Other",
+      "amountEur": 1155468,
+      "date": "2023-10-16T00:00:00.000Z"
+    },
+    {
+      "company": "Sorwe",
+      "companyUrl": "https://funding.tech.eu/companies/CE81074D-6F83-4E89-88AF-86F9B5BC649D",
+      "dealUrl": "https://funding.tech.eu/deals/36D7394B-DE96-40A7-8B3A-B90315CC566B",
+      "stage": "Other",
+      "amountEur": 807428,
+      "date": "2022-11-02T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Decelera Ventures",
+      "url": "https://funding.tech.eu/investors/Decelera%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Gateway Ventures",
+      "url": "https://funding.tech.eu/investors/Gateway%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Jean-Pascal Duvieusart",
+      "url": "https://funding.tech.eu/investors/Jean-Pascal%20Duvieusart",
+      "sharedRounds": 2
+    },
+    {
+      "name": "KFLT Angels",
+      "url": "https://funding.tech.eu/investors/KFLT%20Angels",
+      "sharedRounds": 2
+    },
+    {
+      "name": "SeedBlink",
+      "url": "https://funding.tech.eu/investors/SeedBlink",
+      "sharedRounds": 2
+    },
+    {
+      "name": "212 NexT",
+      "url": "https://funding.tech.eu/investors/212%20NexT",
+      "sharedRounds": 1
+    },
+    {
+      "name": "AAl VC",
+      "url": "https://funding.tech.eu/investors/AAl%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "AGAM",
+      "url": "https://funding.tech.eu/investors/AGAM",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Amino Collective",
+      "url": "https://funding.tech.eu/investors/Amino%20Collective",
+      "sharedRounds": 1
+    },
+    {
+      "name": "APY Ventures",
+      "url": "https://funding.tech.eu/investors/APY%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BADideas.fund",
+      "url": "https://funding.tech.eu/investors/BADideas.fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bayern Kapital",
+      "url": "https://funding.tech.eu/investors/Bayern%20Kapital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bloomhaus Ventures",
+      "url": "https://funding.tech.eu/investors/Bloomhaus%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BlueYard Capital",
+      "url": "https://funding.tech.eu/investors/BlueYard%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Civilization Ventures",
+      "url": "https://funding.tech.eu/investors/Civilization%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Deloitte",
+      "url": "https://funding.tech.eu/investors/Deloitte",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Diaspora ventures",
+      "url": "https://funding.tech.eu/investors/Diaspora%20ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "encourageventures",
+      "url": "https://funding.tech.eu/investors/encourageventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fintech 365",
+      "url": "https://funding.tech.eu/investors/Fintech%20365",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Flair Ventures",
+      "url": "https://funding.tech.eu/investors/Flair%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Florian Schuster",
+      "url": "https://funding.tech.eu/investors/Florian%20Schuster",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Flyer One Ventures",
+      "url": "https://funding.tech.eu/investors/Flyer%20One%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Forum Ventures",
+      "url": "https://funding.tech.eu/investors/Forum%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Goodwater Capital",
+      "url": "https://funding.tech.eu/investors/Goodwater%20Capital",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

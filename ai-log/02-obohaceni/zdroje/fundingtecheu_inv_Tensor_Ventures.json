@@ -1,0 +1,472 @@
+{
+  "name": "Tensor Ventures",
+  "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+  "aliases": [
+    "Tensor Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 20,
+  "companies": 18,
+  "activeYears": {
+    "first": 2022,
+    "last": 2026
+  },
+  "participatedRoundEur": 102126193,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 5
+    },
+    {
+      "name": "Healthtech",
+      "value": 5
+    },
+    {
+      "name": "AI",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    },
+    {
+      "name": "Agritech",
+      "value": 1
+    },
+    {
+      "name": "Hardware",
+      "value": 1
+    },
+    {
+      "name": "Deeptech",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    },
+    {
+      "name": "Semiconductors",
+      "value": 1
+    },
+    {
+      "name": "Telecom",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 10
+    },
+    {
+      "name": "Seed",
+      "value": 6
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 4
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 7
+    },
+    {
+      "name": "UK",
+      "value": 7
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Lithuania",
+      "value": 1
+    },
+    {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 4
+    },
+    {
+      "y": 2023,
+      "n": 4
+    },
+    {
+      "y": 2024,
+      "n": 3
+    },
+    {
+      "y": 2025,
+      "n": 5
+    },
+    {
+      "y": 2026,
+      "n": 4
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Tatum",
+      "url": "https://funding.tech.eu/companies/89F3E4F9-DBB2-44B2-988D-649B008CAF0A",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 42757057
+    },
+    {
+      "company": "ValkaAI",
+      "url": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 12000000
+    },
+    {
+      "company": "Antiverse",
+      "url": "https://funding.tech.eu/companies/141D3EAA-DA36-4204-94F5-D3364A0DE9EC",
+      "country": "UK",
+      "rounds": 2,
+      "totalEur": 7008851
+    },
+    {
+      "company": "HeartBeat.bio",
+      "url": "https://funding.tech.eu/companies/E6395BAE-5A04-4956-BE24-946BD72E307C",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 4500000
+    },
+    {
+      "company": "Scalpel AI",
+      "url": "https://funding.tech.eu/companies/7D3FFE7E-8DA5-4EA8-88D7-45FE503533A6",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 4410954
+    },
+    {
+      "company": "Quantagonia",
+      "url": "https://funding.tech.eu/companies/F89DF219-704C-4E52-8942-945F5F7C40C0",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 4300000
+    },
+    {
+      "company": "Solvemed",
+      "url": "https://funding.tech.eu/companies/F34EFF7C-F2FD-48F4-B734-76D719742F1D",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3647555
+    },
+    {
+      "company": "AppFactor",
+      "url": "https://funding.tech.eu/companies/264EF4B3-C622-47C7-B25D-FA24B697C5F4",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3384095
+    },
+    {
+      "company": "Edmund",
+      "url": "https://funding.tech.eu/companies/6DDB3016-47EB-44FE-BC1B-5BC60BAB6B10",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Wultra",
+      "url": "https://funding.tech.eu/companies/FE322376-169E-4BC6-97EC-3A95A76F9554",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Cnuic",
+      "url": "https://funding.tech.eu/companies/B3C6452E-FEF1-4E10-8E64-2086A9A6DBFB",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Superface",
+      "url": "https://funding.tech.eu/companies/5917B238-4FAB-4D4E-A363-1FFA37412774",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2600000
+    },
+    {
+      "company": "QurieGen",
+      "url": "https://funding.tech.eu/companies/D674D871-6121-4716-9B5F-674D4E976319",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 2200000
+    },
+    {
+      "company": "Repsense",
+      "url": "https://funding.tech.eu/companies/D38E0E90-2BAE-47E4-8BBB-6B705920D0EC",
+      "country": "Lithuania",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "Bioo",
+      "url": "https://funding.tech.eu/companies/7C44AD56-0EF4-4281-99CD-B75C4349026C",
+      "country": "Spain",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Blockmate",
+      "url": "https://funding.tech.eu/companies/E5D18C07-E581-463B-9D8B-5ED42E34D09C",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Openvibe",
+      "url": "https://funding.tech.eu/companies/4D8B790A-92EB-4E6F-81BB-EF4D8652EF60",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 767681
+    },
+    {
+      "company": "Dynanic",
+      "url": "https://funding.tech.eu/companies/F5029158-7353-4115-9746-E31285BFA3E4",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 550000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Tatum",
+      "companyUrl": "https://funding.tech.eu/companies/89F3E4F9-DBB2-44B2-988D-649B008CAF0A",
+      "dealUrl": "https://funding.tech.eu/deals/28728298-24D5-4921-A00D-96020E026F29",
+      "stage": "Other",
+      "amountEur": 42757057,
+      "date": "2022-10-12T00:00:00.000Z"
+    },
+    {
+      "company": "ValkaAI",
+      "companyUrl": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "dealUrl": "https://funding.tech.eu/deals/4124EC04-FDDA-4CBA-9DEE-2F3051E08C74",
+      "stage": "Pre-Seed",
+      "amountEur": 12000000,
+      "date": "2026-02-26T00:00:00.000Z"
+    },
+    {
+      "company": "HeartBeat.bio",
+      "companyUrl": "https://funding.tech.eu/companies/E6395BAE-5A04-4956-BE24-946BD72E307C",
+      "dealUrl": "https://funding.tech.eu/deals/C34C48ED-DB94-4901-B5B0-F2C880A19493",
+      "stage": "Seed",
+      "amountEur": 4500000,
+      "date": "2023-11-02T00:00:00.000Z"
+    },
+    {
+      "company": "Scalpel AI",
+      "companyUrl": "https://funding.tech.eu/companies/7D3FFE7E-8DA5-4EA8-88D7-45FE503533A6",
+      "dealUrl": "https://funding.tech.eu/deals/71E37D88-0D13-404F-B3FC-63775C693211",
+      "stage": "Other",
+      "amountEur": 4410954,
+      "date": "2024-10-31T00:00:00.000Z"
+    },
+    {
+      "company": "Quantagonia",
+      "companyUrl": "https://funding.tech.eu/companies/F89DF219-704C-4E52-8942-945F5F7C40C0",
+      "dealUrl": "https://funding.tech.eu/deals/004086BC-80B8-44EA-9ABF-B4522D093B25",
+      "stage": "Seed",
+      "amountEur": 4300000,
+      "date": "2023-07-04T00:00:00.000Z"
+    },
+    {
+      "company": "Antiverse",
+      "companyUrl": "https://funding.tech.eu/companies/141D3EAA-DA36-4204-94F5-D3364A0DE9EC",
+      "dealUrl": "https://funding.tech.eu/deals/BFAF38A7-F61E-443C-AA79-9B4E9EE72176",
+      "stage": "Seed",
+      "amountEur": 4186352,
+      "date": "2024-10-16T00:00:00.000Z"
+    },
+    {
+      "company": "Solvemed",
+      "companyUrl": "https://funding.tech.eu/companies/F34EFF7C-F2FD-48F4-B734-76D719742F1D",
+      "dealUrl": "https://funding.tech.eu/deals/C148728E-49E6-4DBC-964A-CC005E66A16B",
+      "stage": "Other",
+      "amountEur": 3647555,
+      "date": "2022-10-10T00:00:00.000Z"
+    },
+    {
+      "company": "AppFactor",
+      "companyUrl": "https://funding.tech.eu/companies/264EF4B3-C622-47C7-B25D-FA24B697C5F4",
+      "dealUrl": "https://funding.tech.eu/deals/D00361AC-0FBB-439A-BB30-383D60C201AA",
+      "stage": "Seed",
+      "amountEur": 3384095,
+      "date": "2026-02-04T00:00:00.000Z"
+    },
+    {
+      "company": "Wultra",
+      "companyUrl": "https://funding.tech.eu/companies/FE322376-169E-4BC6-97EC-3A95A76F9554",
+      "dealUrl": "https://funding.tech.eu/deals/E982C1A2-D9C3-4F17-88B5-D0BB8A83E57A",
+      "stage": "Other",
+      "amountEur": 3000000,
+      "date": "2025-01-15T00:00:00.000Z"
+    },
+    {
+      "company": "Cnuic",
+      "companyUrl": "https://funding.tech.eu/companies/B3C6452E-FEF1-4E10-8E64-2086A9A6DBFB",
+      "dealUrl": "https://funding.tech.eu/deals/274603C4-0C02-4703-BBC0-9D681D89F42A",
+      "stage": "Pre-Seed",
+      "amountEur": 3000000,
+      "date": "2026-04-28T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "AngelHub",
+      "url": "https://funding.tech.eu/investors/AngelHub",
+      "sharedRounds": 2
+    },
+    {
+      "name": "BSV Ventures",
+      "url": "https://funding.tech.eu/investors/BSV%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 2
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "InnoSpark Ventures",
+      "url": "https://funding.tech.eu/investors/InnoSpark%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Kadmos Capital",
+      "url": "https://funding.tech.eu/investors/Kadmos%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Seed Starter",
+      "url": "https://funding.tech.eu/investors/Seed%20Starter",
+      "sharedRounds": 2
+    },
+    {
+      "name": "22 Hor Invest",
+      "url": "https://funding.tech.eu/investors/22%20Hor%20Invest",
+      "sharedRounds": 1
+    },
+    {
+      "name": "3VC",
+      "url": "https://funding.tech.eu/investors/3VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "42CAP",
+      "url": "https://funding.tech.eu/investors/42CAP",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Adara Ventures",
+      "url": "https://funding.tech.eu/investors/Adara%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "APEX Ventures",
+      "url": "https://funding.tech.eu/investors/APEX%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Archipiélago Next",
+      "url": "https://funding.tech.eu/investors/Archipi%C3%A9lago%20Next",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Atmos Ventures",
+      "url": "https://funding.tech.eu/investors/Atmos%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Atomico Angels",
+      "url": "https://funding.tech.eu/investors/Atomico%20Angels",
+      "sharedRounds": 1
+    },
+    {
+      "name": "aws Gründungsfonds II",
+      "url": "https://funding.tech.eu/investors/aws%20Gr%C3%BCndungsfonds%20II",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BADideas.fund",
+      "url": "https://funding.tech.eu/investors/BADideas.fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Begin Capital",
+      "url": "https://funding.tech.eu/investors/Begin%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Blank Space Ventures",
+      "url": "https://funding.tech.eu/investors/Blank%20Space%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Borovicka Capital",
+      "url": "https://funding.tech.eu/investors/Borovicka%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Caesar Ventures",
+      "url": "https://funding.tech.eu/investors/Caesar%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Cambrige Angels",
+      "url": "https://funding.tech.eu/investors/Cambrige%20Angels",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

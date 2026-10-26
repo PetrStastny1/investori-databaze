@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "name": "Zaka VC",
+      "url": "https://funding.tech.eu/investors/Zaka%20VC",
+      "type": "Venture capital",
+      "deals": 13,
+      "companies": 12,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2022,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Erhan Tezakar",
+      "url": "https://funding.tech.eu/investors/Erhan%20Tezakar",
+      "type": "Angel",
+      "deals": 2,
+      "companies": 2,
+      "topSector": "Media",
+      "activeYears": {
+        "first": 2023,
+        "last": 2024
+      }
+    },
+    {
+      "name": "Nicolas Jedraszakand",
+      "url": "https://funding.tech.eu/investors/Nicolas%20Jedraszakand",
+      "type": "Angel",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Software",
+      "activeYears": {
+        "first": 2022,
+        "last": 2022
+      }
+    },
+    {
+      "name": "ZAKA Startups",
+      "url": "https://funding.tech.eu/investors/ZAKA%20Startups",
+      "type": "Venture capital",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "AI",
+      "activeYears": {
+        "first": 2022,
+        "last": 2022
+      }
+    }
+  ],
+  "page": 1,
+  "totalPages": 1,
+  "total": 4,
+  "count": 4,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

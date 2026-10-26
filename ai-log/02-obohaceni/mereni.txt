@@ -29,8 +29,10 @@ Dávka 1 (10 kandidátů)
   celkem                                   56   70   11   23   16    7  (celkem 172 požadavků)
   WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
   Poznámka: u dávky 1 zadání neurčilo, jestli WF zahrnuje i neúspěšná volání;
-  součet v závorce počítá, že ano (WFx odečteno). Od dávky 2 je to v zadání
-  výslovně (WF = všechna volání včetně neúspěšných). Hlavní agent v této dávce
+  součet v závorce počítá, že ano. Od dávky 2 je to v zadání výslovně
+  (WF = všechna volání včetně neúspěšných). Součet „celkem N požadavků“ u každé
+  dávky zahrnuje všechny požadavky včetně neúspěšných WebFetch.
+  Hlavní agent v této dávce
   žádné webové požadavky nedělal (jen kontrola a zápis lokálními skripty).
   Doba zahrnuje i kontrolu výsledků a zápis hlavním agentem.
 
@@ -112,3 +114,29 @@ Dávka 5 (10 kandidátů)
   Poznámka: dotazy k dvojici Rockaway Ventures / RockawayX jsou započtené
   u cz-rockaway-ventures. Hlavní agent: žádné webové požadavky.
 
+Dávka 6 (7 kandidátů)
+------------------------------
+  začátek 2026-10-26T16:38:04Z, konec 2026-10-26T16:49:18Z, doba 11 min 14 s
+  kandidát                                 WS   WF  WFx ARES  FTE curl
+  cz-tcf-capital                            6    8    2    7    1    5  vyrazen
+  cz-tensor-ventures                        7    8    3    2    1    1  zarazen
+  cz-thein                                  5   10    4    5    2    3  vyrazen
+  cz-tilia-impact-ventures                 13   12    1    5    1    0  zarazen
+  cz-versute-investments                    2    7    2    5    2    1  vyrazen
+  cz-y-soft-ventures                        7    7    0    7    1    0  zarazen
+  cz-zaka-vc                                4   11    0    7    3    0  zarazen
+  celkem                                   44   63   12   38   11   10  (celkem 166 požadavků)
+  WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
+  Hlavní agent: žádné webové požadavky.
+
+Celkem (57 kandidátů, 6 dávek)
+------------------------------
+  začátek dávky 1  2026-10-26T15:43:11Z, konec dávky 6  2026-10-26T16:49:18Z
+  celkový čas 66 min 7 s (včetně přestávek mezi dávkami na commit a push),
+  součet dob dávek 62 min 30 s
+  požadavky pomocných agentů: WebSearch 318, WebFetch 446 (z toho 82
+  neúspěšných), ARES 225, funding.tech.eu 85, jiné curl 46;
+  celkem 1 120 požadavků včetně neúspěšných WebFetch (1 038 bez nich)
+  hlavní agent: 1 WebFetch (dávka 3), jinak jen lokální kontrola a zápis
+  Kandidáty zpracovávalo souběžně 4–6 pomocných agentů na dávku, proto čas
+  dávky není součtem času na kandidáta.

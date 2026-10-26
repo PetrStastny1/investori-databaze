@@ -1,0 +1,423 @@
+{
+  "name": "Tilia Impact Ventures",
+  "url": "https://funding.tech.eu/investors/Tilia%20Impact%20Ventures",
+  "aliases": [
+    "Tilia Impact Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 12,
+  "companies": 11,
+  "activeYears": {
+    "first": 2022,
+    "last": 2026
+  },
+  "participatedRoundEur": 24697635,
+  "sectors": [
+    {
+      "name": "Energy",
+      "value": 3
+    },
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "E-commerce",
+      "value": 1
+    },
+    {
+      "name": "Edtech",
+      "value": 1
+    },
+    {
+      "name": "Fashion",
+      "value": 1
+    },
+    {
+      "name": "Foodtech",
+      "value": 1
+    },
+    {
+      "name": "Healthtech",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 5
+    },
+    {
+      "name": "Seed",
+      "value": 4
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 2
+    },
+    {
+      "name": "Series A",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 3
+    },
+    {
+      "name": "Estonia",
+      "value": 3
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Bulgaria",
+      "value": 1
+    },
+    {
+      "name": "Hungary",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Sweden",
+      "value": 1
+    },
+    {
+      "name": "Ukraine",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 1
+    },
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 4
+    },
+    {
+      "y": 2025,
+      "n": 3
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Arbonics",
+      "url": "https://funding.tech.eu/companies/0F481EC3-B44F-44D4-A4EC-B5C2162FC1C1",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 5500000
+    },
+    {
+      "company": "Delta Green",
+      "url": "https://funding.tech.eu/companies/7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 4200000
+    },
+    {
+      "company": "The Village Network",
+      "url": "https://funding.tech.eu/companies/12E81F79-CB99-467B-B4B0-3FB091FEB0D4",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 3400000
+    },
+    {
+      "company": "Lifeyear",
+      "url": "https://funding.tech.eu/companies/9BA88D8A-82D0-4037-A13A-3C51BA7A0D32",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 2800000
+    },
+    {
+      "company": "FaceUp",
+      "url": "https://funding.tech.eu/companies/3602EEF0-BB88-4AFA-9A03-25BE021FEC8A",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2744237
+    },
+    {
+      "company": "Flox Intelligence",
+      "url": "https://funding.tech.eu/companies/FFE4E2B8-DC8F-40F3-B255-434A5F4C7EE2",
+      "country": "Sweden",
+      "rounds": 1,
+      "totalEur": 2500000
+    },
+    {
+      "company": "LetsData",
+      "url": "https://funding.tech.eu/companies/48A18B8A-ED9B-4292-B49B-9B4CEFBB193B",
+      "country": "Ukraine",
+      "rounds": 1,
+      "totalEur": 1553398
+    },
+    {
+      "company": "NOLD",
+      "url": "https://funding.tech.eu/companies/1B2BB11F-1279-4881-8941-93FE5E4E49FB",
+      "country": "Bulgaria",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Minimist",
+      "url": "https://funding.tech.eu/companies/BF503982-EA4A-4929-B5EF-419E57392CE6",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Munch",
+      "url": "https://funding.tech.eu/companies/7C2B0A29-6002-4E17-9FEE-D77E7BAA0557",
+      "country": "Hungary",
+      "rounds": 1,
+      "totalEur": 0
+    },
+    {
+      "company": "MX Labs",
+      "url": "https://funding.tech.eu/companies/A2CDB2E3-FCDB-43F0-918F-EA6D55751B9C",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Arbonics",
+      "companyUrl": "https://funding.tech.eu/companies/0F481EC3-B44F-44D4-A4EC-B5C2162FC1C1",
+      "dealUrl": "https://funding.tech.eu/deals/7BC41B17-428F-4942-A914-487F8899B489",
+      "stage": "Seed",
+      "amountEur": 5500000,
+      "date": "2023-12-14T00:00:00.000Z"
+    },
+    {
+      "company": "The Village Network",
+      "companyUrl": "https://funding.tech.eu/companies/12E81F79-CB99-467B-B4B0-3FB091FEB0D4",
+      "dealUrl": "https://funding.tech.eu/deals/5DDC6FC2-7931-48E5-9AF9-AF86460AE55E",
+      "stage": "Other",
+      "amountEur": 3400000,
+      "date": "2022-07-04T00:00:00.000Z"
+    },
+    {
+      "company": "Lifeyear",
+      "companyUrl": "https://funding.tech.eu/companies/9BA88D8A-82D0-4037-A13A-3C51BA7A0D32",
+      "dealUrl": "https://funding.tech.eu/deals/986DCBC9-A5EB-4B3C-9108-D377C064C6B8",
+      "stage": "Other",
+      "amountEur": 2800000,
+      "date": "2025-07-01T00:00:00.000Z"
+    },
+    {
+      "company": "FaceUp",
+      "companyUrl": "https://funding.tech.eu/companies/3602EEF0-BB88-4AFA-9A03-25BE021FEC8A",
+      "dealUrl": "https://funding.tech.eu/deals/D96C42B0-4FBA-49B0-9B3B-E20D8A9F9061",
+      "stage": "Seed",
+      "amountEur": 2744237,
+      "date": "2024-10-10T00:00:00.000Z"
+    },
+    {
+      "company": "Flox Intelligence",
+      "companyUrl": "https://funding.tech.eu/companies/FFE4E2B8-DC8F-40F3-B255-434A5F4C7EE2",
+      "dealUrl": "https://funding.tech.eu/deals/ABF5139E-180B-459C-8282-5A7A2B458463",
+      "stage": "Seed",
+      "amountEur": 2500000,
+      "date": "2026-02-25T00:00:00.000Z"
+    },
+    {
+      "company": "Delta Green",
+      "companyUrl": "https://funding.tech.eu/companies/7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+      "dealUrl": "https://funding.tech.eu/deals/D8288F78-3C1E-4D5C-89CC-4F61DC237E5C",
+      "stage": "Other",
+      "amountEur": 2200000,
+      "date": "2024-05-27T00:00:00.000Z"
+    },
+    {
+      "company": "Delta Green",
+      "companyUrl": "https://funding.tech.eu/companies/7C0A3203-BBAB-4CBD-BE7C-0E8BD39E11D0",
+      "dealUrl": "https://funding.tech.eu/deals/F1EC9A91-F439-465F-9DFF-273DD59F7C71",
+      "stage": "Other",
+      "amountEur": 2000000,
+      "date": "2025-10-15T00:00:00.000Z"
+    },
+    {
+      "company": "LetsData",
+      "companyUrl": "https://funding.tech.eu/companies/48A18B8A-ED9B-4292-B49B-9B4CEFBB193B",
+      "dealUrl": "https://funding.tech.eu/deals/70BF65DD-4DA8-4114-9EE3-C39351BEDD1B",
+      "stage": "Pre-Seed",
+      "amountEur": 1553398,
+      "date": "2025-01-15T00:00:00.000Z"
+    },
+    {
+      "company": "Minimist",
+      "companyUrl": "https://funding.tech.eu/companies/BF503982-EA4A-4929-B5EF-419E57392CE6",
+      "dealUrl": "https://funding.tech.eu/deals/3B6050EC-91B4-42FC-9BC8-D470D2918463",
+      "stage": "Pre-Seed",
+      "amountEur": 1000000,
+      "date": "2026-03-25T00:00:00.000Z"
+    },
+    {
+      "company": "NOLD",
+      "companyUrl": "https://funding.tech.eu/companies/1B2BB11F-1279-4881-8941-93FE5E4E49FB",
+      "dealUrl": "https://funding.tech.eu/deals/9D475747-EDE2-4105-9163-23EDE937364B",
+      "stage": "Seed",
+      "amountEur": 1000000,
+      "date": "2023-10-18T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Credo Ventures",
+      "url": "https://funding.tech.eu/investors/Credo%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "1991 Ventures",
+      "url": "https://funding.tech.eu/investors/1991%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "500 Startups",
+      "url": "https://funding.tech.eu/investors/500%20Startups",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Almi Invest",
+      "url": "https://funding.tech.eu/investors/Almi%20Invest",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Estonian government",
+      "url": "https://funding.tech.eu/investors/Estonian%20government",
+      "sharedRounds": 1
+    },
+    {
+      "name": "European Investment Fund",
+      "url": "https://funding.tech.eu/investors/European%20Investment%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fiedler Capital",
+      "url": "https://funding.tech.eu/investors/Fiedler%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "FJ Labs",
+      "url": "https://funding.tech.eu/investors/FJ%20Labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "GENIUS NY",
+      "url": "https://funding.tech.eu/investors/GENIUS%20NY",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Google’s Ukraine Support Fund",
+      "url": "https://funding.tech.eu/investors/Google%E2%80%99s%20Ukraine%20Support%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "J.O.S.S.",
+      "url": "https://funding.tech.eu/investors/J.O.S.S.",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Movens Capital",
+      "url": "https://funding.tech.eu/investors/Movens%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "New Vision 3",
+      "url": "https://funding.tech.eu/investors/New%20Vision%203",
+      "sharedRounds": 1
+    },
+    {
+      "name": "NordicNinja VC",
+      "url": "https://funding.tech.eu/investors/NordicNinja%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Piton Capital",
+      "url": "https://funding.tech.eu/investors/Piton%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Plural",
+      "url": "https://funding.tech.eu/investors/Plural",
+      "sharedRounds": 1
+    },
+    {
+      "name": "PurposeTech",
+      "url": "https://funding.tech.eu/investors/PurposeTech",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Reflex Capital",
+      "url": "https://funding.tech.eu/investors/Reflex%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Satgana",
+      "url": "https://funding.tech.eu/investors/Satgana",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Silicon Gardens",
+      "url": "https://funding.tech.eu/investors/Silicon%20Gardens",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Simpact Ventures",
+      "url": "https://funding.tech.eu/investors/Simpact%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}
