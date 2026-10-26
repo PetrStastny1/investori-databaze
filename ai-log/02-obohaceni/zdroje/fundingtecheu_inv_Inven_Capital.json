@@ -1,0 +1,482 @@
+{
+  "name": "Inven Capital",
+  "url": "https://funding.tech.eu/investors/Inven%20Capital",
+  "aliases": [
+    "Inven Capital"
+  ],
+  "types": [
+    "Investment firm",
+    "Venture capital"
+  ],
+  "deals": 23,
+  "companies": 17,
+  "activeYears": {
+    "first": 2015,
+    "last": 2026
+  },
+  "participatedRoundEur": 468788508,
+  "sectors": [
+    {
+      "name": "Energy",
+      "value": 12
+    },
+    {
+      "name": "Cleantech",
+      "value": 7
+    },
+    {
+      "name": "Transportation",
+      "value": 4
+    },
+    {
+      "name": "Software",
+      "value": 3
+    },
+    {
+      "name": "AI",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Series B",
+      "value": 6
+    },
+    {
+      "name": "Series C",
+      "value": 6
+    },
+    {
+      "name": "Other",
+      "value": 5
+    },
+    {
+      "name": "Series A",
+      "value": 3
+    },
+    {
+      "name": "Growth/Late",
+      "value": 1
+    },
+    {
+      "name": "Seed",
+      "value": 1
+    },
+    {
+      "name": "Series D+",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Germany",
+      "value": 14
+    },
+    {
+      "name": "Czech Republic",
+      "value": 2
+    },
+    {
+      "name": "France",
+      "value": 2
+    },
+    {
+      "name": "UK",
+      "value": 2
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Israel",
+      "value": 1
+    },
+    {
+      "name": "Sweden",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2015,
+      "n": 2
+    },
+    {
+      "y": 2016,
+      "n": 2
+    },
+    {
+      "y": 2017,
+      "n": 1
+    },
+    {
+      "y": 2018,
+      "n": 4
+    },
+    {
+      "y": 2019,
+      "n": 1
+    },
+    {
+      "y": 2020,
+      "n": 3
+    },
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 4
+    },
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 1
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Zolar",
+      "url": "https://funding.tech.eu/companies/65C7A4F5-0DF5-4424-8AC2-D7C1DED5BAF8",
+      "country": "Germany",
+      "rounds": 3,
+      "totalEur": 125000000
+    },
+    {
+      "company": "Tado",
+      "url": "https://funding.tech.eu/companies/E0328018-8CDF-4C39-82D2-A55599FBF00D",
+      "country": "Germany",
+      "rounds": 2,
+      "totalEur": 63394833
+    },
+    {
+      "company": "Forto",
+      "url": "https://funding.tech.eu/companies/2B8C9AFA-D80E-4903-8262-6EF724530590",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 42265427
+    },
+    {
+      "company": "HomeTree",
+      "url": "https://funding.tech.eu/companies/15A5752C-6ABA-41C9-BD00-020DED01B882",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 42116828
+    },
+    {
+      "company": "Woltair",
+      "url": "https://funding.tech.eu/companies/7B878593-ED71-4974-A63D-0429BACAFF6D",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 36800000
+    },
+    {
+      "company": "Andercore",
+      "url": "https://funding.tech.eu/companies/3B167068-4946-4386-A7D8-CB2A3B372BF9",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 33613445
+    },
+    {
+      "company": "Sunfire",
+      "url": "https://funding.tech.eu/companies/7C7AFE2F-34DE-4EFA-82D6-95E6FE9362EC",
+      "country": "Germany",
+      "rounds": 2,
+      "totalEur": 25000000
+    },
+    {
+      "company": "Cosmo Tech",
+      "url": "https://funding.tech.eu/companies/E9C84609-A774-42FC-8724-0C1C5DB6435F",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 18148820
+    },
+    {
+      "company": "Vulog",
+      "url": "https://funding.tech.eu/companies/0A9C3CF5-446F-4D7B-95C8-2AD2B2B6DD90",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 17500000
+    },
+    {
+      "company": "Vytal",
+      "url": "https://funding.tech.eu/companies/16C8B831-D9EB-4D91-848E-ABB15862050B",
+      "country": "Germany",
+      "rounds": 2,
+      "totalEur": 14200000
+    },
+    {
+      "company": "Ember",
+      "url": "https://funding.tech.eu/companies/7D699BCA-F18F-40B1-BB25-E1D1711BE8DC",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 12813643
+    },
+    {
+      "company": "Driivz",
+      "url": "https://funding.tech.eu/companies/05FE69D3-E335-4DFF-8A86-86C4FEA6478D",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 10170118
+    },
+    {
+      "company": "Cloud&Heat",
+      "url": "https://funding.tech.eu/companies/208C3392-FC02-4620-B5DC-4B0F2BEEF7FC",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 10000000
+    },
+    {
+      "company": "ELIQ",
+      "url": "https://funding.tech.eu/companies/5EA9E944-95C8-401C-A01D-CD6DED90591D",
+      "country": "Sweden",
+      "rounds": 1,
+      "totalEur": 10000000
+    },
+    {
+      "company": "Hydrogrid",
+      "url": "https://funding.tech.eu/companies/EE72DE08-1885-4707-AE20-F7AB696A73C2",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 7765394
+    },
+    {
+      "company": "Sonnen",
+      "url": "https://funding.tech.eu/companies/F2CAA849-15D2-4FE2-9237-DB09DFC2C2F8",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 0
+    },
+    {
+      "company": "Sonnenbatterie",
+      "url": "https://funding.tech.eu/companies/01CD5165-B8C8-4F4E-A606-A6F579C625B9",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Zolar",
+      "companyUrl": "https://funding.tech.eu/companies/65C7A4F5-0DF5-4424-8AC2-D7C1DED5BAF8",
+      "dealUrl": "https://funding.tech.eu/deals/CAE06661-EB6E-4414-AE20-496685E2B75D",
+      "stage": "Series C",
+      "amountEur": 100000000,
+      "date": "2022-05-19T00:00:00.000Z"
+    },
+    {
+      "company": "Tado",
+      "companyUrl": "https://funding.tech.eu/companies/E0328018-8CDF-4C39-82D2-A55599FBF00D",
+      "dealUrl": "https://funding.tech.eu/deals/623FD2D3-BA55-4017-D3FE-08D91092C887",
+      "stage": "Series D+",
+      "amountEur": 43192813,
+      "date": "2018-09-30T22:00:00.000Z"
+    },
+    {
+      "company": "Forto",
+      "companyUrl": "https://funding.tech.eu/companies/2B8C9AFA-D80E-4903-8262-6EF724530590",
+      "dealUrl": "https://funding.tech.eu/deals/22C04FF1-FC46-45C6-F20F-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 42265427,
+      "date": "2020-11-16T23:00:00.000Z"
+    },
+    {
+      "company": "HomeTree",
+      "companyUrl": "https://funding.tech.eu/companies/15A5752C-6ABA-41C9-BD00-020DED01B882",
+      "dealUrl": "https://funding.tech.eu/deals/AFFBE404-F76E-4AD7-A4B6-684541011CDB",
+      "stage": "Series B",
+      "amountEur": 42116828,
+      "date": "2023-04-12T00:00:00.000Z"
+    },
+    {
+      "company": "Andercore",
+      "companyUrl": "https://funding.tech.eu/companies/3B167068-4946-4386-A7D8-CB2A3B372BF9",
+      "dealUrl": "https://funding.tech.eu/deals/FEABF200-D696-42F4-AD20-C5B9D092566E",
+      "stage": "Series B",
+      "amountEur": 33613445,
+      "date": "2026-02-11T00:00:00.000Z"
+    },
+    {
+      "company": "Sunfire",
+      "companyUrl": "https://funding.tech.eu/companies/7C7AFE2F-34DE-4EFA-82D6-95E6FE9362EC",
+      "dealUrl": "https://funding.tech.eu/deals/658FBD00-72FE-4554-D647-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 25000000,
+      "date": "2018-12-31T23:00:00.000Z"
+    },
+    {
+      "company": "Woltair",
+      "companyUrl": "https://funding.tech.eu/companies/7B878593-ED71-4974-A63D-0429BACAFF6D",
+      "dealUrl": "https://funding.tech.eu/deals/3AFF720C-E2F5-49E7-BDB2-7EAEF5B14F69",
+      "stage": "Other",
+      "amountEur": 20500000,
+      "date": "2023-06-07T00:00:00.000Z"
+    },
+    {
+      "company": "Tado",
+      "companyUrl": "https://funding.tech.eu/companies/E0328018-8CDF-4C39-82D2-A55599FBF00D",
+      "dealUrl": "https://funding.tech.eu/deals/88A8F100-14BC-4A07-D3FD-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 20202020,
+      "date": "2016-03-31T22:00:00.000Z"
+    },
+    {
+      "company": "Cosmo Tech",
+      "companyUrl": "https://funding.tech.eu/companies/E9C84609-A774-42FC-8724-0C1C5DB6435F",
+      "dealUrl": "https://funding.tech.eu/deals/029728D2-7079-430F-D2CC-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 18148820,
+      "date": "2018-09-10T22:00:00.000Z"
+    },
+    {
+      "company": "Vulog",
+      "companyUrl": "https://funding.tech.eu/companies/0A9C3CF5-446F-4D7B-95C8-2AD2B2B6DD90",
+      "dealUrl": "https://funding.tech.eu/deals/346CCE8E-E806-4475-FD59-08D91092C887",
+      "stage": "Other",
+      "amountEur": 17500000,
+      "date": "2017-07-27T22:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "2150 VC",
+      "url": "https://funding.tech.eu/investors/2150%20VC",
+      "sharedRounds": 2
+    },
+    {
+      "name": "AENU",
+      "url": "https://funding.tech.eu/investors/AENU",
+      "sharedRounds": 2
+    },
+    {
+      "name": "ArcTern Ventures",
+      "url": "https://funding.tech.eu/investors/ArcTern%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "KAYA VC",
+      "url": "https://funding.tech.eu/investors/KAYA%20VC",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Statkraft Ventures",
+      "url": "https://funding.tech.eu/investors/Statkraft%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "The Westly Group",
+      "url": "https://funding.tech.eu/investors/The%20Westly%20Group",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Total Energy Ventures",
+      "url": "https://funding.tech.eu/investors/Total%20Energy%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Amazon",
+      "url": "https://funding.tech.eu/investors/Amazon",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Aternus",
+      "url": "https://funding.tech.eu/investors/Aternus",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Atomico",
+      "url": "https://funding.tech.eu/investors/Atomico",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Axpo",
+      "url": "https://funding.tech.eu/investors/Axpo",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BayBG Bayerische Beteiligungsgesellschaft",
+      "url": "https://funding.tech.eu/investors/BayBG%20Bayerische%20Beteiligungsgesellschaft",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BayWa r.e. Energy Ventures",
+      "url": "https://funding.tech.eu/investors/BayWa%20r.e.%20Energy%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "C. EntrePREneurs",
+      "url": "https://funding.tech.eu/investors/C.%20EntrePREneurs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Cemag Invest",
+      "url": "https://funding.tech.eu/investors/Cemag%20Invest",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Centrica",
+      "url": "https://funding.tech.eu/investors/Centrica",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Chrysalix SET",
+      "url": "https://funding.tech.eu/investors/Chrysalix%20SET",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CNB Capital",
+      "url": "https://funding.tech.eu/investors/CNB%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Commerzbank",
+      "url": "https://funding.tech.eu/investors/Commerzbank",
+      "sharedRounds": 1
+    },
+    {
+      "name": "E.ON",
+      "url": "https://funding.tech.eu/investors/E.ON",
+      "sharedRounds": 1
+    },
+    {
+      "name": "eCAPITAL ENTREPRENEURIAL PARTNERS",
+      "url": "https://funding.tech.eu/investors/eCAPITAL%20ENTREPRENEURIAL%20PARTNERS",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Energy Impact Partners",
+      "url": "https://funding.tech.eu/investors/Energy%20Impact%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Energy Impact Partners (EIP)",
+      "url": "https://funding.tech.eu/investors/Energy%20Impact%20Partners%20(EIP)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Energy Innovation Capital",
+      "url": "https://funding.tech.eu/investors/Energy%20Innovation%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "ETF Partners",
+      "url": "https://funding.tech.eu/investors/ETF%20Partners",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

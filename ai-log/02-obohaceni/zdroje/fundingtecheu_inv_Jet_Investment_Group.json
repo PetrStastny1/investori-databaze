@@ -1,0 +1,222 @@
+{
+  "name": "Jet Investment",
+  "url": "https://funding.tech.eu/investors/Jet%20Investment",
+  "aliases": [
+    "Jet Investment",
+    "Jet Investment Group",
+    "Jet Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 6,
+  "companies": 6,
+  "activeYears": {
+    "first": 2024,
+    "last": 2025
+  },
+  "participatedRoundEur": 15350000,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 3
+    },
+    {
+      "name": "E-commerce",
+      "value": 1
+    },
+    {
+      "name": "Hardware",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 4
+    },
+    {
+      "name": "Seed",
+      "value": 2
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 3
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 5
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "International Automotive Group",
+      "url": "https://funding.tech.eu/companies/ED825E4A-48D5-49A1-9112-4B9FD16E830E",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 5000000
+    },
+    {
+      "company": "Boost.space",
+      "url": "https://funding.tech.eu/companies/2A01B051-3711-45E4-B5B4-F46C7AC42F43",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Digicust",
+      "url": "https://funding.tech.eu/companies/86661611-4ACE-42FC-BD45-ADA8F9C1D2AB",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 2300000
+    },
+    {
+      "company": "Cequence",
+      "url": "https://funding.tech.eu/companies/20EB0D9B-7199-43D3-B22F-C26A4234FB7D",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "Headmade Materials",
+      "url": "https://funding.tech.eu/companies/6CB77709-719C-494C-90DF-D3AA4AB87D5C",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 1800000
+    },
+    {
+      "company": "PARTORY",
+      "url": "https://funding.tech.eu/companies/092A91FE-D4E0-4C79-9EA5-03A9FA344CC8",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1250000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "International Automotive Group",
+      "companyUrl": "https://funding.tech.eu/companies/ED825E4A-48D5-49A1-9112-4B9FD16E830E",
+      "dealUrl": "https://funding.tech.eu/deals/A2D2EAD3-328A-4F6F-87C6-06484347B359",
+      "stage": "Other",
+      "amountEur": 5000000,
+      "date": "2025-05-23T00:00:00.000Z"
+    },
+    {
+      "company": "Boost.space",
+      "companyUrl": "https://funding.tech.eu/companies/2A01B051-3711-45E4-B5B4-F46C7AC42F43",
+      "dealUrl": "https://funding.tech.eu/deals/9694935A-F37C-4BAF-BB0E-7EAA9AF7070D",
+      "stage": "Other",
+      "amountEur": 3000000,
+      "date": "2025-10-10T00:00:00.000Z"
+    },
+    {
+      "company": "Digicust",
+      "companyUrl": "https://funding.tech.eu/companies/86661611-4ACE-42FC-BD45-ADA8F9C1D2AB",
+      "dealUrl": "https://funding.tech.eu/deals/3D238616-26F5-4FAD-B350-8501C148A5D8",
+      "stage": "Seed",
+      "amountEur": 2300000,
+      "date": "2025-12-05T00:00:00.000Z"
+    },
+    {
+      "company": "Cequence",
+      "companyUrl": "https://funding.tech.eu/companies/20EB0D9B-7199-43D3-B22F-C26A4234FB7D",
+      "dealUrl": "https://funding.tech.eu/deals/92BDA80A-E7D4-4FD7-8617-6EB0F91EE87D",
+      "stage": "Seed",
+      "amountEur": 2000000,
+      "date": "2025-06-12T00:00:00.000Z"
+    },
+    {
+      "company": "Headmade Materials",
+      "companyUrl": "https://funding.tech.eu/companies/6CB77709-719C-494C-90DF-D3AA4AB87D5C",
+      "dealUrl": "https://funding.tech.eu/deals/662D6374-6599-4EB0-94D2-B5B7D0410D0C",
+      "stage": "Other",
+      "amountEur": 1800000,
+      "date": "2025-10-01T00:00:00.000Z"
+    },
+    {
+      "company": "PARTORY",
+      "companyUrl": "https://funding.tech.eu/companies/092A91FE-D4E0-4C79-9EA5-03A9FA344CC8",
+      "dealUrl": "https://funding.tech.eu/deals/14B22C2A-6BB7-4B32-B48B-202849E17398",
+      "stage": "Other",
+      "amountEur": 1250000,
+      "date": "2024-10-01T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Look AI Ventures",
+      "url": "https://funding.tech.eu/investors/Look%20AI%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "AM Ventures",
+      "url": "https://funding.tech.eu/investors/AM%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Austria Wirtschaftsservice (aws)",
+      "url": "https://funding.tech.eu/investors/Austria%20Wirtschaftsservice%20(aws)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "European Innovation Council (EIC)",
+      "url": "https://funding.tech.eu/investors/European%20Innovation%20Council%20(EIC)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Existing Shareholders",
+      "url": "https://funding.tech.eu/investors/Existing%20Shareholders",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Matterwave Ventures",
+      "url": "https://funding.tech.eu/investors/Matterwave%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Slido",
+      "url": "https://funding.tech.eu/investors/Slido",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tachles VC",
+      "url": "https://funding.tech.eu/investors/Tachles%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tagrose",
+      "url": "https://funding.tech.eu/investors/Tagrose",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

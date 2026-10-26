@@ -1,0 +1,485 @@
+{
+  "name": "KAYA VC",
+  "url": "https://funding.tech.eu/investors/KAYA%20VC",
+  "aliases": [
+    "KAYA",
+    "KAYA VC",
+    "Kaya Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 24,
+  "companies": 19,
+  "activeYears": {
+    "first": 2021,
+    "last": 2026
+  },
+  "participatedRoundEur": 329127774,
+  "sectors": [
+    {
+      "name": "Healthtech",
+      "value": 9
+    },
+    {
+      "name": "Software",
+      "value": 8
+    },
+    {
+      "name": "Energy",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    },
+    {
+      "name": "Cloud",
+      "value": 1
+    },
+    {
+      "name": "E-commerce",
+      "value": 1
+    },
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Series A",
+      "value": 8
+    },
+    {
+      "name": "Other",
+      "value": 6
+    },
+    {
+      "name": "Seed",
+      "value": 5
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 4
+    },
+    {
+      "name": "Crowdfunding",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 13
+    },
+    {
+      "name": "Poland",
+      "value": 5
+    },
+    {
+      "name": "Belgium",
+      "value": 1
+    },
+    {
+      "name": "Bulgaria",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Hungary",
+      "value": 1
+    },
+    {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
+      "name": "UK",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2021,
+      "n": 2
+    },
+    {
+      "y": 2022,
+      "n": 8
+    },
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 4
+    },
+    {
+      "y": 2025,
+      "n": 6
+    },
+    {
+      "y": 2026,
+      "n": 3
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "VIKTOR",
+      "url": "https://funding.tech.eu/companies/8CB4B3EB-C637-413A-89D0-9A51C09ADE7B",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 64660747
+    },
+    {
+      "company": "Viktor",
+      "url": "https://funding.tech.eu/companies/8815F473-BC62-4FE0-8108-5C7D81874687",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 64655172
+    },
+    {
+      "company": "Sensible Biotechnologies",
+      "url": "https://funding.tech.eu/companies/405CC75E-D4B6-4028-960E-9DF0C07EAD31",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 41707339
+    },
+    {
+      "company": "Woltair",
+      "url": "https://funding.tech.eu/companies/7B878593-ED71-4974-A63D-0429BACAFF6D",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 36800000
+    },
+    {
+      "company": "Jutro Medical",
+      "url": "https://funding.tech.eu/companies/87F13F06-5BE2-4ABA-8502-23355336094C",
+      "country": "Poland",
+      "rounds": 2,
+      "totalEur": 36000000
+    },
+    {
+      "company": "E2B",
+      "url": "https://funding.tech.eu/companies/6FE1B408-EAA4-432F-9523-CD26DDD647DC",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 18208619
+    },
+    {
+      "company": "Upheal",
+      "url": "https://funding.tech.eu/companies/F8E6F63D-6062-4EF9-A429-965682EA72FE",
+      "country": "Czech Republic",
+      "rounds": 3,
+      "totalEur": 13575032
+    },
+    {
+      "company": "Supernova",
+      "url": "https://funding.tech.eu/companies/ABC56FAB-5056-421E-AC04-46F227AE1DF5",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 12445854
+    },
+    {
+      "company": "Better Stack",
+      "url": "https://funding.tech.eu/companies/93B36580-41F3-440A-A8F5-23BBF4F78807",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 9200000
+    },
+    {
+      "company": "LetsBuild",
+      "url": "https://funding.tech.eu/companies/F39F8127-828F-438D-A85D-C6A241543D25",
+      "country": "Belgium",
+      "rounds": 1,
+      "totalEur": 6300000
+    },
+    {
+      "company": "DasLab",
+      "url": "https://funding.tech.eu/companies/992843E8-A082-479F-8B44-63BEEDF07207",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 6200000
+    },
+    {
+      "company": "TopK",
+      "url": "https://funding.tech.eu/companies/CA82A144-272A-4073-935B-CCB783E2989D",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 4657070
+    },
+    {
+      "company": "Riptides",
+      "url": "https://funding.tech.eu/companies/AD90ACC3-AD91-4C4D-9612-8E6B1F862FF5",
+      "country": "Hungary",
+      "rounds": 1,
+      "totalEur": 2890933
+    },
+    {
+      "company": "Cardiomatics",
+      "url": "https://funding.tech.eu/companies/49E96DBB-6B4A-49EB-9FBD-932952BEA91A",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 2730841
+    },
+    {
+      "company": "AhoyConnect",
+      "url": "https://funding.tech.eu/companies/2C4287B3-A16A-482B-83CD-76AE9C57F624",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2537212
+    },
+    {
+      "company": "Healee",
+      "url": "https://funding.tech.eu/companies/CD102287-0DB3-435C-A56B-92592BCD824C",
+      "country": "Bulgaria",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "TrueClaim",
+      "url": "https://funding.tech.eu/companies/B4D223F5-C512-41C2-8CF9-2A2A83954D3B",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1958955
+    },
+    {
+      "company": "Amano",
+      "url": "https://funding.tech.eu/companies/817B4000-8D9B-4ADB-B2BD-8DC4DC14CB73",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Digitoo",
+      "url": "https://funding.tech.eu/companies/A036F61D-6DEC-4FEB-B3F5-BBB345EF2E8B",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1100000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "VIKTOR",
+      "companyUrl": "https://funding.tech.eu/companies/8CB4B3EB-C637-413A-89D0-9A51C09ADE7B",
+      "dealUrl": "https://funding.tech.eu/deals/457EC34D-FBFF-4C90-97D6-DBD984A82B0D",
+      "stage": "Series A",
+      "amountEur": 64660747,
+      "date": "2026-05-21T00:00:00.000Z"
+    },
+    {
+      "company": "Jutro Medical",
+      "companyUrl": "https://funding.tech.eu/companies/87F13F06-5BE2-4ABA-8502-23355336094C",
+      "dealUrl": "https://funding.tech.eu/deals/D0B68958-5029-47C7-AB62-203644F398F9",
+      "stage": "Series A",
+      "amountEur": 24000000,
+      "date": "2025-12-16T00:00:00.000Z"
+    },
+    {
+      "company": "Woltair",
+      "companyUrl": "https://funding.tech.eu/companies/7B878593-ED71-4974-A63D-0429BACAFF6D",
+      "dealUrl": "https://funding.tech.eu/deals/3AFF720C-E2F5-49E7-BDB2-7EAEF5B14F69",
+      "stage": "Other",
+      "amountEur": 20500000,
+      "date": "2023-06-07T00:00:00.000Z"
+    },
+    {
+      "company": "E2B",
+      "companyUrl": "https://funding.tech.eu/companies/6FE1B408-EAA4-432F-9523-CD26DDD647DC",
+      "dealUrl": "https://funding.tech.eu/deals/2C7F40FE-CFCF-45F9-B801-8703E16F01D9",
+      "stage": "Series A",
+      "amountEur": 18208619,
+      "date": "2025-07-29T00:00:00.000Z"
+    },
+    {
+      "company": "Woltair",
+      "companyUrl": "https://funding.tech.eu/companies/7B878593-ED71-4974-A63D-0429BACAFF6D",
+      "dealUrl": "https://funding.tech.eu/deals/36FF30AA-D200-4D6F-B962-D122AD34FBE5",
+      "stage": "Series A",
+      "amountEur": 16300000,
+      "date": "2022-09-27T00:00:00.000Z"
+    },
+    {
+      "company": "Jutro Medical",
+      "companyUrl": "https://funding.tech.eu/companies/87F13F06-5BE2-4ABA-8502-23355336094C",
+      "dealUrl": "https://funding.tech.eu/deals/EF8EC5E0-2CDE-45AB-8D32-88AAF4565949",
+      "stage": "Series A",
+      "amountEur": 12000000,
+      "date": "2025-03-19T00:00:00.000Z"
+    },
+    {
+      "company": "Upheal",
+      "companyUrl": "https://funding.tech.eu/companies/F8E6F63D-6062-4EF9-A429-965682EA72FE",
+      "dealUrl": "https://funding.tech.eu/deals/47CF66E5-D75A-4446-A37E-87664055C0BC",
+      "stage": "Series A",
+      "amountEur": 9500000,
+      "date": "2024-11-15T00:00:00.000Z"
+    },
+    {
+      "company": "Better Stack",
+      "companyUrl": "https://funding.tech.eu/companies/93B36580-41F3-440A-A8F5-23BBF4F78807",
+      "dealUrl": "https://funding.tech.eu/deals/27CB90D1-03D8-47BA-B25F-FDBD60D68F44",
+      "stage": "Other",
+      "amountEur": 9200000,
+      "date": "2024-01-22T00:00:00.000Z"
+    },
+    {
+      "company": "Supernova",
+      "companyUrl": "https://funding.tech.eu/companies/ABC56FAB-5056-421E-AC04-46F227AE1DF5",
+      "dealUrl": "https://funding.tech.eu/deals/C1D60B32-88DA-4057-AD7F-46311FC988A8",
+      "stage": "Series A",
+      "amountEur": 7835789,
+      "date": "2025-09-30T00:00:00.000Z"
+    },
+    {
+      "company": "LetsBuild",
+      "companyUrl": "https://funding.tech.eu/companies/F39F8127-828F-438D-A85D-C6A241543D25",
+      "dealUrl": "https://funding.tech.eu/deals/9924C25B-FEE0-402C-AEC0-7C93F37E06B1",
+      "stage": "Other",
+      "amountEur": 6300000,
+      "date": "2022-11-03T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Inovo VC",
+      "url": "https://funding.tech.eu/investors/Inovo%20VC",
+      "sharedRounds": 5
+    },
+    {
+      "name": "Credo Ventures",
+      "url": "https://funding.tech.eu/investors/Credo%20Ventures",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Y Combinator",
+      "url": "https://funding.tech.eu/investors/Y%20Combinator",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Accel",
+      "url": "https://funding.tech.eu/investors/Accel",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Alex Bouaziz",
+      "url": "https://funding.tech.eu/investors/Alex%20Bouaziz",
+      "sharedRounds": 2
+    },
+    {
+      "name": "ArcTern Ventures",
+      "url": "https://funding.tech.eu/investors/ArcTern%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Aternus",
+      "url": "https://funding.tech.eu/investors/Aternus",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Bek Ventures",
+      "url": "https://funding.tech.eu/investors/Bek%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Cal Henderson",
+      "url": "https://funding.tech.eu/investors/Cal%20Henderson",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Calm Storm Ventures",
+      "url": "https://funding.tech.eu/investors/Calm%20Storm%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "EQT Ventures",
+      "url": "https://funding.tech.eu/investors/EQT%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Guillermo Rauch",
+      "url": "https://funding.tech.eu/investors/Guillermo%20Rauch",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Harry Stebbings",
+      "url": "https://funding.tech.eu/investors/Harry%20Stebbings",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Inven Capital",
+      "url": "https://funding.tech.eu/investors/Inven%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Jorn van Dijk",
+      "url": "https://funding.tech.eu/investors/Jorn%20van%20Dijk",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Koen Bok",
+      "url": "https://funding.tech.eu/investors/Koen%20Bok",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Lenny Rachitsky",
+      "url": "https://funding.tech.eu/investors/Lenny%20Rachitsky",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Nina Capital",
+      "url": "https://funding.tech.eu/investors/Nina%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Stewart Butterfield",
+      "url": "https://funding.tech.eu/investors/Stewart%20Butterfield",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Tenacity Capital",
+      "url": "https://funding.tech.eu/investors/Tenacity%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "The Westly Group",
+      "url": "https://funding.tech.eu/investors/The%20Westly%20Group",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Victor Riparbelli",
+      "url": "https://funding.tech.eu/investors/Victor%20Riparbelli",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Wing Venture Capital",
+      "url": "https://funding.tech.eu/investors/Wing%20Venture%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Aaron Levie",
+      "url": "https://funding.tech.eu/investors/Aaron%20Levie",
+      "sharedRounds": 1
+    },
+    {
+      "name": "All Iron Ventures",
+      "url": "https://funding.tech.eu/investors/All%20Iron%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "name": "i&i Biotech Fund",
+      "url": "https://funding.tech.eu/investors/i%26i%20Biotech%20Fund",
+      "type": "Investment firm",
+      "deals": 6,
+      "companies": 6,
+      "topSector": "Healthtech",
+      "activeYears": {
+        "first": 2022,
+        "last": 2026
+      }
+    },
+    {
+      "name": "i&i Biotech Fund I",
+      "url": "https://funding.tech.eu/investors/i%26i%20Biotech%20Fund%20I",
+      "type": "Investment firm",
+      "deals": 1,
+      "companies": 1,
+      "topSector": "Healthtech",
+      "activeYears": {
+        "first": 2024,
+        "last": 2024
+      }
+    }
+  ],
+  "page": 1,
+  "totalPages": 1,
+  "total": 2,
+  "count": 2,
+  "notes": [
+    "Filters: q (name), type (e.g. Venture+Capital), sort (deals_desc | companies_desc | name), page. Entity-resolved (name variants merged)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

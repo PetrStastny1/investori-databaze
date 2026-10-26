@@ -54,3 +54,23 @@ Dávka 2 (10 kandidátů)
   všechna jeho volání jsou zapsaná u cz-everita-capital (u Espiry nuly).
   Hlavní agent: žádné webové požadavky, jen kontrola a zápis.
 
+Dávka 3 (10 kandidátů)
+------------------------------
+  začátek 2026-10-26T16:02:28Z, konec 2026-10-26T16:14:14Z, doba 11 min 46 s
+  kandidát                                 WS   WF  WFx ARES  FTE curl
+  cz-ii-prague                             14   17    6    4    2    0  zarazen
+  cz-inven-capital                          4    8    1    2    1    0  zarazen
+  cz-jt-ventures                            6    6    0    2    1    1  zarazen
+  cz-jet-investment                         1   10    4    2    2    1  nevyresene
+  cz-jic-ventures                           4    7    1    4    1    0  zarazen
+  cz-kaya-vc                                4    8    3    6    2    0  zarazen
+  cz-kkcg                                   7   11    4    2    1    1  nevyresene
+  cz-lighthouse-ventures                   13    8    0    3    1    0  zarazen
+  cz-lion-beat-capital                      1    3    0    3    1    0  vyrazen
+  cz-look-ai-ventures                       6    7    0    5    1    0  zarazen
+  celkem                                   60   85   19   33   13    3  (celkem 194 požadavků)
+  WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
+  Hlavní agent: 1 WebFetch (kontrola označení kola Digicust u Look AI Ventures),
+  1 oprava tvaru pole (ticket u Look AI Ventures: null → objekt s prázdnými
+  hodnotami podle schématu, obsah beze změny).
+

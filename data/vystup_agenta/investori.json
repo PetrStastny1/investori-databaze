@@ -987,5 +987,1032 @@
       "investice": "stredni"
     },
     "poznamka": "Typ VC: web investora se popisuje jako 'early stage biotech venture capital' a 'one of the very few VC funds in Europe focused exclusively on life science ventures'; doložené investice do startupů v kolech pre-seed/seed/series A. Struktura: fond i&i Biotech Fund I SCSp (Lucembursko, web uvádí 'Headquarters: 42, rue de la Vallée, L-2661 Luxembourg'), investičním poradcem a týmem je Biotech Investments, s. r. o., Pobřežní 394/12, Praha 8 (web, CVCA profil 'i&i Biotech Investments' se stejnou adresou a kontaktem Tomáš Maršálek, CFO). Sídlo investiční firmy (poradce/tým, značka i&i Bio) beru jako ČR; lucemburský je právní obal fondu. Identita: ARES Biotech Investments s.r.o., IČO 10885978, sídlo Pobřežní 394/12, Praha 8; jednatelé Tomáš Maršálek a Ivan Vohlmuth (oba na webu jako Founding Partners); společníci SVAI Biotech Investments s.r.o., Luctonber s.r.o. a KAMAVO Biotech Investments s.r.o. (po 1/3); Karel Kubias (Founding Partner podle webu) byl jednatelem do 2024-11-30. Lucemburský fond v rejstříku RCS jsem neověřoval. Fond byl založen v roce 2021 ve spolupráci s EIF a i&i Prague (dceřiná společnost ÚOCHB / IOCB Tech), který je podle ÚOCHB jedním z hlavních investorů fondu; i&i Prague je samostatná firma (incubator a venture builder, 100% IOCB Tech s.r.o.), viz par_cz-ii-biotech-investments__cz-ii-prague.md. Ticket podle webu: business creation 'from €150k', growth 'sweet spot €0.5M to €2M' (min 150 000, max 2 000 000 EUR). Kapitál: web investora 30. 11. 2022: 'the total capital of the fund has risen to approximately €47 million' (zapsáno jako fund_size, přibližná hodnota); stejná stránka v boxu About uvádí 'manages over €53 million' bez data, ÚOCHB 2021 'more than 45 million EUR'; nesčítám, novější nedatovaný údaj (dolní mez) nezapisuji. Poslední investice: Theorema (Praha, AI pro vědecký výzkum), pre-seed 3,3 mil. USD / 70 mil. Kč (velikost celého kola, ne vklad i&i), i&i Biotech Fund mezi investory podle Lupa.cz a CzechCrunch (oba 27. 3. 2026) a Vestbee (31. 3. 2026). Nezávislost zdrojů nedoložena (pravděpodobně všechny vycházejí z oznámení startupu), proto jistota investice stredni; nástroj neprima_indicie (pre-seed), podíl výslovně neuveden v žádném zdroji. Další: Ternary Therapeutics seed 3,6 mil. GBP (velikost kola; IT Brief 17. 3. 2026, jiné zdroje uvádějí oznámení 16. 3. 2026), Antiverse series A 9,3 mil. USD (velikost kola; i&i jako stávající investor, Vestbee 3. 3. 2026), T-CURX first closing series A 20 mil. USD (velikost kola, tisková zpráva 17. 12. 2025). Také KyDo Therapeutics seed 4,45 mil. EUR vedené I&I Bio (web investora 16. 9. 2025, jen web investora, nezapsáno). Sektory a fáze podle webu ('early stage', drug discovery, medtech, diagnostics, AI). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-ii-prague",
+    "nazev": "i&i Prague",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "i&i Prague, s.r.o.",
+      "ico": "06058485",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06058485",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-10-25",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.iniprague.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://uochb.cz/en/ini-prague",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "ÚOCHB (mateřská instituce)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.iniprague.com/",
+      "zdroj_url": "https://www.iniprague.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "drug development",
+        "diagnostics",
+        "medical technologies",
+        "life sciences"
+      ],
+      "zdroj_url": "https://www.iniprague.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed"
+      ],
+      "zdroj_url": "https://uochb.cz/en/ini-prague",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "CasInvent Pharma",
+      "datum_investice": null,
+      "datum_oznameni": "2025-06-26",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221"
+      },
+      "zdroje": [
+        {
+          "url": "https://positiv.cz/business/casinvent-pharma-ziskava-silnou-investicni-podporu-pro-vyvoj-cilene-lecby-nadoru/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Positiv.cz",
+          "puvod": "TZ CasInvent Pharma",
+          "zdroj_datum": "2025-06-26",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://khanu.de/2025/07/02/casinvent-pharma-secures-next-investment-round-with-strong-support-from-existing-and-local-investors-to-advance-ck1-inhibitor-development-for-treatment-resistant-cancer-patients/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "KHAN-I (převzatá tisková zpráva CasInvent Pharma)",
+          "puvod": "TZ CasInvent Pharma",
+          "zdroj_datum": "2025-07-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221",
+          "druh_zdroje": "rejstrik_spolecnik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-05-30",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: vlastní popis „We are a biotech incubator and venture builder“ (iniprague.com), ÚOCHB: „The company provides pre-seed financing for such projects“. Podle pravidel je akcelerátor/inkubátor s vlastním kapitálem a doloženými investicemi za podíl VC: i&i Prague investuje z vlastní společnosti (konvertibilní zápůjčka 100 000 EUR do CasInvent Pharma převedená na akcie, viz níže). Nejde o CVC velké firmy ani o provozní korporaci; jediný společník je IOCB TECH s.r.o. (IČO 28934024, 100 %), firma ÚOCHB AV ČR pro transfer technologií. Identita: ARES i&i Prague, s.r.o., IČO 06058485, Pobřežní 394/12, Praha 8 (shodně s webem), jednatelé David Stíbal (od 2025-04-01, na webu i&i Prague v rozhovoru) a Zuzana Demianová (od 2026-10-01). Oddělení od i&i Biotech Fund: fond i&i Biotech Fund I SCSp (poradce Biotech Investments s.r.o., IČO 10885978) je samostatná investiční firma (viz par_cz-ii-biotech-investments__cz-ii-prague.md); jeho investice (Antiverse, KyDo, Captain T Cell, Theorema aj.) i&i Prague nepřipisuji, ač je databáze Caplight slučuje. Kapitál fondu (45–47 mil. EUR) není kapitálem i&i Prague. Vlastní kapitál ani ticket i&i Prague nikde neuvádí (prázdné). Poslední investice: CasInvent Pharma, a.s. (Brno, IČO 09684221), další investiční kolo bez uvedené výše a bez označení fáze; tisková zpráva CasInvent (Positiv.cz 26. 6. 2025 „Zdroj: TZ Casinvent“; KHAN-I 2. 7. 2025): nové investory JIC Ventures, Garage Angels a Dynumerics „together contributing 50% of the total investment. The remaining investment was backed by longstanding investors including KHAN-I, i&i Prague, and Holeček Family Foundation.“ Nástroj doložen rejstříkem (ARES VR CasInvent, zápis 2025-05-30): valná hromada 22. 5. 2025 zvýšila základní kapitál o 768 000 Kč upsáním akcií třídy C; 48 ks akcií (jmenovitá hodnota 96 000 Kč) „předem určenému zájemci, kterým je společnost i&i Prague, s.r.o. … IČO: 060 58 485“, splacení započtením pohledávky 100 000 EUR „z titulu Smlouvy o konvertibilní zápůjčce (Convertible Loan Agreement)“ ze dne 4. 3. 2025. Rejstřík beru jen jako doklad nástroje, ne data; datum_investice proto null, datum_pro_filtr = oznámení 2025-06-26 (12–24 měsíců). Starší investice mimo okno: CasInvent pre-Series A 1,6 mil. EUR (velikost celého kola) oznámená 30. 1. 2024 (ctt.muni.cz). PerioTrap: Companisto uvádí i&i Prague mezi co-investory bez data a startbase (10. 3. 2026) i&i Prague u kola pre-Series A neuvádí, nepoužito. Nanoflexion: jen inkubace podle TUL/PitchBook, investice nedoložena zprávou. Jistota investice stredni: obě zprávy vycházejí z jedné tiskové zprávy CasInvent. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-inven-capital",
+    "nazev": "Inven Capital",
+    "typ": "CVC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Inven Capital, SICAV, a.s.",
+      "ico": "02059533",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02059533",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-09-25",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.invencapital.cz/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.invencapital.cz/",
+      "zdroj_url": "https://www.invencapital.cz/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "climate tech"
+      ],
+      "zdroj_url": "https://www.invencapital.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "ticket": {
+      "min": 2000000,
+      "max": 30000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.invencapital.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 500000000,
+        "mena": "EUR",
+        "plati_k": "2023-02-08",
+        "druh": "aum",
+        "fond": null,
+        "zdroj_url": "https://cez.cz/en/media/press-releases/expanding-strategic-partnership-eib-provides-further-eur-50-million-to-the-czech-fund-inven-capital-to-support-investments-into-climate-friendly-start-ups-172371",
+        "zdroj_datum": "2023-02-08",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Wint",
+      "datum_investice": null,
+      "datum_oznameni": "2026-09-09",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "series D",
+        "zdroj_url": "https://wint.ai/?p=12204"
+      },
+      "zdroje": [
+        {
+          "url": "https://wint.ai/?p=12204",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Wint (tisková zpráva)",
+          "puvod": null,
+          "zdroj_datum": "2026-09-09",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.calcalistech.com/ctechnews/article/g1q2qcekz",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Calcalist (CTech)",
+          "puvod": "https://wint.ai/?p=12204",
+          "zdroj_datum": "2026-09-09",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Andercore",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-11",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series B",
+          "zdroj_url": "https://tech.eu/2026/02/11/andercore-is-expanding-its-ai-based-industrial-trade-platform-following-a-40m-series-b-raise/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.andercore.com/press/andercore-secures-40m-series-b-for-ai-driven-industrial-trade-platform",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Andercore (tisková zpráva)",
+            "puvod": null,
+            "zdroj_datum": "2026-02-11",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://tech.eu/2026/02/11/andercore-is-expanding-its-ai-based-industrial-trade-platform-following-a-40m-series-b-raise/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Tech.eu",
+            "puvod": "https://www.andercore.com/press/andercore-secures-40m-series-b-for-ai-driven-industrial-trade-platform",
+            "zdroj_datum": "2026-02-11",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ CVC: Inven Capital je podle tiskové zprávy ČEZ (8. 2. 2023) „CEZ Group´s venture capital fund“ a ČEZ je „the owner of Inven Capital“; jde o samostatný investiční subjekt (samosprávný investiční fond SICAV) velké firmy, tedy samostatná investiční jednotka. Web se sám popisuje „As a venture capital fund we invest EUR 500m from institutional investors…“; VC i CVC jsou v pilotu, výsledek na volbě nezávisí. Identita: ARES Inven Capital, SICAV, a.s., IČO 02059533, sídlo Pod křížkem 1773/2, Praha 4 – Braník (shodně s patičkou webu), předmět „činnost samosprávného investičního fondu“, dříve ČEZ Nová energetika, a.s.; předseda představenstva Petr Míkovec, místopředseda Ivo Němejc, člen Viktor Miškovský. Pod fondem jsou v ARES podfondy Inven Capital – Podfond A až D (IČO 75160692, 75160706, 75162903, 75163861), vedeny jako podřízené fondy, ne samostatní investoři. Ticket podle webu „Ticket size 2-30m EUR“. Kapitál: tisková zpráva ČEZ 8. 2. 2023 „The total assets value under management of Inven capital has now reached over EUR 500 million“ (zapsáno jako aum 500 mil. EUR, údaj je dolní mez „over“); táž zpráva uvádí „more than EUR 260 million at their disposal“ (k dispozici, není kapitál, nezapsáno). Web uvádí „bringing the total committed capital to €500 million“ v nedatované zprávě o EIB „for their new fund“; není jasné, ke kterému fondu a datu, proto nezapsáno. Nesčítám. Fáze investor sám neuvádí (null). Poslední investice: Wint (water intelligence, New York/Izrael), series D 36 mil. USD (velikost celého kola, ne vklad Inven), „co-led by LIP Ventures and Inven Capital“ (tisková zpráva Wint 9. 9. 2026, převzal Calcalist 9. 9. 2026), citace Michal Mravec, Investment Director Inven Capital. Další: Andercore (Berlín) series B 40 mil. USD „in equity and debt“ (velikost celého kola), „with Inven Capital joining this round“ / „joining as a new investor“, dluh je přisouzen „institutional financing from Commerzbank and KfW“; nástroj Inven výslovně neuveden, proto neprima_indicie (series B). Nástroj u obou investic jen neprima_indicie, podíl výslovně neuveden. Jistota investice stredni: Calcalist i Tech.eu vycházejí z tiskových zpráv firem, nezávislost nedoložena. Funding.tech.eu (jen vodítko) uvádí 23 kol, poslední 2026. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-jt-ventures",
+    "nazev": "J&T Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "J&T Ventures CG SICAV a.s.",
+      "ico": "08220867",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/08220867",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-16",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22175903",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-07-31",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.jtventures.cz/tym",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.jtventures.cz/",
+      "zdroj_url": "https://www.jtventures.cz/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "B2B",
+        "B2C",
+        "Marketplaces",
+        "sector agnostic"
+      ],
+      "zdroj_url": "https://www.jtventures.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed",
+        "series A"
+      ],
+      "zdroj_url": "https://www.jtventures.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 300000,
+      "max": 3000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.jtventures.cz/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 120000000,
+        "mena": "EUR",
+        "plati_k": null,
+        "druh": "aum",
+        "fond": null,
+        "zdroj_url": "https://www.jtventures.cz/",
+        "zdroj_datum": null,
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Wultra",
+      "datum_investice": null,
+      "datum_oznameni": "2026-06-29",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "series A",
+        "zdroj_url": "https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.lupa.cz/aktuality/ceska-firma-wultra-vybrala-dalsich-160-milionu-na-nasazeni-postkvantoveho-sifrovani/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": "Wultra (informace firmy)",
+          "zdroj_datum": "2026-06-29",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.prnewswire.com/nl/persberichten/wultra-haalt--6-8-miljoen-op-in-een-series-a-financieringsronde-om-de-wereldwijde-uitbreiding-van-post-kwantumoplossingen-voor-digitale-identiteit-te-versnellen-302814757.html",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "PR Newswire (tisková zpráva Wultra)",
+          "puvod": "Wultra (informace firmy)",
+          "zdroj_datum": "2026-07-01",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Choice",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-16",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://tech.eu/2026/03/16/choice-secures-71m-series-a-to-expand-its-restaurant-operating-system-across-europe/"
+        },
+        "zdroje": [
+          {
+            "url": "https://tech.eu/2026/03/16/choice-secures-71m-series-a-to-expand-its-restaurant-operating-system-across-europe/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Tech.eu",
+            "puvod": null,
+            "zdroj_datum": "2026-03-16",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "ValkaAI",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-24",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/"
+        },
+        "zdroje": [
+          {
+            "url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-02-24",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: samostatná značka a tým (Managing Partner Adam Kočík, partneři David Polach, Zuzana Ondrejová, Martin Kešner) s vlastními fondy kvalifikovaných investorů; web 'Podporujeme CEE & SEE foundery s globální ambicí', 'Pre-seed až Series A', CzechCrunch ji řadí mezi 'tuzemské fondy'. Vazba na skupinu J&T (název, kancelář v budově J&T Banky) by mohla ukazovat i na CVC; obě varianty jsou v rozsahu pilotu, výsledek na tom nezávisí. Identita: značka sama nemá v ARES vlastní správcovskou firmu; fondy J&T Ventures CG SICAV a.s. (IČO 08220867, od 2019, sídlo Sokolovská 700/113a, Praha 8) a J&T Ventures III SICAV a.s. (IČO 22175903, vznik 2024-10-21, tatáž adresa), statutárním orgánem obou je AMISTA investiční společnost, a.s. (IČO 27437558, administrátor/obhospodařovatel, ne investiční tým). V dozorčí radě CG SICAV jsou Adam Kočík a Martin Kešner, tedy lidé z týmu na webu, takže fondy k značce přiřazuji. V ARES jsou dále J&T VENTURES I otevřený podílový fond (IČO 71508121) a podfond J&T Ventures II (IČO 75161435). Jako pravni_subjekt uvádím CG SICAV (hlavní fond s týmem v orgánech); formálního správce značky (investiční firmu) jsem v rejstříku nenašel. Sídlo investiční firmy ČR (adresa na webu i v rejstříku). Ticket '€300K – €3M' (Velikost investice) deklaruje web. Kapitál: web uvádí '€120M Výše aktiv' bez data a bez rozlišení fondů; zapsáno jako aum, plati_k neznámé (web © 2024), k ruční kontrole. Sektory web: 'B2B, B2C, Marketplaces, Sector Agnostic'. Poslední investice: Wultra, series A 6,8 mil. EUR (velikost celého kola, ne vklad J&T Ventures), vedl Seventure Partners, J&T Ventures jako stávající investor ('stávající investoři J&T Ventures a Elevator Ventures', Lupa 29. 6. 2026, 'informovala firma'; tisková zpráva Wultra na PR Newswire 1. 7. 2026). Oba zdroje vycházejí z informací firmy, proto jeden původ a jistota investice stredni. Datum uzavření neuvedeno, proto datum_oznameni. Další: Choice series A 7,1 mil. USD (velikost kola, Tech.eu 16. 3. 2026, 'participation from Reflex Capital, Smartlink, and J&T Ventures'), ValkaAI pre-seed 12 mil. EUR (velikost kola, CzechCrunch 24. 2. 2026, 'od tuzemských fondů J&T Ventures, Tensor Ventures, BD Partners'). Účast Fondu Naše Česko v kole ValkaAI je samostatný investor (jiný správce), J&T Ventures nepřipisována. Nástroj u všech neprima_indicie (series A / pre-seed), podíl výslovně neuveden. Agregátory (Seedtable, Caplight, funding.tech.eu) uvádějí v červnu 2026 i Definic (seed, 12. 6. 2026) a Grid.online; zprávu o transakci jsem nenašel, proto nezapsány; obě by byly starší než Wultra. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-jic-ventures",
+    "nazev": "JIC Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "JIC General Partner s.r.o.",
+      "ico": "24074004",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24074004",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-12-20",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24320358",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-01-07",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04156293",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-02-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/v-brne-vznikl-fond-pro-startupy-ktery-bude-investovat-i-penize-kraje/",
+          "druh_zdroje": "media",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2026-04-07",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+      "zdroj_url": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "deep tech",
+        "SaaS"
+      ],
+      "zdroj_url": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed"
+      ],
+      "zdroj_url": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": 1000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "FaceUp",
+      "datum_investice": null,
+      "datum_oznameni": "2026-05-19",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "series A",
+        "zdroj_url": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "JIC (tisková zpráva)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/byl-to-studentsky-projekt-ted-uz-ma-hodnotu-pres-pul-miliardy-nabidky-na-odkup-odmitame-hlasi-cesi/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do",
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/whistleblowing-platforma-faceup-ziskala-pres-100-milionu-i-od-brnenskeho-fondu-s-nimz-investuje-biskupstvi/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": "https://www.jic.cz/en/about-us/pro-media/prvni-investice-noveho-fondu-jic-ventures-miri-do",
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.jic.cz/en/potreby-a-sluzby/jic-ventures",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje 'JIC Ventures is a Brno-born VC fund backing technology founders from pre-seed to exit' a 'lead[s] rounds'; fond s cca 40 investory (LP), většina kapitálu soukromá (Lupa.cz 7. 4. 2026), doložená investice za podíl do startupu. Iniciátorem je inovační agentura JIC (zájmové sdružení právnických osob, IČO 71180478), která drží 51 % ve správci; nejde o CVC (JIC není velká korporace) ani o akcelerátor bez kapitálu. Identita: správce/GP JIC General Partner s.r.o., IČO 24074004, Purkyňova 649/127, Brno, jednatelé a společníci Radim Kocourek a Miloš Sochor (po 24,5 %), JIC 51 %; Lupa.cz jmenuje Kocourka a Sochora jako vedení fondu. Fond: JIC Ventures 2 a.s., osoba rizikového kapitálu, IČO 24320358 (zapsán 2026-01-05, člen správní rady JIC General Partner s.r.o.). Starší investiční vehikl JIC Ventures, s.r.o., IČO 04156293 (100 % JIC, jednatel Radim Kocourek od 2021) – stejná značka a tým, jeden záznam. Sídlo Brno, CZ. Ticket: web 'Tickets up to €1M' (min neuveden). Kapitál nevyplněn: Lupa.cz uvádí, že fond 'hodlá se 400 miliony korun pomoct' a že fond není finálně uzavřený; Pulse2 (12. 4. 2026) 'The fund totals approximately CZK 400 million', ale bez citace investora a bez rozlišení upsaný/cílový – jde spíš o záměr/cíl, proto nezapsáno. Sektory podle webu 'Deep tech, SaaS, and other'. Poslední investice: FaceUp, série A, kterou vedl Fil Rouge Capital za účasti JIC Ventures; velikost celého kola 5 mil. USD (TZ JIC, CzechCrunch ~105 mil. Kč) resp. 'přes 110 milionů Kč' (Lupa.cz) – jde o velikost kola, ne vklad JIC Ventures; drobná nesrovnalost v částce se netýká firmy, data ani investora. Datum podpisu/uzavření neuvedeno, proto datum_oznameni 2026-05-19 (TZ JIC). Nástroj neprima_indicie (série A), podíl výslovně neuveden. Jistota investice stredni: CzechCrunch a Lupa.cz vyšly týž den jako TZ JIC a vlastní zjištění nedokládají (CzechCrunch navíc uvádí valuaci 'má se pohybovat' nad půl miliardy, původ nejasný), nezávislost nedoložena. funding.tech.eu uvádí ještě Eterny (2025-09) a Symfio (2025-08, pre-seed), zprávu o transakci jsem nečetl, proto nezapsány. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-kaya-vc",
+    "nazev": "KAYA VC",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Kaya F3 GP s.r.o.",
+      "ico": "19844166",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19844166",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-12-23",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/stali-u-zrodu-startupoveho-ceska-kaya-spravuje-miliardy-ma-dva-jednorozce-a-otevira-paty-fond/",
+          "druh_zdroje": "media",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2024-06-18",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.kaya.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.kaya.vc/",
+      "zdroj_url": "https://www.kaya.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "digital economy",
+        "physical economy",
+        "consumer economy"
+      ],
+      "zdroj_url": "https://www.kaya.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed",
+        "seed"
+      ],
+      "zdroj_url": "https://www.kaya.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 1000000,
+      "max": 3000000,
+      "mena": "USD",
+      "zdroj_url": "https://www.kaya.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 500000000,
+        "mena": "USD",
+        "plati_k": null,
+        "druh": "aum",
+        "fond": null,
+        "zdroj_url": "https://www.kaya.vc/",
+        "zdroj_datum": null,
+        "stazeno": "2026-10-26"
+      },
+      {
+        "castka": 85000000,
+        "mena": "USD",
+        "plati_k": null,
+        "druh": "fund_size",
+        "fond": "Current Fund (podle webu, název neuveden)",
+        "zdroj_url": "https://www.kaya.vc/",
+        "zdroj_datum": null,
+        "stazeno": "2026-10-26"
+      },
+      {
+        "castka": 70000000,
+        "mena": "EUR",
+        "plati_k": "2025-06-25",
+        "druh": "committed_capital",
+        "fond": "pátý fond (po first closingu)",
+        "zdroj_url": "https://cc.cz/vsadila-na-rohlik-kdyz-ho-ostatni-investori-takrka-odepisovali-ted-chce-kaya-dalsi-jednorozce/",
+        "zdroj_datum": "2025-06-25",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Viktor",
+      "datum_investice": null,
+      "datum_oznameni": "2026-05-19",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "series A",
+        "zdroj_url": "https://finance.yahoo.com/sectors/technology/articles/exclusive-ai-startup-viktor-raises-130000878.html"
+      },
+      "zdroje": [
+        {
+          "url": "https://finance.yahoo.com/sectors/technology/articles/exclusive-ai-startup-viktor-raises-130000878.html",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Fortune (přetištěno Yahoo Finance)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.thesaasnews.com/news/viktor-raises-75-million-series-a",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "The SaaS News",
+          "puvod": "https://finance.yahoo.com/sectors/technology/articles/exclusive-ai-startup-viktor-raises-130000878.html",
+          "zdroj_datum": "2026-05-19",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.kaya.vc/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web 'We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale', 'patient capital'; člen CVCA (kandidát z CVCA), funding.tech.eu typ Venture capital; investice do startupů v kolech pre-seed až series A, dříve Enern. Identita: Kaya F3 GP s.r.o., IČO 19844166, Thámova 183/11, Praha 8 (shodná s pražskou adresou na webu), společníci Pavel Mucha 35 %, Tomáš Pačinda, Tomáš Obrtáč, Martin Rajčan, Petr Šmída po 15 %, Radovan Nesrsta 5 %, jednatelé Mucha a Pačinda; CzechCrunch (18. 6. 2024) jmenuje Muchu, Pačindu, Obrtáče a Rajčana jako partnery Kaya. Jde o GP jednoho z fondů; zda je hlavní správcovskou entitou celé značky, nepotvrzeno. Další entity: KAYA Advisory s.r.o. (IČO 22585737, Thámova 183/11), KAYA (fka Enern) s.r.o. (IČO 10838821, 100 % ENERN Investments, investiční fond s proměnným základním kapitálem, a.s., IČO 01790765). Sídlo: web uvádí kanceláře Varšava, Praha, San Francisco, Londýn bez označení centrály; sídlo investiční firmy beru CZ podle rejstříku GP v Praze a českého týmu (CzechCrunch: průkopník českého VC trhu). Ticket: web '$1–3M'; CzechCrunch 25. 6. 2025 uvádí 'od jednoho do tří milionů eur' – měna se liší, zapsán údaj z webu. Kapitál: web '$500M' 'AUM Total' a '$85M' 'Current Fund' (bez data, plati_k null); CzechCrunch 25. 6. 2025 'Pátý fond Kayi disponuje 70 miliony eur ... po first closingu' (zapsáno jako committed_capital k datu článku). Údaje se pravděpodobně překrývají, nesčítat. Sektory: web 'digital, physical, and consumer economies' (generalista). Poslední investice: Viktor (AI, Varšava), série A 75 mil. USD (velikost celého kola, ne vklad Kaya), vedl Accel, 'participation from Bek Ventures, Kaya VC, Inovo VC, and Tenacity Capital' (Fortune 19. 5. 2026); The SaaS News výslovně cituje Fortune/Yahoo jako zdroj, proto stejný původ a jistota investice stredni. Datum uzavření neuvedeno, proto datum_oznameni. Nástroj neprima_indicie (série A), podíl výslovně neuveden. funding.tech.eu uvádí i Jutro Medical (série A, 2025-12), E2B (série A, 2025-07), Supernova (2025-09); zprávy jsem nečetl, proto nezapsány. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-lighthouse-ventures",
+    "nazev": "Lighthouse Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Lighthouse Ventures GP s.r.o.",
+      "ico": "07500912",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/07500912",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2024-04-03",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://lhv.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://lhv.vc/",
+      "zdroj_url": "https://lhv.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "B2B software",
+        "fintech",
+        "AI"
+      ],
+      "zdroj_url": "https://lhv.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "idea",
+        "seed"
+      ],
+      "zdroj_url": "https://lhv.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 200000,
+      "max": 1000000,
+      "mena": "EUR",
+      "zdroj_url": "https://lhv.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Hermetiq",
+      "datum_investice": null,
+      "datum_oznameni": "2026-08-24",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "nezjisteno",
+        "kolo": null,
+        "zdroj_url": null
+      },
+      "zdroje": [
+        {
+          "url": "https://www.lupa.cz/aktuality/cesky-miliardar-investuje-do-americke-firmy-ktera-pomoci-ai-automatizuje-buildovani-softwaru/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2026-08-24",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://lhv.vc/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Merchantee",
+        "datum_investice": null,
+        "datum_oznameni": "2026-06-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://nordic9.com/news/merchantee-raised-18-million-in-a-pre-seed-fu/"
+        },
+        "zdroje": [
+          {
+            "url": "https://nordic9.com/news/merchantee-raised-18-million-in-a-pre-seed-fu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Nordic9",
+            "puvod": null,
+            "zdroj_datum": "2026-06-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://raising.fi/news/merchantee-undisclosed-june-2026",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Raising.fi",
+            "puvod": null,
+            "zdroj_datum": "2026-06-09",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://lhv.vc/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Ranketta",
+        "datum_investice": null,
+        "datum_oznameni": "2025-11-27",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://www.vestbee.com/insights/articles/ranketta-secures-1-m"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.vestbee.com/insights/articles/ranketta-secures-1-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": "informace od firmy/investorů („as Vestbee was informed“)",
+            "zdroj_datum": "2025-11-27",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://cc.cz/delal-vyzkum-s-mikolovem-v-jednadvaceti-ma-vlastni-startup-umoznuje-byt-videt-v-chatech-s-ai/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": "informace od firmy/investorů (shodné datum a citace investorů jako Vestbee; nezávislý původ nedoložen)",
+            "zdroj_datum": "2025-11-27",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://lhv.vc/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje „Lighthouse Ventures is an early-stage venture capital, focused on technology projects with global vision“, Vestbee „a venture capital firm based in Prague, Czech Republic“; doložené investice do startupů v pre-seed kolech. Web uvádí „Lighthouse Seed Fund benefits from the support and financing of the Czech ESIF Fund of Funds (CZFoF)“ a „Start year of most recent Fund II: 2024“; fondy jsou podřízené údaje, právní subjekt fondu jsem v ARES nenašel (hledání „Lighthouse“ vrátilo jen GP). Identita: ARES Lighthouse Ventures GP s.r.o., IČO 07500912, sídlo Evropská 2758/11, Praha 6 (shodné s adresou kanceláře na webu „Evropská 2758/11, 160 00, Prague 6“), jednatel Michal Zálešák, kterého web i Vestbee uvádějí jako Managing Partner; společníci Michal Zálešák a Vladislav Vintner po 50 %. Předmět podnikání v rejstříku obecný. Sídlo investiční firmy ČR. Ticket deklaruje web: „Investment in a single startup: From €200k to €1m“; sektory „B2B Software of various verticals, Fintech, AI“; fáze „Idea / Seed“. Kapitál: nevyplněn; web velikost Fund II neuvádí; rozhovor CzechCrunch z 6. 4. 2020 (https://cc.cz/nejde-o-zdroj-penez-ale-jak-fondy-podporuji-startupy-v-rozvoji-i-pres-krizi-investujeme-dal-rika-zalesak-z-lighthouse-ventures/) uvádí „Celkem máme k dispozici zhruba 24 milionů eur“ a „celkovým kapitálem na úrovni 600 milionů korun“ – formulace „k dispozici“ a údaj redakce nejsou deklarovaný aum/committed/fund size a týkají se prvního fondu v roce 2020, proto prázdné. Poslední investice: Hermetiq (USA, AI pro software), Lupa.cz 24. 8. 2026 jmenuje mezi investory „a dále Lighthouse Ventures“; velikost celého kola 2,2 mil. USD (ne vklad Lighthouse), lead Jet Investment (750 tis. USD); Lupa typ kola neuvádí, Raising.fi (27. 8. 2026) ho označuje za seed, ale Lighthouse nejmenuje, proto nástroj nezjisteno. Další: Merchantee, Nordic9 3. 6. 2026: „Merchantee raised €1.8 million in a pre-seed funding round led by Reflex Capital“, „with participation from Czech Founders VC and Lighthouse Ventures“; Raising.fi 9. 6. 2026 „led by Reflex Capital, with participation from Lighthouse Ventures“ (kolo jako „undisclosed funding round“); 1,8 mil. EUR je velikost celého kola; Nordic9 uvádí v textu i 2,1 mil. USD (nejednotná částka, ne rozpor ve firmě, datu ani investorovi). Ranketta (Brno, AI viditelnost značek), Vestbee 27. 11. 2025: „The round was led by Lighthouse Ventures, with participation from Gi21 Capital“, „€1 million in pre-seed funding“; CzechCrunch týž den „tzv. pre-seed investici“, 1 mil. EUR (24 mil. Kč) je velikost celého kola. Nástroj: žádná investice nemá výslovně podíl/akcie, podmínka 3 se opírá o neprima_indicie (pre-seed, Merchantee a Ranketta), proto jistota investice stredni. Nezávislost: Vestbee a CzechCrunch publikovaly Rankettu tentýž den a obě zjevně vycházejí z informací firmy/investorů, Nordic9 a Raising.fi původ neuvádějí, nezávislost nedoložena. Agregátory (Caplight, PitchBook) uvádějí i BeatPulse Labs (6/2026), Deplace AI (2/2026), Prodeen (2026), zprávu o transakci jsem k nim nedohledal, proto nepoužity. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-look-ai-ventures",
+    "nazev": "Look AI Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Look AI Ventures SICAV, a.s.",
+      "ico": "17604087",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/17604087",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-10-07",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06385745",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-04-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://lookai.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://lookai.vc/",
+      "zdroj_url": "https://lookai.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "AI"
+      ],
+      "zdroj_url": "https://lookai.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "early stage",
+        "pre-Series A"
+      ],
+      "zdroj_url": "https://lookai.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Sodex Innovations",
+      "datum_investice": null,
+      "datum_oznameni": "2026-07-13",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "nezjisteno",
+        "kolo": null,
+        "zdroj_url": null
+      },
+      "zdroje": [
+        {
+          "url": "https://tech.eu/2026/07/13/sodex-innovations-secures-4m-to-bring-real-time-intelligence-to-construction-sites/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "tech.eu",
+          "puvod": null,
+          "zdroj_datum": "2026-07-13",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://lookai.vc/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Lucida AI",
+        "datum_investice": null,
+        "datum_oznameni": "2026-06-30",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+        },
+        "zdroje": [
+          {
+            "url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "tech.eu",
+            "puvod": null,
+            "zdroj_datum": "2026-06-30",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.lupa.cz/aktuality/cesi-investovali-do-konkurenta-duolinga-ktery-pro-vyuku-jazyku-nabizi-treba-ai-persony/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Lupa.cz",
+            "puvod": null,
+            "zdroj_datum": "2026-06-30",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Digicust",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://digicust.com/en/blog/digicust-pre-series-a-financing-round-finalized"
+        },
+        "zdroje": [
+          {
+            "url": "https://digicust.com/en/blog/digicust-pre-series-a-financing-round-finalized",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Digicust (tisková zpráva firmy)",
+            "puvod": null,
+            "zdroj_datum": "2025-12-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.trendingtopics.eu/digicust-zoll-23-millionen-euro/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Trending Topics",
+            "puvod": "https://digicust.com/en/blog/digicust-pre-series-a-financing-round-finalized",
+            "zdroj_datum": "2025-12-03",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web 'the first investment fund in the Czech Republic that focuses exclusively on AI startups worldwide', pre-Series A venture capital fund; doložené investice do startupů. Značka a tým sídlí v Praze (kancelář Karla Engliše 5, Praha 5; registrované sídlo fondu Radlická 180/50, Praha 5), proto zeme CZ. Identita: ARES Look AI Ventures SICAV, a.s., IČO 17604087 (fond kvalifikovaných investorů, podfond Look AI Ventures I, IČO 75163705), individuální statutární orgán / obhospodařovatel do 5. 10. 2026 AVANT investiční společnost, a.s., od 5. 10. 2026 FTP Dimension investiční společnost, a.s. (web uvádí FTP Dimension jako správce). Provozní tým: Look AI Investments, a.s., IČO 06385745 (dříve AI Startup Incubator a.s., Radlická 180/50, Praha 5), akcionář SICAV na účet podfondu Look AI Ventures I; ve správní radě Martin Havlík a Daniel Kunz, které web uvádí jako Managing Partner a Partner. Záznam vedu za značku, fond a správce jsou podřízené údaje. Ticket: web ho neuvádí ('The terms and conditions of the investment are always drawn up to fit your startup'); tech.eu 13. 4. 2023 píše 'The targeted investment amount in one start-up is €250,000' bez citace investora, proto nevyplněno. Vklad do Digicust 250 000 EUR je jednotlivá investice, ne deklarovaný ticket. Kapitál: jen cíl 'aims to raise €20 million' (tech.eu 2023, záměr, ne velikost fondu), web velikost neuvádí, proto prázdné. Poslední investice: Sodex Innovations, tech.eu 13. 7. 2026: 'The round also welcomed new investors Bloomhaus, Look AI Ventures and the German business angel group Superangels'; kolo 4 mil. EUR (velikost celého kola) bez označení fáze, nástroj nezjištěn. Lucida AI: tech.eu 30. 6. 2026 seed kolo navýšené na 7 mil. USD (velikost celého kola) 'with participation from Next Tier Ventures, Look AI Ventures...'; Lupa.cz 30. 6. 2026 'Český fond Look AI Ventures se podílel na investici do startupu Lucida AI'; nástroj neprima_indicie (seed); nezávislost obou zpráv nedoložena (pravděpodobně společný podklad). Digicust: TZ firmy 3. 12. 2025 'the Look.AI Fund is contributing €250,000', celé kolo 2,3 mil. EUR, firma kolo označuje jako 'pre-Series A' i 'seed round'; Trending Topics vychází ze stejné TZ (jeden zdroj); zmínka o převodu na equity se týká zakladatelů a soukromých investorů, ne Look AI, proto neprima_indicie. Žádná investice nemá nástroj dolozeno, jistota investice stredni. funding.tech.eu uvádí 9 kol 2023–2026 (vodítko, ne doklad), mj. Checkstep 5/2026 (nedohledáno ve zprávě, nezapsáno). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   }
 ]

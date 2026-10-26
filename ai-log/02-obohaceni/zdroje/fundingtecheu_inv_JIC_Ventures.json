@@ -1,0 +1,125 @@
+{
+  "name": "JIC Ventures",
+  "url": "https://funding.tech.eu/investors/JIC%20Ventures",
+  "aliases": [
+    "JIC Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 3,
+  "companies": 3,
+  "activeYears": {
+    "first": 2023,
+    "last": 2025
+  },
+  "participatedRoundEur": 1610000,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 3
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Localazy",
+      "url": "https://funding.tech.eu/companies/F2B6A558-83F4-43E4-88F2-C65DD68D2D95",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Eterny",
+      "url": "https://funding.tech.eu/companies/8B6B2DF0-2784-4A30-9DE3-8987929D8FE9",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 400000
+    },
+    {
+      "company": "Symfio",
+      "url": "https://funding.tech.eu/companies/744A65F9-6C35-45FA-90ED-DA93E932DF41",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 210000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Localazy",
+      "companyUrl": "https://funding.tech.eu/companies/F2B6A558-83F4-43E4-88F2-C65DD68D2D95",
+      "dealUrl": "https://funding.tech.eu/deals/BFE246A8-E724-47DF-BCA1-0419562665CE",
+      "stage": "Other",
+      "amountEur": 1000000,
+      "date": "2023-06-30T00:00:00.000Z"
+    },
+    {
+      "company": "Eterny",
+      "companyUrl": "https://funding.tech.eu/companies/8B6B2DF0-2784-4A30-9DE3-8987929D8FE9",
+      "dealUrl": "https://funding.tech.eu/deals/145D1D97-51AF-4354-A57A-58AED6149DB7",
+      "stage": "Other",
+      "amountEur": 400000,
+      "date": "2025-09-10T00:00:00.000Z"
+    },
+    {
+      "company": "Symfio",
+      "companyUrl": "https://funding.tech.eu/companies/744A65F9-6C35-45FA-90ED-DA93E932DF41",
+      "dealUrl": "https://funding.tech.eu/deals/F126FA5D-68B5-41B3-B0EC-BF71EBF80019",
+      "stage": "Pre-Seed",
+      "amountEur": 210000,
+      "date": "2025-08-13T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "12 Bullets",
+      "url": "https://funding.tech.eu/investors/12%20Bullets",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Garage Angels",
+      "url": "https://funding.tech.eu/investors/Garage%20Angels",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

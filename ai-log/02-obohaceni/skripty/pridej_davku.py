@@ -71,6 +71,14 @@ def nastroj_splnen(inv):
 
 def kontrola_zaznamu(z):
     chyby = []
+    for pole in ("pravni_subjekt", "web", "sektory", "faze", "ticket", "posledni_investice", "jistota"):
+        if not isinstance(z.get(pole), dict):
+            chyby.append(f"{pole}: má být objekt podle schématu")
+    for pole in ("kapital", "dalsi_investice"):
+        if not isinstance(z.get(pole), list):
+            chyby.append(f"{pole}: má být seznam")
+    if chyby:
+        return chyby
     if z.get("typ") not in ("VC", "CVC"):
         chyby.append(f"zařazen s typem {z.get('typ')}")
     if z.get("zeme") != "CZ":

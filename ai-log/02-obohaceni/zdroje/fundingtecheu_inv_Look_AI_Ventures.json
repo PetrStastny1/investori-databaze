@@ -1,0 +1,328 @@
+{
+  "name": "Look AI Ventures",
+  "url": "https://funding.tech.eu/investors/Look%20AI%20Ventures",
+  "aliases": [
+    "Look AI Ventures",
+    "Look.ai"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 9,
+  "companies": 8,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 15921229,
+  "sectors": [
+    {
+      "name": "AI",
+      "value": 5
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 2
+    },
+    {
+      "name": "Software",
+      "value": 2
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 4
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 3
+    },
+    {
+      "name": "Other",
+      "value": 2
+    }
+  ],
+  "countries": [
+    {
+      "name": "UK",
+      "value": 4
+    },
+    {
+      "name": "Türkiye",
+      "value": 2
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 2
+    },
+    {
+      "y": 2025,
+      "n": 3
+    },
+    {
+      "y": 2026,
+      "n": 3
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Lucida AI",
+      "url": "https://funding.tech.eu/companies/BAB20645-9965-4B17-8992-347EE79FE4F3",
+      "country": "Türkiye",
+      "rounds": 2,
+      "totalEur": 5988289
+    },
+    {
+      "company": "Checkstep",
+      "url": "https://funding.tech.eu/companies/A1F2F9D4-DB98-45FF-8E7A-98C23D9B0D7D",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3459290
+    },
+    {
+      "company": "Digicust",
+      "url": "https://funding.tech.eu/companies/86661611-4ACE-42FC-BD45-ADA8F9C1D2AB",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 2300000
+    },
+    {
+      "company": "Cequence",
+      "url": "https://funding.tech.eu/companies/20EB0D9B-7199-43D3-B22F-C26A4234FB7D",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "Ambr",
+      "url": "https://funding.tech.eu/companies/B38A0690-CBB7-407C-AF33-8098C8013C63",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 1138706
+    },
+    {
+      "company": "Inntelo AI",
+      "url": "https://funding.tech.eu/companies/B7288A37-96DF-4079-A252-8E1E909C04A4",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 576901
+    },
+    {
+      "company": "Electric Sheep",
+      "url": "https://funding.tech.eu/companies/39B2E8BB-02D4-42BB-98ED-CF1FC75C2814",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 458043
+    },
+    {
+      "company": "Secjur",
+      "url": "https://funding.tech.eu/companies/7FCFA2F7-61A4-4154-B253-9943B206E414",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Lucida AI",
+      "companyUrl": "https://funding.tech.eu/companies/BAB20645-9965-4B17-8992-347EE79FE4F3",
+      "dealUrl": "https://funding.tech.eu/deals/F9CB2A8E-D909-4DEE-9780-6D9486887436",
+      "stage": "Seed",
+      "amountEur": 4584041,
+      "date": "2026-04-15T00:00:00.000Z"
+    },
+    {
+      "company": "Checkstep",
+      "companyUrl": "https://funding.tech.eu/companies/A1F2F9D4-DB98-45FF-8E7A-98C23D9B0D7D",
+      "dealUrl": "https://funding.tech.eu/deals/976C8425-B6ED-49E9-B047-8756C8D26F3F",
+      "stage": "Other",
+      "amountEur": 3459290,
+      "date": "2026-05-29T00:00:00.000Z"
+    },
+    {
+      "company": "Digicust",
+      "companyUrl": "https://funding.tech.eu/companies/86661611-4ACE-42FC-BD45-ADA8F9C1D2AB",
+      "dealUrl": "https://funding.tech.eu/deals/3D238616-26F5-4FAD-B350-8501C148A5D8",
+      "stage": "Seed",
+      "amountEur": 2300000,
+      "date": "2025-12-05T00:00:00.000Z"
+    },
+    {
+      "company": "Cequence",
+      "companyUrl": "https://funding.tech.eu/companies/20EB0D9B-7199-43D3-B22F-C26A4234FB7D",
+      "dealUrl": "https://funding.tech.eu/deals/92BDA80A-E7D4-4FD7-8617-6EB0F91EE87D",
+      "stage": "Seed",
+      "amountEur": 2000000,
+      "date": "2025-06-12T00:00:00.000Z"
+    },
+    {
+      "company": "Lucida AI",
+      "companyUrl": "https://funding.tech.eu/companies/BAB20645-9965-4B17-8992-347EE79FE4F3",
+      "dealUrl": "https://funding.tech.eu/deals/C8E5EA76-C0D9-4873-A698-CBCF480CB82D",
+      "stage": "Seed",
+      "amountEur": 1404248,
+      "date": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "company": "Ambr",
+      "companyUrl": "https://funding.tech.eu/companies/B38A0690-CBB7-407C-AF33-8098C8013C63",
+      "dealUrl": "https://funding.tech.eu/deals/9EE9E88C-8D1B-4281-9A40-E68840C6C4A6",
+      "stage": "Pre-Seed",
+      "amountEur": 1138706,
+      "date": "2024-09-26T00:00:00.000Z"
+    },
+    {
+      "company": "Inntelo AI",
+      "companyUrl": "https://funding.tech.eu/companies/B7288A37-96DF-4079-A252-8E1E909C04A4",
+      "dealUrl": "https://funding.tech.eu/deals/747C2D0B-E9D9-40EA-9ED9-3797CAD28A26",
+      "stage": "Pre-Seed",
+      "amountEur": 576901,
+      "date": "2025-07-14T00:00:00.000Z"
+    },
+    {
+      "company": "Electric Sheep",
+      "companyUrl": "https://funding.tech.eu/companies/39B2E8BB-02D4-42BB-98ED-CF1FC75C2814",
+      "dealUrl": "https://funding.tech.eu/deals/DE9905A7-BF03-4445-A7BF-44B5BEAE746A",
+      "stage": "Pre-Seed",
+      "amountEur": 458043,
+      "date": "2023-08-16T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Boğaziçi Ventures",
+      "url": "https://funding.tech.eu/investors/Bo%C4%9Fazi%C3%A7i%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Jet Investment",
+      "url": "https://funding.tech.eu/investors/Jet%20Investment",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Next Tier Ventures",
+      "url": "https://funding.tech.eu/investors/Next%20Tier%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "ÜNLÜ Ventures",
+      "url": "https://funding.tech.eu/investors/%C3%9CNL%C3%9C%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Velocity Capital",
+      "url": "https://funding.tech.eu/investors/Velocity%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Yapı Kredi FRWRD Ventures",
+      "url": "https://funding.tech.eu/investors/Yap%C4%B1%20Kredi%20FRWRD%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Alea Capital Partners",
+      "url": "https://funding.tech.eu/investors/Alea%20Capital%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "APX",
+      "url": "https://funding.tech.eu/investors/APX",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Austria Wirtschaftsservice (aws)",
+      "url": "https://funding.tech.eu/investors/Austria%20Wirtschaftsservice%20(aws)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "British Business Bank",
+      "url": "https://funding.tech.eu/investors/British%20Business%20Bank",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BV Growth II",
+      "url": "https://funding.tech.eu/investors/BV%20Growth%20II",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Dasein Capital",
+      "url": "https://funding.tech.eu/investors/Dasein%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fuel Ventures",
+      "url": "https://funding.tech.eu/investors/Fuel%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Haatch",
+      "url": "https://funding.tech.eu/investors/Haatch",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Loyal VC",
+      "url": "https://funding.tech.eu/investors/Loyal%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Pi Labs",
+      "url": "https://funding.tech.eu/investors/Pi%20Labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Plug and Play",
+      "url": "https://funding.tech.eu/investors/Plug%20and%20Play",
+      "sharedRounds": 1
+    },
+    {
+      "name": "SeedBlink",
+      "url": "https://funding.tech.eu/investors/SeedBlink",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Slido",
+      "url": "https://funding.tech.eu/investors/Slido",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Slow Ventures",
+      "url": "https://funding.tech.eu/investors/Slow%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Spatial Capital",
+      "url": "https://funding.tech.eu/investors/Spatial%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Veridian Ventures",
+      "url": "https://funding.tech.eu/investors/Veridian%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

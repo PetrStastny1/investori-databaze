@@ -1,0 +1,78 @@
+{
+  "name": "Lion Beat Capital",
+  "url": "https://funding.tech.eu/investors/Lion%20Beat%20Capital",
+  "aliases": [
+    "Lion Beat Capital"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2025,
+    "last": 2025
+  },
+  "participatedRoundEur": 3700000,
+  "sectors": [
+    {
+      "name": "Gaming",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2025,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Filuta",
+      "url": "https://funding.tech.eu/companies/B91C4163-7678-4EBC-8C21-F054BE036D6A",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 3700000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Filuta",
+      "companyUrl": "https://funding.tech.eu/companies/B91C4163-7678-4EBC-8C21-F054BE036D6A",
+      "dealUrl": "https://funding.tech.eu/deals/69A79DD8-750D-4B4E-BEDC-C129B931986F",
+      "stage": "Seed",
+      "amountEur": 3700000,
+      "date": "2025-06-25T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Rockaway Ventures",
+      "url": "https://funding.tech.eu/investors/Rockaway%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tarpan Capital",
+      "url": "https://funding.tech.eu/investors/Tarpan%20Capital",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}
