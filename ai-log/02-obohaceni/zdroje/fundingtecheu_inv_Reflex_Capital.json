@@ -1,0 +1,460 @@
+{
+  "name": "Reflex Capital",
+  "url": "https://funding.tech.eu/investors/Reflex%20Capital",
+  "aliases": [
+    "Reflex Capital",
+    "Reflex Capital."
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 18,
+  "companies": 15,
+  "activeYears": {
+    "first": 2016,
+    "last": 2026
+  },
+  "participatedRoundEur": 81302138,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 9
+    },
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Transportation",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 1
+    },
+    {
+      "name": "Marketing",
+      "value": 1
+    },
+    {
+      "name": "Hardware",
+      "value": 1
+    },
+    {
+      "name": "HRtech",
+      "value": 1
+    },
+    {
+      "name": "Media",
+      "value": 1
+    },
+    {
+      "name": "Sports",
+      "value": 1
+    },
+    {
+      "name": "Travel",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 8
+    },
+    {
+      "name": "Seed",
+      "value": 6
+    },
+    {
+      "name": "Series A",
+      "value": 3
+    },
+    {
+      "name": "Early VC",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 13
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
+      "name": "UK",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2016,
+      "n": 1
+    },
+    {
+      "y": 2017,
+      "n": 1
+    },
+    {
+      "y": 2019,
+      "n": 1
+    },
+    {
+      "y": 2020,
+      "n": 1
+    },
+    {
+      "y": 2021,
+      "n": 2
+    },
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 4
+    },
+    {
+      "y": 2025,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 3
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Keboola",
+      "url": "https://funding.tech.eu/companies/F1D9384D-1875-4EFD-A4A4-C641ECE12CB1",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 33805275
+    },
+    {
+      "company": "Choice",
+      "url": "https://funding.tech.eu/companies/B41C70A3-4337-4B10-9B3B-583CCF6566C0",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 8485747
+    },
+    {
+      "company": "Supernova",
+      "url": "https://funding.tech.eu/companies/ABC56FAB-5056-421E-AC04-46F227AE1DF5",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 7835789
+    },
+    {
+      "company": "Price f(x)",
+      "url": "https://funding.tech.eu/companies/DB713481-A8C4-43FF-A35A-20A65B2414A3",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 6920704
+    },
+    {
+      "company": "Grid.online",
+      "url": "https://funding.tech.eu/companies/4D0D16C8-2C3A-4FAD-B032-BC12897F043E",
+      "country": null,
+      "rounds": 2,
+      "totalEur": 5500000
+    },
+    {
+      "company": "Wavepaths",
+      "url": "https://funding.tech.eu/companies/67E6B1C2-DA1F-43BE-B89B-E74050835577",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 3886682
+    },
+    {
+      "company": "Spaceti",
+      "url": "https://funding.tech.eu/companies/33BEA95E-41E4-4D21-A9FC-E664B5444D0C",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 3500000
+    },
+    {
+      "company": "Apify",
+      "url": "https://funding.tech.eu/companies/E38AE6D7-B087-4A2F-BF24-025B714B2A2A",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2800000
+    },
+    {
+      "company": "FaceUp",
+      "url": "https://funding.tech.eu/companies/3602EEF0-BB88-4AFA-9A03-25BE021FEC8A",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2744237
+    },
+    {
+      "company": "davinci travel system",
+      "url": "https://funding.tech.eu/companies/26455263-C593-4A72-A54D-20646EC365CA",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2100000
+    },
+    {
+      "company": "Merchantee",
+      "url": "https://funding.tech.eu/companies/92DBD383-DC28-4B58-927B-EA4BE6755F36",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1800000
+    },
+    {
+      "company": "Product Fruits",
+      "url": "https://funding.tech.eu/companies/7740F9CA-F6E2-4740-AE5B-EE982F943CCA",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1473704
+    },
+    {
+      "company": "Trackbar",
+      "url": "https://funding.tech.eu/companies/87973A1C-A80A-497C-A096-A6DA81062E18",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 450000
+    },
+    {
+      "company": "Spaceti Holding B.V.",
+      "url": "https://funding.tech.eu/companies/24A97945-CE85-4F3A-A953-6E62A7DB692C",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 0
+    },
+    {
+      "company": "MALL.cz",
+      "url": "https://funding.tech.eu/companies/635060E4-4834-4951-96C7-D8989C3E4B35",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Keboola",
+      "companyUrl": "https://funding.tech.eu/companies/F1D9384D-1875-4EFD-A4A4-C641ECE12CB1",
+      "dealUrl": "https://funding.tech.eu/deals/465F5C7F-F477-4ECF-8F6C-95E86886056C",
+      "stage": "Series A",
+      "amountEur": 29425287,
+      "date": "2023-12-01T00:00:00.000Z"
+    },
+    {
+      "company": "Supernova",
+      "companyUrl": "https://funding.tech.eu/companies/ABC56FAB-5056-421E-AC04-46F227AE1DF5",
+      "dealUrl": "https://funding.tech.eu/deals/C1D60B32-88DA-4057-AD7F-46311FC988A8",
+      "stage": "Series A",
+      "amountEur": 7835789,
+      "date": "2025-09-30T00:00:00.000Z"
+    },
+    {
+      "company": "Price f(x)",
+      "companyUrl": "https://funding.tech.eu/companies/DB713481-A8C4-43FF-A35A-20A65B2414A3",
+      "dealUrl": "https://funding.tech.eu/deals/BA6C3792-EF6F-4742-D5D9-08D91092C887",
+      "stage": "Other",
+      "amountEur": 6920704,
+      "date": "2017-12-31T23:00:00.000Z"
+    },
+    {
+      "company": "Choice",
+      "companyUrl": "https://funding.tech.eu/companies/B41C70A3-4337-4B10-9B3B-583CCF6566C0",
+      "dealUrl": "https://funding.tech.eu/deals/3E190120-B729-4A96-98D1-AEAEE2075CF3",
+      "stage": "Series A",
+      "amountEur": 6185747,
+      "date": "2026-03-16T00:00:00.000Z"
+    },
+    {
+      "company": "Keboola",
+      "companyUrl": "https://funding.tech.eu/companies/F1D9384D-1875-4EFD-A4A4-C641ECE12CB1",
+      "dealUrl": "https://funding.tech.eu/deals/06D5D027-DCE1-4F30-B847-4F623272C768",
+      "stage": "Seed",
+      "amountEur": 4379988,
+      "date": "2022-11-22T00:00:00.000Z"
+    },
+    {
+      "company": "Grid.online",
+      "companyUrl": "https://funding.tech.eu/companies/4D0D16C8-2C3A-4FAD-B032-BC12897F043E",
+      "dealUrl": "https://funding.tech.eu/deals/7660C192-B0FB-408F-80C0-6A79FFA8C617",
+      "stage": "Other",
+      "amountEur": 4000000,
+      "date": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "company": "Wavepaths",
+      "companyUrl": "https://funding.tech.eu/companies/67E6B1C2-DA1F-43BE-B89B-E74050835577",
+      "dealUrl": "https://funding.tech.eu/deals/DB4F24F9-C3F2-4283-915C-BAB4F065DD3C",
+      "stage": "Seed",
+      "amountEur": 3886682,
+      "date": "2021-11-03T00:00:00.000Z"
+    },
+    {
+      "company": "Spaceti",
+      "companyUrl": "https://funding.tech.eu/companies/33BEA95E-41E4-4D21-A9FC-E664B5444D0C",
+      "dealUrl": "https://funding.tech.eu/deals/7AD88057-1475-4062-EA52-08D91092C887",
+      "stage": "Seed",
+      "amountEur": 3500000,
+      "date": "2020-05-21T22:00:00.000Z"
+    },
+    {
+      "company": "Apify",
+      "companyUrl": "https://funding.tech.eu/companies/E38AE6D7-B087-4A2F-BF24-025B714B2A2A",
+      "dealUrl": "https://funding.tech.eu/deals/D4093D74-B3C8-40FD-823E-B8E909AB9E04",
+      "stage": "Other",
+      "amountEur": 2800000,
+      "date": "2024-04-15T00:00:00.000Z"
+    },
+    {
+      "company": "FaceUp",
+      "companyUrl": "https://funding.tech.eu/companies/3602EEF0-BB88-4AFA-9A03-25BE021FEC8A",
+      "dealUrl": "https://funding.tech.eu/deals/D96C42B0-4FBA-49B0-9B3B-E20D8A9F9061",
+      "stage": "Seed",
+      "amountEur": 2744237,
+      "date": "2024-10-10T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 6
+    },
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Presto Ventures",
+      "url": "https://funding.tech.eu/investors/Presto%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Credo Ventures",
+      "url": "https://funding.tech.eu/investors/Credo%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Eduard Kučera",
+      "url": "https://funding.tech.eu/investors/Eduard%20Ku%C4%8Dera",
+      "sharedRounds": 2
+    },
+    {
+      "name": "AISI",
+      "url": "https://funding.tech.eu/investors/AISI",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Alea Capital Partners",
+      "url": "https://funding.tech.eu/investors/Alea%20Capital%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bridge Builders Collaborative",
+      "url": "https://funding.tech.eu/investors/Bridge%20Builders%20Collaborative",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Czech Venture Capital Association",
+      "url": "https://funding.tech.eu/investors/Czech%20Venture%20Capital%20Association",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DFF Ventures",
+      "url": "https://funding.tech.eu/investors/DFF%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Empath Ventures",
+      "url": "https://funding.tech.eu/investors/Empath%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "EQT Ventures",
+      "url": "https://funding.tech.eu/investors/EQT%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "European Investment Fund",
+      "url": "https://funding.tech.eu/investors/European%20Investment%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fast Forward",
+      "url": "https://funding.tech.eu/investors/Fast%20Forward",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Gernot Singer",
+      "url": "https://funding.tech.eu/investors/Gernot%20Singer",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Grid.VC",
+      "url": "https://funding.tech.eu/investors/Grid.VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Heron Rock",
+      "url": "https://funding.tech.eu/investors/Heron%20Rock",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Kamil Vacek",
+      "url": "https://funding.tech.eu/investors/Kamil%20Vacek",
+      "sharedRounds": 1
+    },
+    {
+      "name": "KAYA VC",
+      "url": "https://funding.tech.eu/investors/KAYA%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lionheart Ventures",
+      "url": "https://funding.tech.eu/investors/Lionheart%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Miton Psychonauts Fund",
+      "url": "https://funding.tech.eu/investors/Miton%20Psychonauts%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Movens Capital",
+      "url": "https://funding.tech.eu/investors/Movens%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Neo Kuma Ventures",
+      "url": "https://funding.tech.eu/investors/Neo%20Kuma%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Palo Santo",
+      "url": "https://funding.tech.eu/investors/Palo%20Santo",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

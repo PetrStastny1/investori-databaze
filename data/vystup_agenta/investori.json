@@ -2617,5 +2617,830 @@
       "investice": "stredni"
     },
     "poznamka": "Typ VC: web 'We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.', 'Minority equity stake'. Je členem skupiny Purple Holding (patička webu 'member of Purple Holding'), ale vystupuje jako samostatný VC fond; druhý fond je podle CzechCrunch (26. 3. 2024) otevřen externím investorům a skupina do něj dává 14 mil. EUR z cíle 40 mil. EUR, CzechCrunch 30. 1. 2025 uvádí 35 externích investorů. Proto VC, ne korporátní investor. Identita: ARES Purple Ventures s.r.o. (do 2017 Purple Holding s.r.o.), IČO 05775574, Masarykova 409/26, Brno; jednatelé Jakub Nytra a Jan Staněk (na webu General Partner a Managing General Partner), jediný společník Purple Holding a.s. (IČO 06528554). Web uvádí stejné IČO. Existuje i Purple Ventures Advisory s.r.o. (IČO 19836155, Masarykova 410/28, Brno, jednatel Jakub Nytra), jako investiční subjekt nepoužit. Ticket deklarovaný webem: '€250k to €400k' 'initial ticket size, later follow-ons'. Sektory: web 'early-stage purpose-driven technology startups with initial revenue and global ambitions', bez výčtu odvětví. Kapitál: web uvádí 'Fund II has raised over CZK 700 million' bez data (zmínka 'Strong 2025') a v podobě dolní hranice; Lupa (březen 2026) 'přes 780 milionů' ve fondu, cíl fondu II 40 mil. EUR. Přesná částka upsaného kapitálu ani datum nejsou uvedeny, cíl není kapitál, proto kapital prázdný. Fond I kolem 15 mil. EUR (CzechCrunch 26. 3. 2024) nezapisuji, protože médium neuvádí, zda jde o velikost fondu podle investora. Poslední investice: Comparables.ai (Finsko), seed 6 mil. USD (velikost celého kola), vedly Pragmatech a Araya Ventures, Tech.eu 6. 10. 2026: 'with participation from Purple Ventures'; Lupa.cz 13. 10. 2026: 'Český fond Purple Ventures se zapojil 10 miliony Kč' (vklad v tomto kole, není to deklarovaný ticket). Nástroj neprima_indicie (seed). Lupa.cz cituje Jana Staňka a fotografii má od Purple Ventures, pravděpodobně vychází z podkladů fondu; nezávislost na zdroji Tech.eu nedoložena, a protože žádná investice nemá dolozeno, jistota investice stredni. Další: Vetstor, kolo 1 mil. EUR (velikost kola), CzechCrunch 9. 12. 2025: Zaka VC a Purple Ventures 'se účastní i aktuálního kola', kolo neoznačeno, nástroj nezjištěn; Talentiqa, 25 mil. Kč (velikost kola), CzechCrunch 29. 9. 2025, kolo neoznačeno, nástroj nezjištěn. funding.tech.eu (profil 'Purple Ventures', aliasy 'Purple') obsahuje i řadu francouzských firem (Woodoo, Bonx, Zealy, Lupin & Holmes); může jít o sloučení s jiným investorem 'Purple', proto profil nepoužívám jako doklad. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-purposetech",
+    "nazev": "PurposeTech",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "PurposeTech s.r.o.",
+      "ico": "19183992",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19183992",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.purposetech.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.purposetech.vc/",
+      "zdroj_url": "https://www.purposetech.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "Health",
+        "Climate",
+        "Future of Work"
+      ],
+      "zdroj_url": "https://www.purposetech.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed"
+      ],
+      "zdroj_url": "https://www.purposetech.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "auryx",
+      "datum_investice": null,
+      "datum_oznameni": "2026-04-30",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://www.enterprise.cam.ac.uk/news/auryx-2m-earbuds-continuous-health-monitors/"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.enterprise.cam.ac.uk/news/auryx-2m-earbuds-continuous-health-monitors/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Cambridge Enterprise (spoluinvestor v kole)",
+          "puvod": "oznámení auryx / Cambridge Enterprise",
+          "zdroj_datum": "2026-04-30",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://vestbee.com/insights/articles/auryx-raises-2-m",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Vestbee",
+          "puvod": "informace od auryx („as Vestbee was informed“), pravděpodobně stejné oznámení",
+          "zdroj_datum": "2026-04-30",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://businesscloud.co.uk/?p=195297",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "BusinessCloud",
+          "puvod": "nedoloženo, pravděpodobně stejné oznámení auryx",
+          "zdroj_datum": "2026-05-01",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Tingit",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-10",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://vestbee.com/insights/articles/tingit-secures-1-5-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": null,
+            "zdroj_datum": "2026-02-10",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://ellex.legal/project/tingit-com-platform-secures-investment/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Ellex (právní poradce transakce)",
+            "puvod": null,
+            "zdroj_datum": "2026-05-28",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Lifeyear",
+        "datum_investice": null,
+        "datum_oznameni": "2025-07-01",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "nezjisteno",
+          "kolo": null,
+          "zdroj_url": null
+        },
+        "zdroje": [
+          {
+            "url": "https://en.ain.ua/2025/07/01/lifeyear-raises-eur28m/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "AIN.UA",
+            "puvod": null,
+            "zdroj_datum": "2025-07-01",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: vlastní popis „PurposeTech is a pre-seed fund that backs founders reshaping Health, Climate, and the Future of Work“ (purposetech.vc); Vestbee 25. 9. 2024: uzavřel „pre-seed venture capital fund“; funding.tech.eu typ „Venture capital“. Samostatná investiční firma se sídlem v ČR, ne korporace ani family office. Identita: ARES PurposeTech s.r.o., IČO 19183992, Drtinova 557/10, Praha 5, vznik 2023-03-24, jednatel Zdeněk Fred Fous (na webu „Co-Founder & GP“), společníci ZEFIRIA, s.r.o. (60 %) a Impact Hub Czechia, a.s. (40 %); web uvádí „PurposeTech, s.r.o.“, Drtinova 557/10 a „founded in 2023 by serial entrepreneur Zdenek Fred Fous and Impact Hub“. Fond: PurposeTech F1 s.r.o., osoba rizikového kapitálu (dříve PurposeTech Fund I. s.r.o.), IČO 19185103, 100% vlastněný PurposeTech s.r.o., jednatel Fous – podřízený fond, ne samostatný investor. Sídlo investiční firmy Praha. Ticket: web má u otázky na typickou výši investice jen zástupný text (Lorem ipsum); CzechCrunch (10. 2. 2026) uvádí plán druhého fondu PT Capital podpořit firmu zhruba 0,5–1 mil. EUR – jde o plán fondu, který ještě neinvestuje, proto ticket nevyplněn. Kapitál: CzechCrunch uvádí, že první fond „od asi dvacítky investorů získali necelých šedesát milionů korun“ – nepřesná částka bez druhu ukazatele, nevyplněno; PT Capital „maximální velikost … deset milionů eur“ je cíl, zbytek se teprve získává, není kapitál. Poslední investice: auryx (Cambridge, UK), pre-seed kolo 2 mil. USD (velikost celého kola, ne vklad; BusinessCloud uvádí 1,5 mil. GBP) vedené Celero Ventures, „with participation from EWOR, Cambridge Enterprise Ventures, Vento, PurposeTech“ (Cambridge Enterprise 30. 4. 2026), Vestbee 30. 4. 2026 „with participation from PurposeTech“. Nástroj neprima_indicie (pre-seed kolo, nástroj neuveden). Další: Tingit (Litva), kolo 1,5 mil. EUR (velikost kola) vedené Coinvest Capital, „with participation from … Purpose Tech“ (Vestbee 10. 2. 2026), Ellex: „existing foreign investors in Tingit – … Czechia's Purpose Tech“; označení kola neuvedeno → nástroj nezjištěn. Lifeyear (UK/Estonsko), 2,8 mil. EUR včetně 1,5 mil. EUR grantu, „€1.3 million from venture capital funds, including Verge HealthTech Fund, Tilia Impact Ventures, PurposeTech“ (AIN 1. 7. 2025); kolo neoznačeno, nezjištěno. Jistota investice stredni: žádná investice nemá doložený nástroj a nezávislost zpráv o auryx (pravděpodobně jedno oznámení) nedoložena. Oddělení od Tilia Impact Ventures: jiná firma (viz par_cz-purposetech__cz-tilia-impact-ventures.md), společná je adresa Impact Hubu a Petr Vítek (spoluzakladatel Tilia, u PurposeTech v Advisory Board). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-reflex-capital",
+    "nazev": "Reflex Capital",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Reflex Capital SE",
+      "ico": "24269158",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24269158",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-07-13",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.reflexcapital.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.reflexcapital.com/",
+      "zdroj_url": "https://www.reflexcapital.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "faze": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "ticket": {
+      "min": 1000000,
+      "max": 2000000,
+      "mena": "EUR",
+      "zdroj_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+      "zdroj_datum": "2023-12-22",
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 22000000,
+        "mena": "EUR",
+        "plati_k": "2023-12-22",
+        "druh": "fund_size",
+        "fond": "třetí fond Reflex Capital (název ve zdroji neuveden)",
+        "zdroj_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+        "zdroj_datum": "2023-12-22",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Grid.online",
+      "datum_investice": null,
+      "datum_oznameni": "2026-06-22",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://cc.cz/opustil-vlastni-firmu-a-vsadil-na-to-ze-zlepsi-dorucovani-baliku-pro-novy-startup-uz-ma-150-milionu/"
+      },
+      "zdroje": [
+        {
+          "url": "https://cc.cz/opustil-vlastni-firmu-a-vsadil-na-to-ze-zlepsi-dorucovani-baliku-pro-novy-startup-uz-ma-150-milionu/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2026-06-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.e15.cz/tiskove-zpravy/startup-navazany-na-grid-online-ziskal-miliony-chce-zmenit-zpusob-dorucovani-baliku-1433723",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "E15",
+          "puvod": "oznámení firmy Grid.online (rubrika Tiskové zprávy, „Firma oznámila“)",
+          "zdroj_datum": "2026-06-22",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.reflexcapital.com/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Merchantee",
+        "datum_investice": null,
+        "datum_oznameni": "2026-06-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/"
+        },
+        "zdroje": [
+          {
+            "url": "https://nordic9.com/news/merchantee-raised-18-million-in-a-pre-seed-fu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Nordic9",
+            "puvod": null,
+            "zdroj_datum": "2026-06-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "CzechCrunch",
+            "puvod": null,
+            "zdroj_datum": "2026-06-09",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.reflexcapital.com/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Choice",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-16",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://tech.eu/2026/03/16/choice-secures-71m-series-a-to-expand-its-restaurant-operating-system-across-europe/"
+        },
+        "zdroje": [
+          {
+            "url": "https://tech.eu/2026/03/16/choice-secures-71m-series-a-to-expand-its-restaurant-operating-system-across-europe/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Tech.eu",
+            "puvod": null,
+            "zdroj_datum": "2026-03-16",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://thenextweb.com/news/restaurant-tech-startup-choice-closes-7-1m-series-a",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "The Next Web",
+            "puvod": null,
+            "zdroj_datum": "2026-03-17",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.reflexcapital.com/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: CzechCrunch (22. 12. 2023) jej popisuje „ve venture kapitálovém fondu Reflex Capital“, Tech.eu/TNW „a Czech VC“; zakladatel Ondřej Fryc k třetímu fondu: „Původně jsme chtěli dvacet milionů, nakonec jsme upsali dvaadvacet, ale investory jsme také odmítali“, tj. fond s externími investory. Fondy jsou v ARES zapsány jako osoby rizikového kapitálu (Reflex 2, osoba rizikového kapitálu SE, IČO 08240051; Reflex 3, osoba rizikového kapitálu SE, IČO 19381263; obě sídlo Rašínovo nábřeží 2000/78, Praha 2, statutár Josef Chvojka, vydávají investiční akcie) – podřízené údaje, ne samostatní investoři. Web se sám typem neoznačuje („We at Reflex Capital are entrepreneurs, just like you“, „We're partners, not bankers“). Souhrn vyhledávání zmínil, že Reflex začínal jako family office; zdroj jsem nečetl a současné fungování (fondy s externími upisovateli) odpovídá VC, proto VC. Identita: ARES Reflex Capital SE, IČO 24269158 (dříve Spread Capital SE), sídlo Rašínovo nábřeží 2000/78, Praha 2, shodné s adresou na webu („Reflex Capital SE, Rašínovo Nábřeží 2000/78“); člen představenstva Josef Chvojka, kterého web uvádí mezi partnery. Sídlo investiční firmy ČR (web uvádí i kancelář v San Francisku). Ticket: Ondřej Fryc v CzechCrunch 2023: „při naší typické investici mezi jedním až dvěma miliony eur“ (deklarace investora v rozhovoru, starší údaj). Kapitál: CzechCrunch 2023 „Uzavřel svůj třetí fond o velikosti dvaadvacet milionů eur“; zapsáno jako fund_size k datu článku (přesné datum uzavření neuvedeno, Fryc mluví o upsání). Údaj web „€150M invested“ je proinvestovaná částka, ne AUM, nezapsán. Fondy nesčítám. Sektory a fáze investor nevymezuje, null. Poslední investice: Grid.online, CzechCrunch 22. 6. 2026: „Připojili se i stávající podílníci z českých fondů Reflex Capital Ondřeje Fryce a J&T Ventures.“; v tabulce „Jak vypadá majetková struktura Grid.online?“ „Reflex Capital: 11,6 %“; na přelomu roku J&T Ventures, Reflex Capital a Juraj Atlas vložili 750 tis. EUR „formou konvertibilního úvěru, který se nyní propisuje do vlastnické struktury“. Nástroj proto podíl doložen (výslovně uvedený vlastnický podíl, konvertibilní úvěr převáděný na podíl); typ kola zdroj neuvádí. 4 mil. EUR je velikost celého kola, ne vklad Reflexu. E15 týž den (tiskové zprávy, „Firma oznámila“): „V projektu pokračují také dosavadní investoři Reflex Capital a J&T Ventures.“ Obě zprávy vyšly týž den a zřejmě vycházejí z oznámení firmy, nezávislost nedoložena, proto jistota investice stredni. Datum uzavření neuvedeno. Další: Merchantee – Nordic9 3. 6. 2026 „led by Reflex Capital“ (pre-seed, 1,8 mil. EUR / v textu 2,1 mil. USD), CzechCrunch 9. 6. 2026 „Kolo vedl fond Reflex Capital za účasti Czech Founders VC a Lighthouse Ventures.“ jako „rozšíření svého původního, takzvaného seed investičního kola“ o 30 mil. Kč (velikosti kola, ne vklad); označení kola se liší (pre-seed vs. rozšíření seedu), firma, investor ani období ne, kolo zapsáno podle CzechCrunch. Choice – Tech.eu 16. 3. 2026 „Alea Capital Partners led the funding, with participation from Reflex Capital, Smartlink, and J&T Ventures“, series A 7,1 mil. USD (velikost kola). Agregátory uvádějí i FaceUp series A (5/2026), ale dostupný výpis Reflex mezi investory nejmenuje, proto nezapsáno. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-rockaway-ventures",
+    "nazev": "Rockaway Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Rockaway Ventures Advisors a.s.",
+      "ico": "14125129",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/14125129",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-08-29",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.vestbee.com/insights/articles/rockaway-ventures-closes-55-m-fund",
+          "druh_zdroje": "media",
+          "vydavatel": "Vestbee",
+          "puvod": null,
+          "zdroj_datum": "2025-05-16",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://rockawayventures.com/",
+      "zdroj_url": "https://rockawayventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "retail a e-commerce",
+        "travel a hospitality",
+        "digitální logistika",
+        "digitální média",
+        "kybernetická bezpečnost",
+        "obrana",
+        "cleantech",
+        "proptech"
+      ],
+      "zdroj_url": "https://rockawayventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "late seed",
+        "series A"
+      ],
+      "zdroj_url": "https://rockawayventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [
+      {
+        "castka": 55000000,
+        "mena": "EUR",
+        "plati_k": "2025-05-16",
+        "druh": "fund_size",
+        "fond": "Rockaway Ventures Fund II",
+        "zdroj_url": "https://www.vestbee.com/insights/articles/rockaway-ventures-closes-55-m-fund",
+        "zdroj_datum": "2025-05-16",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "ValkaAI",
+      "datum_investice": null,
+      "datum_oznameni": "2026-02-24",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.rockawaycapital.com/en/news/e12m-investment-in-valkaai-led-by-rockaway-ventures",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Rockaway Capital (tisková zpráva)",
+          "puvod": null,
+          "zdroj_datum": "2026-02-24",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": "oznámení investice 24. 2. 2026 (pravděpodobně TZ Rockaway/ValkaAI, nedoloženo)",
+          "zdroj_datum": "2026-02-24",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-byznys-startupy-technologie-cesky-startup-ziskal-stovky-milionu-slibuje-prepsat-budoucnost-zabavy-299599",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Seznam Zprávy",
+          "puvod": "oznámení investice 24. 2. 2026 (pravděpodobně TZ Rockaway/ValkaAI, nedoloženo)",
+          "zdroj_datum": "2026-02-24",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Apptronik",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-13",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Lupa.cz",
+            "puvod": "oznámení Apptronik o rozšíření kola Series A",
+            "zdroj_datum": "2026-02-13",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Remix",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-19",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": "podil",
+          "doklad": "dolozeno",
+          "kolo": "series A",
+          "zdroj_url": "https://www.lupa.cz/aktuality/rockaway-investuje-do-evropskeho-digitalniho-second-hand-giganta-tahne-ho-umela-inteligence/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.lupa.cz/aktuality/rockaway-investuje-do-evropskeho-digitalniho-second-hand-giganta-tahne-ho-umela-inteligence/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Lupa.cz",
+            "puvod": "oznámení Rockaway Ventures 19. 12. 2025",
+            "zdroj_datum": "2025-12-19",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://vestbee.com/insights/articles/rockaway-ventures-backs-remix",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": "oznámení Rockaway Ventures 19. 12. 2025",
+            "zdroj_datum": "2025-12-19",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje jako fond ('proud to be a part of the Rockaway Capital group', patička 'Rockaway Ventures Fund'), Vestbee 16. 5. 2025 'Prague-based European investment fund' investující do late-seed a Series A startupů; doložené menšinové investice do startupů. Rockaway Capital je investiční skupina J. Havrlanta, ne provozní korporace, proto ne CVC; podle TZ z 24. 2. 2026 je Rockaway Ventures 'progressive part of the newly established Rockaway Fund within Rockaway Capital'. Identita: ARES Rockaway Ventures Advisors a.s., IČO 14125129, Generála Píky 430/26, Praha 6; představenstvo Jakub Havrlant (předseda), Dušan Zábrodský, Andrea Lauren; Zábrodského uvádí Vestbee jako General Partnera Rockaway Ventures, Havrlanta jako zakladatele. Role této a.s. jako správce/poradce fondu z rejstříku výslovně nevyplývá (předmět činnosti 'Pronájem nemovitostí...'), vazba je přes osoby. Na stejné adrese jsou i Rockaway Ventures a.s. (IČO 06387136, představenstvo Havrlant, Viktor Fischer), Rockaway Ventures Fund Holding a.s. (IČO 14053942) a fond Rockaway Ventures Fund SICAV a.s. (IČO 14235781, statutár AMISTA investiční společnost, a.s.; fond je podřízený údaj). Ticket web ani média neuvádějí, proto null. Kapitál: Vestbee 'has closed its second fund at nearly €55 million' (Rockaway Ventures Fund II), zapsáno 55 mil. EUR jako fund_size s výhradou 'nearly'; plati_k = datum zprávy. Poslední investice: ValkaAI, pre-seed 12 mil. EUR (velikost celého kola, ne vklad Rockaway), Rockaway Ventures kolo vedla podle TZ Rockaway Capital i CzechCrunch a Seznam Zpráv ze stejného dne; nezávislost médií na TZ nedoložena, proto jeden původ. Nástroj neprima_indicie (pre-seed). Další: Apptronik, rozšíření Series A o 520 mil. USD (velikost kola), Lupa 13. 2. 2026 'Čeští investoři z Rockaway Ventures finančně vstoupili do americké společnosti Apptronik'; Remix, Lupa 19. 12. 2025 'Rockaway Ventures získává 20% podíl v Remixu' (podíl doložen; Series A podle Vestbee), Lupa a Vestbee vycházejí ze stejného oznámení. Agregátory (Caplight, PitchBook) uvádějí i CulturePulse (seed, červen 2026), Navigara, Float a AdSpawn, ale zprávu o transakci jsem nenašel, proto nezapsány. Jistota investice stredni: žádná investice nemá doloženě dva nezávislé původy. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-soulmates-ventures",
+    "nazev": "Soulmates Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Soulmates Ventures, osoba rizikového kapitálu, s.r.o.",
+      "ico": "09789561",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09789561",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-13",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.soulmatesventures.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.soulmatesventures.com/",
+      "zdroj_url": "https://www.soulmatesventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "air",
+        "water",
+        "energy",
+        "mobility",
+        "education",
+        "healthcare",
+        "food and agriculture",
+        "circular economy"
+      ],
+      "zdroj_url": "https://www.soulmatesventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "seed",
+        "series A"
+      ],
+      "zdroj_url": "https://www.soulmatesventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": 3000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.soulmatesventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 62000000,
+        "mena": "EUR",
+        "plati_k": null,
+        "druh": "aum",
+        "fond": null,
+        "zdroj_url": "https://www.soulmatesventures.com/",
+        "zdroj_datum": null,
+        "stazeno": "2026-10-26"
+      },
+      {
+        "castka": 50000000,
+        "mena": "EUR",
+        "plati_k": "2025-03-18",
+        "druh": "fund_size",
+        "fond": "fond Article 9 SFDR (název ve zprávě neuveden)",
+        "zdroj_url": "https://www.vestbee.com/insights/articles/soulmates-ventures-raises-50-m-fund",
+        "zdroj_datum": "2025-03-18",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Rightcharge",
+      "datum_investice": null,
+      "datum_oznameni": "2026-09-03",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "seed",
+        "zdroj_url": "https://www.uktechnews.info/2026/09/03/rightcharge-secures-500000-investment-from-soulmates-ventures-blackwood-ventures-and-purple-ventures/"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.uktechnews.info/2026/09/03/rightcharge-secures-500000-investment-from-soulmates-ventures-blackwood-ventures-and-purple-ventures/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "UKTN (UK Tech News)",
+          "puvod": "tisková zpráva Rightcharge (formát TZ s datelinou a 'ENDS', nepojmenovaná)",
+          "zdroj_datum": "2026-09-03",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://vestbee.com/insights/articles/rightcharge-raises-500-k",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Vestbee",
+          "puvod": "tisková zpráva Rightcharge (formát TZ s datelinou a 'ENDS', nepojmenovaná)",
+          "zdroj_datum": "2026-09-03",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://pulse2.com/rightcharge-raises-growth-funding-to-expand-across-europe-after-20x-arr-growth/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Pulse 2.0",
+          "puvod": "tisková zpráva Rightcharge (formát TZ s datelinou a 'ENDS', nepojmenovaná)",
+          "zdroj_datum": "2026-09-03",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.soulmatesventures.com/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Antiverse",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://techfundingnews.com/antiverse-lands-9-3m-can-it-be-a-turning-point-for-diseases-with-no-effective-treatments/"
+        },
+        "zdroje": [
+          {
+            "url": "https://techfundingnews.com/antiverse-lands-9-3m-can-it-be-a-turning-point-for-diseases-with-no-effective-treatments/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Tech Funding News",
+            "puvod": null,
+            "zdroj_datum": "2026-03-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://vestbee.com/insights/articles/antiverse-raises-9-3-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": "nepojmenovaný podklad ('as Vestbee was informed')",
+            "zdroj_datum": "2026-03-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.soulmatesventures.com/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Rightcharge",
+        "datum_investice": null,
+        "datum_oznameni": "2025-10-23",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://www.uktechnews.info/2025/10/23/rightcharge-secures-1-6-million-seed-investment-led-by-soulmates-ventures/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.uktechnews.info/2025/10/23/rightcharge-secures-1-6-million-seed-investment-led-by-soulmates-ventures/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "UKTN (UK Tech News)",
+            "puvod": null,
+            "zdroj_datum": "2025-10-23",
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web 'We back bold, innovative entrepreneurs building a more sustainable future', článek na webu o sobě 'a small and young VC from Prague'; v rejstříku 'osoba rizikového kapitálu' s předmětem 'Správa majetku srovnatelná s obhospodařováním dle § 15 zákona č. 240/2013 Sb.'; vlastní akcelerační program (dříve 'green-investing accelerator company'), ale investuje vlastní fond za podíl ve vedených kolech, tedy VC. funding.tech.eu typ 'Venture capital'. Identita: Soulmates Ventures, osoba rizikového kapitálu, s.r.o. (dříve Soulmates CEE Fund s.r.o., Soulmates Investments...), IČO 09789561, Rohanské nábřeží 693/10, Praha 8 (shodné s druhou pražskou kanceláří na webu; web uvádí 'Prague HQ' Boudníkova 2538/13, Praha 8), jednatel Hynek Sochor (web: Founder), prokurista Michal Sikyta (web: Managing Partner). Jediný společník Soulmates Ventures Fund SICAV, a.s. (IČO 23302054, Hvězdova 1716/2b, Praha 4, statutár AVANT investiční společnost, a.s.), jehož podfond SVF 01 má IČO 75165708; fond je podřízený údaj, ne samostatný investor. Sídlo CZ. Ticket: web 'We fund each company with an initial investment of up to €3,000,000' (Vestbee 18. 3. 2025 navíc follow-on až 5 mil. EUR). Kapitál: web 'Assets Under Management' '€62M' (bez data, plati_k null); Vestbee 18. 3. 2025 'has raised a €50 million fund' (zapsáno jako fund_size; zakladatel na LinkedIn uvádí '€62M ... Article 9 SFDR fund' – údaje se zřejmě překrývají, nesčítat). Poslední investice: Rightcharge (Londýn, EV fleet charging), £500 000 (velikost celého kola, ne vklad Soulmates), UKTN 3. 9. 2026 'with Soulmates Ventures leading the round alongside BlackWood Ventures and Purple Ventures'; titulek UKTN 'Seed investment', tělo i Vestbee/Pulse 2.0 'growth funding round' – kolo označeno nejednotně, kolo seed převzato z titulku UKTN. Všechny tři zprávy z 3. 9. 2026 zřejmě vycházejí ze stejné TZ, jeden původ. Datum uzavření neuvedeno, proto datum_oznameni. Další: Antiverse (Cardiff), série A 9,3 mil. USD (velikost kola), Tech Funding News 3. 3. 2026 'The round was led by Soulmates Ventures' (vlastní rozhovor s zakladatelem), Vestbee 3. 3. 2026 'The round was led by Soulmates Ventures'; Development Bank of Wales uvádí 'a joint equity investment' jen za IIC a DBW, Soulmates nejmenuje, proto nástroj u Soulmates jen neprima_indicie. Rightcharge seed £1,6 mil. (velikost kola) UKTN 23. 10. 2025 'The round was led by Soulmates Ventures'. Nástroj: u žádné investice výslovně neuveden podíl, jen označení kol (seed, série A) – neprima_indicie, proto jistota investice stredni (nezávislost Vestbee od TFN u Antiverse navíc nedoložena). funding.tech.eu uvádí i FluoSphera, Better Medicine (pre-seed 08/2025), Lendorse (06/2025), Fusebox (01/2025); zprávy jsem nečetl nebo jen ve výsledcích hledání, nezapsány. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-startupyard",
+    "nazev": "StartupYard",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "StartupYard Services s.r.o.",
+      "ico": "06002820",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06002820",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2020-10-15",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/22266852",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-04-12",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.lupa.cz/clanky/startupyard-zmenil-majitele-sefovat-mu-bude-nikola-rafaj/",
+          "druh_zdroje": "media",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2012-02-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://startupyard.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://startupyard.com/",
+      "zdroj_url": "https://startupyard.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "deep tech",
+        "AI",
+        "kybernetická bezpečnost",
+        "IoT"
+      ],
+      "zdroj_url": "https://startupyard.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "ticket": {
+      "min": 25000,
+      "max": null,
+      "mena": "EUR",
+      "zdroj_url": "https://startupyard.com/the-next-wave-begins-startupyard-announces-batch-15/",
+      "zdroj_datum": "2025-09-11",
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Ydoca",
+      "datum_investice": null,
+      "datum_oznameni": "2025-02-14",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://cc.cz/live/petkrat-rychlejsi-vyberova-rizeni-do-cesko-slovenske-ai-platformy-ydoca-investovali-depo-ventures-a-startupyard/"
+      },
+      "zdroje": [
+        {
+          "url": "https://cc.cz/live/petkrat-rychlejsi-vyberova-rizeni-do-cesko-slovenske-ai-platformy-ydoca-investovali-depo-ventures-a-startupyard/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2025-02-14",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: akcelerátor s vlastním kapitálem, který investuje vlastní peníze do startupů. Web: „Accelerating Startups Since 2011“, „privately funded by Credo Ventures, Rockaway Capital Partners and experienced business angels“; stránka Batch 15 nabízí „€25k as a simple convertible note with the option for higher investment*“; investice do Ydoca doložena zprávou (viz níže). Podle PLAN.md (akcelerátor investující vlastní peníze za podíl s doloženými investicemi) zařazen jako VC. Identita: v ARES skupina subjektů StartupYard se shodným sídlem Perlová 371/5, Praha 1 a jednatelem Nikolou Rafajem (Lupa.cz 2. 2. 2012: „jehož zakladatel Nikola Rafaj se stane ředitelem StartupYardu“): StartupYard Services s.r.o. (IČO 06002820, společník Startup Yard Limited, Londýn), SPV jednotlivých běhů StartupYard Batch 5–15 (např. StartupYard Batch 15 s.r.o., IČO 22266852, vznik 2024-11-14, od 2026-03-21 další společníci vč. KINSKÝ Žďár, a.s.), StartupYard Fintech s.r.o. (IČO 22399356) aj. Jako pravni_subjekt uvádím StartupYard Services s.r.o. jako servisní/provozní společnost značky; že jde o správce značky, ani který subjekt investoval do Ydoca, zdroje výslovně neuvádějí (nepotvrzeno). Sídlo investiční firmy (značky) ČR: všechny české subjekty v Praze; mateřský společník servisní firmy je britský. Ticket: 25 tis. EUR deklarovaný na webu (Batch 15, „optional €25,000 cash investment“, s možností vyšší investice, max neuveden); starší podmínky (30 tis. EUR za 10 % z roku 2014) nepoužity. Kapitál: velikost fondu ani AUM investor neuvádí, prázdné. Sektory dle webu „deep-tech startups such as AI, cybersecurity, IoT, or another cutting-edge field“. Fáze: web uvádí jen podmínku „working prototype“, ne fázi kola, null. Poslední investice: Ydoca, CzechCrunch 14. 2. 2025: „V rámci pre-seed investičního kola startup získal financování v celkové výši 2,3 milionu korun“, „přičemž DEPO Ventures podpořilo projekt částkou 1,8 milionu a StartupYard částkou 500 tisíc korun.“ (500 tis. Kč je vklad StartupYardu podle zdroje, 2,3 mil. Kč velikost kola). Nástroj neprima_indicie (pre-seed), podíl ani konvertibilní nástroj zdroj neuvádí; v ARES má Ydoca s.r.o. (IČO 21364460) jen dva zakladatele po 50 %, StartupYard společníkem není (může jít o konvertibilní nástroj, nepotvrzeno). Jediná zpráva o transakci, proto jistota investice stredni. Datum uzavření neuvedeno. Novější investici (Batch 15 od září 2025, startupy nejmenovány) jsem zprávou nedoložil; funding.tech.eu uvádí poslední deal 2023 (Fungies). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   }
 ]

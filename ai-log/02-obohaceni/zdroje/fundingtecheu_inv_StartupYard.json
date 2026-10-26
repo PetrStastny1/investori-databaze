@@ -1,0 +1,125 @@
+{
+  "name": "StartupYard",
+  "url": "https://funding.tech.eu/investors/StartupYard",
+  "aliases": [
+    "StartupYard"
+  ],
+  "types": [
+    "Accelerator"
+  ],
+  "deals": 2,
+  "companies": 2,
+  "activeYears": {
+    "first": 2014,
+    "last": 2023
+  },
+  "participatedRoundEur": 784840,
+  "sectors": [
+    {
+      "name": "Gaming",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    },
+    {
+      "name": "Other",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "UK",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2014,
+      "n": 1
+    },
+    {
+      "y": 2023,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Fungies.io",
+      "url": "https://funding.tech.eu/companies/9E571B4D-2C3C-4B3C-A2B2-3D5179F393BC",
+      "country": "Poland",
+      "rounds": 1,
+      "totalEur": 774840
+    },
+    {
+      "company": "evolso",
+      "url": "https://funding.tech.eu/companies/1B95FD27-371C-4E2A-9F09-535F7F3B2BB6",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 10000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Fungies.io",
+      "companyUrl": "https://funding.tech.eu/companies/9E571B4D-2C3C-4B3C-A2B2-3D5179F393BC",
+      "dealUrl": "https://funding.tech.eu/deals/0EDF9EC3-8073-4672-82AB-409E03192A1A",
+      "stage": "Pre-Seed",
+      "amountEur": 774840,
+      "date": "2023-08-01T00:00:00.000Z"
+    },
+    {
+      "company": "evolso",
+      "companyUrl": "https://funding.tech.eu/companies/1B95FD27-371C-4E2A-9F09-535F7F3B2BB6",
+      "dealUrl": "https://funding.tech.eu/deals/913044F0-28D6-4E3F-AF4B-08D91092C887",
+      "stage": "Other",
+      "amountEur": 10000,
+      "date": "2014-02-28T23:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "CV VC",
+      "url": "https://funding.tech.eu/investors/CV%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Czech Founders VC",
+      "url": "https://funding.tech.eu/investors/Czech%20Founders%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Nectolabs",
+      "url": "https://funding.tech.eu/investors/Nectolabs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Outlier Ventures",
+      "url": "https://funding.tech.eu/investors/Outlier%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tatum",
+      "url": "https://funding.tech.eu/investors/Tatum",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

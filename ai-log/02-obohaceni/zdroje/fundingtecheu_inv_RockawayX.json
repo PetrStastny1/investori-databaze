@@ -1,0 +1,327 @@
+{
+  "name": "RockawayX",
+  "url": "https://funding.tech.eu/investors/RockawayX",
+  "aliases": [
+    "RockawayX"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 7,
+  "companies": 7,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 36226676,
+  "sectors": [
+    {
+      "name": "Fintech",
+      "value": 3
+    },
+    {
+      "name": "Gaming",
+      "value": 3
+    },
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 3
+    },
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    },
+    {
+      "name": "Series A",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "UK",
+      "value": 3
+    },
+    {
+      "name": "Germany",
+      "value": 2
+    },
+    {
+      "name": "France",
+      "value": 1
+    },
+    {
+      "name": "Switzerland",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 2
+    },
+    {
+      "y": 2025,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "BetHog",
+      "url": "https://funding.tech.eu/companies/6AAB2EE1-FC5F-412E-A2C1-43ADFC4C924E",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 8500000
+    },
+    {
+      "company": "BOB",
+      "url": "https://funding.tech.eu/companies/CBD870CA-962B-4C70-9B2B-DFBBDBDA4E90",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 8100000
+    },
+    {
+      "company": "Schuman Financial",
+      "url": "https://funding.tech.eu/companies/4043B9AD-62B7-4D5C-AF1E-37171F93EFA0",
+      "country": "Switzerland",
+      "rounds": 1,
+      "totalEur": 7000000
+    },
+    {
+      "company": "Voya Games",
+      "url": "https://funding.tech.eu/companies/1F50EB92-E281-48EC-A94A-C72401DB5B69",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 4416571
+    },
+    {
+      "company": "Blocktorch",
+      "url": "https://funding.tech.eu/companies/D0D75F33-6093-4AD5-A937-C460F9C08707",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 3832466
+    },
+    {
+      "company": "Helio",
+      "url": "https://funding.tech.eu/companies/69DC4FCB-89D9-4B88-A21C-AD977C63DC49",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 2995915
+    },
+    {
+      "company": "PlayMakers",
+      "url": "https://funding.tech.eu/companies/CAE680AA-4110-4FA2-A63C-C265D9C1B654",
+      "country": "France",
+      "rounds": 1,
+      "totalEur": 1381724
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "BetHog",
+      "companyUrl": "https://funding.tech.eu/companies/6AAB2EE1-FC5F-412E-A2C1-43ADFC4C924E",
+      "dealUrl": "https://funding.tech.eu/deals/DECF234A-237F-4FE2-9A11-BAFD688EC68D",
+      "stage": "Series A",
+      "amountEur": 8500000,
+      "date": "2026-04-22T00:00:00.000Z"
+    },
+    {
+      "company": "BOB",
+      "companyUrl": "https://funding.tech.eu/companies/CBD870CA-962B-4C70-9B2B-DFBBDBDA4E90",
+      "dealUrl": "https://funding.tech.eu/deals/800ACB94-8AF5-46A2-B174-B4554AA2D8F9",
+      "stage": "Other",
+      "amountEur": 8100000,
+      "date": "2025-08-07T00:00:00.000Z"
+    },
+    {
+      "company": "Schuman Financial",
+      "companyUrl": "https://funding.tech.eu/companies/4043B9AD-62B7-4D5C-AF1E-37171F93EFA0",
+      "dealUrl": "https://funding.tech.eu/deals/F0C2911A-6436-48AF-A6F4-A9BF0B53D03C",
+      "stage": "Seed",
+      "amountEur": 7000000,
+      "date": "2024-11-29T00:00:00.000Z"
+    },
+    {
+      "company": "Voya Games",
+      "companyUrl": "https://funding.tech.eu/companies/1F50EB92-E281-48EC-A94A-C72401DB5B69",
+      "dealUrl": "https://funding.tech.eu/deals/1B06BAD6-04FD-48E8-87B7-52B4DE2AE3F4",
+      "stage": "Other",
+      "amountEur": 4416571,
+      "date": "2025-05-21T00:00:00.000Z"
+    },
+    {
+      "company": "Blocktorch",
+      "companyUrl": "https://funding.tech.eu/companies/D0D75F33-6093-4AD5-A937-C460F9C08707",
+      "dealUrl": "https://funding.tech.eu/deals/2301A2D9-6D4A-4279-892B-9D7562D82AA8",
+      "stage": "Seed",
+      "amountEur": 3832466,
+      "date": "2023-05-09T00:00:00.000Z"
+    },
+    {
+      "company": "Helio",
+      "companyUrl": "https://funding.tech.eu/companies/69DC4FCB-89D9-4B88-A21C-AD977C63DC49",
+      "dealUrl": "https://funding.tech.eu/deals/098D01BC-EFE4-4F23-A0AD-2B0CB16924C4",
+      "stage": "Seed",
+      "amountEur": 2995915,
+      "date": "2023-04-13T00:00:00.000Z"
+    },
+    {
+      "company": "PlayMakers",
+      "companyUrl": "https://funding.tech.eu/companies/CAE680AA-4110-4FA2-A63C-C265D9C1B654",
+      "dealUrl": "https://funding.tech.eu/deals/C73284FF-158D-4176-8E29-F0EAEFE27B74",
+      "stage": "Pre-Seed",
+      "amountEur": 1381724,
+      "date": "2024-02-27T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Sebastien Borget",
+      "url": "https://funding.tech.eu/investors/Sebastien%20Borget",
+      "sharedRounds": 2
+    },
+    {
+      "name": "1kx",
+      "url": "https://funding.tech.eu/investors/1kx",
+      "sharedRounds": 1
+    },
+    {
+      "name": "6th Man Ventures (6MV)",
+      "url": "https://funding.tech.eu/investors/6th%20Man%20Ventures%20(6MV)",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Advancit Capital",
+      "url": "https://funding.tech.eu/investors/Advancit%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Alchemy VC",
+      "url": "https://funding.tech.eu/investors/Alchemy%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Alliance Venture",
+      "url": "https://funding.tech.eu/investors/Alliance%20Venture",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Amber Group",
+      "url": "https://funding.tech.eu/investors/Amber%20Group",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Anchorage",
+      "url": "https://funding.tech.eu/investors/Anchorage",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Andreas Klinger",
+      "url": "https://funding.tech.eu/investors/Andreas%20Klinger",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Asymmetric Capital Partners",
+      "url": "https://funding.tech.eu/investors/Asymmetric%20Capital%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bankless",
+      "url": "https://funding.tech.eu/investors/Bankless",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bryce Ferguson",
+      "url": "https://funding.tech.eu/investors/Bryce%20Ferguson",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bullpen Capital",
+      "url": "https://funding.tech.eu/investors/Bullpen%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Castle Island Ventures",
+      "url": "https://funding.tech.eu/investors/Castle%20Island%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Charlie Songhurst",
+      "url": "https://funding.tech.eu/investors/Charlie%20Songhurst",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CMS Holdings",
+      "url": "https://funding.tech.eu/investors/CMS%20Holdings",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Daedalus",
+      "url": "https://funding.tech.eu/investors/Daedalus",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Entrepreneur First",
+      "url": "https://funding.tech.eu/investors/Entrepreneur%20First",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Felix Wolf",
+      "url": "https://funding.tech.eu/investors/Felix%20Wolf",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Henry Chen",
+      "url": "https://funding.tech.eu/investors/Henry%20Chen",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Hugues Ouvard",
+      "url": "https://funding.tech.eu/investors/Hugues%20Ouvard",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Hypersphere",
+      "url": "https://funding.tech.eu/investors/Hypersphere",
+      "sharedRounds": 1
+    },
+    {
+      "name": "IDEO CoLab Ventures",
+      "url": "https://funding.tech.eu/investors/IDEO%20CoLab%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "IOSG Ventures",
+      "url": "https://funding.tech.eu/investors/IOSG%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Jeff ‘Jihoz’ Zirlin",
+      "url": "https://funding.tech.eu/investors/Jeff%20%E2%80%98Jihoz%E2%80%99%20Zirlin",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

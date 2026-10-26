@@ -1,0 +1,78 @@
+{
+  "name": "QQ Capital",
+  "url": "https://funding.tech.eu/investors/QQ%20Capital",
+  "aliases": [
+    "QQ Capital"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2026,
+    "last": 2026
+  },
+  "participatedRoundEur": 2127116,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Navigara",
+      "url": "https://funding.tech.eu/companies/3173FAE0-07F3-40FB-AFC7-3BF4A60E00CE",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2127116
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Navigara",
+      "companyUrl": "https://funding.tech.eu/companies/3173FAE0-07F3-40FB-AFC7-3BF4A60E00CE",
+      "dealUrl": "https://funding.tech.eu/deals/9C8210BB-5BB7-447D-B8F1-781F6DDC3079",
+      "stage": "Seed",
+      "amountEur": 2127116,
+      "date": "2026-02-19T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Inovo VC",
+      "url": "https://funding.tech.eu/investors/Inovo%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Rockaway Ventures",
+      "url": "https://funding.tech.eu/investors/Rockaway%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

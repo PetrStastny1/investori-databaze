@@ -1,0 +1,462 @@
+{
+  "name": "Rockaway Ventures",
+  "url": "https://funding.tech.eu/investors/Rockaway%20Ventures",
+  "aliases": [
+    "Rockaway Capital",
+    "Rockaway Ventures"
+  ],
+  "types": [
+    "Investment firm",
+    "Venture capital"
+  ],
+  "deals": 16,
+  "companies": 14,
+  "activeYears": {
+    "first": 2016,
+    "last": 2026
+  },
+  "participatedRoundEur": 263700146,
+  "sectors": [
+    {
+      "name": "Travel",
+      "value": 7
+    },
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Marketing",
+      "value": 2
+    },
+    {
+      "name": "Healthtech",
+      "value": 2
+    },
+    {
+      "name": "Transportation",
+      "value": 2
+    },
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "Edtech",
+      "value": 1
+    },
+    {
+      "name": "Gaming",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 5
+    },
+    {
+      "name": "Series A",
+      "value": 4
+    },
+    {
+      "name": "Seed",
+      "value": 3
+    },
+    {
+      "name": "Series B",
+      "value": 2
+    },
+    {
+      "name": "Debt",
+      "value": 1
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 5
+    },
+    {
+      "name": "Germany",
+      "value": 5
+    },
+    {
+      "name": "Albania",
+      "value": 2
+    },
+    {
+      "name": "Estonia",
+      "value": 1
+    },
+    {
+      "name": "Finland",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Slovakia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2016,
+      "n": 1
+    },
+    {
+      "y": 2018,
+      "n": 2
+    },
+    {
+      "y": 2021,
+      "n": 1
+    },
+    {
+      "y": 2022,
+      "n": 4
+    },
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 2
+    },
+    {
+      "y": 2025,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Spotawheel",
+      "url": "https://funding.tech.eu/companies/8C4DE084-3DC0-4361-A5CC-16E2B2D487DA",
+      "country": "Greece",
+      "rounds": 1,
+      "totalEur": 100000000
+    },
+    {
+      "company": "DoDo Group",
+      "url": "https://funding.tech.eu/companies/778B8E07-988E-41E8-AD0B-0B925D20D93B",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 60000000
+    },
+    {
+      "company": "Freewaycamper",
+      "url": "https://funding.tech.eu/companies/3FCAFE36-D9B8-467C-B7DA-9598F6C69211",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 30000000
+    },
+    {
+      "company": "Apaleo",
+      "url": "https://funding.tech.eu/companies/E04E326E-B73E-4D75-83FE-85C70B61BCCF",
+      "country": "Germany",
+      "rounds": 2,
+      "totalEur": 24500000
+    },
+    {
+      "company": "ValkaAI",
+      "url": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 12000000
+    },
+    {
+      "company": "Raus",
+      "url": "https://funding.tech.eu/companies/B430691D-A165-42E3-8FF6-29D1DEE3C5F4",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 8500000
+    },
+    {
+      "company": "Gjirafa",
+      "url": "https://funding.tech.eu/companies/0B47FBEF-E5B5-410C-A379-B38091B72E92",
+      "country": "Albania",
+      "rounds": 2,
+      "totalEur": 7683030
+    },
+    {
+      "company": "Lingvist",
+      "url": "https://funding.tech.eu/companies/B1E8906F-A496-4794-A071-90662FB4EBB3",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 5100000
+    },
+    {
+      "company": "Campiri",
+      "url": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 4640000
+    },
+    {
+      "company": "Valpas",
+      "url": "https://funding.tech.eu/companies/395B8E64-A38B-407A-8B97-92BDC9E364AB",
+      "country": "Finland",
+      "rounds": 1,
+      "totalEur": 4000000
+    },
+    {
+      "company": "Filuta",
+      "url": "https://funding.tech.eu/companies/B91C4163-7678-4EBC-8C21-F054BE036D6A",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 3700000
+    },
+    {
+      "company": "Navigara",
+      "url": "https://funding.tech.eu/companies/3173FAE0-07F3-40FB-AFC7-3BF4A60E00CE",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2127116
+    },
+    {
+      "company": "CulturePulse",
+      "url": "https://funding.tech.eu/companies/EC2530A0-BE15-452A-A7A4-1BCFA546BCB1",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 1450000
+    },
+    {
+      "company": "Voya",
+      "url": "https://funding.tech.eu/companies/CCA8BE5F-F9CD-4338-865B-6CB76E4BA643",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Spotawheel",
+      "companyUrl": "https://funding.tech.eu/companies/8C4DE084-3DC0-4361-A5CC-16E2B2D487DA",
+      "dealUrl": "https://funding.tech.eu/deals/408BF49F-F21D-4A7D-BA07-754245FE11D8",
+      "stage": "Other",
+      "amountEur": 100000000,
+      "date": "2022-04-28T00:00:00.000Z"
+    },
+    {
+      "company": "DoDo Group",
+      "companyUrl": "https://funding.tech.eu/companies/778B8E07-988E-41E8-AD0B-0B925D20D93B",
+      "dealUrl": "https://funding.tech.eu/deals/AD6E3FF7-CE29-49EA-AB41-CA41747CFF46",
+      "stage": "Series B",
+      "amountEur": 60000000,
+      "date": "2022-05-04T00:00:00.000Z"
+    },
+    {
+      "company": "Freewaycamper",
+      "companyUrl": "https://funding.tech.eu/companies/3FCAFE36-D9B8-467C-B7DA-9598F6C69211",
+      "dealUrl": "https://funding.tech.eu/deals/9D9ED060-3F60-419D-B116-990BF6AF5327",
+      "stage": "Debt",
+      "amountEur": 30000000,
+      "date": "2022-07-20T00:00:00.000Z"
+    },
+    {
+      "company": "Apaleo",
+      "companyUrl": "https://funding.tech.eu/companies/E04E326E-B73E-4D75-83FE-85C70B61BCCF",
+      "dealUrl": "https://funding.tech.eu/deals/53E5F8E8-6BF6-4B71-9B2A-8BF38900A188",
+      "stage": "Other",
+      "amountEur": 20000000,
+      "date": "2024-11-20T00:00:00.000Z"
+    },
+    {
+      "company": "ValkaAI",
+      "companyUrl": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "dealUrl": "https://funding.tech.eu/deals/4124EC04-FDDA-4CBA-9DEE-2F3051E08C74",
+      "stage": "Pre-Seed",
+      "amountEur": 12000000,
+      "date": "2026-02-26T00:00:00.000Z"
+    },
+    {
+      "company": "Raus",
+      "companyUrl": "https://funding.tech.eu/companies/B430691D-A165-42E3-8FF6-29D1DEE3C5F4",
+      "dealUrl": "https://funding.tech.eu/deals/DC8AB54A-9A47-4175-8094-0930CE9CD0B1",
+      "stage": "Other",
+      "amountEur": 8500000,
+      "date": "2023-11-09T00:00:00.000Z"
+    },
+    {
+      "company": "Gjirafa",
+      "companyUrl": "https://funding.tech.eu/companies/0B47FBEF-E5B5-410C-A379-B38091B72E92",
+      "dealUrl": "https://funding.tech.eu/deals/414E56E7-0273-44A6-D923-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 5851528,
+      "date": "2018-12-31T23:00:00.000Z"
+    },
+    {
+      "company": "Lingvist",
+      "companyUrl": "https://funding.tech.eu/companies/B1E8906F-A496-4794-A071-90662FB4EBB3",
+      "dealUrl": "https://funding.tech.eu/deals/BF55819E-7AC4-4011-8BEC-927DC13AEF7A",
+      "stage": "Other",
+      "amountEur": 5100000,
+      "date": "2021-10-27T00:00:00.000Z"
+    },
+    {
+      "company": "Campiri",
+      "companyUrl": "https://funding.tech.eu/companies/55564E5B-9141-438F-8581-EB5D1DC746BC",
+      "dealUrl": "https://funding.tech.eu/deals/99F631D2-1936-4740-B58A-FC8B55B1A9E6",
+      "stage": "Other",
+      "amountEur": 4640000,
+      "date": "2022-05-11T00:00:00.000Z"
+    },
+    {
+      "company": "Apaleo",
+      "companyUrl": "https://funding.tech.eu/companies/E04E326E-B73E-4D75-83FE-85C70B61BCCF",
+      "dealUrl": "https://funding.tech.eu/deals/680D3579-44BB-4232-AAA4-CDAA6C3AE02B",
+      "stage": "Series A",
+      "amountEur": 4500000,
+      "date": "2023-03-02T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Force Over Mass Capital",
+      "url": "https://funding.tech.eu/investors/Force%20Over%20Mass%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Redalpine",
+      "url": "https://funding.tech.eu/investors/Redalpine",
+      "sharedRounds": 2
+    },
+    {
+      "name": "10x Founders",
+      "url": "https://funding.tech.eu/investors/10x%20Founders",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Activum SG",
+      "url": "https://funding.tech.eu/investors/Activum%20SG",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Adevinta Ventures",
+      "url": "https://funding.tech.eu/investors/Adevinta%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BTG Bridge To Growth",
+      "url": "https://funding.tech.eu/investors/BTG%20Bridge%20To%20Growth",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Canon Marketing Japan MIRAI Fund",
+      "url": "https://funding.tech.eu/investors/Canon%20Marketing%20Japan%20MIRAI%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Chadi Farhat",
+      "url": "https://funding.tech.eu/investors/Chadi%20Farhat",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Collective Spark",
+      "url": "https://funding.tech.eu/investors/Collective%20Spark",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Dupuis Investment",
+      "url": "https://funding.tech.eu/investors/Dupuis%20Investment",
+      "sharedRounds": 1
+    },
+    {
+      "name": "EC Investments",
+      "url": "https://funding.tech.eu/investors/EC%20Investments",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Endeavour Catalyst",
+      "url": "https://funding.tech.eu/investors/Endeavour%20Catalyst",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Eva Janečková",
+      "url": "https://funding.tech.eu/investors/Eva%20Jane%C4%8Dkov%C3%A1",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Finnish Industry Investment",
+      "url": "https://funding.tech.eu/investors/Finnish%20Industry%20Investment",
+      "sharedRounds": 1
+    },
+    {
+      "name": "FJ Labs",
+      "url": "https://funding.tech.eu/investors/FJ%20Labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Fond Naše Česko",
+      "url": "https://funding.tech.eu/investors/Fond%20Na%C5%A1e%20%C4%8Cesko",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Global Founders Capital",
+      "url": "https://funding.tech.eu/investors/Global%20Founders%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Houghton Street Ventures",
+      "url": "https://funding.tech.eu/investors/Houghton%20Street%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Icebreaker.vc",
+      "url": "https://funding.tech.eu/investors/Icebreaker.vc",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Inovo VC",
+      "url": "https://funding.tech.eu/investors/Inovo%20VC",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Lion Beat Capital",
+      "url": "https://funding.tech.eu/investors/Lion%20Beat%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Metaplanet",
+      "url": "https://funding.tech.eu/investors/Metaplanet",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Miton",
+      "url": "https://funding.tech.eu/investors/Miton",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

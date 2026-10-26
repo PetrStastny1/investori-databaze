@@ -93,3 +93,22 @@ Dávka 4 (10 kandidátů)
   Poznámka: N1 Ventures a Nation1 zpracoval jeden agent, všechna volání jsou
   u cz-n1-ventures. Hlavní agent: žádné webové požadavky.
 
+Dávka 5 (10 kandidátů)
+------------------------------
+  začátek 2026-10-26T16:26:00Z, konec 2026-10-26T16:37:37Z, doba 11 min 37 s
+  kandidát                                 WS   WF  WFx ARES  FTE curl
+  cz-purposetech                            6   11    0    6    1    0  zarazen
+  cz-qq-capital                             3    5    0    2    1    0  vyrazen
+  cz-reflex-capital                        11   12    1    5    1    0  zarazen
+  cz-rockaway-ventures                     11   11    2    6    1    0  zarazen
+  cz-rockawayx                              4    8    0    5    1    0  nevyresene
+  cz-skylimit-investments                   2    5    1    6    2    0  vyrazen
+  cz-soulmates-ventures                     6   12    1    3    1    0  zarazen
+  cz-startupyard                            8    7    0    6    1    0  zarazen
+  cz-stratum-partners                       3    7    1    2    1    0  vyrazen
+  cz-tarpan-capital                         3    7    0    7    1    0  nevyresene
+  celkem                                   57   85    6   48   11    0  (celkem 201 požadavků)
+  WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
+  Poznámka: dotazy k dvojici Rockaway Ventures / RockawayX jsou započtené
+  u cz-rockaway-ventures. Hlavní agent: žádné webové požadavky.
+

@@ -1,0 +1,418 @@
+{
+  "name": "Soulmates Ventures",
+  "url": "https://funding.tech.eu/investors/Soulmates%20Ventures",
+  "aliases": [
+    "Soulmates Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 14,
+  "companies": 12,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 35362308,
+  "sectors": [
+    {
+      "name": "Healthtech",
+      "value": 3
+    },
+    {
+      "name": "Agritech",
+      "value": 2
+    },
+    {
+      "name": "E-commerce",
+      "value": 2
+    },
+    {
+      "name": "Fintech",
+      "value": 2
+    },
+    {
+      "name": "Software",
+      "value": 2
+    },
+    {
+      "name": "Edtech",
+      "value": 1
+    },
+    {
+      "name": "Energy",
+      "value": 1
+    },
+    {
+      "name": "Robotics",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 8
+    },
+    {
+      "name": "Seed",
+      "value": 3
+    },
+    {
+      "name": "Growth/Late",
+      "value": 1
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    },
+    {
+      "name": "Series A",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Estonia",
+      "value": 4
+    },
+    {
+      "name": "UK",
+      "value": 4
+    },
+    {
+      "name": "Czech Republic",
+      "value": 2
+    },
+    {
+      "name": "Romania",
+      "value": 2
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Switzerland",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2024,
+      "n": 6
+    },
+    {
+      "y": 2025,
+      "n": 4
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "eAgronom",
+      "url": "https://funding.tech.eu/companies/F1C1BDAC-AE33-40BE-8846-0475D683D5BC",
+      "country": "Estonia",
+      "rounds": 2,
+      "totalEur": 15022372
+    },
+    {
+      "company": "Ogre AI",
+      "url": "https://funding.tech.eu/companies/8722EA83-0657-4523-9A8D-245253FDCB89",
+      "country": "Romania",
+      "rounds": 1,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Fusebox",
+      "url": "https://funding.tech.eu/companies/51ED1C10-EC77-48C5-A874-24057C4FCD1E",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 2600000
+    },
+    {
+      "company": "Rightcharge",
+      "url": "https://funding.tech.eu/companies/B94D90A0-4219-4EE5-8868-93175F504470",
+      "country": "UK",
+      "rounds": 2,
+      "totalEur": 2422009
+    },
+    {
+      "company": "Signapse",
+      "url": "https://funding.tech.eu/companies/86FD1E77-F888-4D4B-BCAD-AFBEAD73300B",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 2351613
+    },
+    {
+      "company": "Flowpay",
+      "url": "https://funding.tech.eu/companies/5C4CFA77-F317-4CBC-B29D-CEE1B12A8620",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 2100000
+    },
+    {
+      "company": "Lendorse",
+      "url": "https://funding.tech.eu/companies/8FFE173A-9D30-4BF3-94D9-3C55C35483D5",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 1750000
+    },
+    {
+      "company": "KARDI AI",
+      "url": "https://funding.tech.eu/companies/B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Twin Science & Robotics",
+      "url": "https://funding.tech.eu/companies/12BB83E3-5F60-4E21-A781-9ED7789A6A5A",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 1481481
+    },
+    {
+      "company": "FluoSphera",
+      "url": "https://funding.tech.eu/companies/7086BF3B-A447-4F70-BA70-93F42841C45D",
+      "country": "Switzerland",
+      "rounds": 1,
+      "totalEur": 1234833
+    },
+    {
+      "company": "Better Medicine",
+      "url": "https://funding.tech.eu/companies/0F65EBCF-131B-4250-AB64-2F88E8DB9FC7",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Youni",
+      "url": "https://funding.tech.eu/companies/59650D4E-ECF1-4CCD-A376-8EAB5BF41860",
+      "country": "Romania",
+      "rounds": 1,
+      "totalEur": 900000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "eAgronom",
+      "companyUrl": "https://funding.tech.eu/companies/F1C1BDAC-AE33-40BE-8846-0475D683D5BC",
+      "dealUrl": "https://funding.tech.eu/deals/BA7D803A-9D6A-4EE0-A52D-D66F8FF85C01",
+      "stage": "Series A",
+      "amountEur": 10000000,
+      "date": "2024-07-02T00:00:00.000Z"
+    },
+    {
+      "company": "eAgronom",
+      "companyUrl": "https://funding.tech.eu/companies/F1C1BDAC-AE33-40BE-8846-0475D683D5BC",
+      "dealUrl": "https://funding.tech.eu/deals/94AE841A-45BE-456C-8A5F-BE3862CD743C",
+      "stage": "Other",
+      "amountEur": 5022372,
+      "date": "2023-06-27T00:00:00.000Z"
+    },
+    {
+      "company": "Ogre AI",
+      "companyUrl": "https://funding.tech.eu/companies/8722EA83-0657-4523-9A8D-245253FDCB89",
+      "dealUrl": "https://funding.tech.eu/deals/B3A81684-8329-4E14-9FD8-6D59BA12B999",
+      "stage": "Other",
+      "amountEur": 3000000,
+      "date": "2024-09-11T00:00:00.000Z"
+    },
+    {
+      "company": "Fusebox",
+      "companyUrl": "https://funding.tech.eu/companies/51ED1C10-EC77-48C5-A874-24057C4FCD1E",
+      "dealUrl": "https://funding.tech.eu/deals/3C08CA23-AD62-41F8-AFC3-A5233D571921",
+      "stage": "Other",
+      "amountEur": 2600000,
+      "date": "2025-01-20T00:00:00.000Z"
+    },
+    {
+      "company": "Signapse",
+      "companyUrl": "https://funding.tech.eu/companies/86FD1E77-F888-4D4B-BCAD-AFBEAD73300B",
+      "dealUrl": "https://funding.tech.eu/deals/74E82275-2612-406B-9F89-AC411893284A",
+      "stage": "Other",
+      "amountEur": 2351613,
+      "date": "2024-06-05T00:00:00.000Z"
+    },
+    {
+      "company": "Flowpay",
+      "companyUrl": "https://funding.tech.eu/companies/5C4CFA77-F317-4CBC-B29D-CEE1B12A8620",
+      "dealUrl": "https://funding.tech.eu/deals/290B5628-A588-40A5-B172-3F2D61F73B4C",
+      "stage": "Seed",
+      "amountEur": 2100000,
+      "date": "2024-03-20T00:00:00.000Z"
+    },
+    {
+      "company": "Rightcharge",
+      "companyUrl": "https://funding.tech.eu/companies/B94D90A0-4219-4EE5-8868-93175F504470",
+      "dealUrl": "https://funding.tech.eu/deals/1B1633A1-6842-41D2-B5ED-2DEA2C335289",
+      "stage": "Seed",
+      "amountEur": 1840985,
+      "date": "2025-10-23T00:00:00.000Z"
+    },
+    {
+      "company": "Lendorse",
+      "companyUrl": "https://funding.tech.eu/companies/8FFE173A-9D30-4BF3-94D9-3C55C35483D5",
+      "dealUrl": "https://funding.tech.eu/deals/E137864A-ACFD-4F4F-BC7B-B8F1787E969A",
+      "stage": "Other",
+      "amountEur": 1750000,
+      "date": "2025-06-05T00:00:00.000Z"
+    },
+    {
+      "company": "KARDI AI",
+      "companyUrl": "https://funding.tech.eu/companies/B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+      "dealUrl": "https://funding.tech.eu/deals/5DAEE5E8-BF9D-4745-B4BA-763A7C29AFA9",
+      "stage": "Other",
+      "amountEur": 1500000,
+      "date": "2023-11-28T00:00:00.000Z"
+    },
+    {
+      "company": "Twin Science & Robotics",
+      "companyUrl": "https://funding.tech.eu/companies/12BB83E3-5F60-4E21-A781-9ED7789A6A5A",
+      "dealUrl": "https://funding.tech.eu/deals/8C04AC7C-8765-4FE5-B5A7-CD11F1E69B2F",
+      "stage": "Other",
+      "amountEur": 1481481,
+      "date": "2024-09-11T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "BlackWood",
+      "url": "https://funding.tech.eu/investors/BlackWood",
+      "sharedRounds": 2
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Early Game Ventures",
+      "url": "https://funding.tech.eu/investors/Early%20Game%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "ICOS Capital Management",
+      "url": "https://funding.tech.eu/investors/ICOS%20Capital%20Management",
+      "sharedRounds": 2
+    },
+    {
+      "name": "SmartCap Green Fund",
+      "url": "https://funding.tech.eu/investors/SmartCap%20Green%20Fund",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Allard Luchsinger",
+      "url": "https://funding.tech.eu/investors/Allard%20Luchsinger",
+      "sharedRounds": 1
+    },
+    {
+      "name": "APY Ventures",
+      "url": "https://funding.tech.eu/investors/APY%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "CEAS Investments",
+      "url": "https://funding.tech.eu/investors/CEAS%20Investments",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Cleverage Venture Capital",
+      "url": "https://funding.tech.eu/investors/Cleverage%20Venture%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Daniel Naber",
+      "url": "https://funding.tech.eu/investors/Daniel%20Naber",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Deeptech Seed Fund",
+      "url": "https://funding.tech.eu/investors/Deeptech%20Seed%20Fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Empirical Ventures",
+      "url": "https://funding.tech.eu/investors/Empirical%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Eneco Ventures",
+      "url": "https://funding.tech.eu/investors/Eneco%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Enterprise Estonia",
+      "url": "https://funding.tech.eu/investors/Enterprise%20Estonia",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Garage Angels",
+      "url": "https://funding.tech.eu/investors/Garage%20Angels",
+      "sharedRounds": 1
+    },
+    {
+      "name": "IndieBio",
+      "url": "https://funding.tech.eu/investors/IndieBio",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Kartik Varma",
+      "url": "https://funding.tech.eu/investors/Kartik%20Varma",
+      "sharedRounds": 1
+    },
+    {
+      "name": "LUMO labs",
+      "url": "https://funding.tech.eu/investors/LUMO%20labs",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Mark Ransford",
+      "url": "https://funding.tech.eu/investors/Mark%20Ransford",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Martin Herrmann",
+      "url": "https://funding.tech.eu/investors/Martin%20Herrmann",
+      "sharedRounds": 1
+    },
+    {
+      "name": "MMC Ventures",
+      "url": "https://funding.tech.eu/investors/MMC%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "PI Impact",
+      "url": "https://funding.tech.eu/investors/PI%20Impact",
+      "sharedRounds": 1
+    },
+    {
+      "name": "PKO Bank",
+      "url": "https://funding.tech.eu/investors/PKO%20Bank",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Royal Association for Deaf people",
+      "url": "https://funding.tech.eu/investors/Royal%20Association%20for%20Deaf%20people",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}
