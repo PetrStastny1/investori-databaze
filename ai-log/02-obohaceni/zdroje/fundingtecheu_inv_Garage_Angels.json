@@ -1,0 +1,160 @@
+{
+  "name": "Garage Angels",
+  "url": "https://funding.tech.eu/investors/Garage%20Angels",
+  "aliases": [
+    "Garage Angels"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 4,
+  "companies": 4,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 3500000,
+  "sectors": [
+    {
+      "name": "Deeptech",
+      "value": 1
+    },
+    {
+      "name": "Healthtech",
+      "value": 1
+    },
+    {
+      "name": "Software",
+      "value": 1
+    },
+    {
+      "name": "Robotics",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Debt",
+      "value": 1
+    },
+    {
+      "name": "Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 3
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "KARDI AI",
+      "url": "https://funding.tech.eu/companies/B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1500000
+    },
+    {
+      "company": "Flae robotics",
+      "url": "https://funding.tech.eu/companies/9B5DC1C6-0267-4FD9-B637-644E4B544CDD",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "Localazy",
+      "url": "https://funding.tech.eu/companies/F2B6A558-83F4-43E4-88F2-C65DD68D2D95",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "sendance",
+      "url": "https://funding.tech.eu/companies/82475597-7C7F-4BF0-98C8-03D271A8081C",
+      "country": "Germany",
+      "rounds": 1,
+      "totalEur": 0
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "KARDI AI",
+      "companyUrl": "https://funding.tech.eu/companies/B1E21BDA-8389-450D-9E46-D26BD26ACAB5",
+      "dealUrl": "https://funding.tech.eu/deals/5DAEE5E8-BF9D-4745-B4BA-763A7C29AFA9",
+      "stage": "Other",
+      "amountEur": 1500000,
+      "date": "2023-11-28T00:00:00.000Z"
+    },
+    {
+      "company": "Localazy",
+      "companyUrl": "https://funding.tech.eu/companies/F2B6A558-83F4-43E4-88F2-C65DD68D2D95",
+      "dealUrl": "https://funding.tech.eu/deals/BFE246A8-E724-47DF-BCA1-0419562665CE",
+      "stage": "Other",
+      "amountEur": 1000000,
+      "date": "2023-06-30T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "12 Bullets",
+      "url": "https://funding.tech.eu/investors/12%20Bullets",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Cleverage Venture Capital",
+      "url": "https://funding.tech.eu/investors/Cleverage%20Venture%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Electron Capital Partners",
+      "url": "https://funding.tech.eu/investors/Electron%20Capital%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "JIC Ventures",
+      "url": "https://funding.tech.eu/investors/JIC%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Soulmates Ventures",
+      "url": "https://funding.tech.eu/investors/Soulmates%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

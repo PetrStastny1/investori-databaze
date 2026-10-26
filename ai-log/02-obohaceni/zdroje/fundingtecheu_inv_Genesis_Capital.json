@@ -1,0 +1,645 @@
+{
+  "name": "Genesis Partners",
+  "url": "https://funding.tech.eu/investors/Genesis%20Partners",
+  "aliases": [
+    "Genesis",
+    "Genesis Capital",
+    "Genesis Investments",
+    "Genesis Partners",
+    "Genesis Ventures"
+  ],
+  "types": [
+    "Investment firm",
+    "Venture capital"
+  ],
+  "deals": 49,
+  "companies": 33,
+  "activeYears": {
+    "first": 2006,
+    "last": 2026
+  },
+  "participatedRoundEur": 302295985,
+  "sectors": [
+    {
+      "name": "Software",
+      "value": 12
+    },
+    {
+      "name": "Fintech",
+      "value": 11
+    },
+    {
+      "name": "Media",
+      "value": 9
+    },
+    {
+      "name": "Semiconductors",
+      "value": 8
+    },
+    {
+      "name": "Marketing",
+      "value": 6
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 5
+    },
+    {
+      "name": "Edtech",
+      "value": 4
+    },
+    {
+      "name": "Gaming",
+      "value": 3
+    },
+    {
+      "name": "Proptech",
+      "value": 3
+    },
+    {
+      "name": "Cleantech",
+      "value": 2
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 13
+    },
+    {
+      "name": "Series A",
+      "value": 11
+    },
+    {
+      "name": "Seed",
+      "value": 8
+    },
+    {
+      "name": "Series B",
+      "value": 5
+    },
+    {
+      "name": "Series C",
+      "value": 5
+    },
+    {
+      "name": "Pre-Seed",
+      "value": 3
+    },
+    {
+      "name": "Early VC",
+      "value": 2
+    },
+    {
+      "name": "Growth/Late",
+      "value": 1
+    },
+    {
+      "name": "Series D+",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Israel",
+      "value": 30
+    },
+    {
+      "name": "Greece",
+      "value": 5
+    },
+    {
+      "name": "Italy",
+      "value": 3
+    },
+    {
+      "name": "Estonia",
+      "value": 2
+    },
+    {
+      "name": "UK",
+      "value": 2
+    },
+    {
+      "name": "Belarus",
+      "value": 1
+    },
+    {
+      "name": "Cyprus",
+      "value": 1
+    },
+    {
+      "name": "Finland",
+      "value": 1
+    },
+    {
+      "name": "Lithuania",
+      "value": 1
+    },
+    {
+      "name": "Russia",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2006,
+      "n": 1
+    },
+    {
+      "y": 2007,
+      "n": 3
+    },
+    {
+      "y": 2010,
+      "n": 1
+    },
+    {
+      "y": 2011,
+      "n": 2
+    },
+    {
+      "y": 2012,
+      "n": 2
+    },
+    {
+      "y": 2013,
+      "n": 4
+    },
+    {
+      "y": 2014,
+      "n": 4
+    },
+    {
+      "y": 2015,
+      "n": 5
+    },
+    {
+      "y": 2016,
+      "n": 3
+    },
+    {
+      "y": 2017,
+      "n": 2
+    },
+    {
+      "y": 2018,
+      "n": 2
+    },
+    {
+      "y": 2020,
+      "n": 4
+    },
+    {
+      "y": 2021,
+      "n": 1
+    },
+    {
+      "y": 2022,
+      "n": 4
+    },
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 5
+    },
+    {
+      "y": 2025,
+      "n": 3
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Riskified",
+      "url": "https://funding.tech.eu/companies/338EAB54-7A1B-4E1C-9959-CADEB002E6DA",
+      "country": "Israel",
+      "rounds": 4,
+      "totalEur": 56413429
+    },
+    {
+      "company": "Valens Semiconductor",
+      "url": "https://funding.tech.eu/companies/D469627E-3A21-4BF6-90CF-B5C0C7FE145A",
+      "country": "Israel",
+      "rounds": 3,
+      "totalEur": 33240369
+    },
+    {
+      "company": "daPulse",
+      "url": "https://funding.tech.eu/companies/85511A77-FB51-45EE-B5EF-A09368DA5884",
+      "country": "Israel",
+      "rounds": 4,
+      "totalEur": 31487171
+    },
+    {
+      "company": "Innovid",
+      "url": "https://funding.tech.eu/companies/4561EBB3-8207-4CD2-82FA-91800F8D7D96",
+      "country": "Israel",
+      "rounds": 5,
+      "totalEur": 29208531
+    },
+    {
+      "company": "K2View",
+      "url": "https://funding.tech.eu/companies/FA53FC4F-AC82-4C95-B3F7-0444034EC8E9",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 23803452
+    },
+    {
+      "company": "Sckipio Technologies",
+      "url": "https://funding.tech.eu/companies/E1244751-DDCD-4B18-BE00-4EB981251059",
+      "country": "Israel",
+      "rounds": 2,
+      "totalEur": 20965520
+    },
+    {
+      "company": "HDBaseT",
+      "url": "https://funding.tech.eu/companies/568AAD05-B5CD-4587-9254-31280C54E3FF",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 18289060
+    },
+    {
+      "company": "JoyTunes",
+      "url": "https://funding.tech.eu/companies/8A1DCD85-5737-464D-A2F7-0E9E2F27904A",
+      "country": "Israel",
+      "rounds": 2,
+      "totalEur": 11764815
+    },
+    {
+      "company": "Advasense",
+      "url": "https://funding.tech.eu/companies/9251804B-D0C6-4D23-98E9-3CB9F047CA3D",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 10597230
+    },
+    {
+      "company": "Sckipio",
+      "url": "https://funding.tech.eu/companies/267CCC63-61B7-4879-A103-28153FEDF891",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 8027615
+    },
+    {
+      "company": "Sansa Security",
+      "url": "https://funding.tech.eu/companies/44D37F17-775A-4115-B18D-E39B9E799252",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 7593014
+    },
+    {
+      "company": "ZenChain",
+      "url": "https://funding.tech.eu/companies/8B00ACB3-F994-4B63-AAE2-191F325DAA33",
+      "country": "Switzerland",
+      "rounds": 1,
+      "totalEur": 7280514
+    },
+    {
+      "company": "Wealthyhood",
+      "url": "https://funding.tech.eu/companies/456EBC3C-8648-422E-8038-F23607CCE06E",
+      "country": "UK",
+      "rounds": 2,
+      "totalEur": 6898494
+    },
+    {
+      "company": "EatWith",
+      "url": "https://funding.tech.eu/companies/980A5E68-3EF3-483D-A38A-0A132183D6FB",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 6066121
+    },
+    {
+      "company": "AllRight",
+      "url": "https://funding.tech.eu/companies/50D94BEF-C16B-48C7-8C19-49D6A78FB6C8",
+      "country": "Russia",
+      "rounds": 1,
+      "totalEur": 4214785
+    },
+    {
+      "company": "Protio",
+      "url": "https://funding.tech.eu/companies/4AD07FBB-4E3E-452E-B523-6AF5A6E49B30",
+      "country": "Greece",
+      "rounds": 2,
+      "totalEur": 3000000
+    },
+    {
+      "company": "Folks Finance",
+      "url": "https://funding.tech.eu/companies/2262E310-0A37-40D6-A944-44F5958E8327",
+      "country": "Italy",
+      "rounds": 1,
+      "totalEur": 2653928
+    },
+    {
+      "company": "Xatoms",
+      "url": "https://funding.tech.eu/companies/E14BCA07-C0D3-4817-8B6C-23DC1866748F",
+      "country": "Slovakia",
+      "rounds": 1,
+      "totalEur": 2600000
+    },
+    {
+      "company": "Webflakes",
+      "url": "https://funding.tech.eu/companies/00BC6FEA-2AFA-4DAA-8B29-5505B0B80964",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 2294982
+    },
+    {
+      "company": "illuminem",
+      "url": "https://funding.tech.eu/companies/605E217E-3285-4963-9F69-3D2CD79FD1E3",
+      "country": "Italy",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "lluminem",
+      "url": "https://funding.tech.eu/companies/1A70F885-93C0-4AEC-B0FA-2C06117EA438",
+      "country": "Italy",
+      "rounds": 1,
+      "totalEur": 2000000
+    },
+    {
+      "company": "MedyMatch",
+      "url": "https://funding.tech.eu/companies/7E79F5D4-540E-4BD3-8DCB-467313B782E6",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 1836885
+    },
+    {
+      "company": "Progressive Robotics",
+      "url": "https://funding.tech.eu/companies/254EC2D3-A70D-4ABC-BC82-F3F202FC77BD",
+      "country": "Greece",
+      "rounds": 1,
+      "totalEur": 1550000
+    },
+    {
+      "company": "Spondoolies-Tech",
+      "url": "https://funding.tech.eu/companies/B66421A1-02F9-414A-BE2E-80FD1D64C862",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 1370000
+    },
+    {
+      "company": "Vochi",
+      "url": "https://funding.tech.eu/companies/70821FE3-5517-4593-BB2D-CAD6BD0ADB60",
+      "country": "Belarus",
+      "rounds": 1,
+      "totalEur": 1279754
+    },
+    {
+      "company": "Movingdoors",
+      "url": "https://funding.tech.eu/companies/945B684A-F43F-4F79-A053-5CF48977F321",
+      "country": "Cyprus",
+      "rounds": 1,
+      "totalEur": 1163000
+    },
+    {
+      "company": "Finloup",
+      "url": "https://funding.tech.eu/companies/D345A927-9E93-4148-A5E7-74931E619BDA",
+      "country": "Greece",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "99Math",
+      "url": "https://funding.tech.eu/companies/EB4239B8-C562-49F6-AED7-6036BCC30228",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 841397
+    },
+    {
+      "company": "Arcweave",
+      "url": "https://funding.tech.eu/companies/5261F61F-7390-4570-B309-0995E373E211",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 785800
+    },
+    {
+      "company": "PREen.Me",
+      "url": "https://funding.tech.eu/companies/C5102EB1-E1E4-4AE1-A5A9-431FC7966A7D",
+      "country": "Israel",
+      "rounds": 1,
+      "totalEur": 618716
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Riskified",
+      "companyUrl": "https://funding.tech.eu/companies/338EAB54-7A1B-4E1C-9959-CADEB002E6DA",
+      "dealUrl": "https://funding.tech.eu/deals/7AB37832-C8B6-4F9A-DFB1-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 29260507,
+      "date": "2017-06-27T22:00:00.000Z"
+    },
+    {
+      "company": "K2View",
+      "companyUrl": "https://funding.tech.eu/companies/FA53FC4F-AC82-4C95-B3F7-0444034EC8E9",
+      "dealUrl": "https://funding.tech.eu/deals/7A87016C-A1AF-4EDE-ED9A-08D91092C887",
+      "stage": "Other",
+      "amountEur": 23803452,
+      "date": "2020-08-10T22:00:00.000Z"
+    },
+    {
+      "company": "daPulse",
+      "companyUrl": "https://funding.tech.eu/companies/85511A77-FB51-45EE-B5EF-A09368DA5884",
+      "dealUrl": "https://funding.tech.eu/deals/F3BFE2C8-810D-43BC-BFF4-08D91092C887",
+      "stage": "Series A",
+      "amountEur": 23412624,
+      "date": "2017-04-05T22:00:00.000Z"
+    },
+    {
+      "company": "Riskified",
+      "companyUrl": "https://funding.tech.eu/companies/338EAB54-7A1B-4E1C-9959-CADEB002E6DA",
+      "dealUrl": "https://funding.tech.eu/deals/2DF76EF7-E781-41E0-DFB0-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 22893773,
+      "date": "2016-01-31T23:00:00.000Z"
+    },
+    {
+      "company": "Valens Semiconductor",
+      "companyUrl": "https://funding.tech.eu/companies/D469627E-3A21-4BF6-90CF-B5C0C7FE145A",
+      "dealUrl": "https://funding.tech.eu/deals/3F3BFFE5-C93D-4512-BFEC-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 18370534,
+      "date": "2015-12-31T23:00:00.000Z"
+    },
+    {
+      "company": "HDBaseT",
+      "companyUrl": "https://funding.tech.eu/companies/568AAD05-B5CD-4587-9254-31280C54E3FF",
+      "dealUrl": "https://funding.tech.eu/deals/EBEBBD26-0C19-4E9F-B814-08D91092C887",
+      "stage": "Series C",
+      "amountEur": 18289060,
+      "date": "2015-12-31T23:00:00.000Z"
+    },
+    {
+      "company": "Sckipio Technologies",
+      "companyUrl": "https://funding.tech.eu/companies/E1244751-DDCD-4B18-BE00-4EB981251059",
+      "dealUrl": "https://funding.tech.eu/deals/919F8122-6047-4A88-AB21-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 13618521,
+      "date": "2014-11-30T23:00:00.000Z"
+    },
+    {
+      "company": "Advasense",
+      "companyUrl": "https://funding.tech.eu/companies/9251804B-D0C6-4D23-98E9-3CB9F047CA3D",
+      "dealUrl": "https://funding.tech.eu/deals/7A98FCF8-ED4B-405F-957E-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 10597230,
+      "date": "2007-02-28T23:00:00.000Z"
+    },
+    {
+      "company": "Valens Semiconductor",
+      "companyUrl": "https://funding.tech.eu/companies/D469627E-3A21-4BF6-90CF-B5C0C7FE145A",
+      "dealUrl": "https://funding.tech.eu/deals/6EB9B85F-D304-49F8-BFEA-08D91092C887",
+      "stage": "Series B",
+      "amountEur": 9686570,
+      "date": "2011-06-30T22:00:00.000Z"
+    },
+    {
+      "company": "Innovid",
+      "companyUrl": "https://funding.tech.eu/companies/4561EBB3-8207-4CD2-82FA-91800F8D7D96",
+      "dealUrl": "https://funding.tech.eu/deals/35D5E4ED-250C-466B-D64D-08D91092C887",
+      "stage": "Series D+",
+      "amountEur": 8896797,
+      "date": "2015-02-28T23:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Entree Capital",
+      "url": "https://funding.tech.eu/investors/Entree%20Capital",
+      "sharedRounds": 7
+    },
+    {
+      "name": "Aviv Venture Capital",
+      "url": "https://funding.tech.eu/investors/Aviv%20Venture%20Capital",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Magma Venture Partners",
+      "url": "https://funding.tech.eu/investors/Magma%20Venture%20Partners",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Pitango Venture Capital",
+      "url": "https://funding.tech.eu/investors/Pitango%20Venture%20Capital",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Sequoia Capital",
+      "url": "https://funding.tech.eu/investors/Sequoia%20Capital",
+      "sharedRounds": 4
+    },
+    {
+      "name": "T-Venture",
+      "url": "https://funding.tech.eu/investors/T-Venture",
+      "sharedRounds": 4
+    },
+    {
+      "name": "Gemini Israel Ventures",
+      "url": "https://funding.tech.eu/investors/Gemini%20Israel%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Aleph",
+      "url": "https://funding.tech.eu/investors/Aleph",
+      "sharedRounds": 2
+    },
+    {
+      "name": "BlackWood",
+      "url": "https://funding.tech.eu/investors/BlackWood",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Formation 8",
+      "url": "https://funding.tech.eu/investors/Formation%208",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Fortino Capital",
+      "url": "https://funding.tech.eu/investors/Fortino%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Founder Collective",
+      "url": "https://funding.tech.eu/investors/Founder%20Collective",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Insight Partners",
+      "url": "https://funding.tech.eu/investors/Insight%20Partners",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Lars Rasmussen",
+      "url": "https://funding.tech.eu/investors/Lars%20Rasmussen",
+      "sharedRounds": 2
+    },
+    {
+      "name": "Qumra Capital",
+      "url": "https://funding.tech.eu/investors/Qumra%20Capital",
+      "sharedRounds": 2
+    },
+    {
+      "name": "0x Ventures",
+      "url": "https://funding.tech.eu/investors/0x%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Accel",
+      "url": "https://funding.tech.eu/investors/Accel",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Alex Challans",
+      "url": "https://funding.tech.eu/investors/Alex%20Challans",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Algorand Foundation",
+      "url": "https://funding.tech.eu/investors/Algorand%20Foundation",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Amiti Ventures",
+      "url": "https://funding.tech.eu/investors/Amiti%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Argyris Kaninis",
+      "url": "https://funding.tech.eu/investors/Argyris%20Kaninis",
+      "sharedRounds": 1
+    },
+    {
+      "name": "AxessVentures",
+      "url": "https://funding.tech.eu/investors/AxessVentures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Bank of Cyprus",
+      "url": "https://funding.tech.eu/investors/Bank%20of%20Cyprus",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BDC Thrive Lab",
+      "url": "https://funding.tech.eu/investors/BDC%20Thrive%20Lab",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BlueRun Ventures",
+      "url": "https://funding.tech.eu/investors/BlueRun%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

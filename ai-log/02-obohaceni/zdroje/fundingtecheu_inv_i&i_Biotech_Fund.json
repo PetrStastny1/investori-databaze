@@ -1,0 +1,265 @@
+{
+  "name": "i&i Biotech Fund",
+  "url": "https://funding.tech.eu/investors/i%26i%20Biotech%20Fund",
+  "aliases": [
+    "i&i Biotech Fund"
+  ],
+  "types": [
+    "Investment firm"
+  ],
+  "deals": 6,
+  "companies": 6,
+  "activeYears": {
+    "first": 2022,
+    "last": 2026
+  },
+  "participatedRoundEur": 35230101,
+  "sectors": [
+    {
+      "name": "Healthtech",
+      "value": 5
+    },
+    {
+      "name": "AI",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Series A",
+      "value": 3
+    },
+    {
+      "name": "Seed",
+      "value": 2
+    },
+    {
+      "name": "Other",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Netherlands",
+      "value": 2
+    },
+    {
+      "name": "UK",
+      "value": 2
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 2
+    },
+    {
+      "y": 2023,
+      "n": 2
+    },
+    {
+      "y": 2026,
+      "n": 2
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Enzyre",
+      "url": "https://funding.tech.eu/companies/83CCEDDC-54E4-4753-94D9-5D302D201CA8",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 12000000
+    },
+    {
+      "company": "Antiverse",
+      "url": "https://funding.tech.eu/companies/141D3EAA-DA36-4204-94F5-D3364A0DE9EC",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 8013097
+    },
+    {
+      "company": "Delta Diagnostics",
+      "url": "https://funding.tech.eu/companies/69EDA4A2-E44E-496D-9CAC-9E0EFCF75F8D",
+      "country": "Netherlands",
+      "rounds": 1,
+      "totalEur": 5250000
+    },
+    {
+      "company": "HeartBeat.bio",
+      "url": "https://funding.tech.eu/companies/E6395BAE-5A04-4956-BE24-946BD72E307C",
+      "country": "Austria",
+      "rounds": 1,
+      "totalEur": 4500000
+    },
+    {
+      "company": "Ternary Therapeutics",
+      "url": "https://funding.tech.eu/companies/92018945-2045-4E4F-B7C2-5602819FFECB",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 4167004
+    },
+    {
+      "company": "CasInvent",
+      "url": "https://funding.tech.eu/companies/65ABC444-A5A9-4C89-87E6-2E92949EAE65",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1300000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Enzyre",
+      "companyUrl": "https://funding.tech.eu/companies/83CCEDDC-54E4-4753-94D9-5D302D201CA8",
+      "dealUrl": "https://funding.tech.eu/deals/313A1065-53EF-4EFC-952B-9CAED2AF596F",
+      "stage": "Series A",
+      "amountEur": 12000000,
+      "date": "2022-11-02T00:00:00.000Z"
+    },
+    {
+      "company": "Antiverse",
+      "companyUrl": "https://funding.tech.eu/companies/141D3EAA-DA36-4204-94F5-D3364A0DE9EC",
+      "dealUrl": "https://funding.tech.eu/deals/F98E3E6D-C0C4-47CA-9151-E6F203A8B1F7",
+      "stage": "Series A",
+      "amountEur": 8013097,
+      "date": "2026-03-03T00:00:00.000Z"
+    },
+    {
+      "company": "Delta Diagnostics",
+      "companyUrl": "https://funding.tech.eu/companies/69EDA4A2-E44E-496D-9CAC-9E0EFCF75F8D",
+      "dealUrl": "https://funding.tech.eu/deals/1CD71E78-32FF-4DF7-BB3B-D559CE485897",
+      "stage": "Series A",
+      "amountEur": 5250000,
+      "date": "2023-05-12T00:00:00.000Z"
+    },
+    {
+      "company": "HeartBeat.bio",
+      "companyUrl": "https://funding.tech.eu/companies/E6395BAE-5A04-4956-BE24-946BD72E307C",
+      "dealUrl": "https://funding.tech.eu/deals/C34C48ED-DB94-4901-B5B0-F2C880A19493",
+      "stage": "Seed",
+      "amountEur": 4500000,
+      "date": "2023-11-02T00:00:00.000Z"
+    },
+    {
+      "company": "Ternary Therapeutics",
+      "companyUrl": "https://funding.tech.eu/companies/92018945-2045-4E4F-B7C2-5602819FFECB",
+      "dealUrl": "https://funding.tech.eu/deals/F8FB2707-E474-4C2D-9357-A19245878AE9",
+      "stage": "Seed",
+      "amountEur": 4167004,
+      "date": "2026-03-18T00:00:00.000Z"
+    },
+    {
+      "company": "CasInvent",
+      "companyUrl": "https://funding.tech.eu/companies/65ABC444-A5A9-4C89-87E6-2E92949EAE65",
+      "dealUrl": "https://funding.tech.eu/deals/86828FEC-3D40-4488-84A8-1ADD4D7AE419",
+      "stage": "Other",
+      "amountEur": 1300000,
+      "date": "2022-09-27T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Oost NL",
+      "url": "https://funding.tech.eu/investors/Oost%20NL",
+      "sharedRounds": 2
+    },
+    {
+      "name": "aws Gründungsfonds II",
+      "url": "https://funding.tech.eu/investors/aws%20Gr%C3%BCndungsfonds%20II",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DBW",
+      "url": "https://funding.tech.eu/investors/DBW",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Demcon Investment",
+      "url": "https://funding.tech.eu/investors/Demcon%20Investment",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DOMiNO Ventures",
+      "url": "https://funding.tech.eu/investors/DOMiNO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Dutch Government",
+      "url": "https://funding.tech.eu/investors/Dutch%20Government",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Future Planet Capital",
+      "url": "https://funding.tech.eu/investors/Future%20Planet%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Innovation Investment Capital",
+      "url": "https://funding.tech.eu/investors/Innovation%20Investment%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "InnovationQuarter",
+      "url": "https://funding.tech.eu/investors/InnovationQuarter",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Invest AG",
+      "url": "https://funding.tech.eu/investors/Invest%20AG",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Kadmos Capital",
+      "url": "https://funding.tech.eu/investors/Kadmos%20Capital",
+      "sharedRounds": 1
+    },
+    {
+      "name": "KHAN Technology Transfer Fund I",
+      "url": "https://funding.tech.eu/investors/KHAN%20Technology%20Transfer%20Fund%20I",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Novalis Biotech",
+      "url": "https://funding.tech.eu/investors/Novalis%20Biotech",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Pace Ventures",
+      "url": "https://funding.tech.eu/investors/Pace%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "PhotonDelta",
+      "url": "https://funding.tech.eu/investors/PhotonDelta",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Takeda Ventures",
+      "url": "https://funding.tech.eu/investors/Takeda%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tensor Ventures",
+      "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "UK Innovation & Science Seed Fund",
+      "url": "https://funding.tech.eu/investors/UK%20Innovation%20%26%20Science%20Seed%20Fund",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

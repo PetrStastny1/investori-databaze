@@ -523,5 +523,469 @@
       "investice": "stredni"
     },
     "poznamka": "Typ VC: pre-seed fond zakladatelů pro firmy z CEE („Czech Founders VC mission is based on the need for a founders-focused investor“, „Pre-seed tickets. Typically €50-350k“, „No more than 15% equity“, czechfounders.vc); CzechCrunch (2022-09-07) jej popisuje jako fond regulovaný jako alternativní investiční fond, s podíly „maximálně patnáct procent“. Sídlo Praha. Identita: web uvádí „© Czech Founders Ventures s.r.o.“; ARES: Czech Founders Ventures s.r.o., osoba rizikového kapitálu, IČO 17051835, Salvátorská 931/8, Praha 1, jednatelé a společníci Vít Horký, Václav Pavlečka, Ivan Kristeľ, což odpovídá partnerům fondu podle CzechCrunch. Není totožný s neziskovou Czech Founders z.ú. (IČO 09761187). Kapitál: CzechCrunch uvádí „Všichni zde zmínění složili dohromady deset milionů eur, přibližně čtvrt miliardy korun“ (původní cíl 5 mil. EUR zdvojnásoben); zapsáno jako committed_capital k datu článku, údaj z roku 2022. Ticket 50–350 tis. EUR deklarovaný na webu a v CzechCrunch. Sektory investor nevymezuje (široké spektrum oborů), proto null. Velikost kol (ne vklad CF VC): Merchantee rozšíření seed kola o dalších 30 mil. Kč k původním 15 mil. Kč z roku 2024 (vedl Reflex Capital, dále Lighthouse Ventures; zakladatel o něm mluví jako o „něco jako bridge round“), funding.tech.eu uvádí 1,8 mil. EUR; Maxfusion 350 tis. EUR (spolu s andělem a zakladateli). Nástroj: Merchantee neprima_indicie (CzechCrunch: „rozšíření svého původního, takzvaného seed investičního kola“, „Kolo vedl fond Reflex Capital za účasti Czech Founders VC a Lighthouse Ventures.“), Maxfusion nezjištěn; obecně web deklaruje equity do 15 %. Jistota investice střední: jediná zpráva o transakci, žádný dolozeno. Data jsou data oznámení, datum uzavření zdroje neuvádějí. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední (agregátory jako PitchBook uvádějí další kola, např. AdSpawn 2026-04, které jsem zprávou neověřoval)."
+  },
+  {
+    "id": "cz-depo-ventures",
+    "nazev": "DEPO Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "DEPO VENTURES, s.r.o.",
+      "ico": "04753101",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04753101",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-05-13",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://depoventures.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://depoventures.com/",
+      "zdroj_url": "https://depoventures.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "defence",
+        "space",
+        "fintech",
+        "industry 4.0",
+        "energy"
+      ],
+      "zdroj_url": "https://depoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "inception",
+        "pre-seed"
+      ],
+      "zdroj_url": "https://depoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 250000,
+      "max": 500000,
+      "mena": "EUR",
+      "zdroj_url": "https://depoventures.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Zvook",
+      "datum_investice": null,
+      "datum_oznameni": "2026-10-12",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "nezjisteno",
+        "kolo": null,
+        "zdroj_url": null
+      },
+      "zdroje": [
+        {
+          "url": "https://kyivpost.com/post/86941",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Kyiv Post",
+          "puvod": "Defender Media (sdělení Petra Šímy, 12. 10. 2026)",
+          "zdroj_datum": "2026-10-13",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Tapaya",
+        "datum_investice": null,
+        "datum_oznameni": "2026-04-29",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "pre-seed",
+          "zdroj_url": "https://vestbee.com/blog/articles/tapaya-secures-1-m"
+        },
+        "zdroje": [
+          {
+            "url": "https://vestbee.com/blog/articles/tapaya-secures-1-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": null,
+            "zdroj_datum": "2026-04-29",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://depoventures.com/latest/turning-any-smartphone-into-a-payment-terminal-czech-fintech-tapaya-has-raised-eur-1-million",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web se popisuje 'from community builders to professional VC fund GPs', 'Backing early-stage founders since 2016'; Kyiv Post ho označuje 'Czech venture capital firm DEPO Ventures'; doložené investice do startupů (pre-seed). Pod značkou běží i síť DEPO Angels a andělské fondy; v ARES existují fondy DEPO VENTURES AF II., osoba rizikového kapitálu, s.r.o. (IČO 11726377) a DEPO VENTURES AF III., osoba rizikového kapitálu, s.r.o. (IČO 17765838), vedené jako podřízené fondy, ne samostatní investoři (jejich výpisy VR nestaženy). Identita: ARES DEPO VENTURES, s.r.o., IČO 04753101 (dříve Hagberg s.r.o.), sídlo Plynární 1617/10, Praha 7, shodné s adresou na webu ('Plynární 10 street', 'Prague 7'); jednatel Petr Šíma, kterého Kyiv Post uvádí jako 'co-founder and managing partner'. Předmět podnikání v rejstříku je obecný (pronájem nemovitostí; výroba, obchod a služby). Podle vyhledávání (businessinfo.cz, nečteno přímo) spravuje nový Fond Ukrajina subjekt DEPO Ventures One SCSp / DEPO Ventures Sàrl (Lucembursko), nepotvrzeno; sídlo investiční firmy (značky) beru jako ČR podle webu a rejstříku. Ticket deklaruje web: 'Ticket €250K - 500K'. Sektory: 'Industry Defence, Space,FinTech, Industry 4.0, Energy'; fáze: 'Stage Inception & Pre-seed'. Kapitál: nenalezen údaj aum/committed/fund size od investora ani regulátora; web uvádí '€9M' nasazeného kapitálu (capital deployed, není kapitál fondu); NRI do Fondu Ukrajina vstupuje kapitálovou investicí 94 mil. Kč (závazek jednoho LP, ne velikost fondu); andělský fond II 'v plánované výši 45 milionů korun' (plán), proto kapital prázdný. Poslední investice: Zvook (ukrajinský defence startup), Kyiv Post 13. 10. 2026: 'DEPO Ventures invested an undisclosed amount in Zvook' přes nový Ukraine Fund; Petr Šíma obchod oznámil Defender Media 12. 10. 2026 (datum_oznameni). Kolo ani nástroj neuvedeny, nástroj nezjisteno. Další: Tapaya, pre-seed 1 mil. EUR (velikost celého kola, ne vklad DEPO); Vestbee 29. 4. 2026: 'raised €1 million in a pre-seed round led by Passion Capital and co-led by Depo Ventures'; web DEPO uvádí DEPO jako lead a Passion Capital jako co-lead (rozpor jen v roli lead/co-lead, účast DEPO, firma i období se shodují, proto investici používám). Nástroj neprima_indicie (pre-seed), podíl výslovně neuveden; žádná investice nemá dolozeno, proto jistota investice stredni. Web DEPO dále uvádí bez data Plexo (DEPO 'cornerstone investor in the company's pre-seed funding round') a WanderWallet (pre-seed 430 tis. EUR); bez data a nezávislé zprávy nezapsány. funding.tech.eu uvádí 21 kol 2022–2026 (vodítko, ne doklad). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-fazole-ventures",
+    "nazev": "Fazole Ventures",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Fazole Ventures s.r.o.",
+      "ico": "07491492",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/07491492",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2019-02-06",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.fazole.vc/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.fazole.vc/",
+      "zdroj_url": "https://www.fazole.vc/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "energetika",
+        "bankovnictví",
+        "doprava",
+        "retail",
+        "smart city",
+        "telco",
+        "B2B technologie"
+      ],
+      "zdroj_url": "https://www.fazole.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "počáteční fáze růstu (první expanze, produkt otestovaný alespoň na pilotních zákaznících)"
+      ],
+      "zdroj_url": "https://www.fazole.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 1000000,
+      "max": 20000000,
+      "mena": "CZK",
+      "zdroj_url": "https://www.fazole.vc/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Everbot",
+      "datum_investice": null,
+      "datum_oznameni": "2025-09-16",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://forbes.cz/cesky-ai-start-up-everbot-ziskal-desitky-milionu-do-hry-vstupuje-miliardar-bouska/"
+      },
+      "zdroje": [
+        {
+          "url": "https://forbes.cz/cesky-ai-start-up-everbot-ziskal-desitky-milionu-do-hry-vstupuje-miliardar-bouska/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Forbes Česko",
+          "puvod": "společné oznámení Everbot / Fazole Ventures (tisková zpráva nedohledaná; shodné citace R. Berglowiece a P. Přikryla ve všech článcích)",
+          "zdroj_datum": "2025-09-16",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/jak-se-vyznat-v-modelech-umele-inteligence-startup-nabizi-reseni-a-nabira-desitky-milionu-korun/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": "společné oznámení Everbot / Fazole Ventures (tisková zpráva nedohledaná; shodné citace R. Berglowiece a P. Přikryla ve všech článcích)",
+          "zdroj_datum": "2025-09-16",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/startup-z-opavy-slucuje-desitky-ai-typu-gpt-llama-ci-deepseek-do-jednoho-rozhrani-ziskal-na-to-investici/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": "společné oznámení Everbot / Fazole Ventures (tisková zpráva nedohledaná; shodné citace R. Berglowiece a P. Přikryla ve všech článcích)",
+          "zdroj_datum": "2025-09-16",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.fazole.vc/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web 'Fazole Ventures jsme založili proto, abychom pomohli chytrým lidem uspět... Podporujeme je v počáteční fázi růstu jejich firem tím, že poskytujeme financování', tým managing partner Pavel Přikryl a zakládající partneři Pavel Bouška a Luboš Černý; Forbes 12. 8. 2019 (https://forbes.cz/novy-startupovy-fond-na-scene-vetsinu-penez-poskytne-miliardar-bouska/) jej uvádí jako nový fond na 'české venture kapitálové scéně' ('Nový vehikl... se zaměřuje na rané investice do technologických startupů z oblasti B2B'; Přikryl: 'rodinnější povahou našeho fondu', 'Naší ambicí je vytvořit jakýsi venture kapitálový klub'). Většinu peněz podle Forbes přislíbil P. Bouška, který své další investice spravuje přes vlastní family office Fermia; Fazole je samostatná investiční firma tří partnerů s menšinovými podíly ve startupech, ne holding jednoho podnikatele ani family office. Identita: ARES Fazole Ventures s.r.o., IČO 07491492, sídlo Salvátorská 931/8, Praha 1 (shodné s adresou 'c/o Opero, Salvátorská 931/8' na webu), jednatelé Luboš Černý a Pavel Přikryl = partneři podle webu; společníci Luboš Černý 15 %, GROWTHGARAGE s.r.o. 25 % (poradenská firma, kterou podle webu vede Přikryl), PABCO s.r.o. 60 % (vazba na P. Bouška nepotvrzená). Předmět podnikání v ARES je jen 'pronájem nemovitostí, bytů a nebytových prostor' (obecný zápis). Ticket: web 'Náš \"sweet spot\" se pohybuje mezi 1-20 mil. CZK, ale zvážíme i větší objemy financování'. Kapitál: Forbes 2019 'Palebnou sílu přesně stanovenou nemá', proto prázdné. Poslední investice: Everbot (Opava), Forbes 16. 9. 2025: 'Do firmy míří desítky milionů korun od skupiny investorů v čele s fondem Fazole Ventures' a 'Fond Fazole Ventures získá v Everbotu výměnou za kapitál 12,2procentní podíl s možností navýšení až o 2,7 procentního bodu. Přesná výše investice v řádu desítek milionů korun nebyla zveřejněna.' CzechCrunch týž den: 'Lídrem investičního kola se stal fond Fazole Ventures', 'Everbot je nyní v pořadí desátou investicí Fazole Ventures.'; Lupa.cz týž den: 'nabral investici nižších desítek milionů korun výměnou za podíl 12,2 procenta'. Nástroj podíl doložený. Datum podpisu/uzavření žádný zdroj neuvádí, proto datum_oznameni. Všechny tři články vyšly 16. 9. 2025 se shodnými citacemi, tedy z jednoho oznámení -> jeden původ, jistota investice stredni. Status investice_dolozena_12_24_mesicu (oznámení 2025-09-16, tj. před 2025-10-26). Agregátory (Caplight) uvádějí Whalebone series B v únoru 2025 s účastí Fazole, zprávu o transakci s Fazole jsem nenašel (Forbes 2019 popisuje investici 15 mil. Kč do Whalebone v roce 2019), proto nezapsáno; funding.tech.eu uvádí jen Forloop (2022). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-ii-biotech-investments",
+    "nazev": "i&i Biotech Investments",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Biotech Investments s.r.o.",
+      "ico": "10885978",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/10885978",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-03-07",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cvca.cz/en/biotech-investments/",
+          "druh_zdroje": "asociace",
+          "vydavatel": "CVCA",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.inibio.eu/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.inibio.eu/",
+      "zdroj_url": "https://www.inibio.eu/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "drug discovery",
+        "medtech",
+        "diagnostics",
+        "AI"
+      ],
+      "zdroj_url": "https://www.inibio.eu/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "early stage"
+      ],
+      "zdroj_url": "https://www.inibio.eu/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": 150000,
+      "max": 2000000,
+      "mena": "EUR",
+      "zdroj_url": "https://www.inibio.eu/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "kapital": [
+      {
+        "castka": 47000000,
+        "mena": "EUR",
+        "plati_k": "2022-11-30",
+        "druh": "fund_size",
+        "fond": "i&i Biotech Fund I SCSp",
+        "zdroj_url": "https://www.inibio.eu/news/experienced-businessmen-join-forces-with-excellent-science%2C-invest-%E2%82%AC2m-in-the-fund-at-the-iocb",
+        "zdroj_datum": "2022-11-30",
+        "stazeno": "2026-10-26"
+      }
+    ],
+    "posledni_investice": {
+      "firma": "Theorema",
+      "datum_investice": null,
+      "datum_oznameni": "2026-03-27",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": null,
+        "doklad": "neprima_indicie",
+        "kolo": "pre-seed",
+        "zdroj_url": "https://www.lupa.cz/aktuality/ai-agenti-noveho-ceskeho-startupu-maji-desitky-milionu-aby-urychlily-vedecky-vyzkum-a-vyvoj/"
+      },
+      "zdroje": [
+        {
+          "url": "https://www.lupa.cz/aktuality/ai-agenti-noveho-ceskeho-startupu-maji-desitky-milionu-aby-urychlily-vedecky-vyzkum-a-vyvoj/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Lupa.cz",
+          "puvod": null,
+          "zdroj_datum": "2026-03-27",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://cc.cz/prvni-startup-prodali-za-stamiliony-ted-stavi-dalsi-diky-ai-jsme-30krat-rychlejsi-na-nic-necekame/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "CzechCrunch",
+          "puvod": null,
+          "zdroj_datum": "2026-03-27",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.vestbee.com/insights/articles/theorema-secures-2-85-m",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Vestbee",
+          "puvod": null,
+          "zdroj_datum": "2026-03-31",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.inibio.eu/",
+          "druh_zdroje": "portfolio_web",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Ternary Therapeutics",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-17",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "seed",
+          "zdroj_url": "https://itbrief.co.uk/story/ternary-raises-gbp-3-6m-to-engineer-ai-molecular-glues"
+        },
+        "zdroje": [
+          {
+            "url": "https://itbrief.co.uk/story/ternary-raises-gbp-3-6m-to-engineer-ai-molecular-glues",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "IT Brief UK",
+            "puvod": null,
+            "zdroj_datum": "2026-03-17",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.inibio.eu/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "Antiverse",
+        "datum_investice": null,
+        "datum_oznameni": "2026-03-03",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://www.vestbee.com/insights/articles/antiverse-raises-9-3-m"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.vestbee.com/insights/articles/antiverse-raises-9-3-m",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Vestbee",
+            "puvod": null,
+            "zdroj_datum": "2026-03-03",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.inibio.eu/",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": null,
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      },
+      {
+        "firma": "T-CURX",
+        "datum_investice": null,
+        "datum_oznameni": "2025-12-17",
+        "datum_pro_filtr": "oznameni",
+        "nastroj": {
+          "hodnota": null,
+          "doklad": "neprima_indicie",
+          "kolo": "series A",
+          "zdroj_url": "https://www.samedanltd.com/press-releases/t-curx-announces-20m-series-a-first-closing-led-by-biomedvc-to-fund-pipeline-of-clinical-stage-car-t-programs-and-advance-proprietary-non-viral-in-vivo-car-t-platform/"
+        },
+        "zdroje": [
+          {
+            "url": "https://www.samedanltd.com/press-releases/t-curx-announces-20m-series-a-first-closing-led-by-biomedvc-to-fund-pipeline-of-clinical-stage-car-t-programs-and-advance-proprietary-non-viral-in-vivo-car-t-platform/",
+            "druh_zdroje": "zprava_o_transakci",
+            "vydavatel": "Samedan (tisková zpráva T-CURX)",
+            "puvod": null,
+            "zdroj_datum": "2025-12-17",
+            "stazeno": "2026-10-26"
+          },
+          {
+            "url": "https://www.inibio.eu/news/t-curx-announces-%2420m-series-a-first-closing-led-by-biomedvc-to-fund-pipeline-of-clinical-stage-car-t-programs-and-advance-proprietary-non-viral-in-vivo-car-t-platform",
+            "druh_zdroje": "portfolio_web",
+            "vydavatel": "web investora",
+            "puvod": "https://www.samedanltd.com/press-releases/t-curx-announces-20m-series-a-first-closing-led-by-biomedvc-to-fund-pipeline-of-clinical-stage-car-t-programs-and-advance-proprietary-non-viral-in-vivo-car-t-platform/",
+            "zdroj_datum": null,
+            "stazeno": "2026-10-26"
+          }
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: web investora se popisuje jako 'early stage biotech venture capital' a 'one of the very few VC funds in Europe focused exclusively on life science ventures'; doložené investice do startupů v kolech pre-seed/seed/series A. Struktura: fond i&i Biotech Fund I SCSp (Lucembursko, web uvádí 'Headquarters: 42, rue de la Vallée, L-2661 Luxembourg'), investičním poradcem a týmem je Biotech Investments, s. r. o., Pobřežní 394/12, Praha 8 (web, CVCA profil 'i&i Biotech Investments' se stejnou adresou a kontaktem Tomáš Maršálek, CFO). Sídlo investiční firmy (poradce/tým, značka i&i Bio) beru jako ČR; lucemburský je právní obal fondu. Identita: ARES Biotech Investments s.r.o., IČO 10885978, sídlo Pobřežní 394/12, Praha 8; jednatelé Tomáš Maršálek a Ivan Vohlmuth (oba na webu jako Founding Partners); společníci SVAI Biotech Investments s.r.o., Luctonber s.r.o. a KAMAVO Biotech Investments s.r.o. (po 1/3); Karel Kubias (Founding Partner podle webu) byl jednatelem do 2024-11-30. Lucemburský fond v rejstříku RCS jsem neověřoval. Fond byl založen v roce 2021 ve spolupráci s EIF a i&i Prague (dceřiná společnost ÚOCHB / IOCB Tech), který je podle ÚOCHB jedním z hlavních investorů fondu; i&i Prague je samostatná firma (incubator a venture builder, 100% IOCB Tech s.r.o.), viz par_cz-ii-biotech-investments__cz-ii-prague.md. Ticket podle webu: business creation 'from €150k', growth 'sweet spot €0.5M to €2M' (min 150 000, max 2 000 000 EUR). Kapitál: web investora 30. 11. 2022: 'the total capital of the fund has risen to approximately €47 million' (zapsáno jako fund_size, přibližná hodnota); stejná stránka v boxu About uvádí 'manages over €53 million' bez data, ÚOCHB 2021 'more than 45 million EUR'; nesčítám, novější nedatovaný údaj (dolní mez) nezapisuji. Poslední investice: Theorema (Praha, AI pro vědecký výzkum), pre-seed 3,3 mil. USD / 70 mil. Kč (velikost celého kola, ne vklad i&i), i&i Biotech Fund mezi investory podle Lupa.cz a CzechCrunch (oba 27. 3. 2026) a Vestbee (31. 3. 2026). Nezávislost zdrojů nedoložena (pravděpodobně všechny vycházejí z oznámení startupu), proto jistota investice stredni; nástroj neprima_indicie (pre-seed), podíl výslovně neuveden v žádném zdroji. Další: Ternary Therapeutics seed 3,6 mil. GBP (velikost kola; IT Brief 17. 3. 2026, jiné zdroje uvádějí oznámení 16. 3. 2026), Antiverse series A 9,3 mil. USD (velikost kola; i&i jako stávající investor, Vestbee 3. 3. 2026), T-CURX first closing series A 20 mil. USD (velikost kola, tisková zpráva 17. 12. 2025). Také KyDo Therapeutics seed 4,45 mil. EUR vedené I&I Bio (web investora 16. 9. 2025, jen web investora, nezapsáno). Sektory a fáze podle webu ('early stage', drug discovery, medtech, diagnostics, AI). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   }
 ]

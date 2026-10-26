@@ -1,0 +1,4 @@
+{
+  "error": "investor not found",
+  "hint": "use /api/v1/investors?q=<name> to find the exact name"
+}

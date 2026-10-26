@@ -1,0 +1,88 @@
+{
+  "name": "Fazole Ventures",
+  "url": "https://funding.tech.eu/investors/Fazole%20Ventures",
+  "aliases": [
+    "Fazole Ventures"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2022,
+    "last": 2022
+  },
+  "participatedRoundEur": 875000,
+  "sectors": [
+    {
+      "name": "AI",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Other",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Sweden",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2022,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Forloop",
+      "url": "https://funding.tech.eu/companies/0FB7A88A-CE32-4FCA-97ED-B68056128292",
+      "country": "Sweden",
+      "rounds": 1,
+      "totalEur": 875000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Forloop",
+      "companyUrl": "https://funding.tech.eu/companies/0FB7A88A-CE32-4FCA-97ED-B68056128292",
+      "dealUrl": "https://funding.tech.eu/deals/90E33E63-3DAD-432E-93BC-A7CA0753EC40",
+      "stage": "Other",
+      "amountEur": 875000,
+      "date": "2022-10-06T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "APX",
+      "url": "https://funding.tech.eu/investors/APX",
+      "sharedRounds": 1
+    },
+    {
+      "name": "DEPO Ventures",
+      "url": "https://funding.tech.eu/investors/DEPO%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Rockstart",
+      "url": "https://funding.tech.eu/investors/Rockstart",
+      "sharedRounds": 1
+    },
+    {
+      "name": "StartGuide",
+      "url": "https://funding.tech.eu/investors/StartGuide",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

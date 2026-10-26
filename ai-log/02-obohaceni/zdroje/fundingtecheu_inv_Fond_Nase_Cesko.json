@@ -1,0 +1,93 @@
+{
+  "name": "Fond Naše Česko",
+  "url": "https://funding.tech.eu/investors/Fond%20Na%C5%A1e%20%C4%8Cesko",
+  "aliases": [
+    "Fond Naše Česko"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 1,
+  "companies": 1,
+  "activeYears": {
+    "first": 2026,
+    "last": 2026
+  },
+  "participatedRoundEur": 12000000,
+  "sectors": [
+    {
+      "name": "AI",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Pre-Seed",
+      "value": 1
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "ValkaAI",
+      "url": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 12000000
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "ValkaAI",
+      "companyUrl": "https://funding.tech.eu/companies/029FBBA7-0F78-4A3F-A7D3-6E1102945281",
+      "dealUrl": "https://funding.tech.eu/deals/4124EC04-FDDA-4CBA-9DEE-2F3051E08C74",
+      "stage": "Pre-Seed",
+      "amountEur": 12000000,
+      "date": "2026-02-26T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "J&T Ventures",
+      "url": "https://funding.tech.eu/investors/J%26T%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Petr Zámečník",
+      "url": "https://funding.tech.eu/investors/Petr%20Z%C3%A1me%C4%8Dn%C3%ADk",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Rockaway Ventures",
+      "url": "https://funding.tech.eu/investors/Rockaway%20Ventures",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Tensor Ventures",
+      "url": "https://funding.tech.eu/investors/Tensor%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}

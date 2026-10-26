@@ -34,3 +34,23 @@ Dávka 1 (10 kandidátů)
   žádné webové požadavky nedělal (jen kontrola a zápis lokálními skripty).
   Doba zahrnuje i kontrolu výsledků a zápis hlavním agentem.
 
+Dávka 2 (10 kandidátů)
+------------------------------
+  začátek 2026-10-26T15:53:58Z, konec 2026-10-26T16:01:41Z, doba 7 min 43 s
+  kandidát                                 WS   WF  WFx ARES  FTE curl
+  cz-depo-ventures                          6    7    0    2    1    0  zarazen
+  cz-emma-capital                           3    5    3    2    1    0  vyrazen
+  cz-espira-investments                     0    0    0    0    0    0  vyrazen
+  cz-everita-capital                        4   13    3    4    4    0  vyrazen
+  cz-fazole-ventures                        5    6    3    2    1    5  zarazen
+  cz-fond-nase-cesko                        2    5    0    7    1    0  nevyresene
+  cz-garage-angels                          3    3    2   13    1    7  vyrazen
+  cz-genesis-capital                        4    6    2    2    1    0  vyrazen
+  cz-gi21-capital                           4    7    1    2    2    0  nevyresene
+  cz-ii-biotech-investments                 7   16    3   11    2    2  zarazen
+  celkem                                   38   68   17   45   14   14  (celkem 179 požadavků)
+  WS = WebSearch, WF = WebFetch, WFx = z toho neúspěšné WebFetch, FTE = funding.tech.eu API, curl = jiné stažení stránky
+  Poznámka: Espira Investments a EVERITA Capital zpracoval jeden agent společně,
+  všechna jeho volání jsou zapsaná u cz-everita-capital (u Espiry nuly).
+  Hlavní agent: žádné webové požadavky, jen kontrola a zápis.
+

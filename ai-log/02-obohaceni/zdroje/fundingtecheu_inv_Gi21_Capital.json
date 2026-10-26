@@ -1,0 +1,235 @@
+{
+  "name": "Gi21 fund",
+  "url": "https://funding.tech.eu/investors/Gi21%20fund",
+  "aliases": [
+    "Gi21 Capital",
+    "Gi21 fund"
+  ],
+  "types": [
+    "Venture capital"
+  ],
+  "deals": 7,
+  "companies": 6,
+  "activeYears": {
+    "first": 2023,
+    "last": 2026
+  },
+  "participatedRoundEur": 6650569,
+  "sectors": [
+    {
+      "name": "Cloud",
+      "value": 2
+    },
+    {
+      "name": "AI",
+      "value": 1
+    },
+    {
+      "name": "Edtech",
+      "value": 1
+    },
+    {
+      "name": "Transportation",
+      "value": 1
+    },
+    {
+      "name": "Cybersecurity",
+      "value": 1
+    },
+    {
+      "name": "Software",
+      "value": 1
+    }
+  ],
+  "stages": [
+    {
+      "name": "Pre-Seed",
+      "value": 3
+    },
+    {
+      "name": "Other",
+      "value": 2
+    },
+    {
+      "name": "Seed",
+      "value": 2
+    }
+  ],
+  "countries": [
+    {
+      "name": "Czech Republic",
+      "value": 5
+    },
+    {
+      "name": "Estonia",
+      "value": 1
+    },
+    {
+      "name": "UK",
+      "value": 1
+    }
+  ],
+  "dealsByYear": [
+    {
+      "y": 2023,
+      "n": 1
+    },
+    {
+      "y": 2024,
+      "n": 1
+    },
+    {
+      "y": 2025,
+      "n": 4
+    },
+    {
+      "y": 2026,
+      "n": 1
+    }
+  ],
+  "portfolio": [
+    {
+      "company": "Zerops",
+      "url": "https://funding.tech.eu/companies/CDF518D3-DB79-487E-AFDC-F4F45BA9AC8F",
+      "country": "Czech Republic",
+      "rounds": 2,
+      "totalEur": 2175571
+    },
+    {
+      "company": "Blindspot Technologies",
+      "url": "https://funding.tech.eu/companies/03C8A0F3-2A4C-44C6-A241-AE9094B9D170",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1400000
+    },
+    {
+      "company": "Ranketta",
+      "url": "https://funding.tech.eu/companies/24655DD6-703D-4969-978A-7C55BCF386B9",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 1000000
+    },
+    {
+      "company": "FleetFox",
+      "url": "https://funding.tech.eu/companies/9D41217B-B5A7-428B-B330-3806E1E863EE",
+      "country": "Estonia",
+      "rounds": 1,
+      "totalEur": 800000
+    },
+    {
+      "company": "ArtMaster",
+      "url": "https://funding.tech.eu/companies/A8EB604B-0769-4705-A7A6-2130EDBBC778",
+      "country": "Czech Republic",
+      "rounds": 1,
+      "totalEur": 800000
+    },
+    {
+      "company": "TRIFFT Loyalty",
+      "url": "https://funding.tech.eu/companies/8E785EC2-B873-4661-9579-063C4ADBEC59",
+      "country": "UK",
+      "rounds": 1,
+      "totalEur": 474998
+    }
+  ],
+  "biggestDeals": [
+    {
+      "company": "Zerops",
+      "companyUrl": "https://funding.tech.eu/companies/CDF518D3-DB79-487E-AFDC-F4F45BA9AC8F",
+      "dealUrl": "https://funding.tech.eu/deals/E1FF57C2-FDDE-489D-9795-0D6E06ED813D",
+      "stage": "Seed",
+      "amountEur": 1709110,
+      "date": "2026-05-14T00:00:00.000Z"
+    },
+    {
+      "company": "Blindspot Technologies",
+      "companyUrl": "https://funding.tech.eu/companies/03C8A0F3-2A4C-44C6-A241-AE9094B9D170",
+      "dealUrl": "https://funding.tech.eu/deals/D10CE950-796B-4523-B6D5-A6CC6F176272",
+      "stage": "Seed",
+      "amountEur": 1400000,
+      "date": "2023-11-22T00:00:00.000Z"
+    },
+    {
+      "company": "Ranketta",
+      "companyUrl": "https://funding.tech.eu/companies/24655DD6-703D-4969-978A-7C55BCF386B9",
+      "dealUrl": "https://funding.tech.eu/deals/3D459830-19FC-433E-9378-EFA36D17411D",
+      "stage": "Pre-Seed",
+      "amountEur": 1000000,
+      "date": "2025-11-27T00:00:00.000Z"
+    },
+    {
+      "company": "ArtMaster",
+      "companyUrl": "https://funding.tech.eu/companies/A8EB604B-0769-4705-A7A6-2130EDBBC778",
+      "dealUrl": "https://funding.tech.eu/deals/288B3181-5AD6-419F-AAC8-3B013F55E0AE",
+      "stage": "Other",
+      "amountEur": 800000,
+      "date": "2025-03-13T00:00:00.000Z"
+    },
+    {
+      "company": "FleetFox",
+      "companyUrl": "https://funding.tech.eu/companies/9D41217B-B5A7-428B-B330-3806E1E863EE",
+      "dealUrl": "https://funding.tech.eu/deals/CCFD4B97-569E-405B-9FF3-DE0E03025267",
+      "stage": "Other",
+      "amountEur": 800000,
+      "date": "2025-11-05T00:00:00.000Z"
+    },
+    {
+      "company": "TRIFFT Loyalty",
+      "companyUrl": "https://funding.tech.eu/companies/8E785EC2-B873-4661-9579-063C4ADBEC59",
+      "dealUrl": "https://funding.tech.eu/deals/B3B59F07-8280-4223-807B-12A0A1357504",
+      "stage": "Pre-Seed",
+      "amountEur": 474998,
+      "date": "2025-07-17T00:00:00.000Z"
+    },
+    {
+      "company": "Zerops",
+      "companyUrl": "https://funding.tech.eu/companies/CDF518D3-DB79-487E-AFDC-F4F45BA9AC8F",
+      "dealUrl": "https://funding.tech.eu/deals/CDE0509D-58E2-4E04-9A0E-9AADA454A942",
+      "stage": "Pre-Seed",
+      "amountEur": 466461,
+      "date": "2024-06-20T00:00:00.000Z"
+    }
+  ],
+  "coInvestors": [
+    {
+      "name": "Lighthouse Ventures",
+      "url": "https://funding.tech.eu/investors/Lighthouse%20Ventures",
+      "sharedRounds": 3
+    },
+    {
+      "name": "Presto Ventures",
+      "url": "https://funding.tech.eu/investors/Presto%20Ventures",
+      "sharedRounds": 2
+    },
+    {
+      "name": "BADideas.fund",
+      "url": "https://funding.tech.eu/investors/BADideas.fund",
+      "sharedRounds": 1
+    },
+    {
+      "name": "BD Partners",
+      "url": "https://funding.tech.eu/investors/BD%20Partners",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Koopeo",
+      "url": "https://funding.tech.eu/investors/Koopeo",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Prozeta",
+      "url": "https://funding.tech.eu/investors/Prozeta",
+      "sharedRounds": 1
+    },
+    {
+      "name": "Purple Ventures",
+      "url": "https://funding.tech.eu/investors/Purple%20Ventures",
+      "sharedRounds": 1
+    }
+  ],
+  "notes": [
+    "participatedRoundEur is the combined SIZE of rounds this investor took part in, not the amount they alone deployed — rounds are syndicated across multiple investors.",
+    "Identity is entity-resolved: aliases lists the merged name variants. Counts are distinct rounds/companies (no double-counting)."
+  ],
+  "source": "Tech.eu Funding Explorer",
+  "methodology": "https://funding.tech.eu/methodology"
+}
