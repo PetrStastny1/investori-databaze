@@ -1,0 +1,14 @@
+Krok 2, vyhodnocení po úpravě metodiky: měření po dávkách
+=========================================================
+
+Čas: hodiny systému (`date -u`), od začátku zpracování dávky po zápis výstupu,
+před commitem. Nezahrnuje ruční hodnocení.
+
+Počty požadavků: spočtené z volání nástrojů. Kandidáty zpracovávali pomocní
+agenti (stejný model) souběžně, každý počty svých volání vypsal. Volání
+hlavního agenta při kontrole a slučování jsou uvedena zvlášť.
+
+Tokeny: agent nemá přístup k naměřené spotřebě tokenů, proto je neuvádím
+a neodhaduji. Naměřenou hodnotu lze zjistit v Claude Code (/cost, /usage)
+nebo v konzoli účtu.
+

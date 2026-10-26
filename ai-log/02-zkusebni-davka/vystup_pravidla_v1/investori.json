@@ -1,0 +1,95 @@
+[
+  {
+    "id": "cz-bd-partners",
+    "nazev": "BD Partners",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "BD Partners a.s., Generála Píky 430/26, Dejvice, 160 00 Praha 6; člen správní rady Ladislav Bartoníček a Jean-Pascal Duvieusart",
+      "ico": "19286511",
+      "zdroje": [
+        {"url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19286511", "druh_zdroje": "rejstrik", "vydavatel": "ARES (výpis z veřejného rejstříku)", "puvod": null, "zdroj_datum": null, "stazeno": "2026-10-26"},
+        {"url": "https://cc.cz/sefoval-ppf-ted-investuje-do-startupu-vina-i-betonu-mame-na-to-az-25-miliardy-rika-bartonicek/", "druh_zdroje": "media", "vydavatel": "CzechCrunch", "puvod": null, "zdroj_datum": "2025-07-28", "stazeno": "2026-10-26"}
+      ]
+    },
+    "web": {"hodnota": "https://www.bdpartners.cz/", "zdroj_url": "https://www.pampam.city/cee-funding-map-BJpHbykKoXoBaILayYBs/WcBqZY2kt7stKMdOUxeQ", "stazeno": "2026-10-26"},
+    "sektory": {"hodnota": ["technologické firmy (software, kombinace software a hardware)"], "zdroj_url": "https://cc.cz/sefoval-ppf-ted-investuje-do-startupu-vina-i-betonu-mame-na-to-az-25-miliardy-rika-bartonicek/", "zdroj_datum": "2025-07-28", "stazeno": "2026-10-26"},
+    "faze": {"hodnota": ["early-stage"], "zdroj_url": "https://cc.cz/je-mu-23-a-fond-expartneru-ppf-pomaha-privest-do-doby-ai-setri-az-30-hodin-pracovniho-tydne-rika/", "zdroj_datum": "2026-06-21", "stazeno": "2026-10-26"},
+    "ticket": {"min": 100000, "max": null, "mena": "EUR", "zdroj_url": "https://cc.cz/je-mu-23-a-fond-expartneru-ppf-pomaha-privest-do-doby-ai-setri-az-30-hodin-pracovniho-tydne-rika/", "zdroj_datum": "2026-06-21", "stazeno": "2026-10-26"},
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "WanderWallet",
+      "datum_investice": null,
+      "datum_oznameni": "2026-03-13",
+      "datum_pro_filtr": "oznameni",
+      "zdroje": [
+        {"url": "https://cc.cz/pred-lety-ulehcil-cestovani-revolut-ted-se-o-neco-podobneho-pokousi-i-cech-akorat-v-jizni-americe/", "druh_zdroje": "zprava_o_transakci", "vydavatel": "CzechCrunch", "puvod": null, "zdroj_datum": "2026-03-13", "stazeno": "2026-10-26"}
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "ValkaAI",
+        "datum_investice": null,
+        "datum_oznameni": "2026-02-24",
+        "datum_pro_filtr": "oznameni",
+        "zdroje": [
+          {"url": "https://www.e15.cz/byznys/startupy/konkurence-pro-zarubu-a-bosaka-startup-vlastimila-venclika-ziskal-stovky-milionu-a-prichazi-s-ai-komentatory-1431016", "druh_zdroje": "zprava_o_transakci", "vydavatel": "E15", "puvod": null, "zdroj_datum": "2026-02-24", "stazeno": "2026-10-26"}
+        ]
+      },
+      {
+        "firma": "DecisionRules",
+        "datum_investice": null,
+        "datum_oznameni": "2025-05-06",
+        "datum_pro_filtr": "oznameni",
+        "zdroje": [
+          {"url": "https://decisionrules.io/articles/decisionrules-raises-eu1-6m-to-scale-automation-globally", "druh_zdroje": "zprava_o_transakci", "vydavatel": "DecisionRules (tisková zpráva portfoliové firmy)", "puvod": null, "zdroj_datum": "2025-05-06", "stazeno": "2026-10-26"}
+        ]
+      }
+    ],
+    "status": "aktivni",
+    "jistota": {"existence": "vysoka", "investice": "stredni"},
+    "poznamka": "Typ: BD Partners se v rozhovoru sám označuje jako „joint family office“ a „nejsme klasický fond“ (CzechCrunch 28. 7. 2025), média ho nazývají fondem a funding.tech.eu ho vede jako Venture capital. Investuje hlavně menšinově do raných technologických startupů, proto typ VC, ale portfolio zahrnuje i vinařství Château Virant, Ynsect a So Concrete. Typ k ruční kontrole. Identita: statutární orgán BD Partners a.s. (Bartoníček, Duvieusart) odpovídá zakladatelům uvedeným v médiích; sídlo v ARES (Praha 6) se liší od adresy na CEE Funding Map (Na Příkopě 9, Praha 1). Ticket: novější zdroj (21. 6. 2026) uvádí „od 100 tisíc až do několika milionů eur“, max proto null; starší rozhovor (28. 7. 2025) uvádí 250 tis. až 2 mil. EUR. Kapitál: zdroj uvádí jen záměr investovat „celkem 1,2 až 2,5 miliardy korun“ do startupů a dosud alokovaných „přibližně 20 milionů eur“; nejde o AUM, upsaný kapitál ani velikost fondu, proto kapital prázdný. Částky kol (WanderWallet 10,5 mil. CZK, ValkaAI 12 mil. EUR, DecisionRules 1,6 mil. EUR) jsou velikosti celých kol, podíl BD Partners zdroje neuvádějí. Nástroj (equity / konvertibilní) zdroje výslovně neuvádějí, jde o pre-seed a seed kola. Jistota investice stredni: u WanderWallet jediný zdroj; ValkaAI popsaly E15 i CzechCrunch týž den (24. 2. 2026), nezávislost původu nelze doložit. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
+    "id": "cz-borovicka-capital",
+    "nazev": "Borovicka Capital",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "Borovicka Capital s.r.o., Breitfeldova 709/17, Karlín, 186 00 Praha 8; jednatelé Martin Borovička a Jakub Borovička",
+      "ico": "19966784",
+      "zdroje": [
+        {"url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/19966784", "druh_zdroje": "rejstrik", "vydavatel": "ARES (výpis z veřejného rejstříku)", "puvod": null, "zdroj_datum": null, "stazeno": "2026-10-26"},
+        {"url": "https://cc.cz/vydelal-na-akciich-pak-propadl-startupum-a-rozjel-rodinny-fond-s-tatou-a-brachou-se-nehadame-rika/", "druh_zdroje": "media", "vydavatel": "CzechCrunch", "puvod": null, "zdroj_datum": "2025-02-20", "stazeno": "2026-10-26"}
+      ]
+    },
+    "web": {"hodnota": "https://borovickacapital.com/", "zdroj_url": "https://borovickacapital.com/", "stazeno": "2026-10-26"},
+    "sektory": {"hodnota": null, "zdroj_url": null, "zdroj_datum": null, "stazeno": null},
+    "faze": {"hodnota": ["early stage"], "zdroj_url": "https://borovickacapital.com/", "zdroj_datum": null, "stazeno": "2026-10-26"},
+    "ticket": {"min": null, "max": null, "mena": null, "zdroj_url": null, "zdroj_datum": null, "stazeno": null},
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "Edmund",
+      "datum_investice": null,
+      "datum_oznameni": "2025-02-12",
+      "datum_pro_filtr": "oznameni",
+      "zdroje": [
+        {"url": "https://www.vestbee.com/blog/articles/edmund-secures-500-k", "druh_zdroje": "zprava_o_transakci", "vydavatel": "Vestbee", "puvod": null, "zdroj_datum": "2025-02-12", "stazeno": "2026-10-26"}
+      ]
+    },
+    "dalsi_investice": [
+      {
+        "firma": "Outfindo",
+        "datum_investice": null,
+        "datum_oznameni": "2025-01-20",
+        "datum_pro_filtr": "oznameni",
+        "zdroje": [
+          {"url": "https://cc.cz/poklada-jednoduche-otazky-a-tim-ulehcuje-slozite-nakupy-startup-outfindo-ted-nabira-dalsi-miliony/", "druh_zdroje": "zprava_o_transakci", "vydavatel": "CzechCrunch", "puvod": null, "zdroj_datum": "2025-01-20", "stazeno": "2026-10-26"}
+        ]
+      }
+    ],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {"existence": "vysoka", "investice": "stredni"},
+    "poznamka": "Typ: web se popisuje jako „investment company with a strategic focus on venture capital investments in the Central European region“, CzechCrunch (20. 2. 2025) jako rodinný startupový fond financovaný penězi rodiny Borovičkových bez externích investorů. Podle definic v PLAN.md by mohl být i family office; protože investuje přímo do startupů, zvolen typ VC. Typ k ruční kontrole. Identita: jednatelé v rejstříku odpovídají zakladatelům uvedeným v CzechCrunch. PitchBook uvádí investici do NutritionPro k 31. 7. 2025, ale zprávu o transakci jsem nenašel, proto ji neuvádím a status vychází z oznámení Edmund (12. 2. 2025). Částky kol (Edmund 500 tis. EUR, Outfindo 1,2 mil. EUR) jsou velikosti celých kol, podíl Borovicka Capital zdroje neuvádějí. Nástroj (equity / konvertibilní) zdroje výslovně neuvádějí. Sektory, ticket a kapitál zdroje neuvádějí (ticket 500 tis. až 1,25 mil. EUR je jen v agregátoru bez původního zdroje, nepřevzato)."
+  }
+]

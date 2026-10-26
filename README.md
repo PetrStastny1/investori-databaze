@@ -20,7 +20,12 @@ Cílová skupina pilotu jsou VC/CVC se sídlem v ČR. Jde o můj zvolený rozsah
 
 Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot v `data/kandidati.csv`. Pro další zpracování jsem vybral všech 57 kandidátů, menší vzorek nevzniká. Jde o kandidáty, ne o ověřené investory.
 
-Z kroku 2 proběhla jen zkušební dávka prvních 5 kandidátů podle abecedy. Její původní výstup je v `data/vystup_agenta/` (commit f4cd74d) a zůstává beze změn, i když vznikl podle pravidel platných před úpravami popsanými níže. Naměřená doba dávky je 5 min 49 s a zahrnuje jen zpracování agentem, bez kontroly, oprav a ručního ověřování ([ai-log/02-zkusebni-davka/](ai-log/02-zkusebni-davka/)). Zbylých 52 kandidátů zatím zpracováno není a ruční hodnocení zatím neproběhlo.
+Krok 2 proběhl ve dvou bězích:
+
+- **Zkušební dávka** prvních 5 kandidátů podle abecedy podle pravidel platných před úpravami popsanými níže. Její původní výstup je archivovaný beze změn v [ai-log/02-zkusebni-davka/vystup_pravidla_v1/](ai-log/02-zkusebni-davka/vystup_pravidla_v1/) (shodný s commitem f4cd74d). Naměřená doba dávky je 5 min 49 s a zahrnuje jen zpracování agentem, bez kontroly, oprav a ručního ověřování ([ai-log/02-zkusebni-davka/](ai-log/02-zkusebni-davka/)). Do měření nevstupuje.
+- **Vyhodnocení po úpravě metodiky:** všech 57 kandidátů včetně prvních pěti znovu podle aktuálních pravidel, v dávkách po 10 podle abecedy. Měří se jen tento běh, jeho výstup je v `data/vystup_agenta/` a podklady v [ai-log/02-obohaceni/](ai-log/02-obohaceni/). **Nejde o nezávislý test na dosud neviděných datech:** prvních pět kandidátů ovlivnilo návrh upravených pravidel, takže výsledek u nich (a tím i celkový výsledek) může vycházet lépe, než by vyšel na nových datech.
+
+Ruční hodnocení zatím neproběhlo.
 
 ### Pravidla upravená po zkušební dávce
 
