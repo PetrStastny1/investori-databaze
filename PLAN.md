@@ -20,7 +20,7 @@ Subjekt zařadím, jen když splní **všechny** tři podmínky:
 
 1. **Je dohledatelný jako právní subjekt nebo veřejně vystupující osoba.** U firem zápis v obchodním rejstříku (v ČR justice.cz, IČO), u zahraničních ekvivalent nebo regulatorní registr. U fyzických osob veřejné vystupování jako investor pod vlastním jménem.
 2. **Má doloženou přímou investici do soukromé firmy za posledních 24 měsíců.** Nutným dokladem je aspoň jedna zpráva o konkrétní transakci: tisková zpráva, zpráva v médiích, nebo záznam v databázi transakcí s odkazem na takovou zprávu. Portfolio na webu investora stačí jen tehdy, když ho potvrzuje zpráva o transakci, samo podmínku nesplní. Zápis investora jako společníka v rejstříku portfoliové firmy dokládá jen to, že investor podíl drží. Datum investice sám nedokládá (zápis může proběhnout se zpožděním a podíl mohl být nabytý dřív nebo převodem), proto ho beru jen jako podpůrný doklad vedle zprávy o transakci. Jak se v tomto okně určuje datum, popisuje bod 4.
-3. **Investuje za podíl (equity nebo konvertibilní nástroj).** Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie.
+3. **Investuje za podíl (equity nebo konvertibilní nástroj).** Ne úvěr, ne nemovitosti, ne veřejně obchodované akcie. Konvertibilní nástroje jsou přípustné. Jak se podmínka dokládá polem `nastroj`, popisuje bod 4. Nezjištěný nástroj podmínku nesplní, ale není ani důkazem, že subjekt není investor. Takový kandidát jde k ručnímu rozhodnutí (bod 3, Nevyřešená rozhodnutí).
 
 Typy, které rozlišuji:
 
@@ -29,9 +29,16 @@ Typy, které rozlišuji:
 | VC | Fond nebo firma investující do startupů a rychle rostoucích firem, typicky menšinové podíly |
 | CVC | Korporátní venture capital, samostatná investiční jednotka velké firmy |
 | PE | Kupuje podíly v zavedených, ziskových firmách, často většinové |
-| Family office | Spravuje majetek jedné rodiny a investuje ho mimo jiné přímo do firem |
+| Family office | Spravuje majetek jedné nebo několika rodin a investuje ho mimo jiné přímo do firem |
 | Angel | Fyzická osoba investující vlastní peníze, typicky v raných fázích |
 | Velký soukromý investor | Investiční holding jednoho podnikatele, který není family office v užším smyslu |
+| Korporátní investor bez samostatné jednotky | Provozní firma, která investuje přímo z vlastní provozní společnosti a nemá samostatnou investiční jednotku. Není CVC |
+
+**Typ a investiční strategie.** Typ popisuje, jak subjekt funguje, ne do čeho investuje. Určuji ho podle doloženého fungování a vlastního popisu subjektu:
+- Samotné financování penězi jedné rodiny nestačí pro typ family office.
+- Samotné investování do startupů nestačí pro přepsání doloženého family office na VC. Když se subjekt výslovně označuje jako family office a jeho fungování tomu odpovídá, typ je family office a VC může být jeho investiční strategie (zapíšu ji do `poznamka`). Do pilotu nepatří, ale zůstává skutečným investorem.
+- Když jsou důkazy o typu nejednoznačné nebo si odporují, typ je nevyřešený a jde k ručnímu rozhodnutí (bod 3, Nevyřešená rozhodnutí).
+- Typ nevolím podle toho, kolik záznamů projde do pilotu.
 
 Aktivita: investor s doloženou investicí za posledních 12 měsíců má status `aktivni`, s nejnovější doloženou investicí starou 12–24 měsíců `investice_dolozena_12_24_mesicu`. Starší než 24 měsíců do vzorku nezařazuji. Hranice 12 a 24 měsíců je moje vlastní pracovní definice. Nepřebírám ji z CEE Funding Map (Warsaw Equity Group s CzechInvestem), která používá jiné kritérium: za aktivní VC považuje fond s alespoň dvěma investicemi za rok.
 
@@ -58,13 +65,22 @@ Status popisuje jen veřejnou stopu, ne skutečnou aktivitu. Investor může inv
 
 - **Cílová skupina pilotu jsou VC/CVC se sídlem v ČR.** Jde o můj zvolený rozsah, zadání VC fondy v jedné zemi uvádí jen jako příklad menšího vzorku.
 - **Pravidla pilotu splní kandidát**, který je investor podle bodů 2 a 3, jeho typ je VC nebo CVC a investiční firma (správce, značka) má sídlo v ČR.
-- **Mimo rozsah pilotu, ne neinvestor.** Skutečného investora podle bodů 2 a 3, který má jiný typ (PE, family office, anděl, velký soukromý investor) nebo sídlo mimo ČR, označím jako mimo rozsah pilotu. Do pilotní databáze ho nezařadím, ale nevydávám ho za subjekt, který není investor.
+- **Mimo rozsah pilotu, ne neinvestor.** Skutečného investora podle bodů 2 a 3, který má jiný typ (PE, family office, anděl, velký soukromý investor, korporátní investor bez samostatné jednotky) nebo sídlo mimo ČR, označím jako mimo rozsah pilotu. Do pilotní databáze ho nezařadím, ale nevydávám ho za subjekt, který není investor.
 - **Kategorie ve `vyrazeni.csv`.** Každý vyřazený kandidát má ve sloupci `kategorie` jednu z hodnot:
   - `neni_investor`: nesplňuje body 2 a 3 (zprostředkovatel, bez doložené investice v okně 24 měsíců, úvěr místo podílu a podobně),
   - `mimo_rozsah_pilotu`: investor podle bodů 2 a 3, ale nesplňuje typ nebo sídlo podle pravidel pilotu.
 
   Konkrétní důvod je ve sloupci `duvod`.
 - **Měření.** Správnost zařazení a recall pilotu se vztahují ke splnění pravidel pilotu včetně typu a sídla, ne jen k bodům 2 a 3 (viz bod 7).
+
+### Nevyřešená rozhodnutí
+
+Když zůstane nevyřešený typ (bod 2) nebo nástroj (bod 2, podmínka 3) a na odpovědi závisí zařazení nebo kategorie vyřazení, agent kandidáta nezařadí ani nevyřadí. Zapíše ho do `data/vystup_agenta/nevyresene.csv` se sloupci `id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno`:
+- `otazka`: `typ` nebo `nastroj`, více otázek oddělených ` | `,
+- `moznosti`: výsledky, mezi kterými se rozhoduje, například `zarazen | mimo_rozsah_pilotu` nebo `mimo_rozsah_pilotu | neni_investor`,
+- `duvod`: které důkazy si odporují nebo co chybí, a co by otázku rozhodlo.
+
+Rozhodnutí udělám ručně. Zapíšu ho do `data/hodnoceni.csv` a výsledek do `data/opraveno/`. Původní výstup agenta se nemění.
 
 ## 4. Struktura záznamu
 
@@ -89,12 +105,13 @@ Každý údaj nese vlastní zdroj. Bez URL se pole nevyplňuje. Důkazy o existe
   ],
   "posledni_investice": {
     "firma": "...", "datum_investice": null, "datum_oznameni": "2026-03-12", "datum_pro_filtr": "oznameni",
+    "nastroj": {"hodnota": "podil", "doklad": "dolozeno", "kolo": null, "zdroj_url": "..."},
     "zdroje": [
       {"url": "...", "druh_zdroje": "zprava_o_transakci", "vydavatel": "CzechCrunch", "puvod": "https://.../tiskova-zprava", "zdroj_datum": "2026-03-12", "stazeno": "..."},
       {"url": "...", "druh_zdroje": "portfolio_web", "vydavatel": "web investora", "puvod": null, "zdroj_datum": null, "stazeno": "..."}
     ]
   },
-  "dalsi_investice": [{"firma": "...", "datum_investice": "...", "datum_oznameni": "...", "datum_pro_filtr": "investice", "zdroje": ["..."]}],
+  "dalsi_investice": [{"firma": "...", "datum_investice": "...", "datum_oznameni": "...", "datum_pro_filtr": "investice", "nastroj": {"hodnota": null, "doklad": "neprima_indicie", "kolo": "seed", "zdroj_url": "..."}, "zdroje": ["..."]}],
   "status": "aktivni",
   "jistota": {"existence": "vysoka", "investice": "stredni"},
   "poznamka": ""
@@ -112,6 +129,17 @@ Každý údaj nese vlastní zdroj. Bez URL se pole nevyplňuje. Důkazy o existe
 **Nezávislost zdrojů.** `puvod` je URL nebo název původního zdroje, ze kterého zpráva vychází, například tiskové zprávy, kterou médium převzalo. Když zpráva vychází z vlastního zjištění vydavatele, je `puvod` = `null` a původem je zdroj sám. Za nezávislé považuji jen zdroje s různým původem. Stejnou tiskovou zprávu převzatou více médii nebo databází počítám jako jeden zdroj. Společnou tiskovou zprávu investora a portfoliové firmy také počítám jako jeden zdroj.
 
 **Datum investice a datum oznámení.** `datum_investice` je den, kdy se investice uskutečnila (podpis nebo uzavření kola), a vyplňuji ho jen tehdy, když ho zdroj výslovně uvádí. `datum_oznameni` je den, kdy byla investice poprvé veřejně oznámena. Datum publikace zdroje (`zdroj_datum`) automaticky nepovažuji za datum investice. Kola se často oznamují týdny až měsíce po uzavření. Když známe jen oznámení, zůstane `datum_investice` = `null` a datum se uloží výslovně jako `datum_oznameni`. Pokud zdroj uvádí jen měsíc nebo rok, ukládám datum ve zkráceném tvaru ISO 8601 (`2025-03`, `2025`).
+
+**Nástroj.** `nastroj` je u každé investice. `hodnota` je `podil`, `konvertibilni` nebo `null`, `kolo` je označení kola podle zdroje (`pre-seed`, `seed`, `series A` a podobně) nebo `null`, `doklad` je jedna z hodnot:
+- `dolozeno`: zdroj nástroj výslovně uvádí (koupě podílu, nabytí akcií, konvertibilní půjčka, SAFE), nebo zápis investora jako společníka v rejstříku portfoliové firmy dokládá, že podíl drží,
+- `neprima_indicie`: na nástroj jen ukazuje okolnost, například označení kola jako seed nebo pre-seed nebo typ investora. Seed nebo pre-seed samo o sobě nástroj nedokládá,
+- `nezjisteno`: zdroje nástroj neuvádějí, `hodnota` a `zdroj_url` jsou `null`.
+
+Podmínku 3 (bod 2) splní:
+- `dolozeno`,
+- `neprima_indicie` jako přijatý pracovní předpoklad, ne doložený nástroj, když zdroj v `zdroj_url` dokládá účast konkrétního investora v pre-seed, seed nebo series kole (`kolo`) a nejsou zjištěné informace, že jeho účast byla výhradně nekonvertibilní dluh. Když záznam opírá podmínku 3 jen o tento předpoklad, je `jistota.investice` nejvýš `stredni`.
+
+U smíšených kol (například equity spolu s úvěrem nebo venture debt) nerozhoduji jen podle označení celého kola. Rozhoduje, co zdroj uvádí o účasti konkrétního investora. Když jsou důkazy o nástroji rozporné nebo nedostatečné, kandidát jde do `nevyresene.csv` (bod 3, Nevyřešená rozhodnutí). `nezjisteno` podmínku nesplní ani nevyvrátí.
 
 **Filtr 24 měsíců.** Filtr i status z bodu 2 pracují s datem v `datum_pro_filtr`:
 - `investice`: použije se `datum_investice`, když je známé,
@@ -168,7 +196,9 @@ Ověření má tři úrovně.
 - `datum_pro_filtr` = `investice` jen tehdy, když je vyplněné `datum_investice`,
 - `jistota.investice` = `vysoka` jen tehdy, když mají zprávy o transakci aspoň dva různé původy (`puvod`, u `null` URL zdroje),
 - deduplikace podle IČO, domény webu a normalizovaného názvu,
-- typ, status, `druh` kapitálu a `druh_zdroje` jsou povolené hodnoty, částky jsou čísla, měna je kód ISO 4217.
+- typ, status, `druh` kapitálu, `druh_zdroje` a `nastroj.doklad` jsou povolené hodnoty, částky jsou čísla, měna je kód ISO 4217,
+- zařazený záznam má aspoň u jedné investice `nastroj.doklad` = `dolozeno` se `zdroj_url`, nebo `nastroj.doklad` = `neprima_indicie` se `zdroj_url` a `kolo` označujícím pre-seed, seed nebo series kolo,
+- když žádná investice záznamu nemá `nastroj.doklad` = `dolozeno`, je `jistota.investice` = `stredni`.
 
 **Kontrola druhým agentem (stejný model v nové konverzaci)**
 Nová konverzace se stejným modelem, která neviděla, jak záznam vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj opravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stejný model, takže může dělat stejné chyby ve čtení zdrojů jako první agent. Jeho shoda proto není důkaz správnosti. Nenahrazuje ruční kontrolu, jen říká, kam se podívat dřív.
@@ -200,13 +230,15 @@ U vyřazených (`data/vystup_agenta/vyrazeni.csv`) a hraničních (`data/vystup_
 | `kategorie` | Sedí kategorie vyřazení (`neni_investor` / `mimo_rozsah_pilotu`) | |
 | `duvod` | Sedí důvod vyřazení, který agent uvedl | |
 
+U nevyřešených (`data/vystup_agenta/nevyresene.csv`) vyplním `je_investor` a `rozsah_pilotu`, které zároveň zaznamenávají moje rozhodnutí, a `duvod` (agent správně popsal, co chybí nebo si odporuje). Zvolený typ nebo nástroj uvedu v poznámce.
+
 ## 7. Měření přesnosti
 
 Vzorek je malý, proto ho ručně ověřím celý, ne jen náhodný výběr.
 
 Ukládám tři věci zvlášť a žádnou nepřepisuji:
 
-- **původní výstup agenta** (`data/vystup_agenta/`): zařazené (`investori.json`), vyřazené (`vyrazeni.csv`) i hraniční (`hranicni.csv`), přesně tak, jak je agent vytvořil. Vyřazení je také rozhodnutí agenta, proto zůstává beze změn,
+- **původní výstup agenta** (`data/vystup_agenta/`): zařazené (`investori.json`), vyřazené (`vyrazeni.csv`), hraniční (`hranicni.csv`) i nevyřešené (`nevyresene.csv`), přesně tak, jak je agent vytvořil. Vyřazení je také rozhodnutí agenta, proto zůstává beze změn,
 - **ruční hodnocení** (`data/hodnoceni.csv`), jeden řádek na kandidáta a pole s hodnotou `ano` / `ne` / `nelze_overit` a poznámkou. Sloupec `soubor` říká, ze kterého souboru výstupu agenta kandidát pochází,
 - **opravenou verzi** (`data/opraveno/`), která vznikne až po ručním hodnocení. Má stejné soubory jako výstup agenta a kandidát se v ní může přesunout mezi zařazenými a vyřazenými.
 
@@ -224,7 +256,9 @@ Měřím čtyři věci:
 1. **Přesnost zařazení (precision):** podíl zařazených záznamů, které splňují pravidla pilotu, tedy jsou investor podle bodů 2 a 3 (`je_investor` = `ano`), mají typ VC nebo CVC a sídlo v ČR (`rozsah_pilotu` = `ano`). Tohle je hlavní číslo, protože zadání říká, že databáze nesmí obsahovat náhodné firmy. Zvlášť uvedu, kolik chybně zařazených je skutečný investor mimo rozsah pilotu a kolik není investor vůbec.
 2. **Přesnost po polích:** pro každé pole zařazených záznamů zvlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vyplněných. Ticket a kapitál budou vyplněné výrazně méně často než existence a poslední investice.
 3. **Správnost vyřazení:** zvlášť pro vyřazené a hraniční podíl kandidátů, kteří podle ruční kontroly opravdu nesplňují pravidla pilotu (`je_investor` = `ne` nebo `rozsah_pilotu` = `ne`), zvlášť podíl, u kterých sedí kategorie vyřazení (u `neni_investor` musí být `je_investor` = `ne`, u `mimo_rozsah_pilotu` musí být `je_investor` = `ano` a `rozsah_pilotu` = `ne`), a zvlášť podíl, u kterých sedí důvod vyřazení. Skutečný investor vyřazený jako `neni_investor` je chyba kategorie, i když vyřazení z pilotu je správné.
-4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:** ze všech kandidátů, kteří podle ruční kontroly splňují pravidla pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u zařazených, vyřazených i hraničních), podíl, který agent zařadil. Číslo platí jen pro kandidáty, které jsme prověřili. Neříká nic o investorech, kteří se mezi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplnost všech investorů na trhu. Mezi kandidáty nejsou ani subjekty, jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_sidlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistotu uvedu u recallu i u místního rozsahu (bod 8.3).
+4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:** ze všech kandidátů, kteří podle ruční kontroly splňují pravidla pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u zařazených, vyřazených, hraničních i nevyřešených), podíl, který agent zařadil. Nevyřešený kandidát, kterého ručně zařadím, se počítá jako nezařazený agentem. Číslo platí jen pro kandidáty, které jsme prověřili. Neříká nic o investorech, kteří se mezi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplnost všech investorů na trhu. Mezi kandidáty nejsou ani subjekty, jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_sidlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistotu uvedu u recallu i u místního rozsahu (bod 8.3).
+
+Nevyřešené kandidáty vykazuji zvlášť: počet, podíl ze všech prověřených kandidátů a kolik z nich jsem ručně zařadil. Do přesnosti zařazení ani do správnosti vyřazení nevstupují. Jejich podíl je zároveň podklad pro náklady na ruční kontrolu (bod 10).
 
 U každého podílu s jasným čitatelem a jmenovatelem (obě přesnosti, správnost vyřazení, recall v rámci prověřeného souboru) uvedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je interval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo podílu i intervalu N/A. Interval popisuje jen nejistotu podílu v pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani o nejistotě globálního scénáře z bodu 8.
 
@@ -312,10 +346,10 @@ Pilot ji ověří jen pro VC a CVC v ČR. Pro ostatní typy a země zůstává h
 
 1. **Kandidáti:** agent stáhne seznamy ze zdrojů v bodě 5 a vytvoří `data/kandidati.csv`. Bez posuzování.
 2. **Obohacení:** pro každého kandidáta agent dohledá pole podle schématu. Pravidlo: když údaj nenajde, nechá `null`. Odhad nebo údaj bez URL je chyba.
-3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravidel pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta/investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvodem, venture debt do `data/vystup_agenta/hranicni.csv`.
+3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravidel pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta/investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvodem, venture debt do `data/vystup_agenta/hranicni.csv`, nevyřešený typ nebo nástroj do `data/vystup_agenta/nevyresene.csv`.
 4. **Automatická kontrola:** skript z bodu 6.
 5. **Kontrola druhým agentem** (stejný model v nové konverzaci): kontrola zdrojů.
-6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkrácená u vyřazených a hraničních, vše do `data/hodnoceni.csv`. Původní výstup agenta zůstává beze změny, opravy jdou do `data/opraveno/`.
+6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkrácená u vyřazených, hraničních a nevyřešených, u nevyřešených i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Původní výstup agenta zůstává beze změny, opravy jdou do `data/opraveno/`.
 7. **Měření a zápis výsledků.**
 
 Všechny konverzace exportuji do `ai-log/` a do README zapíšu, kde se agenti spletli.
@@ -330,6 +364,7 @@ Každý soubor má jeden účel, souběžné verze pod jinými názvy nevznikaj�
 | `data/vystup_agenta/investori.json` | původní výstup agenta: zařazení, seznam záznamů podle bodu 4, beze změn |
 | `data/vystup_agenta/vyrazeni.csv` | původní výstup agenta: vyřazení kandidáti, sloupce `id,nazev,web,kategorie,duvod,zdroj_url,stazeno`, `kategorie` je `neni_investor` nebo `mimo_rozsah_pilotu`, beze změn |
 | `data/vystup_agenta/hranicni.csv` | původní výstup agenta: hraniční případy (venture debt), sloupce `id,nazev,web,druh,duvod,zdroj_url,stazeno`, beze změn |
+| `data/vystup_agenta/nevyresene.csv` | původní výstup agenta: kandidáti s nevyřešeným typem nebo nástrojem k ručnímu rozhodnutí, sloupce `id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno`, beze změn |
 | `data/hodnoceni.csv` | ruční hodnocení všech kandidátů, sloupce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum` |
 | `data/opraveno/` | opravená verze po ručním hodnocení, stejné soubory a schéma jako `data/vystup_agenta/` |
 | `scripts/` | skripty pro automatickou kontrolu a měření |

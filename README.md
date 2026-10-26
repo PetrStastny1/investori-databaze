@@ -18,7 +18,19 @@ Postup, pravidla zařazení, struktura záznamu a způsob měření jsou popsan�
 
 Cílová skupina pilotu jsou VC/CVC se sídlem v ČR. Jde o můj zvolený rozsah, zadání VC fondy v jedné zemi uvádí jen jako příklad menšího vzorku. Pravidla pilotu jsou v [PLAN.md](PLAN.md), bod 3.
 
-Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot v `data/kandidati.csv`. Pro další zpracování jsem vybral všech 57 kandidátů, menší vzorek nevzniká. Jde o kandidáty, ne o ověřené investory. Zařazení, typ ani obohacení (ticket, kapitál, investice) zatím neproběhly. Ostatní datové soubory obsahují jen hlavičky (CSV) nebo prázdný seznam (JSON).
+Hotový je krok 1 z bodu 9 plánu: seznam kandidátů pro pilot v `data/kandidati.csv`. Pro další zpracování jsem vybral všech 57 kandidátů, menší vzorek nevzniká. Jde o kandidáty, ne o ověřené investory.
+
+Z kroku 2 proběhla jen zkušební dávka prvních 5 kandidátů podle abecedy. Její původní výstup je v `data/vystup_agenta/` (commit f4cd74d) a zůstává beze změn, i když vznikl podle pravidel platných před úpravami popsanými níže. Naměřená doba dávky je 5 min 49 s a zahrnuje jen zpracování agentem, bez kontroly, oprav a ručního ověřování ([ai-log/02-zkusebni-davka/](ai-log/02-zkusebni-davka/)). Zbylých 52 kandidátů zatím zpracováno není a ruční hodnocení zatím neproběhlo.
+
+### Pravidla upravená po zkušební dávce
+
+Dávka ukázala nejasnosti v určení typu a v doložení nástroje investice. Pravidla v [PLAN.md](PLAN.md) jsem upravil takto:
+
+- **Typ:** určuje se podle vlastního popisu subjektu a doloženého fungování, ne podle toho, do čeho investuje. Family office spravuje majetek jedné nebo několika rodin a VC může být jeho investiční strategie. Samotné financování penězi rodiny pro typ family office nestačí. Přibyl typ korporátní investor bez samostatné jednotky (provozní firma investující z vlastní společnosti), který není CVC a je mimo rozsah pilotu.
+- **Nevyřešená rozhodnutí:** když jsou důkazy o typu nebo nástroji rozporné nebo nedostatečné, agent kandidáta nezařadí ani nevyřadí a zapíše ho do `data/vystup_agenta/nevyresene.csv` k ručnímu rozhodnutí.
+- **Nástroj (podmínka 3):** u každé investice se zapisuje, jestli je podíl nebo konvertibilní nástroj doložený (zdroj ho výslovně uvádí, nebo investor je zapsaný jako společník portfoliové firmy), jestli jde jen o nepřímou indicii, nebo jestli je nezjištěný. Podmínku splní doložený nástroj a také nepřímá indicie, když zdroj dokládá účast konkrétního investora v pre-seed, seed nebo series kole a nejsou zjištěné informace, že jeho účast byla výhradně nekonvertibilní dluh. U smíšených kol nerozhoduje jen označení celého kola.
+
+**Riziko tohoto rozhodnutí.** Účast v pre-seed, seed nebo series kole je přijatý pracovní předpoklad, ne doložený nástroj. Investor, který se kola účastnil úvěrem nebo jiným nekonvertibilním dluhem, o čemž zdroj nic neuvádí, tak může být chybně zařazen. Proto má záznam opřený jen o tento předpoklad jistotu investice nejvýš `stredni` a lze ho při ruční kontrole spočítat a zkontrolovat zvlášť. Jak často zdroje nástroj neuvádějí a jak často je předpoklad chybný, zatím změřené není.
 
 ## Sběr kandidátů (krok 1)
 
@@ -77,7 +89,7 @@ Podmínky jsem ověřil 26. 10. 2026 na [funding.tech.eu/for-ai](https://funding
 |---|---|
 | `PLAN.md` | plán projektu |
 | `data/kandidati.csv` | kandidáti ze seznamů |
-| `data/vystup_agenta/` | původní výstup agenta (zařazení, vyřazení, hraniční případy), beze změn |
+| `data/vystup_agenta/` | původní výstup agenta (zařazení, vyřazení, hraniční a nevyřešené případy), beze změn |
 | `data/hodnoceni.csv` | ruční hodnocení všech kandidátů |
 | `data/opraveno/` | opravená verze po ručním hodnocení |
 | `scripts/` | skripty pro automatickou kontrolu a měření |
