@@ -90,6 +90,10 @@ Podmínky jsem ověřil 26. 10. 2026 na [funding.tech.eu/for-ai](https://funding
   - Z jmen investorů jsem odvodil seznam kandidátů: varianty jmen jsem sloučil s kandidáty z jiných zdrojů a rozdělil je podle sídla.
   - Částky, data ani jiné hodnoty jsem neměnil a do `data/kandidati.csv` jsem je nepřebíral.
 
+## Ruční kontrola – kdo hodnotil
+
+„Petr Šťastný (asistence AI)“: zdroje vyhledal, přeložil a verdikt navrhl Claude, u části polí ChatGPT. Každý verdikt jsem schválil já a sporné výkladové otázky (sídlo správce, přiřazení přes fondy, chybějící údaje) jsem rozhodl sám. Zdroje jsem sám neotevíral u všech polí. Stav před přečtením nálezů druhého agenta je uložen v ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv (commit 35583d9); změny po jejich přečtení mají v poznámce „Změna po přečtení nálezů AI“.
+
 ## Struktura
 
 | Cesta | Obsah |
