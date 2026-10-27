@@ -76,7 +76,7 @@ Status popisuje jen veřejnou stopu, ne skutečnou aktivitu. Investor může inv
 ### Nevyřešená rozhodnutí
 
 Když zůstane nevyřešený typ (bod 2) nebo nástroj (bod 2, podmínka 3) a na odpovědi závisí zařazení nebo kategorie vyřazení, agent kandidáta nezařadí ani nevyřadí. Zapíše ho do `data/vystup_agenta/nevyresene.csv` se sloupci `id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno`:
-- `otazka`: `typ` nebo `nastroj`, více otázek oddělených ` | `,
+- `otazka`: `typ` nebo `nastroj`, více otázek oddělených ` | `. Při ruční kontrole mohou přibýt ještě `sidlo` (nedoložené sídlo správce, na kterém závisí pravidla pilotu) a `investice` (nedoložené přiřazení investice subjektu záznamu). Pravidla zařazení se tím nemění, jen jde zapsat, proč kandidát čeká na ruční rozhodnutí,
 - `moznosti`: výsledky, mezi kterými se rozhoduje, například `zarazen | mimo_rozsah_pilotu` nebo `mimo_rozsah_pilotu | neni_investor`,
 - `duvod`: které důkazy si odporují nebo co chybí, a co by otázku rozhodlo.
 
@@ -374,7 +374,7 @@ Každý soubor má jeden účel, souběžné verze pod jinými názvy nevznikaj�
 | `data/vystup_agenta/hranicni.csv` | původní výstup agenta: hraniční případy (venture debt), sloupce `id,nazev,web,druh,duvod,zdroj_url,stazeno`, beze změn |
 | `data/vystup_agenta/nevyresene.csv` | původní výstup agenta: kandidáti s nevyřešeným typem nebo nástrojem k ručnímu rozhodnutí, sloupce `id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno`, beze změn |
 | `data/hodnoceni.csv` | ruční hodnocení, řádky pro všechny kandidáty, verdikty jen u ručně zkontrolovaného vzorku (bod 7), sloupce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum` |
-| `data/opraveno/` | opravená verze po ručním hodnocení, stejné soubory a schéma jako `data/vystup_agenta/` |
+| `data/opraveno/` | opravená verze po ručním hodnocení (`scripts/oprav.py`), stejné soubory a schéma jako `data/vystup_agenta/`; navíc `stav_kontroly.csv` (stav ruční kontroly a výhrady každého výsledného id) a `ZMENY.md` (přehled změn) |
 | `scripts/` | skripty pro automatickou kontrolu a měření |
 | `ai-log/` | exporty konverzací s agenty |
 

@@ -87,6 +87,7 @@ class TestKontrola(unittest.TestCase):
         self.kandidati = copy.deepcopy(KANDIDATI)
         self.vyrazeni = copy.deepcopy(VYRAZENI)
         self.mapovani = copy.deepcopy(MAPOVANI)
+        self.nevyresene = []
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -99,7 +100,7 @@ class TestKontrola(unittest.TestCase):
         vystup = k / "data" / "vystup_agenta"
         zapis_csv(vystup / "vyrazeni.csv", zk.SLOUPCE["vyrazeni.csv"], self.vyrazeni)
         zapis_csv(vystup / "hranicni.csv", zk.SLOUPCE["hranicni.csv"], [])
-        zapis_csv(vystup / "nevyresene.csv", zk.SLOUPCE["nevyresene.csv"], [])
+        zapis_csv(vystup / "nevyresene.csv", zk.SLOUPCE["nevyresene.csv"], self.nevyresene)
         (vystup / "investori.json").write_text(json.dumps(self.zaznamy, ensure_ascii=False), encoding="utf-8")
         return zk.Kontrola(k, REF, ocekavany_pocet=len(self.kandidati)).spust()
 
@@ -134,6 +135,25 @@ class TestKontrola(unittest.TestCase):
         self.vyrazeni.append(dict(self.vyrazeni[0], id="cz-alfa-stara", nazev="Alfa Stará"))
         nalezy = self.spust()
         self.assertTrue(self.najdi(nalezy, zk.STRUKTURA, "sloučené id nemá vlastní výsledek", "cz-alfa-stara"))
+
+    def pridej_nevyreseny(self, otazka):
+        self.kandidati.append({"id": "cz-delta-ventures", "nazev": "Delta Ventures", "web": "https://delta.example/"})
+        self.mapovani.append({"id": "cz-delta-ventures", "vysledne_id": "cz-delta-ventures",
+                              "soubor": "nevyresene.csv", "davka": "1", "poznamka": ""})
+        self.nevyresene.append({"id": "cz-delta-ventures", "nazev": "Delta Ventures", "web": "https://delta.example/",
+                                "otazka": otazka, "moznosti": "zarazen | mimo_rozsah_pilotu",
+                                "duvod": "Správce fondu nedoložen.", "zdroj_url": "https://delta.example/",
+                                "stazeno": STAZENO})
+
+    def test_otazka_sidlo_a_investice_povolena(self):
+        self.pridej_nevyreseny("sidlo | investice")
+        nalezy = self.spust()
+        self.assertFalse(self.najdi(nalezy, zk.STRUKTURA, "povolená hodnota `otazka`", "cz-delta-ventures"))
+
+    def test_nepovolena_otazka(self):
+        self.pridej_nevyreseny("sektor")
+        nalezy = self.spust()
+        self.assertTrue(self.najdi(nalezy, zk.STRUKTURA, "povolená hodnota `otazka`", "cz-delta-ventures"))
 
     def test_datum_mimo_okno(self):
         inv = self.zaznamy[0]["posledni_investice"]

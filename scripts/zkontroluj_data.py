@@ -65,7 +65,8 @@ NASTROJ_HODNOTA = {"podil", "konvertibilni", None}
 NASTROJ_DOKLAD = {"dolozeno", "neprima_indicie", "nezjisteno"}
 DATUM_PRO_FILTR = {"investice", "oznameni"}
 KATEGORIE_VYRAZENI = {"neni_investor", "mimo_rozsah_pilotu"}
-OTAZKY = {"typ", "nastroj"}
+# sidlo a investice přidány při ruční kontrole (krok 8), agent používal jen typ a nastroj.
+OTAZKY = {"typ", "nastroj", "sidlo", "investice"}
 MOZNOSTI = {"zarazen", "mimo_rozsah_pilotu", "neni_investor"}
 SOUBORY_VYSTUPU = ("investori.json", "vyrazeni.csv", "hranicni.csv", "nevyresene.csv")
 SLOUCENO = "slouceno"
