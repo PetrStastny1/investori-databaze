@@ -1,0 +1,1334 @@
+
+❯ Krok 7: odhad nákladů na databázi investorů pro celý svět.
+  Přečti PLAN.md (hlavně bod 8 – odhad rozsahu), ai-log/*/mereni.txt,
+  data/mereni_vzorku.md a README.md. Data ani předchozí výstupy neměň.
+
+  1. Naměřená spotřeba pilotu. Z lokálních logů Claude Code
+     (~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-databa
+  ze/)
+     sečti tokeny input, output, cache_creation a cache_read po sessionech,
+     po modelech a zvlášť pro hlavní konverzace a pomocné agenty. Zahrň
+     i logy pomocných agentů v podadresářích (např. /subagents/.jsonl).
+     Čti jen pole usage, model a časové značky; obsah zpráv nevypisuj
+     ani neukládej.
+     - Odstraň duplicitní záznamy usage (stejná zpráva se v logu může
+       opakovat, např. po pokračování nebo kompakci session; deduplikuj
+       podle id zprávy / requestId, postup popiš a uveď, kolik záznamů
+       jsi vyřadil).
+     - Přiřaď sessiony ke krokům 0–6 podle času a exportů v ai-log/.
+       Porovnej svůj součet tokenů subagentů s čísly v mereni.txt a rozdíl
+       vysvětli.
+     - Doplň webové požadavky a časy z mereni.txt.
+     - Chybějící spotřeba není nula: kde údaj chybí nebo log neexistuje,
+       uveď to výslovně jako neznámé a do součtu to nezahrnuj jako 0.
+  2. Cena. Ceny tokenů použitých modelů dohledej v oficiálním ceníku
+     (docs.claude.com / anthropic.com/pricing), uveď URL a datum. Pokud
+     ceník nejde načíst, nech cenu jako parametr a nic nevymýšlej. Uveď,
+     že pilot běžel v rámci předplatného, takže jde o přepočet na ceny API,
+     ne o skutečně zaplacenou částku.
+  3. Jednotkové náklady pilotu: tokeny, cena a čas na kandidáta (56)
+     a na zařazený záznam (27), zvlášť pro sběr kandidátů, obohacení,
+     automatickou kontrolu, kontrolu druhým agentem a ruční kontrolu.
+  4. Ruční kontrola: čas neodhaduj z logů. Použij modelový předpoklad
+     10–15 min na firmu s asistencí AI (za 20 firem 3 h 20 min až 5 h)
+     a výslovně ho tak označ, není to naměřený čas.
+  5. Přepočet na svět: použij scénář z PLAN.md bodu 8 (5 600–11 000
+     investorů). Poměr 56 kandidátů ku 27 zařazeným použij jen jako
+     pracovní předpoklad: pilot byl český VC/CVC, světový scénář zahrnuje
+     i PE a family office a přenositelnost poměru jsme neověřili. Uveď
+     citlivost výsledku na tento poměr (např. polovina a dvojnásobek).
+     Spočítej nízkou, střední a vysokou variantu: náklady AI (API), hodiny
+     ruční kontroly pro náhodný kontrolní vzorek (velikost vzorku zdůvodni,
+     např. pro ±5 p. b. při 95 %) a pro plnou ruční kontrolu, a náklad
+     na průběžnou aktualizaci (např. čtvrtletní přepočet posledních
+     investic). Výslovně uveď, co se mimo ČR zhorší (jazyky, rejstříky bez
+     otevřeného API, chybějící média) a jak to promítáš do variant.
+  6. Priority lidské kontroly. Opři je o data/mereni_vzorku.md:
+     posledni_investice má nejnižší správnost (15/19), u fondů se
+     zahraničním správcem je výklad sídla sporný, nezávislost zdrojů často
+     nejde ověřit. Navrhni, kam lidskou kontrolu směřovat přednostně.
+     Netvrď, kde „stačí kontrolní agent“: konečné hodnocení vznikalo
+     s asistencí AI a zčásti podle nálezů kontrolního agenta, takže měření
+     nahraditelnost lidské kontroly nedokládá. Uveď to jako omezení.
+
+  Výstup: scripts/naklady.py (parametry nahoře, deterministický, bez sítě;
+  čtení logů může být samostatný skript, který uloží jen agregovaná čísla
+  do ai-log/07-naklady/spotreba.csv) a NAKLADY.md s tabulkami,
+  předpoklady, zdroji a omezeními. Před commitem mi vypiš souhrn spotřeby
+  po krocích, počet vyřazených duplicit a výsledné varianty a počkej na
+  potvrzení. Pak commitni jedním commitem „Krok 7: odhad nákladů pro celý
+  svět“ a pushni.
+
+⏺ Začínám čtením podkladů.
+
+  Read 2 files, listed 1 directory (ctrl+o to expand)
+
+⏺ Bash(for f in ai-log/*/mereni.txt
+      ai-log/02-zkusebni-davka/doba_zpracovani.txt; do echo "=== $f"; cat "$f";
+      done)
+  ⎿  (No output)
+
+  Searched for 1 pattern, read 2 files (ctrl+o to expand)
+
+⏺ Teď logy Claude Code — jen struktura a pole usage.
+
+⏺ Bash(cd ~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-dat
+      abaze/ && ls -la; find . -name "*.jsonl" | wc -l; find . -name "*.jsonl"
+      -exec ls -la {…)
+  ⎿  (No output)
+
+⏺ Bash(cd ~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-dat
+      abaze/ && find . -mindepth 2 -maxdepth 2 | sed 's|/[^/]*$||' | sort | uniq
+      -c; find . -…)
+  ⎿  (No output)
+
+⏺ Bash(cd ~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-dat
+      abaze/ && python3 - <<'EOF'
+      import json,glob,collections…)
+  ⎿  (No output)
+
+⏺ Bash(ls ~/.claude/projects/ ; for f in ai-log/*.txt; do echo "=== $f $(wc -c
+      <$f)"; head -c 600 "$f" | head -15; echo; grep -m5 -noE
+      "20[0-9]{2}-[0-9]{2}-[0-9]{2}T[0…)
+  ⎿  (No output)
+
+⏺ Bash(cd ~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-dat
+      abaze/ && ls -la ~/.claude/projects/-Users-petrstastny/ | head -30;
+      python3 - <<'EOF'
+      i…)
+  ⎿  (No output)
+
+⏺ Bash(cd ~/.claude/projects/ && python3 - <<'EOF'
+      import json,glob,collections…)
+  ⎿  (No output)
+
+⏺ Zjistil jsem strukturu logů. Kroky 0–1 mají logy v jiném adresáři (session
+  spuštěné z domovského adresáře, přiřazené podle času a pole cwd). Teď dohledám
+  oficiální ceník.
+
+⏺ Fetch(https://docs.claude.com/en/docs/about-claude/pricing)
+  ⎿  Received 868 bytes (302 Found)
+
+⏺ Fetch(https://platform.claude.com/docs/en/about-claude/pricing)
+  ⎿  Received 52.1KB (200 OK)
+
+⏺ Bash(f=/Users/petrstastny/.claude/projects/-Users-petrstastny-Documents-Projek
+      ty-investori-databaze/9a0a849c-e9fc-4de7-91f5-8787caee1261/tool-results/to
+      olu_01C8rcecu…)
+  ⎿  (No output)
+
+⏺ Ceník načten (Opus 5.5: $4 vstup, $5/$8 zápis do cache 5 min/1 h, $0,20 čtení
+  z cache, $20 výstup, web search $10/1000). Teď ověřím, jak vznikla čísla
+  tokenů v mereni.txt.
+
+⏺ Bash(cd ~/.claude/projects/-Users-petrstastny-Documents-Projekty-investori-dat
+      abaze/e7a27589-eb01-4d71-a21a-353aded4990d/subagents && ls; python3 -
+      <<'EOF'
+      import js…)
+  ⎿  (No output)
+
+⏺ Čísla v mereni.txt odpovídají velikosti kontextu posledního volání subagenta,
+  ne kumulativní spotřebě. Teď se podívám na styl existujících skriptů a napíšu
+  čtecí skript.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Write(scripts/spotreba_z_logu.py)
+  ⎿  Wrote 191 lines to scripts/spotreba_z_logu.py
+       1 """Naměřená spotřeba tokenů pilotu z lokálních logů Claude Code
+       2
+         ge.id, requestId) ze záznamů
+       4 typu assistant. Obsah zpráv nečte do výstupu a neukládá. Výstup
+       5 v ai-log/07-naklady/spotreba.csv a souhrn na stdout. Bez síťovýc
+       6 pro dané logy.
+       8 Deduplikace: Claude Code zapisuje každý blok obsahu odpovědi (te
+         xt, volání nástroje…) jako
+         tá jednou podle dvojice
+         uje, že vyřazené výskyty mají
+     … +246 lines (ctrl+o to expand)
+
+⏺ Opravím přiřazení počtu záznamů k částem (u rozdělených session by vycházelo
+  špatně).
+
+⏺ Bash(python3 - <<'EOF'
+      p='scripts/spotreba_z_logu.py'; s=open(p).read()…)
+  ⎿  Created ai-log/07-naklady/spotreba.csv (+19 -0)
+       1 +krok,cast,session,druh,model,agentu,zaznamu_usage,vyrazenych_du
+         +plicit,pozadavku_api,input_tokens,cache_creation_5m,cache_creat
+         +ion_1h,cache_read_input_tokens,output_tokens,tokenu_celkem,prvn
+         +i_volani_utc,posledni_volani_utc,kontext_poslednich_volani,pozn
+         +amka                                                           
+       2 +00,plán a založení,8454bd15,hlavní konverzace,claude-opus-5-5,,
+         +133,87,46,92,0,160373,4592252,57005,4809722,2026-10-26T13:28:54
+         +.600Z,2026-10-26T14:03:03.200Z,,                               
+       3 +01,sběr kandidátů,c326ece4,hlavní konverzace,claude-opus-5-5,,2
+         +00,122,78,160,0,241367,11750154,90869,12082550,2026-10-26T14:12
+         +:54.534Z,2026-10-26T14:46:53.850Z,,                            
+       4 +01,sběr kandidátů,c326ece4,pomocný agent,claude-opus-5-5,3,325,
+         +271,54,108,260597,0,3119342,48953,3429000,2026-10-26T14:25:37.2
+         +79Z,2026-10-26T14:30:50.761Z,260603,                           
+       5 +02,obohacení 57 kandidátů,f3cfc496,hlavní konverzace,claude-opu
+         +s-5-5,,217,134,83,226,0,267862,15024240,83011,15375339,2026-10-
+         +26T15:39:12.421Z,2026-10-26T16:51:10.397Z,,                    
+       6 +02,obohacení 57 kandidátů,f3cfc496,pomocný agent,claude-opus-5-
+         +5,31,1954,998,956,1912,2953720,0,75674284,624007,79253923,2026-
+         +10-26T15:43:34.479Z,2026-10-26T16:48:53.536Z,3433430,          
+       7 +02z,zkušební dávka,c4487a53,hlavní konverzace,claude-opus-5-5,,
+         +75,47,28,56,0,101944,2449430,25053,2576483,2026-10-26T14:56:39.
+         +997Z,2026-10-26T15:02:31.813Z,,                                
+       8 +02z,úprava pravidel,c4487a53,hlavní konverzace,claude-opus-5-5,
+         +,47,35,12,24,0,42472,1774270,28233,1844999,2026-10-26T15:02:47.
+         +655Z,2026-10-26T15:33:18.943Z,,                                
+       9 +03,automatická kontrola,050be588,hlavní konverzace,claude-opus-
+         +5-5,,51,29,22,44,0,141787,2206985,50361,2399177,2026-10-26T17:1
+         +7:25.332Z,2026-10-26T17:25:33.008Z,,                           
+      10 +04,fáze A (slepá kontrola),e7a27589,hlavní konverzace,claude-op
+         +us-5-5,,50,27,23,60,0,107377,2245500,15663,2368600,2026-10-26T1
+         +7:30:14.994Z,2026-10-26T17:44:11.190Z,,                        
+      11 +04,fáze A (slepá kontrola),e7a27589,pomocný agent,claude-opus-5
+         +-5,7,570,249,321,642,1253469,0,37616736,240579,39111426,2026-10
+         +-26T17:32:45.468Z,2026-10-26T17:43:40.505Z,1253483,            
+      12 +04,fáze B (cílené otázky),e7a27589,hlavní konverzace,claude-opu
+         +s-5-5,,45,25,20,52,0,55153,3348406,20785,3424396,2026-10-26T17:
+         +44:18.908Z,2026-10-26T17:55:11.496Z,,                          
+      13 +04,fáze B (cílené otázky),e7a27589,pomocný agent,claude-opus-5-
+         +5,6,305,129,176,352,739013,0,16166906,147548,17053819,2026-10-2
+         +6T17:45:43.913Z,2026-10-26T17:53:05.224Z,849713,               
+      14 +05,příprava podkladů,e68ef0bc,hlavní konverzace,claude-opus-5-5
+         +,,56,33,23,46,0,229285,3610551,70124,3910006,2026-10-26T18:03:4
+         +5.718Z,2026-10-26T18:14:13.044Z,,                              
+      15 +05,uložení ručního hodnocení,e68ef0bc,hlavní konverzace,claude-
+         +opus-5-5,,29,16,13,26,0,250371,3224307,10095,3484799,2026-10-27
+         +T16:40:58.493Z,2026-10-27T16:58:03.820Z,,                      
+      16 +06,měření,c87fffba,hlavní konverzace,claude-opus-5-5,,64,40,24,
+         +50,0,101934,1991138,33977,2127099,2026-10-27T17:04:30.844Z,2026
+         +-10-27T17:17:34.018Z,,                                         
+      17 +05,ruční kontrola: asistence AI mimo Claude Code,,,,,,,,,,,,,,,
+         +,,neznámé: README: zdroje a návrhy verdiktů zčásti od Claude a 
+         +ChatGPT mimo tyto logy; spotřeba neznámá                       
+      18 +01–06,WebFetch: zpracování stránek pomocným modelem,,,,,,,,,,,,
+         +,,,,,neznámé: nástroj WebFetch předává stránku pomocnému modelu
+         +; tyto požadavky v logu nejsou                                 
+      19 +01–06,WebSearch: samostatné požadavky vyhledávání,,,,,,,,,,,,,,
+         +,,,neznámé: usage.server_tool_use je ve všech záznamech 0; vyhl
+         +edávání běží mimo zalogované požadavky                         
+  ⎿  Updated scripts/spotreba_z_logu.py (+7 -8)
+      79  
+      80  
+      81  def nacti_soubor(cesta):
+      82 -    """Vrátí (počet záznamů usage, {(message.id, requestId): (č
+         -as, model, usage)})."""                                        
+      82 +    """Vrátí (počet záznamů usage, {(message.id, requestId): [č
+         +as, model, usage, výskytů]})."""                               
+      83      zaznamu = 0
+      84      unikatni = {}
+      85      with open(cesta, encoding="utf-8") as f:
+     ...
+      101              if klic in unikatni:
+      102                  if unikatni[klic][2] != hodnoty:
+      103                      chyba(f"{cesta.name}: duplicitní záznam {k
+           lic} s jinou usage")
+      104 +                unikatni[klic][3] += 1                        
+      105                  continue
+      105 -            unikatni[klic] = (r["timestamp"], m.get("model"), 
+          -hodnoty)                                                      
+      106 +            unikatni[klic] = [r["timestamp"], m.get("model"), 
+          +hodnoty, 1]                                                   
+      107      return zaznamu, unikatni
+      108  
+      109  
+     ...
+      145              continue
+      146          # pomocný agent celý do části podle prvního volání, hl
+           avní konverzace po záznamech
+      147          skupiny = defaultdict(list)
+      147 -        for cas, model, hodnoty in polozky:                   
+      148 +        for cas, model, hodnoty, vyskytu in polozky:          
+      149              krok, cast = cast_podle_casu(session, polozky[0][0
+           ] if druh == "pomocný agent" else cas)
+      149 -            skupiny[(krok, cast, session[:8], druh, model)].ap
+          -pend((cas, hodnoty))                                          
+      150 +            skupiny[(krok, cast, session[:8], druh, model)].ap
+          +pend((cas, hodnoty, vyskytu))                                 
+      151          for klic, seznam in skupiny.items():
+      152              r = radky[klic]
+      153              r["agentu"].add(cesta.name)
+      154 +            r["zaznamu"] += sum(v for _, _, v in seznam)      
+      155              r["pozadavku"] += len(seznam)
+      154 -            r["soucty"] = [a + b for a, b in zip(r["soucty"], 
+          -(sum(h[i] for _, h in seznam) for i in range(5)))]            
+      156 +            r["soucty"] = [a + b for a, b in zip(r["soucty"], 
+          +(sum(h[i] for _, h, _ in seznam) for i in range(5)))]         
+      157              r["od"] = min(filter(None, [r["od"], seznam[0][0]]
+           ))
+      158              r["do"] = max(filter(None, [r["do"], seznam[-1][0]
+           ]))
+      159              if druh == "pomocný agent":
+      160                  r["kontext_posledni"] += sum(seznam[-1][1][:4]
+           )
+      159 -        # vyřazené duplicity se připíšou k první skupině soubo
+          -ru (u pomocných agentů je jen jedna)                          
+      160 -        radky[next(iter(skupiny))]["zaznamu"] += zaznamu - sum
+          -(len(s) for s in skupiny.values()) \                          
+      161 -            + sum(len(s) for s in skupiny.values())           
+     … 3 more lines (ctrl+o to expand)
+  ⎿  (files that changed while this command ran, by the command or by
+     another process; a convenience view, not a review or audit of the
+     command)
+⏺ Agregace funguje: 2 242 duplicitních záznamů vyřazeno, 1 879 unikátních
+  požadavků. Teď výpočetní skript s parametry nahoře.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Bash(sed -i '' 's/r\["kontext_posledni"\] +=
+      sum(seznam\[-1\]\[1\]\[:4\])/r["kontext_posledni"] += sum(seznam[-1][1])/'
+      scripts/spotreba_z_logu.py && grep -n 'kontex…)
+  ⎿  Updated ai-log/07-naklady/spotreba.csv (+4 -4)
+       1  krok,cast,session,druh,model,agentu,zaznamu_usage,vyrazenych_du
+          plicit,pozadavku_api,input_tokens,cache_creation_5m,cache_creat
+          ion_1h,cache_read_input_tokens,output_tokens,tokenu_celkem,prvn
+          i_volani_utc,posledni_volani_utc,kontext_poslednich_volani,pozn
+          amka
+       2  00,plán a založení,8454bd15,hlavní konverzace,claude-opus-5-5,,
+          133,87,46,92,0,160373,4592252,57005,4809722,2026-10-26T13:28:54
+          .600Z,2026-10-26T14:03:03.200Z,,
+       3  01,sběr kandidátů,c326ece4,hlavní konverzace,claude-opus-5-5,,2
+          00,122,78,160,0,241367,11750154,90869,12082550,2026-10-26T14:12
+          :54.534Z,2026-10-26T14:46:53.850Z,,
+       4 -01,sběr kandidátů,c326ece4,pomocný agent,claude-opus-5-5,3,325,
+         -271,54,108,260597,0,3119342,48953,3429000,2026-10-26T14:25:37.2
+         -79Z,2026-10-26T14:30:50.761Z,260603,                           
+       4 +01,sběr kandidátů,c326ece4,pomocný agent,claude-opus-5-5,3,325,
+         +271,54,108,260597,0,3119342,48953,3429000,2026-10-26T14:25:37.2
+         +79Z,2026-10-26T14:30:50.761Z,274839,                           
+       5  02,obohacení 57 kandidátů,f3cfc496,hlavní konverzace,claude-opu
+          s-5-5,,217,134,83,226,0,267862,15024240,83011,15375339,2026-10-
+          26T15:39:12.421Z,2026-10-26T16:51:10.397Z,,
+       6 -02,obohacení 57 kandidátů,f3cfc496,pomocný agent,claude-opus-5-
+         -5,31,1954,998,956,1912,2953720,0,75674284,624007,79253923,2026-
+         -10-26T15:43:34.479Z,2026-10-26T16:48:53.536Z,3433430,          
+       6 +02,obohacení 57 kandidátů,f3cfc496,pomocný agent,claude-opus-5-
+         +5,31,1954,998,956,1912,2953720,0,75674284,624007,79253923,2026-
+         +10-26T15:43:34.479Z,2026-10-26T16:48:53.536Z,3476650,          
+       7  02z,zkušební dávka,c4487a53,hlavní konverzace,claude-opus-5-5,,
+          75,47,28,56,0,101944,2449430,25053,2576483,2026-10-26T14:56:39.
+          997Z,2026-10-26T15:02:31.813Z,,
+       8  02z,úprava pravidel,c4487a53,hlavní konverzace,claude-opus-5-5,
+          ,47,35,12,24,0,42472,1774270,28233,1844999,2026-10-26T15:02:47.
+          655Z,2026-10-26T15:33:18.943Z,,
+       9  03,automatická kontrola,050be588,hlavní konverzace,claude-opus-
+          5-5,,51,29,22,44,0,141787,2206985,50361,2399177,2026-10-26T17:1
+          7:25.332Z,2026-10-26T17:25:33.008Z,,
+      10  04,fáze A (slepá kontrola),e7a27589,hlavní konverzace,claude-op
+          us-5-5,,50,27,23,60,0,107377,2245500,15663,2368600,2026-10-26T1
+          7:30:14.994Z,2026-10-26T17:44:11.190Z,,
+      11 -04,fáze A (slepá kontrola),e7a27589,pomocný agent,claude-opus-5
+         --5,7,570,249,321,642,1253469,0,37616736,240579,39111426,2026-10
+         --26T17:32:45.468Z,2026-10-26T17:43:40.505Z,1253483,            
+      11 +04,fáze A (slepá kontrola),e7a27589,pomocný agent,claude-opus-5
+         +-5,7,570,249,321,642,1253469,0,37616736,240579,39111426,2026-10
+         +-26T17:32:45.468Z,2026-10-26T17:43:40.505Z,1264850,            
+      12  04,fáze B (cílené otázky),e7a27589,hlavní konverzace,claude-opu
+          s-5-5,,45,25,20,52,0,55153,3348406,20785,3424396,2026-10-26T17:
+          44:18.908Z,2026-10-26T17:55:11.496Z,,
+      13 -04,fáze B (cílené otázky),e7a27589,pomocný agent,claude-opus-5-
+         -5,6,305,129,176,352,739013,0,16166906,147548,17053819,2026-10-2
+         -6T17:45:43.913Z,2026-10-26T17:53:05.224Z,849713,               
+      13 +04,fáze B (cílené otázky),e7a27589,pomocný agent,claude-opus-5-
+         +5,6,305,129,176,352,739013,0,16166906,147548,17053819,2026-10-2
+         +6T17:45:43.913Z,2026-10-26T17:53:05.224Z,861130,               
+      14  05,příprava podkladů,e68ef0bc,hlavní konverzace,claude-opus-5-5
+          ,,56,33,23,46,0,229285,3610551,70124,3910006,2026-10-26T18:03:4
+          5.718Z,2026-10-26T18:14:13.044Z,,
+      15  05,uložení ručního hodnocení,e68ef0bc,hlavní konverzace,claude-
+          opus-5-5,,29,16,13,26,0,250371,3224307,10095,3484799,2026-10-27
+          T16:40:58.493Z,2026-10-27T16:58:03.820Z,,
+      16  06,měření,c87fffba,hlavní konverzace,claude-opus-5-5,,64,40,24,
+          50,0,101934,1991138,33977,2127099,2026-10-27T17:04:30.844Z,2026
+          -10-27T17:17:34.018Z,,
+  ⎿  Updated scripts/spotreba_z_logu.py (+1 -1)
+      157              r["od"] = min(filter(None, [r["od"], seznam[0][0]]
+           ))
+      158              r["do"] = max(filter(None, [r["do"], seznam[-1][0]
+           ]))
+      159              if druh == "pomocný agent":
+      160 -                r["kontext_posledni"] += sum(seznam[-1][1][:4]
+          -)                                                             
+      160 +                r["kontext_posledni"] += sum(seznam[-1][1])   
+      161  
+      162      VYSTUP.parent.mkdir(parents=True, exist_ok=True)
+      163      hlavicka = ["krok", "cast", "session", "druh", "model", "a
+           gentu", "zaznamu_usage",
+
+⏺ Nyní výpočetní skript.
+
+⏺ Write(scripts/naklady.py)
+  ⎿  Wrote 344 lines to scripts/naklady.py
+       1 """Odhad nákladů na databázi investorů pro celý svět (krok 7, PL
+       2
+       3 Čte jen ai-log/07-naklady/spotreba.csv (agregovanou spotřebu pil
+         otu ze scripts/spotreba_z_logu.py),
+         log/07-naklady/vypocet.md
+       5 a totéž na stdout. Všechny předpoklady jsou v parametrech níže;
+       6
+       7 Spuštění z kořene repa: python3 scripts/naklady.py
+       8 """
+      10 import math
+     … +468 lines (ctrl+o to expand)
+
+⏺ Bash(python3 scripts/naklady.py)
+  ⎿  Created ai-log/07-naklady/vypocet.md (+111 -0)
+        1 +# Výpočet nákladů (generováno skriptem scripts/naklady.py, nep
+          +řepisovat ručně)                                              
+        2 +                                                              
+        3 +Ceny API: Claude Opus 5.5, USD/MTok: vstup 4, zápis do cache 5
+          + min 5, zápis do cache 1 h 8, čtení z cache 0,20, výstup 20; w
+          +eb search 10 USD / 1 000. Zdroj https://platform.claude.com/do
+          +cs/en/about-claude/pricing, načteno 27. 10. 2026. Pilot běžel 
+          +v předplatném Claude, ceny jsou přepočet na API, ne zaplacená 
+          +částka.                                                       
+        4 +                                                              
+        5 +## 1. Naměřená spotřeba pilotu po krocích (deduplikované logy 
+          +Claude Code)                                                  
+        6 +                                                              
+        7 +| krok | požadavků API | vstup | zápis cache 5 min | zápis cac
+          +he 1 h | čtení cache | výstup | tokenů celkem | z toho pomocní
+          + agenti | cena API | čas |                                    
+        8 +|---|---|---|---|---|---|---|---|---|---|---|                 
+        9 +| 0 plán a založení | 46 | 92 | 0 | 160 373 | 4 592 252 | 57 0
+          +05 | 4 809 722 | – | $3,34 | 34 min 9 s (rozpětí v logu) |    
+       10 +| 1 sběr kandidátů | 132 | 268 | 260 597 | 241 367 | 14 869 49
+          +6 | 139 822 | 15 511 550 | 3 429 000 | $9,01 | 33 min 59 s (ro
+          +zpětí v logu) |                                               
+       11 +| 2 zkušební dávka + úprava pravidel | 40 | 80 | 0 | 144 416 |
+          + 4 223 700 | 53 286 | 4 421 482 | – | $3,07 | 5 min 49 s dávka
+          + (mereni.txt) + úprava pravidel; 36 min 23 s v logu |         
+       12 +| 2 obohacení | 1039 | 2 138 | 2 953 720 | 267 862 | 90 698 52
+          +4 | 707 018 | 94 629 262 | 79 253 923 | $49,20 | 1 h 2 min (me
+          +reni.txt) |                                                   
+       13 +| 3 automatická kontrola | 22 | 44 | 0 | 141 787 | 2 206 985 |
+          + 50 361 | 2 399 177 | – | $2,58 | 8 min 8 s (rozpětí v logu) |
+       14 +| 4 kontrola druhým agentem | 540 | 1 106 | 1 992 482 | 162 53
+          +0 | 59 377 548 | 424 575 | 61 958 241 | 56 165 245 | $31,63 | 
+          +24 min 32 s (mereni.txt) |                                    
+       15 +| 5 příprava a uložení ruční kontroly | 36 | 72 | 0 | 479 656 
+          +| 6 834 858 | 80 219 | 7 394 805 | – | $6,81 | 27 min 33 s (ro
+          +zpětí v logu) |                                               
+       16 +| 6 měření | 24 | 50 | 0 | 101 934 | 1 991 138 | 33 977 | 2 12
+          +7 099 | – | $1,89 | 13 min 3 s (rozpětí v logu) |             
+       17 +| **celkem 0–6** | 1879 | 3 850 | 5 206 799 | 1 699 925 | 184 
+          +794 501 | 1 546 263 | 193 251 338 | | **$108** | |            
+       18 +                                                              
+       19 +Neznámé, do součtu nezahrnuto (není to nula):                 
+       20 +                                                              
+       21 +- krok 05, ruční kontrola: asistence AI mimo Claude Code: READ
+          +ME: zdroje a návrhy verdiktů zčásti od Claude a ChatGPT mimo t
+          +yto logy; spotřeba neznámá                                    
+       22 +- krok 01–06, WebFetch: zpracování stránek pomocným modelem: n
+          +ástroj WebFetch předává stránku pomocnému modelu; tyto požadav
+          +ky v logu nejsou                                              
+       23 +- krok 01–06, WebSearch: samostatné požadavky vyhledávání: usa
+          +ge.server_tool_use je ve všech záznamech 0; vyhledávání běží m
+          +imo zalogované požadavky                                      
+       24 +                                                              
+       25 +Webové požadavky (mereni.txt; `–` = neměřeno):                
+       26 +                                                              
+       27 +| krok | WebSearch | WebFetch | ARES | funding.tech.eu | curl 
+          +| celkem |                                                    
+       28 +|---|---|---|---|---|---|---|                                 
+       29 +| 0 plán a založení | – | – | – | – | – | – |                 
+       30 +| 1 sběr kandidátů | – | – | – | – | – | – |                  
+       31 +| 2 zkušební dávka + úprava pravidel | 9 | 20 | 11 | 11 | 0 | 
+          +51 |                                                          
+       32 +| 2 obohacení | 318 | 447 | 225 | 85 | 46 | 1121 |            
+       33 +| 3 automatická kontrola | – | – | – | – | – | – |            
+       34 +| 4 kontrola druhým agentem | 34 | 5 | 0 | 0 | 406 | 445 |    
+       35 +| 5 příprava a uložení ruční kontroly | – | – | – | – | – | – 
+          +|                                                             
+       36 +| 6 měření | – | – | – | – | – | – |                          
+       37 +                                                              
+       38 +## 2. Jednotkové náklady pilotu                               
+       39 +                                                              
+       40 +Na kandidáta = děleno 56, na zařazený záznam = děleno 27. Cena
+          + web search je jen u kroků, kde je počet vyhledávání naměřený.
+     … 71 more lines (ctrl+o to expand)
+
+⏺ Výpočet běží. Teď napíšu NAKLADY.md s tabulkami, předpoklady, zdroji a
+  omezeními.
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Doplním do výpočtu ještě rozpad podle hlavních konverzací a pomocných agentů a
+  podle modelu.
+
+⏺ Update(scripts/naklady.py)
+  ⎿  Added 14 lines
+      180      w(f"| **celkem 0–6** | {sum(kroky[x]['pozadavku'] for x in
+            kroky)} | " +
+      181        " | ".join(cislo(x) for x in soucet) + f" | {cislo(sum(s
+           oucet))} | | **{usd(cena_celkem)}** | |")
+      182      w("")
+      183 +    w("Podle druhu konverzace a modelu (kroky 0–6):\n")       
+      184 +    w("| druh | model | agentů | požadavků API | tokenů celkem
+          + | cena API |")                                               
+      185 +    w("|---|---|---|---|---|---|")                            
+      186 +    po_druhu = defaultdict(lambda: [0, 0, 0, 0.0])            
+      187 +    for r in csv.DictReader(open(SPOTREBA, encoding="utf-8")):
+      188 +        if r["model"]:                                        
+      189 +            d = po_druhu[(r["druh"], r["model"])]             
+      190 +            d[0] += int(r["agentu"] or 0)                     
+      191 +            d[1] += int(r["pozadavku_api"])                   
+      192 +            d[2] += int(r["tokenu_celkem"])                   
+      193 +            d[3] += sum(int(r[p]) * CENIK[r["model"]][p] for p
+          + in POLE) / 1e6                                               
+      194 +    for (druh, model), d in sorted(po_druhu.items()):         
+      195 +        w(f"| {druh} | {model} | {d[0] or '–'} | {d[1]} | {cis
+          +lo(d[2])} | {usd(d[3])} |")                                   
+      196 +    w("")                                                     
+      197      w("Neznámé, do součtu nezahrnuto (není to nula):\n")
+      198      for r in nezname:
+      199          w(f"- krok {r['krok']}, {r['cast']}: {r['poznamka'].re
+           moveprefix('neznámé: ')}")
+
+⏺ Bash(python3 scripts/naklady.py | sed -n '/Podle druhu/,/Neznámé/p'; md5
+      ai-log/07-naklady/vypocet.md; python3 scripts/naklady.py >/dev/null; md5
+      ai-log/07-naklady/v…)
+  ⎿  Updated ai-log/07-naklady/vypocet.md (+7 -0)
+      16  | 6 měření | 24 | 50 | 0 | 101 934 | 1 991 138 | 33 977 | 2 127
+           099 | – | $1,89 | 13 min 3 s (rozpětí v logu) |
+      17  | **celkem 0–6** | 1879 | 3 850 | 5 206 799 | 1 699 925 | 184 7
+          94 501 | 1 546 263 | 193 251 338 | | **$108** | |
+      18  
+      19 +Podle druhu konverzace a modelu (kroky 0–6):                   
+      20 +                                                               
+      21 +| druh | model | agentů | požadavků API | tokenů celkem | cena 
+         +API |                                                          
+      22 +|---|---|---|---|---|---|                                      
+      23 +| hlavní konverzace | claude-opus-5-5 | – | 372 | 54 403 170 | 
+         +$33,75 |                                                       
+      24 +| pomocný agent | claude-opus-5-5 | 47 | 1507 | 138 848 168 | $
+         +73,78 |                                                        
+      25 +                                                               
+      26  Neznámé, do součtu nezahrnuto (není to nula):
+      27  
+      28  - krok 05, ruční kontrola: asistence AI mimo Claude Code: READM
+          E: zdroje a návrhy verdiktů zčásti od Claude a ChatGPT mimo tyt
+          o logy; spotřeba neznámá
+
+⏺ Write(NAKLADY.md)
+  ⎿  Wrote 195 lines to NAKLADY.md
+      1 # Odhad nákladů na databázi investorů pro celý svět
+      3 Krok 7 (PLAN.md, bod 10). Čísla v tabulkách pocházejí z `python3
+        scripts/naklady.py`, který čte jen agregovanou spotřebu v [ai-log
+        í ji `python3 scripts/spotreba_z_logu.py` z lokálních logů Claude
+        d](ai-log/07-naklady/vypocet.md). Oba skripty jsou deterministick
+        é a výpočet běží bez sítě.
+      5 ## Shrnutí
+      6
+        avcích na API, v přepočtu na ceny API zhruba 108 USD.** Pilot běž
+         ne o skuteč
+     … +401 lines (ctrl+o to expand)
+
+⏺ Bash(sed -i '' 's/předmětem čtvrteční aktualizace/předmětem čtvrtletní
+      aktualizace/' NAKLADY.md && grep -c čtvrteční NAKLADY.md; python3 -c "
+      import sys; sys.argv=['…)
+  ⎿  Updated NAKLADY.md (+1 -1)
+      166  
+      167  Priority vycházejí z [data/mereni_vzorku.md](data/mereni_vzork
+           u.md) (20 zařazených firem):
+      168  
+      169 -1. **Poslední investice.** Ze všech polí má nejnižší správnost
+          -: 15/19 = 78,9 % (95% CI 56,7–91,5 %). Všechny 4 chyby výstupu
+          - mají stejný vzor: agent uvedl doloženou investici, ale přehlé
+          -dl novější (Look AI, Purple, Reflex, ZAKA). Kontrolor by měl u
+          - každého záznamu, nebo aspoň u celého kontrolního vzorku, proj
+          -ít novinky na webu investora a nejnovější zprávy po datu, kter
+          -é uvedl agent. Totéž pole je předmětem čtvrteční aktualizace a
+          - jejího kontrolního vzorku.                                   
+      169 +1. **Poslední investice.** Ze všech polí má nejnižší správnost
+          +: 15/19 = 78,9 % (95% CI 56,7–91,5 %). Všechny 4 chyby výstupu
+          + mají stejný vzor: agent uvedl doloženou investici, ale přehlé
+          +dl novější (Look AI, Purple, Reflex, ZAKA). Kontrolor by měl u
+          + každého záznamu, nebo aspoň u celého kontrolního vzorku, proj
+          +ít novinky na webu investora a nejnovější zprávy po datu, kter
+          +é uvedl agent. Totéž pole je předmětem čtvrtletní aktualizace 
+          +a jejího kontrolního vzorku.                                  
+      170  2. **Sídlo a příslušnost u fondů se zahraničním správcem.** Z 
+           20 firem byly 2 `ne` (i&i Biotech, N1: GP/AIFM v Lucembursku, 
+           tým v Praze) a 1 `nelze_overit` (Tensor). Šlo o upřesnění meto
+           diky, ne o chybu agenta. Před škálováním je potřeba pravidlo s
+           ídla rozhodnout (správce × fond × tým). Ručně pak zkontrolovat
+            záznamy, kde agent najde zahraniční GP/AIFM nebo fondovou str
+           ukturu (SCSp, S.à r.l., LP). Mimo ČR bude takových případů víc
+           .
+      171  3. **Nezávislost zdrojů.** U 6/20 firem ji nešlo ověřit: agent
+            měl `puvod` null a zprávy mohly vycházet z jedné tiskové zprá
+           vy. Lidská kontrola by měla jít na záznamy, jejichž investice 
+           stojí jen na zdrojích s neznámým původem. Systémovější řešení 
+           je vyžadovat původ zdroje už ve schématu.
+      172  4. **Přiřazení investice přes fondy** (Presto: investice prove
+           dl lucemburský fond jiného správce) a **nástroj investice** (i
+           &i Prague): `je_investor` a `investicni_cinnost` nešlo ověřit 
+           u 2 a 1 z 20 firem.
+
+⏺ Bash(sed -i '' 's/Na zařazený záznam\*\* je to 3,45 USD/Na zařazený záznam**
+      je to 3,46 USD/' NAKLADY.md && grep -n "3,46 USD" NAKLADY.md; rm -rf
+      scripts/__pycache__…)
+  ⎿  Updated NAKLADY.md (+1 -1)
+       5  ## Shrnutí
+       6  
+       7  - **Pilot (kroky 0–6) spotřeboval 193,3 mil. tokenů v 1 879 pož
+          adavcích na API, v přepočtu na ceny API zhruba 108 USD.** Pilot
+           běžel v rámci předplatného Claude, takže jde o přepočet na cen
+          y API, ne o skutečně zaplacenou částku. Do součtu nejsou zahrnu
+          té části, které logy nezachytily (viz [Neznámé](#neznámé-položk
+          y)).
+       8 -- **Na kandidáta** stojí produkční část (sběr, obohacení, kontr
+         -ola druhým agentem) 1,67 USD a zhruba 2 min 10 s času agentů př
+         -i souběžnosti pilotu. **Na zařazený záznam** je to 3,45 USD.   
+       8 +- **Na kandidáta** stojí produkční část (sběr, obohacení, kontr
+         +ola druhým agentem) 1,67 USD a zhruba 2 min 10 s času agentů př
+         +i souběžnosti pilotu. **Na zařazený záznam** je to 3,46 USD.   
+       9  - **Svět (5 600–11 000 zařazených, PLAN.md 8.2):** AI zhruba **
+          20 000 / 44 000 / 96 000 USD** (nízká / střední / vysoká varian
+          ta) s kontrolním vzorkem. Lidská práce **475 / 1 210 / 2 210 h*
+          * s kontrolním vzorkem, nebo **1 350 / 3 120 / 5 960 h** s plno
+          u ruční kontrolou. Aktualizace stojí ročně 4 000 / 16 000 / 51 
+          000 USD za AI a 49 / 83 / 125 h práce člověka.
+      10  - Jak předpokládal PLAN.md, největší položkou bude lidská práce
+          : při sazbě nad zhruba 36–44 USD/h stojí víc než AI i ve varian
+          tě s pouhým vzorkem. Hodinovou sazbu nechávám jako parametr. Ne
+          jvětší část hodin připadá na ruční rozhodnutí nevyřešených a hr
+          aničních kandidátů, ne na kontrolní vzorek.
+      11  - Výsledek je zhruba úměrný poměru kandidátů k zařazeným (56/27
+           z českého pilotu). Pro svět je to neověřený pracovní předpokla
+          d. Při polovičním poměru vychází AI ve střední variantě na 22 0
+          00 USD, při dvojnásobném na 87 000 USD.
+
+⏺ Hotovo, necommitnuto. Čekám na tvoje potvrzení. Data ani předchozí výstupy
+  jsem neměnil. Přibyly jen soubory scripts/spotreba_z_logu.py,
+  scripts/naklady.py, ai-log/07-naklady/spotreba.csv,
+  ai-log/07-naklady/vypocet.md a NAKLADY.md. Oba skripty jsem spustil dvakrát a
+  výstup byl pokaždé stejný (shodný MD5), výpočet běží bez sítě.
+
+  Spotřeba po krocích (Claude Opus 5.5, přepočet na ceny API; pilot běžel v
+  předplatném, tohle není zaplacená částka)
+
+  ┌─────────────────────┬───────────┬─────────┬────────┬───────────────────┐
+  │        krok         │ požadavků │ tokenů  │ cena   │        čas        │
+  │                     │           │         │  API   │                   │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 0 plán              │ 46        │ 4,8     │ $3,34  │ 34 min (rozpětí v │
+  │                     │           │ mil.    │        │  logu)            │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 1 sběr kandidátů    │ 132       │ 15,5    │ $9,01  │ 34 min (rozpětí v │
+  │                     │           │ mil.    │        │  logu)            │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 2 zkušební dávka +  │ 40        │ 4,4     │ $3,07  │ dávka 5 min 49 s  │
+  │ úprava pravidel     │           │ mil.    │        │ (mereni.txt)      │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 2 obohacení         │ 1 039     │ 94,6    │ $49,20 │ 62 min 30 s       │
+  │                     │           │ mil.    │        │ (mereni.txt)      │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 3 automatická       │ 22        │ 2,4     │ $2,58  │ 8 min (rozpětí v  │
+  │ kontrola            │           │ mil.    │        │ logu)             │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 4 kontrola druhým   │ 540       │ 62,0    │ $31,63 │ 24 min 32 s       │
+  │ agentem             │           │ mil.    │        │ (mereni.txt)      │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 5 příprava a        │           │ 7,4     │        │ 28 min (rozpětí v │
+  │ uložení ruční       │ 36        │ mil.    │ $6,81  │  logu)            │
+  │ kontroly            │           │         │        │                   │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ 6 měření            │ 24        │ 2,1     │ $1,89  │ 13 min (rozpětí v │
+  │                     │           │ mil.    │        │  logu)            │
+  ├─────────────────────┼───────────┼─────────┼────────┼───────────────────┤
+  │ celkem              │ 1 879     │ 193,3   │ ≈ $108 │                   │
+  │                     │           │ mil.    │        │                   │
+  └─────────────────────┴───────────┴─────────┴────────┴───────────────────┘
+
+  Hlavní konverzace stály $33,75, pomocní agenti (47) $73,78. Ceník jsem načetl
+  27. 10. 2026 z https://platform.claude.com/docs/en/about-claude/pricing: vstup
+  $4, zápis do cache $5 (5 min) / $8 (1 h), čtení z cache $0,20, výstup $20 za
+  milion tokenů, web search $10 za 1 000.
+
+  Duplicity: ze 4 121 záznamů usage jsem vyřadil 2 242. Deduplikoval jsem podle
+  dvojice (message.id, requestId): Claude Code zapisuje každý blok odpovědi jako
+  samostatný záznam se stejnou usage. Duplicity mají vždy shodnou usage a
+  napříč soubory se žádná dvojice neopakuje.
+
+  Srovnání s mereni.txt: čísla subagentů v mereni.txt nejsou spotřeba, ale
+  velikost kontextu posledního volání každého agenta. Ve fázi B sedí přesně (861
+  130), ve fázi A se liší o 794 tokenů a příčinu z polí usage nezjistím.
+  Skutečná spotřeba subagentů je 39,1 mil. (fáze A) a 17,1 mil. (fáze B) tokenů,
+  tedy zhruba 20–31× víc.
+
+  Neznámé, do součtu nezahrnuté:
+  - tokeny pomocného modelu u WebFetch,
+  - tokeny výsledků WebSearch,
+  - asistence AI u ruční kontroly mimo Claude Code,
+  - webové požadavky v krocích 0, 1, 3, 5 a 6,
+  - session kroku 7 (tahle).
+
+  Výsledné varianty pro svět (5 600 / 8 300 / 11 000 zařazených, poměr 56/27)
+
+  ┌────────────────────────────┬─────────────┬──────────────┬───────────────┐
+  │                            │    nízká    │   střední    │    vysoká     │
+  ├────────────────────────────┼─────────────┼──────────────┼───────────────┤
+  │ AI s kontrolním vzorkem    │ $19 541     │ $43 648      │ $96 163       │
+  ├────────────────────────────┼─────────────┼──────────────┼───────────────┤
+  │ člověk s kontrolním        │ 475 h       │ 1 210 h      │ 2 210 h       │
+  │ vzorkem                    │             │              │               │
+  ├────────────────────────────┼─────────────┼──────────────┼───────────────┤
+  │ člověk s plnou ruční       │ 1 348 h     │ 3 122 h      │ 5 958 h       │
+  │ kontrolou                  │             │              │               │
+  ├────────────────────────────┼─────────────┼──────────────┼───────────────┤
+  │ aktualizace ročně: AI /    │ $4 190 / 49 │ $16 303 / 83 │ $51 445 / 125 │
+  │ člověk                     │  h          │  h           │  h            │
+  └────────────────────────────┴─────────────┴──────────────┴───────────────┘
+
+  - Při polovičním poměru kandidátů k zařazeným vychází AI ve střední variantě
+    na $22 124, při dvojnásobném na $86 697.
+  - Kontrolní vzorek je dimenzovaný na ±5 p. b. při 95 % (n₀ ≈ 385 s korekcí na
+    konečný soubor), ve střední a vysoké variantě zvlášť pro VC, PE a family
+    office.
+  - Většinu hodin tvoří ruční rozhodnutí nevyřešených a hraničních kandidátů (v
+    pilotu 12 z 56), ne samotný vzorek.
+  - Při sazbě nad zhruba 36–44 USD/h stojí lidská práce víc než AI.
+  - Čas ruční kontroly je všude označený jako modelový předpoklad 10–15 min na
+    firmu, ne jako měření.
+
+  Odchylky od zadání:
+  - Logy kroků 0 a 1 jsou v jiném adresáři,
+    ~/.claude/projects/-Users-petrstastny/ (session běžely z domovské složky).
+    Přiřadil jsem je podle času a kromě polí usage, model a čas jsem u nich
+    přečetl i pole cwd.
+  - Násobky pro svět (tokeny 1,0/1,5/2,5, čas člověka 1,0/1,25/1,5), počet
+    opakování režie a podíl tokenů na aktualizaci jsou moje předpoklady. Jsou
+    nahoře v scripts/naklady.py a v NAKLADY.md jsou tak označené.
+
+  Po potvrzení commitnu jedním commitem „Krok 7: odhad nákladů pro celý svět“ a
+  pushnu.
+
+❯ Výsledek přijímám. Před commitem doplň a uprav:
+
+  1. Do scripts/naklady.py přidej parametr hodinové sazby člověka
+     v USD, výchozí modelový předpoklad 25 USD/h.
+     Pro každou variantu vypiš AI, cenu lidské práce a součet:
+     - sestavení s kontrolním vzorkem,
+     - sestavení s plnou kontrolou,
+     - roční aktualizaci.
+       Sazbu označ jako předpoklad, nikoli zjištěnou tržní cenu.
+  2. V NAKLADY.md výslovně rozliš:
+     - kontrolní vzorek slouží k odhadu kvality souboru,
+     - nepotvrzuje správnost každého jednotlivého záznamu,
+     - čtvrtletní aktualizace modeluje poslední investice,
+       nikoli úplnou údržbu všech údajů a hledání nových investorů.
+       Interval ±5 procentních bodů popisuje výběrovou nejistotu,
+       nikoli možné chyby samotného hodnocení s asistencí AI.
+  3. Větu „Při sazbě nad zhruba 36–44 USD/h stojí lidská práce víc než AI“
+     přeformuluj jako poměr nákladových položek (při této sazbě je lidská
+     práce větší položkou než AI) a dodej, že to neříká nic
+     o nahraditelnosti lidské kontroly.
+  4. Kontrolní vzorek počítej ve všech třech variantách stejnou metodou
+     (vrstvy VC, PE, family office). Pokud to pro nízkou variantu
+     nedává smysl, ponech jednu vrstvu, ale výslovně uveď, že rozdíl
+     mezi variantami je zčásti dán metodou.
+  5. Čas na ruční rozhodnutí nevyřešených a hraničních kandidátů označ
+     výslovně jako modelový předpoklad: v pilotu je nikdo ručně
+     nerozhodoval. Uveď, že tato položka tvoří většinu lidských hodin
+     a je nejméně podložená.
+  6. Doplň, že přepočet ≈ 108 USD pokrývá jen zachycenou část práce
+     (viz seznam neznámých) a že většinu ze 193 mil. tokenů tvoří čtení
+     kontextu z cache za nižší cenu.
+
+  Ostatní metodiku neměň. Skripty spusť dvakrát, ověř shodný výstup,
+  vypiš výsledné součty (AI / člověk / celkem po variantách) a commitni
+  jedním commitem „Krok 7: odhad nákladů pro celý svět“ a pushni.
+  Vypiš git log -1 --stat.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Bash(python3 - <<'EOF'
+      p='scripts/naklady.py'; s=open(p).read()…)
+  ⎿  Updated ai-log/07-naklady/vypocet.md (+28 -12)
+      70  | násobek tokenů na kandidáta vůči ČR | 1,00 | 1,50 | 2,50 |
+      71  | násobek času člověka vůči ČR | 1,00 | 1,25 | 1,50 |
+      72  | min na firmu, ruční kontrola (základ ČR) | 10,0 | 12,5 | 15,0
+           |
+      73 -| vrstev kontrolního vzorku | 1 | 3 | 3 |                      
+      73 +| vrstev kontrolního vzorku | 3 | 3 | 3 |                      
+      74  | opakování režie metodiky | 5 | 10 | 20 |
+      75  | aktualizace: podíl tokenů obohacení | 0,20 | 0,35 | 0,50 |
+      76  | aktualizace: min na kontrolu poslední investice | 3,0 | 4,0 |
+           5,0 |
+     ...
+       83  | kandidátů (× 56/27) | 11 615 | 17 215 | 22 815 |
+       84  | AI: sběr, obohacení, kontrola druhým agentem | $19 363 | $43
+            049 | $95 088 |
+       85  | AI: režie metodiky | $54,87 | $110 | $219 |
+       86 -| AI: podpora ruční kontroly – vzorek | $123 | $489 | $855 |  
+       87 -| **AI celkem, varianta s kontrolním vzorkem** | **$19 541** |
+          - **$43 648** | **$96 163** |                                  
+       86 +| AI: podpora ruční kontroly – vzorek | $295 | $489 | $855 |  
+       87 +| **AI celkem, varianta s kontrolním vzorkem** | **$19 713** |
+          + **$43 648** | **$96 163** |                                  
+       88  | AI celkem, varianta s plnou ruční kontrolou | $21 325 | $47 
+           397 | $104 670 |
+       89 -| AI na zařazený záznam (vzorek) | $3,49 | $5,26 | $8,74 |    
+       89 +| AI na zařazený záznam (vzorek) | $3,52 | $5,26 | $8,74 |    
+       90  | čas agentů při souběžnosti pilotu | 418 h | 930 h | 2 054 h 
+           |
+       91  | min člověka na firmu | 10,0 | 15,6 | 22,5 |
+       92  | ruční rozhodnutí nevyřešených a hraničních | 415 h | 961 h |
+            1 833 h |
+       93 -| kontrolní vzorek: firem | 360 | 958 | 1 005 |               
+       94 -| kontrolní vzorek: hodin | 60 h | 249 h | 377 h |            
+       95 -| **člověk celkem, varianta se vzorkem** | **475 h** | **1 210
+          - h** | **2 210 h** |                                          
+       93 +| kontrolní vzorek: firem | 867 | 958 | 1 005 |               
+       94 +| kontrolní vzorek: hodin | 144 h | 249 h | 377 h |           
+       95 +| **člověk celkem, varianta se vzorkem** | **559 h** | **1 210
+          + h** | **2 210 h** |                                          
+       96  | plná ruční kontrola: hodin | 933 h | 2 161 h | 4 125 h |
+       97  | **člověk celkem, varianta s plnou kontrolou** | **1 348 h** 
+           | **3 122 h** | **5 958 h** |
+       98  | aktualizace: AI ročně (4× poslední investice) | $4 190 | $16
+            303 | $51 445 |
+       99  | aktualizace: vzorek poslední investice za čtvrtletí | 245 | 
+           248 | 250 |
+      100  | aktualizace: člověk ročně | 49 h | 83 h | 125 h |
+      101  
+      102 -Kontrolní vzorek: n₀ = z²·p(1−p)/E² pro p = 0,5, E = 5 p. b., 
+          -95 % (n₀ ≈ 385), s korekcí na konečný soubor, ve variantě se 3
+          - vrstvami zvlášť pro VC, PE a family office. Vzorek poslední i
+          -nvestice pro aktualizaci: p = 0,79 z pilotu.                  
+      102 +Kontrolní vzorek: n₀ = z²·p(1−p)/E² pro p = 0,5, E = 5 p. b., 
+          +95 % (n₀ ≈ 385), s korekcí na konečný soubor, ve všech variant
+          +ách zvlášť pro VC, PE a family office. Vzorek poslední investi
+          +ce pro aktualizaci: p = 0,79 z pilotu.                        
+      103  
+      104 -### 3.3 Citlivost na poměr kandidátů k zařazeným              
+      104 +### 3.3 Náklady v USD při sazbě 25 USD/h                      
+      105 +                                                              
+      106 +Sazba 25 USD/h je modelový předpoklad, ne zjištěná tržní cena.
+     … 28 more lines (ctrl+o to expand)
+  ⎿  Updated scripts/naklady.py (+22 -3)
+      73      # adaptaci: kolikrát se opakuje režie metodiky (nové typy i
+          nvestorů, jazykové oblasti)
+      74      # podil_aktualizace: tokeny čtvrtletního přepočtu poslední 
+          investice vůči obohacení
+      75      # min_posledni_investice: ruční kontrola jediného pole za č
+          tvrtletí, min na záznam
+      76 -    "nízká": dict(nasobek_ai=1.0, nasobek_clovek=1.0, min_na_fi
+         -rmu=10.0, vrstvy=1, adaptaci=5,                                
+      76 +    "nízká": dict(nasobek_ai=1.0, nasobek_clovek=1.0, min_na_fi
+         +rmu=10.0, vrstvy=3, adaptaci=5,                                
+      77                    podil_aktualizace=0.20, min_posledni_investic
+          e=3.0),
+      78      "střední": dict(nasobek_ai=1.5, nasobek_clovek=1.25, min_na
+          _firmu=12.5, vrstvy=3, adaptaci=10,
+      79                      podil_aktualizace=0.35, min_posledni_invest
+          ice=4.0),
+     ...
+      83  Z = 1.959964  # 95 %
+      84  PRESNOST_VZORKU = 0.05  # ±5 p. b.
+      85  CTVRTLETI_ROCNE = 4
+      86 +# Hodinová sazba člověka v USD: MODELOVÝ PŘEDPOKLAD, ne zjištěn
+         +á tržní cena.                                                  
+      87 +SAZBA_USD_H = 25.0                                             
+      88  
+      89  POLE = ["input_tokens", "cache_creation_5m", "cache_creation_1h
+          ", "cache_read_input_tokens",
+      90          "output_tokens"]
+     ...
+      335          w(f"| {nazev} | " + " | ".join(f(vysledky[x]) for x in
+            VARIANTY) + " |")
+      336      w("")
+      337      w(f"Kontrolní vzorek: n₀ = z²·p(1−p)/E² pro p = 0,5, E = {
+           cislo(PRESNOST_VZORKU * 100)} p. b., 95 % "
+      336 -      f"(n₀ ≈ 385), s korekcí na konečný soubor, ve variantě s
+          -e 3 vrstvami zvlášť pro VC, PE a family office. "             
+      338 +      f"(n₀ ≈ 385), s korekcí na konečný soubor, ve všech vari
+          +antách zvlášť pro VC, PE a family office. "                   
+      339        f"Vzorek poslední investice pro aktualizaci: p = {cislo(
+           SPRAVNOST_POSLEDNI_INVESTICE, 2)} z pilotu.\n")
+      340  
+      339 -    w("### 3.3 Citlivost na poměr kandidátů k zařazeným\n")   
+      341 +    w(f"### 3.3 Náklady v USD při sazbě {cislo(SAZBA_USD_H)} U
+          +SD/h\n")                                                      
+      342 +    w(f"Sazba {cislo(SAZBA_USD_H)} USD/h je modelový předpokla
+          +d, ne zjištěná tržní cena.\n")                                
+      343 +    w("| položka | " + " | ".join(VARIANTY) + " |")           
+      344 +    w("|---|---|---|---|")                                    
+      345 +    for nazev, ai, h in [                                     
+      346 +        ("sestavení s kontrolním vzorkem", lambda r: r["ai_pro
+          +dukce"] + r["ai_rezie"] + r["ai_rucni_vzorek"],               
+      347 +         lambda r: r["vzorek_h"] + r["nevyresene_h"]),        
+      348 +        ("sestavení s plnou kontrolou", lambda r: r["ai_produk
+          +ce"] + r["ai_rezie"] + r["ai_rucni_plna"],                    
+      349 +         lambda r: r["plna_h"] + r["nevyresene_h"]),          
+      350 +        ("roční aktualizace", lambda r: r["akt_ai"], lambda r:
+          + r["akt_h"]),                                                 
+      351 +    ]:                                                        
+      352 +        w(f"| {nazev}: AI | " + " | ".join(usd(ai(vysledky[x])
+          +) for x in VARIANTY) + " |")                                  
+      353 +        w(f"| {nazev}: člověk | " + " | ".join(usd(h(vysledky[
+          +x]) * SAZBA_USD_H) for x in VARIANTY) + " |")                 
+      354 +        w(f"| **{nazev}: celkem** | " + " | ".join(           
+      355 +            "**" + usd(ai(vysledky[x]) + h(vysledky[x]) * SAZB
+          +A_USD_H) + "**" for x in VARIANTY) + " |")                    
+      356 +    w("")                                                     
+     … 5 more lines (ctrl+o to expand)
+
+⏺ Výpočet je upravený a oba běhy dávají shodný výstup. Teď upravím NAKLADY.md.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 11 lines, removed 3 lines
+       4  
+       5  ## Shrnutí
+       6  
+       7 -- **Pilot (kroky 0–6) spotřeboval 193,3 mil. tokenů v 1 879 pož
+         -adavcích na API, v přepočtu na ceny API zhruba 108 USD.** Pilot
+         - běžel v rámci předplatného Claude, takže jde o přepočet na cen
+         -y API, ne o skutečně zaplacenou částku. Do součtu nejsou zahrnu
+         -té části, které logy nezachytily (viz [Neznámé](#neznámé-položk
+         -y)).                                                           
+       7 +- **Pilot (kroky 0–6) spotřeboval 193,3 mil. tokenů v 1 879 pož
+         +adavcích na API, v přepočtu na ceny API zhruba 108 USD.** Pilot
+         + běžel v rámci předplatného Claude, takže jde o přepočet na cen
+         +y API, ne o skutečně zaplacenou částku. Částka 108 USD pokrývá 
+         +jen tu část práce, kterou logy zachytily. Co v ní chybí, je v [
+         +seznamu neznámých položek](#neznámé-položky). Většinu ze 193 mi
+         +l. tokenů (96 %) tvoří opakované čtení kontextu z cache, které 
+         +je za dvacetinu ceny běžného vstupu.                           
+       8  - **Na kandidáta** stojí produkční část (sběr, obohacení, kontr
+          ola druhým agentem) 1,67 USD a zhruba 2 min 10 s času agentů př
+          i souběžnosti pilotu. **Na zařazený záznam** je to 3,46 USD.
+       9 -- **Svět (5 600–11 000 zařazených, PLAN.md 8.2):** AI zhruba **
+         -20 000 / 44 000 / 96 000 USD** (nízká / střední / vysoká varian
+         -ta) s kontrolním vzorkem. Lidská práce **475 / 1 210 / 2 210 h*
+         -* s kontrolním vzorkem, nebo **1 350 / 3 120 / 5 960 h** s plno
+         -u ruční kontrolou. Aktualizace stojí ročně 4 000 / 16 000 / 51 
+         -000 USD za AI a 49 / 83 / 125 h práce člověka.                 
+      10 -- Jak předpokládal PLAN.md, největší položkou bude lidská práce
+         -: při sazbě nad zhruba 36–44 USD/h stojí víc než AI i ve varian
+         -tě s pouhým vzorkem. Hodinovou sazbu nechávám jako parametr. Ne
+         -jvětší část hodin připadá na ruční rozhodnutí nevyřešených a hr
+         -aničních kandidátů, ne na kontrolní vzorek.                    
+       9 +- **Svět (5 600–11 000 zařazených, PLAN.md 8.2), při sazbě 25 U
+         +SD/h (modelový předpoklad):**                                  
+      10 +                                                               
+      11 +  | | nízká | střední | vysoká |                               
+      12 +  |---|---|---|---|                                            
+      13 +  | sestavení s kontrolním vzorkem: AI / člověk / celkem | $19 
+         +713 / $13 983 (559 h) / **$33 696** | $43 648 / $30 253 (1 210 
+         +h) / **$73 901** | $96 163 / $55 255 (2 210 h) / **$151 418** |
+      14 +  | sestavení s plnou kontrolou: AI / člověk / celkem | $21 325
+         + / $33 704 (1 348 h) / **$55 029** | $47 397 / $78 053 (3 122 h
+         +) / **$125 450** | $104 670 / $148 958 (5 958 h) / **$253 628**
+         + |                                                             
+      15 +  | roční aktualizace poslední investice: AI / člověk / celkem 
+         +| $4 190 / $1 225 (49 h) / **$5 415** | $16 303 / $2 067 (83 h)
+         + / **$18 370** | $51 445 / $3 125 (125 h) / **$54 570** |      
+      16 +                                                               
+      17 +- **Poměr nákladových položek:** při sazbě 25 USD/h je v sestav
+         +ení s kontrolním vzorkem větší položkou AI. Lidská práce by byl
+         +a větší položkou od sazby zhruba 35–44 USD/h. S plnou ruční kon
+         +trolou je lidská práce větší položkou už při 25 USD/h. Tento po
+         +měr popisuje jen rozložení nákladů a **neříká nic o tom, zda lz
+         +e lidskou kontrolu nahradit**.                                 
+      18 +- Většinu lidských hodin tvoří ruční rozhodnutí nevyřešených a 
+         +hraničních kandidátů, ne kontrolní vzorek. Je to zároveň nejmén
+         +ě podložená položka: čas na jedno rozhodnutí je modelový předpo
+         +klad a v pilotu tyto kandidáty nikdo ručně nerozhodoval.       
+      19  - Výsledek je zhruba úměrný poměru kandidátů k zařazeným (56/27
+           z českého pilotu). Pro svět je to neověřený pracovní předpokla
+          d. Při polovičním poměru vychází AI ve střední variantě na 22 0
+          00 USD, při dvojnásobném na 87 000 USD.
+      20  
+      21  ## 1. Naměřená spotřeba pilotu
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 2 lines, removed 1 line
+      105  
+      106  - **Počet zařazených:** scénář z PLAN.md 8.2, po typech: VC 2 
+           400–5 600, PE 2 800–4 200, family office 400–1 200, celkem 5 6
+           00–11 000. Střední varianta bere středy rozpětí (8 300). CVC a
+            andělé ve scénáři chybějí (PLAN.md 8.2).
+      107  - **Kandidátů na zařazený záznam: 56/27 = 2,07, jen jako praco
+           vní předpoklad.** Pilot zahrnoval český VC/CVC, svět i PE a fa
+           mily office, a přenositelnost poměru jsme neověřili. U family 
+           office (PLAN.md počítá s tím, že pravidly projde 5–15 %) může 
+           být poměr výrazně horší. Citlivost uvádím níže.
+      108 -- **Podíl nevyřešených a hraničních:** 12/56 = 21,4 % kandidát
+          -ů (výsledek agenta před ruční kontrolou). Každý takový případ 
+          -musí rozhodnout člověk, jinak databáze nevznikne. Čas na jeden
+          - případ beru stejný jako u ruční kontroly firmy (předpoklad). 
+      108 +- **Podíl nevyřešených a hraničních:** 12/56 = 21,4 % kandidát
+          +ů (výsledek agenta před ruční kontrolou, naměřeno). Každý tako
+          +vý případ musí rozhodnout člověk, jinak databáze nevznikne. **
+          +Čas na jedno rozhodnutí je modelový předpoklad** (stejný jako 
+          +u ruční kontroly firmy). V pilotu nevyřešené a hraniční kandid
+          +áty nikdo ručně nerozhodoval, takže čas na ně není naměřený an
+          +i odhadnutý z praxe. Tato položka tvoří ve všech variantách vě
+          +tšinu lidských hodin s kontrolním vzorkem (415 z 559 h, 961 z 
+          +1 210 h, 1 833 z 2 210 h) a je ze všech položek nejméně podlož
+          +ená.                                                          
+      109 +- **Hodinová sazba člověka: 25 USD/h, modelový předpoklad**, n
+          +e zjištěná tržní cena. Je to parametr `SAZBA_USD_H` ve skriptu
+          +.                                                             
+      110  
+      111  | parametr (předpoklad) | nízká | střední | vysoká |
+      112  |---|---|---|---|
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 1 line, removed 1 line
+      114  | násobek tokenů na kandidáta vůči ČR | 1,0 | 1,5 | 2,5 |
+      115  | násobek času člověka vůči ČR | 1,0 | 1,25 | 1,5 |
+      116  | min na firmu, ruční kontrola (základ, modelový předpoklad) |
+            10 | 12,5 | 15 |
+      117 -| vrstev kontrolního vzorku | 1 | 3 (VC, PE, FO) | 3 (VC, PE, 
+          -FO) |                                                         
+      117 +| vrstev kontrolního vzorku | 3 (VC, PE, FO) | 3 (VC, PE, FO) 
+          +| 3 (VC, PE, FO) |                                            
+      118  | opakování režie metodiky (nové typy, jazykové oblasti) | 5 |
+            10 | 20 |
+      119  | aktualizace: tokeny přepočtu vůči obohacení | 20 % | 35 % | 
+           50 % |
+      120  | aktualizace: min na kontrolu poslední investice | 3 | 4 | 5 
+           |
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 7 lines, removed 1 line
+      130  
+      131  ### Výsledky
+      132  
+      133 -Kontrolní vzorek je náhodný výběr zařazených záznamů pro odhad
+          - přesnosti s přesností **±5 p. b. při 95 %**. Vzorec je n₀ = z
+          -²·p(1−p)/E² pro nejhorší případ p = 0,5, tedy n₀ ≈ 385, s kore
+          -kcí na konečný soubor. Nízká varianta odhaduje jen přesnost ce
+          -lé databáze (1 vrstva). Střední a vysoká odhadují přesnost zvl
+          -ášť pro VC, PE a family office (3 vrstvy po zhruba 260–360 záz
+          -namech), protože typy se podle PLAN.md 8.2 ve spolehlivosti li
+          -ší. ±5 p. b. platí pro pole, které je vyplněné u všech záznamů
+          - vzorku. U ticketu a kapitálu, vyplněných v pilotu u 55 % a 40
+          - % záznamů, bude interval širší.                              
+      133 +Kontrolní vzorek je náhodný výběr zařazených záznamů pro odhad
+          + přesnosti s přesností **±5 p. b. při 95 %**. Vzorec je n₀ = z
+          +²·p(1−p)/E² pro nejhorší případ p = 0,5, tedy n₀ ≈ 385, s kore
+          +kcí na konečný soubor. Ve všech třech variantách se počítá ste
+          +jnou metodou, zvlášť pro VC, PE a family office (3 vrstvy po z
+          +hruba 200–360 záznamech), protože typy se podle PLAN.md 8.2 ve
+          + spolehlivosti liší. Velikost vzorku se mezi variantami liší j
+          +en podle velikosti vrstev. ±5 p. b. platí pro pole, které je v
+          +yplněné u všech záznamů vzorku. U ticketu a kapitálu, vyplněný
+          +ch v pilotu u 55 % a 40 % záznamů, bude interval širší.       
+      134  
+      135 +**Co kontrolní vzorek dokládá a co ne:**                      
+      136 +                                                              
+      137 +- Kontrolní vzorek slouží k **odhadu kvality souboru** (podílu
+          + správných záznamů a polí v databázi jako celku a po typech). 
+      138 +- **Nepotvrzuje správnost každého jednotlivého záznamu.** Zázn
+          +amy mimo vzorek zůstávají ručně nezkontrolované a chyby v nich
+          + vzorek neopraví. Opraví se jen chyby nalezené ve vzorku.     
+      139 +- Interval ±5 p. b. popisuje **jen výběrovou nejistotu** (vliv
+          + náhodného výběru). Nezahrnuje možné chyby samotného hodnocení
+          + s asistencí AI: když se kontrolor s AI splete, interval to ne
+          +zachytí.                                                      
+      140 +                                                              
+      141  | položka | nízká | střední | vysoká |
+      142  |---|---|---|---|
+      143  | zařazených záznamů | 5 600 | 8 300 | 11 000 |
+⏺ Update(NAKLADY.md)
+  ⎿  Added 6 lines, removed 6 lines
+      144  | kandidátů (× 56/27) | 11 615 | 17 215 | 22 815 |
+      145  | AI: sběr, obohacení, kontrola druhým agentem | $19 363 | $43
+            049 | $95 088 |
+      146  | AI: režie metodiky | $55 | $110 | $219 |
+      147 -| AI: podpora ruční kontroly (vzorek) | $123 | $489 | $855 |  
+      148 -| **AI celkem, s kontrolním vzorkem** | **$19 541** | **$43 64
+          -8** | **$96 163** |                                           
+      147 +| AI: podpora ruční kontroly (vzorek) | $295 | $489 | $855 |  
+      148 +| **AI celkem, s kontrolním vzorkem** | **$19 713** | **$43 64
+          +8** | **$96 163** |                                           
+      149  | AI celkem, s plnou ruční kontrolou | $21 325 | $47 397 | $10
+           4 670 |
+      150 -| AI na zařazený záznam (vzorek) | $3,49 | $5,26 | $8,74 |    
+      150 +| AI na zařazený záznam (vzorek) | $3,52 | $5,26 | $8,74 |    
+      151  | čas agentů při souběžnosti pilotu | 418 h | 930 h | 2 054 h 
+           |
+      152  | min člověka na firmu | 10,0 | 15,6 | 22,5 |
+      153 -| ruční rozhodnutí nevyřešených a hraničních | 415 h | 961 h |
+          - 1 833 h |                                                    
+      154 -| kontrolní vzorek: firem / hodin | 360 / 60 h | 958 / 249 h |
+          - 1 005 / 377 h |                                              
+      155 -| **člověk celkem, s kontrolním vzorkem** | **475 h** | **1 21
+          -0 h** | **2 210 h** |                                         
+      153 +| ruční rozhodnutí nevyřešených a hraničních (**modelový předp
+          +oklad**) | 415 h | 961 h | 1 833 h |                          
+      154 +| kontrolní vzorek: firem / hodin | 867 / 144 h | 958 / 249 h 
+          +| 1 005 / 377 h |                                             
+      155 +| **člověk celkem, s kontrolním vzorkem** | **559 h** | **1 21
+          +0 h** | **2 210 h** |                                         
+      156  | plná ruční kontrola zařazených | 933 h | 2 161 h | 4 125 h |
+      157  | **člověk celkem, s plnou ruční kontrolou** | **1 348 h** | *
+           *3 122 h** | **5 958 h** |
+      158  
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 19 lines, removed 1 line
+      163  | AI ročně (4 přepočty) | $4 190 | $16 303 | $51 445 |
+      164  | člověk ročně | 49 h | 83 h | 125 h |
+      165  
+      166 -Aktualizace nezahrnuje vyhledávání nových investorů, kteří do 
+          -databáze přibudou, ani vyřazení těch, kdo vypadnou z 24měsíční
+          -ho okna (to přepočet poslední investice zachytí jen u už zařaz
+          -ených).                                                       
+      166 +**Rozsah aktualizace:** čtvrtletní aktualizace modeluje jen po
+          +le poslední investice (a s ním to, zda investor zůstává v 24mě
+          +síčním okně). **Nemodeluje úplnou údržbu všech údajů** (typ, s
+          +ídlo, sektory, ticket, kapitál, zdroje) **ani hledání nových i
+          +nvestorů**, kteří do databáze přibudou. Skutečné náklady na úd
+          +ržbu proto budou vyšší.                                       
+      167  
+      168 +### Náklady v USD                                             
+      169 +                                                              
+      170 +Sazba 25 USD/h je modelový předpoklad, ne zjištěná tržní cena.
+      171 +                                                              
+      172 +| položka | nízká | střední | vysoká |                        
+      173 +|---|---|---|---|                                             
+      174 +| sestavení s kontrolním vzorkem: AI | $19 713 | $43 648 | $96
+          + 163 |                                                        
+      175 +| sestavení s kontrolním vzorkem: člověk | $13 983 | $30 253 |
+          + $55 255 |                                                    
+      176 +| **sestavení s kontrolním vzorkem: celkem** | **$33 696** | *
+          +*$73 901** | **$151 418** |                                   
+      177 +| sestavení s plnou kontrolou: AI | $21 325 | $47 397 | $104 6
+          +70 |                                                          
+      178 +| sestavení s plnou kontrolou: člověk | $33 704 | $78 053 | $1
+          +48 958 |                                                      
+      179 +| **sestavení s plnou kontrolou: celkem** | **$55 029** | **$1
+          +25 450** | **$253 628** |                                     
+      180 +| roční aktualizace: AI | $4 190 | $16 303 | $51 445 |        
+      181 +| roční aktualizace: člověk | $1 225 | $2 067 | $3 125 |      
+      182 +| **roční aktualizace: celkem** | **$5 415** | **$18 370** | *
+          +*$54 570** |                                                  
+      183 +                                                              
+      184 +Při sazbě 25 USD/h je v sestavení s kontrolním vzorkem větší p
+          +oložkou AI, s plnou kontrolou lidská práce. Ve variantě se vzo
+          +rkem by lidská práce byla větší položkou od sazby zhruba 35 US
+          +D/h (nízká), 36 USD/h (střední) a 44 USD/h (vysoká). Je to jen
+          + poměr nákladových položek. Neříká nic o tom, zda lze lidskou 
+          +kontrolu nahradit kontrolním agentem (oddíl 5).               
+      185 +                                                              
+      186  ### Citlivost na poměr kandidátů k zařazeným
+      187  
+      188  Mění se položky úměrné počtu kandidátů: AI za sběr, obohacení 
+           a kontrolu a ruční rozhodnutí nevyřešených. Poloviční poměr (1
+           ,04) je blízko spodní meze 1, kdy by pravidly prošel každý kan
+           didát.
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 1 line, removed 1 line
+      189  
+      190  | varianta | poměr 1,04 (× 0,5) | poměr 2,07 (pilot) | poměr 4
+           ,15 (× 2) |
+      191  |---|---|---|---|
+      192 -| nízká: AI / člověk (vzorek) | $9 859 / 267 h | $19 541 / 475
+          - h | $38 904 / 890 h |                                        
+      192 +| nízká: AI / člověk (vzorek) | $10 032 / 352 h | $19 713 / 55
+          +9 h | $39 077 / 974 h |                                       
+      193  | střední: AI / člověk (vzorek) | $22 124 / 730 h | $43 648 / 
+           1 210 h | $86 697 / 2 171 h |
+      194  | vysoká: AI / člověk (vzorek) | $48 619 / 1 294 h | $96 163 /
+            2 210 h | $191 252 / 4 044 h |
+      195  
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 3 lines, removed 1 line
+      44  | 6 měření | 24 | 2 127 099 | – | $1,89 | 13 min (rozpětí v log
+          u) |
+      45  | **celkem** | **1 879** | **193 251 338** | **138 848 168 (47 
+          agentů)** | **$108** | |
+      46  
+      47 -Po druzích: hlavní konverzace 372 požadavků, 54,4 mil. tokenů, 
+         -33,75 USD. Pomocní agenti 1 507 požadavků, 138,8 mil. tokenů, 7
+         -3,78 USD. Rozpad na vstup, zápis do cache (5 min / 1 h), čtení 
+         -z cache a výstup je ve [vypocet.md](ai-log/07-naklady/vypocet.m
+         -d). Čtení z cache tvoří 96 % tokenů, ale jen zhruba třetinu cen
+         -y (185 mil. × 0,20 USD/MTok ≈ 37 USD). Výstup (1,5 mil. tokenů)
+         - stojí zhruba 31 USD a zápis do cache zhruba 40 USD.           
+      47 +Po druzích: hlavní konverzace 372 požadavků, 54,4 mil. tokenů, 
+         +33,75 USD. Pomocní agenti 1 507 požadavků, 138,8 mil. tokenů, 7
+         +3,78 USD. Rozpad na vstup, zápis do cache (5 min / 1 h), čtení 
+         +z cache a výstup je ve [vypocet.md](ai-log/07-naklady/vypocet.m
+         +d).                                                            
+      48  
+      49 +**Co číslo 193 mil. tokenů znamená:** většinu (185 mil., 96 %) 
+         +tvoří čtení kontextu z cache. Agent při každém volání znovu čte
+         + celý dosavadní kontext a cache ho účtuje za 0,20 USD/MTok míst
+         +o 4 USD/MTok. Na ceně má tak čtení z cache jen zhruba třetinu (
+         +≈ 37 USD). Výstup (1,5 mil. tokenů) stojí zhruba 31 USD a zápis
+         + do cache zhruba 40 USD. **Přepočet ≈ 108 USD pokrývá jen zachy
+         +cenou část práce**, viz [Neznámé položky](#neznámé-položky).   
+      50 +                                                               
+      51  „Rozpětí v logu“ je čas od prvního do posledního volání API v k
+          roku, včetně čekání na uživatele. Kde mereni.txt čas měří, použ
+          ívám jeho hodnotu.
+      52  
+      53  **Webové požadavky (mereni.txt):** obohacení 1 121 (WebSearch 3
+          18, WebFetch 447 včetně 82 neúspěšných a 1 hlavního agenta, ARE
+          S 225, funding.tech.eu 85, curl 46). Kontrola druhým agentem 44
+          5 (WebSearch 34, WebFetch 5, curl 406). Zkušební dávka 51. Ve s
+          běru kandidátů je známé jen „zhruba 120“ požadavků na funding.t
+          ech.eu (README), ostatní kroky požadavky neměřily.
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 3 lines, removed 1 line
+      213  
+      214  - **Podhodnocení AI:** chybí tokeny pomocného modelu WebFetch,
+            tokeny výsledků WebSearch, poplatky za vyhledávání ve sběru k
+           andidátů a asistence AI mimo Claude Code (oddíl 1, Neznámé pol
+           ožky).
+      215  - **Pilot je malý a místní:** 56 kandidátů, český VC/CVC. Náso
+           bky pro svět, minuty na firmu, počet opakování režie a podíl t
+           okenů aktualizace jsou předpoklady, ne měření.
+      216 -- **Čas ruční kontroly je modelový předpoklad** (10–15 min na 
+          -firmu s asistencí AI), ne naměřená hodnota.                   
+      216 +- **Čas ruční kontroly je modelový předpoklad** (10–15 min na 
+          +firmu s asistencí AI), ne naměřená hodnota. Totéž platí pro ča
+          +s na ruční rozhodnutí nevyřešených a hraničních kandidátů, kte
+          +ré v pilotu nikdo nerozhodoval. Tato položka tvoří většinu lid
+          +ských hodin a je nejméně podložená.                           
+      217 +- **Hodinová sazba 25 USD/h je modelový předpoklad**, ne zjišt
+          +ěná tržní cena.                                               
+      218 +- **Kontrolní vzorek** odhaduje kvalitu souboru, nepotvrzuje j
+          +ednotlivé záznamy. Jeho ±5 p. b. popisuje jen výběrovou nejist
+          +otu, ne chyby hodnocení s asistencí AI. **Aktualizace** modelu
+          +je jen poslední investici, ne úplnou údržbu ani hledání nových
+          + investorů.                                                   
+      219  - **Sběr kandidátů** škáluji na kandidáta. Ve světě ale závisí
+            spíš na počtu zemí a zdrojových seznamů a na deduplikaci mezi
+            zeměmi.
+      220  - **Časy kroků 0, 1, 3, 5 a 6** jsou rozpětí volání v logu vče
+           tně čekání na uživatele. Čas agentů ve světě (930 h ve střední
+            variantě) platí při souběžnosti pilotu. Při vyšší souběžnosti
+            se zkrátí, omezují ho ale limity účtu.
+      221  - **Ceny:** stav ceníku k 27. 10. 2026, bez Batch API. Pilot t
+           ěžil z cache promptů Claude Code. Jiná orchestrace se slabším 
+           využitím cache by vyšla dráž.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Update(NAKLADY.md)
+  ⎿  Added 1 line, removed 1 line
+      219  - **Sběr kandidátů** škáluji na kandidáta. Ve světě ale závisí
+            spíš na počtu zemí a zdrojových seznamů a na deduplikaci mezi
+            zeměmi.
+      220  - **Časy kroků 0, 1, 3, 5 a 6** jsou rozpětí volání v logu vče
+           tně čekání na uživatele. Čas agentů ve světě (930 h ve střední
+            variantě) platí při souběžnosti pilotu. Při vyšší souběžnosti
+            se zkrátí, omezují ho ale limity účtu.
+      221  - **Ceny:** stav ceníku k 27. 10. 2026, bez Batch API. Pilot t
+           ěžil z cache promptů Claude Code. Jiná orchestrace se slabším 
+           využitím cache by vyšla dráž.
+      222 -- **Mimo výpočet:** hodinová sazba (výsledky jsou v hodinách),
+          - placené rejstříky a databáze transakcí, infrastruktura a vývo
+          -j nástrojů pro škálování, CVC a andělé (nejsou ve scénáři PLAN
+          -.md 8.2).                                                     
+      222 +- **Mimo výpočet:** placené rejstříky a databáze transakcí, in
+          +frastruktura a vývoj nástrojů pro škálování, CVC a andělé (nej
+          +sou ve scénáři PLAN.md 8.2).                                  
+      223  - **Přiřazení logů:** session kroků 0 a 1 leží v jiném adresář
+           i logů (domovská složka) a přiřadil jsem je podle času a pole 
+           `cwd`.
+      224  
+      225  ## Zdroje
+
+⏺ Bash(for i in 1 2; do python3 scripts/spotreba_z_logu.py >/dev/null && python3
+      scripts/naklady.py >/dev/null && md5 -q ai-log/07-naklady/spotreba.csv
+      ai-log/07-nakla…)
+  ⎿  (No output)
+
+⏺ Oba běhy daly shodný výstup. Commituji a pushuji.
+
+⏺ Bash(git add NAKLADY.md ai-log/07-naklady scripts/naklady.py
+      scripts/spotreba_z_logu.py && git commit -q -F - <<'EOF'
+      Krok 7: odhad nákladů pro celý svět…)
+  ⎿  (No output)
+
+⏺ Krok 7 je commitnutý jako 7496056 („Krok 7: odhad nákladů pro celý svět“) a
+  pushnutý na origin/main. Oba skripty jsem spustil dvakrát a výstupy
+  (spotreba.csv i vypocet.md) byly pokaždé shodné.
+
+  Výsledné součty (sazba 25 USD/h, modelový předpoklad, ne tržní cena)
+
+  ┌──────────┬────────────────────┬────────────────────┬───────────────────┐
+  │          │    sestavení s     │ sestavení s plnou  │      roční        │
+  │ varianta │    kontrolním      │  kontrolou: AI /   │ aktualizace: AI / │
+  │          │   vzorkem: AI /    │  člověk / celkem   │  člověk / celkem  │
+  │          │  člověk / celkem   │                    │                   │
+  ├──────────┼────────────────────┼────────────────────┼───────────────────┤
+  │          │ $19 713 / $13 983  │ $21 325 / $33 704  │ $4 190 / $1 225   │
+  │ nízká    │ (559 h) / $33 696  │ (1 348 h) / $55    │ (49 h) / $5 415   │
+  │          │                    │ 029                │                   │
+  ├──────────┼────────────────────┼────────────────────┼───────────────────┤
+  │          │ $43 648 / $30 253  │ $47 397 / $78 053  │ $16 303 / $2 067  │
+  │ střední  │ (1 210 h) / $73    │ (3 122 h) / $125   │ (83 h) / $18 370  │
+  │          │ 901                │ 450                │                   │
+  ├──────────┼────────────────────┼────────────────────┼───────────────────┤
+  │          │ $96 163 / $55 255  │ $104 670 / $148    │ $51 445 / $3 125  │
+  │ vysoká   │ (2 210 h) / $151   │ 958 (5 958 h) /    │ (125 h) / $54 570 │
+  │          │ 418                │ $253 628           │                   │
+  └──────────┴────────────────────┴────────────────────┴───────────────────┘
+
+  Co se oproti minulé verzi změnilo:
+  - Nízká varianta: teď počítá kontrolní vzorek stejně jako ostatní, ve třech
+    vrstvách (VC, PE, family office). Vzorek se tím zvětšil z 360 na 867 firem,
+    lidská práce z 475 na 559 h a AI z $19 541 na $19 713. Rozdíl mezi
+    variantami teď dává jen velikost vrstev, ne metoda.
+  - Poměr nákladů: při 25 USD/h je v sestavení s kontrolním vzorkem větší
+    položkou AI, s plnou kontrolou lidská práce. Ve variantě se vzorkem by
+    lidská práce převážila od sazby zhruba 35–44 USD/h. V NAKLADY.md je to
+    popsané jen jako poměr nákladových položek, s výslovnou poznámkou, že o
+    nahraditelnosti lidské kontroly to nic neříká.
+  - Ruční rozhodnutí nevyřešených a hraničních kandidátů: je označené jako
+    modelový předpoklad, protože je v pilotu nikdo nerozhodoval. Je to zároveň
+    většina lidských hodin ve variantě se vzorkem (415 z 559, 961 z 1 210, 1 833
+    z 2 210 h) a nejméně podložená položka.
+  - Doplněná vysvětlení v NAKLADY.md:
+    - Kontrolní vzorek odhaduje kvalitu souboru, ale nepotvrzuje správnost
+      jednotlivých záznamů.
+    - Interval ±5 p. b. popisuje jen výběrovou nejistotu, ne chyby hodnocení s
+      asistencí AI.
+    - Aktualizace počítá jen s poslední investicí, ne s úplnou údržbou údajů ani
+      s hledáním nových investorů.
+    - Částka ≈ 108 USD pokrývá jen práci zachycenou v logech.
+    - 96 % ze 193 mil. tokenů je čtení kontextu z cache, které je za dvacetinu
+      ceny běžného vstupu.
+
+  git log -1 --stat:
+  commit 74960560feacf497d9e15a833e8967751f572836
+  Author: PetrStastny1 <Petr_Stastny@seznam.cz>
+  Date:   Tue Oct 27 18:39:15 2026 +0100
+
+      Krok 7: odhad nákladů pro celý svět
+
+      Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+   NAKLADY.md                     | 232 +++++++++++++++++++++++++
+   ai-log/07-naklady/spotreba.csv |  19 +++
+   ai-log/07-naklady/vypocet.md   | 134 +++++++++++++++
+   scripts/naklady.py             | 377
+  +++++++++++++++++++++++++++++++++++++++++
+   scripts/spotreba_z_logu.py     | 190 +++++++++++++++++++++
+   5 files changed, 952 insertions(+)
