@@ -1,0 +1,865 @@
+
+❯ Krok 6: úprava PLAN.md a měření přesnosti na ručně zkontrolovaném vzorku.
+  Přečti PLAN.md (hlavně body 6 a 7), README.md, data/hodnoceni.csv,
+  data/vzorek_kontroly.csv,
+  ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv
+  a ai-log/04-kontrola-zdroju/slepa_kontrola.csv. Data neměň.
+
+  A. PLAN.md – oprav jen to, co neodpovídá skutečnému postupu, ostatní nech:
+  1. Bod 7 „ručně ověřím celý vzorek“ → ručně byl ověřen náhodný výběr
+     20 z 27 zařazených (seed 20261027, scripts/vyber_vzorku.py,
+     data/vzorek_kontroly.csv). Jde o odchylku od plánu; kontrola proběhla
+     s asistencí AI (odkaz na oddíl README „Ruční kontrola – kdo hodnotil“).
+     Výsledky platí pro 27 zařazených, ne pro všech 56 kandidátů. Nevyřešené
+     a vyřazené kandidáty nikdo ručně nekontroloval. Recall z vzorku spočítat
+     nejde; pokud orientační srovnání s CEE Funding Map / CVCA (bod 7.3)
+     nebylo provedeno, napiš to výslovně.
+  2. Wilsonův interval: doplň, že předpokládá nezávislá pozorování; řádky
+     po polích jsou seskupené po firmách, takže souhrnný interval přes
+     všechna pole je optimistický. Vzorek tvoří 20 z 27, interval bez korekce
+     na konečný soubor je proto v tomto ohledu spíš konzervativní.
+  3. Druhy ne: každé ne patří do jedné ze tří skupin a vykazují se odděleně:
+     - chyba_vystupu: skutečná chyba agenta. Prázdná pricina_chyby u ne
+       znamená příčinu „neurčeno“ (z logu nejde doložit, zda agent zdroj
+       viděl); cz-zaka-vc/posledni_investice má chyba_pravidel ve významu
+       chybne_pouziti_pravidla (agent odmítl přípustný zdroj),
+     - upresneni_metodiky: cz-n1-ventures/rozsah_pilotu,
+       cz-ii-biotech-investments/rozsah_pilotu (výklad sídla upřesněný až
+       při ruční kontrole),
+     - omezeni_schematu: cz-ii-biotech-investments/ticket (schéma neumí dva
+       intervaly).
+     Zařazení do skupin drž v jedné tabulce v kódu skriptu podle id/pole,
+     ne podle textu poznámky.
+  4. nelze_overit není potvrzená chyba; vykazuje se zvlášť jako nedostatečný
+     důkaz.
+  5. Úplnost: prázdný verdikt s poznámkou „nevyplneno – pouze úplnost“ se
+     do přesnosti nepočítá; „Potvrzené chybění“ (údaj existuje, agent ho
+     nezapsal) se vykazuje v úplnosti zvlášť.
+
+  B. scripts/mereni.py – deterministický, bez síťových přístupů, výstup do
+     data/mereni_vzorku.md a souhrn na stdout. Výsledky nikdy nesčítej do
+     jednoho čísla.
+
+  1. Zařazení investorů (jednotka = firma, 20 firem). Z polí existence,
+     investicni_cinnost, je_investor, typ, rozsah_pilotu: aspoň jedno ne →
+     chybně zařazen; jinak aspoň jedno nelze_overit → neověřeno; jinak
+     správně. U chybně zařazených uveď skupinu ne (bod A.3).
+     a) přesnost správně/(správně+chybně) a dolní mez správně/20,
+     b) varianta jen vůči chybám výstupu: firmy, jejichž chybné zařazení je
+        jen upresneni_metodiky, z jmenovatele vynech (nepočítej je jako
+        správné) a uveď nový jmenovatel; stejně uveď dolní mez,
+     vše s Wilsonovým intervalem 95 %.
+  2. Správnost vyplněných polí (jednotka = řádek id/pole). Po polích
+     a souhrnně: ano, ne podle tří skupin z A.3, nelze_overit. Přesnost
+     ano/(ano+ne) a dolní mez ano/(ano+ne+nelze_overit), s Wilsonovým
+     intervalem. Zvlášť varianta jen vůči chybám výstupu: řádky
+     upresneni_metodiky a omezeni_schematu z jmenovatele vynech a uveď nový
+     jmenovatel.
+  3. Úplnost: u sektory, ticket, kapital podíl vyplněných polí mezi 20 firmami
+     a počet potvrzených chybění.
+  4. Seznam všech ne (id, pole, skupina, příčina včetně „neurčeno“,
+     zkrácená poznámka) a všech nelze_overit.
+  5. Srovnání s kontrolním agentem (fáze A, slepa_kontrola.csv) jen pro
+     20 firem vzorku. Plně srovnatelná mapování: pravni_subjekt→existence,
+     investicni_cinnost→investicni_cinnost, typ→typ, sidlo→rozsah_pilotu,
+     posledni_investice→posledni_investice, sektory, ticket,
+     kapital[*]→kapital, slouceni. Ostatní pole agenta (web, faze, status,
+     dalsi_investice) uveď jako nezmapovaná.
+     Pro plně srovnatelná pole vykaž zvlášť:
+     - chyby výstupu (konečné ne ve skupině chyba_vystupu): kolik jich agent
+       označil (zaver ≠ sedi) a kolik ne,
+     - upresneni_metodiky a omezeni_schematu: kolik jich agent označil,
+     - konečné nelze_overit: kolik jich agent označil,
+     - označení agenta, která konečné hodnocení nepotvrdilo (konečně ano),
+     - kolik konečných ne bylo nalezeno už před přečtením nálezů AI
+       (hodnoceni_pred_nalezy_ai.csv) a kolik až po nich; totéž pro změny
+       ano → nelze_overit.
+
+     Potvrzené chyby, neověřené položky a změny metodiky vyhodnocuj
+     odděleně. Počítej unikátní dvojice id/pole, nikoli počet řádků
+     kontrolního agenta. U více nálezů k jednomu poli zachovej jejich
+     podrobnosti; pouhé upozornění na jinou část pole není automaticky
+     zachycením konečné chyby.
+
+     Mapování nastroj→je_investor a jistota_investice→nezavislost_zdroju
+     označ jako částečné a vykazuj samostatně.
+
+     Výsledky po přečtení nálezů AI nejsou nezávislý referenční standard.
+     Srovnání popisuje shodu s konečným hodnocením s asistencí AI
+     a změny po přečtení nálezů, nikoli nezávisle změřenou přesnost
+     kontrolního agenta.
+
+  C. Kontrola výpočtu. Následující počty jsem spočítal nezávisle z
+     data/hodnoceni.csv. Slouží ke kontrole, nejsou cílem: pokud skript dá
+     jiné, výpočet kvůli nim neupravuj, dohledej příčinu rozdílu, vypiš ji
+     a nic necommituj.
+     - zařazení: 15 správně, 2 chybně (N1, i&i Biotech, obě
+       upresneni_metodiky), 3 neověřeno (Tensor, i&i Prague, Presto),
+     - pole: 157 ano, 7 ne (4 chyba_vystupu – všechny posledni_investice:
+       Look AI, Purple, Reflex, ZAKA; 2 upresneni_metodiky;
+       1 omezeni_schematu), 12 nelze_overit, 25 jen úplnost,
+     - posledni_investice 15 ano / 4 ne / 1 nelze_overit,
+       nezavislost_zdroju 14 ano / 6 nelze_overit.
+
+  D. Commitni jedním commitem „Krok 6: měření přesnosti na vzorku 20 firem,
+     úprava PLAN.md podle skutečného postupu“, pushni a vypiš
+     git log -1 --stat a obsah data/mereni_vzorku.md.
+
+⏺ Začnu přečtením podkladů.
+
+  Searched for 1 pattern, read 1 file, listed 2 directories (ctrl+o to expand)
+
+⏺ Bash(sed -n 345,372p PLAN.md; grep -n -i 'vzorek\|vzorku\|ručn' PLAN.md | head
+      -50)
+  ⎿  (No output)
+
+⏺ Bash(grep -n -i 'orientačn\|srovnán' PLAN.md; sed -n 300,345p PLAN.md)
+  ⎿  (No output)
+
+⏺ Bash(head -5 data/hodnoceni.csv; python3 -c "
+      import csv,collections…)
+  ⎿  (No output)
+
+⏺ Data načtena, teď procházím řádky vzorku (ne, nelze_overit, prázdné verdikty),
+  abych správně postavil klasifikaci.
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Bash(head -3 ai-log/04-kontrola-zdroju/slepa_kontrola.csv; python3 -c "
+      import csv,collections…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Kontrolní počty z bodu C odpovídají mým průzkumným dotazům. Ještě ověřím,
+  jestli proběhlo srovnání s CEE Funding Map/CVCA nebo výpočet recallu, a
+  podívám se na existující skript ohledně stylu.
+
+⏺ Bash(grep -rli 'recall' ai-log scripts data 2>/dev/null | head; ls
+      data/opraveno; git remote -v; sed -n 1,40p scripts/vyber_vzorku.py)
+  ⎿  (No output)
+
+⏺ Mám vše potřebné. Píšu scripts/mereni.py; zařazení ne do skupin a posouzení,
+  zda nález agenta míří na tutéž vadu, budou v tabulkách v kódu podle id/pole.
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Write(scripts/mereni.py)
+  ⎿  Wrote 493 lines to scripts/mereni.py
+       1 """Měření přesnosti na ručně zkontrolovaném vzorku (krok 7, PLAN
+       2
+       3 Čte data/hodnoceni.csv, data/vzorek_kontroly.csv, ai-log/02-oboh
+         aceni/mapovani_id.csv,
+       5 a ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv, nic z n
+         ich nemění.
+         ku.md a souhrn na stdout.
+       7 Výsledky se nikdy nesčítají do jednoho čísla.
+       8
+      10 """
+     … +617 lines (ctrl+o to expand)
+
+⏺ Bash(python3 scripts/mereni.py && git status --short)
+  ⎿  Created data/mereni_vzorku.md (+194 -0)
+        1 +# Měření přesnosti na vzorku 20 firem                         
+        2 +                                                              
+        3 +Vygenerováno skriptem `scripts/mereni.py` z `data/hodnoceni.cs
+          +v`. Nepřepisovat ručně.                                       
+        4 +                                                              
+        5 +## Co čísla znamenají a co ne                                 
+        6 +                                                              
+        7 +- Ručně byl ověřen náhodný výběr 20 z 27 zařazených (seed 2026
+          +1027, `scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv`), 
+          +s asistencí AI (README, „Ruční kontrola – kdo hodnotil“). Výsl
+          +edky platí pro zařazené, ne pro všech 56 kandidátů. Nevyřešené
+          + a vyřazené kandidáty nikdo ručně nekontroloval, recall z vzor
+          +ku spočítat nejde.                                            
+        8 +- `nelze_overit` není potvrzená chyba, vykazuje se zvlášť jako
+          + nedostatečný důkaz.                                          
+        9 +- Konečná `ne` jsou rozdělená do skupin `chyba_vystupu` (skute
+          +čná chyba agenta), `upresneni_metodiky` (výklad upřesněný až p
+          +ři ruční kontrole) a `omezeni_schematu` (schéma hodnotu neumí 
+          +zapsat). Zařazení do skupin je v tabulce `SKUPINA_NE` ve skrip
+          +tu.                                                           
+       10 +- Wilsonův interval předpokládá nezávislá pozorování. Řádky po
+          + polích jsou seskupené po firmách, takže souhrnný interval pře
+          +s všechna pole je optimistický. Interval je bez korekce na kon
+          +ečný soubor (20 z 27), v tomto ohledu je spíš konzervativní.  
+       11 +- Přesnost = ano/(ano+ne), dolní mez = ano/(ano+ne+nelze_overi
+          +t), tj. jako by každé `nelze_overit` bylo chybou.             
+       12 +                                                              
+       13 +## 1. Zařazení investorů (jednotka = firma, 20 firem)         
+       14 +                                                              
+       15 +Pole: existence, investicni_cinnost, je_investor, typ, rozsah_
+          +pilotu. Aspoň jedno `ne` → chybně zařazen; jinak aspoň jedno `
+          +nelze_overit` → neověřeno; jinak správně.                     
+       16 +                                                              
+       17 +- správně 15, chybně 2, neověřeno 3                           
+       18 +                                                              
+       19 +| firma | stav | pole `ne` (skupina) | pole `nelze_overit` |  
+       20 +|---|---|---|---|                                             
+       21 +| cz-ii-biotech-investments | chybne | rozsah_pilotu (upresnen
+          +i_metodiky) | – |                                             
+       22 +| cz-ii-prague | neovereno | – | je_investor |                
+       23 +| cz-n1-ventures | chybne | rozsah_pilotu (upresneni_metodiky)
+          + | existence |                                                
+       24 +| cz-presto-ventures | neovereno | – | investicni_cinnost, je_
+          +investor |                                                    
+       25 +| cz-tensor-ventures | neovereno | – | rozsah_pilotu |        
+       26 +                                                              
+       27 +a) Všechna `ne`:                                              
+       28 +                                                              
+       29 +- přesnost správně/(správně+chybně): 15/17 = 88,2 % (95% CI 65
+          +,7 %–96,7 %)                                                  
+       30 +- dolní mez správně/20: 15/20 = 75,0 % (95% CI 53,1 %–88,8 %) 
+       31 +                                                              
+       32 +b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení je 
+          +jen `upresneni_metodiky` (cz-ii-biotech-investments, cz-n1-ven
+          +tures), jsou z jmenovatele vynechané, nepočítají se jako správ
+          +né.                                                           
+       33 +                                                              
+       34 +- přesnost, jmenovatel 15: 15/15 = 100,0 % (95% CI 79,6 %–100,
+          +0 %)                                                          
+       35 +- dolní mez, jmenovatel 18: 15/18 = 83,3 % (95% CI 60,8 %–94,2
+          + %)                                                           
+       36 +                                                              
+       37 +## 2. Správnost vyplněných polí (jednotka = řádek id/pole)    
+       38 +                                                              
+       39 +`jen úplnost` = pole agent nevyplnil, do přesnosti nevstupuje 
+          +(oddíl 3).                                                    
+       40 +                                                              
+     … 154 more lines (ctrl+o to expand)
+  ⎿  (files that changed while this command ran, by the command or by
+     another process; a convenience view, not a review or audit of the
+     command)
+
+⏺ Skript dává 156 ano místo kontrolních 157. Dohledávám příčinu.
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Zjistil jsem příčinu: řádek v mapovani_id.csv počítá navíc řádek nad rámec 10
+  polí, takže 157+7+12+25=201 místo očekávaných 200 (20×10). Podle zadání
+  výpočet neupravuji ani nedělám commit – zkontroluji ještě ostatní kontrolní
+  počty a připravím úpravy PLAN.md bez commitu.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Ostatní kontrolní počty sedí, jen opravím drobnost „z vzorku“ a aktualizuji
+  PLAN.md.
+
+⏺ Update(scripts/mereni.py)
+  ⎿  Added 1 line, removed 1 line
+      177  w(f"- Ručně byl ověřen náhodný výběr 20 z {CELKEM_ZARAZENYCH} 
+           zařazených (seed 20261027, "
+      178    "`scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv`), s a
+           sistencí AI (README, "
+      179    "„Ruční kontrola – kdo hodnotil“). Výsledky platí pro zařaze
+           né, ne pro všech 56 kandidátů. "
+      180 -  "Nevyřešené a vyřazené kandidáty nikdo ručně nekontroloval, 
+          -recall z vzorku spočítat nejde.")                             
+      180 +  "Nevyřešené a vyřazené kandidáty nikdo ručně nekontroloval, 
+          +recall ze vzorku spočítat nejde.")                            
+      181  w("- `nelze_overit` není potvrzená chyba, vykazuje se zvlášť j
+           ako nedostatečný důkaz.")
+      182  w("- Konečná `ne` jsou rozdělená do skupin `chyba_vystupu` (sk
+           utečná chyba agenta), "
+      183    "`upresneni_metodiky` (výklad upřesněný až při ruční kontrol
+           e) a `omezeni_schematu` "
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      234  
+      235  ## 7. Měření přesnosti
+      236  
+      237 -Vzorek je malý, proto ho ručně ověřím celý, ne jen náhodný výb
+          -ěr.                                                           
+      237 +Původně jsem chtěl vzorek ručně ověřit celý. **Odchylka od plá
+          +nu:** ručně byl ověřen náhodný výběr 20 z 27 zařazených (seed 
+          +20261027, `scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv
+          +`). Kontrola proběhla s asistencí AI, viz README, oddíl „Ruční
+          + kontrola – kdo hodnotil“. Výsledky proto platí pro 27 zařazen
+          +ých, ne pro všech 56 kandidátů. Nevyřešené a vyřazené kandidát
+          +y nikdo ručně nekontroloval, takže správnost vyřazení (bod 3 n
+          +íže) změřená není a recall (bod 4 níže) ze vzorku spočítat nej
+          +de. Orientační srovnání se seznamy CEE Funding Map a CVCA prov
+          +edeno nebylo. Výpočet je ve `scripts/mereni.py`, výsledky v `d
+          +ata/mereni_vzorku.md`.                                        
+      238  
+      239  Ukládám tři věci zvlášť a žádnou nepřepisuji:
+      240  
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      244  
+      245  Přesnost měřím na původním výstupu agenta, ne na opravené verz
+           i.
+      246  
+      247 -Hodnotu `nelze_overit` vykazuji samostatně. Nepočítám ji jako 
+          -správnou ani jako chybnou. U každého čísla uvedu počty `ano`, 
+          -`ne` a `nelze_overit` a dvě přesnosti:                        
+      247 +Hodnotu `nelze_overit` vykazuji samostatně. Nepočítám ji jako 
+          +správnou ani jako chybnou. Není to potvrzená chyba, vykazuji j
+          +i zvlášť jako nedostatečný důkaz. U každého čísla uvedu počty 
+          +`ano`, `ne` a `nelze_overit` a dvě přesnosti:                 
+      248  
+      249  - **přesnost na ověřitelných:** `ano` / (`ano` + `ne`), tedy j
+           en na záznamech, které šlo ověřit,
+      250  - **konzervativní spodní hranice:** `ano` / všechny posouzené,
+            jako by každé `nelze_overit` bylo chybou.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      254  Měřím čtyři věci:
+      255  
+      256  1. **Přesnost zařazení (precision):** podíl zařazených záznamů
+           , které splňují pravidla pilotu, tedy jsou investor podle bodů
+            2 a 3 (`je_investor` = `ano`), mají typ VC nebo CVC a sídlo v
+            ČR (`rozsah_pilotu` = `ano`). Tohle je hlavní číslo, protože 
+           zadání říká, že databáze nesmí obsahovat náhodné firmy. Zvlášť
+            uvedu, kolik chybně zařazených je skutečný investor mimo rozs
+           ah pilotu a kolik není investor vůbec.
+      257 -2. **Přesnost po polích:** pro každé pole zařazených záznamů z
+          -vlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vy
+          -plněných. Ticket a kapitál budou vyplněné výrazně méně často n
+          -ež existence a poslední investice.                            
+      257 +2. **Přesnost po polích:** pro každé pole zařazených záznamů z
+          +vlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vy
+          +plněných. Ticket a kapitál budou vyplněné výrazně méně často n
+          +ež existence a poslední investice. Prázdný verdikt s poznámkou
+          + „nevyplneno – pouze úplnost“ (agent pole nevyplnil) do přesno
+          +sti nevstupuje. „Potvrzené chybění“ (údaj ve zdroji existuje, 
+          +agent ho nezapsal) vykazuji v úplnosti zvlášť.                
+      258  3. **Správnost vyřazení:** zvlášť pro vyřazené a hraniční podí
+           l kandidátů, kteří podle ruční kontroly opravdu nesplňují prav
+           idla pilotu (`je_investor` = `ne` nebo `rozsah_pilotu` = `ne`)
+           , zvlášť podíl, u kterých sedí kategorie vyřazení (u `neni_inv
+           estor` musí být `je_investor` = `ne`, u `mimo_rozsah_pilotu` m
+           usí být `je_investor` = `ano` a `rozsah_pilotu` = `ne`), a zvl
+           ášť podíl, u kterých sedí důvod vyřazení. Skutečný investor vy
+           řazený jako `neni_investor` je chyba kategorie, i když vyřazen
+           í z pilotu je správné.
+      259  4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:**
+            ze všech kandidátů, kteří podle ruční kontroly splňují pravid
+           la pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u z
+           ařazených, vyřazených, hraničních i nevyřešených), podíl, kter
+           ý agent zařadil. Nevyřešený kandidát, kterého ručně zařadím, s
+           e počítá jako nezařazený agentem. Číslo platí jen pro kandidát
+           y, které jsme prověřili. Neříká nic o investorech, kteří se me
+           zi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplno
+           st všech investorů na trhu. Mezi kandidáty nejsou ani subjekty
+           , jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_s
+           idlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistot
+           u uvedu u recallu i u místního rozsahu (bod 8.3).
+      260  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      260  
+      261  Nevyřešené kandidáty vykazuji zvlášť: počet, podíl ze všech pr
+           ověřených kandidátů a kolik z nich jsem ručně zařadil. Do přes
+           nosti zařazení ani do správnosti vyřazení nevstupují. Jejich p
+           odíl je zároveň podklad pro náklady na ruční kontrolu (bod 10)
+           .
+      262  
+      263 -U každého podílu s jasným čitatelem a jmenovatelem (obě přesno
+          -sti, správnost vyřazení, recall v rámci prověřeného souboru) u
+          -vedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak 
+          -moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je in
+          -terval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo pod
+          -ílu i intervalu N/A. Interval popisuje jen nejistotu podílu v 
+          -pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani 
+          -o nejistotě globálního scénáře z bodu 8.                      
+      263 +U každého podílu s jasným čitatelem a jmenovatelem (obě přesno
+          +sti, správnost vyřazení, recall v rámci prověřeného souboru) u
+          +vedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak 
+          +moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je in
+          +terval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo pod
+          +ílu i intervalu N/A. Interval popisuje jen nejistotu podílu v 
+          +pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani 
+          +o nejistotě globálního scénáře z bodu 8. Wilsonův interval pře
+          +dpokládá nezávislá pozorování. Řádky po polích jsou ale seskup
+          +ené po firmách, takže souhrnný interval přes všechna pole je o
+          +ptimistický. Vzorek tvoří 20 z 27 zařazených a interval je bez
+          + korekce na konečný soubor, v tomto ohledu je proto spíš konze
+          +rvativní.                                                     
+      264  
+      265  Pro každou chybu zapíšu do sloupce `pricina_chyby`, kde vznikl
+           a: `spatny_zdroj`, `chybne_cteni` (agent zdroj špatně přečetl)
+           , `zastaraly_udaj` nebo `chyba_pravidel`. To je podklad pro RE
+           ADME.
+      266  
+
+⏺ Update(PLAN.md)
+  ⎿  Added 8 lines
+      264  
+      265  Pro každou chybu zapíšu do sloupce `pricina_chyby`, kde vznikl
+           a: `spatny_zdroj`, `chybne_cteni` (agent zdroj špatně přečetl)
+           , `zastaraly_udaj` nebo `chyba_pravidel`. To je podklad pro RE
+           ADME.
+      266  
+      267 +**Druhy `ne`.** Každé `ne` patří do jedné ze tří skupin a vyka
+          +zuji je odděleně:                                             
+      268 +                                                              
+      269 +- `chyba_vystupu`: skutečná chyba agenta. Prázdná `pricina_chy
+          +by` u `ne` znamená příčinu „neurčeno“ (z logu nejde doložit, z
+          +da agent zdroj viděl). `cz-zaka-vc`/`posledni_investice` má `c
+          +hyba_pravidel` ve významu `chybne_pouziti_pravidla` (agent odm
+          +ítl přípustný zdroj),                                         
+      270 +- `upresneni_metodiky`: `cz-n1-ventures`/`rozsah_pilotu` a `cz
+          +-ii-biotech-investments`/`rozsah_pilotu` (výklad sídla upřesně
+          +ný až při ruční kontrole),                                    
+      271 +- `omezeni_schematu`: `cz-ii-biotech-investments`/`ticket` (sc
+          +héma neumí dva intervaly).                                    
+      272 +                                                              
+      273 +Zařazení do skupin je v jedné tabulce v kódu `scripts/mereni.p
+          +y` podle id a pole, ne podle textu poznámky.                  
+      274 +                                                              
+      275  ## 8. Odhad rozsahu a spolehlivosti
+      276  
+      277  Sekce má dvě oddělené části: doložené statistiky ze zdrojů a m
+           oje vlastní odhady počtu investorů, kteří splňují pravidla z b
+           odů 2 a 3. Statistiky počítají subjekty podle definic svých au
+           torů, ne podle našich pravidel, a nejsou tedy počtem záznamů, 
+           které databáze bude mít.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      204  Nová konverzace se stejným modelem, která neviděla, jak záznam
+            vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj op
+           ravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stej
+           ný model, takže může dělat stejné chyby ve čtení zdrojů jako p
+           rvní agent. Jeho shoda proto není důkaz správnosti. Nenahrazuj
+           e ruční kontrolu, jen říká, kam se podívat dřív.
+      205  
+      206  **Ručně (já)**
+      207 -Ručně hodnotím všechny kandidáty ze vzorku, tedy zařazené i vy
+          -řazené a hraniční. Správnost zařazení a správnost vyřazení hod
+          -notím zvlášť.                                                 
+      207 +Ručně hodnotím všechny kandidáty ze vzorku, tedy zařazené i vy
+          +řazené a hraniční. Správnost zařazení a správnost vyřazení hod
+          +notím zvlášť. Skutečný postup se od toho odchýlil, viz bod 7. 
+      208  
+      209  U každého zařazeného záznamu (`data/vystup_agenta/investori.js
+           on`) otevřu zdroje a vyplním plnou kontrolní tabulku:
+      210  
+
+⏺ Bash(python3 scripts/mereni.py >/dev/null && python3 scripts/mereni.py | head
+      -3 && md5 -q data/mereni_vzorku.md && python3 scripts/mereni.py >/dev/null
+      && md5 -q da…)
+  ⎿  Updated data/mereni_vzorku.md (+1 -1)
+       4  
+       5  ## Co čísla znamenají a co ne
+       6  
+       7 -- Ručně byl ověřen náhodný výběr 20 z 27 zařazených (seed 20261
+         -027, `scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv`), s 
+         -asistencí AI (README, „Ruční kontrola – kdo hodnotil“). Výsledk
+         -y platí pro zařazené, ne pro všech 56 kandidátů. Nevyřešené a v
+         -yřazené kandidáty nikdo ručně nekontroloval, recall z vzorku sp
+         -očítat nejde.                                                  
+       7 +- Ručně byl ověřen náhodný výběr 20 z 27 zařazených (seed 20261
+         +027, `scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv`), s 
+         +asistencí AI (README, „Ruční kontrola – kdo hodnotil“). Výsledk
+         +y platí pro zařazené, ne pro všech 56 kandidátů. Nevyřešené a v
+         +yřazené kandidáty nikdo ručně nekontroloval, recall ze vzorku s
+         +počítat nejde.                                                 
+       8  - `nelze_overit` není potvrzená chyba, vykazuje se zvlášť jako 
+          nedostatečný důkaz.
+       9  - Konečná `ne` jsou rozdělená do skupin `chyba_vystupu` (skuteč
+          ná chyba agenta), `upresneni_metodiky` (výklad upřesněný až při
+           ruční kontrole) a `omezeni_schematu` (schéma hodnotu neumí zap
+          sat). Zařazení do skupin je v tabulce `SKUPINA_NE` ve skriptu.
+      10  - Wilsonův interval předpokládá nezávislá pozorování. Řádky po 
+          polích jsou seskupené po firmách, takže souhrnný interval přes 
+          všechna pole je optimistický. Interval je bez korekce na konečn
+          ý soubor (20 z 27), v tomto ohledu je spíš konzervativní.
+
+⏺ Skript dal u jednoho kontrolního počtu jiné číslo než ty, takže jsem podle
+  bodu C výpočet neupravoval a nic jsem necommitoval ani nepushnul. Commit (bod
+  D) zatím neproběhl.
+
+  Proč se to liší: skript napočítal 156 ano, tvoje kontrola 157. Rozdíl dělá
+  jediný řádek mapovani_id.csv, cz-nation1, slouceni = ano (sloučení Nation1 do
+  N1). Je to sice ano v data/hodnoceni.csv, ale nepatří k žádnému z 10 polí
+  zařazených firem. Do počítání polí ho skript nebere, jen do srovnání s
+  kontrolním agentem (mapování slouceni). Tvoje součty to potvrzují: 157 + 7 +
+  12 + 25 = 201, kdežto 20 firem × 10 polí = 200 řádků. Pokud je 156 správně,
+  souhrnná čísla polí jsou:
+  - přesnost 156/163 = 95,7 %, dolní mez 156/175 = 89,1 %,
+  - jen vůči chybám výstupu: přesnost 156/160 = 97,5 %, dolní mez 156/172 = 90,7
+    %.
+
+  Ostatní kontrolní počty sedí:
+  - Zařazení: 15 správně, 2 chybně (N1 a i&i Biotech, obě upresneni_metodiky), 3
+    neověřeno (Tensor, i&i Prague, Presto).
+  - Ne: 7, z toho 4 chyba_vystupu (všechny posledni_investice u Look AI, Purple,
+    Reflex a ZAKA), 2 upresneni_metodiky a 1 omezeni_schematu.
+  - Ostatní: 12 nelze_overit a 25 jen úplnost.
+  - Po polích: posledni_investice 15 / 4 / 1, nezavislost_zdroju 14 / 6.
+
+  Co je hotové, ale necommitnuté:
+  - scripts/mereni.py: běží bez sítě a dvakrát dal identický výstup. Zařazení ne
+    do skupin a vlastní význam příčiny u ZAKA jsou v tabulkách v kódu podle id
+    a pole. Když se objeví ne, které v tabulce není, skript skončí chybou.
+  - Tabulka ZACHYCENI ve skriptu: zda nález kontrolního agenta míří na tutéž
+    vadu jako konečné hodnocení, jsem posoudil já z textů nálezů a poznámek, ne
+    skript. Prosím zkontroluj ji. U všech 9 dvojic, kde agent pole označil a
+    konečně je ne nebo nelze_overit, vychází, že jde o tutéž vadu.
+  - Výsledky srovnání s kontrolním agentem:
+    - Označil všechny 4 chyby výstupu i obě upřesnění metodiky.
+    - Neoznačil omezení schématu u ticketu i&i Biotech.
+    - Z konečných nelze_overit u plně srovnatelných polí označil 2 ze 4.
+    - 5 jeho označení konečné hodnocení nepotvrdilo.
+    - 3 ze 7 ne a všech 6 změn ano → nelze_overit vzniklo až po přečtení nálezů
+      AI.
+  - data/mereni_vzorku.md: vygenerovaný výstup se všemi tabulkami.
+  - PLAN.md:
+    - V bodě 7 je zapsaná odchylka od plánu: vzorek 20 z 27, kontrola s
+      asistencí AI, recall nejde spočítat a orientační srovnání s CEE Funding
+      Map / CVCA nebylo provedeno.
+    - Doplnil jsem výhradu k Wilsonovu intervalu, druhy ne, nelze_overit jako
+      nedostatečný důkaz a pravidla pro úplnost.
+    - Do bodu 6 jsem přidal jen odkaz na tuto odchylku. Jeho text „ručně
+      hodnotím všechny kandidáty“ už postupu neodpovídá.
+
+  Odkaz „bod 7.3“ jsem v PLAN.md jako orientační srovnání se seznamy nenašel,
+  proto to bod 7 uvádí jen obecně. Data jsem neměnil.
+
+  Rozhodni prosím, jestli platí 156 a mám commitnout a pushnout podle bodu D.
+  Druhá možnost je počítat řádek sloučení do polí, to by ale znamenalo změnit
+  definici výpočtu.
+
+❯ Potvrzuji 156 ano pro pole dvaceti firem. Kontrolu sloučení
+  Nation1 vykazuj samostatně (v data/mereni_vzorku.md uveď, že je to
+  1 řádek, ano, a do přesnosti polí nevstupuje); definici výpočtu neměň.
+
+  V PLAN.md oprav i přímé tvrzení „ručně hodnotím všechny kandidáty“,
+  aby odpovídalo skutečnému rozsahu kontroly.
+
+  Variantu 100 % označ jako správnost mezi 15 rozhodnutelnými
+  případy po vyloučení dvou změn metodiky. Vedle vždy uveď
+  3 neověřené případy; nejde o 100% ověřenou databázi.
+
+  Tabulku ZACHYCENI označ jako interpretační přiřazení provedené AI,
+  nikoli automaticky nebo nezávisle ověřenou skutečnost.
+
+  Skript spusť dvakrát a ověř shodný výstup. Potom commitni a pushni
+  podle původního bodu D a vypiš git log -1 --stat.
+  Data hodnocení ani původní výstup neměň.
+
+⏺ Update(scripts/mereni.py)
+  ⎿  Added 3 lines, removed 2 lines
+      63  NEZMAPOVANE = ["web", "faze", "status", "dalsi_investice"]
+      64  
+      65  # U dvojic, kde agent pole označil a konečné hodnocení je „ne“ 
+          nebo „nelze_overit“:
+      66 -# týká se nález agenta téže vady jako konečné hodnocení? Posouz
+         -eno ručně z textů                                              
+      67 -# (vysvetleni agenta vs. poznámka v hodnoceni.csv). Upozornění 
+         -na jinou část pole                                             
+      66 +# týká se nález agenta téže vady jako konečné hodnocení? Interp
+         +retační přiřazení                                              
+      67 +# provedené AI (Claude) porovnáním textů (vysvetleni agenta vs.
+         + poznámka v hodnoceni.csv),                                    
+      68 +# ne automaticky ani nezávisle ověřená skutečnost. Upozornění n
+         +a jinou část pole                                              
+      69  # se za zachycení nepočítá. Chybějící dvojici skript odmítne.
+      70  ZACHYCENI = {
+      71      ("cz-look-ai-ventures", "posledni_investice"): (True, "oboj
+          í: novější investice Embodied AI 22. 9. 2026"),
+
+⏺ Update(scripts/mereni.py)
+  ⎿  Added 6 lines, removed 2 lines
+      233  w(f"- přesnost správně/(správně+chybně): {podil(sp, sp + ch)}"
+           )
+      234  w(f"- dolní mez správně/20: {podil(sp, len(vzorek))}")
+      235  w("")
+      236 +neovereno = [f for f in vzorek if stav_firmy[f] == "neovereno"
+          +]                                                             
+      237  w("b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení 
+           je jen `upresneni_metodiky` "
+      238    f"({', '.join(jen_metodika) or 'žádné'}), jsou z jmenovatele
+            vynechané, nepočítají se jako správné.")
+      239  w("")
+      239 -w(f"- přesnost, jmenovatel {n_b}: {podil(sp, n_b)}")          
+      240 +w(f"- správnost mezi {n_b} rozhodnutelnými případy po vyloučen
+          +í {len(jen_metodika)} změn "                                  
+      241 +  f"metodiky: {podil(sp, n_b)}; vedle toho {no} neověřené ({',
+          + '.join(neovereno)}). "                                       
+      242 +  "Nejde o 100% ověřenou databázi.")                          
+      243  w(f"- dolní mez, jmenovatel {n_b_dolni}: {podil(sp, n_b_dolni)
+           }")
+      244  w("")
+      245  souhrn += [
+      246      f"Zařazení: správně {sp}, chybně {ch}, neověřeno {no}",
+      247      f"  přesnost {podil(sp, sp + ch)}; dolní mez {podil(sp, le
+           n(vzorek))}",
+      245 -    f"  jen chyby výstupu: přesnost {podil(sp, n_b)}; dolní me
+          -z {podil(sp, n_b_dolni)}",                                    
+      248 +    f"  správnost mezi {n_b} rozhodnutelnými po vyloučení {len
+          +(jen_metodika)} změn metodiky: "                              
+      249 +    f"{podil(sp, n_b)}, vedle toho {no} neověřené; dolní mez {
+          +podil(sp, n_b_dolni)}",                                       
+      250  ]
+      251  
+      252  # --- 2. pole ------------------------------------------------
+           -------------------
+
+⏺ Update(scripts/mereni.py)
+  ⎿  Added 13 lines
+      299      f"dolní mez {podil(c['ano'], jm_v + c['nelze_overit'])}",
+      300  ]
+      301  
+      302 +# Kontrola sloučení se vykazuje samostatně, do přesnosti polí 
+          +nevstupuje.                                                   
+      303 +slouceni = [r for r in hodnoceni if r["pole"] == "slouceni" an
+          +d firma(r["id"]) in vzorek_set]                               
+      304 +w("### Kontrola sloučení (samostatně)")                       
+      305 +w("")                                                         
+      306 +w(f"Řádků: {len(slouceni)}. Do přesnosti polí výše nevstupuje.
+          +")                                                            
+      307 +w("")                                                         
+      308 +for r in slouceni:                                            
+      309 +    w(f"- {r['id']} → {firma(r['id'])}: {r['hodnoceni']} ({zkr
+          +at(r['poznamka'])})")                                         
+      310 +w("")                                                         
+      311 +souhrn.append("Sloučení (samostatně, mimo přesnost polí): "   
+      312 +              + ", ".join(f"{r['id']} {r['hodnoceni']}" for r 
+          +in slouceni)                                                  
+      313 +              + f" ({len(slouceni)} řádek)")                  
+      314 +                                                              
+      315  # --- 3. úplnost ---------------------------------------------
+           -------------------
+      316  
+      317  w("## 3. Úplnost (sektory, ticket, kapitál)")
+
+⏺ Update(scripts/mereni.py)
+  ⎿  Added 4 lines, removed 3 lines
+      444    "agenta, takže není nezávislý referenční standard. Srovnání 
+           popisuje shodu s konečným "
+      445    "hodnocením a změny po přečtení nálezů, ne nezávisle změřeno
+           u přesnost kontrolního agenta. "
+      446    "Počítají se unikátní dvojice id/pole, ne řádky agenta (`kap
+           ital[0]`, `kapital[1]` … jsou "
+      447 -  "jedna dvojice). „Tutéž vadu“ = nález agenta se týká téže va
+          -dy jako konečné hodnocení, "                                  
+      448 -  "posouzeno ručně z textů (tabulka `ZACHYCENI` ve skriptu); u
+          -pozornění na jinou část pole "                                
+      449 -  "se nepočítá.")                                             
+      447 +  "jedna dvojice). „Tutéž vadu“ = nález agenta se týká téže va
+          +dy jako konečné hodnocení. "                                  
+      448 +  "Jde o interpretační přiřazení provedené AI porovnáním textů
+          + (tabulka `ZACHYCENI` ve "                                    
+      449 +  "skriptu), ne o automaticky ani nezávisle ověřenou skutečnos
+          +t; upozornění na jinou část "                                 
+      450 +  "pole se nepočítá.")                                        
+      451  w("")
+      452  w("Mapování: " + ", ".join(f"{a}→{b}" for a, b in MAPOVANI_PLN
+           E.items())
+      453    .replace("kapital→kapital", "kapital[*]→kapital") + " (plně 
+           srovnatelná); "
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      204  Nová konverzace se stejným modelem, která neviděla, jak záznam
+            vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj op
+           ravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stej
+           ný model, takže může dělat stejné chyby ve čtení zdrojů jako p
+           rvní agent. Jeho shoda proto není důkaz správnosti. Nenahrazuj
+           e ruční kontrolu, jen říká, kam se podívat dřív.
+      205  
+      206  **Ručně (já)**
+      207 -Ručně hodnotím všechny kandidáty ze vzorku, tedy zařazené i vy
+          -řazené a hraniční. Správnost zařazení a správnost vyřazení hod
+          -notím zvlášť. Skutečný postup se od toho odchýlil, viz bod 7. 
+      207 +Původní plán byl ručně hodnotit všechny kandidáty, tedy zařaze
+          +né i vyřazené a hraniční, a správnost zařazení a vyřazení hodn
+          +otit zvlášť. Skutečně jsem (s asistencí AI) ručně ohodnotil je
+          +n náhodný výběr 20 z 27 zařazených plnou kontrolní tabulkou ní
+          +že a sloučení Nation1 → N1. Vyřazené, hraniční ani nevyřešené 
+          +kandidáty jsem ručně nehodnotil, viz bod 7.                   
+      208  
+      209  U každého zařazeného záznamu (`data/vystup_agenta/investori.js
+           on`) otevřu zdroje a vyplním plnou kontrolní tabulku:
+      210  
+
+⏺ Ve stejném duchu opravím v PLAN.md ještě bod 9.6 a popis hodnoceni.csv v
+  tabulce souborů, protože tvrdí totéž.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      357  3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravi
+           del pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do 
+           databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta
+           /investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv
+           ` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvod
+           em, venture debt do `data/vystup_agenta/hranicni.csv`, nevyřeš
+           ený typ nebo nástroj do `data/vystup_agenta/nevyresene.csv`.
+      358  4. **Automatická kontrola:** skript z bodu 6.
+      359  5. **Kontrola druhým agentem** (stejný model v nové konverzaci
+           ): kontrola zdrojů.
+      360 -6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkr
+          -ácená u vyřazených, hraničních a nevyřešených, u nevyřešených 
+          -i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Původní výstu
+          -p agenta zůstává beze změny, opravy jdou do `data/opraveno/`. 
+      360 +6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkr
+          +ácená u vyřazených, hraničních a nevyřešených, u nevyřešených 
+          +i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Skutečně prob
+          +ěhla jen plná tabulka u náhodného výběru 20 z 27 zařazených (b
+          +od 7). Původní výstup agenta zůstává beze změny, opravy jdou d
+          +o `data/opraveno/`.                                           
+      361  7. **Měření a zápis výsledků.**
+      362  
+      363  Všechny konverzace exportuji do `ai-log/` a do README zapíšu, 
+           kde se agenti spletli.
+
+⏺ Update(PLAN.md)
+  ⎿  Added 1 line, removed 1 line
+      373  | `data/vystup_agenta/vyrazeni.csv` | původní výstup agenta: v
+           yřazení kandidáti, sloupce `id,nazev,web,kategorie,duvod,zdroj
+           _url,stazeno`, `kategorie` je `neni_investor` nebo `mimo_rozsa
+           h_pilotu`, beze změn |
+      374  | `data/vystup_agenta/hranicni.csv` | původní výstup agenta: h
+           raniční případy (venture debt), sloupce `id,nazev,web,druh,duv
+           od,zdroj_url,stazeno`, beze změn |
+      375  | `data/vystup_agenta/nevyresene.csv` | původní výstup agenta:
+            kandidáti s nevyřešeným typem nebo nástrojem k ručnímu rozhod
+           nutí, sloupce `id,nazev,web,otazka,moznosti,duvod,zdroj_url,st
+           azeno`, beze změn |
+      376 -| `data/hodnoceni.csv` | ruční hodnocení všech kandidátů, slou
+          -pce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,
+          -datum` |                                                      
+      376 +| `data/hodnoceni.csv` | ruční hodnocení, řádky pro všechny ka
+          +ndidáty, verdikty jen u ručně zkontrolovaného vzorku (bod 7), 
+          +sloupce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodno
+          +til,datum` |                                                  
+      377  | `data/opraveno/` | opravená verze po ručním hodnocení, stejn
+           é soubory a schéma jako `data/vystup_agenta/` |
+      378  | `scripts/` | skripty pro automatickou kontrolu a měření |
+      379  | `ai-log/` | exporty konverzací s agenty |
+
+⏺ Bash(python3 scripts/mereni.py >
+      /private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori-da
+      tabaze/c87fffba-6ae0-4c5b-9332-cc5575fa1b55/scratchpad/b1.…)
+  ⎿  Updated data/mereni_vzorku.md (+8 -2)
+      31  
+      32  b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení je j
+          en `upresneni_metodiky` (cz-ii-biotech-investments, cz-n1-ventu
+          res), jsou z jmenovatele vynechané, nepočítají se jako správné.
+      33  
+      34 -- přesnost, jmenovatel 15: 15/15 = 100,0 % (95% CI 79,6 %–100,0
+         - %)                                                            
+      34 +- správnost mezi 15 rozhodnutelnými případy po vyloučení 2 změn
+         + metodiky: 15/15 = 100,0 % (95% CI 79,6 %–100,0 %); vedle toho 
+         +3 neověřené (cz-ii-prague, cz-presto-ventures, cz-tensor-ventur
+         +es). Nejde o 100% ověřenou databázi.                           
+      35  - dolní mez, jmenovatel 18: 15/18 = 83,3 % (95% CI 60,8 %–94,2 
+          %)
+      36  
+      37  ## 2. Správnost vyplněných polí (jednotka = řádek id/pole)
+     ...
+      68  | kapital | 8 | 8/8 = 100,0 % (95% CI 67,6 %–100,0 %) | 8 | 8/8
+           = 100,0 % (95% CI 67,6 %–100,0 %) |
+      69  | **celkem** | 160 | 156/160 = 97,5 % (95% CI 93,7 %–99,0 %) | 
+          172 | 156/172 = 90,7 % (95% CI 85,4 %–94,2 %) |
+      70  
+      71 +### Kontrola sloučení (samostatně)                             
+      72 +                                                               
+      73 +Řádků: 1. Do přesnosti polí výše nevstupuje.                   
+      74 +                                                               
+      75 +- cz-nation1 → cz-n1-ventures: ano (CzechCrunch 18. 9. 2023: „P
+         +řejmenovává se na N1“, stejní managing partneři)               
+      76 +                                                               
+      77  ## 3. Úplnost (sektory, ticket, kapitál)
+      78  
+      79  Potvrzené chybění = údaj ve zdroji existuje, agent ho nezapsal.
+     ...
+      115  
+      116  ## 5. Srovnání s kontrolním agentem (fáze A, jen 20 firem vzor
+           ku)
+      117  
+      112 -Konečné hodnocení vzniklo s asistencí AI a část změn až po pře
+          -čtení nálezů kontrolního agenta, takže není nezávislý referenč
+          -ní standard. Srovnání popisuje shodu s konečným hodnocením a z
+          -měny po přečtení nálezů, ne nezávisle změřenou přesnost kontro
+          -lního agenta. Počítají se unikátní dvojice id/pole, ne řádky a
+          -genta (`kapital[0]`, `kapital[1]` … jsou jedna dvojice). „Tuté
+          -ž vadu“ = nález agenta se týká téže vady jako konečné hodnocen
+          -í, posouzeno ručně z textů (tabulka `ZACHYCENI` ve skriptu); u
+          -pozornění na jinou část pole se nepočítá.                     
+      118 +Konečné hodnocení vzniklo s asistencí AI a část změn až po pře
+          +čtení nálezů kontrolního agenta, takže není nezávislý referenč
+          +ní standard. Srovnání popisuje shodu s konečným hodnocením a z
+          +měny po přečtení nálezů, ne nezávisle změřenou přesnost kontro
+          +lního agenta. Počítají se unikátní dvojice id/pole, ne řádky a
+          +genta (`kapital[0]`, `kapital[1]` … jsou jedna dvojice). „Tuté
+          +ž vadu“ = nález agenta se týká téže vady jako konečné hodnocen
+          +í. Jde o interpretační přiřazení provedené AI porovnáním textů
+          + (tabulka `ZACHYCENI` ve skriptu), ne o automaticky ani nezávi
+          +sle ověřenou skutečnost; upozornění na jinou část pole se nepo
+          +čítá.                                                         
+      119  
+      120  Mapování: pravni_subjekt→existence, investicni_cinnost→investi
+           cni_cinnost, typ→typ, sidlo→rozsah_pilotu, posledni_investice→
+           posledni_investice, sektory→sektory, ticket→ticket, kapital[*]
+           →kapital, slouceni→slouceni (plně srovnatelná); nastroj→je_inv
+           estor, jistota_investice→nezavislost_zdroju (částečná).
+      121  
+
+⏺ Obě spuštění daly shodný výstup. Commituji a pushuji.
+
+⏺ Bash(git add PLAN.md scripts/mereni.py data/mereni_vzorku.md && git commit -q
+      -m "Krok 6: měření přesnosti na vzorku 20 firem, úprava PLAN.md podle
+      skutečného postup…)
+  ⎿  (No output)
+
+⏺ Commit je pushnutý na origin/main a lokální větev s ním souhlasí. Skript jsem
+  spustil dvakrát a oba běhy daly bajtově shodný soubor data/mereni_vzorku.md i
+  stejný výpis na stdout. Data hodnocení ani původní výstup agenta jsem neměnil.
+
+  commit 28648d221890e5d0c00974e9f1ff0200c05a36b0
+      Krok 6: měření přesnosti na vzorku 20 firem, úprava PLAN.md podle
+  skutečného postupu
+
+   PLAN.md               |  22 ++-
+   data/mereni_vzorku.md | 200 ++++++++++++++++++++
+   scripts/mereni.py     | 512
+  ++++++++++++++++++++++++++++++++++++++++++++++++++
+   3 files changed, 727 insertions(+), 7 deletions(-)
+
+  Co se oproti minulé verzi změnilo:
+  - Sloučení Nation1: v data/mereni_vzorku.md má vlastní oddíl „Kontrola
+    sloučení (samostatně)“ s textem „Řádků: 1. Do přesnosti polí výše
+    nevstupuje“ a hodnotou ano. Výpočet polí zůstal stejný: 156 ano, přesnost
+    156/163, dolní mez 156/175.
+  - Varianta 100 %: výstup ji teď uvádí jako „správnost mezi 15 rozhodnutelnými
+    případy po vyloučení 2 změn metodiky: 15/15 = 100,0 % (95% CI 79,6–100,0
+    %)“. Hned vedle jsou 3 neověřené případy (i&i Prague, Presto, Tensor) a věta
+    „Nejde o 100% ověřenou databázi.“ Totéž je i ve výpisu na stdout.
+  - Tabulka ZACHYCENI: komentář ve skriptu i text výstupu ji označují jako
+    interpretační přiřazení provedené AI porovnáním textů, ne jako automaticky
+    ani nezávisle ověřenou skutečnost.
+  - PLAN.md, bod 6: místo „ručně hodnotím všechny kandidáty“ teď stojí, že šlo o
+    původní plán. Skutečně proběhla plná tabulka u náhodného výběru 20 z 27
+    zařazených a kontrola sloučení Nation1 → N1. Vyřazené, hraniční ani
+    nevyřešené kandidáty ručně nikdo nehodnotil.
+
+  Navíc nad rámec pokynu jsem ve stejném smyslu opravil ještě dvě místa v
+  PLAN.md, která tvrdila totéž: bod 9.6 a popis data/hodnoceni.csv v tabulce
+  souborů. Popis teď říká, že soubor má řádky pro všechny kandidáty, ale
+  verdikty jen u vzorku.
+
+  README.md jsem neupravoval. Pořád v něm stojí „Ruční hodnocení zatím
+  neproběhlo“ a v tabulce struktury „ruční hodnocení všech kandidátů“. Na
+  požádání to opravím.
