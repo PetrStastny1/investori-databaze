@@ -204,7 +204,7 @@ Ověření má tři úrovně.
 Nová konverzace se stejným modelem, která neviděla, jak záznam vznikl, dostane jen záznam a zdroje. Má říct, jestli zdroj opravdu dokládá to, co v poli stojí. Nesoulad označí. Jde o stejný model, takže může dělat stejné chyby ve čtení zdrojů jako první agent. Jeho shoda proto není důkaz správnosti. Nenahrazuje ruční kontrolu, jen říká, kam se podívat dřív.
 
 **Ručně (já)**
-Ručně hodnotím všechny kandidáty ze vzorku, tedy zařazené i vyřazené a hraniční. Správnost zařazení a správnost vyřazení hodnotím zvlášť.
+Původní plán byl ručně hodnotit všechny kandidáty, tedy zařazené i vyřazené a hraniční, a správnost zařazení a vyřazení hodnotit zvlášť. Skutečně jsem (s asistencí AI) ručně ohodnotil jen náhodný výběr 20 z 27 zařazených plnou kontrolní tabulkou níže a sloučení Nation1 → N1. Vyřazené, hraniční ani nevyřešené kandidáty jsem ručně nehodnotil, viz bod 7.
 
 U každého zařazeného záznamu (`data/vystup_agenta/investori.json`) otevřu zdroje a vyplním plnou kontrolní tabulku:
 
@@ -234,7 +234,7 @@ U nevyřešených (`data/vystup_agenta/nevyresene.csv`) vyplním `je_investor` a
 
 ## 7. Měření přesnosti
 
-Vzorek je malý, proto ho ručně ověřím celý, ne jen náhodný výběr.
+Původně jsem chtěl vzorek ručně ověřit celý. **Odchylka od plánu:** ručně byl ověřen náhodný výběr 20 z 27 zařazených (seed 20261027, `scripts/vyber_vzorku.py`, `data/vzorek_kontroly.csv`). Kontrola proběhla s asistencí AI, viz README, oddíl „Ruční kontrola – kdo hodnotil“. Výsledky proto platí pro 27 zařazených, ne pro všech 56 kandidátů. Nevyřešené a vyřazené kandidáty nikdo ručně nekontroloval, takže správnost vyřazení (bod 3 níže) změřená není a recall (bod 4 níže) ze vzorku spočítat nejde. Orientační srovnání se seznamy CEE Funding Map a CVCA provedeno nebylo. Výpočet je ve `scripts/mereni.py`, výsledky v `data/mereni_vzorku.md`.
 
 Ukládám tři věci zvlášť a žádnou nepřepisuji:
 
@@ -244,7 +244,7 @@ Ukládám tři věci zvlášť a žádnou nepřepisuji:
 
 Přesnost měřím na původním výstupu agenta, ne na opravené verzi.
 
-Hodnotu `nelze_overit` vykazuji samostatně. Nepočítám ji jako správnou ani jako chybnou. U každého čísla uvedu počty `ano`, `ne` a `nelze_overit` a dvě přesnosti:
+Hodnotu `nelze_overit` vykazuji samostatně. Nepočítám ji jako správnou ani jako chybnou. Není to potvrzená chyba, vykazuji ji zvlášť jako nedostatečný důkaz. U každého čísla uvedu počty `ano`, `ne` a `nelze_overit` a dvě přesnosti:
 
 - **přesnost na ověřitelných:** `ano` / (`ano` + `ne`), tedy jen na záznamech, které šlo ověřit,
 - **konzervativní spodní hranice:** `ano` / všechny posouzené, jako by každé `nelze_overit` bylo chybou.
@@ -254,15 +254,23 @@ Rozdíl mezi nimi ukazuje, jak moc výsledek závisí na tom, co nešlo ověřit
 Měřím čtyři věci:
 
 1. **Přesnost zařazení (precision):** podíl zařazených záznamů, které splňují pravidla pilotu, tedy jsou investor podle bodů 2 a 3 (`je_investor` = `ano`), mají typ VC nebo CVC a sídlo v ČR (`rozsah_pilotu` = `ano`). Tohle je hlavní číslo, protože zadání říká, že databáze nesmí obsahovat náhodné firmy. Zvlášť uvedu, kolik chybně zařazených je skutečný investor mimo rozsah pilotu a kolik není investor vůbec.
-2. **Přesnost po polích:** pro každé pole zařazených záznamů zvlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vyplněných. Ticket a kapitál budou vyplněné výrazně méně často než existence a poslední investice.
+2. **Přesnost po polích:** pro každé pole zařazených záznamů zvlášť podíl správných hodnot mezi vyplněnými a zvlášť podíl vyplněných. Ticket a kapitál budou vyplněné výrazně méně často než existence a poslední investice. Prázdný verdikt s poznámkou „nevyplneno – pouze úplnost“ (agent pole nevyplnil) do přesnosti nevstupuje. „Potvrzené chybění“ (údaj ve zdroji existuje, agent ho nezapsal) vykazuji v úplnosti zvlášť.
 3. **Správnost vyřazení:** zvlášť pro vyřazené a hraniční podíl kandidátů, kteří podle ruční kontroly opravdu nesplňují pravidla pilotu (`je_investor` = `ne` nebo `rozsah_pilotu` = `ne`), zvlášť podíl, u kterých sedí kategorie vyřazení (u `neni_investor` musí být `je_investor` = `ne`, u `mimo_rozsah_pilotu` musí být `je_investor` = `ano` a `rozsah_pilotu` = `ne`), a zvlášť podíl, u kterých sedí důvod vyřazení. Skutečný investor vyřazený jako `neni_investor` je chyba kategorie, i když vyřazení z pilotu je správné.
 4. **Úplnost (recall) v rámci prověřeného souboru kandidátů:** ze všech kandidátů, kteří podle ruční kontroly splňují pravidla pilotu (`je_investor` = `ano` a `rozsah_pilotu` = `ano` u zařazených, vyřazených, hraničních i nevyřešených), podíl, který agent zařadil. Nevyřešený kandidát, kterého ručně zařadím, se počítá jako nezařazený agentem. Číslo platí jen pro kandidáty, které jsme prověřili. Neříká nic o investorech, kteří se mezi kandidáty vůbec nedostali, a proto ho nevykazuji jako úplnost všech investorů na trhu. Mezi kandidáty nejsou ani subjekty, jejichž sídlo se při sběru nepodařilo doložit (`nevyreseno_sidlo` v `ai-log/01-kandidati/opravy_sberu.csv`). Tuto nejistotu uvedu u recallu i u místního rozsahu (bod 8.3).
 
 Nevyřešené kandidáty vykazuji zvlášť: počet, podíl ze všech prověřených kandidátů a kolik z nich jsem ručně zařadil. Do přesnosti zařazení ani do správnosti vyřazení nevstupují. Jejich podíl je zároveň podklad pro náklady na ruční kontrolu (bod 10).
 
-U každého podílu s jasným čitatelem a jmenovatelem (obě přesnosti, správnost vyřazení, recall v rámci prověřeného souboru) uvedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je interval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo podílu i intervalu N/A. Interval popisuje jen nejistotu podílu v pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani o nejistotě globálního scénáře z bodu 8.
+U každého podílu s jasným čitatelem a jmenovatelem (obě přesnosti, správnost vyřazení, recall v rámci prověřeného souboru) uvedu 95% Wilsonův interval spolehlivosti, aby bylo vidět, jak moc se dá číslu věřit. Při 40 záznamech a přesnosti 90 % je interval zhruba 77–96 %. Při nulovém jmenovateli uvedu místo podílu i intervalu N/A. Interval popisuje jen nejistotu podílu v pilotu danou velikostí vzorku. Nevypovídá o úplnosti trhu ani o nejistotě globálního scénáře z bodu 8. Wilsonův interval předpokládá nezávislá pozorování. Řádky po polích jsou ale seskupené po firmách, takže souhrnný interval přes všechna pole je optimistický. Vzorek tvoří 20 z 27 zařazených a interval je bez korekce na konečný soubor, v tomto ohledu je proto spíš konzervativní.
 
 Pro každou chybu zapíšu do sloupce `pricina_chyby`, kde vznikla: `spatny_zdroj`, `chybne_cteni` (agent zdroj špatně přečetl), `zastaraly_udaj` nebo `chyba_pravidel`. To je podklad pro README.
+
+**Druhy `ne`.** Každé `ne` patří do jedné ze tří skupin a vykazuji je odděleně:
+
+- `chyba_vystupu`: skutečná chyba agenta. Prázdná `pricina_chyby` u `ne` znamená příčinu „neurčeno“ (z logu nejde doložit, zda agent zdroj viděl). `cz-zaka-vc`/`posledni_investice` má `chyba_pravidel` ve významu `chybne_pouziti_pravidla` (agent odmítl přípustný zdroj),
+- `upresneni_metodiky`: `cz-n1-ventures`/`rozsah_pilotu` a `cz-ii-biotech-investments`/`rozsah_pilotu` (výklad sídla upřesněný až při ruční kontrole),
+- `omezeni_schematu`: `cz-ii-biotech-investments`/`ticket` (schéma neumí dva intervaly).
+
+Zařazení do skupin je v jedné tabulce v kódu `scripts/mereni.py` podle id a pole, ne podle textu poznámky.
 
 ## 8. Odhad rozsahu a spolehlivosti
 
@@ -349,7 +357,7 @@ Pilot ji ověří jen pro VC a CVC v ČR. Pro ostatní typy a země zůstává h
 3. **Zařazení:** agent rozhodne podle bodů 2 a 3 a podle pravidel pilotu (bod 3, Pravidla pilotu), jestli kandidát patří do databáze, a důvod zapíše. Zařazené jdou do `data/vystup_agenta/investori.json`, vyřazené do `data/vystup_agenta/vyrazeni.csv` s kategorií (`neni_investor` / `mimo_rozsah_pilotu`) a důvodem, venture debt do `data/vystup_agenta/hranicni.csv`, nevyřešený typ nebo nástroj do `data/vystup_agenta/nevyresene.csv`.
 4. **Automatická kontrola:** skript z bodu 6.
 5. **Kontrola druhým agentem** (stejný model v nové konverzaci): kontrola zdrojů.
-6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkrácená u vyřazených, hraničních a nevyřešených, u nevyřešených i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Původní výstup agenta zůstává beze změny, opravy jdou do `data/opraveno/`.
+6. **Ruční ověření:** plná kontrolní tabulka u zařazených, zkrácená u vyřazených, hraničních a nevyřešených, u nevyřešených i ruční rozhodnutí, vše do `data/hodnoceni.csv`. Skutečně proběhla jen plná tabulka u náhodného výběru 20 z 27 zařazených (bod 7). Původní výstup agenta zůstává beze změny, opravy jdou do `data/opraveno/`.
 7. **Měření a zápis výsledků.**
 
 Všechny konverzace exportuji do `ai-log/` a do README zapíšu, kde se agenti spletli.
@@ -365,7 +373,7 @@ Každý soubor má jeden účel, souběžné verze pod jinými názvy nevznikaj�
 | `data/vystup_agenta/vyrazeni.csv` | původní výstup agenta: vyřazení kandidáti, sloupce `id,nazev,web,kategorie,duvod,zdroj_url,stazeno`, `kategorie` je `neni_investor` nebo `mimo_rozsah_pilotu`, beze změn |
 | `data/vystup_agenta/hranicni.csv` | původní výstup agenta: hraniční případy (venture debt), sloupce `id,nazev,web,druh,duvod,zdroj_url,stazeno`, beze změn |
 | `data/vystup_agenta/nevyresene.csv` | původní výstup agenta: kandidáti s nevyřešeným typem nebo nástrojem k ručnímu rozhodnutí, sloupce `id,nazev,web,otazka,moznosti,duvod,zdroj_url,stazeno`, beze změn |
-| `data/hodnoceni.csv` | ruční hodnocení všech kandidátů, sloupce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum` |
+| `data/hodnoceni.csv` | ruční hodnocení, řádky pro všechny kandidáty, verdikty jen u ručně zkontrolovaného vzorku (bod 7), sloupce `soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum` |
 | `data/opraveno/` | opravená verze po ručním hodnocení, stejné soubory a schéma jako `data/vystup_agenta/` |
 | `scripts/` | skripty pro automatickou kontrolu a měření |
 | `ai-log/` | exporty konverzací s agenty |
