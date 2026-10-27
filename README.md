@@ -135,12 +135,12 @@ Většinu lidských hodin tvoří ruční rozhodnutí nevyřešených kandidát�
 
 ## Jak jsem pracoval s AI
 
-První návrh plánu vznikl v chatu. Implementaci, sběr a zpracování jsem dělal v Claude Code. Každý krok měl vlastní session, exporty jsou v [ai-log/](ai-log/). Krok 5 je jedna session exportovaná dvakrát: [05-priprava.txt](ai-log/05-priprava.txt) obsahuje přípravu, [05-rucni-kontrola-ulozeni.txt](ai-log/05-rucni-kontrola-ulozeni.txt) celou session včetně uložení hodnocení. Pomocní agenti (3 ve sběru, 31 v obohacení, 13 v kontrole zdrojů) jsou v exportech zachycení jen svými závěrečnými zprávami hlavnímu agentovi. ChatGPT a Claude v chatu mi pomáhali s recenzí plánu, vyhledáním a překladem zdrojů a s návrhy verdiktů ruční kontroly.
+První návrh plánu vznikl v chatu. Implementaci, sběr a zpracování jsem dělal v Claude Code. Každý krok měl vlastní session, exporty kroků 0–9 jsou v [ai-log/](ai-log/), krok 9 (tento README a oprava hodnocení i&i Prague) v [09-readme.txt](ai-log/09-readme.txt). Krok 5 je jedna session exportovaná dvakrát: [05-priprava.txt](ai-log/05-priprava.txt) obsahuje přípravu, [05-rucni-kontrola-ulozeni.txt](ai-log/05-rucni-kontrola-ulozeni.txt) celou session včetně uložení hodnocení. Pomocní agenti (3 ve sběru, 31 v obohacení, 13 v kontrole zdrojů) jsou v exportech zachycení jen svými závěrečnými zprávami hlavnímu agentovi. ChatGPT a Claude v chatu mi pomáhali s recenzí plánu, vyhledáním a překladem zdrojů a s návrhy verdiktů ruční kontroly.
 
 Commity probíhaly podle exportů ve třech režimech:
 
-- **Schválení po vypsání:** agent výsledek vypsal a commitoval až po mém schválení. Tak běžel krok 0 (diff PLAN.md), úprava pravidel po zkušební dávce, krok 7 (souhrn spotřeby a variant) a krok 8 (návrh přesunů a oprav).
-- **Předem určené kontroly:** v zadání jsem určil kontroly, například očekávané počty, shodný výstup při dvou bězích nebo nezměněný původní výstup. Agent commitoval, jen když všechny prošly, jinak měl zastavit a vypsat rozdíl. Tak běželo uložení ruční kontroly v kroku 5, krok 6 (zastavil na rozdílu 157/156 a commitoval po mém potvrzení) a závěrečné commity kroků 7 a 8.
+- **Schválení po vypsání:** agent výsledek vypsal a commitoval až po mém schválení. Tak běžel krok 0 (diff PLAN.md), úprava pravidel po zkušební dávce, krok 7 (souhrn spotřeby a variant) krok 8 (návrh přesunů a oprav) a krok 9 (návrh README a nález u i&i Prague před opravou hodnocení).
+- **Předem určené kontroly:** v zadání jsem určil kontroly, například očekávané počty, shodný výstup při dvou bězích nebo nezměněný původní výstup. Agent commitoval, jen když všechny prošly, jinak měl zastavit a vypsat rozdíl. Tak běželo uložení ruční kontroly v kroku 5, krok 6 (zastavil na rozdílu 157/156 a commitoval po mém potvrzení) a závěrečné commity kroků 7, 8 a 9.
 - **Commit podle zadání bez předchozího schválení:** agent výsledek sám zkontroloval, commitoval a pak vypsal souhrn. Tak běžel krok 1, výstup zkušební dávky, dávky obohacení (s ověřením shody archivu zkušební dávky s commitem f4cd74d), kroky 3 a 4 a příprava podkladů v kroku 5. Výstup jsem kontroloval až po commitu a opravy šly do dalších commitů.
 
 | krok, export | co jsem agentovi zadal | jak jsem výstup kontroloval |
@@ -155,6 +155,7 @@ Commity probíhaly podle exportů ve třech režimech:
 | 6 [měření](ai-log/06-mereni.txt) | PLAN.md sladit se skutečným postupem, deterministický mereni.py, oddělit tři druhy `ne` | kontrolní počty dodané v zadání, následně porovnané s výstupem skriptu; rozdíl 157/156 dohledán před commitem |
 | 7 [náklady](ai-log/07-naklady.txt) | spotřeba jen z polí usage v lokálních logech, ceník z oficiálního zdroje, předpoklady výslovně označit | souhrn před commitem, druhé kolo úprav (sazba, rozsah aktualizace, význam vzorku) |
 | 8 [opravená verze](ai-log/08-opraveno.txt) | oprav.py jen podle dokončeného hodnocení, přesuny a opravy s odkazem na řádek hodnocení | návrh přesunů před provedením, zamítnuté nové pole v investori.json, validace v dočasné kopii |
+| 9 [README a oprava](ai-log/09-readme.txt) | README podle repa a logu, čísla a odkazy ověřit, nic nevymýšlet; pak opravit hodnocení i&i Prague podle uloženého výpisu ARES, přepočítat měření a opravenou verzi | celé README před commitem, zastavení na nálezu u i&i Prague, očekávané počty, dva shodné běhy skriptů, nezměněný původní výstup |
 
 ### Ruční kontrola – kdo hodnotil
 
@@ -257,7 +258,7 @@ Python 3 jen se standardní knihovnou, spouští se z kořene repa. Všechny skr
 | `data/mereni_vzorku.md` | výsledky měření |
 | `data/opraveno/` | opravená verze, `stav_kontroly.csv`, `ZMENY.md` |
 | `scripts/` | sběr, výběr vzorku, validátor a testy, měření, spotřeba, náklady, opravy |
-| `ai-log/00-…08-*.txt` | exporty session kroků 0–8 |
+| `ai-log/00-…09-*.txt` | exporty session kroků 0–9 |
 | `ai-log/01-kandidati/` | výňatky zdrojů sběru, ověření sídel, opravy sběru, sběrné skripty |
 | `ai-log/02-zkusebni-davka/` | archiv zkušební dávky, měření, surové odpovědi |
 | `ai-log/02-obohaceni/` | mapování 57 id, duplicity, nejasnosti, měření, zadání pomocného agenta, surové odpovědi ARES a funding.tech.eu |
@@ -265,7 +266,7 @@ Python 3 jen se standardní knihovnou, spouští se z kořene repa. Všechny skr
 | `ai-log/04-kontrola-zdroju/` | slepá kontrola, cílené otázky, měření, log požadavků |
 | `ai-log/05-rucni-kontrola/` | průvodce, nálezy AI, stav hodnocení před nálezy, skript přípravy |
 | `ai-log/07-naklady/` | agregovaná spotřeba a výpočet nákladů |
-| `ai-log/09-readme/` | stav hodnocení před opravou i&i Prague v kroku 9 |
+| `ai-log/09-readme/` | záloha hodnocení před opravou i&i Prague v kroku 9 (`hodnoceni_pred_opravou_ii_prague.csv`) |
 
 ## Licence
 
