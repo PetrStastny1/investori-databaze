@@ -1,0 +1,19 @@
+krok,cast,session,druh,model,agentu,zaznamu_usage,vyrazenych_duplicit,pozadavku_api,input_tokens,cache_creation_5m,cache_creation_1h,cache_read_input_tokens,output_tokens,tokenu_celkem,prvni_volani_utc,posledni_volani_utc,kontext_poslednich_volani,poznamka
+00,plán a založení,8454bd15,hlavní konverzace,claude-opus-5-5,,133,87,46,92,0,160373,4592252,57005,4809722,2026-10-26T13:28:54.600Z,2026-10-26T14:03:03.200Z,,
+01,sběr kandidátů,c326ece4,hlavní konverzace,claude-opus-5-5,,200,122,78,160,0,241367,11750154,90869,12082550,2026-10-26T14:12:54.534Z,2026-10-26T14:46:53.850Z,,
+01,sběr kandidátů,c326ece4,pomocný agent,claude-opus-5-5,3,325,271,54,108,260597,0,3119342,48953,3429000,2026-10-26T14:25:37.279Z,2026-10-26T14:30:50.761Z,274839,
+02,obohacení 57 kandidátů,f3cfc496,hlavní konverzace,claude-opus-5-5,,217,134,83,226,0,267862,15024240,83011,15375339,2026-10-26T15:39:12.421Z,2026-10-26T16:51:10.397Z,,
+02,obohacení 57 kandidátů,f3cfc496,pomocný agent,claude-opus-5-5,31,1954,998,956,1912,2953720,0,75674284,624007,79253923,2026-10-26T15:43:34.479Z,2026-10-26T16:48:53.536Z,3476650,
+02z,zkušební dávka,c4487a53,hlavní konverzace,claude-opus-5-5,,75,47,28,56,0,101944,2449430,25053,2576483,2026-10-26T14:56:39.997Z,2026-10-26T15:02:31.813Z,,
+02z,úprava pravidel,c4487a53,hlavní konverzace,claude-opus-5-5,,47,35,12,24,0,42472,1774270,28233,1844999,2026-10-26T15:02:47.655Z,2026-10-26T15:33:18.943Z,,
+03,automatická kontrola,050be588,hlavní konverzace,claude-opus-5-5,,51,29,22,44,0,141787,2206985,50361,2399177,2026-10-26T17:17:25.332Z,2026-10-26T17:25:33.008Z,,
+04,fáze A (slepá kontrola),e7a27589,hlavní konverzace,claude-opus-5-5,,50,27,23,60,0,107377,2245500,15663,2368600,2026-10-26T17:30:14.994Z,2026-10-26T17:44:11.190Z,,
+04,fáze A (slepá kontrola),e7a27589,pomocný agent,claude-opus-5-5,7,570,249,321,642,1253469,0,37616736,240579,39111426,2026-10-26T17:32:45.468Z,2026-10-26T17:43:40.505Z,1264850,
+04,fáze B (cílené otázky),e7a27589,hlavní konverzace,claude-opus-5-5,,45,25,20,52,0,55153,3348406,20785,3424396,2026-10-26T17:44:18.908Z,2026-10-26T17:55:11.496Z,,
+04,fáze B (cílené otázky),e7a27589,pomocný agent,claude-opus-5-5,6,305,129,176,352,739013,0,16166906,147548,17053819,2026-10-26T17:45:43.913Z,2026-10-26T17:53:05.224Z,861130,
+05,příprava podkladů,e68ef0bc,hlavní konverzace,claude-opus-5-5,,56,33,23,46,0,229285,3610551,70124,3910006,2026-10-26T18:03:45.718Z,2026-10-26T18:14:13.044Z,,
+05,uložení ručního hodnocení,e68ef0bc,hlavní konverzace,claude-opus-5-5,,29,16,13,26,0,250371,3224307,10095,3484799,2026-10-27T16:40:58.493Z,2026-10-27T16:58:03.820Z,,
+06,měření,c87fffba,hlavní konverzace,claude-opus-5-5,,64,40,24,50,0,101934,1991138,33977,2127099,2026-10-27T17:04:30.844Z,2026-10-27T17:17:34.018Z,,
+05,ruční kontrola: asistence AI mimo Claude Code,,,,,,,,,,,,,,,,,neznámé: README: zdroje a návrhy verdiktů zčásti od Claude a ChatGPT mimo tyto logy; spotřeba neznámá
+01–06,WebFetch: zpracování stránek pomocným modelem,,,,,,,,,,,,,,,,,neznámé: nástroj WebFetch předává stránku pomocnému modelu; tyto požadavky v logu nejsou
+01–06,WebSearch: samostatné požadavky vyhledávání,,,,,,,,,,,,,,,,,neznámé: usage.server_tool_use je ve všech záznamech 0; vyhledávání běží mimo zalogované požadavky
