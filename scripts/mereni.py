@@ -2,7 +2,8 @@
 
 Čte data/hodnoceni.csv, data/vzorek_kontroly.csv, ai-log/02-obohaceni/mapovani_id.csv,
 ai-log/04-kontrola-zdroju/slepa_kontrola.csv
-a ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv, nic z nich nemění.
+ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv
+a ai-log/09-readme/hodnoceni_pred_opravou_ii_prague.csv, nic z nich nemění.
 Bez síťových přístupů, deterministický. Výstup: data/mereni_vzorku.md a souhrn na stdout.
 Výsledky se nikdy nesčítají do jednoho čísla.
 
@@ -20,6 +21,7 @@ VZOREK = koren / "data" / "vzorek_kontroly.csv"
 MAPOVANI = koren / "ai-log" / "02-obohaceni" / "mapovani_id.csv"
 SLEPA = koren / "ai-log" / "04-kontrola-zdroju" / "slepa_kontrola.csv"
 PRED_AI = koren / "ai-log" / "05-rucni-kontrola" / "hodnoceni_pred_nalezy_ai.csv"
+PRED_OPRAVOU = koren / "ai-log" / "09-readme" / "hodnoceni_pred_opravou_ii_prague.csv"
 VYSTUP = koren / "data" / "mereni_vzorku.md"
 
 Z = 1.959964  # 95 %
@@ -32,6 +34,12 @@ POLE_UPLNOST = ["sektory", "ticket", "kapital"]
 JEN_UPLNOST = "nevyplneno – pouze úplnost"
 POTVRZENE_CHYBENI = "Potvrzené chybění"
 ZMENA_PO_AI = "Změna po přečtení nálezů AI"
+
+# Opravy hodnocení po uložení stavu po nálezech AI (krok 9), id/pole → popis. Jiný rozdíl
+# proti PRED_OPRAVOU skript odmítne.
+OPRAVY_KROK_9 = {
+    ("cz-ii-prague", "je_investor"): "výpis ARES CasInvent: konvertibilní zápůjčka 4. 3. 2025, nabídka 48 akcií třídy C (VH 22. 5. 2025), zapsané splacené zvýšení kapitálu 30. 5. 2025",
+}
 
 # Skupina každého konečného „ne“ podle id/pole (PLAN.md bod 7, Druhy „ne“).
 # Řádek „ne“, který tu chybí, skript odmítne.
@@ -122,6 +130,9 @@ hodnoceni = nacti_csv(HODNOCENI)
 hod = {(r["id"], r["pole"]): r for r in hodnoceni}
 assert len(hod) == len(hodnoceni), "duplicitní id/pole v hodnoceni.csv"
 pred_ai = {(r["id"], r["pole"]): r for r in nacti_csv(PRED_AI)}
+pred_opravou = {(r["id"], r["pole"]): r for r in nacti_csv(PRED_OPRAVOU)}
+opravy_9 = sorted(k for k, r in hod.items() if r["hodnoceni"] != pred_opravou[k]["hodnoceni"])
+assert opravy_9 == sorted(OPRAVY_KROK_9), f"neočekávané změny proti stavu před opravou: {opravy_9}"
 
 # Sloučená id (cz-nation1 → cz-n1-ventures) patří k firmě, do které byla sloučena.
 vysledne_id = {r["id"]: r["vysledne_id"] for r in nacti_csv(MAPOVANI)}
@@ -481,7 +492,10 @@ ano_nl = [k for k, r in radky.items()
 for k in ne_po + ano_nl:
     assert ZMENA_PO_AI in radky[k]["poznamka"], f"změna bez poznámky: {k}"
 jine = [k for k, r in radky.items() if r["hodnoceni"] != pred_ai[k]["hodnoceni"]
-        and k not in ne_po and k not in ano_nl]
+        and k not in ne_po and k not in ano_nl and k not in OPRAVY_KROK_9]
+# Původní stav (před opravou v kroku 9): nelze_overit už před přečtením nálezů.
+nl_pred_puvodne = [k for k in radky if pred_opravou[k]["hodnoceni"] == "nelze_overit"
+                   and pred_ai[k]["hodnoceni"] == "nelze_overit"]
 
 
 def seznam(kk):
@@ -495,7 +509,25 @@ w(f"| konečné `ne` nalezené už před přečtením nálezů AI | {len(ne_pred
 w(f"| konečné `ne` nalezené až po nich | {len(ne_po)} | {seznam(ne_po)} |")
 w(f"| konečné `nelze_overit`, už před přečtením | {len(nl_pred)} | {seznam(nl_pred)} |")
 w(f"| změna `ano` → `nelze_overit` po přečtení | {len(ano_nl)} | {seznam(ano_nl)} |")
-w(f"| jiné změny verdiktu | {len(jine)} | {seznam(jine)} |")
+w(f"| jiné změny verdiktu (mimo opravu v kroku 9) | {len(jine)} | {seznam(jine)} |")
+w("")
+w(f"Původní stav před opravou v kroku 9: konečných `nelze_overit` už před přečtením nálezů bylo "
+  f"{len(nl_pred_puvodne)} ({seznam(nl_pred_puvodne)}).")
+w("")
+
+w("### 5.5 Oprava hodnocení v kroku 9")
+w("")
+w("Porovnání `data/hodnoceni.csv` se stavem před opravou "
+  "(`ai-log/09-readme/hodnoceni_pred_opravou_ii_prague.csv`). Jde o opravu hodnocení podle již uloženého "
+  "zdroje, ne o změnu pravidel ani o změnu po přečtení nálezů AI.")
+w("")
+w("| id/pole | před opravou | po opravě | doklad |")
+w("|---|---|---|---|")
+for k in opravy_9:
+    w(f"| {k[0]}/{k[1]} | {pred_opravou[k]['hodnoceni']} | {hod[k]['hodnoceni']} | {OPRAVY_KROK_9[k]} |")
+w("")
+w("Kontrolní agent (fáze A) měl u odpovídajícího pole `nastroj` závěr `sedi`; po opravě se tento souhlas "
+  "s konečným hodnocením potvrdil (oddíl 5.2).")
 w("")
 
 VYSTUP.write_text("\n".join(out), encoding="utf-8")
@@ -508,5 +540,6 @@ for nazev, (n, ozn, taz) in vys_cast.items():
 souhrn.append(f"Agent (částečná) – označení nepotvrzená konečným hodnocením: {nepotvrz_cast}")
 souhrn.append(f"Před/po AI: ne před {len(ne_pred)}, ne po {len(ne_po)}, "
               f"ano→nelze_overit {len(ano_nl)}, jiné změny {len(jine)}")
+souhrn.append(f"Oprava v kroku 9: {', '.join(f'{i}/{p}' for i, p in opravy_9)}")
 print("\n".join(souhrn))
 print(f"Zapsáno: {VYSTUP.relative_to(koren)}")

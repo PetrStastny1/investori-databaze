@@ -1,0 +1,377 @@
+soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum
+investori.json,cz-n1-ventures,existence,nelze_overit,,"Značka doložena (web, CVCA, CzechCrunch), právní subjekty Nation 1 GP S.à r.l. a GP II neověřeny v registru",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,investicni_cinnost,ano,,"The VC Corner 4. 11. 2025: Novoflow, „with participation from N1 Ventures“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,je_investor,ano,,Forbes UA 3. 7. 2025 jmenuje N1 Ventures v Series A Liki24. Web N1 řadí investici pod U-Tech; přesný investiční subjekt a správcovská vazba neověřeny,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,typ,ano,,n1.rocks: „Early-Stage VC“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,rozsah_pilotu,ne,chyba_pravidel,"Upřesnění metodiky při ruční kontrole, ne jednoznačná chyba agenta: správci (GP/AIFM) v Lucembursku, v Praze tým",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,posledni_investice,ano,,"Novoflow a datum oznámení sedí; nejnovější nalezená, úplnost neověřena",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,nezavislost_zdroju,ano,,"Forbes UA uvádí tiskovou zprávu Liki24, Inventure přebírá Forbes",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,sektory,ano,,n1.rocks: „AI · Healthtech · Frontier Tech“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,ticket,,,"nevyplneno – pouze úplnost. Potvrzené chybění: agent nechal null, web n1.rocks uvádí „Typical 1st investment $100K–$1M“ (hodnota i zdroj doloženy). Do přesnosti vyplněných hodnot nevstupuje.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-n1-ventures,kapital,ano,,"n1.rocks: „we manage $60M across two funds“, aum bez data",Petr Šťastný (asistence AI),2026-10-27
+mapovani_id.csv,cz-nation1,slouceni,ano,,"CzechCrunch 18. 9. 2023: „Přejmenovává se na N1“, stejní managing partneři",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,existence,ano,,"ARES: Tensor Ventures a.s., Pernerova 635/57, Praha 8, VR aktivní; neověřeno, že je správcem fondů",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,investicni_cinnost,ano,,"Seznam Zprávy 24. 2. 2026: ValkaAI pre-seed, „přidaly se také … Tensor Ventures“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,je_investor,ano,,"TheSaaSNews: AppFactor seed 4 mil. USD, „The round was led by Tensor Ventures“; nástroj nepřímá indicie",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,typ,ano,,tensor.ventures: „We participate in Seed and Series A rounds“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,rozsah_pilotu,nelze_overit,,Web: Tensor Ventures GP S.à r.l. a Fund I SCSp v Lucembursku; správce druhého fondu (EIF) nedoložen,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,posledni_investice,ano,,"ValkaAI 24. 2. 2026 sedí; nejnovější nalezená, úplnost neověřena",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,nezavislost_zdroju,nelze_overit,,"ValkaAI: Seznam Zprávy a Startbase (oba 24. 2. 2026, puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena / pravděpodobně společný podklad. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Opraveno pro konzistenci s Look AI, Miton, Purple a Y Soft (původní poznámka chybně uváděla, že zdroje nejsou označeny jako nezávislé). Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,sektory,ano,,"tensor.ventures: AI, Quantum Revolution, Computational Biotech, Sustainable Tech",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,ticket,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tensor-ventures,kapital,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-kaya-vc,existence,,,,,
+investori.json,cz-kaya-vc,investicni_cinnost,,,,,
+investori.json,cz-kaya-vc,je_investor,,,,,
+investori.json,cz-kaya-vc,typ,,,,,
+investori.json,cz-kaya-vc,rozsah_pilotu,,,,,
+investori.json,cz-kaya-vc,posledni_investice,,,,,
+investori.json,cz-kaya-vc,nezavislost_zdroju,,,,,
+investori.json,cz-kaya-vc,sektory,,,,,
+investori.json,cz-kaya-vc,ticket,,,,,
+investori.json,cz-kaya-vc,kapital,,,,,
+investori.json,cz-ii-biotech-investments,existence,ano,,"ARES: Biotech Investments s.r.o., Pobřežní 394/12, Praha 8, VR aktivní",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,investicni_cinnost,ano,,"Lupa.cz 27. 3. 2026: Theorema pre-seed 3,3 mil. USD, investoři „NAVEC Investment Management, i&i Biotech Fund“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,je_investor,ano,,"Pre-seed, nástroj nepřímá indicie",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,typ,ano,,ÚOCHB 30. 11. 2022: „Luxemburg-based venture capital firm“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,rozsah_pilotu,ne,chyba_pravidel,"Upřesnění metodiky při ruční kontrole: fond i&i Biotech Fund I SCSp v Lucembursku („Luxemburg-based“), česká Biotech Investments s.r.o. je poradce a tým",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,posledni_investice,ano,,Theorema 27. 3. 2026 sedí; nejnovější nalezená,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,nezavislost_zdroju,nelze_overit,,"Theorema: Lupa.cz, CzechCrunch, Vestbee (puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena / pravděpodobně společný podklad. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Opraveno pro konzistenci s Look AI, Miton, Purple a Y Soft (původní poznámka chybně uváděla, že zdroje nejsou označeny jako nezávislé). Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,sektory,ano,,"Web: drug discovery, medtech, diagnostics, AI",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,ticket,ne,chyba_pravidel,"Web rozlišuje dva intervaly: od 150 tis. EUR při zakládání firmy a preferovaně 0,5–2 mil. EUR při růstu. Záznam je spojil do jednoho 150 tis.–2 mil.; schéma dva intervaly neumí",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-biotech-investments,kapital,ano,,"ÚOCHB 30. 11. 2022: „approximately €47 million“, fund_size i&i Biotech Fund",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,existence,ano,,"ARES 21053987 ZAKA Management s.r.o. a 21514992 ZAKA VC I, osoba rizikového kapitálu, a.s. – Italská 2581/67, Praha 2.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,investicni_cinnost,ano,,Business Wire 7. 5. 2026 (BioSpace): ParcelBio seed 13 mil. USD „with participation from … ZAKA VC“. V okně.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,je_investor,ano,,Účast v seed kole (ParcelBio); neprima_indicie odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,typ,ano,,"Web: „We are a seed & pre-seed VC fund, investing mainly in the US and Europe.“ Výhrada (nálezy AI): AIN.UA 10. 3. 2025 „ZAKA VC is one of the most active family offices in Europe“ a web odděluje investice family office od Fund 1; část investic může jít z rodinného vehiklu. VC obhajitelné pro Fund 1, verdikt beze změny.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,rozsah_pilotu,ano,,"VC, správce i fond sídlí v Praze 2 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,posledni_investice,ne,chyba_pravidel,"ParcelBio (7. 5. 2026) samotný sedí, ale není nejnovější doložená investice: zaka.vc/news 16. 7. 2026 „we’re excited to announce our investment in FinalDose“ – https://zaka.vc/news/ (agent tuto stránku cituje jako portfolio_web). Agent FinalDose v poznámce zmiňuje, ale nezapsal ho, protože požadoval nezávislou zprávu o transakci; PLAN.md bod 2 přitom vlastní oznámení investora (tiskovou zprávu) připouští. Jde o chybné použití existujícího pravidla agentem, NE o dodatečné upřesnění metodiky (na rozdíl od chyba_pravidel u N1 a i&i Biotech). Před referenčním datem 26. 10. 2026. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,nezavislost_zdroju,ano,,"Jediná TZ (ParcelBio), jistota stredni odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,sektory,ano,,Web: „Especially looking for startups in the Health & Biotech and Industrial Tech verticals.“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,ticket,,,"nevyplneno – pouze úplnost (agent správně rozlišil, že „minimum ticket is 130K“ je vklad LP)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-zaka-vc,kapital,,,"nevyplneno – pouze úplnost (web „17M Current fund size“ bez měny, agent zdůvodnil)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,existence,ano,,"ARES 06002820: StartupYard Services s.r.o., Perlová 371/5, Praha 1; ARES 22266852 StartupYard Batch 15 s.r.o. na stejné adrese.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,investicni_cinnost,ano,,"CzechCrunch 14. 2. 2025: Ydoca pre-seed 2,3 mil. Kč, „DEPO Ventures podpořilo projekt částkou 1,8 milionu a StartupYard částkou 500 tisíc korun“. V okně (12–24 měsíců), status sedí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,je_investor,ano,,Vlastní vklad 500 tis. Kč (Ydoca); akcelerátor investující vlastní peníze = VC podle PLAN.md. neprima_indicie odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,typ,ano,,"Akcelerátor s vlastními investicemi (Batch 15: „optional €25,000 cash investment“, doložená investice Ydoca) – podle pravidla PLAN.md se řadí jako VC. Výhrada (nálezy AI): Ydoca proběhla v době TechBoost Syndicate se DEPO Ventures (web StartupYard 2024: „Investors interested to join the Syndicate can apply here“), není tedy jisté, že 500 tis. Kč byly vlastní peníze StartupYardu; CzechCrunch ale píše „StartupYard částkou 500 tisíc korun“. Verdikt beze změny.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,rozsah_pilotu,ano,,"VC, sídlo Praha 1 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,posledni_investice,ano,,"Ydoca, oznámení 14. 2. 2025 (CzechCrunch). Výhrada: web profiluje firmy nového batche (CaseLens 30. 4. 2026, Teamsharq 15. 6. 2026) bez zmínky o investici – nedoloženo, není potvrzená chyba. Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,nezavislost_zdroju,ano,,"Jediný zdroj (CzechCrunch), jistota tomu odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,sektory,ano,,"Web: „We focus on deep-tech startups such as AI, cybersecurity, IoT, or another cutting-edge field“.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,ticket,ano,,"Web 11. 9. 2025 (Batch 15): „an optional €25,000 cash investment“ – min 25 tis. EUR; jde o pevnou volitelnou částku, max null odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-startupyard,kapital,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,existence,ano,,"ARES: i&i Prague, s.r.o., Pobřežní 394/12, Praha 8, VR aktivní",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,investicni_cinnost,ano,,"KHAN-I 2. 7. 2025: „The remaining investment was backed by longstanding investors including KHAN-I, i&i Prague“; Positiv.cz 26. 6. 2025 (TZ CasInvent)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,je_investor,nelze_overit,,"Nástroj u kola 2025 nedoložen (kolo bez označení fáze). Agentem uvedený doklad z rejstříku dokládá i&i Prague jako jediného akcionáře jen 18. 11.–15. 12. 2020 (založení), ne tuto investici. Podle pravidel měl kandidát jít do nevyřešených",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,typ,ano,,Inkubátor a venture builder s vlastním kapitálem a doloženou investicí = VC podle bodu 3 plánu,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,rozsah_pilotu,ano,,"Česká s.r.o. v Praze, investuje z vlastní společnosti",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,posledni_investice,ano,,"CasInvent Pharma, oznámení 26. 6. 2025 sedí; pozor: nastroj „dolozeno“ chybně, viz je_investor",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,nezavislost_zdroju,ano,,Positiv.cz i KHAN-I správně zapsány s původem TZ CasInvent,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,sektory,ano,,"Web: drug development, diagnostics, medical technologies, life sciences",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,ticket,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-ii-prague,kapital,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+hranicni.csv,cz-orbit-capital,je_investor,,,,,
+hranicni.csv,cz-orbit-capital,rozsah_pilotu,,,,,
+hranicni.csv,cz-orbit-capital,kategorie,,,,,
+hranicni.csv,cz-orbit-capital,duvod,,,,,
+vyrazeni.csv,cz-mcwin-partners,je_investor,,,,,
+vyrazeni.csv,cz-mcwin-partners,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-mcwin-partners,kategorie,,,,,
+vyrazeni.csv,cz-mcwin-partners,duvod,,,,,
+vyrazeni.csv,cz-espira-investments,je_investor,,,,,
+vyrazeni.csv,cz-espira-investments,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-espira-investments,kategorie,,,,,
+vyrazeni.csv,cz-espira-investments,duvod,,,,,
+nevyresene.csv,cz-rockawayx,je_investor,,,,,
+nevyresene.csv,cz-rockawayx,rozsah_pilotu,,,,,
+nevyresene.csv,cz-rockawayx,duvod,,,,,
+nevyresene.csv,cz-lumus-investments,je_investor,,,,,
+nevyresene.csv,cz-lumus-investments,rozsah_pilotu,,,,,
+nevyresene.csv,cz-lumus-investments,duvod,,,,,
+nevyresene.csv,cz-chilli-ventures,je_investor,,,,,
+nevyresene.csv,cz-chilli-ventures,rozsah_pilotu,,,,,
+nevyresene.csv,cz-chilli-ventures,duvod,,,,,
+nevyresene.csv,cz-fond-nase-cesko,je_investor,,,,,
+nevyresene.csv,cz-fond-nase-cesko,rozsah_pilotu,,,,,
+nevyresene.csv,cz-fond-nase-cesko,duvod,,,,,
+nevyresene.csv,cz-moonhill-capital,je_investor,,,,,
+nevyresene.csv,cz-moonhill-capital,rozsah_pilotu,,,,,
+nevyresene.csv,cz-moonhill-capital,duvod,,,,,
+nevyresene.csv,cz-botanique-hospitality,je_investor,,,,,
+nevyresene.csv,cz-botanique-hospitality,rozsah_pilotu,,,,,
+nevyresene.csv,cz-botanique-hospitality,duvod,,,,,
+nevyresene.csv,cz-braiins,je_investor,,,,,
+nevyresene.csv,cz-braiins,rozsah_pilotu,,,,,
+nevyresene.csv,cz-braiins,duvod,,,,,
+nevyresene.csv,cz-gi21-capital,je_investor,,,,,
+nevyresene.csv,cz-gi21-capital,rozsah_pilotu,,,,,
+nevyresene.csv,cz-gi21-capital,duvod,,,,,
+nevyresene.csv,cz-jet-investment,je_investor,,,,,
+nevyresene.csv,cz-jet-investment,rozsah_pilotu,,,,,
+nevyresene.csv,cz-jet-investment,duvod,,,,,
+nevyresene.csv,cz-kkcg,je_investor,,,,,
+nevyresene.csv,cz-kkcg,rozsah_pilotu,,,,,
+nevyresene.csv,cz-kkcg,duvod,,,,,
+nevyresene.csv,cz-tarpan-capital,je_investor,,,,,
+nevyresene.csv,cz-tarpan-capital,rozsah_pilotu,,,,,
+nevyresene.csv,cz-tarpan-capital,duvod,,,,,
+vyrazeni.csv,cz-garage-angels,je_investor,,,,,
+vyrazeni.csv,cz-garage-angels,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-garage-angels,kategorie,,,,,
+vyrazeni.csv,cz-garage-angels,duvod,,,,,
+investori.json,cz-look-ai-ventures,existence,ano,,"ARES 17604087: Look AI Ventures SICAV, a.s., Radlická 180/50, Praha 5; IČO uvedeno i na webu.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,investicni_cinnost,ano,,"tech.eu 13. 7. 2026 (Sodex): „new investors Bloomhaus, Look AI Ventures and … Superangels“. V okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,je_investor,ano,,Účast v kolech Sodex (4 mil. EUR) a Lucida AI (seed); nástroj nezjištěn/neprima_indicie odpovídá zdrojům.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,typ,ano,,"Web: „first VC fund in the Czech Republic dedicated exclusively to investing in AI startups“, LP, fond kvalifikovaných investorů.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,rozsah_pilotu,ano,,"VC, český SICAV, obhospodařovatel FTP Dimension investiční společnost (ČR).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,posledni_investice,ne,,"Přehlédnuta novější investice na webu investora: „Look AI Ventures Backs Embodied AI“ 22. 9. 2026 (https://lookai.vc/look-ai-ventures-backs-embodied-ai-robots-manufacturing/); Pulse 2.0 16. 9. 2026 jmenuje Look AI Ventures mezi investory. Sodex (13. 7. 2026) samotný sedí. Příčina neurčena – zda agent stránku četl, není z logu doloženo.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,nezavislost_zdroju,nelze_overit,,"Lucida AI: tech.eu a Lupa.cz (oba 30. 6. 2026, puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,sektory,ano,,Web: „focuses exclusively on AI startups worldwide“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,ticket,,,"nevyplneno – pouze úplnost (web ticket neuvádí, agent zdůvodnil)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-look-ai-ventures,kapital,,,"nevyplneno – pouze úplnost (jen cíl 20 mil. EUR z 2023, agent zdůvodnil)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-jic-ventures,existence,,,,,
+investori.json,cz-jic-ventures,investicni_cinnost,,,,,
+investori.json,cz-jic-ventures,je_investor,,,,,
+investori.json,cz-jic-ventures,typ,,,,,
+investori.json,cz-jic-ventures,rozsah_pilotu,,,,,
+investori.json,cz-jic-ventures,posledni_investice,,,,,
+investori.json,cz-jic-ventures,nezavislost_zdroju,,,,,
+investori.json,cz-jic-ventures,sektory,,,,,
+investori.json,cz-jic-ventures,ticket,,,,,
+investori.json,cz-jic-ventures,kapital,,,,,
+investori.json,cz-purple-ventures,existence,ano,,"ARES 05775574: Purple Ventures s.r.o., Masarykova 409/26, Brno.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,investicni_cinnost,ano,,tech.eu 6. 10. 2026: Comparables.ai seed 6 mil. USD „with participation from Purple Ventures“. V okně.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,je_investor,ano,,Účast v seed kole (Comparables.ai); neprima_indicie odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,typ,ano,,"Vestbee 15. 4. 2024: druhý fond 40 mil. EUR, pre-seed a seed; agent dokládá externí investory fondu (CzechCrunch). Web (zdroj agenta) nebyl dostupný.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,rozsah_pilotu,ano,,"VC, sídlo Brno (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,posledni_investice,ne,,"Comparables.ai (6. 10. 2026) samotný sedí, ale není nejnovější doložená investice: FLÆ Robotics seed, „The funding round included participation from Purple Ventures and Garage Angels“, datum financování 14. 10. 2026 – https://www.thesaasnews.com/news/fl-robotics-raises-1m-seed/ . Před referenčním datem 26. 10. 2026. Příčina neurčena – zda agent zprávu viděl, není z logu doloženo. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,nezavislost_zdroju,nelze_overit,,"Comparables.ai: tech.eu 6. 10. 2026 a Lupa.cz 13. 10. 2026 (puvod null; Lupa cituje Jana Staňka a má fotografii od Purple, to je indicie, ne důkaz). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,sektory,ano,,"Agent zapsal obecné zaměření „tech-enabled, purpose-driven technology startups“; web (ověřeno 27. 10. 2026) popisuje obecně technologické startupy s prvními příjmy a globálními ambicemi, CEE+, pre-seed a seed, bez výčtu sektorů – zdroj zápis podporuje.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,ticket,ano,,"Web purple-ventures.com, sekce Our investment strategy (ověřeno 27. 10. 2026): „€250k to €400k“ – „initial ticket size, later follow-ons“. Jde o počáteční ticket. Starší Vestbee 15. 4. 2024 (250–750 tis. EUR) chybu nedokládá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purple-ventures,kapital,,,nevyplneno – pouze úplnost (agent zdůvodnil: jen „over CZK 700 million“ bez data a cíl fondu),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,existence,ano,,"ARES 24269158: Reflex Capital SE, Rašínovo nábřeží 2000/78, Praha 2.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,investicni_cinnost,ano,,CzechCrunch 22. 6. 2026 (Grid.online): „Připojili se i stávající podílníci z českých fondů Reflex Capital Ondřeje Fryce a J&T Ventures.“ V okně.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,je_investor,ano,,"Grid.online: Reflex Capital 11,6 % v tabulce majetkové struktury (CzechCrunch) – podíl doložen.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,typ,ano,,"CzechCrunch 22. 12. 2023: třetí fond 22 mil. EUR, „upsali dvaadvacet, ale investory jsme také odmítali“ – fond s externími investory.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,rozsah_pilotu,ano,,"VC, sídlo Praha 2 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,posledni_investice,ne,,"Grid.online (22. 6. 2026) samotný sedí, ale není nejnovější doložená investice: ArtMaster, CzechCrunch 21. 10. 2026, „K dřívějším investorům se nově přidávají fondy Factorial Capital a český Reflex Capital“, kolo 2,4 mil. USD – https://cc.cz/kdysi-si-v-amsterdamske-red-light-district-vydelaval-hranim-dnes-uz-diky-ai-uci-na-piano-stovky-tisic-lidi/ . Před referenčním datem 26. 10. 2026. Příčina neurčena – zda agent zprávu viděl, není z logu doloženo. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,nezavislost_zdroju,ano,,E15 má správně puvod = oznámení firmy; jistota stredni odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,sektory,,,nevyplneno – pouze úplnost (web sektory neuvádí),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,ticket,ano,,"CzechCrunch 22. 12. 2023: „při naší typické investici mezi jedním až dvěma miliony eur“ (starší údaj, datum zapsáno).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-reflex-capital,kapital,ano,,"CzechCrunch 22. 12. 2023: „Uzavřel svůj třetí fond o velikosti dvaadvacet milionů eur“ – fund_size, datum sedí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,existence,ano,,"ARES 09789561: Soulmates Ventures, osoba rizikového kapitálu, s.r.o., Rohanské nábřeží 693/10, Praha 8.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,investicni_cinnost,ano,,"Vestbee 3. 9. 2026: Rightcharge „raised £500,000 in a growth funding round led by existing investor Soulmates Ventures“; web Soulmates: „Why we led Rightcharge’s £500K follow-on round“. V okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,je_investor,ano,,"Vedení kola (Rightcharge), Antiverse series A; neprima_indicie odpovídá. Označení kola: agent zapsal u Rightcharge 2026 „seed“; jím citované zdroje (Vestbee, Pulse 2.0) ho nazývají „growth funding round“, web Soulmates „follow-on round“, Nordic9 „seed extension“. Nesoulad se zdroji agenta, ne jednoznačná chyba – k rozhodnutí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,typ,ano,,Vestbee 18. 3. 2025: „Prague-based Soulmates Ventures … has raised a €50 million fund“ (Article 9 SFDR); ARES osoba rizikového kapitálu.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,rozsah_pilotu,ano,,"VC, sídlo Praha 8 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,posledni_investice,ano,,"Rightcharge, oznámení 3. 9. 2026 (Vestbee, web Soulmates). Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,nezavislost_zdroju,ano,,Agent u Rightcharge správně uvádí společný původ (TZ Rightcharge) u všech tří médií; jistota odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,sektory,ano,,"Web: „focusing on key areas such as air, water, energy, mobility, education, healthcare, food and agriculture, and the circular economy“.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,ticket,ano,,"Web: „Initial Ticket Size up to €3M“ – min null, max 3 mil. EUR sedí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-soulmates-ventures,kapital,ano,,"Web: „Assets Under Management €62M“ (aum, bez data, plati_k null správně); Vestbee 18. 3. 2025 „has raised a €50 million fund“ (fund_size).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,existence,ano,,"ARES 04504593 Y Soft Ventures Management, a.s., 29314445 Y Soft Ventures, a.s., 07890150 Y Soft Ventures II, a.s. – vše Technická 2948/13, Brno.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,investicni_cinnost,ano,,"EIT Jumpstarter 2. 7. 2025: RoboTwin pre-seed 1,25 mil. EUR, financování mj. od „Y Soft Ventures“; ARES RoboTwin s.r.o.: Y Soft Ventures II, a.s. společníkem od 11. 6. 2025. V okně (12–24 měsíců), status sedí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,je_investor,ano,,"Podíl doložen zápisem společníka v obchodním rejstříku (RoboTwin s.r.o., IČO 14091682).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,typ,ano,,"CVC odpovídá definici PLAN.md („samostatná investiční jednotka velké firmy“): web – součást Y Soft; The Recycler 2. 7. 2025 „the venture capital arm of … Y Soft Corporation“; statutárem vehiklů je Y Soft Ventures Management, a.s. Forbes 16. 7. 2019: druhý fond spolufinancují i externí investoři (Frolík, Livesport) – to z něj nedělá nezávislé VC, ale typ je hraniční.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,rozsah_pilotu,ano,,"CVC, správce i vehikly sídlí v Brně (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,posledni_investice,ano,,"RoboTwin, oznámení 2. 7. 2025 (EIT Jumpstarter). Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,nezavislost_zdroju,nelze_overit,,"RoboTwin: EIT Jumpstarter, CzechCrunch, The Recycler (puvod null; CzechCrunch „Letos již hlásili“ odkazuje na dřívější oznámení, to je indicie, ne důkaz). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,sektory,ano,,"Web: Internet of Things, Industry 4.0, Smart Office, Retail 2.0, Smart City, Cyber Security, Big Data & Analytics, Augmented & Virtual Reality.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,ticket,,,nevyplneno – pouze úplnost (web ticket neuvádí),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-y-soft-ventures,kapital,,,nevyplneno – pouze úplnost (web kapitál neuvádí),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-lighthouse-ventures,existence,,,,,
+investori.json,cz-lighthouse-ventures,investicni_cinnost,,,,,
+investori.json,cz-lighthouse-ventures,je_investor,,,,,
+investori.json,cz-lighthouse-ventures,typ,,,,,
+investori.json,cz-lighthouse-ventures,rozsah_pilotu,,,,,
+investori.json,cz-lighthouse-ventures,posledni_investice,,,,,
+investori.json,cz-lighthouse-ventures,nezavislost_zdroju,,,,,
+investori.json,cz-lighthouse-ventures,sektory,,,,,
+investori.json,cz-lighthouse-ventures,ticket,,,,,
+investori.json,cz-lighthouse-ventures,kapital,,,,,
+investori.json,cz-czech-founders-vc,existence,ano,,"ARES/VR: Czech Founders Ventures s.r.o., osoba rizikového kapitálu, Salvátorská 931/8, Praha 1, aktivní",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,investicni_cinnost,ano,,"CzechCrunch 9. 6. 2026: Merchantee, „Kolo vedl fond Reflex Capital za účasti Czech Founders VC“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,je_investor,ano,,"Rozšíření seed kola, nástroj nepřímá indicie; web: „No more than 15% equity“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,typ,ano,,Web: „Pre-seed tickets“; CzechCrunch 2022: alternativní investiční fond,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,rozsah_pilotu,ano,,"Česká s.r.o., osoba rizikového kapitálu, Praha",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,posledni_investice,ano,,"Merchantee 9. 6. 2026 sedí; nejnovější nalezená, úplnost neověřena",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,nezavislost_zdroju,ano,,"Jediné zdroje (CzechCrunch), nic neoznačeno jako nezávislé",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,sektory,,,"nevyplneno – pouze úplnost; web sektory nevymezuje, null oprávněný",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,ticket,ano,,Web: „Pre-seed tickets. Typically €50-350k“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-czech-founders-vc,kapital,ano,,"CzechCrunch 7. 9. 2022: „složili dohromady deset milionů eur“, committed_capital, údaj z 2022",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,existence,ano,,"ARES: DEPO VENTURES, s.r.o., Plynární 1617/10, Praha 7, VR aktivní",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,investicni_cinnost,ano,,Kyiv Post 13. 10. 2026: „Czech venture capital firm DEPO Ventures invested an undisclosed amount in Zvook“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,je_investor,ano,,"Vestbee 29. 4. 2026: Tapaya pre-seed 1 mil. EUR, „co-led by Depo Ventures“; nástroj nepřímá indicie",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,typ,ano,,Kyiv Post: „Czech venture capital firm“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,rozsah_pilotu,ano,,"DEPO VENTURES s.r.o. v Praze, české fondy AF II a AF III; lucemburský domicil Fondu Ukrajina podle agenta nepotvrzen a českého správce nevylučuje",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,posledni_investice,ano,,"Zvook, oznámení 12. 10. 2026 (Šíma pro Defender Media), Kyiv Post 13. 10. sedí; nejnovější nalezená",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,nezavislost_zdroju,ano,,Kyiv Post s původem Defender Media zapsán správně,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,sektory,ano,,"Web: Defence, Space, FinTech, Industry 4.0, Energy",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,ticket,ano,,"Web: „Ticket €250K - 500K“; agregátor WaveUp uvádí 100–500 tis., vlastní web má přednost",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-depo-ventures,kapital,,,"nevyplneno – pouze úplnost; web uvádí jen nasazený kapitál, null oprávněný",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,existence,ano,,"ARES 02059533: Inven Capital, SICAV, a.s., Pod křížkem 1773/2, Praha 4; shoda s patičkou webu.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,investicni_cinnost,ano,,"Calcalist (CTech) 9. 9. 2026: Wint series D 36 mil. USD, „The round was co-led by LIP Ventures and Inven Capital.“ V okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,je_investor,ano,,"Spoluvedení kola series D (Wint); nástroj výslovně neuveden, neprima_indicie odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,typ,ano,,"ČEZ TZ 8. 2. 2023: „CEZ Group, the owner of Inven Capital“; samostatný fond korporace = CVC.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,rozsah_pilotu,ano,,"CVC, sídlo fondu Praha 4 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,posledni_investice,ano,,"Wint, oznámení 9. 9. 2026 (Calcalist). Web Inven uvádí Wint jako nejnovější zprávu. Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,nezavislost_zdroju,ano,,Calcalist má správně puvod = TZ Wint; jistota stredni odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,sektory,ano,,Web: „Topic: Climate tech“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,ticket,ano,,Web: „Ticket size 2-30m EUR“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-inven-capital,kapital,ano,,"Ověřeno přímo na stránce ČEZ (datum na stránce 08/02/2023): „The total assets value under management of Inven capital has now reached over EUR 500 million.“ Druh aum a datum sedí; 500 mil. EUR je dolní mez („over“) a údaj k 8. 2. 2023, ne současný stav – agent to v poznámce uvádí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,existence,ano,,"ARES/VR: Credo Ventures a.s., Karlovo nám. 2097/10, Praha 2, aktivní",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,investicni_cinnost,ano,,"TheSaaSNews 24. 6. 2026: SuperPlane pre-seed, „led by Credo Ventures“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,je_investor,ano,,"Pre-seed, nástroj nepřímá indicie",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,typ,ano,,The Next Web 23. 3. 2026: fond rizikového kapitálu Credo Stage 5,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,rozsah_pilotu,ano,,"Credo Ventures a.s. v Praze (VR); správce nového fondu podle agenta Credo Ventures Management II a.s. (CZ), roli neověřeno",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,posledni_investice,ano,,"SuperPlane 24. 6. 2026 sedí; nejnovější nalezená, úplnost neověřena",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,nezavislost_zdroju,ano,,"TheSaaSNews výslovně uvádí The Recursive jako zdroj, agent zapsal správně",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,sektory,,,"nevyplneno – pouze úplnost; TNW: „founder-first rather than theme-driven“, null oprávněný",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,ticket,ano,,TNW: „Typical cheques will fall in the $1–5 million range“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-credo-ventures,kapital,ano,,"TNW 23. 3. 2026: „closed Credo Stage 5, an $88 million fund“, fund_size",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-cs-seed-starter,existence,,,,,
+investori.json,cz-cs-seed-starter,investicni_cinnost,,,,,
+investori.json,cz-cs-seed-starter,je_investor,,,,,
+investori.json,cz-cs-seed-starter,typ,,,,,
+investori.json,cz-cs-seed-starter,rozsah_pilotu,,,,,
+investori.json,cz-cs-seed-starter,posledni_investice,,,,,
+investori.json,cz-cs-seed-starter,nezavislost_zdroju,,,,,
+investori.json,cz-cs-seed-starter,sektory,,,,,
+investori.json,cz-cs-seed-starter,ticket,,,,,
+investori.json,cz-cs-seed-starter,kapital,,,,,
+investori.json,cz-jt-ventures,existence,,,,,
+investori.json,cz-jt-ventures,investicni_cinnost,,,,,
+investori.json,cz-jt-ventures,je_investor,,,,,
+investori.json,cz-jt-ventures,typ,,,,,
+investori.json,cz-jt-ventures,rozsah_pilotu,,,,,
+investori.json,cz-jt-ventures,posledni_investice,,,,,
+investori.json,cz-jt-ventures,nezavislost_zdroju,,,,,
+investori.json,cz-jt-ventures,sektory,,,,,
+investori.json,cz-jt-ventures,ticket,,,,,
+investori.json,cz-jt-ventures,kapital,,,,,
+investori.json,cz-rockaway-ventures,existence,ano,,"ARES 14125129: Rockaway Ventures Advisors a.s., Generála Píky 430/26, Praha 6. Fond: Rockaway Ventures Fund SICAV a.s. (ARES 14235781, stejná adresa), patička webu „Rockaway Ventures Fund“.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,investicni_cinnost,ano,,"Vestbee 24. 2. 2026: „The pre-seed round was led by Rockaway Ventures“ (ValkaAI, 12 mil. EUR). V okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,je_investor,ano,,Vedení pre-seed kola (ValkaAI); neprima_indicie odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,typ,ano,,"Vestbee 16. 5. 2025: „a venture capital fund within the Rockaway Capital group“, fond II.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,rozsah_pilotu,ano,,"VC; SICAV i související a.s. sídlí v Praze 6, obhospodařovatelem fondu byla AMISTA investiční společnost (ČR). Role Rockaway Ventures Advisors a.s. jako správce z rejstříku nevyplývá (agent uvádí).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,posledni_investice,ano,,"ValkaAI, oznámení 24. 2. 2026 (Vestbee, TZ Rockaway). Nevyřešená výhrada: Nordic9 1. 3. 2026 uvádí seed do Float „from Rockaway Ventures and EIFO“ (agregátor, ve výčtu „Rockaway Capital“, původní oznámení nenalezeno); agent Float zmiňuje jako nedoložený. Není potvrzená chyba. Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,nezavislost_zdroju,ano,,Agent u ValkaAI i Remix správně uvádí společný původ (TZ); jistota stredni odpovídá.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,sektory,ano,,"Web: „primarily in retail and e-commerce, travel & hospitality, digital logistics, digital media, cybersecurity, defence, CleanTech, and PropTech“.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,ticket,,,nevyplneno – pouze úplnost (web ani Vestbee ticket neuvádějí),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-rockaway-ventures,kapital,ano,,"Vestbee 16. 5. 2025: „has closed its second fund at nearly €55 million“ (Rockaway Ventures Fund II). Zdroj uvádí téměř 55 mil. EUR, ne přesných 55 mil.; záznam 55 000 000 je horní mez, výhradu „nearly“ agent v poznámce uvádí. Druh fund_size a datum sedí.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,existence,ano,,"ARES/VR: Borovicka Capital s.r.o., Breitfeldova 709/17, Praha 8, aktivní; jednatelé Martin a Jakub Borovička",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,investicni_cinnost,ano,,"Forbes 23. 10. 2025: NutritionPro, „Jeho podíly vykoupili investoři ze tří fondů“ vč. Borovicka Capital",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,je_investor,ano,,Odkup podílu zakladatele = doložený podíl,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,typ,ano,,Web: „investment company with a strategic focus on venture capital investments“; jako family office se neoznačuje,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,rozsah_pilotu,ano,,"Česká s.r.o. v Praze, investuje vlastní prostředky",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,posledni_investice,ano,,"NutritionPro 23. 10. 2025 sedí (sekundární odkup, ne nové kolo); status 12–24 měsíců správně; nejnovější nalezená",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,nezavislost_zdroju,ano,,"Jediné zdroje, nic neoznačeno jako nezávislé",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,sektory,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,ticket,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-borovicka-capital,kapital,,,nevyplneno – pouze úplnost,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-fazole-ventures,existence,,,,,
+investori.json,cz-fazole-ventures,investicni_cinnost,,,,,
+investori.json,cz-fazole-ventures,je_investor,,,,,
+investori.json,cz-fazole-ventures,typ,,,,,
+investori.json,cz-fazole-ventures,rozsah_pilotu,,,,,
+investori.json,cz-fazole-ventures,posledni_investice,,,,,
+investori.json,cz-fazole-ventures,nezavislost_zdroju,,,,,
+investori.json,cz-fazole-ventures,sektory,,,,,
+investori.json,cz-fazole-ventures,ticket,,,,,
+investori.json,cz-fazole-ventures,kapital,,,,,
+investori.json,cz-miton,existence,ano,,"ARES 25417967: MITON CZ, s.r.o., Křižíkova 148/34, Praha 8; shoda s adresou na webu.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,investicni_cinnost,ano,,Původní zdroj agenta (Lupa.cz 19. 10. 2026) nebyl při kontrole dostupný. Investici dokládá náhradní zdroj CzechCrunch 19. 10. 2026: Miton „přidává další miliony“ do DeepScout – https://cc.cz/po-roce-a-pul-hlasi-zisk-mlady-startup-uz-vyuziva-i-alza-do-jeho-nove-ai-sluzby-posila-dalsi-miliony-miton/,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,je_investor,ano,,ACE: CzechCrunch „Půlku jeho nové aplikace získává za miliony Miton“ – podíl doložen.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,typ,ano,,"Web: „VC, ale ne tak úplně“, „Investujeme vlastní peníze“, ticket 300k–2M EUR, pre-seed až Series A. Hraniční (funding.tech.eu: Corporate), agent zdůvodnil podle pravidel.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,rozsah_pilotu,ano,,"VC, sídlo Praha 8 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,posledni_investice,ano,,"DeepScout, oznámení 19. 10. 2026. Citovaný zdroj (Lupa.cz) nedostupný, datum a firma potvrzeny náhradním zdrojem CzechCrunch téhož dne (URL viz investicni_cinnost). Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,nezavislost_zdroju,nelze_overit,,"ACE: CzechCrunch a blog Mitonu (oba 1. 10. 2026, puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, že nezávislost nedoložena. Důkaz společného původu nemám, proto nelze_overit; správná jistota stredni správnost pole puvod nepotvrzuje. Změna po přečtení nálezů AI.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,sektory,ano,,"Web /o-nas: AI, augmented workforce; Krypto, web3; E-commerce; Gastrotech; Psychedelika, duševní zdraví.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,ticket,ano,,Web /o-nas: „300k-2M €  Obvyklá výše vstupní investice“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-miton,kapital,,,"nevyplneno – pouze úplnost (web uvádí jen hodnotu portfolia, agent zdůvodnil)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,existence,ano,,"ARES 11678704: Presto Ventures II a.s., osoba rizikového kapitálu, Revoluční 763/15, Praha 1; web zveřejňuje pozvánku na VH této a.s.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,investicni_cinnost,nelze_overit,,"Přiřazení uvedených investic k Prestu nedoloženo. Investice SatVu a Occam provedl fond (Presto) Tech Horizons – Tech Horizons SCSp, Lucembursko, správce Tech Horizons GP S.à r.l., „own governance“ (techhorizons.eu). CzechCrunch 11. 2. 2026 dokládá jen založení fondu Presto Ventures a CSG; vazba správy na Presto ani vztah v době investic nedoloženy, Presto na Tech Horizons odkazuje z webu. Přiřazení nedoloženo, ne vyvráceno. Cílené ověření 27. 10. 2026: Outfindo – kolo 1,2 mil. EUR (leden 2025) vedla Eleven Ventures za účasti Lighthouse Ventures a Borovička Capital; Presto je jen dřívější investor, v tomto kole nejmenován (Techleap). Elin.ai – Presto investoval na jaře 2024 (Vestbee 18. 6. 2024, mimo okno); kolo z prosince 2024 („JSK Investments joins Presto Ventures and BD Partners“, Vestbee 9. 12. 2024) je vstup JSK, Presto jen stávající investor. Ani jedno nedokládá investici Presta v okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,je_investor,nelze_overit,,Podle dosud prověřených transakcí nelze ověřit; viz investicni_cinnost.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,typ,ano,,Web: „Seed to Series A … Tickets ranging from €500k to €5M“; ARES „osoba rizikového kapitálu“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,rozsah_pilotu,ano,,"Presto Ventures II a.s., osoba rizikového kapitálu (ARES 11678704 – typ VC), sídlo Revoluční 763/15, Praha 1. Hodnoceno za subjekt záznamu; Tech Horizons by byl mimo pilot (správce v Lucembursku).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,posledni_investice,nelze_overit,,SatVu 18. 2. 2026: přiřazení k Prestu nedoloženo (viz investicni_cinnost).,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,nezavislost_zdroju,ano,,Pulse 2.0 a TZ CSG mají různé původce (SatVu vs. CSG); jistota stredni odpovídá. Hodnoceno bez ohledu na přiřazení investice.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,sektory,ano,,"Web: „Security, defense, and aerospace. Cutting-edge and dual-use solutions“.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,ticket,ano,,Web: „Tickets ranging from €500k to €5M.“,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-presto-ventures,kapital,,,"nevyplneno – pouze úplnost (jen cíl fondu 150 mil. EUR, agent zdůvodnil)",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,existence,ano,,"ARES 19183992: PurposeTech s.r.o., Drtinova 557/10, Praha 5; shoda s adresou na webu.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,investicni_cinnost,ano,,"Cambridge Enterprise 30. 4. 2026: auryx pre-seed 2 mil. USD „with participation from EWOR, Cambridge Enterprise Ventures, Vento, PurposeTech“. V okně.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,je_investor,ano,,"Účast v pre-seed kole (auryx), auryx je i v portfoliu na webu; neprima_indicie odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,typ,ano,,Web: „PurposeTech is a pre-seed fund that backs founders…“.,Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,rozsah_pilotu,ano,,"VC, sídlo Praha 5 (ARES).",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,posledni_investice,ano,,"auryx, oznámení 30. 4. 2026 (Cambridge Enterprise). Nejnovější nalezená, úplnost neověřena.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,nezavislost_zdroju,ano,,"Agent u auryx správně uvádí společný původ (oznámení auryx), jistota stredni odpovídá.",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,sektory,ano,,"Web: „We invest in founders reshaping Health, Climate, and the Future of Work.“",Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,ticket,,,nevyplneno – pouze úplnost (web ticket neuvádí),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-purposetech,kapital,,,nevyplneno – pouze úplnost (agent zdůvodnil: jen „necelých šedesát milionů korun“ bez druhu),Petr Šťastný (asistence AI),2026-10-27
+investori.json,cz-tilia-impact-ventures,existence,,,,,
+investori.json,cz-tilia-impact-ventures,investicni_cinnost,,,,,
+investori.json,cz-tilia-impact-ventures,je_investor,,,,,
+investori.json,cz-tilia-impact-ventures,typ,,,,,
+investori.json,cz-tilia-impact-ventures,rozsah_pilotu,,,,,
+investori.json,cz-tilia-impact-ventures,posledni_investice,,,,,
+investori.json,cz-tilia-impact-ventures,nezavislost_zdroju,,,,,
+investori.json,cz-tilia-impact-ventures,sektory,,,,,
+investori.json,cz-tilia-impact-ventures,ticket,,,,,
+investori.json,cz-tilia-impact-ventures,kapital,,,,,
+vyrazeni.csv,cz-arx-equity-partners,je_investor,,,,,
+vyrazeni.csv,cz-arx-equity-partners,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-arx-equity-partners,kategorie,,,,,
+vyrazeni.csv,cz-arx-equity-partners,duvod,,,,,
+vyrazeni.csv,cz-mam-private-equity-fund,je_investor,,,,,
+vyrazeni.csv,cz-mam-private-equity-fund,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-mam-private-equity-fund,kategorie,,,,,
+vyrazeni.csv,cz-mam-private-equity-fund,duvod,,,,,
+vyrazeni.csv,cz-everita-capital,je_investor,,,,,
+vyrazeni.csv,cz-everita-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-everita-capital,kategorie,,,,,
+vyrazeni.csv,cz-everita-capital,duvod,,,,,
+vyrazeni.csv,cz-bd-partners,je_investor,,,,,
+vyrazeni.csv,cz-bd-partners,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-bd-partners,kategorie,,,,,
+vyrazeni.csv,cz-bd-partners,duvod,,,,,
+vyrazeni.csv,cz-central-europe-industry-partners,je_investor,,,,,
+vyrazeni.csv,cz-central-europe-industry-partners,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-central-europe-industry-partners,kategorie,,,,,
+vyrazeni.csv,cz-central-europe-industry-partners,duvod,,,,,
+vyrazeni.csv,cz-emma-capital,je_investor,,,,,
+vyrazeni.csv,cz-emma-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-emma-capital,kategorie,,,,,
+vyrazeni.csv,cz-emma-capital,duvod,,,,,
+vyrazeni.csv,cz-genesis-capital,je_investor,,,,,
+vyrazeni.csv,cz-genesis-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-genesis-capital,kategorie,,,,,
+vyrazeni.csv,cz-genesis-capital,duvod,,,,,
+vyrazeni.csv,cz-lion-beat-capital,je_investor,,,,,
+vyrazeni.csv,cz-lion-beat-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-lion-beat-capital,kategorie,,,,,
+vyrazeni.csv,cz-lion-beat-capital,duvod,,,,,
+vyrazeni.csv,cz-qq-capital,je_investor,,,,,
+vyrazeni.csv,cz-qq-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-qq-capital,kategorie,,,,,
+vyrazeni.csv,cz-qq-capital,duvod,,,,,
+vyrazeni.csv,cz-skylimit-investments,je_investor,,,,,
+vyrazeni.csv,cz-skylimit-investments,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-skylimit-investments,kategorie,,,,,
+vyrazeni.csv,cz-skylimit-investments,duvod,,,,,
+vyrazeni.csv,cz-stratum-partners,je_investor,,,,,
+vyrazeni.csv,cz-stratum-partners,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-stratum-partners,kategorie,,,,,
+vyrazeni.csv,cz-stratum-partners,duvod,,,,,
+vyrazeni.csv,cz-tcf-capital,je_investor,,,,,
+vyrazeni.csv,cz-tcf-capital,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-tcf-capital,kategorie,,,,,
+vyrazeni.csv,cz-tcf-capital,duvod,,,,,
+vyrazeni.csv,cz-thein,je_investor,,,,,
+vyrazeni.csv,cz-thein,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-thein,kategorie,,,,,
+vyrazeni.csv,cz-thein,duvod,,,,,
+vyrazeni.csv,cz-versute-investments,je_investor,,,,,
+vyrazeni.csv,cz-versute-investments,rozsah_pilotu,,,,,
+vyrazeni.csv,cz-versute-investments,kategorie,,,,,
+vyrazeni.csv,cz-versute-investments,duvod,,,,,

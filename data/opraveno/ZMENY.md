@@ -1,4 +1,4 @@
-# Přehled změn opravené verze (krok 8)
+# Přehled změn opravené verze (krok 8, oprava hodnocení i&i Prague v kroku 9)
 
 Vygenerováno skriptem `scripts/oprav.py` z `data/vystup_agenta/` a `data/hodnoceni.csv`. Nepřepisovat ručně. Původní výstup agenta, hodnocení i měření zůstávají beze změny.
 
@@ -8,16 +8,16 @@ Vygenerováno skriptem `scripts/oprav.py` z `data/vystup_agenta/` a `data/hodnoc
 
 | soubor | původně | opraveno | změna |
 |---|---|---|---|
-| investori.json | 27 | 22 | -5 |
+| investori.json | 27 | 23 | -4 |
 | vyrazeni.csv | 17 | 19 | +2 |
 | hranicni.csv | 1 | 1 | +0 |
-| nevyresene.csv | 11 | 14 | +3 |
+| nevyresene.csv | 11 | 13 | +2 |
 | **celkem výsledných id** | 56 | 56 | |
 
 Stav kontroly zařazených (`stav_kontroly.csv`, sloupec `vysledek`):
 
 - `s_opravou`: 4
-- `hodnocena_pole_ano`: 9
+- `hodnocena_pole_ano`: 10
 - `s_vyhradou_nelze_overit`: 2
 - `nehodnoceno`: 7
 
@@ -37,10 +37,11 @@ Původní úplný záznam každého přesunutého id zůstává v `data/vystup_a
 | cz-n1-ventures | investori.json, zařazen | vyrazeni.csv, mimo_rozsah_pilotu | sídlo správce mimo ČR (GP v Lucembursku); skutečný investor, ne neinvestor | ř. 6 (cz-n1-ventures, rozsah_pilotu); dále ř. 3, ř. 4, ř. 2, ř. 10 | https://n1.rocks/disclosure<br>https://www.thevccorner.com/p/novoflow-ai-healthcare-startup<br>https://n1.rocks/ |
 | cz-ii-biotech-investments | investori.json, zařazen | vyrazeni.csv, mimo_rozsah_pilotu | fond se sídlem v Lucembursku, česká s.r.o. je poradce a tým; skutečný investor, ne neinvestor | ř. 37 (cz-ii-biotech-investments, rozsah_pilotu); dále ř. 34, ř. 35, ř. 41, ř. 39 | https://www.inibio.eu/<br>https://www.lupa.cz/aktuality/ai-agenti-noveho-ceskeho-startupu-maji-desitky-milionu-aby-urychlily-vedecky-vyzkum-a-vyvoj/ |
 | cz-tensor-ventures | investori.json, zařazen | nevyresene.csv, otazka sidlo | sídlo správce neověřené, pravidla pilotu vyžadují správce v ČR | ř. 17 (cz-tensor-ventures, rozsah_pilotu); dále ř. 13, ř. 14, ř. 15, ř. 19 | https://tensor.ventures/<br>https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06257241 |
-| cz-ii-prague | investori.json, zařazen | nevyresene.csv, otazka nastroj | nástroj u jediné investice v okně nedoložen (PLAN.md bod 3, Nevyřešená rozhodnutí) | ř. 65 (cz-ii-prague, je_investor); dále ř. 64, ř. 66, ř. 67, ř. 68 | https://positiv.cz/business/casinvent-pharma-ziskava-silnou-investicni-podporu-pro-vyvoj-cilene-lecby-nadoru/<br>https://khanu.de/2025/07/02/casinvent-pharma-secures-next-investment-round-with-strong-support-from-existing-and-local-investors-to-advance-ck1-inhibitor-development-for-treatment-resistant-cancer-patients/<br>https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221 |
 | cz-presto-ventures | investori.json, zařazen | nevyresene.csv, otazka investice | přiřazení investic v okně k Prestu nedoložené (ne vyvrácené) | ř. 293 (cz-presto-ventures, investicni_cinnost); dále ř. 294, ř. 297, ř. 292, ř. 296 | https://pulse2.com/satvu-raises-30-million-in-nato-innovation-fund-backed-round-to-scale-multi-satellite-constellation/amp/<br>https://csg.com/en/news/pth-vc-fund-backed-by-csg-invests-in-uk-based-satvu-strengthening-space-and-thermal-intelligence-capabilities<br>https://techhorizons.eu/<br>https://www.prestoventures.com/ |
 
-U i&i Prague a Presta chybí důkaz (nástroj, resp. přiřazení investice). Chybějící důkaz neznamená, že subjekt není investor; oba čekají na ruční rozhodnutí v `nevyresene.csv`.
+U Presta chybí důkaz o přiřazení investice. Chybějící důkaz neznamená, že subjekt není investor; čeká na ruční rozhodnutí v `nevyresene.csv`.
+
+i&i Prague zůstává zařazená (oprava hodnocení v kroku 9, hodnoceni.csv ř. 65): uložený výpis ARES CasInvent (`ai-log/02-obohaceni/zdroje/ares_vr_09684221.json`) uvádí konvertibilní zápůjčku z 4. 3. 2025, nabídku 48 akcií třídy C i&i Prague (valná hromada 22. 5. 2025) a zapsané splacené zvýšení kapitálu k 30. 5. 2025. Upsání je doloženo nepřímo, smlouva o úpisu přímo ověřena není. Původní stav (je_investor = nelze_overit, přesun do `nevyresene.csv` s otázkou `nastroj`) je v `ai-log/09-readme/hodnoceni_pred_opravou_ii_prague.csv` a v historii gitu (commit 0641e6a).
 
 ## Opravy poslední investice
 
@@ -100,7 +101,7 @@ Doplňující fakta z ruční kontroly ověřil Claude načtením stránek 27. 1
 |---|---|---|---|
 | cz-credo-ventures | investori.json | – | rozsah pilotu: role Credo Ventures Management II a.s. jako správce nového fondu neověřena [ř. 226, rozsah_pilotu] |
 | cz-ii-biotech-investments | vyrazeni.csv | nezavislost_zdroju | fond se sídlem v Lucembursku, česká s.r.o. je poradce a tým; skutečný investor, ne neinvestor (podrobně sloupec duvod v vyrazeni.csv); nezávislost zdrojů neověřena: zprávy vedené s puvod null mohou mít společný podklad, společný původ ani nezávislost nejsou doložené; puvod ani jistota se nemění [ř. 39, nezavislost_zdroju] |
-| cz-ii-prague | nevyresene.csv | je_investor | nástroj u jediné investice v okně nedoložen (PLAN.md bod 3, Nevyřešená rozhodnutí) (podrobně sloupec duvod v nevyresene.csv) |
+| cz-ii-prague | investori.json | – | nástroj: oprava hodnocení v kroku 9 (původně je_investor = nelze_overit a přesun do nevyresene.csv); výpis ARES CasInvent uvádí konvertibilní zápůjčku i&i Prague z 4. 3. 2025, nabídku 48 akcií třídy C (VH 22. 5. 2025) a zapsané splacené zvýšení kapitálu 30. 5. 2025; upsání akcií i&i Prague je doloženo nepřímo, smlouva o úpisu přímo ověřena není [ř. 65, je_investor] |
 | cz-kaya-vc | investori.json | – | mimo náhodný vzorek 20 z 27 zařazených (seed 20261027), údaje ručně nekontrolované; známý nález automatické kontroly (metodika): kapital[2].fond vyplněn u druhu committed_capital; bez dokončeného hodnocení neopraveno; nález kontrolního agenta (fáze B): správcem je podle kaya.vc/sustainability lucemburský AIFM KAYA VC GP S.à r.l.; sídlo správce neposouzeno, zařazení beze změny |
 | cz-look-ai-ventures | investori.json | nezavislost_zdroju | nezávislost zdrojů neověřena: zprávy vedené s puvod null mohou mít společný podklad, společný původ ani nezávislost nejsou doložené; puvod ani jistota se nemění [ř. 128, nezavislost_zdroju]; Pulse 2.0 (https://pulse2.com/embodied-ai-launches-with-funding-to-automate-european-manufacturing/) vyšel 16. 9. 2026 a jmenuje Look AI Ventures mezi investory Embodied AI; první veřejné oznámení může být starší než datum_oznameni 2026-09-22 [ř. 127, posledni_investice] |
 | cz-miton | investori.json | nezavislost_zdroju | nezávislost zdrojů neověřena: zprávy vedené s puvod null mohou mít společný podklad, společný původ ani nezávislost nejsou doložené; puvod ani jistota se nemění [ř. 288, nezavislost_zdroju]; poslední investice: citovaný zdroj Lupa.cz nedostupný, firma a datum potvrzeny náhradním zdrojem CzechCrunch [ř. 287, posledni_investice] |
@@ -118,9 +119,9 @@ Dále: sedm zařazených mimo vzorek (cz-cs-seed-starter, cz-fazole-ventures, cz
 
 ## Automatická kontrola opravené verze
 
-`scripts/zkontroluj_data.py` čte jen `data/vystup_agenta/`. Pro kontrolu opravené verze se spouští nad dočasným kořenem mimo repozitář: kopie `data/kandidati.csv`, čtyř výsledkových souborů z `data/opraveno/` jako `data/vystup_agenta/` a kopie `ai-log/02-obohaceni/mapovani_id.csv`, ve které je u pěti přesunutých id změněný sloupec `soubor`. Původní data se nepřesouvají ani nepřepisují. Kontrola URL (`--over-url`) se nespouštěla.
+`scripts/zkontroluj_data.py` čte jen `data/vystup_agenta/`. Pro kontrolu opravené verze se spouští nad dočasným kořenem mimo repozitář: kopie `data/kandidati.csv`, čtyř výsledkových souborů z `data/opraveno/` jako `data/vystup_agenta/` a kopie `ai-log/02-obohaceni/mapovani_id.csv`, ve které je u čtyř přesunutých id změněný sloupec `soubor`. Původní data se nepřesouvají ani nepřepisují. Kontrola URL (`--over-url`) se nespouštěla.
 
-- `--datum 2026-10-26` (výchozí, den kroku 2): chyby struktury 0, metodický nesoulad 10, upozornění 8. Devět nálezů „datum není v budoucnosti“ má jedinou příčinu: zdroje čtené v kroku 8 mají `stazeno` 2026-10-27, tedy po referenčním datu. Desátý je známý nález u KAYA.
+- `--datum 2026-10-26` (výchozí, den kroku 2): chyby struktury 0, metodický nesoulad 9, upozornění 8. Osm nálezů „datum není v budoucnosti“ má jedinou příčinu: zdroje čtené v kroku 8 mají `stazeno` 2026-10-27, tedy po referenčním datu. Devátý je známý nález u KAYA. Před opravou i&i Prague v kroku 9 bylo nálezů 10 (navíc `stazeno` přesunutého záznamu i&i Prague).
 - `--datum 2026-10-27` (den ruční kontroly): chyby struktury 0, metodický nesoulad 1 (známý nález u cz-kaya-vc: `kapital[2].fond` u druhu `committed_capital`, mimo vzorek, bez dokončeného hodnocení neopraveno), upozornění 8 (stejná jako při 2026-10-26). Statusy se posunem referenčního data nemění.
 - Upozornění je 8 místo 16 v `ai-log/03-kontrola/automaticka_kontrola.md` ze dvou důvodů: kontrola URL se nespouštěla (5 nedostupných URL v původní zprávě) a upozornění k `cvca.cz` a `plati_k` u N1 a i&i Biotech zmizela s přesunem jejich záznamů z `investori.json` do `vyrazeni.csv` (3 nálezy).
 

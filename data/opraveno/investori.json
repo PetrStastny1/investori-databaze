@@ -765,6 +765,120 @@
     "poznamka": "Typ VC: web 'Fazole Ventures jsme založili proto, abychom pomohli chytrým lidem uspět... Podporujeme je v počáteční fázi růstu jejich firem tím, že poskytujeme financování', tým managing partner Pavel Přikryl a zakládající partneři Pavel Bouška a Luboš Černý; Forbes 12. 8. 2019 (https://forbes.cz/novy-startupovy-fond-na-scene-vetsinu-penez-poskytne-miliardar-bouska/) jej uvádí jako nový fond na 'české venture kapitálové scéně' ('Nový vehikl... se zaměřuje na rané investice do technologických startupů z oblasti B2B'; Přikryl: 'rodinnější povahou našeho fondu', 'Naší ambicí je vytvořit jakýsi venture kapitálový klub'). Většinu peněz podle Forbes přislíbil P. Bouška, který své další investice spravuje přes vlastní family office Fermia; Fazole je samostatná investiční firma tří partnerů s menšinovými podíly ve startupech, ne holding jednoho podnikatele ani family office. Identita: ARES Fazole Ventures s.r.o., IČO 07491492, sídlo Salvátorská 931/8, Praha 1 (shodné s adresou 'c/o Opero, Salvátorská 931/8' na webu), jednatelé Luboš Černý a Pavel Přikryl = partneři podle webu; společníci Luboš Černý 15 %, GROWTHGARAGE s.r.o. 25 % (poradenská firma, kterou podle webu vede Přikryl), PABCO s.r.o. 60 % (vazba na P. Bouška nepotvrzená). Předmět podnikání v ARES je jen 'pronájem nemovitostí, bytů a nebytových prostor' (obecný zápis). Ticket: web 'Náš \"sweet spot\" se pohybuje mezi 1-20 mil. CZK, ale zvážíme i větší objemy financování'. Kapitál: Forbes 2019 'Palebnou sílu přesně stanovenou nemá', proto prázdné. Poslední investice: Everbot (Opava), Forbes 16. 9. 2025: 'Do firmy míří desítky milionů korun od skupiny investorů v čele s fondem Fazole Ventures' a 'Fond Fazole Ventures získá v Everbotu výměnou za kapitál 12,2procentní podíl s možností navýšení až o 2,7 procentního bodu. Přesná výše investice v řádu desítek milionů korun nebyla zveřejněna.' CzechCrunch týž den: 'Lídrem investičního kola se stal fond Fazole Ventures', 'Everbot je nyní v pořadí desátou investicí Fazole Ventures.'; Lupa.cz týž den: 'nabral investici nižších desítek milionů korun výměnou za podíl 12,2 procenta'. Nástroj podíl doložený. Datum podpisu/uzavření žádný zdroj neuvádí, proto datum_oznameni. Všechny tři články vyšly 16. 9. 2025 se shodnými citacemi, tedy z jednoho oznámení -> jeden původ, jistota investice stredni. Status investice_dolozena_12_24_mesicu (oznámení 2025-09-16, tj. před 2025-10-26). Agregátory (Caplight) uvádějí Whalebone series B v únoru 2025 s účastí Fazole, zprávu o transakci s Fazole jsem nenašel (Forbes 2019 popisuje investici 15 mil. Kč do Whalebone v roce 2019), proto nezapsáno; funding.tech.eu uvádí jen Forloop (2022). Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
   },
   {
+    "id": "cz-ii-prague",
+    "nazev": "i&i Prague",
+    "typ": "VC",
+    "zeme": "CZ",
+    "pravni_subjekt": {
+      "hodnota": "i&i Prague, s.r.o.",
+      "ico": "06058485",
+      "zdroje": [
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06058485",
+          "druh_zdroje": "rejstrik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2026-10-25",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://www.iniprague.com/",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "web investora",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://uochb.cz/en/ini-prague",
+          "druh_zdroje": "web_subjektu",
+          "vydavatel": "ÚOCHB (mateřská instituce)",
+          "puvod": null,
+          "zdroj_datum": null,
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "web": {
+      "hodnota": "https://www.iniprague.com/",
+      "zdroj_url": "https://www.iniprague.com/",
+      "stazeno": "2026-10-26"
+    },
+    "sektory": {
+      "hodnota": [
+        "drug development",
+        "diagnostics",
+        "medical technologies",
+        "life sciences"
+      ],
+      "zdroj_url": "https://www.iniprague.com/",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "faze": {
+      "hodnota": [
+        "pre-seed"
+      ],
+      "zdroj_url": "https://uochb.cz/en/ini-prague",
+      "zdroj_datum": null,
+      "stazeno": "2026-10-26"
+    },
+    "ticket": {
+      "min": null,
+      "max": null,
+      "mena": null,
+      "zdroj_url": null,
+      "zdroj_datum": null,
+      "stazeno": null
+    },
+    "kapital": [],
+    "posledni_investice": {
+      "firma": "CasInvent Pharma",
+      "datum_investice": null,
+      "datum_oznameni": "2025-06-26",
+      "datum_pro_filtr": "oznameni",
+      "nastroj": {
+        "hodnota": "podil",
+        "doklad": "dolozeno",
+        "kolo": null,
+        "zdroj_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221"
+      },
+      "zdroje": [
+        {
+          "url": "https://positiv.cz/business/casinvent-pharma-ziskava-silnou-investicni-podporu-pro-vyvoj-cilene-lecby-nadoru/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "Positiv.cz",
+          "puvod": "TZ CasInvent Pharma",
+          "zdroj_datum": "2025-06-26",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://khanu.de/2025/07/02/casinvent-pharma-secures-next-investment-round-with-strong-support-from-existing-and-local-investors-to-advance-ck1-inhibitor-development-for-treatment-resistant-cancer-patients/",
+          "druh_zdroje": "zprava_o_transakci",
+          "vydavatel": "KHAN-I (převzatá tisková zpráva CasInvent Pharma)",
+          "puvod": "TZ CasInvent Pharma",
+          "zdroj_datum": "2025-07-02",
+          "stazeno": "2026-10-26"
+        },
+        {
+          "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221",
+          "druh_zdroje": "rejstrik_spolecnik",
+          "vydavatel": "ARES (výpis z veřejného rejstříku)",
+          "puvod": null,
+          "zdroj_datum": "2025-05-30",
+          "stazeno": "2026-10-26"
+        }
+      ]
+    },
+    "dalsi_investice": [],
+    "status": "investice_dolozena_12_24_mesicu",
+    "jistota": {
+      "existence": "vysoka",
+      "investice": "stredni"
+    },
+    "poznamka": "Typ VC: vlastní popis „We are a biotech incubator and venture builder“ (iniprague.com), ÚOCHB: „The company provides pre-seed financing for such projects“. Podle pravidel je akcelerátor/inkubátor s vlastním kapitálem a doloženými investicemi za podíl VC: i&i Prague investuje z vlastní společnosti (konvertibilní zápůjčka 100 000 EUR do CasInvent Pharma převedená na akcie, viz níže). Nejde o CVC velké firmy ani o provozní korporaci; jediný společník je IOCB TECH s.r.o. (IČO 28934024, 100 %), firma ÚOCHB AV ČR pro transfer technologií. Identita: ARES i&i Prague, s.r.o., IČO 06058485, Pobřežní 394/12, Praha 8 (shodně s webem), jednatelé David Stíbal (od 2025-04-01, na webu i&i Prague v rozhovoru) a Zuzana Demianová (od 2026-10-01). Oddělení od i&i Biotech Fund: fond i&i Biotech Fund I SCSp (poradce Biotech Investments s.r.o., IČO 10885978) je samostatná investiční firma (viz par_cz-ii-biotech-investments__cz-ii-prague.md); jeho investice (Antiverse, KyDo, Captain T Cell, Theorema aj.) i&i Prague nepřipisuji, ač je databáze Caplight slučuje. Kapitál fondu (45–47 mil. EUR) není kapitálem i&i Prague. Vlastní kapitál ani ticket i&i Prague nikde neuvádí (prázdné). Poslední investice: CasInvent Pharma, a.s. (Brno, IČO 09684221), další investiční kolo bez uvedené výše a bez označení fáze; tisková zpráva CasInvent (Positiv.cz 26. 6. 2025 „Zdroj: TZ Casinvent“; KHAN-I 2. 7. 2025): nové investory JIC Ventures, Garage Angels a Dynumerics „together contributing 50% of the total investment. The remaining investment was backed by longstanding investors including KHAN-I, i&i Prague, and Holeček Family Foundation.“ Nástroj doložen rejstříkem (ARES VR CasInvent, zápis 2025-05-30): valná hromada 22. 5. 2025 zvýšila základní kapitál o 768 000 Kč upsáním akcií třídy C; 48 ks akcií (jmenovitá hodnota 96 000 Kč) „předem určenému zájemci, kterým je společnost i&i Prague, s.r.o. … IČO: 060 58 485“, splacení započtením pohledávky 100 000 EUR „z titulu Smlouvy o konvertibilní zápůjčce (Convertible Loan Agreement)“ ze dne 4. 3. 2025. Rejstřík beru jen jako doklad nástroje, ne data; datum_investice proto null, datum_pro_filtr = oznámení 2025-06-26 (12–24 měsíců). Starší investice mimo okno: CasInvent pre-Series A 1,6 mil. EUR (velikost celého kola) oznámená 30. 1. 2024 (ctt.muni.cz). PerioTrap: Companisto uvádí i&i Prague mezi co-investory bez data a startbase (10. 3. 2026) i&i Prague u kola pre-Series A neuvádí, nepoužito. Nanoflexion: jen inkubace podle TUL/PitchBook, investice nedoložena zprávou. Jistota investice stredni: obě zprávy vycházejí z jedné tiskové zprávy CasInvent. Poslední investice je nejnovější nalezená, ne nutně skutečně poslední."
+  },
+  {
     "id": "cz-inven-capital",
     "nazev": "Inven Capital",
     "typ": "CVC",

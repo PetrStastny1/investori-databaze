@@ -119,33 +119,6 @@ PRESUNY = {
             ]),
         },
     },
-    "cz-ii-prague": {
-        "soubor": "nevyresene.csv",
-        "hodnoceni": [("je_investor", "nelze_overit"), ("investicni_cinnost", "ano"), ("typ", "ano"),
-                      ("rozsah_pilotu", "ano"), ("posledni_investice", "ano")],
-        "novy_stav": "nevyresene.csv, otazka nastroj",
-        "popis": "nástroj u jediné investice v okně nedoložen (PLAN.md bod 3, Nevyřešená rozhodnutí)",
-        "radek": {
-            "otazka": "nastroj",
-            "moznosti": SEP.join(["zarazen", "neni_investor"]),
-            "duvod": (
-                "Ruční kontrola (krok 8; hodnoceni.csv {r:je_investor}, je_investor = nelze_overit): jediná "
-                "zapsaná investice v okně (CasInvent Pharma, oznámení 26. 6. 2025, TZ CasInvent přes Positiv.cz "
-                "a KHAN-I) neuvádí nástroj ani označení kola. Doklad z rejstříku, o který agent opřel "
-                "nastroj = dolozeno, ukazuje i&i Prague jako jediného akcionáře CasInvent jen 18. 11.–15. 12. 2020 "
-                "(založení), ne tuto investici ({r:posledni_investice}). Podmínka 3 tedy doložená není a podle "
-                "PLAN.md (bod 3, Nevyřešená rozhodnutí) jde kandidát k ručnímu rozhodnutí. Chybějící důkaz "
-                "o nástroji neznamená, že i&i Prague není investor: investice je doložená ({r:investicni_cinnost}), "
-                "typ VC a sídlo v ČR sedí ({r:typ}, {r:rozsah_pilotu}). Rozhodne zdroj, který uvede nástroj účasti "
-                "i&i Prague v kole 2025: podíl nebo konvertibilní nástroj → zarazen, výhradně dluh → neni_investor. "
-                "Původní úplný záznam: " + PUVODNI + ", id cz-ii-prague."),
-            "zdroj_url": SEP.join([
-                "https://positiv.cz/business/casinvent-pharma-ziskava-silnou-investicni-podporu-pro-vyvoj-cilene-lecby-nadoru/",
-                "https://khanu.de/2025/07/02/casinvent-pharma-secures-next-investment-round-with-strong-support-from-existing-and-local-investors-to-advance-ck1-inhibitor-development-for-treatment-resistant-cancer-patients/",
-                "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09684221",
-            ]),
-        },
-    },
     "cz-presto-ventures": {
         "soubor": "nevyresene.csv",
         "hodnoceni": [("investicni_cinnost", "nelze_overit"), ("je_investor", "nelze_overit"),
@@ -367,6 +340,12 @@ VYHRADY = {
     "cz-miton": [
         ("poslední investice: citovaný zdroj Lupa.cz nedostupný, firma a datum potvrzeny náhradním zdrojem "
          "CzechCrunch", ("posledni_investice", "ano")),
+    ],
+    "cz-ii-prague": [
+        ("nástroj: oprava hodnocení v kroku 9 (původně je_investor = nelze_overit a přesun do nevyresene.csv); "
+         "výpis ARES CasInvent uvádí konvertibilní zápůjčku i&i Prague z 4. 3. 2025, nabídku 48 akcií třídy C "
+         "(VH 22. 5. 2025) a zapsané splacené zvýšení kapitálu 30. 5. 2025; upsání akcií i&i Prague je doloženo "
+         "nepřímo, smlouva o úpisu přímo ověřena není", ("je_investor", "ano")),
     ],
     "cz-kaya-vc": [
         ("známý nález automatické kontroly (metodika): kapital[2].fond vyplněn u druhu committed_capital; "
@@ -593,7 +572,7 @@ def zmeny_md(podle_id, investori, vysledky, stav, vzorek):
     for r in zar:
         vys[r["vysledek"]] = vys.get(r["vysledek"], 0) + 1
     o = []
-    o.append("# Přehled změn opravené verze (krok 8)")
+    o.append("# Přehled změn opravené verze (krok 8, oprava hodnocení i&i Prague v kroku 9)")
     o.append("")
     o.append("Vygenerováno skriptem `scripts/oprav.py` z `data/vystup_agenta/` a `data/hodnoceni.csv`. "
              "Nepřepisovat ručně. Původní výstup agenta, hodnocení i měření zůstávají beze změny.")
@@ -642,8 +621,16 @@ def zmeny_md(podle_id, investori, vysledky, stav, vzorek):
         o.append(f"| {id_} | investori.json, zařazen | {p['novy_stav']} | {md_bunka(p['popis'])} | "
                  f"{refy}; dále {dalsi} | {urls} |")
     o.append("")
-    o.append("U i&i Prague a Presta chybí důkaz (nástroj, resp. přiřazení investice). Chybějící důkaz "
-             "neznamená, že subjekt není investor; oba čekají na ruční rozhodnutí v `nevyresene.csv`.")
+    o.append("U Presta chybí důkaz o přiřazení investice. Chybějící důkaz neznamená, že subjekt není investor; "
+             "čeká na ruční rozhodnutí v `nevyresene.csv`.")
+    o.append("")
+    o.append("i&i Prague zůstává zařazená (oprava hodnocení v kroku 9, hodnoceni.csv ř. "
+             f"{odkaz('cz-ii-prague', 'je_investor', 'ano')}): uložený výpis ARES CasInvent "
+             "(`ai-log/02-obohaceni/zdroje/ares_vr_09684221.json`) uvádí konvertibilní zápůjčku z 4. 3. 2025, "
+             "nabídku 48 akcií třídy C i&i Prague (valná hromada 22. 5. 2025) a zapsané splacené zvýšení "
+             "kapitálu k 30. 5. 2025. Upsání je doloženo nepřímo, smlouva o úpisu přímo ověřena není. Původní "
+             "stav (je_investor = nelze_overit, přesun do `nevyresene.csv` s otázkou `nastroj`) je v "
+             "`ai-log/09-readme/hodnoceni_pred_opravou_ii_prague.csv` a v historii gitu (commit 0641e6a).")
     o.append("")
     o.append("## Opravy poslední investice")
     o.append("")
@@ -738,12 +725,13 @@ def zmeny_md(podle_id, investori, vysledky, stav, vzorek):
     o.append("`scripts/zkontroluj_data.py` čte jen `data/vystup_agenta/`. Pro kontrolu opravené verze se spouští "
              "nad dočasným kořenem mimo repozitář: kopie `data/kandidati.csv`, čtyř výsledkových souborů "
              "z `data/opraveno/` jako `data/vystup_agenta/` a kopie `ai-log/02-obohaceni/mapovani_id.csv`, "
-             "ve které je u pěti přesunutých id změněný sloupec `soubor`. Původní data se nepřesouvají "
+             "ve které je u čtyř přesunutých id změněný sloupec `soubor`. Původní data se nepřesouvají "
              "ani nepřepisují. Kontrola URL (`--over-url`) se nespouštěla.")
     o.append("")
-    o.append("- `--datum 2026-10-26` (výchozí, den kroku 2): chyby struktury 0, metodický nesoulad 10, "
-             "upozornění 8. Devět nálezů „datum není v budoucnosti“ má jedinou příčinu: zdroje čtené "
-             "v kroku 8 mají `stazeno` 2026-10-27, tedy po referenčním datu. Desátý je známý nález u KAYA.")
+    o.append("- `--datum 2026-10-26` (výchozí, den kroku 2): chyby struktury 0, metodický nesoulad 9, "
+             "upozornění 8. Osm nálezů „datum není v budoucnosti“ má jedinou příčinu: zdroje čtené "
+             "v kroku 8 mají `stazeno` 2026-10-27, tedy po referenčním datu. Devátý je známý nález u KAYA. "
+             "Před opravou i&i Prague v kroku 9 bylo nálezů 10 (navíc `stazeno` přesunutého záznamu i&i Prague).")
     o.append("- `--datum 2026-10-27` (den ruční kontroly): chyby struktury 0, metodický nesoulad 1 (známý nález "
              "u cz-kaya-vc: `kapital[2].fond` u druhu `committed_capital`, mimo vzorek, bez dokončeného hodnocení "
              "neopraveno), upozornění 8 (stejná jako při 2026-10-26). Statusy se posunem referenčního data "

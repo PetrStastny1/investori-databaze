@@ -14,25 +14,24 @@ Vygenerováno skriptem `scripts/mereni.py` z `data/hodnoceni.csv`. Nepřepisovat
 
 Pole: existence, investicni_cinnost, je_investor, typ, rozsah_pilotu. Aspoň jedno `ne` → chybně zařazen; jinak aspoň jedno `nelze_overit` → neověřeno; jinak správně.
 
-- správně 15, chybně 2, neověřeno 3
+- správně 16, chybně 2, neověřeno 2
 
 | firma | stav | pole `ne` (skupina) | pole `nelze_overit` |
 |---|---|---|---|
 | cz-ii-biotech-investments | chybne | rozsah_pilotu (upresneni_metodiky) | – |
-| cz-ii-prague | neovereno | – | je_investor |
 | cz-n1-ventures | chybne | rozsah_pilotu (upresneni_metodiky) | existence |
 | cz-presto-ventures | neovereno | – | investicni_cinnost, je_investor |
 | cz-tensor-ventures | neovereno | – | rozsah_pilotu |
 
 a) Všechna `ne`:
 
-- přesnost správně/(správně+chybně): 15/17 = 88,2 % (95% CI 65,7 %–96,7 %)
-- dolní mez správně/20: 15/20 = 75,0 % (95% CI 53,1 %–88,8 %)
+- přesnost správně/(správně+chybně): 16/18 = 88,9 % (95% CI 67,2 %–96,9 %)
+- dolní mez správně/20: 16/20 = 80,0 % (95% CI 58,4 %–91,9 %)
 
 b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení je jen `upresneni_metodiky` (cz-ii-biotech-investments, cz-n1-ventures), jsou z jmenovatele vynechané, nepočítají se jako správné.
 
-- správnost mezi 15 rozhodnutelnými případy po vyloučení 2 změn metodiky: 15/15 = 100,0 % (95% CI 79,6 %–100,0 %); vedle toho 3 neověřené (cz-ii-prague, cz-presto-ventures, cz-tensor-ventures). Nejde o 100% ověřenou databázi.
-- dolní mez, jmenovatel 18: 15/18 = 83,3 % (95% CI 60,8 %–94,2 %)
+- správnost mezi 16 rozhodnutelnými případy po vyloučení 2 změn metodiky: 16/16 = 100,0 % (95% CI 80,6 %–100,0 %); vedle toho 2 neověřené (cz-presto-ventures, cz-tensor-ventures). Nejde o 100% ověřenou databázi.
+- dolní mez, jmenovatel 18: 16/18 = 88,9 % (95% CI 67,2 %–96,9 %)
 
 ## 2. Správnost vyplněných polí (jednotka = řádek id/pole)
 
@@ -42,7 +41,7 @@ b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení je jen `upres
 |---|---|---|---|---|---|---|---|---|
 | existence | 19 | 0 | 0 | 0 | 1 | 0 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
 | investicni_cinnost | 19 | 0 | 0 | 0 | 1 | 0 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
-| je_investor | 18 | 0 | 0 | 0 | 2 | 0 | 18/18 = 100,0 % (95% CI 82,4 %–100,0 %) | 18/20 = 90,0 % (95% CI 69,9 %–97,2 %) |
+| je_investor | 19 | 0 | 0 | 0 | 1 | 0 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
 | typ | 20 | 0 | 0 | 0 | 0 | 0 | 20/20 = 100,0 % (95% CI 83,9 %–100,0 %) | 20/20 = 100,0 % (95% CI 83,9 %–100,0 %) |
 | rozsah_pilotu | 17 | 0 | 2 | 0 | 1 | 0 | 17/19 = 89,5 % (95% CI 68,6 %–97,1 %) | 17/20 = 85,0 % (95% CI 64,0 %–94,8 %) |
 | posledni_investice | 15 | 4 | 0 | 0 | 1 | 0 | 15/19 = 78,9 % (95% CI 56,7 %–91,5 %) | 15/20 = 75,0 % (95% CI 53,1 %–88,8 %) |
@@ -50,7 +49,7 @@ b) Jen vůči chybám výstupu: firmy, jejichž chybné zařazení je jen `upres
 | sektory | 16 | 0 | 0 | 0 | 0 | 4 | 16/16 = 100,0 % (95% CI 80,6 %–100,0 %) | 16/16 = 100,0 % (95% CI 80,6 %–100,0 %) |
 | ticket | 10 | 0 | 0 | 1 | 0 | 9 | 10/11 = 90,9 % (95% CI 62,3 %–98,4 %) | 10/11 = 90,9 % (95% CI 62,3 %–98,4 %) |
 | kapital | 8 | 0 | 0 | 0 | 0 | 12 | 8/8 = 100,0 % (95% CI 67,6 %–100,0 %) | 8/8 = 100,0 % (95% CI 67,6 %–100,0 %) |
-| **celkem** | 156 | 4 | 2 | 1 | 12 | 25 | 156/163 = 95,7 % (95% CI 91,4 %–97,9 %) | 156/175 = 89,1 % (95% CI 83,7 %–92,9 %) |
+| **celkem** | 157 | 4 | 2 | 1 | 11 | 25 | 157/164 = 95,7 % (95% CI 91,5 %–97,9 %) | 157/175 = 89,7 % (95% CI 84,3 %–93,4 %) |
 
 Varianta jen vůči chybám výstupu: řádky `upresneni_metodiky` a `omezeni_schematu` (3) jsou z jmenovatele vynechané.
 
@@ -58,7 +57,7 @@ Varianta jen vůči chybám výstupu: řádky `upresneni_metodiky` a `omezeni_sc
 |---|---|---|---|---|
 | existence | 19 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 20 | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
 | investicni_cinnost | 19 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 20 | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
-| je_investor | 18 | 18/18 = 100,0 % (95% CI 82,4 %–100,0 %) | 20 | 18/20 = 90,0 % (95% CI 69,9 %–97,2 %) |
+| je_investor | 19 | 19/19 = 100,0 % (95% CI 83,2 %–100,0 %) | 20 | 19/20 = 95,0 % (95% CI 76,4 %–99,1 %) |
 | typ | 20 | 20/20 = 100,0 % (95% CI 83,9 %–100,0 %) | 20 | 20/20 = 100,0 % (95% CI 83,9 %–100,0 %) |
 | rozsah_pilotu | 17 | 17/17 = 100,0 % (95% CI 81,6 %–100,0 %) | 18 | 17/18 = 94,4 % (95% CI 74,2 %–99,0 %) |
 | posledni_investice | 19 | 15/19 = 78,9 % (95% CI 56,7 %–91,5 %) | 20 | 15/20 = 75,0 % (95% CI 53,1 %–88,8 %) |
@@ -66,7 +65,7 @@ Varianta jen vůči chybám výstupu: řádky `upresneni_metodiky` a `omezeni_sc
 | sektory | 16 | 16/16 = 100,0 % (95% CI 80,6 %–100,0 %) | 16 | 16/16 = 100,0 % (95% CI 80,6 %–100,0 %) |
 | ticket | 10 | 10/10 = 100,0 % (95% CI 72,2 %–100,0 %) | 10 | 10/10 = 100,0 % (95% CI 72,2 %–100,0 %) |
 | kapital | 8 | 8/8 = 100,0 % (95% CI 67,6 %–100,0 %) | 8 | 8/8 = 100,0 % (95% CI 67,6 %–100,0 %) |
-| **celkem** | 160 | 156/160 = 97,5 % (95% CI 93,7 %–99,0 %) | 172 | 156/172 = 90,7 % (95% CI 85,4 %–94,2 %) |
+| **celkem** | 161 | 157/161 = 97,5 % (95% CI 93,8 %–99,0 %) | 172 | 157/172 = 91,3 % (95% CI 86,1 %–94,6 %) |
 
 ### Kontrola sloučení (samostatně)
 
@@ -104,7 +103,6 @@ Příčina `neurčeno`: z logu nejde doložit, zda agent zdroj viděl. U `upresn
 | cz-tensor-ventures | rozsah_pilotu | Web: Tensor Ventures GP S.à r.l. a Fund I SCSp v Lucembursku; správce druhého fondu (EIF) nedoložen |
 | cz-tensor-ventures | nezavislost_zdroju | ValkaAI: Seznam Zprávy a Startbase (oba 24. 2. 2026, puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v pozná… |
 | cz-ii-biotech-investments | nezavislost_zdroju | Theorema: Lupa.cz, CzechCrunch, Vestbee (puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uvádí, ž… |
-| cz-ii-prague | je_investor | Nástroj u kola 2025 nedoložen (kolo bez označení fáze). Agentem uvedený doklad z rejstříku dokládá i&i Prague jako jediného akcionáře jen 18. 11.–15. 12. 2020 … |
 | cz-look-ai-ventures | nezavislost_zdroju | Lucida AI: tech.eu a Lupa.cz (oba 30. 6. 2026, puvod null). Původ zdrojů nedoložen: agent má u zdrojů puvod null (vedené jako nezávislé), ale sám v poznámce uv… |
 | cz-purple-ventures | nezavislost_zdroju | Comparables.ai: tech.eu 6. 10. 2026 a Lupa.cz 13. 10. 2026 (puvod null; Lupa cituje Jana Staňka a má fotografii od Purple, to je indicie, ne důkaz). Původ zdro… |
 | cz-y-soft-ventures | nezavislost_zdroju | RoboTwin: EIT Jumpstarter, CzechCrunch, The Recycler (puvod null; CzechCrunch „Letos již hlásili“ odkazuje na dřívější oznámení, to je indicie, ne důkaz). Půvo… |
@@ -161,7 +159,7 @@ Unikátních dvojic id/pole: 40, s aspoň jedním řádkem agenta: 40, označen�
 | Konečné `ne` – chyba_vystupu | 0 | 0 | 0 | 0 |
 | Konečné `ne` – upresneni_metodiky | 0 | 0 | 0 | 0 |
 | Konečné `ne` – omezeni_schematu | 0 | 0 | 0 | 0 |
-| Konečné `nelze_overit` | 8 | 1 | 1 | 7 |
+| Konečné `nelze_overit` | 7 | 1 | 1 | 6 |
 | Označení agenta, která konečné hodnocení nepotvrdilo (konečně `ano`) | 1 | 1 | – | – |
 
 Podrobnosti ke všem dvojicím s konečným `ne` / `nelze_overit` nebo s označením agenta:
@@ -169,7 +167,6 @@ Podrobnosti ke všem dvojicím s konečným `ne` / `nelze_overit` nebo s označe
 | id | pole | konečně | tutéž vadu | nálezy agenta (zkráceno) |
 |---|---|---|---|---|
 | cz-ii-biotech-investments | nezavislost_zdroju | nelze_overit | – | vše `sedi` |
-| cz-ii-prague | je_investor | nelze_overit | – | vše `sedi` |
 | cz-look-ai-ventures | nezavislost_zdroju | nelze_overit | – | vše `sedi` |
 | cz-miton | nezavislost_zdroju | nelze_overit | – | vše `sedi` |
 | cz-presto-ventures | je_investor | nelze_overit | – | vše `sedi` |
@@ -195,6 +192,18 @@ Porovnání `data/hodnoceni.csv` se stavem před přečtením nálezů (`ai-log/
 |---|---|---|
 | konečné `ne` nalezené už před přečtením nálezů AI | 4 | cz-n1-ventures/rozsah_pilotu (upresneni_metodiky), cz-ii-biotech-investments/rozsah_pilotu (upresneni_metodiky), cz-ii-biotech-investments/ticket (omezeni_schematu), cz-look-ai-ventures/posledni_investice (chyba_vystupu) |
 | konečné `ne` nalezené až po nich | 3 | cz-zaka-vc/posledni_investice (chyba_vystupu), cz-purple-ventures/posledni_investice (chyba_vystupu), cz-reflex-capital/posledni_investice (chyba_vystupu) |
-| konečné `nelze_overit`, už před přečtením | 6 | cz-n1-ventures/existence, cz-tensor-ventures/rozsah_pilotu, cz-ii-prague/je_investor, cz-presto-ventures/investicni_cinnost, cz-presto-ventures/je_investor, cz-presto-ventures/posledni_investice |
+| konečné `nelze_overit`, už před přečtením | 5 | cz-n1-ventures/existence, cz-tensor-ventures/rozsah_pilotu, cz-presto-ventures/investicni_cinnost, cz-presto-ventures/je_investor, cz-presto-ventures/posledni_investice |
 | změna `ano` → `nelze_overit` po přečtení | 6 | cz-tensor-ventures/nezavislost_zdroju, cz-ii-biotech-investments/nezavislost_zdroju, cz-look-ai-ventures/nezavislost_zdroju, cz-purple-ventures/nezavislost_zdroju, cz-y-soft-ventures/nezavislost_zdroju, cz-miton/nezavislost_zdroju |
-| jiné změny verdiktu | 0 | – |
+| jiné změny verdiktu (mimo opravu v kroku 9) | 0 | – |
+
+Původní stav před opravou v kroku 9: konečných `nelze_overit` už před přečtením nálezů bylo 6 (cz-n1-ventures/existence, cz-tensor-ventures/rozsah_pilotu, cz-ii-prague/je_investor, cz-presto-ventures/investicni_cinnost, cz-presto-ventures/je_investor, cz-presto-ventures/posledni_investice).
+
+### 5.5 Oprava hodnocení v kroku 9
+
+Porovnání `data/hodnoceni.csv` se stavem před opravou (`ai-log/09-readme/hodnoceni_pred_opravou_ii_prague.csv`). Jde o opravu hodnocení podle již uloženého zdroje, ne o změnu pravidel ani o změnu po přečtení nálezů AI.
+
+| id/pole | před opravou | po opravě | doklad |
+|---|---|---|---|
+| cz-ii-prague/je_investor | nelze_overit | ano | výpis ARES CasInvent: konvertibilní zápůjčka 4. 3. 2025, nabídka 48 akcií třídy C (VH 22. 5. 2025), zapsané splacené zvýšení kapitálu 30. 5. 2025 |
+
+Kontrolní agent (fáze A) měl u odpovídajícího pole `nastroj` závěr `sedi`; po opravě se tento souhlas s konečným hodnocením potvrdil (oddíl 5.2).
