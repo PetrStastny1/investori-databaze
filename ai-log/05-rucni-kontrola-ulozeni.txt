@@ -1,0 +1,1060 @@
+
+❯ <ide_opened_file>The user opened the file /Users/petrstastny/Documents/Projek
+  ty/investori-databaze/04-kontrola-zdroju.txt in the IDE. This may or may not
+  be related to the current task.</ide_opened_file>
+
+❯ Připrav podklady pro mou ruční kontrolu. Další plošné ověřování zdrojů ani
+  změny metodiky neprováděj.
+
+  1. ai-log/05-rucni-kontrola/pruvodce.md:
+  - jeden oddíl pro každého z 56 výsledných kandidátů a samostatně kontrola
+  sloučení Nation1 → N1,
+  - pořadí: nejdřív příslušnost k pilotu (sídla N1, Tensor, KAYA, i&i Biotech;
+  typ ZAKA a StartupYard; i&i Prague), pak možná chybná vyřazení (Orbit, McWin,
+  Espira), pak nevyřešení, pak ostatní podle závažnosti nálezů kontroly
+  zdrojů,
+  - u každého id, původní rozhodnutí agenta a hodnoty, které mám zkontrolovat,
+  s přímými odkazy na zdroje,
+  - otázky a názvy polí podle PLAN.md (plná kontrola u zařazených, zkrácená u
+  ostatních), které vyhodnotím jako ano / ne / nelze_overit,
+  - nálezy kontroly zdrojů do průvodce nepiš, uveď jen odkaz na id v souboru
+  nalezy_ai.md.
+
+  2. ai-log/05-rucni-kontrola/nalezy_ai.md: nálezy fáze A i upřesnění fáze B
+  podle id. Rozliš potvrzený rozpor, podezření a nedostatečný důkaz. Nevydávej
+  381/400 za naměřenou přesnost.
+  3. data/hodnoceni.csv předvyplň řádky podle hlavičky (soubor,id,pole,…) pro
+  všechna pole, která mám hodnotit, ve stejném pořadí jako průvodce. Sloupce
+  hodnoceni, pricina_chyby a poznamka nech prázdné, hodnotil = Petr Šťastný,
+  datum prázdné. Žádné verdikty předem nevyplňuj.
+  4. Do průvodce na začátek zapiš postup: první ruční verdikty vyplním bez
+  čtení nalezy_ai.md a commitnu je. Před první změnou po přečtení nálezů AI se
+  hodnoceni.csv zkopíruje do
+  ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv. Do hodnoceni.csv pak
+  zapíšu konečný verdikt a do poznámky důvod změny. Přínos druhého agenta bude
+  jen orientační, protože pořadí kontroly je podle jeho nálezů.
+
+  Původní data a data/opraveno/ neměň. Commitni a pushni. Pak vypiš prvního
+  kandidáta a odkazy potřebné k jeho ruční kontrole.
+
+⏺ I'll start by going through the repository: the plan, the step 4 outputs and
+  the data.
+
+⏺ Bash(git ls-files | head -100 && echo ---- && ls -la ai-log data 2>/dev/null
+      && wc -l PLAN.md 04-kontrola-zdroju.txt)
+  ⎿  Error: Exit code 1
+     .gitignore
+     LICENSE
+     PLAN.md
+     README.md
+     ai-log/.gitkeep
+     ai-log/00-plan-a-zalozeni.txt
+     ai-log/01-kandidati.txt
+     ai-log/01-kandidati/mimo_rozsah.csv
+     ai-log/01-kandidati/opravy_sberu.csv
+     … +121 lines (ctrl+o to expand)
+
+  Read 1 file, listed 1 directory (ctrl+o to expand)
+
+⏺ Now the step 4 outputs (phase A and B) and the end of the conversation log.
+
+⏺ Bash(cat ai-log/04-kontrola-zdroju/mereni.txt && echo ---- && head -c 3000
+      ai-log/04-kontrola-zdroju/slepa_kontrola.csv && echo && python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Phase A has 19 non-"sedi" rows. Phase B (Espira, McWin, Orbit, i&i Prague,
+  etc.) is in cilene_otazky.md, which I'll read in full.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Now the agent outputs themselves (investori.json, vyrazeni, hranicni,
+  nevyresene, the ID mapping).
+
+⏺ Bash(python3 -c "
+      import json…)
+  ⎿  (No output)
+
+⏺ Now the CSV outputs and the end of the step 4 conversation (for context on
+  381/400 and the user's previous instructions).
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+  Searched for 1 pattern, read 1 file (ctrl+o to expand)
+
+⏺ I have the whole picture. Before writing the generator, I'll check how the
+  records vary in structure and how long the agent notes are.
+
+⏺ Bash(python3 -c "
+      import json…)
+  ⎿  (No output)
+
+⏺ Next I'll check the phase A rows behind the "unverifiable claims without a
+  URL" and the unavailable sources (ARX, Chilli, Naše Česko, MAM, Moonhill,
+  Garage Angels).
+
+⏺ Bash(python3 -c "
+      import csv…)
+  ⎿  (No output)
+
+⏺ Before writing, I'll check the exact Obluk wording in the Garage Angels reason
+  and how Czech Founders records the Merchantee round.
+
+⏺ Bash(python3 -c "
+      import csv,json…)
+  ⎿  (No output)
+
+⏺ I have everything I need. One last look: what duplicity.md says about Nation1,
+  so I can link it in the merge section.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+⏺ I'll write the generator script. It builds the guide, the findings file and
+  the rating rows from the agent output, all in one order.
+
+⏺ Write(ai-log/05-rucni-kontrola/skripty/priprav_podklady.py)
+  ⎿  Wrote 880 lines to
+     ai-log/05-rucni-kontrola/skripty/priprav_podklady.py
+       1 #!/usr/bin/env python3
+       3
+       4 Vytvoří ve stejném pořadí kandidátů:
+       5 - ai-log/05-rucni-kontrola/pruvodce.md (hodnoty agenta a zdroje,
+       6 - ai-log/05-rucni-kontrola/nalezy_ai.md (nálezy kontroly zdrojů,
+          fáze A a B),
+       8
+       9 Čte jen původní výstup agenta a výsledky kroku 4, nic z nich nem
+         ění.
+         kripty/priprav_podklady.py
+     … +1222 lines (ctrl+o to expand)
+
+⏺ Bash(python3 ai-log/05-rucni-kontrola/skripty/priprav_podklady.py && wc -c
+      ai-log/05-rucni-kontrola/*.md && head -5 data/hodnoceni.csv && wc -l
+      data/hodnoceni.csv &&…)
+  ⎿  Updated data/hodnoceni.csv (+376 -0)
+        1  soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum
+        2 +investori.json,cz-n1-ventures,existence,,,,Petr Šťastný,      
+        3 +investori.json,cz-n1-ventures,investicni_cinnost,,,,Petr Šťast
+          +ný,                                                           
+        4 +investori.json,cz-n1-ventures,je_investor,,,,Petr Šťastný,    
+        5 +investori.json,cz-n1-ventures,typ,,,,Petr Šťastný,            
+        6 +investori.json,cz-n1-ventures,rozsah_pilotu,,,,Petr Šťastný,  
+        7 +investori.json,cz-n1-ventures,posledni_investice,,,,Petr Šťast
+          +ný,                                                           
+        8 +investori.json,cz-n1-ventures,nezavislost_zdroju,,,,Petr Šťast
+          +ný,                                                           
+        9 +investori.json,cz-n1-ventures,sektory,,,,Petr Šťastný,        
+       10 +investori.json,cz-n1-ventures,ticket,,,,Petr Šťastný,         
+       11 +investori.json,cz-n1-ventures,kapital,,,,Petr Šťastný,        
+       12 +mapovani_id.csv,cz-nation1,slouceni,,,,Petr Šťastný,          
+       13 +investori.json,cz-tensor-ventures,existence,,,,Petr Šťastný,  
+       14 +investori.json,cz-tensor-ventures,investicni_cinnost,,,,Petr Š
+          +ťastný,                                                       
+       15 +investori.json,cz-tensor-ventures,je_investor,,,,Petr Šťastný,
+       16 +investori.json,cz-tensor-ventures,typ,,,,Petr Šťastný,        
+       17 +investori.json,cz-tensor-ventures,rozsah_pilotu,,,,Petr Šťastn
+          +ý,                                                            
+       18 +investori.json,cz-tensor-ventures,posledni_investice,,,,Petr Š
+          +ťastný,                                                       
+       19 +investori.json,cz-tensor-ventures,nezavislost_zdroju,,,,Petr Š
+          +ťastný,                                                       
+       20 +investori.json,cz-tensor-ventures,sektory,,,,Petr Šťastný,    
+       21 +investori.json,cz-tensor-ventures,ticket,,,,Petr Šťastný,     
+       22 +investori.json,cz-tensor-ventures,kapital,,,,Petr Šťastný,    
+       23 +investori.json,cz-kaya-vc,existence,,,,Petr Šťastný,          
+       24 +investori.json,cz-kaya-vc,investicni_cinnost,,,,Petr Šťastný, 
+       25 +investori.json,cz-kaya-vc,je_investor,,,,Petr Šťastný,        
+       26 +investori.json,cz-kaya-vc,typ,,,,Petr Šťastný,                
+       27 +investori.json,cz-kaya-vc,rozsah_pilotu,,,,Petr Šťastný,      
+       28 +investori.json,cz-kaya-vc,posledni_investice,,,,Petr Šťastný, 
+       29 +investori.json,cz-kaya-vc,nezavislost_zdroju,,,,Petr Šťastný, 
+       30 +investori.json,cz-kaya-vc,sektory,,,,Petr Šťastný,            
+       31 +investori.json,cz-kaya-vc,ticket,,,,Petr Šťastný,             
+       32 +investori.json,cz-kaya-vc,kapital,,,,Petr Šťastný,            
+       33 +investori.json,cz-ii-biotech-investments,existence,,,,Petr Šťa
+          +stný,                                                         
+       34 +investori.json,cz-ii-biotech-investments,investicni_cinnost,,,
+          +,Petr Šťastný,                                                
+       35 +investori.json,cz-ii-biotech-investments,je_investor,,,,Petr Š
+          +ťastný,                                                       
+       36 +investori.json,cz-ii-biotech-investments,typ,,,,Petr Šťastný, 
+       37 +investori.json,cz-ii-biotech-investments,rozsah_pilotu,,,,Petr
+          + Šťastný,                                                     
+       38 +investori.json,cz-ii-biotech-investments,posledni_investice,,,
+          +,Petr Šťastný,                                                
+       39 +investori.json,cz-ii-biotech-investments,nezavislost_zdroju,,,
+          +,Petr Šťastný,                                                
+       40 +investori.json,cz-ii-biotech-investments,sektory,,,,Petr Šťast
+          +ný,                                                           
+     … 337 more lines (ctrl+o to expand)
+  ⎿  … 2 more files changed
+
+⏺ Generated: 376 rating rows, 56 candidates plus the merge. Next I'll proofread
+  how the guide renders, starting with the header and the first two sections.
+
+⏺ Bash(sed -n '1,140p' ai-log/05-rucni-kontrola/pruvodce.md)  ⎿  (No output)
+
+⏺ The N1 section reads well. Next I'll check the merge section, Orbit
+  (hranicni), one unresolved candidate and the start of the findings file.
+
+⏺ Bash(f=ai-log/05-rucni-kontrola/pruvodce.md; awk '/^### 2\. /,/^### 3\. /' $f
+      | head -30; echo =====; awk '/^### 9\. /,/^<a id="10-/' $f | cut -c1-400;
+      echo =====; a…)
+  ⎿  Error: Exit code 1
+     ### 2. Nation1 (`cz-nation1`)
+
+     Soubor: `mapovani_id.csv` · rozhodnutí agenta: **sloučen do
+     `cz-n1-ventures`**
+
+     Nálezy AI: [nalezy_ai.md#cz-nation1](nalezy_ai.md#cz-nation1) (číst až po
+     commitu prvních verdiktů)
+
+     **Kandidát v `data/kandidati.csv`:** Nation1, web
+     [nation1.vc/](https://www.nation1.vc/), seznam CVCA:
+     [cvca.cz/en/nation1-2/](https://cvca.cz/en/nation1-2/)
+
+     **Odůvodnění agenta (`mapovani_id.csv`):**
+     … +12 lines (ctrl+o to expand)
+
+⏺ Bash(cd /Users/petrstastny/Documents/Projekty/investori-databaze;
+      f=ai-log/05-rucni-kontrola/pruvodce.md; awk '/^### 9\. /,/^<a id="10-/' $f
+      | cut -c1-400; echo; ech…)
+  ⎿  (No output)
+
+⏺ Everything renders correctly. One wording slip: the unresolved-candidate
+  questions say "vaše rozhodnutí" while the rest of the guide is in first
+  person. I'll fix it and regenerate.
+
+⏺ Bash(sed -i '' 's/(zároveň vaše rozhodnutí)/(zároveň moje rozhodnutí)/g'
+      ai-log/05-rucni-kontrola/skripty/priprav_podklady.py && python3
+      ai-log/05-rucni-kontrola/skr…)
+  ⎿  Updated ai-log/05-rucni-kontrola/pruvodce.md (+22 -22)
+      634  - [cc.cz/cesi-krypto-a-40-miliard-pro-investice-nic-takoveho-z
+           atim-jeste-nikdo-n…](https://cc.cz/cesi-krypto-a-40-miliard-pr
+           o-investice-nic-takoveho-zatim-jeste-nikdo-nepostavil-rika-sef
+           -rockawayx/)
+      635  - [ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjek
+           ty-vr/08006458](https://ares.gov.cz/ekonomicke-subjekty-v-be/r
+           est/ekonomicke-subjekty-vr/08006458)
+      636  
+      637 -- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          -u 2 a 3 (zároveň vaše rozhodnutí).                            
+      638 -- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          -C, sídlo v ČR) (zároveň vaše rozhodnutí).                     
+      637 +- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          +u 2 a 3 (zároveň moje rozhodnutí).                            
+      638 +- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          +C, sídlo v ČR) (zároveň moje rozhodnutí).                     
+      639  - **`duvod`**: Agent správně popsal, co chybí nebo si odporuje
+           .
+      640  - Zvolený typ nebo nástroj uvedu v poznámce.
+      641  
+     ...
+      664  - [ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjek
+           ty-vr/14328127](https://ares.gov.cz/ekonomicke-subjekty-v-be/r
+           est/ekonomicke-subjekty-vr/14328127)
+      665  - [lumusinvestment.com/portfolio](https://www.lumusinvestment.
+           com/portfolio)
+      666  
+      667 -- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          -u 2 a 3 (zároveň vaše rozhodnutí).                            
+      668 -- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          -C, sídlo v ČR) (zároveň vaše rozhodnutí).                     
+      667 +- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          +u 2 a 3 (zároveň moje rozhodnutí).                            
+      668 +- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          +C, sídlo v ČR) (zároveň moje rozhodnutí).                     
+      669  - **`duvod`**: Agent správně popsal, co chybí nebo si odporuje
+           .
+      670  - Zvolený typ nebo nástroj uvedu v poznámce.
+      671  
+     ...
+      691  - [vestbee.com/blog/articles/decision-rules-secures-1-6-m](htt
+           ps://vestbee.com/blog/articles/decision-rules-secures-1-6-m)
+      692  - [ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjek
+           ty-vr/04106059](https://ares.gov.cz/ekonomicke-subjekty-v-be/r
+           est/ekonomicke-subjekty-vr/04106059)
+      693  
+      694 -- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          -u 2 a 3 (zároveň vaše rozhodnutí).                            
+      695 -- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          -C, sídlo v ČR) (zároveň vaše rozhodnutí).                     
+      694 +- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          +u 2 a 3 (zároveň moje rozhodnutí).                            
+      695 +- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          +C, sídlo v ČR) (zároveň moje rozhodnutí).                     
+      696  - **`duvod`**: Agent správně popsal, co chybí nebo si odporuje
+           .
+      697  - Zvolený typ nebo nástroj uvedu v poznámce.
+      698  
+     ...
+      720  - [cc.cz/blba-nalada-neni-na-miste-cesko-je-na-tom-lepe-nez-se
+           -zda-muzeme-byt-in…](https://cc.cz/blba-nalada-neni-na-miste-c
+           esko-je-na-tom-lepe-nez-se-zda-muzeme-byt-investicni-perla-zni
+           -z-jt/)
+      721  - [funding.tech.eu/api/v1/investors/Fond%20Na%C5%A1e%20%C4%8Ce
+           sko](https://funding.tech.eu/api/v1/investors/Fond%20Na%C5%A1e
+           %20%C4%8Cesko)
+      722  
+      723 -- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          -u 2 a 3 (zároveň vaše rozhodnutí).                            
+      724 -- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          -C, sídlo v ČR) (zároveň vaše rozhodnutí).                     
+      723 +- **`je_investor`**: Je kandidát investor podle pravidel z bod
+          +u 2 a 3 (zároveň moje rozhodnutí).                            
+      724 +- **`rozsah_pilotu`**: Splňuje pravidla pilotu (typ VC nebo CV
+          +C, sídlo v ČR) (zároveň moje rozhodnutí).                     
+      725  - **`duvod`**: Agent správně popsal, co chybí nebo si odporuje
+           .
+      726  - Zvolený typ nebo nástroj uvedu v poznámce.
+      727  
+     … 70 more lines (ctrl+o to expand)
+  ⎿  Updated ai-log/05-rucni-kontrola/skripty/priprav_podklady.py (+2 -2)
+      84      ("duvod", "Sedí důvod vyřazení, který agent uvedl"),
+      85  ]
+      86  POLE_NEVYRESENE = [
+      87 -    ("je_investor", "Je kandidát investor podle pravidel z bodu
+         - 2 a 3 (zároveň vaše rozhodnutí)"),                            
+      88 -    ("rozsah_pilotu", "Splňuje pravidla pilotu (typ VC nebo CVC
+         -, sídlo v ČR) (zároveň vaše rozhodnutí)"),                     
+      87 +    ("je_investor", "Je kandidát investor podle pravidel z bodu
+         + 2 a 3 (zároveň moje rozhodnutí)"),                            
+      88 +    ("rozsah_pilotu", "Splňuje pravidla pilotu (typ VC nebo CVC
+         +, sídlo v ČR) (zároveň moje rozhodnutí)"),                     
+      89      ("duvod", "Agent správně popsal, co chybí nebo si odporuje"
+          ),
+      90  ]
+      91  POLE_SLOUCENI = [
+
+⏺ The agent outputs and data/opraveno/ are unchanged; only data/hodnoceni.csv
+  and the new folder differ. Committing and pushing.
+
+⏺ Bash(git add data/hodnoceni.csv ai-log/05-rucni-kontrola && git commit -q -F -
+      <<'EOF'
+      Podklady pro ruční kontrolu: průvodce, nálezy AI, předvyplněné hodnocení…)
+  ⎿  (No output)
+
+⏺ Pushed. Now I'll pull the rest of the first candidate's section (sectors,
+  ticket, capital) so I can list it here.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ I've prepared the materials and pushed them (commit 5dbda57). I didn't touch
+  the original data in data/vystup_agenta/ or anything in data/opraveno/, and I
+  did no further source checking.
+
+  What I created
+  - pruvodce.md (ai-log/05-rucni-kontrola/pruvodce.md): the review procedure at
+    the top, then 57 sections (56 candidates plus the Nation1 → N1 merge) in the
+    order you set. Each section has the agent's decision, the values with links
+    to sources, and the fields with their questions from PLAN.md. There are no
+    findings in it, only a link to the candidate's id in nalezy_ai.md.
+  - nalezy_ai.md (ai-log/05-rucni-kontrola/nalezy_ai.md): findings from phase A
+    and B by id, sorted into confirmed contradiction, suspicion and insufficient
+    evidence. Questions about how to read PLAN.md and limits of the check (what
+    the second agent couldn't open) are kept apart from the findings. A
+    dedicated section explains why 381/400 is not a measured accuracy.
+  - data/hodnoceni.csv: 376 rows in the same order as the guide (27×10, 18×4,
+    11×3, 1 merge row). No verdicts, hodnotil = Petr Šťastný.
+  - The script priprav_podklady.py
+    (ai-log/05-rucni-kontrola/skripty/priprav_podklady.py) produces all three
+    files from the agent output.
+
+  Choices you may want to change
+  - Merge placement and field name: the merge check sits right after N1. PLAN.md
+    has no field for it, so I used slouceni with soubor = mapovani_id.csv, the
+    same as the step 4 check.
+  - Order within "ostatní": findings that could change the exclusion category
+    come first, then confirmed contradictions, suspicions, minor issues, and
+    candidates with no findings last. That order is my call.
+  - One reclassified finding: in nalezy_ai.md I sorted the phase B findings into
+    the three classes myself. For KAYA kapital[2] I put a confirmed
+    contradiction with PLAN.md, while phase B wrote nedostatecny_dukaz. The file
+    notes this.
+  - Empty fields still get rows: a null ticket or empty capital still has a row.
+    PLAN.md doesn't say how to rate a null value.
+  - faze is not rated: the records include a faze field, but it isn't in the
+    PLAN.md table, so it has no row.
+
+  First candidate: 1. N1 Ventures (cz-n1-ventures)
+
+  Agent's decision: included · type VC · country CZ · status aktivni ·
+  confidence: existence stredni, investment stredni · web https://n1.rocks/
+
+  Values to check and their sources:
+  - existence: pravni_subjekt = "Nation 1 GP S.à r.l. a Nation 1 GP II S.à r.l.
+    (Lucembursko, general partneři fondů; zápis v rejstříku neověřen)", IČO null
+    - https://n1.rocks/disclosure (the investor's website)
+    - https://cvca.cz/en/nation1-2/ (association)
+    - https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-f
+      ond-chteji-do-nej-ziskat-necelou-miliardu/ (CzechCrunch, 2023-09-18)
+  - investicni_cinnost, posledni_investice: last investment Novoflow, announced
+    2025-11-04, datum_pro_filtr oznameni, instrument nezjisteno
+    - https://www.thevccorner.com/p/novoflow-ai-healthcare-startup (report of
+      the deal)
+    - https://n1.rocks/ (portfolio)
+  - je_investor: the other investment is Liki24, announced 2025-07-03, round
+    series A, instrument neprima_indicie
+    - https://forbes.ua/innovations/servis-dostavki-tabletok-liki24-zaluchiv-9-m
+      ln-dlya-vikhodu-na-novi-evropeyski-rinki-03072025-31013
+    - https://inventure.com.ua/en/news/world/ukrainian-platform-liki24-raises-do
+      llar9m-from-local-and-international-investors
+    - https://n1.rocks/utech-fund (portfolio)
+  - nezavislost_zdroju: Forbes Ukraine has puvod = "tisková zpráva Liki24".
+    Inventure has puvod = the Forbes UA URL. Novoflow has a single source with
+    puvod null.
+  - typ, rozsah_pilotu: VC, CZ. The legal entity is the Luxembourg GPs; the
+    agent's reasoning is in its note at the end of the section.
+  - sektory: AI, healthtech, frontier tech (https://n1.rocks/)
+  - ticket: not filled
+  - kapital: 60 000 000 USD, aum, plati_k null, source https://n1.rocks/
+
+  Fields to rate: existence, investicni_cinnost, je_investor, typ,
+  rozsah_pilotu, posledni_investice, nezavislost_zdroju, sektory, ticket,
+  kapital.
+
+  The next section in the guide is the Nation1 merge check.
+
+❯ Ulož rozpracovanou ruční kontrolu. Tři nové soubory jsou ve složce
+  ~/Downloads: hodnoceni.csv, vzorek_kontroly.csv a vyber_vzorku.py.
+
+  1. Zkopíruj soubory do projektu. Pokud je v ~/Downloads víc kopií
+     (např. "hodnoceni (3).csv"), vezmi tu s nejnovějším časem změny
+     a napiš mi, kterou jsi použil. Kopíruj (cp), ze Stažených nic nemaž.
+     - hodnoceni*.csv → data/hodnoceni.csv (nahraď stávající)
+     - vzorek_kontroly*.csv → data/vzorek_kontroly.csv
+     - vyber_vzorku*.py → scripts/vyber_vzorku.py
+  2. Zkontroluj data/hodnoceni.csv a vypiš výsledky:
+     - hlavička a počet řádků jsou stejné jako v posledním commitu,
+     - sloupce soubor, id, pole se proti poslednímu commitu nezměnily
+       (stejné hodnoty ve stejném pořadí),
+     - hodnoceni obsahuje jen ano, ne, nelze_overit nebo prázdnou hodnotu,
+     - pricina_chyby je vyplněná jen u ne a jen hodnotou spatny_zdroj,
+       chybne_cteni, zastaraly_udaj nebo chyba_pravidel,
+     - počty: verdikty ano/ne/nelze_overit, prázdné verdikty s poznámkou
+       a počet různých id s alespoň jedním vyplněným řádkem.
+       Očekávám 176 verdiktů (166 ano, 4 ne, 6 nelze_overit), 25 prázdných
+       verdiktů s poznámkou a 21 id (20 firem vzorku + cz-nation1).
+       Pokud se cokoli liší, nic necommituj a vypiš rozdíl.
+  3. Ověř výběr vzorku: uprav jen načítání ve scripts/vyber_vzorku.py
+     podle skutečné struktury vystup_agenta/investori.json (pouze
+     zařazení investoři). Seed 20261027, velikost 20 ani logiku výběru
+     (random.Random(SEED).sample(sorted(ids), 20)) neměň. Skript spusť,
+     ale výstup zapiš do dočasného souboru a porovnej ho
+     s data/vzorek_kontroly.csv. Pokud se seznamy liší, nic necommituj
+     a vypiš rozdíl.
+  4. Soubory ve vystup_agenta/ neměň.
+  5. Pokud vše projde, commitni jedním commitem se zprávou:
+     "Ruční kontrola: rozpracované hodnocení vzorku 20 firem
+     (seed 20261027), Presto otevřené"
+     a pushni. Nakonec vypiš git log -1 --stat.
+
+⏺ Bash(cd ~/Downloads && ls -la -T hodnoceni*.csv vzorek_kontroly*.csv
+      vyber_vzorku*.py 2>&1)
+  ⎿  (No output)
+
+⏺ One copy of each. Before copying, I'll read the script (it will be run) and
+  the sample file.
+
+⏺ Bash(cat ~/Downloads/vyber_vzorku.py; echo ----; cat
+      ~/Downloads/vzorek_kontroly.csv; echo ----; head -3
+      ~/Downloads/hodnoceni.csv; git -C /Users/petrstastny/Documen…)
+  ⎿  (No output)
+
+⏺ Notes before copying: in the working tree data/hodnoceni.csv is deleted ( D).
+  It gets replaced anyway, so it doesn't matter. The script is harmless: it only
+  reads JSON and writes a CSV. Copying:
+
+⏺ Bash(cp ~/Downloads/hodnoceni.csv data/hodnoceni.csv && cp
+      ~/Downloads/vzorek_kontroly.csv data/vzorek_kontroly.csv && cp
+      ~/Downloads/vyber_vzorku.py scripts/vyber_v…)
+  ⎿  Created data/hodnoceni.csv (+377 -0)
+        1 +soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum
+        2 +investori.json,cz-n1-ventures,existence,nelze_overit,,"Značka 
+          +doložena (web, CVCA, CzechCrunch), právní subjekty Nation 1 GP
+          + S.à r.l. a GP II neověřeny v registru","Claude, schválil Petr
+          + Šťastný",2026-10-27                                          
+        3 +investori.json,cz-n1-ventures,investicni_cinnost,ano,,"The VC 
+          +Corner 4. 11. 2025: Novoflow, „with participation from N1 Vent
+          +ures“","Claude, schválil Petr Šťastný",2026-10-27             
+        4 +investori.json,cz-n1-ventures,je_investor,ano,,Forbes UA 3. 7.
+          + 2025 jmenuje N1 Ventures v Series A Liki24. Web N1 řadí inves
+          +tici pod U-Tech; přesný investiční subjekt a správcovská vazba
+          + neověřeny,"Claude, schválil Petr Šťastný",2026-10-27         
+        5 +investori.json,cz-n1-ventures,typ,ano,,n1.rocks: „Early-Stage 
+          +VC“,"Claude, schválil Petr Šťastný",2026-10-27                
+        6 +investori.json,cz-n1-ventures,rozsah_pilotu,ne,chyba_pravidel,
+          +"Upřesnění metodiky při ruční kontrole, ne jednoznačná chyba a
+          +genta: správci (GP/AIFM) v Lucembursku, v Praze tým","Claude, 
+          +schválil Petr Šťastný",2026-10-27                             
+        7 +investori.json,cz-n1-ventures,posledni_investice,ano,,"Novoflo
+          +w a datum oznámení sedí; nejnovější nalezená, úplnost neověřen
+          +a","Claude, schválil Petr Šťastný",2026-10-27                 
+        8 +investori.json,cz-n1-ventures,nezavislost_zdroju,ano,,"Forbes 
+          +UA uvádí tiskovou zprávu Liki24, Inventure přebírá Forbes","Cl
+          +aude, schválil Petr Šťastný",2026-10-27                       
+        9 +investori.json,cz-n1-ventures,sektory,ano,,n1.rocks: „AI · Hea
+          +lthtech · Frontier Tech“,"Claude, schválil Petr Šťastný",2026-
+          +10-27                                                         
+       10 +investori.json,cz-n1-ventures,ticket,,,"nevyplneno – pouze úpl
+          +nost. Potvrzené chybění: agent nechal null, web n1.rocks uvádí
+          + „Typical 1st investment $100K–$1M“ (hodnota i zdroj doloženy)
+          +. Do přesnosti vyplněných hodnot nevstupuje.","Claude, schváli
+          +l Petr Šťastný",2026-10-27                                    
+       11 +investori.json,cz-n1-ventures,kapital,ano,,"n1.rocks: „we mana
+          +ge $60M across two funds“, aum bez data","Claude, schválil Pet
+          +r Šťastný",2026-10-27                                         
+       12 +mapovani_id.csv,cz-nation1,slouceni,ano,,"CzechCrunch 18. 9. 2
+          +023: „Přejmenovává se na N1“, stejní managing partneři","Claud
+          +e, schválil Petr Šťastný",2026-10-27                          
+       13 +investori.json,cz-tensor-ventures,existence,ano,,"ARES: Tensor
+          + Ventures a.s., Pernerova 635/57, Praha 8, VR aktivní; neověře
+          +no, že je správcem fondů","Claude, schválil Petr Šťastný",2026
+          +-10-27                                                        
+       14 +investori.json,cz-tensor-ventures,investicni_cinnost,ano,,"Sez
+          +nam Zprávy 24. 2. 2026: ValkaAI pre-seed, „přidaly se také … T
+          +ensor Ventures“","Claude, schválil Petr Šťastný",2026-10-27   
+       15 +investori.json,cz-tensor-ventures,je_investor,ano,,"TheSaaSNew
+          +s: AppFactor seed 4 mil. USD, „The round was led by Tensor Ven
+          +tures“; nástroj nepřímá indicie","Claude, schválil Petr Šťastn
+          +ý",2026-10-27                                                 
+       16 +investori.json,cz-tensor-ventures,typ,ano,,tensor.ventures: „W
+          +e participate in Seed and Series A rounds“,"Claude, schválil P
+          +etr Šťastný",2026-10-27                                       
+       17 +investori.json,cz-tensor-ventures,rozsah_pilotu,nelze_overit,,
+          +Web: Tensor Ventures GP S.à r.l. a Fund I SCSp v Lucembursku; 
+          +správce druhého fondu (EIF) nedoložen,"Claude, schválil Petr Š
+          +ťastný",2026-10-27                                            
+       18 +investori.json,cz-tensor-ventures,posledni_investice,ano,,"Val
+          +kaAI 24. 2. 2026 sedí; nejnovější nalezená, úplnost neověřena"
+          +,"Claude, schválil Petr Šťastný",2026-10-27                   
+       19 +investori.json,cz-tensor-ventures,nezavislost_zdroju,ano,,"Zdr
+          +oje neoznačeny jako nezávislé, společný původ pravděpodobný (s
+          +tejný den, foto ValkaAI)","Claude, schválil Petr Šťastný",2026
+          +-10-27                                                        
+       20 +investori.json,cz-tensor-ventures,sektory,ano,,"tensor.venture
+          +s: AI, Quantum Revolution, Computational Biotech, Sustainable 
+          +Tech","Claude, schválil Petr Šťastný",2026-10-27              
+       21 +investori.json,cz-tensor-ventures,ticket,,,nevyplneno – pouze 
+          +úplnost,"Claude, schválil Petr Šťastný",2026-10-27            
+       22 +investori.json,cz-tensor-ventures,kapital,,,nevyplneno – pouze
+          + úplnost,"Claude, schválil Petr Šťastný",2026-10-27           
+       23 +investori.json,cz-kaya-vc,existence,,,,Petr Šťastný,          
+       24 +investori.json,cz-kaya-vc,investicni_cinnost,,,,Petr Šťastný, 
+       25 +investori.json,cz-kaya-vc,je_investor,,,,Petr Šťastný,        
+       26 +investori.json,cz-kaya-vc,typ,,,,Petr Šťastný,                
+       27 +investori.json,cz-kaya-vc,rozsah_pilotu,,,,Petr Šťastný,      
+       28 +investori.json,cz-kaya-vc,posledni_investice,,,,Petr Šťastný, 
+       29 +investori.json,cz-kaya-vc,nezavislost_zdroju,,,,Petr Šťastný, 
+       30 +investori.json,cz-kaya-vc,sektory,,,,Petr Šťastný,            
+       31 +investori.json,cz-kaya-vc,ticket,,,,Petr Šťastný,             
+       32 +investori.json,cz-kaya-vc,kapital,,,,Petr Šťastný,            
+       33 +investori.json,cz-ii-biotech-investments,existence,ano,,"ARES:
+          + Biotech Investments s.r.o., Pobřežní 394/12, Praha 8, VR akti
+          +vní","Claude, schválil Petr Šťastný",2026-10-27               
+       34 +investori.json,cz-ii-biotech-investments,investicni_cinnost,an
+          +o,,"Lupa.cz 27. 3. 2026: Theorema pre-seed 3,3 mil. USD, inves
+          +toři „NAVEC Investment Management, i&i Biotech Fund“","Claude,
+          + schválil Petr Šťastný",2026-10-27                            
+       35 +investori.json,cz-ii-biotech-investments,je_investor,ano,,"Pre
+          +-seed, nástroj nepřímá indicie","Claude, schválil Petr Šťastný
+          +",2026-10-27                                                  
+       36 +investori.json,cz-ii-biotech-investments,typ,ano,,ÚOCHB 30. 11
+          +. 2022: „Luxemburg-based venture capital firm“,"Claude, schvál
+          +il Petr Šťastný",2026-10-27                                   
+       37 +investori.json,cz-ii-biotech-investments,rozsah_pilotu,ne,chyb
+          +a_pravidel,"Upřesnění metodiky při ruční kontrole: fond i&i Bi
+          +otech Fund I SCSp v Lucembursku („Luxemburg-based“), česká Bio
+          +tech Investments s.r.o. je poradce a tým","Claude, schválil Pe
+          +tr Šťastný",2026-10-27                                        
+       38 +investori.json,cz-ii-biotech-investments,posledni_investice,an
+          +o,,Theorema 27. 3. 2026 sedí; nejnovější nalezená,"Claude, sch
+          +válil Petr Šťastný",2026-10-27                                
+       39 +investori.json,cz-ii-biotech-investments,nezavislost_zdroju,an
+          +o,,"Zdroje neoznačeny jako nezávislé, jistota stredni","Claude
+          +, schválil Petr Šťastný",2026-10-27                           
+       40 +investori.json,cz-ii-biotech-investments,sektory,ano,,"Web: dr
+          +ug discovery, medtech, diagnostics, AI","ChatGPT, schválil Pet
+          +r Šťastný",2026-10-27                                         
+     … 337 more lines (ctrl+o to expand)
+  ⎿  Created data/vzorek_kontroly.csv (+21 -0)
+       1 +id                                                             
+       2 +cz-borovicka-capital                                           
+       3 +cz-credo-ventures                                              
+       4 +cz-czech-founders-vc                                           
+       5 +cz-depo-ventures                                               
+       6 +cz-ii-biotech-investments                                      
+       7 +cz-ii-prague                                                   
+       8 +cz-inven-capital                                               
+       9 +cz-look-ai-ventures                                            
+      10 +cz-miton                                                       
+      11 +cz-n1-ventures                                                 
+      12 +cz-presto-ventures                                             
+      13 +cz-purple-ventures                                             
+      14 +cz-purposetech                                                 
+      15 +cz-reflex-capital                                              
+      16 +cz-rockaway-ventures                                           
+      17 +cz-soulmates-ventures                                          
+      18 +cz-startupyard                                                 
+      19 +cz-tensor-ventures                                             
+      20 +cz-y-soft-ventures                                             
+      21 +cz-zaka-vc                                                     
+  ⎿  Created scripts/vyber_vzorku.py (+29 -0)
+       1 +"""Výběr vzorku pro ruční kontrolu.                            
+       2 +                                                               
+       3 +Náhodně vybere 20 záznamů ze zařazených investorů (investori.js
+         +on)                                                            
+       4 +se seedem 20261027. Výstup: data/vzorek_kontroly.csv.          
+       5 +                                                               
+       6 +Spuštění z kořene repa: python3 scripts/vyber_vzorku.py        
+       7 +"""                                                            
+       8 +import csv                                                     
+       9 +import json                                                    
+      10 +import random                                                  
+      11 +from pathlib import Path                                       
+      12 +                                                               
+      13 +SEED = 20261027                                                
+      14 +VELIKOST = 20                                                  
+      15 +                                                               
+      16 +koren = Path(__file__).resolve().parent.parent                 
+      17 +investori = json.loads((koren / "vystup_agenta" / "investori.js
+         +on").read_text(encoding="utf-8"))                              
+      18 +if isinstance(investori, dict):                                
+      19 +    investori = investori.get("investori", list(investori.value
+         +s()))                                                          
+      20 +ids = sorted(z["id"] for z in investori)                       
+      21 +                                                               
+      22 +vzorek = sorted(random.Random(SEED).sample(ids, VELIKOST))     
+      23 +                                                               
+      24 +with open(koren / "data" / "vzorek_kontroly.csv", "w", newline=
+         +"", encoding="utf-8") as f:                                    
+      25 +    w = csv.writer(f)                                          
+      26 +    w.writerow(["id"])                                         
+      27 +    w.writerows([i] for i in vzorek)                           
+      28 +                                                               
+      29 +print(f"{len(ids)} zařazených, vybráno {len(vzorek)} (seed {SEE
+         +D})")                                                          
+
+⏺ Bash(git show HEAD:data/hodnoceni.csv > "$TMPDIR/hod_head.csv" && python3 -
+      "$TMPDIR/hod_head.csv" data/hodnoceni.csv <<'EOF'
+      import csv,sys…)
+  ⎿  (No output)
+
+⏺ All checks pass and the numbers match exactly. I found a path issue in the
+  script (vystup_agenta/ should be data/vystup_agenta/) and need to fix the
+  loading logic since investori.json is actually a list of records, not a dict.
+
+⏺ Update(scripts/vyber_vzorku.py)
+  ⎿  Added 3 lines, removed 3 lines
+      14  VELIKOST = 20
+      15  
+      16  koren = Path(__file__).resolve().parent.parent
+      17 -investori = json.loads((koren / "vystup_agenta" / "investori.js
+         -on").read_text(encoding="utf-8"))                              
+      18 -if isinstance(investori, dict):                                
+      19 -    investori = investori.get("investori", list(investori.value
+         -s()))                                                          
+      17 +# investori.json je seznam záznamů zařazených investorů (PLAN.m
+         +d bod 4).                                                      
+      18 +investori = json.loads((koren / "data" / "vystup_agenta" / "inv
+         +estori.json").read_text(encoding="utf-8"))                     
+      19 +assert isinstance(investori, list), "investori.json má být sezn
+         +am záznamů"                                                    
+      20  ids = sorted(z["id"] for z in investori)
+      21  
+      22  vzorek = sorted(random.Random(SEED).sample(ids, VELIKOST))
+
+⏺ I'll run the script unchanged in a temporary copy of the tree so its output
+  lands there instead of overwriting the project's data/vzorek_kontroly.csv.
+
+⏺ Bash(T=/private/tmp/claude-501/-Users-petrstastny-Documents-Projekty-investori
+      -databaze/e68ef0bc-6278-4c08-8ece-aa8b6481f4b8/scratchpad/vzorek && rm -rf
+      "$T" && mkdi…)
+  ⎿  (No output)
+
+⏺ Everything passes and data/vystup_agenta/ is unchanged. Committing and
+  pushing.
+
+⏺ Bash(git add data/hodnoceni.csv data/vzorek_kontroly.csv
+      scripts/vyber_vzorku.py && git commit -q -F - <<'EOF'
+      Ruční kontrola: rozpracované hodnocení vzorku 20 firem…)
+  ⎿  (No output)
+
+⏺ Everything passed, so I committed it and pushed (commit 35583d9). The git log
+  -1 --stat output is below.
+
+  1. Files used. Downloads had only one copy of each file, so there was nothing
+  to choose between:
+  - hodnoceni.csv (17:33:47) → data/hodnoceni.csv
+  - vzorek_kontroly.csv (17:33:49) → data/vzorek_kontroly.csv
+  - vyber_vzorku.py (17:33:53) → scripts/vyber_vzorku.py
+
+  I only copied them; nothing was deleted from Downloads.
+
+  2. Check of data/hodnoceni.csv. It matches what you expected:
+
+  ┌─────────────────────────────────┬───────────────────────────────────────┐
+  │              Check              │                Result                 │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ Header                          │ same as the last commit               │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ Row count                       │ 376, same as the last commit          │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ soubor, id, pole                │ identical values in the same order    │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ hodnoceni                       │ only ano / ne / nelze_overit or empty │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ pricina_chyby                   │ filled only for ne, only allowed      │
+  │                                 │ values                                │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ Verdicts                        │ 176 (166 ano, 4 ne, 6 nelze_overit)   │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ Empty verdicts with a note      │ 25                                    │
+  ├─────────────────────────────────┼───────────────────────────────────────┤
+  │ ids with at least one filled    │ 21 (20 sample companies + cz-nation1) │
+  │ row                             │                                       │
+  └─────────────────────────────────┴───────────────────────────────────────┘
+
+  Two things the checks didn't cover:
+  - cz-look-ai-ventures / posledni_investice is marked ne but has no
+    pricina_chyby (line 127). That's allowed by your rule ("only for ne", not
+    "required for ne"), but PLAN.md section 7 asks for a cause on every error.
+  - The hodnotil column now has three values: "Petr Šťastný" (175 empty rows),
+    "Claude, schválil Petr Šťastný" (194) and "ChatGPT, schválil Petr Šťastný"
+    (7).
+
+  3. Sample selection. In vyber_vzorku.py (scripts/vyber_vzorku.py) I changed
+  only the loading part:
+  - The path was wrong: it pointed to vystup_agenta/investori.json instead of
+    data/vystup_agenta/investori.json.
+  - investori.json is a list containing only the included investors, so I
+    replaced the unused dictionary branch with a check that the file is a list.
+
+  The seed, the size of 20 and the selection logic are unchanged. The script
+  writes straight to data/vzorek_kontroly.csv, so I ran it on a temporary copy
+  of the project. It reported "27 zařazených, vybráno 20 (seed 20261027)", and
+  its output matches data/vzorek_kontroly.csv byte for byte.
+
+  4. data/vystup_agenta/ is unchanged.
+
+  commit 35583d9963fe5d91633bb714a0bf3642524be6e4
+  Author: PetrStastny1 <Petr_Stastny@seznam.cz>
+  Date:   Tue Oct 27 17:41:37 2026 +0100
+
+      Ruční kontrola: rozpracované hodnocení vzorku 20 firem (seed 20261027),
+  Presto otevřené
+
+      Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+   data/hodnoceni.csv       | 754
+  +++++++++++++++++++++++------------------------
+   data/vzorek_kontroly.csv |  21 ++
+   scripts/vyber_vzorku.py  |  29 ++
+   3 files changed, 427 insertions(+), 377 deletions(-)
+
+❯ Zapiš změny ruční kontroly po přečtení nálezů AI.
+
+  1. Záloha stavu před nálezy AI, přímo z commitu (ne z pracovní kopie):
+     git show 35583d9:data/hodnoceni.csv >
+  ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv
+     Tuto kopii už dál neupravuj.
+  2. Z ~/Downloads vezmi nejnovější hodnoceni*.csv podle času změny
+     (napiš mi, kterou verzi jsi použil) a zkopíruj ho do data/hodnoceni.csv.
+     Ze Stažených nic nemaž.
+  3. Zkontroluj ho proti 35583d9:data/hodnoceni.csv a vypiš výsledky:
+     - hlavička, počet řádků (376) a sloupce soubor, id, pole se nezměnily,
+     - hodnoceni jen ano / ne / nelze_overit / prázdné, pricina_chyby jen u ne
+       a jen z povolených hodnot,
+     - vypiš všechny řádky, kde se změnil sloupec hodnoceni nebo pricina_chyby
+       (id, pole, staré → nové). Očekávám přesně 9 změn:
+       posledni_investice ano → ne u cz-purple-ventures, cz-reflex-capital,
+       cz-zaka-vc (u ZAKA i pricina_chyby → chyba_pravidel) a
+       nezavislost_zdroju ano → nelze_overit u cz-look-ai-ventures, cz-miton,
+       cz-purple-ventures, cz-y-soft-ventures, cz-tensor-ventures,
+       cz-ii-biotech-investments,
+     - poznámky se smí změnit jen u těchto 9 řádků a u pole typ
+       u cz-startupyard a cz-zaka-vc,
+     - hodnotil: 201× „Petr Šťastný (asistence AI)“, 175× prázdné; prázdné
+       musí být přesně ty řádky, které nemají hodnoceni ani poznámku,
+     - počty: 176 verdiktů (157 ano, 7 ne, 12 nelze_overit), 25 prázdných
+       verdiktů s poznámkou.
+       Pokud se cokoli liší, nic necommituj a vypiš rozdíl.
+  4. Do README.md přidej oddíl „Ruční kontrola – kdo hodnotil“ s tímto textem:
+     „Petr Šťastný (asistence AI)“: zdroje vyhledal, přeložil a verdikt
+     navrhl Claude, u části polí ChatGPT. Každý verdikt jsem schválil já
+     a sporné výkladové otázky (sídlo správce, přiřazení přes fondy,
+     chybějící údaje) jsem rozhodl sám. Zdroje jsem sám neotevíral u všech
+     polí. Stav před přečtením nálezů druhého agenta je uložen
+     v ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv (commit 35583d9);
+     změny po jejich přečtení mají v poznámce „Změna po přečtení nálezů AI“.
+     Zbytek README neměň.
+  5. data/vystup_agenta/ ani data/opraveno/ neměň.
+  6. Pokud vše projde, commitni jedním commitem:
+     "Ruční kontrola: změny po přečtení nálezů AI, záloha stavu před nimi,
+     README – kdo hodnotil"
+     pushni a vypiš git log -1 --stat.
+
+⏺ Bash(ls -la -T ~/Downloads/hodnoceni*.csv && git status --short && git log
+      --oneline -2)
+  ⎿  (No output)
+
+⏺ There's a single copy (17:54:25), and the working tree is clean. I'll create
+  the backup from the commit and copy the file.
+⏺ Bash(git show 35583d9:data/hodnoceni.csv >
+      ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv && cp
+      ~/Downloads/hodnoceni.csv data/hodnoceni.csv && git status --s…)
+  ⎿  Created ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv (+377
+     -0)
+        1 +soubor,id,pole,hodnoceni,pricina_chyby,poznamka,hodnotil,datum
+        2 +investori.json,cz-n1-ventures,existence,nelze_overit,,"Značka 
+          +doložena (web, CVCA, CzechCrunch), právní subjekty Nation 1 GP
+          + S.à r.l. a GP II neověřeny v registru","Claude, schválil Petr
+          + Šťastný",2026-10-27                                          
+        3 +investori.json,cz-n1-ventures,investicni_cinnost,ano,,"The VC 
+          +Corner 4. 11. 2025: Novoflow, „with participation from N1 Vent
+          +ures“","Claude, schválil Petr Šťastný",2026-10-27             
+        4 +investori.json,cz-n1-ventures,je_investor,ano,,Forbes UA 3. 7.
+          + 2025 jmenuje N1 Ventures v Series A Liki24. Web N1 řadí inves
+          +tici pod U-Tech; přesný investiční subjekt a správcovská vazba
+          + neověřeny,"Claude, schválil Petr Šťastný",2026-10-27         
+        5 +investori.json,cz-n1-ventures,typ,ano,,n1.rocks: „Early-Stage 
+          +VC“,"Claude, schválil Petr Šťastný",2026-10-27                
+        6 +investori.json,cz-n1-ventures,rozsah_pilotu,ne,chyba_pravidel,
+          +"Upřesnění metodiky při ruční kontrole, ne jednoznačná chyba a
+          +genta: správci (GP/AIFM) v Lucembursku, v Praze tým","Claude, 
+          +schválil Petr Šťastný",2026-10-27                             
+        7 +investori.json,cz-n1-ventures,posledni_investice,ano,,"Novoflo
+          +w a datum oznámení sedí; nejnovější nalezená, úplnost neověřen
+          +a","Claude, schválil Petr Šťastný",2026-10-27                 
+        8 +investori.json,cz-n1-ventures,nezavislost_zdroju,ano,,"Forbes 
+          +UA uvádí tiskovou zprávu Liki24, Inventure přebírá Forbes","Cl
+          +aude, schválil Petr Šťastný",2026-10-27                       
+        9 +investori.json,cz-n1-ventures,sektory,ano,,n1.rocks: „AI · Hea
+          +lthtech · Frontier Tech“,"Claude, schválil Petr Šťastný",2026-
+          +10-27                                                         
+       10 +investori.json,cz-n1-ventures,ticket,,,"nevyplneno – pouze úpl
+          +nost. Potvrzené chybění: agent nechal null, web n1.rocks uvádí
+          + „Typical 1st investment $100K–$1M“ (hodnota i zdroj doloženy)
+          +. Do přesnosti vyplněných hodnot nevstupuje.","Claude, schváli
+          +l Petr Šťastný",2026-10-27                                    
+       11 +investori.json,cz-n1-ventures,kapital,ano,,"n1.rocks: „we mana
+          +ge $60M across two funds“, aum bez data","Claude, schválil Pet
+          +r Šťastný",2026-10-27                                         
+       12 +mapovani_id.csv,cz-nation1,slouceni,ano,,"CzechCrunch 18. 9. 2
+          +023: „Přejmenovává se na N1“, stejní managing partneři","Claud
+          +e, schválil Petr Šťastný",2026-10-27                          
+       13 +investori.json,cz-tensor-ventures,existence,ano,,"ARES: Tensor
+          + Ventures a.s., Pernerova 635/57, Praha 8, VR aktivní; neověře
+          +no, že je správcem fondů","Claude, schválil Petr Šťastný",2026
+          +-10-27                                                        
+       14 +investori.json,cz-tensor-ventures,investicni_cinnost,ano,,"Sez
+          +nam Zprávy 24. 2. 2026: ValkaAI pre-seed, „přidaly se také … T
+          +ensor Ventures“","Claude, schválil Petr Šťastný",2026-10-27   
+       15 +investori.json,cz-tensor-ventures,je_investor,ano,,"TheSaaSNew
+          +s: AppFactor seed 4 mil. USD, „The round was led by Tensor Ven
+          +tures“; nástroj nepřímá indicie","Claude, schválil Petr Šťastn
+          +ý",2026-10-27                                                 
+       16 +investori.json,cz-tensor-ventures,typ,ano,,tensor.ventures: „W
+          +e participate in Seed and Series A rounds“,"Claude, schválil P
+          +etr Šťastný",2026-10-27                                       
+       17 +investori.json,cz-tensor-ventures,rozsah_pilotu,nelze_overit,,
+          +Web: Tensor Ventures GP S.à r.l. a Fund I SCSp v Lucembursku; 
+          +správce druhého fondu (EIF) nedoložen,"Claude, schválil Petr Š
+          +ťastný",2026-10-27                                            
+       18 +investori.json,cz-tensor-ventures,posledni_investice,ano,,"Val
+          +kaAI 24. 2. 2026 sedí; nejnovější nalezená, úplnost neověřena"
+          +,"Claude, schválil Petr Šťastný",2026-10-27                   
+       19 +investori.json,cz-tensor-ventures,nezavislost_zdroju,ano,,"Zdr
+          +oje neoznačeny jako nezávislé, společný původ pravděpodobný (s
+          +tejný den, foto ValkaAI)","Claude, schválil Petr Šťastný",2026
+          +-10-27                                                        
+       20 +investori.json,cz-tensor-ventures,sektory,ano,,"tensor.venture
+          +s: AI, Quantum Revolution, Computational Biotech, Sustainable 
+          +Tech","Claude, schválil Petr Šťastný",2026-10-27              
+       21 +investori.json,cz-tensor-ventures,ticket,,,nevyplneno – pouze 
+          +úplnost,"Claude, schválil Petr Šťastný",2026-10-27            
+       22 +investori.json,cz-tensor-ventures,kapital,,,nevyplneno – pouze
+          + úplnost,"Claude, schválil Petr Šťastný",2026-10-27           
+       23 +investori.json,cz-kaya-vc,existence,,,,Petr Šťastný,          
+       24 +investori.json,cz-kaya-vc,investicni_cinnost,,,,Petr Šťastný, 
+       25 +investori.json,cz-kaya-vc,je_investor,,,,Petr Šťastný,        
+       26 +investori.json,cz-kaya-vc,typ,,,,Petr Šťastný,                
+       27 +investori.json,cz-kaya-vc,rozsah_pilotu,,,,Petr Šťastný,      
+       28 +investori.json,cz-kaya-vc,posledni_investice,,,,Petr Šťastný, 
+       29 +investori.json,cz-kaya-vc,nezavislost_zdroju,,,,Petr Šťastný, 
+       30 +investori.json,cz-kaya-vc,sektory,,,,Petr Šťastný,            
+       31 +investori.json,cz-kaya-vc,ticket,,,,Petr Šťastný,             
+       32 +investori.json,cz-kaya-vc,kapital,,,,Petr Šťastný,            
+       33 +investori.json,cz-ii-biotech-investments,existence,ano,,"ARES:
+          + Biotech Investments s.r.o., Pobřežní 394/12, Praha 8, VR akti
+          +vní","Claude, schválil Petr Šťastný",2026-10-27               
+       34 +investori.json,cz-ii-biotech-investments,investicni_cinnost,an
+          +o,,"Lupa.cz 27. 3. 2026: Theorema pre-seed 3,3 mil. USD, inves
+          +toři „NAVEC Investment Management, i&i Biotech Fund“","Claude,
+          + schválil Petr Šťastný",2026-10-27                            
+       35 +investori.json,cz-ii-biotech-investments,je_investor,ano,,"Pre
+          +-seed, nástroj nepřímá indicie","Claude, schválil Petr Šťastný
+          +",2026-10-27                                                  
+       36 +investori.json,cz-ii-biotech-investments,typ,ano,,ÚOCHB 30. 11
+          +. 2022: „Luxemburg-based venture capital firm“,"Claude, schvál
+          +il Petr Šťastný",2026-10-27                                   
+       37 +investori.json,cz-ii-biotech-investments,rozsah_pilotu,ne,chyb
+          +a_pravidel,"Upřesnění metodiky při ruční kontrole: fond i&i Bi
+          +otech Fund I SCSp v Lucembursku („Luxemburg-based“), česká Bio
+          +tech Investments s.r.o. je poradce a tým","Claude, schválil Pe
+          +tr Šťastný",2026-10-27                                        
+       38 +investori.json,cz-ii-biotech-investments,posledni_investice,an
+          +o,,Theorema 27. 3. 2026 sedí; nejnovější nalezená,"Claude, sch
+          +válil Petr Šťastný",2026-10-27                                
+       39 +investori.json,cz-ii-biotech-investments,nezavislost_zdroju,an
+          +o,,"Zdroje neoznačeny jako nezávislé, jistota stredni","Claude
+          +, schválil Petr Šťastný",2026-10-27                           
+       40 +investori.json,cz-ii-biotech-investments,sektory,ano,,"Web: dr
+          +ug discovery, medtech, diagnostics, AI","ChatGPT, schválil Pet
+          +r Šťastný",2026-10-27                                         
+     … 337 more lines (ctrl+o to expand)
+  ⎿  … 1 more file changed
+
+⏺ Bash(python3 - <<'EOF'
+      import csv…)
+  ⎿  (No output)
+
+⏺ Everything matches. Next the README: I'll look at its end and add the section
+  there.
+
+⏺ Bash(grep -n '^#' README.md && tail -c 400 README.md | od -c | tail -3)
+  ⎿  (No output)
+
+⏺ I'll put the section before "## Struktura", so the license and the structure
+  stay at the end. The text is word for word as you gave it.
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ Update(README.md)
+  ⎿  Added 4 lines
+      90    - Z jmen investorů jsem odvodil seznam kandidátů: varianty jm
+          en jsem sloučil s kandidáty z jiných zdrojů a rozdělil je podle
+           sídla.
+      91    - Částky, data ani jiné hodnoty jsem neměnil a do `data/kandi
+          dati.csv` jsem je nepřebíral.
+      92  
+      93 +## Ruční kontrola – kdo hodnotil                               
+      94 +                                                               
+      95 +„Petr Šťastný (asistence AI)“: zdroje vyhledal, přeložil a verd
+         +ikt navrhl Claude, u části polí ChatGPT. Každý verdikt jsem sch
+         +válil já a sporné výkladové otázky (sídlo správce, přiřazení př
+         +es fondy, chybějící údaje) jsem rozhodl sám. Zdroje jsem sám ne
+         +otevíral u všech polí. Stav před přečtením nálezů druhého agent
+         +a je uložen v ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai
+         +.csv (commit 35583d9); změny po jejich přečtení mají v poznámce
+         + „Změna po přečtení nálezů AI“.                                
+      96 +                                                               
+      97  ## Struktura
+      98  
+      99  | Cesta | Obsah |
+
+⏺ Bash(git diff --stat && git status --short && git diff --quiet 35583d9 --
+      data/vystup_agenta data/opraveno && echo "vystup_agenta a opraveno beze
+      změny" && cmp <(git…)
+  ⎿  (No output)
+
+⏺ Every check passed, so I committed it and pushed (commit 66ad9bc).
+
+  1. Backup. ai-log/05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv comes
+  straight from git show 35583d9:data/hodnoceni.csv and is byte-for-byte
+  identical to it. I didn't edit it afterwards.
+
+  2. File used. Downloads had only one copy, ~/Downloads/hodnoceni.csv, last
+  changed 2026-10-27 17:54:25. I copied it to data/hodnoceni.csv and deleted
+  nothing from Downloads.
+
+  3. Check against 35583d9:data/hodnoceni.csv
+
+  ┌──────────────────────┬──────────────────────────────────────────────────┐
+  │        Check         │                      Result                      │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ Header, 376 rows,    │ unchanged                                        │
+  │ soubor / id / pole   │                                                  │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ hodnoceni            │ only allowed values                              │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ pricina_chyby        │ only on ne, only allowed values                  │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ Notes                │ 11 changed: the 9 rows below plus typ for        │
+  │                      │ cz-startupyard and cz-zaka-vc, nothing else      │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ datum                │ unchanged                                        │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │                      │ 201× "Petr Šťastný (asistence AI)", 175× empty;  │
+  │ hodnotil             │ the empty ones are exactly the rows with neither │
+  │                      │  a verdict nor a note                            │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ Verdicts             │ 176 (157 ano, 7 ne, 12 nelze_overit)             │
+  ├──────────────────────┼──────────────────────────────────────────────────┤
+  │ Empty verdicts with  │ 25                                               │
+  │ a note               │                                                  │
+  └──────────────────────┴──────────────────────────────────────────────────┘
+
+  The 9 changes are exactly the ones you expected:
+
+  ┌─────┬───────────────────────────┬────────────────────┬───────────────────┐
+  │ row │            id             │       field        │     old → new     │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 19  │ cz-tensor-ventures        │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 39  │ cz-ii-biotech-investments │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │     │                           │                    │ ano → ne,         │
+  │ 48  │ cz-zaka-vc                │ posledni_investice │ pricina_chyby →   │
+  │     │                           │                    │ chyba_pravidel    │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 128 │ cz-look-ai-ventures       │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 147 │ cz-purple-ventures        │ posledni_investice │ ano → ne          │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 148 │ cz-purple-ventures        │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 157 │ cz-reflex-capital         │ posledni_investice │ ano → ne          │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 178 │ cz-y-soft-ventures        │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  ├─────┼───────────────────────────┼────────────────────┼───────────────────┤
+  │ 288 │ cz-miton                  │ nezavislost_zdroju │ ano →             │
+  │     │                           │                    │ nelze_overit      │
+  └─────┴───────────────────────────┴────────────────────┴───────────────────┘
+
+  All 9 changed rows have "Změna po přečtení nálezů AI" in their note.
+
+  Your rules allow this, but you should know: three ne verdicts have no
+  pricina_chyby (cz-look-ai-ventures, cz-purple-ventures and cz-reflex-capital,
+  all on posledni_investice). PLAN.md section 7 asks for a cause on every error,
+  so they'll need one before measurement.
+
+  4. README. I added the section "Ruční kontrola – kdo hodnotil" with your text
+  word for word, placed before "Struktura". The rest of the README is unchanged.
+
+  5. data/vystup_agenta/ and data/opraveno/ are unchanged compared with 35583d9.
+
+  commit 66ad9bc571ee8b248a0413d56b1d1c4e17adece3
+  Author: PetrStastny1 <Petr_Stastny@seznam.cz>
+  Date:   Tue Oct 27 17:57:50 2026 +0100
+
+      Ruční kontrola: změny po přečtení nálezů AI, záloha stavu před nimi,
+  README – kdo hodnotil
+
+      Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+   README.md                                          |   4 +
+   .../05-rucni-kontrola/hodnoceni_pred_nalezy_ai.csv | 377 +++++++++++
+   data/hodnoceni.csv                                 | 752
+  ++++++++++-----------
+   3 files changed, 757 insertions(+), 376 deletions(-)
